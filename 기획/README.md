@@ -11,7 +11,7 @@
 | 문서 | 역할 |
 |---|---|
 | [../AI_CONTEXT.md](../AI_CONTEXT.md) | 모든 AI가 먼저 읽어야 할 공통 작업 맥락 |
-| [01-product-brief.md](01-product-brief.md) | 서비스의 목적, 사용자, 핵심 가치 정의 |
+| [01-product-brief.md](01-product-brief.md) | StoryBrand 서사와 Phase 1 제품/기술 기준을 합친 통합 기획서 |
 | [02-mvp-spec.md](02-mvp-spec.md) | 첫 버전에서 만들 기능과 만들지 않을 기능 |
 | [03-system-architecture.md](03-system-architecture.md) | 수집, 선별, 요약, 전달 파이프라인 설계 |
 | [04-decision-log.md](04-decision-log.md) | 앞으로 확정해야 할 결정 사항과 현재 상태 |
