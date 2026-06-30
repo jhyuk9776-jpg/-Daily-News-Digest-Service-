@@ -1,0 +1,52 @@
+# RSS 출처 주소록
+# 분류 방식 A: 기사 분야 = 그 기사를 가져온 피드가 속한 분야 칸
+# 같은 매체라도 분야별 RSS 주소가 다르면 각 분야에 별도 줄로 추가한다.
+# 통합(전체기사) RSS만 제공하는 매체는 적합한 분야 한 곳에만 넣는다.
+# 우선순위: 숫자가 작을수록 우선(중복제거 시 사용, Day 3).
+
+경제:
+  - 매체명: 한국경제
+    url: https://www.hankyung.com/feed/economy
+    우선순위: 1
+  - 매체명: 매일경제
+    url: https://www.mk.co.kr/rss/30100041/
+    우선순위: 2
+  - 매체명: 이코노미스트 타임스
+    url: https://www.economist-times.com/rss/allArticle.xml
+    우선순위: 3
+  - 매체명: 매일신문
+    url: https://www.imaeil.com/rss?cate=economy
+    우선순위: 4
+  - 매체명: SBS
+    url: https://news.sbs.co.kr/news/SectionRssFeed.do?sectionId=02
+    우선순위: 5
+
+사회:
+  - 매체명: 경향신문
+    url: https://www.khan.co.kr/rss/rssdata/society_news.xml
+    우선순위: 1
+  - 매체명: 매일신문
+    url: https://www.imaeil.com/rss?cate=society
+    우선순위: 2
+  - 매체명: SBS
+    url: https://news.sbs.co.kr/news/SectionRssFeed.do?sectionId=03
+    우선순위: 3
+
+세계:
+  - 매체명: 경향신문
+    url: https://www.khan.co.kr/rss/rssdata/kh_world.xml
+    우선순위: 1
+  - 매체명: 매일신문
+    url: https://www.imaeil.com/rss?cate=nations
+    우선순위: 2
+  - 매체명: SBS
+    url: https://news.sbs.co.kr/news/SectionRssFeed.do?sectionId=07
+    우선순위: 3
+
+IT/테크:
+  - 매체명: 전자신문
+    url: https://rss.etnews.com/Section901.xml
+    우선순위: 1
+  - 매체명: ZDNet Korea
+    url: https://feeds.feedburner.com/zdkorea
+    우선순위: 2

@@ -1,0 +1,60 @@
+# Day 3 설계 — 선별/중복 제거 모듈
+
+작성일: 2026-06-30
+대상: 로드맵 Day 3 "선별/중복 제거 (분야별 후보 기사 정리)"
+
+## 1. 목표
+
+`raw/YYYY-MM-DD.json`(Day 2 수집 결과)을 입력으로 받아 분야별 후보 기사를 추려
+`selected/YYYY-MM-DD.json`(Day 4 입력)으로 저장한다. AI 요약·마크다운 생성은 Day 4.
+
+근거: `기획/05-roadmap.md`(Day 3), `기획/04-decision-log.md` "1.1 증거 기반 품질 전략".
+
+## 2. 파이프라인 (표준 라이브러리만, AI 미사용)
+
+| 단계 | 내용 |
+|---|---|
+| 1. 날짜 필터 | `published_iso`를 KST로 변환해 오늘·어제(48h 창)만 통과. 날짜 없으면 통과시키되 `date_known=false` |
+| 2. 증거 점수 | 제목+요약에서 신호 개수: 숫자 / % / 기관명 / 인용부호 / 기간표현(전년 대비 등). 신호 1개당 +1 |
+| 3. 중복 제거 + 교차검증 | 제목 정규화 후 `difflib` 유사도 ≥ 0.6 으로 같은 사건 묶음. 독립 매체 수 = `corroboration_count`. 대표 = 우선순위 최상위, 나머지 링크는 `related_links` |
+| 4. 분야별 2건 | 정렬 `(증거점수↓, 교차검증수↓, 우선순위↑)` 후 상위 2건. 0건이면 "새 기사 없음" 명시 |
+
+## 3. 출력 JSON
+
+```json
+{
+  "date": "2026-06-30",
+  "generated_at": "...",
+  "window": {"from": "2026-06-29", "to": "2026-06-30"},
+  "stats": {"경제": {"candidates": 425, "after_date_filter": 201, "clusters": 196, "selected": 2}},
+  "categories": {
+    "경제": [
+      {
+        "title": "...", "link": "...", "source": "매일신문",
+        "published": "...", "published_iso": "...", "date_known": true,
+        "summary": "...", "evidence_score": 5, "corroboration_count": 1,
+        "related_links": [{"source": "...", "link": "..."}]
+      }
+    ]
+  }
+}
+```
+
+## 4. 의존 변경 (Day 2 보강)
+
+- `fetch.py`에 `published_iso`(feedparser 정규화 UTC ISO) 저장 추가 — 매체별 날짜
+  형식이 제각각이라 원본 문자열 대신 정규화 값을 날짜 필터 입력으로 쓴다.
+- `fetch.py`에서 제목·요약 `html.unescape` 적용 — `&#8594;` 등 엔티티 정리.
+
+## 5. 알려진 한계 (향후 과제)
+
+- 교차검증수가 대부분 1: 매체별 헤드라인 표현 차이로 제목 유사도 매칭이 보수적.
+  본문/개체(entity) 기반 매칭은 향후 개선 과제.
+- 일부 매체(이코노미스트·매일신문)는 피드에 타임존이 없어 UTC로 간주됨(최대 9h 오차).
+  48h 창이라 영향 없음.
+- 요약이 빈 기사는 제목만으로 채점됨 → Day 4 본문 추출로 보완 예정.
+
+## 6. 완료 기준
+
+`python3 src/select.py` 실행 시 분야별 (수집→날짜통과→묶음→선택) 흐름이 출력되고
+`selected/<오늘>.json`이 생성된다. (검증 완료)
