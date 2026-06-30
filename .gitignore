@@ -5,3 +5,9 @@ __pycache__/
 # 매일 바뀌는 생성 산출물 (저장소에 쌓지 않음)
 raw/
 selected/
+
+# API 키 (절대 커밋 금지)
+.env
+
+# 요약 캐시
+cache/
