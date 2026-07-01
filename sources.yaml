@@ -11,15 +11,12 @@
   - 매체명: 매일경제
     url: https://www.mk.co.kr/rss/30100041/
     우선순위: 2
-  - 매체명: 이코노미스트 타임스
-    url: https://www.economist-times.com/rss/allArticle.xml
-    우선순위: 3
   - 매체명: 매일신문
     url: https://www.imaeil.com/rss?cate=economy
-    우선순위: 4
+    우선순위: 3
   - 매체명: SBS
     url: https://news.sbs.co.kr/news/SectionRssFeed.do?sectionId=02
-    우선순위: 5
+    우선순위: 4
 
 사회:
   - 매체명: 경향신문

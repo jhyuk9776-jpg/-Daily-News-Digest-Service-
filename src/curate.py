@@ -2,9 +2,9 @@
 
 raw/YYYY-MM-DD.json(수집 결과)을 입력으로 받아
   1) 날짜 필터: 오늘·어제(KST) 기사만 통과
-  2) 증거 점수: 숫자/%/기관명/인용/기간표현 휴리스틱(AI 미사용)
+  2) 증거 점수: 숫자/%/기관명/인용/기간표현 휴리스틱(AI 미사용, 기록용 메타데이터)
   3) 중복 제거 + 교차검증: 제목 유사도로 같은 사건 묶고 독립 매체 수 집계
-  4) 분야별 상위 2건 선택: (증거점수↓, 교차검증수↓, 우선순위↑)
+  4) 분야별 상위 2건 선택: (교차검증수↓, 우선순위↑, 발행최신순)
 결과를 selected/YYYY-MM-DD.json 으로 저장한다(Day 4 입력).
 
 증거 우선 전략은 기획/04-decision-log.md "1.1 증거 기반 품질 전략" 참고.
@@ -99,6 +99,19 @@ def evidence_score(article: dict) -> int:
     return score
 
 
+def recency_key(iso: str) -> float:
+    """정렬용 최신순 키: 최신일수록 작은 값(오름차순 정렬에서 위로 온다).
+
+    발행일을 모르는 기사(iso 빈 값/파싱 실패)는 0.0을 돌려 맨 뒤로 보낸다.
+    """
+    if not iso:
+        return 0.0
+    try:
+        return -datetime.fromisoformat(iso).timestamp()
+    except ValueError:
+        return 0.0
+
+
 def normalize_title(title: str) -> str:
     """중복 비교용 제목 정규화: 대괄호 머리표·기호 제거, 공백 정리."""
     t = re.sub(r"\[[^\]]*\]", " ", title)       # [속보] [단독] 류 제거
@@ -165,9 +178,9 @@ def select(raw: dict, priority_map: dict, today: datetime) -> dict:
         clusters = cluster_articles(dated, priority_map)
         clusters.sort(
             key=lambda c: (
-                -c["evidence_score"],
-                -c["corroboration_count"],
-                priority_map.get((category, c["source"]), 99),
+                -c["corroboration_count"],                       # 1순위: 여러 매체가 보도할수록 위로
+                priority_map.get((category, c["source"]), 99),   # 2순위: 매체 우선순위 높을수록 위로
+                recency_key(c["published_iso"]),                 # 3순위: 발행 최신순(동점 시 임의성 제거)
             )
         )
         selected = clusters[:PER_CATEGORY]

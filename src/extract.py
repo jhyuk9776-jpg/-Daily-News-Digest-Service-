@@ -1,11 +1,13 @@
 """Day 4: 기사 내용 확보(본문 추출 + 클러스터 폴백 체인).
 
-요약에 쓸 텍스트를 정한다.
-  - 대표 매체의 RSS 요약이 충분하면 그대로 사용(본문 추출 안 함)
-  - 비었/짧으면 대표 매체 본문 추출 시도
-  - 실패하면 같은 사건(클러스터)의 다음 우선순위 매체 본문으로 순차 재시도
-  - 모든 매체에서 실패하면 None (요약 제외 안내 대상)
+요약에 쓸 텍스트 후보를 우선순위 순으로 하나씩 내보낸다(제너레이터).
+각 매체마다:
+  - RSS 요약이 충분하면 먼저 내보낸다(HTTP 없이 저렴).
+  - 이어서 본문 추출 결과를 내보낸다(짧은 RSS 보강).
+후보 순서: 대표 매체(RSS→본문) → 같은 사건(클러스터)의 다음 우선순위 매체(본문).
 
+소비자(summarize)는 요약 불릿이 나오는 첫 후보에서 멈춘다. 앞 후보에서 성공하면
+제너레이터가 더 진행되지 않으므로 불필요한 본문 추출/HTTP가 발생하지 않는다.
 본문 추출은 최종 선별된 8건에만 적용되므로 호출량이 적다.
 """
 
@@ -48,22 +50,27 @@ def extract_body(url: str) -> str | None:
     return text[:MAX_CHARS]
 
 
-def get_content(item: dict) -> dict | None:
-    """선별 항목에서 요약에 쓸 텍스트를 확보한다.
+def candidate_sources(item: dict):
+    """요약 후보 매체를 우선순위 순으로 (매체명, 링크, RSS요약)으로 내보낸다.
 
-    반환: {"text", "content_source", "method"} 또는 None(모든 매체 실패).
-    method: "rss"(요약 그대로) | "body"(본문 추출).
+    대표 매체(1순위)가 먼저, 이어서 같은 사건의 관련 매체(우선순위 순)가 온다.
     """
-    # 후보: 대표 매체(요약 보유) → 클러스터 내 다른 매체(본문 추출)
-    candidates = [(item["source"], item["link"], item.get("summary", ""))]
+    yield (item["source"], item["link"], item.get("summary", ""))
     for rl in item.get("related_links", []):
-        candidates.append((rl["source"], rl["link"], ""))
+        yield (rl["source"], rl["link"], "")
 
-    for source, link, summary in candidates:
+
+def iter_contents(item: dict):
+    """선별 항목에서 요약에 쓸 텍스트 후보를 우선순위 순으로 하나씩 내보낸다.
+
+    각 후보: {"text", "content_source", "method", "link"}.
+    method: "rss"(요약 그대로) | "body"(본문 추출).
+    매체마다 충분한 RSS 요약을 먼저, 이어서 본문 추출 결과를 내보낸다.
+    제너레이터라 소비자가 필요할 때만 다음 후보(및 본문 추출)를 계산한다.
+    """
+    for source, link, summary in candidate_sources(item):
         if summary and len(summary) >= MIN_SUMMARY:
-            return {"text": summary, "content_source": source, "method": "rss"}
+            yield {"text": summary, "content_source": source, "method": "rss", "link": link}
         body = extract_body(link)
         if body:
-            return {"text": body, "content_source": source, "method": "body"}
-
-    return None
+            yield {"text": body, "content_source": source, "method": "body", "link": link}
