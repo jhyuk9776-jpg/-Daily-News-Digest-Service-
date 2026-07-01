@@ -11,7 +11,9 @@
 
 import os
 import sys
+import tempfile
 import unittest
+from pathlib import Path
 from unittest.mock import patch
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
@@ -98,6 +100,44 @@ class SummarizeItemTest(unittest.TestCase):
         bullets, source, status, cached = summarize.summarize_item(_item(), {}, False)
         self.assertEqual(bullets, ["사실"])
         self.assertEqual(status, "ok")
+
+
+class RunExitCodeTest(unittest.TestCase):
+    """요약 생성 실패가 과반이면 run()이 비정상 종료(1)해 CI를 빨간불로 만든다."""
+
+    def _run_with_statuses(self, statuses):
+        selected = {
+            "date": "2026-07-01",
+            "categories": {"경제": [
+                {"title": f"제목{i}", "source": "매일경제", "link": f"L{i}",
+                 "related_links": []}
+                for i in range(len(statuses))
+            ]},
+        }
+        # summarize_item은 (bullets, source, status, cached)를 반환한다.
+        side = [(["사실"] if s == "ok" else [], "매일경제", s, False)
+                for s in statuses]
+        with tempfile.TemporaryDirectory() as tmp:
+            with patch.dict(os.environ, {"REPLICATE_API_TOKEN": "x"}), \
+                 patch("summarize.load_selected", return_value=selected), \
+                 patch("summarize.load_cache", return_value={}), \
+                 patch("summarize.save_cache"), \
+                 patch("summarize.summarize_item", side_effect=side), \
+                 patch.object(summarize, "NEWS_DIR", Path(tmp)):
+                return summarize.run("2026-07-01", dry_run=False)
+
+    def test_majority_api_failed_returns_nonzero(self):
+        self.assertEqual(self._run_with_statuses(["api_failed"] * 8), 1)
+
+    def test_half_api_failed_returns_nonzero(self):
+        # 기준(FAIL_RATIO=0.5) 정확히 충족도 실패로 본다.
+        self.assertEqual(self._run_with_statuses(["api_failed", "ok"]), 1)
+
+    def test_minority_api_failed_returns_zero(self):
+        self.assertEqual(self._run_with_statuses(["api_failed", "ok", "ok"]), 0)
+
+    def test_all_ok_returns_zero(self):
+        self.assertEqual(self._run_with_statuses(["ok"] * 8), 0)
 
 
 if __name__ == "__main__":

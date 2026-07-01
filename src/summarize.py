@@ -39,6 +39,11 @@ MAX_TOKENS = 1024   # Replicate Claude 모델 최소값
 THROTTLE_WAIT = 12  # 429(분당 제한) 시 대기 초
 MAX_RETRY = 5
 
+# 요약 생성 실패(api_failed)가 전체 대비 이 비율 이상이면 조용한 품질 붕괴로 보고
+# 비정상 종료한다. 링크-only 폴백은 개별 기사의 최후 수단이지, 401 인증 실패처럼
+# 전량이 무너진 상황까지 "성공"으로 넘기라는 뜻이 아니다(무인 실행 시 CI 빨간불).
+FAIL_RATIO = 0.5
+
 # 사실 중심 요약 규칙 (AI_CONTEXT.md §6)
 SYSTEM_PROMPT = """당신은 사실 중심 뉴스 다이제스트의 편집자다. 주어진 기사에서 사실만 뽑아 짧게 정리한다.
 
@@ -244,6 +249,16 @@ def run(date: str, dry_run: bool) -> int:
     print(f"  요약 {counters['ok']}건(캐시 {counters['cached']}) · "
           f"요약실패 {counters['api_failed']} · 추출실패 {counters['extract_failed']}")
     print(f"저장됨: {out_path}")
+
+    # 요약 생성 실패가 과반이면 무인 실행에서 조용히 넘기지 않고 비정상 종료한다.
+    # (파일은 위에서 이미 저장해 아티팩트로 확인 가능하되, run.sh의 set -e가
+    #  자동커밋 단계를 막아 부실한 다이제스트가 main에 올라가는 것을 차단한다.)
+    total = counters["ok"] + counters["api_failed"] + counters["extract_failed"]
+    if not dry_run and total and counters["api_failed"] / total >= FAIL_RATIO:
+        print(f"오류: 요약 생성 실패가 과반입니다 "
+              f"({counters['api_failed']}/{total}, 기준 {FAIL_RATIO:.0%}). "
+              f"토큰·API 상태를 확인하세요.", file=sys.stderr)
+        return 1
     return 0
 
 
