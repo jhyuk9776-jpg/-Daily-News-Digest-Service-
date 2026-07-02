@@ -13,7 +13,8 @@
 | [../AI_CONTEXT.md](../AI_CONTEXT.md) | 모든 AI가 먼저 읽어야 할 공통 작업 맥락 |
 | [01-product-brief.md](01-product-brief.md) | StoryBrand 서사와 Phase 1 제품/기술 기준을 합친 통합 기획서 |
 | [02-mvp-spec.md](02-mvp-spec.md) | 첫 버전에서 만들 기능과 만들지 않을 기능 |
-| [03-system-architecture.md](03-system-architecture.md) | 수집, 선별, 요약, 전달 파이프라인 설계 |
+| [시스템기획/](시스템기획/) | **어떻게 만드는가** — 아키텍처 + 기능별 설계 (구 03-system-architecture 이전) |
+| [서비스기획/](서비스기획/) | **왜·누구·판매** — 상업화 서비스 기획서 |
 | [04-decision-log.md](04-decision-log.md) | 앞으로 확정해야 할 결정 사항과 현재 상태 |
 | [05-roadmap.md](05-roadmap.md) | 1주차 실행 계획과 이후 확장 방향 |
 | [회의내용정리/01-today-plan-and-cost.md](회의내용정리/01-today-plan-and-cost.md) | 오늘 실행 계획, 비용 가정, Phase 1 결정안 |

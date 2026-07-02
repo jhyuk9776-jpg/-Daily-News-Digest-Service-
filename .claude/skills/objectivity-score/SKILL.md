@@ -7,7 +7,7 @@ description: Use when the user asks to accumulate/update media objectivity score
 
 요약하지 않은 수집 기사까지 감점 휴리스틱으로 채점해 매체별 객관성 점수를
 이동평균으로 누적한다. observe-only — 선별·랭킹에 반영하지 않는다.
-설계: docs/superpowers/specs/2026-07-01-objectivity-scorer-design.md
+설계: 기획/시스템기획/기능설계/04-객관성-점수축적기.md
 
 ## 언제
 - 사용자가 "점수 축적해줘", "객관성 점수 갱신", "매체 점수 돌려줘"라고 할 때.

@@ -124,7 +124,7 @@ AI 요약은 아래 규칙을 지킨다.
 2. `기획/README.md`
 3. `기획/01-product-brief.md`
 4. `기획/02-mvp-spec.md`
-5. `기획/03-system-architecture.md`
+5. `기획/시스템기획/` (아키텍처 + 기능별 설계)
 6. `기획/04-decision-log.md`
 7. `기획/05-roadmap.md`
 8. `기획/회의내용정리/01-today-plan-and-cost.md`

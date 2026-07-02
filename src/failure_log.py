@@ -3,7 +3,7 @@
 실패·에러 데이터는 추출기 개선·엣지케이스 사전의 연료다. 실패 0건이면 파일을
 만들지 않는다. failures/는 git 추적해 커밋으로 누적한다(scores/ 선례).
 
-설계: docs/superpowers/specs/2026-07-02-failure-handling-design.md
+설계: 기획/시스템기획/기능설계/06-실패처리.md
 """
 
 from __future__ import annotations
