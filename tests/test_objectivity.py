@@ -162,11 +162,37 @@ class ProcessAndBackfillTest(unittest.TestCase):
                 self._art("A", "깨끗", "2020-01-15T01:00:00+00:00")])
             with patch.object(objectivity, "RAW_DIR", raw_dir), \
                  patch.object(objectivity, "SCORES_DIR", tmp_p / "scores"), \
-                 patch.object(objectivity, "MEDIA_FILE", tmp_p / "scores" / "media.json"):
+                 patch.object(objectivity, "MEDIA_FILE", tmp_p / "scores" / "media.json"), \
+                 patch.object(objectivity, "active_sources", return_value={"A"}):
                 store = objectivity.run_backfill()
         self.assertIn(old, store["processed_dates"])
         self.assertIn("A", store["media"])  # 파일 날짜 기준이라 통과
         self.assertEqual(store["media"]["A"]["count"], 1)
+
+
+class ActiveSourceFilterTest(unittest.TestCase):
+    def _write_raw(self, raw_dir, date, articles):
+        (raw_dir / f"{date}.json").write_text(
+            json.dumps({"date": date, "articles": articles}, ensure_ascii=False),
+            encoding="utf-8")
+
+    def test_dated_articles_excludes_inactive_source(self):
+        # sources.yaml에 없는 매체(제외됨)는 채점 대상에서 빠진다.
+        with tempfile.TemporaryDirectory() as tmp:
+            raw_dir = Path(tmp)
+            self._write_raw(raw_dir, "2020-01-15", [
+                {"category": "경제", "source": "한국경제", "title": "t1",
+                 "summary": "", "link": "L1", "published_iso": "2020-01-15T01:00:00+00:00"},
+                {"category": "경제", "source": "이코노미스트 타임스", "title": "t2",
+                 "summary": "", "link": "L2", "published_iso": "2020-01-15T01:00:00+00:00"},
+            ])
+            with patch.object(objectivity, "RAW_DIR", raw_dir), \
+                 patch.object(objectivity, "active_sources",
+                              return_value={"한국경제"}):
+                arts = objectivity.dated_articles_for("2020-01-15")
+        sources = {a["source"] for a in arts}
+        self.assertIn("한국경제", sources)
+        self.assertNotIn("이코노미스트 타임스", sources)
 
 
 if __name__ == "__main__":

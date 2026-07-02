@@ -20,7 +20,11 @@ import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from curate import in_date_window  # 날짜창 필터 재사용(격리: 단방향 의존)
+from curate import (  # 날짜창·출처목록 재사용(격리: 단방향 의존)
+    SOURCES_FILE,
+    in_date_window,
+    load_priority_map,
+)
 
 ROOT = Path(__file__).resolve().parent.parent
 RAW_DIR = ROOT / "raw"
@@ -122,6 +126,15 @@ def save_article_report(date: str, records: list[dict]) -> None:
         json.dump(payload, f, ensure_ascii=False, indent=2)
 
 
+def active_sources() -> set[str]:
+    """sources.yaml에 등록된 현재 활성 매체명 집합.
+
+    제외된(더 이상 sources.yaml에 없는) 매체는 채점 대상에서 뺀다. 과거 raw를
+    백필해도 옛 출처가 다시 점수에 잡히지 않게 하는 방어선.
+    """
+    return {source for (_cat, source) in load_priority_map(SOURCES_FILE)}
+
+
 def dated_articles_for(date: str) -> list[dict]:
     path = RAW_DIR / f"{date}.json"
     if not path.exists():
@@ -130,7 +143,9 @@ def dated_articles_for(date: str) -> list[dict]:
         raw = json.load(f)
     # 날짜창 기준은 now()가 아니라 그 raw 파일의 날짜(정오 KST). 재백필 시 과거 파일도 정확.
     ref = datetime.fromisoformat(date).replace(tzinfo=KST) + timedelta(hours=12)
-    return [a for a in raw["articles"] if in_date_window(a, ref)]
+    active = active_sources()
+    return [a for a in raw["articles"]
+            if in_date_window(a, ref) and a.get("source", "") in active]
 
 
 def process_date(store: dict, date: str) -> dict:
