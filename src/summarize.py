@@ -127,36 +127,41 @@ def summarize_item(item: dict, cache: dict, dry_run: bool):
     우선순위 순 후보(대표 매체 RSS/본문 → 다음 순위 매체 본문)를 돌며,
     요약 불릿이 나오는 첫 후보를 쓴다. 앞 후보에서 성공하면 뒤 후보는 시도하지 않는다.
 
-    반환: (bullets, content_source, status, cached)
-      status: "ok"          — 어떤 후보에서 불릿을 얻음
-              "api_failed"   — 후보 텍스트는 있었으나 모든 후보에서 불릿 0개
+    반환: (bullets, content_source, status, cached, detail)
+      status: "ok"            — 어떤 후보에서 불릿을 얻음
+              "call_error"    — 후보 처리 중 예외가 났고 끝까지 불릿 0 (detail=마지막 예외)
+              "api_failed"    — 예외 없이 모든 후보 불릿 0 (사실 못 뽑음)
               "extract_failed" — 후보 텍스트를 하나도 못 만듦
     """
     had_content = False
+    last_error = None
     for content in iter_contents(item):
         had_content = True
         link = content["link"]
         source = content["content_source"]
 
         if link in cache:
-            return cache[link], source, "ok", True
+            return cache[link], source, "ok", True, None
         if dry_run:
-            return ["(dry-run: 요약 생략)"], source, "ok", False
+            return ["(dry-run: 요약 생략)"], source, "ok", False, None
 
         try:
             bullets = summarize_one(item["title"], source, content["text"])
         except Exception as exc:  # noqa: BLE001 - 한 후보 실패가 전체를 멈추면 안 됨
+            last_error = str(exc)
             print(f"    [요약오류] {source} / {item['title'][:20]}: {exc}", file=sys.stderr)
             continue
 
         if bullets:
             cache[link] = bullets
-            return bullets, source, "ok", False
+            return bullets, source, "ok", False, None
         # 불릿 0개 → 다음 우선순위 후보로 폴백
 
-    if had_content:
-        return [], None, "api_failed", False
-    return [], None, "extract_failed", False
+    if not had_content:
+        return [], None, "extract_failed", False, None
+    if last_error is not None:
+        return [], None, "call_error", False, last_error
+    return [], None, "api_failed", False, "모든 후보 불릿 0"
 
 
 def render_item(item: dict, bullets: list[str], status: str) -> str:

@@ -40,7 +40,7 @@ class SummarizeItemTest(unittest.TestCase):
             {"text": "body", "content_source": "매일경제", "method": "body", "link": "L1"},
         ])
         m_sum.side_effect = [[], ["사실"]]  # 첫 후보 불릿 0 → 다음 후보에서 성공
-        bullets, source, status, cached = summarize.summarize_item(_item(), {}, False)
+        bullets, source, status, cached, detail = summarize.summarize_item(_item(), {}, False)
         self.assertEqual(bullets, ["사실"])
         self.assertEqual(status, "ok")
         self.assertEqual(m_sum.call_count, 2)
@@ -53,7 +53,7 @@ class SummarizeItemTest(unittest.TestCase):
             {"text": "b", "content_source": "연합", "method": "body", "link": "L2"},
         ])
         m_sum.side_effect = [[], []]
-        bullets, source, status, cached = summarize.summarize_item(_item(), {}, False)
+        bullets, source, status, cached, detail = summarize.summarize_item(_item(), {}, False)
         self.assertEqual(bullets, [])
         self.assertEqual(status, "api_failed")
 
@@ -61,7 +61,7 @@ class SummarizeItemTest(unittest.TestCase):
     @patch("summarize.iter_contents")
     def test_no_content_candidate_returns_extract_failed(self, m_iter, m_sum):
         m_iter.return_value = iter([])
-        bullets, source, status, cached = summarize.summarize_item(_item(), {}, False)
+        bullets, source, status, cached, detail = summarize.summarize_item(_item(), {}, False)
         self.assertEqual(status, "extract_failed")
         m_sum.assert_not_called()
 
@@ -73,7 +73,7 @@ class SummarizeItemTest(unittest.TestCase):
             {"text": "b", "content_source": "연합", "method": "body", "link": "L2"},
         ])
         m_sum.side_effect = [["사실"]]
-        bullets, source, status, cached = summarize.summarize_item(_item(), {}, False)
+        bullets, source, status, cached, detail = summarize.summarize_item(_item(), {}, False)
         self.assertEqual(m_sum.call_count, 1)
         self.assertEqual(status, "ok")
 
@@ -84,7 +84,7 @@ class SummarizeItemTest(unittest.TestCase):
             {"text": "a", "content_source": "매일경제", "method": "rss", "link": "L1"},
         ])
         cache = {"L1": ["캐시된 사실"]}
-        bullets, source, status, cached = summarize.summarize_item(_item(), cache, False)
+        bullets, source, status, cached, detail = summarize.summarize_item(_item(), cache, False)
         self.assertEqual(bullets, ["캐시된 사실"])
         self.assertTrue(cached)
         m_sum.assert_not_called()
@@ -97,9 +97,31 @@ class SummarizeItemTest(unittest.TestCase):
             {"text": "b", "content_source": "연합", "method": "body", "link": "L2"},
         ])
         m_sum.side_effect = [RuntimeError("429"), ["사실"]]
-        bullets, source, status, cached = summarize.summarize_item(_item(), {}, False)
+        bullets, source, status, cached, detail = summarize.summarize_item(_item(), {}, False)
         self.assertEqual(bullets, ["사실"])
         self.assertEqual(status, "ok")
+
+    @patch("summarize.summarize_one")
+    @patch("summarize.iter_contents")
+    def test_all_exceptions_returns_call_error(self, m_iter, m_sum):
+        m_iter.return_value = iter([
+            {"text": "a", "content_source": "매일경제", "method": "rss", "link": "L1"},
+            {"text": "b", "content_source": "연합", "method": "body", "link": "L2"},
+        ])
+        m_sum.side_effect = [RuntimeError("401 Unauthorized"), RuntimeError("500")]
+        bullets, source, status, cached, detail = summarize.summarize_item(_item(), {}, False)
+        self.assertEqual(status, "call_error")
+        self.assertIn("500", detail)
+
+    @patch("summarize.summarize_one")
+    @patch("summarize.iter_contents")
+    def test_empty_bullets_no_exception_is_api_failed(self, m_iter, m_sum):
+        m_iter.return_value = iter([
+            {"text": "a", "content_source": "매일경제", "method": "rss", "link": "L1"},
+        ])
+        m_sum.side_effect = [[]]
+        bullets, source, status, cached, detail = summarize.summarize_item(_item(), {}, False)
+        self.assertEqual(status, "api_failed")
 
 
 class RunExitCodeTest(unittest.TestCase):
