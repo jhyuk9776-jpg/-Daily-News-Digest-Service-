@@ -1,0 +1,16 @@
+{
+  "date": "2026-07-01",
+  "generated_at": "2026-07-02T15:00:01+09:00",
+  "total_articles": 16,
+  "failed_count": 1,
+  "failures": [
+    {
+      "category": "경제",
+      "source": "한국경제",
+      "title": "\"성과급 깎이나\" 삼전닉스 술렁일 때…드러난 민낯에 '통곡' [권용훈의 트렌드워치]",
+      "link": "https://www.hankyung.com/article/202607018281i",
+      "reason": "api_failed",
+      "detail": "모든 후보 불릿 0"
+    }
+  ]
+}

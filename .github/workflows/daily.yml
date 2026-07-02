@@ -38,7 +38,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add News/
+          git add News/ failures/
           if git diff --staged --quiet; then
             echo "변경된 다이제스트 없음 — 커밋 생략"
           else
