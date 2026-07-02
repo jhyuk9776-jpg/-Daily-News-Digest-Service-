@@ -83,5 +83,42 @@ def objectivity_snapshot(store):
     return json.dumps(store, sort_keys=True, ensure_ascii=False)
 
 
+import json  # noqa: E402
+import tempfile  # noqa: E402
+from pathlib import Path  # noqa: E402
+from unittest.mock import patch  # noqa: E402
+
+
+class StoreIOTest(unittest.TestCase):
+    def test_load_missing_returns_empty(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            with patch.object(objectivity, "MEDIA_FILE", Path(tmp) / "media.json"):
+                store = objectivity.load_store()
+        self.assertEqual(store, {"media": {}, "processed_dates": []})
+
+    def test_save_then_load_roundtrip(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            mf = Path(tmp) / "media.json"
+            with patch.object(objectivity, "MEDIA_FILE", mf), \
+                 patch.object(objectivity, "SCORES_DIR", Path(tmp)):
+                objectivity.save_store({"media": {"A": {"score": 90.0, "count": 1,
+                                       "penalized": 0, "last_seen": "2026-07-01"}},
+                                       "processed_dates": ["2026-07-01"]})
+                store = objectivity.load_store()
+        self.assertEqual(store["media"]["A"]["score"], 90.0)
+        self.assertIn("updated_at", store)
+
+    def test_article_report_saves_only_penalized(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            with patch.object(objectivity, "SCORES_DIR", Path(tmp)):
+                objectivity.save_article_report("2026-07-01", [
+                    {"source": "A", "category": "경제", "title": "논란이 커지고 있다",
+                     "link": "L1", "score": 90, "hits": ["논란이 커지고 있다"]},
+                ])
+                data = json.loads((Path(tmp) / "articles-2026-07-01.json").read_text())
+        self.assertEqual(data["penalized_count"], 1)
+        self.assertEqual(data["articles"][0]["source"], "A")
+
+
 if __name__ == "__main__":
     unittest.main()

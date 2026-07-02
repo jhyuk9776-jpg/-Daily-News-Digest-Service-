@@ -14,7 +14,19 @@
 
 from __future__ import annotations
 
+import json
 import re
+import sys
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
+
+from curate import in_date_window  # 날짜창 필터 재사용(격리: 단방향 의존)
+
+ROOT = Path(__file__).resolve().parent.parent
+RAW_DIR = ROOT / "raw"
+SCORES_DIR = ROOT / "scores"
+MEDIA_FILE = SCORES_DIR / "media.json"
+KST = timezone(timedelta(hours=9))
 
 BASELINE = 100
 PENALTY = 10
@@ -81,3 +93,41 @@ def update_media_scores(store: dict, dated_articles: list[dict], date: str) -> d
 
     store.setdefault("processed_dates", []).append(date)
     return store
+
+
+def load_store() -> dict:
+    if MEDIA_FILE.exists():
+        with MEDIA_FILE.open("r", encoding="utf-8") as f:
+            return json.load(f)
+    return {"media": {}, "processed_dates": []}
+
+
+def save_store(store: dict) -> None:
+    SCORES_DIR.mkdir(parents=True, exist_ok=True)
+    store["updated_at"] = datetime.now(KST).isoformat(timespec="seconds")
+    with MEDIA_FILE.open("w", encoding="utf-8") as f:
+        json.dump(store, f, ensure_ascii=False, indent=2)
+
+
+def save_article_report(date: str, records: list[dict]) -> None:
+    SCORES_DIR.mkdir(parents=True, exist_ok=True)
+    penalized = [r for r in records if r["score"] < BASELINE]
+    payload = {
+        "date": date,
+        "scored": len(records),
+        "penalized_count": len(penalized),
+        "articles": penalized,
+    }
+    with (SCORES_DIR / f"articles-{date}.json").open("w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+
+
+def dated_articles_for(date: str) -> list[dict]:
+    path = RAW_DIR / f"{date}.json"
+    if not path.exists():
+        raise FileNotFoundError(f"수집 결과가 없음: {path} (먼저 fetch.py 실행)")
+    with path.open("r", encoding="utf-8") as f:
+        raw = json.load(f)
+    # 날짜창 기준은 now()가 아니라 그 raw 파일의 날짜(정오 KST). 재백필 시 과거 파일도 정확.
+    ref = datetime.fromisoformat(date).replace(tzinfo=KST) + timedelta(hours=12)
+    return [a for a in raw["articles"] if in_date_window(a, ref)]
