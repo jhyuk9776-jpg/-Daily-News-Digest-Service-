@@ -32,7 +32,6 @@ SELECTED_DIR = ROOT / "selected"
 LIMITS_FILE = ROOT / "limits.yaml"
 
 KST = timezone(timedelta(hours=9))
-PER_CATEGORY = 2            # 분야별 선택 건수 (기획 확정값)
 SIMILARITY_THRESHOLD = 0.6  # 제목 유사도 중복 판정 기준
 
 # 증거 신호: 공신력 있는 기관명 (있으면 가점)
@@ -179,7 +178,10 @@ def cluster_articles(articles: list[dict], priority_map: dict) -> list[dict]:
     return result
 
 
-def select(raw: dict, priority_map: dict, today: datetime) -> dict:
+def select(raw: dict, priority_map: dict, today: datetime,
+           default_limit: int = 2, per_category_limits: dict = None) -> dict:
+    if per_category_limits is None:
+        per_category_limits = {}
     categories: dict[str, list[dict]] = {}
     stats: dict[str, dict] = {}
 
@@ -198,7 +200,8 @@ def select(raw: dict, priority_map: dict, today: datetime) -> dict:
                 recency_key(c["published_iso"]),                 # 3순위: 발행 최신순(동점 시 임의성 제거)
             )
         )
-        selected = clusters[:PER_CATEGORY]
+        limit = per_category_limits.get(category, default_limit)
+        selected = clusters[:limit]
         categories[category] = selected
         stats[category] = {
             "candidates": len(arts),
@@ -236,8 +239,9 @@ def main() -> int:
         return 1
 
     priority_map = load_priority_map(SOURCES_FILE)
+    default_limit, per_category_limits = load_limits(LIMITS_FILE)
     today = datetime.now(KST)
-    result = select(raw, priority_map, today)
+    result = select(raw, priority_map, today, default_limit, per_category_limits)
     out_path = save(result)
 
     print(f"=== 선별 결과 ({date}, 창: {result['window']['from']}~{result['window']['to']}) ===")
