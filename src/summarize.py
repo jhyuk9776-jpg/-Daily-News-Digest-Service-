@@ -27,6 +27,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 from extract import iter_contents
+from failure_log import save_failure_log
 
 ROOT = Path(__file__).resolve().parent.parent
 SELECTED_DIR = ROOT / "selected"
@@ -164,16 +165,10 @@ def summarize_item(item: dict, cache: dict, dry_run: bool):
     return [], None, "api_failed", False, "모든 후보 불릿 0"
 
 
-def render_item(item: dict, bullets: list[str], status: str) -> str:
-    """선별 항목 1건을 마크다운으로 만든다."""
+def render_item(item: dict, bullets: list[str]) -> str:
+    """선별 항목 1건(요약 성공)을 마크다운으로 만든다."""
     lines = [f"### {item['title']}"]
-    if status == "ok":
-        lines += [f"- {b}" for b in bullets]
-    elif status == "extract_failed":
-        lines.append("- (본문 추출 실패로 요약 제외)")
-    elif status == "api_failed":
-        lines.append("- (요약 생성 실패 — 원문 링크만 제공)")
-
+    lines += [f"- {b}" for b in bullets]
     src = f"- 출처: [{item['source']}]({item['link']})"
     related = item.get("related_links", [])
     if related:
@@ -188,17 +183,18 @@ def build_markdown(selected: dict, results: dict, counters: dict) -> str:
     parts = [
         f"# 데일리 뉴스 다이제스트 - {date}",
         "",
-        f"> 생성: {now} · 요약 실패 {counters['api_failed']}건 · 추출 실패 "
-        f"{counters['extract_failed']}건",
+        f"> 생성: {now} · 요약실패 {counters['api_failed']}건 · 호출오류 "
+        f"{counters['call_error']}건 · 추출실패 {counters['extract_failed']}건",
     ]
     for category, items in selected["categories"].items():
         parts += ["", f"## {category}"]
-        if not items:
+        ok_items = [it for it in items if it["link"] in results]
+        if not ok_items:
             parts += ["", "오늘 수집된 주요 기사가 없습니다."]
             continue
-        for item in items:
+        for item in ok_items:
             bullets, status = results[item["link"]]
-            parts += ["", render_item(item, bullets, status)]
+            parts += ["", render_item(item, bullets)]
     parts.append("")
     return "\n".join(parts)
 
@@ -220,27 +216,32 @@ def run(date: str, dry_run: bool) -> int:
 
     cache = load_cache()
     results: dict[str, tuple[list[str], str]] = {}
-    counters = {"ok": 0, "api_failed": 0, "extract_failed": 0, "cached": 0}
+    counters = {"ok": 0, "api_failed": 0, "call_error": 0,
+                "extract_failed": 0, "cached": 0}
+    failures = []
 
     for category, items in selected["categories"].items():
         for item in items:
-            bullets, source, status, cached = summarize_item(item, cache, dry_run)
-            results[item["link"]] = (bullets, status)
+            bullets, source, status, cached, detail = summarize_item(item, cache, dry_run)
 
             if status == "ok":
+                results[item["link"]] = (bullets, status)
                 counters["ok"] += 1
                 if cached:
                     counters["cached"] += 1
                     print(f"  [캐시] {category} / {item['title'][:30]}")
                 else:
                     print(f"  [요약] {category} / {item['title'][:30]} ({source})")
-            elif status == "extract_failed":
-                counters["extract_failed"] += 1
-                print(f"  [추출실패] {category} / {item['title'][:30]}", file=sys.stderr)
-            else:  # api_failed
-                counters["api_failed"] += 1
-                print(f"  [요약실패] {category} / {item['title'][:30]} "
-                      f"(모든 후보 불릿 0)", file=sys.stderr)
+            else:
+                counters[status] += 1
+                failures.append({
+                    "category": category, "source": item["source"],
+                    "title": item["title"], "link": item["link"],
+                    "reason": status, "detail": detail or "",
+                })
+                label = {"api_failed": "요약실패", "call_error": "호출오류",
+                         "extract_failed": "추출실패"}[status]
+                print(f"  [{label}] {category} / {item['title'][:30]}", file=sys.stderr)
 
     if not dry_run:
         save_cache(cache)
@@ -250,18 +251,30 @@ def run(date: str, dry_run: bool) -> int:
     out_path = NEWS_DIR / f"{date}.md"
     out_path.write_text(markdown, encoding="utf-8")
 
+    total = (counters["ok"] + counters["api_failed"] + counters["call_error"]
+             + counters["extract_failed"])
+    log_path = save_failure_log(date, total, failures)
+
     print(f"\n=== 완료 ({date}) ===")
     print(f"  요약 {counters['ok']}건(캐시 {counters['cached']}) · "
-          f"요약실패 {counters['api_failed']} · 추출실패 {counters['extract_failed']}")
+          f"요약실패 {counters['api_failed']} · 호출오류 {counters['call_error']} · "
+          f"추출실패 {counters['extract_failed']}")
     print(f"저장됨: {out_path}")
 
-    # 요약 생성 실패가 과반이면 무인 실행에서 조용히 넘기지 않고 비정상 종료한다.
-    # (파일은 위에서 이미 저장해 아티팩트로 확인 가능하되, run.sh의 set -e가
-    #  자동커밋 단계를 막아 부실한 다이제스트가 main에 올라가는 것을 차단한다.)
-    total = counters["ok"] + counters["api_failed"] + counters["extract_failed"]
-    if not dry_run and total and counters["api_failed"] / total >= FAIL_RATIO:
-        print(f"오류: 요약 생성 실패가 과반입니다 "
-              f"({counters['api_failed']}/{total}, 기준 {FAIL_RATIO:.0%}). "
+    # 실패 알림: 조용히 넘기지 않는다.
+    if failures:
+        print(f"\n⚠ 실패 {len(failures)}건 — 기록: {log_path}", file=sys.stderr)
+        for f in failures:
+            print(f"    - [{f['reason']}] {f['category']} / {f['title'][:30]} "
+                  f"({f['source']})", file=sys.stderr)
+
+    # 요약을 못 낸 실패(api_failed+call_error)가 과반이면 무인 실행에서 조용히 넘기지
+    # 않고 비정상 종료한다. (파일은 위에서 저장돼 아티팩트로 확인 가능하되, run.sh의
+    # set -e가 자동커밋 단계를 막아 부실한 다이제스트가 main에 올라가는 것을 차단한다.)
+    guard_failures = counters["api_failed"] + counters["call_error"]
+    if not dry_run and total and guard_failures / total >= FAIL_RATIO:
+        print(f"오류: 요약 실패가 과반입니다 "
+              f"({guard_failures}/{total}, 기준 {FAIL_RATIO:.0%}). "
               f"토큰·API 상태를 확인하세요.", file=sys.stderr)
         return 1
     return 0

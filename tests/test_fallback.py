@@ -136,14 +136,15 @@ class RunExitCodeTest(unittest.TestCase):
                 for i in range(len(statuses))
             ]},
         }
-        # summarize_item은 (bullets, source, status, cached)를 반환한다.
-        side = [(["사실"] if s == "ok" else [], "매일경제", s, False)
+        # summarize_item은 (bullets, source, status, cached, detail)를 반환한다.
+        side = [(["사실"] if s == "ok" else [], "매일경제", s, False, None)
                 for s in statuses]
         with tempfile.TemporaryDirectory() as tmp:
             with patch.dict(os.environ, {"REPLICATE_API_TOKEN": "x"}), \
                  patch("summarize.load_selected", return_value=selected), \
                  patch("summarize.load_cache", return_value={}), \
                  patch("summarize.save_cache"), \
+                 patch("summarize.save_failure_log"), \
                  patch("summarize.summarize_item", side_effect=side), \
                  patch.object(summarize, "NEWS_DIR", Path(tmp)):
                 return summarize.run("2026-07-01", dry_run=False)
@@ -160,6 +161,32 @@ class RunExitCodeTest(unittest.TestCase):
 
     def test_all_ok_returns_zero(self):
         self.assertEqual(self._run_with_statuses(["ok"] * 8), 0)
+
+    def test_majority_call_error_returns_nonzero(self):
+        # 401 대량 인증실패는 call_error로 분류되어도 가드가 잡아야 한다.
+        self.assertEqual(self._run_with_statuses(["call_error"] * 8), 1)
+
+
+class BuildMarkdownExclusionTest(unittest.TestCase):
+    def _item(self, link):
+        return {"title": f"제목{link}", "source": "매일경제", "link": link,
+                "related_links": []}
+
+    def test_failed_items_excluded_from_body(self):
+        selected = {"date": "2026-07-01", "categories": {"경제": [
+            self._item("L1"), self._item("L2")]}}
+        results = {"L1": (["사실"], "ok")}  # L2는 실패라 results에 없음
+        counters = {"ok": 1, "api_failed": 1, "call_error": 0, "extract_failed": 0, "cached": 0}
+        md = summarize.build_markdown(selected, results, counters)
+        self.assertIn("제목L1", md)
+        self.assertNotIn("제목L2", md)
+
+    def test_all_failed_category_shows_empty_message(self):
+        selected = {"date": "2026-07-01", "categories": {"경제": [self._item("L1")]}}
+        results = {}  # 전원 실패
+        counters = {"ok": 0, "api_failed": 1, "call_error": 0, "extract_failed": 0, "cached": 0}
+        md = summarize.build_markdown(selected, results, counters)
+        self.assertIn("오늘 수집된 주요 기사가 없습니다", md)
 
 
 if __name__ == "__main__":
