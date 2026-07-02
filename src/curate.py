@@ -29,6 +29,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SOURCES_FILE = ROOT / "sources.yaml"
 RAW_DIR = ROOT / "raw"
 SELECTED_DIR = ROOT / "selected"
+LIMITS_FILE = ROOT / "limits.yaml"
 
 KST = timezone(timedelta(hours=9))
 PER_CATEGORY = 2            # 분야별 선택 건수 (기획 확정값)
@@ -56,6 +57,20 @@ def load_priority_map(path: Path) -> dict[tuple[str, str], int]:
         for s in sources:
             mapping[(category, s["매체명"])] = s.get("우선순위", 99)
     return mapping
+
+
+def load_limits(path: Path):
+    """분야별 요약 상한을 읽는다. 반환 (default_limit, per_category_limits).
+
+    파일이 없거나 비어 있으면 (2, {})로 폴백해 기존 동작(분야별 2건)을 유지한다.
+    """
+    if not path.exists():
+        return 2, {}
+    with path.open("r", encoding="utf-8") as f:
+        data = yaml.safe_load(f) or {}
+    default = data.get("default", 2)
+    per_category = data.get("per_category", {}) or {}
+    return default, per_category
 
 
 def load_raw(date: str) -> dict:
