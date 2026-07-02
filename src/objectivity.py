@@ -45,3 +45,39 @@ def objectivity_score(article: dict) -> dict:
         hits.extend(m.group(0) for m in pat.finditer(text))
     score = max(FLOOR, BASELINE - PENALTY * len(hits))
     return {"score": score, "hits": hits}
+
+
+def update_media_scores(store: dict, dated_articles: list[dict], date: str) -> dict:
+    """그날 기사들을 매체별로 채점해 EWMA로 store에 누적한다(멱등)."""
+    if date in store.get("processed_dates", []):
+        return store  # 이미 처리한 날짜 — 이중 반영 방지
+
+    # 매체별 그날 점수 모으기
+    by_source: dict[str, list[int]] = {}
+    penalized: dict[str, int] = {}
+    for art in dated_articles:
+        source = art.get("source", "")
+        r = objectivity_score(art)
+        by_source.setdefault(source, []).append(r["score"])
+        if r["hits"]:
+            penalized[source] = penalized.get(source, 0) + 1
+
+    media = store.setdefault("media", {})
+    for source, scores in by_source.items():
+        day_avg = sum(scores) / len(scores)
+        if source in media:
+            prev = media[source]
+            prev["score"] = (1 - EWMA_ALPHA) * prev["score"] + EWMA_ALPHA * day_avg
+            prev["count"] += len(scores)
+            prev["penalized"] += penalized.get(source, 0)
+            prev["last_seen"] = date
+        else:
+            media[source] = {
+                "score": day_avg,
+                "count": len(scores),
+                "penalized": penalized.get(source, 0),
+                "last_seen": date,
+            }
+
+    store.setdefault("processed_dates", []).append(date)
+    return store

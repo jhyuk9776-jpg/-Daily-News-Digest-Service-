@@ -42,5 +42,46 @@ class ScoreTest(unittest.TestCase):
         self.assertEqual(r["score"], 0)
 
 
+class MediaAggregateTest(unittest.TestCase):
+    def _empty_store(self):
+        return {"media": {}, "processed_dates": []}
+
+    def test_new_media_uses_day_average_as_initial(self):
+        arts = [
+            {"title": "깨끗한 기사", "summary": "", "source": "한국경제"},
+            {"title": "논란이 커지고 있다", "summary": "", "source": "한국경제"},
+        ]  # 점수 100, 90 → 그날 평균 95
+        store = objectivity.update_media_scores(self._empty_store(), arts, "2026-07-01")
+        m = store["media"]["한국경제"]
+        self.assertAlmostEqual(m["score"], 95.0)
+        self.assertEqual(m["count"], 2)
+        self.assertEqual(m["penalized"], 1)
+        self.assertEqual(m["last_seen"], "2026-07-01")
+
+    def test_ewma_blends_with_existing(self):
+        store = {
+            "media": {"한국경제": {"score": 92.0, "count": 10, "penalized": 0,
+                                   "last_seen": "2026-06-30"}},
+            "processed_dates": ["2026-06-30"],
+        }
+        arts = [{"title": "깨끗", "summary": "", "source": "한국경제"}]  # 그날 평균 100
+        store = objectivity.update_media_scores(store, arts, "2026-07-01")
+        # 0.9*92 + 0.1*100 = 92.8
+        self.assertAlmostEqual(store["media"]["한국경제"]["score"], 92.8)
+        self.assertEqual(store["media"]["한국경제"]["count"], 11)
+
+    def test_idempotent_same_date_skipped(self):
+        arts = [{"title": "깨끗", "summary": "", "source": "한국경제"}]
+        store = objectivity.update_media_scores(self._empty_store(), arts, "2026-07-01")
+        before = objectivity_snapshot(store)
+        store = objectivity.update_media_scores(store, arts, "2026-07-01")
+        self.assertEqual(objectivity_snapshot(store), before)
+
+
+def objectivity_snapshot(store):
+    import json
+    return json.dumps(store, sort_keys=True, ensure_ascii=False)
+
+
 if __name__ == "__main__":
     unittest.main()
