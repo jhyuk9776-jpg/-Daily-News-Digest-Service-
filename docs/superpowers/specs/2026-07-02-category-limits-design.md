@@ -1,0 +1,99 @@
+# 분야별 요약 상한 (Phase 1.5 선행판) 설계
+
+- 작성일: 2026-07-02
+- 작성자: 이재혁
+- 상태: 설계 확정, 구현 대기
+- 관련: 로드맵 4절 "분야별 기사 수 사용자 설정"(Phase 2 후보, 전역 N 선행판은 Phase 1.5로 분리 가능),
+  결정 로그 1.3(선별 정렬 기준), AI_CONTEXT §4(하루 8건 = 분야별 2건)
+
+## 1. 배경 / 목적
+
+현재 선별은 분야별 상한이 `curate.PER_CATEGORY=2` 상수로 고정돼 있다. 로드맵의
+"분야별 기사 수 사용자 설정"은 **고정 개수가 아니라 상한**으로, 일정 품질 이상만 요약해
+수가 모자라면 부실 기사를 억지로 채우지 않는 것이 핵심이다. 그 완성형은 객관성 점수를
+랭킹/게이트에 반영하는 **Phase 2 본편**에서 만든다.
+
+이 문서는 그 **선행판(Phase 1.5)** 이다. 품질 게이트 없이 **상한값만 설정으로 분리**해,
+분야별 상한을 올렸을 때(예: 경제 10건) 파이프라인이 상한까지 정상 동작하는지 —
+비용·Replicate 분당 제한·중복제거 클러스터 수를 —**배관 관점에서 검증**한다.
+
+**품질 게이트는 이번 범위가 아니다.** 객관성 점수가 observe-only(2일치·대부분 100점)라
+임계값을 근거로 정할 데이터가 아직 없다. 게이트는 데이터가 쌓인 뒤 본편에서 추가한다.
+
+## 2. 범위
+
+포함:
+- 분야별 상한을 담는 설정 파일 `limits.yaml`
+- `curate.py`에 설정 로더 추가
+- `select()`가 분야별 상한을 적용하도록 수정(고정 2 → 분야별 값)
+- 테스트
+
+제외(비목표):
+- 품질 게이트 / 객관성 점수의 랭킹 반영 (Phase 2 본편)
+- 인위적 하한(최소 N건 강제) — 없는 기사를 만들 수 없고 "부실 기사 억지 채움 금지" 원칙에 반함
+- 사용자별 설정 저장(Supabase), 조작 UI (Phase 2/3)
+- summarize/objectivity/run.sh/daily.yml 변경
+
+## 3. 결정 사항 (브레인스토밍 확정)
+
+| 쟁점 | 결정 |
+|---|---|
+| 설정 위치 | **별도 `limits.yaml`** (repo 루트). sources.yaml(주소록)과 관심사 분리, 기존 파서 무변경 |
+| 상한 초과 | 정렬 후 상위 N개만(`clusters[:limit]`) |
+| 후보 < 상한 | 있는 만큼만. 인위적 하한 없음(`min(limit, 가용 클러스터)`) |
+| 후보 0개 | 빈 섹션 허용(기존 동작 유지) |
+| 파일 부재 | `(default=2, {})` 반환 → 하위호환(파일 없어도 기존과 동일하게 8건) |
+| PER_CATEGORY 상수 | 제거하고 limits의 `default`로 일원화 |
+| 격리 | `curate.py` + `limits.yaml`만 변경 |
+
+## 4. 설정 스키마
+
+`limits.yaml` (repo 루트):
+```yaml
+# 분야별 요약 상한(선별 최대 개수). 품질 게이트는 Phase 2 본편에서 추가.
+default: 2
+per_category:
+  경제: 10
+```
+
+- `default`: `per_category`에 없는 분야에 적용할 상한.
+- `per_category`: 분야명 → 상한. 여기 없는 분야는 `default`.
+
+## 5. 인터페이스
+
+`load_limits(path: Path) -> tuple[int, dict[str, int]]`
+- `limits.yaml`을 읽어 `(default, per_category)` 반환.
+- 파일 없으면 `(2, {})`. (파싱 실패 시에도 안전 기본값으로 폴백)
+
+`select(raw, priority_map, today, default_limit=2, per_category_limits=None)`
+- 분야별: `limit = per_category_limits.get(category, default_limit)`
+- `selected = clusters[:limit]`
+- 나머지 정렬 기준(교차검증수→매체우선순위→최신순)은 결정 로그 1.3 그대로.
+
+`main()`은 `load_limits(LIMITS_FILE)`로 값을 읽어 `select()`에 전달한다.
+
+## 6. 데이터 흐름
+
+```
+limits.yaml → load_limits() → (default, per_category)
+raw/YYYY-MM-DD.json → select(..., default, per_category)
+  → 분야별 clusters 정렬 → clusters[:분야별_limit]
+  → selected/YYYY-MM-DD.json (기존과 동일 구조)
+```
+
+## 7. 테스트 (`tests/test_curate_limits.py`)
+
+- `load_limits`: 정상 파싱 → `(2, {"경제": 10})`
+- `load_limits`: 파일 없음 → `(2, {})`
+- `select`: 경제 클러스터 15개 + 경제=10 → 경제 10개 선별, 미설정 분야는 default 2
+- `select`: 경제 클러스터 4개 + 경제=10 → 4개만(빈 채움 없음)
+- 격리: summarize/objectivity 소스에 limits 관련 신규 결합 없음(변경 파일 curate만)
+
+## 8. 검증 / 완료 조건
+
+- `tests/test_curate_limits.py` 전건 통과 + 전체 스위트 통과
+- `limits.yaml`에 `경제: 10` 설정 후 최신 raw로 `curate` 실행 →
+  `selected/*.json`의 경제 섹션이 상한(가용분만큼)까지 채워짐 확인
+- 이어서 `summarize` 실제 실행 → 경제 최대 10건 요약, 요약 과반 실패 가드 미발동 확인
+- `limits.yaml` 삭제 시 기존 동작(분야별 2건)으로 폴백됨 확인
+- summarize/objectivity/run.sh/daily.yml diff 없음(격리)
