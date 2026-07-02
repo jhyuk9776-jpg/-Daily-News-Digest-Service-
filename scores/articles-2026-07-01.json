@@ -1,0 +1,17 @@
+{
+  "date": "2026-07-01",
+  "scored": 486,
+  "penalized_count": 1,
+  "articles": [
+    {
+      "source": "매일경제",
+      "category": "경제",
+      "title": "“슬금슬금 오르더니 이젠 4%, 반도체가 다 했네”…성장률 전망 일제히 상향",
+      "link": "https://www.mk.co.kr/news/economy/12087327",
+      "score": 90,
+      "hits": [
+        "반도체가 다 했네"
+      ]
+    }
+  ]
+}

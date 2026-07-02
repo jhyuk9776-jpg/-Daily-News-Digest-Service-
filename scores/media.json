@@ -1,0 +1,57 @@
+{
+  "media": {
+    "한국경제": {
+      "score": 100.0,
+      "count": 100,
+      "penalized": 0,
+      "last_seen": "2026-07-01"
+    },
+    "매일경제": {
+      "score": 99.98,
+      "count": 95,
+      "penalized": 1,
+      "last_seen": "2026-07-01"
+    },
+    "이코노미스트 타임스": {
+      "score": 100.0,
+      "count": 10,
+      "penalized": 0,
+      "last_seen": "2026-06-30"
+    },
+    "매일신문": {
+      "score": 100.0,
+      "count": 310,
+      "penalized": 0,
+      "last_seen": "2026-07-01"
+    },
+    "SBS": {
+      "score": 100.0,
+      "count": 174,
+      "penalized": 0,
+      "last_seen": "2026-07-01"
+    },
+    "경향신문": {
+      "score": 100.0,
+      "count": 172,
+      "penalized": 0,
+      "last_seen": "2026-07-01"
+    },
+    "전자신문": {
+      "score": 100.0,
+      "count": 60,
+      "penalized": 0,
+      "last_seen": "2026-07-01"
+    },
+    "ZDNet Korea": {
+      "score": 100.0,
+      "count": 60,
+      "penalized": 0,
+      "last_seen": "2026-07-01"
+    }
+  },
+  "processed_dates": [
+    "2026-06-30",
+    "2026-07-01"
+  ],
+  "updated_at": "2026-07-02T11:26:34+09:00"
+}
