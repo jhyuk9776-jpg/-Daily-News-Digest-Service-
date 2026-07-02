@@ -85,6 +85,7 @@ def objectivity_snapshot(store):
 
 import json  # noqa: E402
 import tempfile  # noqa: E402
+from datetime import datetime  # noqa: E402
 from pathlib import Path  # noqa: E402
 from unittest.mock import patch  # noqa: E402
 
@@ -118,6 +119,54 @@ class StoreIOTest(unittest.TestCase):
                 data = json.loads((Path(tmp) / "articles-2026-07-01.json").read_text())
         self.assertEqual(data["penalized_count"], 1)
         self.assertEqual(data["articles"][0]["source"], "A")
+
+
+class ProcessAndBackfillTest(unittest.TestCase):
+    def _write_raw(self, raw_dir, date, articles):
+        payload = {"date": date, "articles": articles}
+        (raw_dir / f"{date}.json").write_text(
+            json.dumps(payload, ensure_ascii=False), encoding="utf-8")
+
+    def _art(self, source, title, iso):
+        return {"category": "경제", "source": source, "title": title,
+                "summary": "", "link": f"L-{title}", "published_iso": iso}
+
+    def test_process_date_updates_store_and_report(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_p = Path(tmp)
+            raw_dir = tmp_p / "raw"; raw_dir.mkdir()
+            # 오늘 날짜를 고정하기 위해 window를 넉넉히: iso를 오늘로
+            today = datetime.now(objectivity.KST).date().isoformat()
+            self._write_raw(raw_dir, today, [
+                self._art("한국경제", "깨끗한 기사", f"{today}T01:00:00+00:00"),
+                self._art("한국경제", "논란이 커지고 있다", f"{today}T01:00:00+00:00"),
+            ])
+            with patch.object(objectivity, "RAW_DIR", raw_dir), \
+                 patch.object(objectivity, "SCORES_DIR", tmp_p / "scores"), \
+                 patch.object(objectivity, "MEDIA_FILE", tmp_p / "scores" / "media.json"):
+                store = objectivity.process_date(
+                    {"media": {}, "processed_dates": []}, today)
+                self.assertIn("한국경제", store["media"])
+                self.assertEqual(store["media"]["한국경제"]["count"], 2)
+                report = json.loads(
+                    (tmp_p / "scores" / f"articles-{today}.json").read_text())
+                self.assertEqual(report["penalized_count"], 1)
+
+    def test_backfill_processes_old_files(self):
+        # 과거 날짜(오래된 raw)도 걸러지지 않고 처리돼야 한다(now()가 아니라 파일 날짜 기준).
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_p = Path(tmp)
+            raw_dir = tmp_p / "raw"; raw_dir.mkdir()
+            old = "2020-01-15"  # 한참 과거 — now() 기준이면 전부 걸러질 날짜
+            self._write_raw(raw_dir, old, [
+                self._art("A", "깨끗", "2020-01-15T01:00:00+00:00")])
+            with patch.object(objectivity, "RAW_DIR", raw_dir), \
+                 patch.object(objectivity, "SCORES_DIR", tmp_p / "scores"), \
+                 patch.object(objectivity, "MEDIA_FILE", tmp_p / "scores" / "media.json"):
+                store = objectivity.run_backfill()
+        self.assertIn(old, store["processed_dates"])
+        self.assertIn("A", store["media"])  # 파일 날짜 기준이라 통과
+        self.assertEqual(store["media"]["A"]["count"], 1)
 
 
 if __name__ == "__main__":

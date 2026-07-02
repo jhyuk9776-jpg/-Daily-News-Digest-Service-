@@ -131,3 +131,68 @@ def dated_articles_for(date: str) -> list[dict]:
     # 날짜창 기준은 now()가 아니라 그 raw 파일의 날짜(정오 KST). 재백필 시 과거 파일도 정확.
     ref = datetime.fromisoformat(date).replace(tzinfo=KST) + timedelta(hours=12)
     return [a for a in raw["articles"] if in_date_window(a, ref)]
+
+
+def process_date(store: dict, date: str) -> dict:
+    """하루치 raw를 채점해 store에 누적하고 감점 리포트를 저장한다."""
+    articles = dated_articles_for(date)
+    already = date in store.get("processed_dates", [])
+    store = update_media_scores(store, articles, date)
+    if not already:
+        records = []
+        for a in articles:
+            r = objectivity_score(a)
+            records.append({
+                "source": a.get("source", ""),
+                "category": a.get("category", ""),
+                "title": a.get("title", ""),
+                "link": a.get("link", ""),
+                "score": r["score"],
+                "hits": r["hits"],
+            })
+        save_article_report(date, records)
+    return store
+
+
+def run_backfill() -> dict:
+    """raw/*.json을 날짜 오름차순으로 전부 재처리해 store를 새로 구축한다."""
+    store = {"media": {}, "processed_dates": []}
+    dates = sorted(p.stem for p in RAW_DIR.glob("*.json"))
+    for date in dates:
+        store = process_date(store, date)
+    save_store(store)
+    print(f"백필 완료: {len(dates)}일 처리, 매체 {len(store['media'])}곳")
+    return store
+
+
+def main() -> int:
+    import argparse
+    parser = argparse.ArgumentParser(description="매체 객관성 점수 축적기(observe-only)")
+    parser.add_argument("date", nargs="?", help="처리할 날짜 YYYY-MM-DD (기본: 오늘 KST)")
+    parser.add_argument("--backfill", action="store_true",
+                        help="raw/*.json 전부 재처리(전체 재구축)")
+    args = parser.parse_args()
+
+    if args.backfill:
+        run_backfill()
+        return 0
+
+    date = args.date or datetime.now(KST).strftime("%Y-%m-%d")
+    store = load_store()
+    try:
+        store = process_date(store, date)
+    except FileNotFoundError as exc:
+        print(f"오류: {exc}", file=sys.stderr)
+        return 1
+    save_store(store)
+
+    print(f"=== 객관성 점수 축적 ({date}) ===")
+    for source, m in sorted(store["media"].items(), key=lambda kv: kv[1]["score"]):
+        print(f"  {m['score']:5.1f} · {source} "
+              f"(표본 {m['count']}, 감점 {m['penalized']})")
+    print(f"저장됨: {MEDIA_FILE}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
