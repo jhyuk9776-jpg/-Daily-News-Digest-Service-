@@ -1,0 +1,137 @@
+# 실패 처리: 제외 + 실패 로그 + 알림 설계
+
+- 작성일: 2026-07-02
+- 작성자: 이재혁
+- 상태: 설계 확정, 구현 대기
+- 관련: 결정 로그 1.3(요약 견고성 보강), 요약 과반 실패 가드(summarize FAIL_RATIO),
+  객관성 스코어러(scores/ 누적 선례), 로드맵 4절(실시간 알림 = Phase 2 후보)
+
+## 1. 배경 / 목적
+
+현재 요약 실패 기사는 다이제스트에 "링크만 제공" 또는 "본문 추출 실패로 요약 제외"
+안내로 **남는다**. 2026-07-02 검수에서 한국경제 칼럼("[권용훈의 트렌드워치]")이
+본문 추출은 됐으나 관련기사 목록·광고를 긁어와 모델이 불릿 0개를 낸 사례를 확인했다.
+
+두 가지를 바꾼다:
+1. **사실을 못 뽑은 기사는 다이제스트에서 제외**한다(링크-only 잔재 제거).
+2. **실패를 따로 기록·누적**한다. 실패·에러 데이터는 향후 추출기 개선·엣지케이스
+   사전의 연료(서비스 경쟁력)다. 그리고 실패가 나면 **사용자에게 알린다**(조용히 넘기지 않음).
+
+## 2. 범위
+
+포함:
+- 최종 실패 기사(api_failed·extract_failed·call_error) 다이제스트 제외(빈자리 미충원)
+- 실패 원인 구분 강화(`summarize_item`)
+- 실패 로그 파일 축적(`failures/failures-YYYY-MM-DD.json`, git 추적)
+- 실패 발생 시 CLI 알림(눈에 띄는 요약)
+- daily 자동커밋에 `failures/` 포함
+- 테스트
+
+제외(비목표):
+- 빈자리 백필(다음 순위 후보 승급) — 검토 후 "억지로 안 채운다" 원칙 유지로 채택 안 함
+- 실패 빈도 기반 매체 감점 — 별도 축(추출 신뢰도)이고 데이터 필요. 이번 범위 아님
+- 429 단순 대기·성공 복구된 중간 이벤트 기록 — 노이즈. call_error는 "최종 실패"일 때만
+- 실시간 푸시/이메일 알림 — 알림 채널이 없어 Phase 2. 지금은 로그+CLI로 대체
+- curate/objectivity 변경
+
+## 3. 결정 사항 (브레인스토밍 확정)
+
+| 쟁점 | 결정 |
+|---|---|
+| 실패 기사 처리 | 다이제스트에서 **제외**(링크-only/안내 렌더 삭제) |
+| 빈자리 | 안 채움. 그 분야는 그만큼 적게(A안). "상한이지 억지로 안 채운다" |
+| 기록 범위 | 최종 실패 + 호출 예외(call_error). 429 단순 대기 제외(C안) |
+| 저장 | `failures/failures-YYYY-MM-DD.json`, **git 추적**(scores/ 선례) |
+| 실패 0건 | 파일 만들지 않음(노이즈 방지) |
+| 알림 | CLI 눈에 띄는 요약 + 다이제스트 헤더 건수. 실시간 푸시는 Phase 2 |
+| 격리 | 실패 로그는 별도 모듈 `src/failure_log.py`(단방향). curate/objectivity 무변경 |
+
+## 4. 실패 원인 구분 (summarize_item)
+
+`summarize_item`의 최종 status를 세분한다:
+- `extract_failed`: `iter_contents`가 후보 텍스트를 하나도 못 만듦(본문 없음).
+- `call_error`: 후보 텍스트는 있었고 처리 중 Replicate 예외가 발생, 끝까지 불릿 0.
+  (detail = 마지막 예외 메시지)
+- `api_failed`: 후보 텍스트는 있었고 예외 없이 모델이 불릿 0(사실 못 뽑음).
+- `ok`: 어떤 후보에서 불릿 획득.
+
+규칙: 후보 루프에서 예외가 한 번이라도 났고 최종 불릿 0이면 `call_error`,
+예외 없이 불릿 0이면 `api_failed`. 반환에 `detail`(문자열) 추가.
+
+## 5. 실패 로그 (src/failure_log.py)
+
+`save_failure_log(date, total_articles, failures) -> Path | None`
+- `failures`: `[{category, source, title, link, reason, detail}]`
+- 실패 0건이면 파일을 만들지 않고 `None` 반환.
+- 아니면 `failures/failures-<date>.json`에 아래 스키마로 저장하고 경로 반환.
+
+스키마:
+```json
+{
+  "date": "2026-07-01",
+  "generated_at": "2026-07-01T16:00:00+09:00",
+  "total_articles": 16,
+  "failed_count": 1,
+  "failures": [
+    {"category": "경제", "source": "한국경제",
+     "title": "...민낯에 '통곡' [권용훈의 트렌드워치]",
+     "link": "https://www.hankyung.com/article/202607018281i",
+     "reason": "api_failed",
+     "detail": "모든 후보 불릿 0"}
+  ]
+}
+```
+
+격리: `failure_log`는 파일 I/O만 담당. summarize가 import(단방향). 역의존 없음.
+
+## 6. 데이터 흐름 (summarize.run)
+
+```
+selected/YYYY-MM-DD.json
+  → 각 item: summarize_item → (bullets, source, status, cached, detail)
+  → status=ok  : results에 담아 마크다운 렌더
+  → status!=ok : 다이제스트에서 제외 + failures 목록에 append
+  → build_markdown(성공 항목만)  → News/YYYY-MM-DD.md
+  → save_failure_log(date, total, failures) → failures/failures-YYYY-MM-DD.json (실패>0)
+  → CLI: 실패>0이면 눈에 띄는 요약 출력
+  → FAIL_RATIO 가드는 로그 저장 뒤에 판정(exit 1이어도 로그는 남음)
+```
+
+`build_markdown`: 분야의 성공 항목만 렌더. 성공 항목이 0이면(전원 실패/미수집)
+기존 "오늘 수집된 주요 기사가 없습니다" 메시지.
+
+## 7. 렌더링 변경 (render_item)
+
+- `ok`: 기존대로 불릿 렌더.
+- 실패 status(api_failed/extract_failed/call_error): **호출되지 않음**(run에서 제외).
+  → `render_item`의 실패 안내 분기("원문 링크만 제공" 등)는 제거한다.
+
+## 8. 연결 / 격리
+
+- `daily.yml` 자동커밋 단계: `git add News/` 옆에 `git add failures/` 추가
+  (자동 실행이 실패 로그를 커밋으로 누적).
+- `.gitignore`: `failures/`를 추적한다는 예외 주석(scores/와 동일).
+- 변경 파일: `src/summarize.py`, 신규 `src/failure_log.py`,
+  `.github/workflows/daily.yml`(1줄), `.gitignore`. **curate/objectivity 무변경.**
+
+## 9. 테스트
+
+`tests/test_failure_log.py`:
+- `save_failure_log`: 실패 목록 → 스키마·failed_count·파일 생성.
+- 실패 0건 → 파일 미생성·`None` 반환.
+
+`tests/test_fallback.py`(확장) 또는 신규:
+- `summarize_item`: 후보 예외 발생·불릿 0 → status `call_error`, detail 채워짐.
+- `summarize_item`: 예외 없이 불릿 0 → `api_failed`.
+- `summarize_item`: 텍스트 없음 → `extract_failed`.
+- `build_markdown`: 실패 기사는 본문에서 제외됨.
+- `build_markdown`: 한 분야 전원 실패 → 빈 메시지.
+
+## 10. 완료 조건
+
+- 위 테스트 전건 통과 + 전체 스위트 통과.
+- 07-01 재현: 경제=10 실행 시 실패 칼럼이 다이제스트에서 빠지고
+  `failures/failures-2026-07-01.json`에 기록됨(reason 포함).
+- 실패 0건인 날짜: `failures-*.json` 미생성 확인.
+- FAIL_RATIO 가드 발동 시에도 실패 로그가 먼저 기록됨 확인.
+- curate/objectivity diff 없음(격리). daily.yml은 `git add failures/`만 추가.
