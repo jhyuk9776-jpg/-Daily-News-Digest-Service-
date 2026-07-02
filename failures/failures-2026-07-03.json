@@ -1,0 +1,16 @@
+{
+  "date": "2026-07-03",
+  "generated_at": "2026-07-03T07:59:55+09:00",
+  "total_articles": 16,
+  "failed_count": 1,
+  "failures": [
+    {
+      "category": "경제",
+      "source": "한국경제",
+      "title": "2주 만에 13억 '잭팟'…MZ 지갑 60초 만에 열리는 비결 [장서우의 하입:hype]",
+      "link": "https://www.hankyung.com/article/202607022918i",
+      "reason": "api_failed",
+      "detail": "모든 후보 불릿 0"
+    }
+  ]
+}
