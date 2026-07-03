@@ -1,0 +1,16 @@
+{
+  "date": "2026-07-04",
+  "generated_at": "2026-07-04T07:58:01+09:00",
+  "total_articles": 16,
+  "failed_count": 1,
+  "failures": [
+    {
+      "category": "경제",
+      "source": "한국경제",
+      "title": "국산 삼겹살 3분의 1 가격…마트서 '이것' 불티나게 팔렸다 [프라이스&]",
+      "link": "https://www.hankyung.com/article/202607023034i",
+      "reason": "api_failed",
+      "detail": "모든 후보 불릿 0"
+    }
+  ]
+}
