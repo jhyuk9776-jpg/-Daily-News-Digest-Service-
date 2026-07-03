@@ -1,0 +1,180 @@
+# 감점 사전 — 설계 프롬프트(docs/prompts/감점사전-설계-프롬프트.md) 실행 결과 검수본 (초안)
+# 생성: 2026-07-03 · 상태: 초안(코드 미반영). 채점 코드 보강 단계에서 최종 확정해 반영.
+# 등급 가중치: strong=15 / medium=8 / weak=3 (BASELINE=100, FLOOR=0)
+# 검수 메모: 다더니·이러다·극적은 오탐 여지(예: "극적 타결") → 관찰 전용(observe_candidates)으로 분리.
+
+penalties:
+  # ── strong: 조롱·단정·불안조장 낚시 (weight 15) ──
+  - expr: "[가-힣]+가 다 했네"
+    type: regex
+    tier: strong
+    weight: 15
+    근거: "조롱조 단정"
+    example: "반도체가 다 했네"
+  - expr: "꼬리\\s?내린"
+    type: regex
+    tier: strong
+    weight: 15
+    근거: "조롱조 평가"
+    example: "결국 꼬리내린 미국"
+  - expr: "따라잡겠네"
+    type: phrase
+    tier: strong
+    weight: 15
+    근거: "추측성 조롱"
+    example: "이러다 중국 모델이 다 따라잡겠네"
+  - expr: "되는\\s?거\\s?아니냐"
+    type: regex
+    tier: strong
+    weight: 15
+    근거: "불안 조장 낚시"
+    example: "마약 천국 되는 거 아니냐"
+
+  # ── medium: 평가·전망·감정 (weight 8) ──
+  - expr: "논란이 커지고 있다"
+    type: phrase
+    tier: medium
+    weight: 8
+    근거: "평가성 상투구(시드)"
+    example: "논란이 커지고 있다"
+  - expr: "충격을 주고 있다"
+    type: phrase
+    tier: medium
+    weight: 8
+    근거: "감정 과장(시드)"
+    example: "충격을 주고 있다"
+  - expr: "큰 파장이 예상된다"
+    type: phrase
+    tier: medium
+    weight: 8
+    근거: "전망성 상투구(시드)"
+    example: "큰 파장이 예상된다"
+  - expr: "업계가 주목하고 있다"
+    type: phrase
+    tier: medium
+    weight: 8
+    근거: "관심 예단(시드)"
+    example: "업계가 주목하고 있다"
+  - expr: "아우성"
+    type: phrase
+    tier: medium
+    weight: 8
+    근거: "감정 과장"
+    example: "시장은 '고착화 우려' 아우성"
+  - expr: "후폭풍"
+    type: phrase
+    tier: medium
+    weight: 8
+    근거: "과장 프레이밍"
+    example: "'스타벅스 가야지' 후폭풍"
+  - expr: "신호탄"
+    type: phrase
+    tier: medium
+    weight: 8
+    근거: "과장 예단"
+    example: "공직 인기 반등 신호탄?"
+  - expr: "주목해야"
+    type: phrase
+    tier: medium
+    weight: 8
+    근거: "평가성 권유"
+    example: "하반기는 '이곳'을 주목해야"
+  - expr: "(성과|잠재력|경쟁력|저력).{0,3}입증"
+    type: regex
+    tier: medium
+    weight: 8
+    근거: "홍보성 단정"
+    example: "'유니콘' 잠재력 입증"
+
+  # ── medium: 전망성 물음 낚시 (weight 8) ──
+  - expr: "다가올까"
+    type: phrase
+    tier: medium
+    weight: 8
+    근거: "전망성 낚시"
+    example: "재평가 시대 다가올까"
+  - expr: "벌써 나타났나"
+    type: phrase
+    tier: medium
+    weight: 8
+    근거: "전망성 낚시"
+    example: "효과 벌써 나타났나"
+  - expr: "변수되나"
+    type: phrase
+    tier: medium
+    weight: 8
+    근거: "전망성 낚시"
+    example: "재난 정국 새 변수되나"
+  - expr: "언제 되나"
+    type: phrase
+    tier: medium
+    weight: 8
+    근거: "전망성 낚시"
+    example: "발표 언제 되나"
+
+  # ── weak: 약한 과장·주관 묘사 (weight 3) ──
+  - expr: "슬금슬금"
+    type: phrase
+    tier: weak
+    weight: 3
+    근거: "주관적 묘사"
+    example: "슬금슬금 오르더니"
+  - expr: "무더기"
+    type: phrase
+    tier: weak
+    weight: 3
+    근거: "과장 수량 묘사"
+    example: "석달간 5천337명 무더기 검거"
+  - expr: "총력전"
+    type: phrase
+    tier: weak
+    weight: 3
+    근거: "드라마화"
+    example: "회생 막판 총력전"
+
+# ── 관찰 전용: 오탐 여지가 있어 채점에 적용하지 않고 기록만 한다(apply:false) ──
+# 실제 채점에서 감점하지 않되, 등장 시 로그로만 남겨 오탐/정탐 분포를 지켜본 뒤 승격 여부 결정.
+observe_candidates:
+  - expr: "다더니"
+    type: phrase
+    tier: weak
+    weight: 3
+    apply: false
+    근거: "반전·비꼼 프레이밍(오탐 여지)"
+    example: "퇴직자 줄었다더니"
+  - expr: "이러다"
+    type: phrase
+    tier: weak
+    weight: 3
+    apply: false
+    근거: "전망성 리드(오탐 여지)"
+    example: "이러다 중국 모델이 다 따라잡겠네"
+  - expr: "극적"
+    type: phrase
+    tier: weak
+    weight: 3
+    apply: false
+    근거: "과장 묘사(예: '극적 타결' 등 사실 보도 오탐 여지)"
+    example: "3살 아이 극적 구조"
+
+exclusions:
+  - term: "충격"
+    reason: "지진·사고 등 사실 문맥에 빈번해 단독 감점 시 오탐"
+  - term: "참사"
+    reason: "재난·사고의 사실 명칭으로 쓰여 단독 감점 부적절"
+  - term: "비상"
+    reason: "비상대책·비상근무 등 행정 사실 용어"
+  - term: "경악"
+    reason: "사건 반응 서술로 쓰일 수 있어 단독 판별 불가"
+  - term: "급증"
+    reason: "수치를 동반한 사실 보도에 흔함(사망자 급증 등)"
+  - term: "급락"
+    reason: "지수·가격 등락의 사실 보도 용어"
+  - term: "역대"
+    reason: "'역대 최고치' 등 수치 기반 사실 서술"
+  - term: "총력"
+    reason: "'총력 대응' 등 행정 상용어(단, '총력전'은 드라마화로 감점)"
+  - term: "입증"
+    reason: "'무죄 입증' 등 사실 문맥 빈번(단, '성과/잠재력 입증'만 홍보성으로 감점)"
+  - term: "조롱"
+    reason: "조롱 행위 자체를 보도하는 사실 문맥 가능(단, '~가 다 했네' 등 구문은 감점)"
