@@ -2,50 +2,51 @@
   "media": {
     "한국경제": {
       "score": 100.0,
-      "count": 100,
+      "count": 150,
       "penalized": 0,
-      "last_seen": "2026-07-01"
+      "last_seen": "2026-07-03"
     },
     "매일경제": {
-      "score": 99.98,
-      "count": 95,
-      "penalized": 1,
-      "last_seen": "2026-07-01"
+      "score": 99.95320000000001,
+      "count": 145,
+      "penalized": 2,
+      "last_seen": "2026-07-03"
     },
     "매일신문": {
-      "score": 100.0,
-      "count": 310,
-      "penalized": 0,
-      "last_seen": "2026-07-01"
+      "score": 99.77126319648094,
+      "count": 486,
+      "penalized": 11,
+      "last_seen": "2026-07-03"
     },
     "SBS": {
-      "score": 100.0,
-      "count": 174,
-      "penalized": 0,
-      "last_seen": "2026-07-01"
+      "score": 99.95977011494253,
+      "count": 261,
+      "penalized": 2,
+      "last_seen": "2026-07-03"
     },
     "경향신문": {
-      "score": 100.0,
-      "count": 172,
-      "penalized": 0,
-      "last_seen": "2026-07-01"
+      "score": 99.9069758812616,
+      "count": 270,
+      "penalized": 4,
+      "last_seen": "2026-07-03"
     },
     "전자신문": {
-      "score": 100.0,
-      "count": 60,
-      "penalized": 0,
-      "last_seen": "2026-07-01"
+      "score": 99.99000000000001,
+      "count": 90,
+      "penalized": 1,
+      "last_seen": "2026-07-03"
     },
     "ZDNet Korea": {
-      "score": 100.0,
-      "count": 60,
-      "penalized": 0,
-      "last_seen": "2026-07-01"
+      "score": 99.89233333333334,
+      "count": 90,
+      "penalized": 2,
+      "last_seen": "2026-07-03"
     }
   },
   "processed_dates": [
     "2026-06-30",
-    "2026-07-01"
+    "2026-07-01",
+    "2026-07-03"
   ],
-  "updated_at": "2026-07-02T11:50:37+09:00"
+  "updated_at": "2026-07-03T22:10:56+09:00"
 }
