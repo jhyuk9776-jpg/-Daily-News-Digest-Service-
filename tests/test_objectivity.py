@@ -17,15 +17,17 @@ class ScoreTest(unittest.TestCase):
         self.assertEqual(r["hits"], [])
 
     def test_phrase_penalized(self):
+        # medium 등급 = -8 (penalties.yaml 기준)
         art = {"title": "논란이 커지고 있다는 지적", "summary": ""}
         r = objectivity.objectivity_score(art)
-        self.assertEqual(r["score"], 90)
+        self.assertEqual(r["score"], 92)
         self.assertIn("논란이 커지고 있다", r["hits"])
 
     def test_multiple_hits_stack(self):
+        # medium + medium = -16
         art = {"title": "충격을 주고 있다", "summary": "큰 파장이 예상된다"}
         r = objectivity.objectivity_score(art)
-        self.assertEqual(r["score"], 80)
+        self.assertEqual(r["score"], 84)
         self.assertEqual(len(r["hits"]), 2)
 
     def test_pattern_match(self):
@@ -50,10 +52,10 @@ class MediaAggregateTest(unittest.TestCase):
         arts = [
             {"title": "깨끗한 기사", "summary": "", "source": "한국경제"},
             {"title": "논란이 커지고 있다", "summary": "", "source": "한국경제"},
-        ]  # 점수 100, 90 → 그날 평균 95
+        ]  # 점수 100, 92 → 그날 평균 96 (medium -8)
         store = objectivity.update_media_scores(self._empty_store(), arts, "2026-07-01")
         m = store["media"]["한국경제"]
-        self.assertAlmostEqual(m["score"], 95.0)
+        self.assertAlmostEqual(m["score"], 96.0)
         self.assertEqual(m["count"], 2)
         self.assertEqual(m["penalized"], 1)
         self.assertEqual(m["last_seen"], "2026-07-01")
@@ -193,6 +195,101 @@ class ActiveSourceFilterTest(unittest.TestCase):
         sources = {a["source"] for a in arts}
         self.assertIn("한국경제", sources)
         self.assertNotIn("이코노미스트 타임스", sources)
+
+
+class PenaltyLoaderTest(unittest.TestCase):
+    def _write(self, tmp, text):
+        p = Path(tmp) / "penalties.yaml"
+        p.write_text(text, encoding="utf-8")
+        return p
+
+    def test_load_parses_active_observe_exclusions(self):
+        text = (
+            "penalties:\n"
+            "  - {expr: '[가-힣]+가 다 했네', type: regex, tier: strong, weight: 15, 근거: 조롱}\n"
+            "  - {expr: '아우성', type: phrase, tier: medium, weight: 8, 근거: 감정}\n"
+            "observe_candidates:\n"
+            "  - {expr: 이러다, type: phrase, tier: weak, weight: 3, 근거: 리드}\n"
+            "exclusions:\n"
+            "  - {term: 충격, reason: 사실문맥}\n"
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            active, observe, exclusions = objectivity.load_penalties(self._write(tmp, text))
+        self.assertEqual(len(active), 2)
+        self.assertEqual(active[0]["weight"], 15)
+        self.assertEqual(len(observe), 1)
+        self.assertEqual(observe[0]["expr"], "이러다")
+        self.assertEqual(exclusions[0]["term"], "충격")
+
+    def test_load_missing_file_returns_seed(self):
+        active, observe, exclusions = objectivity.load_penalties(Path("/no/such/penalties.yaml"))
+        self.assertTrue(active)          # 시드 폴백은 비어있지 않다
+        self.assertEqual(observe, [])
+        self.assertEqual(exclusions, [])
+
+    def test_load_skips_invalid_regex(self):
+        text = (
+            "penalties:\n"
+            "  - {expr: '[bad', type: regex, tier: strong, weight: 15, 근거: x}\n"
+            "  - {expr: 좋음, type: phrase, tier: weak, weight: 3, 근거: y}\n"
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            active, _, _ = objectivity.load_penalties(self._write(tmp, text))
+        exprs = [a["expr"] for a in active]
+        self.assertIn("좋음", exprs)
+        self.assertNotIn("[bad", exprs)
+
+
+class GradedScoreTest(unittest.TestCase):
+    P = [
+        {"expr": "논란이 커지고 있다", "type": "phrase", "tier": "medium", "weight": 8, "근거": "평가"},
+        {"expr": "[가-힣]+가 다 했네", "type": "regex", "tier": "strong", "weight": 15, "근거": "조롱"},
+    ]
+    OBS = [{"expr": "극적", "type": "phrase", "tier": "weak", "weight": 3, "근거": "묘사"}]
+
+    def test_weights_sum_by_tier(self):
+        art = {"title": "논란이 커지고 있다 반도체가 다 했네", "summary": ""}
+        r = objectivity.objectivity_score(art, self.P, self.OBS)
+        self.assertEqual(r["score"], 100 - 8 - 15)  # 77
+        self.assertEqual(len(r["hits"]), 2)
+
+    def test_repeat_counts_each_occurrence(self):
+        art = {"title": "논란이 커지고 있다 논란이 커지고 있다", "summary": ""}
+        r = objectivity.objectivity_score(art, self.P, self.OBS)
+        self.assertEqual(r["score"], 100 - 16)
+
+    def test_observe_recorded_not_deducted(self):
+        art = {"title": "3살 아이 극적 구조", "summary": ""}
+        r = objectivity.objectivity_score(art, self.P, self.OBS)
+        self.assertEqual(r["score"], 100)          # observe는 감점하지 않음
+        self.assertEqual(r["hits"], [])
+        self.assertIn("극적", r["observe_hits"])
+
+    def test_floor_clamp_with_weights(self):
+        art = {"title": "반도체가 다 했네 " * 10, "summary": ""}  # 15*10=150 > 100
+        r = objectivity.objectivity_score(art, self.P, self.OBS)
+        self.assertEqual(r["score"], 0)
+
+
+class PenaltyMemoTest(unittest.TestCase):
+    P = [{"expr": "아우성", "type": "phrase", "tier": "medium", "weight": 8, "근거": "감정 과장"}]
+
+    def test_aggregates_by_expr_and_source(self):
+        records = [
+            {"source": "매일신문", "hits": ["아우성"]},
+            {"source": "매일신문", "hits": ["아우성"]},
+            {"source": "한국경제", "hits": []},
+        ]
+        memo = objectivity.penalty_memo(records, self.P)
+        self.assertEqual(memo["total_deducted"], 16)
+        self.assertEqual(memo["by_expr"]["아우성"]["count"], 2)
+        self.assertEqual(memo["by_expr"]["아우성"]["근거"], "감정 과장")
+        self.assertEqual(memo["by_source"]["매일신문"], 16)
+
+    def test_empty_when_no_hits(self):
+        memo = objectivity.penalty_memo([{"source": "A", "hits": []}], self.P)
+        self.assertEqual(memo["total_deducted"], 0)
+        self.assertEqual(memo["by_expr"], {})
 
 
 if __name__ == "__main__":

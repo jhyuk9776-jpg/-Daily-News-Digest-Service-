@@ -20,6 +20,8 @@ import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+import yaml
+
 from curate import (  # 날짜창·출처목록 재사용(격리: 단방향 의존)
     SOURCES_FILE,
     in_date_window,
@@ -30,37 +32,116 @@ ROOT = Path(__file__).resolve().parent.parent
 RAW_DIR = ROOT / "raw"
 SCORES_DIR = ROOT / "scores"
 MEDIA_FILE = SCORES_DIR / "media.json"
+PENALTIES_FILE = ROOT / "penalties.yaml"
 KST = timezone(timedelta(hours=9))
 
 BASELINE = 100
-PENALTY = 10
 FLOOR = 0
 EWMA_ALPHA = 0.1
 
-# 감점 사전(고정밀 시드). 단일 모호어("충격" 단독 등)는 오탐 위험으로 제외.
-PENALTY_PHRASES = [
-    "논란이 커지고 있다",
-    "충격을 주고 있다",
-    "큰 파장이 예상된다",
-    "업계가 주목하고 있다",
-]
-PENALTY_PATTERNS = [
-    re.compile(r"[가-힣]+가 다 했네"),  # "~가 다 했네" 류 평가·조롱
+# 시드 폴백(penalties.yaml 없을 때만). AI_CONTEXT §6 "피해야 할 표현".
+_SEED_PENALTIES = [
+    {"expr": "논란이 커지고 있다", "type": "phrase", "tier": "medium", "weight": 10, "근거": "평가성 상투구"},
+    {"expr": "충격을 주고 있다", "type": "phrase", "tier": "medium", "weight": 10, "근거": "감정 과장"},
+    {"expr": "큰 파장이 예상된다", "type": "phrase", "tier": "medium", "weight": 10, "근거": "전망성 상투구"},
+    {"expr": "업계가 주목하고 있다", "type": "phrase", "tier": "medium", "weight": 10, "근거": "관심 예단"},
+    {"expr": "[가-힣]+가 다 했네", "type": "regex", "tier": "strong", "weight": 10, "근거": "조롱조 단정"},
 ]
 
 
-def objectivity_score(article: dict) -> dict:
-    """기사 1건의 객관성 점수(감점 중심)와 감점 근거를 계산한다."""
+def _normalize_entry(entry: dict) -> dict | None:
+    """감점 항목 검증·정규화. 정규식이 잘못되면 None(로드 시 건너뜀)."""
+    expr = entry.get("expr")
+    if not expr:
+        return None
+    etype = entry.get("type", "phrase")
+    if etype == "regex":
+        try:
+            re.compile(expr)
+        except re.error:
+            print(f"경고: 잘못된 정규식 건너뜀 — {expr!r}", file=sys.stderr)
+            return None
+    return {
+        "expr": expr,
+        "type": etype,
+        "tier": entry.get("tier", "medium"),
+        "weight": int(entry.get("weight", 8)),
+        "근거": entry.get("근거", ""),
+    }
+
+
+def load_penalties(path: Path = PENALTIES_FILE):
+    """penalties.yaml을 읽어 (active, observe, exclusions)로 돌려준다.
+
+    파일이 없으면 시드 사전으로 폴백(observe·exclusions는 빈 리스트).
+    잘못된 정규식 항목은 건너뛴다(전체 로드 실패 방지).
+    """
+    path = Path(path)
+    if not path.exists():
+        return list(_SEED_PENALTIES), [], []
+    data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    active = [e for e in (_normalize_entry(x) for x in data.get("penalties", []) or []) if e]
+    observe = [e for e in (_normalize_entry(x) for x in data.get("observe_candidates", []) or []) if e]
+    exclusions = data.get("exclusions", []) or []
+    return active, observe, exclusions
+
+
+ACTIVE_PENALTIES, OBSERVE_PENALTIES, EXCLUSIONS = load_penalties()
+
+
+def _count_matches(entry: dict, text: str) -> int:
+    if entry["type"] == "regex":
+        return len(re.findall(entry["expr"], text))
+    return text.count(entry["expr"])
+
+
+def objectivity_score(article: dict, penalties=None, observe=None) -> dict:
+    """기사 1건의 객관성 점수(등급 가중 감점)와 감점·관찰 근거를 계산한다.
+
+    매칭 1건당 그 항목의 weight만큼 감점(반복 등장 시 횟수만큼 합산).
+    observe 후보는 감점하지 않고 등장만 observe_hits로 기록한다.
+    """
+    penalties = ACTIVE_PENALTIES if penalties is None else penalties
+    observe = OBSERVE_PENALTIES if observe is None else observe
     text = f"{article.get('title', '')} {article.get('summary', '')}"
     hits: list[str] = []
-    # 출현 횟수마다 감점(스펙 §4 "매칭마다"). 평가어가 반복될수록 더 깎여
-    # FLOOR 클램프가 실제로 도달 가능해진다.
-    for phrase in PENALTY_PHRASES:
-        hits.extend([phrase] * text.count(phrase))
-    for pat in PENALTY_PATTERNS:
-        hits.extend(m.group(0) for m in pat.finditer(text))
-    score = max(FLOOR, BASELINE - PENALTY * len(hits))
-    return {"score": score, "hits": hits}
+    deducted = 0
+    for p in penalties:
+        c = _count_matches(p, text)
+        if c:
+            hits.extend([p["expr"]] * c)
+            deducted += p["weight"] * c
+    observe_hits: list[str] = []
+    for p in observe:
+        c = _count_matches(p, text)
+        if c:
+            observe_hits.extend([p["expr"]] * c)
+    score = max(FLOOR, BASELINE - deducted)
+    return {"score": score, "hits": hits, "observe_hits": observe_hits}
+
+
+def penalty_memo(records: list[dict], penalties=None) -> dict:
+    """그날 기사 기록의 hits를 집계해 "무엇이·왜·얼마나" 감점됐는지 요약한다.
+
+    입력: records = [{"source":..., "hits":[expr,...]}...]
+    출력: {total_deducted, by_expr:{expr:{count,deducted,근거}}, by_source:{src:deducted}}
+    """
+    penalties = ACTIVE_PENALTIES if penalties is None else penalties
+    weight = {p["expr"]: p["weight"] for p in penalties}
+    reason = {p["expr"]: p.get("근거", "") for p in penalties}
+    by_expr: dict[str, dict] = {}
+    by_source: dict[str, int] = {}
+    total = 0
+    for rec in records:
+        for expr in rec.get("hits", []):
+            w = weight.get(expr, 0)
+            total += w
+            e = by_expr.setdefault(expr, {"count": 0, "deducted": 0, "근거": reason.get(expr, "")})
+            e["count"] += 1
+            e["deducted"] += w
+            src = rec.get("source", "")
+            by_source[src] = by_source.get(src, 0) + w
+    return {"total_deducted": total, "by_expr": by_expr, "by_source": by_source}
 
 
 def update_media_scores(store: dict, dated_articles: list[dict], date: str) -> dict:
@@ -120,6 +201,7 @@ def save_article_report(date: str, records: list[dict]) -> None:
         "date": date,
         "scored": len(records),
         "penalized_count": len(penalized),
+        "penalty_memo": penalty_memo(records),
         "articles": penalized,
     }
     with (SCORES_DIR / f"articles-{date}.json").open("w", encoding="utf-8") as f:

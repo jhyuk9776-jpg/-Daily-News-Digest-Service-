@@ -1,0 +1,153 @@
+# 객관성 감점 사전 (observe-only 채점기가 읽는 기준 파일)
+# 코드가 직접 읽는 정식 설정. 초안·설계 근거는 docs/prompts/ 참고.
+# 등급 가중치: strong=15 / medium=8 / weak=3 (BASELINE=100, FLOOR=0)
+# 규칙: 매칭 1건당 weight 감점(반복 등장 시 횟수만큼 합산). 정밀도 우선.
+# observe_candidates: 오탐 여지가 있어 감점하지 않고 등장만 기록한다.
+
+penalties:
+  # ── strong: 조롱·단정·불안조장 낚시 (weight 15) ──
+  - expr: "[가-힣]+가 다 했네"
+    type: regex
+    tier: strong
+    weight: 15
+    근거: "조롱조 단정"
+  - expr: "꼬리\\s?내린"
+    type: regex
+    tier: strong
+    weight: 15
+    근거: "조롱조 평가"
+  - expr: "따라잡겠네"
+    type: phrase
+    tier: strong
+    weight: 15
+    근거: "추측성 조롱"
+  - expr: "되는\\s?거\\s?아니냐"
+    type: regex
+    tier: strong
+    weight: 15
+    근거: "불안 조장 낚시"
+
+  # ── medium: 평가·전망·감정 (weight 8) ──
+  - expr: "논란이 커지고 있다"
+    type: phrase
+    tier: medium
+    weight: 8
+    근거: "평가성 상투구"
+  - expr: "충격을 주고 있다"
+    type: phrase
+    tier: medium
+    weight: 8
+    근거: "감정 과장"
+  - expr: "큰 파장이 예상된다"
+    type: phrase
+    tier: medium
+    weight: 8
+    근거: "전망성 상투구"
+  - expr: "업계가 주목하고 있다"
+    type: phrase
+    tier: medium
+    weight: 8
+    근거: "관심 예단"
+  - expr: "아우성"
+    type: phrase
+    tier: medium
+    weight: 8
+    근거: "감정 과장"
+  - expr: "후폭풍"
+    type: phrase
+    tier: medium
+    weight: 8
+    근거: "과장 프레이밍"
+  - expr: "신호탄"
+    type: phrase
+    tier: medium
+    weight: 8
+    근거: "과장 예단"
+  - expr: "주목해야"
+    type: phrase
+    tier: medium
+    weight: 8
+    근거: "평가성 권유"
+  - expr: "(성과|잠재력|경쟁력|저력).{0,3}입증"
+    type: regex
+    tier: medium
+    weight: 8
+    근거: "홍보성 단정"
+  - expr: "다가올까"
+    type: phrase
+    tier: medium
+    weight: 8
+    근거: "전망성 낚시"
+  - expr: "벌써 나타났나"
+    type: phrase
+    tier: medium
+    weight: 8
+    근거: "전망성 낚시"
+  - expr: "변수되나"
+    type: phrase
+    tier: medium
+    weight: 8
+    근거: "전망성 낚시"
+  - expr: "언제 되나"
+    type: phrase
+    tier: medium
+    weight: 8
+    근거: "전망성 낚시"
+
+  # ── weak: 약한 과장·주관 묘사 (weight 3) ──
+  - expr: "슬금슬금"
+    type: phrase
+    tier: weak
+    weight: 3
+    근거: "주관적 묘사"
+  - expr: "무더기"
+    type: phrase
+    tier: weak
+    weight: 3
+    근거: "과장 수량 묘사"
+  - expr: "총력전"
+    type: phrase
+    tier: weak
+    weight: 3
+    근거: "드라마화"
+
+# 관찰 전용: 감점하지 않고 등장만 기록(오탐 분포 확인 후 승격 판단)
+observe_candidates:
+  - expr: "다더니"
+    type: phrase
+    tier: weak
+    weight: 3
+    근거: "반전·비꼼 프레이밍(오탐 여지)"
+  - expr: "이러다"
+    type: phrase
+    tier: weak
+    weight: 3
+    근거: "전망성 리드(오탐 여지)"
+  - expr: "극적"
+    type: phrase
+    tier: weak
+    weight: 3
+    근거: "과장 묘사(오탐 여지)"
+
+# 감점하지 않는 단독 모호어(문서화용 — 사전에 추가 금지 근거)
+exclusions:
+  - term: "충격"
+    reason: "지진·사고 등 사실 문맥에 빈번"
+  - term: "참사"
+    reason: "재난·사고의 사실 명칭"
+  - term: "비상"
+    reason: "비상대책 등 행정 사실 용어"
+  - term: "경악"
+    reason: "사건 반응 서술 가능"
+  - term: "급증"
+    reason: "수치 동반 사실 보도 흔함"
+  - term: "급락"
+    reason: "지수·가격 사실 보도 용어"
+  - term: "역대"
+    reason: "'역대 최고치' 등 수치 사실"
+  - term: "총력"
+    reason: "'총력 대응' 등 행정 상용어"
+  - term: "입증"
+    reason: "'무죄 입증' 등 사실 문맥"
+  - term: "조롱"
+    reason: "조롱 행위 보도 사실 문맥 가능"
