@@ -34,14 +34,20 @@ jobs:
           REPLICATE_API_TOKEN: ${{ secrets.REPLICATE_API_TOKEN }}
         run: ./run.sh
 
-      - name: 다이제스트 자동 커밋
+      # observe-only 객관성 채점. fetch가 방금 만든 오늘 raw로 채점하므로
+      # 디제스트와 동일한 스냅샷이며 AI 토큰이 들지 않는다. raw는 보관하지 않고
+      # 누적 결과(scores/)만 커밋한다. 수동 실행을 놓쳐도 매일 자동 누적된다.
+      - name: 객관성 점수 채점(observe-only)
+        run: python3 src/objectivity.py
+
+      - name: 다이제스트·점수 자동 커밋
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add News/ failures/
+          git add News/ failures/ scores/
           if git diff --staged --quiet; then
-            echo "변경된 다이제스트 없음 — 커밋 생략"
+            echo "변경된 산출물 없음 — 커밋 생략"
           else
-            git commit -m "docs: $(date +%F) 다이제스트 자동 생성"
+            git commit -m "docs: $(date +%F) 다이제스트 자동 생성 + 객관성 점수 축적"
             git push
           fi
