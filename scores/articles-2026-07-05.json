@@ -1,0 +1,46 @@
+{
+  "date": "2026-07-05",
+  "scored": 171,
+  "penalized_count": 2,
+  "penalty_memo": {
+    "total_deducted": 11,
+    "by_expr": {
+      "무더기": {
+        "count": 1,
+        "deducted": 3,
+        "근거": "과장 수량 묘사"
+      },
+      "신호탄": {
+        "count": 1,
+        "deducted": 8,
+        "근거": "과장 예단"
+      }
+    },
+    "by_source": {
+      "매일신문": 3,
+      "ZDNet Korea": 8
+    }
+  },
+  "articles": [
+    {
+      "source": "매일신문",
+      "category": "사회",
+      "title": "\"살해 협박까지\" 교사 등 10명 무더기로 고소한 학부모",
+      "link": "https://www.imaeil.com/page/view/2026070415513061018",
+      "score": 97,
+      "hits": [
+        "무더기"
+      ]
+    },
+    {
+      "source": "ZDNet Korea",
+      "category": "IT/테크",
+      "title": "[안광섭 AI 진테제] 메타의 클라우드사업 진출이 의미하는 것",
+      "link": "https://zdnet.co.kr/view/?no=20260704151025",
+      "score": 92,
+      "hits": [
+        "신호탄"
+      ]
+    }
+  ]
+}
