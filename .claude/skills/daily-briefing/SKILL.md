@@ -17,8 +17,8 @@ description: Use when starting a work day on this AI 뉴스 다이제스트 proj
 
 1. **맥락 읽기** — 다음을 읽는다:
    - `AI_CONTEXT.md` (Phase 1 범위·원칙)
-   - `기획/05-roadmap.md` (Day별 목표/완료 조건)
-   - `기획/04-decision-log.md` (확정/미정 결정)
+   - `기획/일정/일정-로드맵.md` (목표·Phase·마일스톤·일별 일정/완료 조건)
+   - `기획/decision-log.md` (확정/미정 결정)
    - `기획/회의내용정리/` 최신 메모, `기획/시스템기획/기능설계/` 최신 설계
 2. **진행 위치 판단** — `git log --oneline -10` 과 실제 파일(`src/`, `raw/`, 스펙)을
    대조해 "지금 며칠차의 어디"인지 정한다. 오늘 날짜(`date +%F`)는 참고만.

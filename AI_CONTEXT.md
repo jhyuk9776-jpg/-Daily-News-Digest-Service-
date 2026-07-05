@@ -122,12 +122,12 @@ AI 요약은 아래 규칙을 지킨다.
 
 1. `AI_CONTEXT.md`
 2. `기획/README.md`
-3. `기획/01-product-brief.md`
-4. `기획/02-mvp-spec.md`
-5. `기획/시스템기획/` (아키텍처 + 기능별 설계)
-6. `기획/04-decision-log.md`
-7. `기획/05-roadmap.md`
-8. `기획/회의내용정리/01-today-plan-and-cost.md`
+3. `기획/시스템기획/` (아키텍처 + 기능별 설계)
+4. `기획/decision-log.md`
+5. `기획/일정/일정-로드맵.md` (목표·Phase·마일스톤·일별 일정)
+6. `기획/서비스기획/` (상업화 서비스 기획서 — Phase 정본)
+7. `기획/회의내용정리/01-today-plan-and-cost.md`
+8. `기획/보관/` (초기 기획 product-brief·mvp-spec — 달성 완료된 역사 기록)
 
 ## 10. AI 협업 규칙
 

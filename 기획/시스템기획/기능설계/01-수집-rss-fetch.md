@@ -12,7 +12,7 @@
 근거 문서:
 - `AI_CONTEXT.md` (Phase 1 범위, 요약/제품 원칙)
 - `기획/03-system-architecture.md` (파이프라인, 예외 처리 원칙)
-- `기획/04-decision-log.md` (분야 4종, 분야별 2~3개 출처, 백엔드 Python 유지)
+- `기획/decision-log.md` (분야 4종, 분야별 2~3개 출처, 백엔드 Python 유지)
 
 ## 2. 결정 사항
 

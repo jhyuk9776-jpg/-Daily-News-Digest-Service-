@@ -6,7 +6,7 @@
 결과물: `News/YYYY-MM-DD.md` (분야별 2건, 하루 총 8건 · 출처 링크 1:1 부착)
 
 프로젝트 배경·원칙은 [`AI_CONTEXT.md`](AI_CONTEXT.md), 결정 기록은
-[`기획/04-decision-log.md`](기획/04-decision-log.md) 참고.
+[`기획/decision-log.md`](기획/decision-log.md) 참고.
 
 ## 파이프라인 구조
 
