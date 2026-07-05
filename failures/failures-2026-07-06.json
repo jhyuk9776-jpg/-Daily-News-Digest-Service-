@@ -1,0 +1,16 @@
+{
+  "date": "2026-07-06",
+  "generated_at": "2026-07-06T07:55:02+09:00",
+  "total_articles": 16,
+  "failed_count": 1,
+  "failures": [
+    {
+      "category": "경제",
+      "source": "한국경제",
+      "title": "중국산 깨로 짜도 'K참기름'…미국서 대박 난 '뜻밖의 이유' [권용훈의 트렌드워치]",
+      "link": "https://www.hankyung.com/article/202607056308i",
+      "reason": "api_failed",
+      "detail": "모든 후보 불릿 0"
+    }
+  ]
+}

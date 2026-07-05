@@ -1,0 +1,46 @@
+{
+  "date": "2026-07-06",
+  "scored": 332,
+  "penalized_count": 2,
+  "penalty_memo": {
+    "total_deducted": 11,
+    "by_expr": {
+      "무더기": {
+        "count": 1,
+        "deducted": 3,
+        "근거": "과장 수량 묘사"
+      },
+      "논란이 커지고 있다": {
+        "count": 1,
+        "deducted": 8,
+        "근거": "평가성 상투구"
+      }
+    },
+    "by_source": {
+      "매일신문": 3,
+      "ZDNet Korea": 8
+    }
+  },
+  "articles": [
+    {
+      "source": "매일신문",
+      "category": "사회",
+      "title": "\"살해 협박까지\" 교사 등 10명 무더기로 고소한 학부모",
+      "link": "https://www.imaeil.com/page/view/2026070415513061018",
+      "score": 97,
+      "hits": [
+        "무더기"
+      ]
+    },
+    {
+      "source": "ZDNet Korea",
+      "category": "IT/테크",
+      "title": "월드컵 티켓 샀는데 취소…美 스텁허브, ‘유령 티켓’ 조사받는다",
+      "link": "https://zdnet.co.kr/view/?no=20260705111657",
+      "score": 92,
+      "hits": [
+        "논란이 커지고 있다"
+      ]
+    }
+  ]
+}
