@@ -44,40 +44,39 @@ class ScoreTest(unittest.TestCase):
         self.assertEqual(r["score"], 55)
 
 
-class MediaAggregateTest(unittest.TestCase):
-    def _empty_store(self):
+class MediaDensityTest(unittest.TestCase):
+    def _empty(self):
         return {"media": {}, "processed_dates": []}
 
-    def test_new_media_uses_day_average_as_initial(self):
+    def test_new_media_density(self):
         arts = [
-            {"title": "깨끗한 기사", "summary": "", "source": "한국경제"},
-            {"title": "논란이 커지고 있다", "summary": "", "source": "한국경제"},
-        ]  # 점수 100, 92 → 그날 평균 96 (medium -8)
-        store = objectivity.update_media_scores(self._empty_store(), arts, "2026-07-01")
+            {"title": "깨끗한 기사", "summary": "", "source": "한국경제", "link": "L1"},
+            {"title": "논란이 커지고 있다", "summary": "", "source": "한국경제", "link": "L2"},
+        ]  # points 0 + 8 = 8, count 2 → 8/2*1000 = 4000
+        store = objectivity.update_media_scores(self._empty(), arts, "2026-07-01")
         m = store["media"]["한국경제"]
-        self.assertAlmostEqual(m["score"], 96.0)
-        self.assertEqual(m["count"], 2)
-        self.assertEqual(m["penalized"], 1)
-        self.assertEqual(m["last_seen"], "2026-07-01")
+        self.assertEqual(m["penalty_points_total"], 8)
+        self.assertEqual(m["article_count"], 2)
+        self.assertEqual(m["density_per_1000"], 4000.0)
 
-    def test_ewma_blends_with_existing(self):
-        store = {
-            "media": {"한국경제": {"score": 92.0, "count": 10, "penalized": 0,
-                                   "last_seen": "2026-06-30"}},
-            "processed_dates": ["2026-06-30"],
-        }
-        arts = [{"title": "깨끗", "summary": "", "source": "한국경제"}]  # 그날 평균 100
+    def test_density_accumulates_across_days(self):
+        store = {"media": {"한국경제": {"penalty_points_total": 8, "article_count": 2,
+                 "attribution_total": 0, "outlier_total": 0, "density_per_1000": 4000.0,
+                 "count": 2, "last_seen": "2026-06-30"}},
+                 "processed_dates": ["2026-06-30"]}
+        arts = [{"title": "깨끗", "summary": "", "source": "한국경제", "link": "L3"}]
         store = objectivity.update_media_scores(store, arts, "2026-07-01")
-        # 0.9*92 + 0.1*100 = 92.8
-        self.assertAlmostEqual(store["media"]["한국경제"]["score"], 92.8)
-        self.assertEqual(store["media"]["한국경제"]["count"], 11)
+        m = store["media"]["한국경제"]
+        self.assertEqual(m["article_count"], 3)          # 2+1
+        self.assertEqual(m["penalty_points_total"], 8)   # +0
+        self.assertAlmostEqual(m["density_per_1000"], 8/3*1000)
 
-    def test_idempotent_same_date_skipped(self):
-        arts = [{"title": "깨끗", "summary": "", "source": "한국경제"}]
-        store = objectivity.update_media_scores(self._empty_store(), arts, "2026-07-01")
-        before = objectivity_snapshot(store)
+    def test_idempotent_same_date(self):
+        arts = [{"title": "깨끗", "summary": "", "source": "한국경제", "link": "L1"}]
+        store = objectivity.update_media_scores(self._empty(), arts, "2026-07-01")
+        snap = objectivity_snapshot(store)
         store = objectivity.update_media_scores(store, arts, "2026-07-01")
-        self.assertEqual(objectivity_snapshot(store), before)
+        self.assertEqual(objectivity_snapshot(store), snap)
 
 
 def objectivity_snapshot(store):
@@ -116,7 +115,7 @@ class StoreIOTest(unittest.TestCase):
             with patch.object(objectivity, "SCORES_DIR", Path(tmp)):
                 objectivity.save_article_report("2026-07-01", [
                     {"source": "A", "category": "경제", "title": "논란이 커지고 있다",
-                     "link": "L1", "score": 90, "hits": ["논란이 커지고 있다"]},
+                     "link": "L1", "score": 92, "points": 8, "hits": ["논란이 커지고 있다"]},
                 ])
                 data = json.loads((Path(tmp) / "articles-2026-07-01.json").read_text())
         self.assertEqual(data["penalized_count"], 1)

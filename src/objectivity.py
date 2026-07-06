@@ -230,36 +230,35 @@ def penalty_memo(records: list[dict], penalties=None) -> dict:
 
 
 def update_media_scores(store: dict, dated_articles: list[dict], date: str) -> dict:
-    """그날 기사들을 매체별로 채점해 EWMA로 store에 누적한다(멱등)."""
+    """그날 기사들을 매체별로 채점해 감점 밀도로 누적한다(멱등)."""
     if date in store.get("processed_dates", []):
-        return store  # 이미 처리한 날짜 — 이중 반영 방지
+        return store
 
-    # 매체별 그날 점수 모으기
-    by_source: dict[str, list[int]] = {}
-    penalized: dict[str, int] = {}
+    flags = outlier_flags(dated_articles)
+    agg: dict[str, dict] = {}
     for art in dated_articles:
         source = art.get("source", "")
-        r = objectivity_score(art)
-        by_source.setdefault(source, []).append(r["score"])
-        if r["hits"]:
-            penalized[source] = penalized.get(source, 0) + 1
+        ch = {"title": art.get("title", ""), "lead": art.get("summary", ""), "body": ""}
+        r = score_article(ch)
+        a = agg.setdefault(source, {"points": 0.0, "count": 0, "attr": 0, "outlier": 0})
+        a["points"] += r["points"]
+        a["count"] += 1
+        a["attr"] += attribution_count(ch)
+        a["outlier"] += 1 if flags.get(art.get("link", "")) else 0
 
     media = store.setdefault("media", {})
-    for source, scores in by_source.items():
-        day_avg = sum(scores) / len(scores)
-        if source in media:
-            prev = media[source]
-            prev["score"] = (1 - EWMA_ALPHA) * prev["score"] + EWMA_ALPHA * day_avg
-            prev["count"] += len(scores)
-            prev["penalized"] += penalized.get(source, 0)
-            prev["last_seen"] = date
-        else:
-            media[source] = {
-                "score": day_avg,
-                "count": len(scores),
-                "penalized": penalized.get(source, 0),
-                "last_seen": date,
-            }
+    for source, a in agg.items():
+        m = media.setdefault(source, {"penalty_points_total": 0.0, "article_count": 0,
+                                      "attribution_total": 0, "outlier_total": 0,
+                                      "density_per_1000": 0.0, "count": 0, "last_seen": date})
+        m["penalty_points_total"] += a["points"]
+        m["article_count"] += a["count"]
+        m["attribution_total"] += a["attr"]
+        m["outlier_total"] += a["outlier"]
+        m["count"] = m["article_count"]
+        m["last_seen"] = date
+        m["density_per_1000"] = (m["penalty_points_total"] / m["article_count"] * 1000
+                                 if m["article_count"] else 0.0)
 
     store.setdefault("processed_dates", []).append(date)
     return store
@@ -281,11 +280,16 @@ def save_store(store: dict) -> None:
 
 def save_article_report(date: str, records: list[dict]) -> None:
     SCORES_DIR.mkdir(parents=True, exist_ok=True)
-    penalized = [r for r in records if r["score"] < BASELINE]
+    penalized = [r for r in records if r.get("points", 0) > 0]
+    total_points = sum(r.get("points", 0) for r in records)
     payload = {
         "date": date,
         "scored": len(records),
         "penalized_count": len(penalized),
+        "total_points": total_points,
+        "density_per_1000": (total_points / len(records) * 1000) if records else 0.0,
+        "attribution_total": sum(r.get("attribution", 0) for r in records),
+        "outlier_total": sum(1 for r in records if r.get("outlier")),
         "penalty_memo": penalty_memo(records),
         "articles": penalized,
     }
@@ -321,16 +325,21 @@ def process_date(store: dict, date: str) -> dict:
     already = date in store.get("processed_dates", [])
     store = update_media_scores(store, articles, date)
     if not already:
+        flags = outlier_flags(articles)
         records = []
         for a in articles:
-            r = objectivity_score(a)
+            ch = {"title": a.get("title", ""), "lead": a.get("summary", ""), "body": ""}
+            r = score_article(ch)
             records.append({
                 "source": a.get("source", ""),
                 "category": a.get("category", ""),
                 "title": a.get("title", ""),
                 "link": a.get("link", ""),
                 "score": r["score"],
+                "points": r["points"],
                 "hits": r["hits"],
+                "attribution": attribution_count(ch),
+                "outlier": bool(flags.get(a.get("link", ""))),
             })
         save_article_report(date, records)
     return store
@@ -368,10 +377,12 @@ def main() -> int:
         return 1
     save_store(store)
 
-    print(f"=== 객관성 점수 축적 ({date}) ===")
-    for source, m in sorted(store["media"].items(), key=lambda kv: kv[1]["score"]):
-        print(f"  {m['score']:5.1f} · {source} "
-              f"(표본 {m['count']}, 감점 {m['penalized']})")
+    print(f"=== 객관성 감점 밀도 ({date}) — 낮을수록 객관적 ===")
+    for source, m in sorted(store["media"].items(),
+                            key=lambda kv: kv[1].get("density_per_1000", 0), reverse=True):
+        print(f"  {m.get('density_per_1000', 0):7.1f}/1k · {source} "
+              f"(표본 {m['count']}, 인용 {m.get('attribution_total',0)}, "
+              f"이상치 {m.get('outlier_total',0)})")
     print(f"저장됨: {MEDIA_FILE}")
     return 0
 
