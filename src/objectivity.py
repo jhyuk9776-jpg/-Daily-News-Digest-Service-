@@ -48,6 +48,14 @@ _SEED_PENALTIES = [
     {"expr": "[가-힣]+가 다 했네", "type": "regex", "tier": "strong", "weight": 10, "근거": "조롱조 단정"},
 ]
 
+_DEFAULT_SCORING = {
+    "tiers": {"strong": 15, "medium": 8, "weak": 3},
+    "escalation": {"T": 3, "step": 5, "cap": 45},
+    "body_factor": 0.5,
+    "attribution_markers": ["에 따르면", "라고 밝혔다", "고 밝혔다", "고 말했다",
+                            "라고 말했다", "측은", "측이", "당국은"],
+}
+
 
 def _normalize_entry(entry: dict) -> dict | None:
     """감점 항목 검증·정규화. 정규식이 잘못되면 None(로드 시 건너뜀)."""
@@ -67,6 +75,7 @@ def _normalize_entry(entry: dict) -> dict | None:
         "tier": entry.get("tier", "medium"),
         "weight": int(entry.get("weight", 8)),
         "근거": entry.get("근거", ""),
+        "scope": entry.get("scope", "text"),
     }
 
 
@@ -86,7 +95,26 @@ def load_penalties(path: Path = PENALTIES_FILE):
     return active, observe, exclusions
 
 
+def load_scoring(path: Path = PENALTIES_FILE) -> dict:
+    """penalties.yaml의 scoring 블록·attribution_markers를 읽는다(없으면 시드)."""
+    path = Path(path)
+    if not path.exists():
+        return {k: (dict(v) if isinstance(v, dict) else (v if isinstance(v, float) else list(v)))
+                for k, v in _DEFAULT_SCORING.items()}
+    data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    cfg = {k: (dict(v) if isinstance(v, dict) else (v if isinstance(v, float) else list(v)))
+           for k, v in _DEFAULT_SCORING.items()}
+    for key in ("tiers", "escalation"):
+        cfg[key].update(data.get("scoring", {}).get(key, {}) or {})
+    if "scoring" in data and "body_factor" in data["scoring"]:
+        cfg["body_factor"] = float(data["scoring"]["body_factor"])
+    if data.get("attribution_markers"):
+        cfg["attribution_markers"] = list(data["attribution_markers"])
+    return cfg
+
+
 ACTIVE_PENALTIES, OBSERVE_PENALTIES, EXCLUSIONS = load_penalties()
+SCORING = load_scoring()
 
 
 def _count_matches(entry: dict, text: str) -> int:
