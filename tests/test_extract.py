@@ -75,3 +75,25 @@ class ExtractBodyWrapperTest(unittest.TestCase):
     @patch("extract.requests.get", side_effect=extract.requests.RequestException("boom"))
     def test_request_failure_returns_none(self, m_get):
         self.assertIsNone(extract.extract_body("https://x.test/1", title="제목"))
+
+
+class IterContentsOrderTest(unittest.TestCase):
+    def _item(self):
+        return {"title": "제목", "source": "한국경제", "link": "L1",
+                "summary": "이것은 마흔 자를 확실히 넘기는 충분히 긴 RSS 요약 문장입니다 아주 아주 길게 늘렸습니다",
+                "related_links": []}
+
+    @patch("extract.extract_body")
+    def test_body_yielded_before_rss(self, m_body):
+        m_body.return_value = "추출된 본문 텍스트"
+        cands = list(extract.iter_contents(self._item()))
+        self.assertEqual(cands[0]["method"], "body")
+        self.assertEqual(cands[0]["text"], "추출된 본문 텍스트")
+        self.assertEqual(cands[1]["method"], "rss")
+        m_body.assert_called_with("L1", "제목")  # title 전달
+
+    @patch("extract.extract_body", return_value=None)
+    def test_rss_used_when_body_fails(self, m_body):
+        cands = list(extract.iter_contents(self._item()))
+        self.assertEqual(len(cands), 1)
+        self.assertEqual(cands[0]["method"], "rss")

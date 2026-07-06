@@ -113,13 +113,15 @@ def iter_contents(item: dict):
     """선별 항목에서 요약에 쓸 텍스트 후보를 우선순위 순으로 하나씩 내보낸다.
 
     각 후보: {"text", "content_source", "method", "link"}.
-    method: "rss"(요약 그대로) | "body"(본문 추출).
-    매체마다 충분한 RSS 요약을 먼저, 이어서 본문 추출 결과를 내보낸다.
+    method: "body"(본문 추출) | "rss"(요약 그대로).
+    각 후보 매체마다 검증 통과한 '본문'을 먼저, 이어서 충분한 RSS 요약을 내보낸다.
+    본문 우선이라 원문의 수치가 살아난다(ISSUE-002). 본문은 제목으로 가드된다(ISSUE-001).
     제너레이터라 소비자가 필요할 때만 다음 후보(및 본문 추출)를 계산한다.
     """
+    title = item.get("title", "")
     for source, link, summary in candidate_sources(item):
-        if summary and len(summary) >= MIN_SUMMARY:
-            yield {"text": summary, "content_source": source, "method": "rss", "link": link}
-        body = extract_body(link)
+        body = extract_body(link, title)
         if body:
             yield {"text": body, "content_source": source, "method": "body", "link": link}
+        if summary and len(summary) >= MIN_SUMMARY:
+            yield {"text": summary, "content_source": source, "method": "rss", "link": link}
