@@ -5,6 +5,8 @@
 
 실행: python3 src/notify.py   # 오늘(KST) News/<date>.md를 발송
 """
+from __future__ import annotations
+
 import html as html_lib
 import os
 import re
@@ -112,3 +114,23 @@ def render_email(digest: dict) -> tuple[str, str, str]:
     text_body = _render_text(digest)
     html_body = _render_html(digest, text_body)
     return subject, html_body, text_body
+
+
+def send_email(
+    subject: str,
+    html_body: str,
+    text_body: str,
+    address: str,
+    app_password: str,
+    to: str | None = None,
+) -> None:
+    to = to or address
+    msg = MIMEMultipart("alternative")
+    msg["Subject"] = subject
+    msg["From"] = address
+    msg["To"] = to
+    msg.attach(MIMEText(text_body, "plain", "utf-8"))
+    msg.attach(MIMEText(html_body, "html", "utf-8"))
+    with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+        server.login(address, app_password)
+        server.send_message(msg)

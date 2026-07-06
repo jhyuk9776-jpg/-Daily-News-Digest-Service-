@@ -5,6 +5,7 @@
 import os
 import sys
 import unittest
+from unittest.mock import MagicMock, patch
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 
@@ -97,3 +98,28 @@ class RenderEmailTest(unittest.TestCase):
         self.assertIn("<h2>경제</h2>", self.html)
         self.assertIn("카카오톡용", self.html)
         self.assertIn("<pre>", self.html)
+
+
+class SendEmailTest(unittest.TestCase):
+    @patch("notify.smtplib.SMTP_SSL")
+    def test_login_and_send(self, mock_ssl):
+        server = MagicMock()
+        mock_ssl.return_value.__enter__.return_value = server
+        notify.send_email("제목", "<html>h</html>", "plain text", "me@gmail.com", "pw16")
+        mock_ssl.assert_called_once_with("smtp.gmail.com", 465)
+        server.login.assert_called_once_with("me@gmail.com", "pw16")
+        server.send_message.assert_called_once()
+        msg = server.send_message.call_args[0][0]
+        self.assertEqual(msg["To"], "me@gmail.com")  # to 미지정 → 발신주소
+        self.assertEqual(msg["Subject"], "제목")
+        self.assertEqual(len(msg.get_payload()), 2)  # plain + html
+        self.assertEqual(msg.get_payload()[0].get_content_type(), "text/plain")
+        self.assertEqual(msg.get_payload()[1].get_content_type(), "text/html")
+
+    @patch("notify.smtplib.SMTP_SSL")
+    def test_to_override(self, mock_ssl):
+        server = MagicMock()
+        mock_ssl.return_value.__enter__.return_value = server
+        notify.send_email("s", "h", "t", "me@gmail.com", "pw", to="other@x.com")
+        msg = server.send_message.call_args[0][0]
+        self.assertEqual(msg["To"], "other@x.com")
