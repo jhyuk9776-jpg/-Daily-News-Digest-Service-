@@ -135,6 +135,8 @@ def score_article(channels: dict, penalties=None, observe=None, scoring=None) ->
 
     channels: {"title","lead","body"} 중 있는 것만. 없는 키는 빈 문자열.
     body 채널 매칭은 scoring.body_factor로 가중. 가속은 n_hits가 T 초과 시 볼록 가산.
+    scope=="text" 항목은 제목+리드(전체 가중) 외에 body도 body_factor 가중으로 추가 검사한다
+    (트랙1 래퍼는 body=""를 전달하므로 동작 불변).
     """
     penalties = ACTIVE_PENALTIES if penalties is None else penalties
     observe = OBSERVE_PENALTIES if observe is None else observe
@@ -153,6 +155,14 @@ def score_article(channels: dict, penalties=None, observe=None, scoring=None) ->
             raw += p["weight"] * c * factor
             n_hits += c
             hits.extend([p["expr"]] * c)
+        # text scope 항목: body도 body_factor 가중으로 추가 검사
+        if scope == "text":
+            body_text = channels.get("body", "")
+            cb = _count_matches(p, body_text) if body_text else 0
+            if cb:
+                raw += p["weight"] * cb * body_factor
+                n_hits += cb
+                hits.extend([p["expr"]] * cb)
 
     observe_hits: list[str] = []
     for p in observe:

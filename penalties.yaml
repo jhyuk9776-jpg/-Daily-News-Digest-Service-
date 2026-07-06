@@ -90,12 +90,6 @@ penalties:
     tier: medium
     weight: 8
     근거: "감정 과장"
-  - expr: "아우성"
-    type: phrase
-    tier: medium
-    weight: 8
-    scope: body
-    근거: "감정 과장(본문 과열 묘사 탐지 — 트랙2 본문 감사용)"
   - expr: "후폭풍"
     type: phrase
     tier: medium
