@@ -1,7 +1,7 @@
 """Phase 2: 매체 객관성 점수 축적기 (observe-only, record-only).
 
-요약하지 않은 수집 기사까지 감점 휴리스틱으로 채점해 매체별 객관성 점수를
-이동평균(EWMA)으로 누적한다. 선별·랭킹에는 반영하지 않는다(관찰만).
+요약하지 않은 수집 기사까지 감점 휴리스틱으로 채점해 매체별 감점 밀도
+(1000건당 감점 point, 낮을수록 객관적)를 누적한다. 선별·랭킹에는 반영하지 않는다(관찰만).
 
 설계: 기획/시스템기획/기능설계/04-객관성-점수축적기.md
 감점 사전 시드: AI_CONTEXT.md §6 "피해야 할 표현".
@@ -38,7 +38,6 @@ KST = timezone(timedelta(hours=9))
 
 BASELINE = 100
 FLOOR = 0
-EWMA_ALPHA = 0.1
 
 # 시드 폴백(penalties.yaml 없을 때만). AI_CONTEXT §6 "피해야 할 표현".
 _SEED_PENALTIES = [
@@ -223,6 +222,8 @@ def penalty_memo(records: list[dict], penalties=None) -> dict:
 
     입력: records = [{"source":..., "hits":[expr,...]}...]
     출력: {total_deducted, by_expr:{expr:{count,deducted,근거}}, by_source:{src:deducted}}
+    주의: 여기 합계는 표현별 raw weight 합(가속·cap·body_factor 적용 전)이라
+    리포트의 total_points(실제 부과 point)와 가속 발화 시 어긋날 수 있다.
     """
     penalties = ACTIVE_PENALTIES if penalties is None else penalties
     weight = {p["expr"]: p["weight"] for p in penalties}
