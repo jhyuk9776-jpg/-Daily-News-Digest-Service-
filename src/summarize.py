@@ -35,6 +35,15 @@ NEWS_DIR = ROOT / "News"
 CACHE_FILE = ROOT / "cache" / "summaries.json"
 
 KST = timezone(timedelta(hours=9))
+_WEEKDAYS_KO = ["월", "화", "수", "목", "금", "토", "일"]
+
+
+def korean_date(date_str: str) -> str:
+    """'2026-07-06' → '2026년 07월 06일 월요일'."""
+    dt = datetime.strptime(date_str, "%Y-%m-%d")
+    return f"{dt.year}년 {dt.month:02d}월 {dt.day:02d}일 {_WEEKDAYS_KO[dt.weekday()]}요일"
+
+
 MODEL = "anthropic/claude-4.5-haiku"  # Replicate 경유 Claude Haiku 4.5
 MAX_TOKENS = 1024   # Replicate Claude 모델 최소값
 THROTTLE_WAIT = 12  # 429(분당 제한) 시 대기 초
@@ -181,7 +190,7 @@ def build_markdown(selected: dict, results: dict, counters: dict) -> str:
     date = selected["date"]
     now = datetime.now(KST).strftime("%Y-%m-%d %H:%M KST")
     parts = [
-        f"# 데일리 뉴스 다이제스트 - {date}",
+        f"# 오늘의 뉴스 요약 - {korean_date(date)}",
         "",
         f"> 생성: {now} · 요약실패 {counters['api_failed']}건 · 호출오류 "
         f"{counters['call_error']}건 · 추출실패 {counters['extract_failed']}건",

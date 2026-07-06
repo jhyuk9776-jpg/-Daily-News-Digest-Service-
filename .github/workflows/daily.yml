@@ -51,3 +51,13 @@ jobs:
             git commit -m "docs: $(date +%F) 다이제스트 자동 생성 + 객관성 점수 축적"
             git push
           fi
+
+      # 오늘자 다이제스트를 본인 Gmail로 발송(HTML+카톡용 plain 멀티파트).
+      # 커밋 뒤 단계라 발송이 실패해도 다이제스트는 이미 저장돼 있으며,
+      # 발송 실패는 이 스텝의 빨간불로 노출된다(조용히 넘기지 않는다).
+      - name: 이메일 발송
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          NOTIFY_TO: ${{ secrets.NOTIFY_TO }}
+        run: python3 src/notify.py
