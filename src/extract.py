@@ -54,7 +54,9 @@ def looks_like_body(text: str, title: str = "") -> bool:
 # 선택자가 매치되면 컨테이너 전체 텍스트를 쓴다(본문이 <p> 없이 div에 직접 들어가는 매체 대응).
 SITE_SELECTORS: dict[str, list[str]] = {
     "hankyung.com": ["#articletxt", ".article-body"],
-    # 나머지 도메인은 Task 6에서 확인해 채운다(폴백+가드가 안전망).
+    "yna.co.kr": [".story-news.article", "#articleWrap"],
+    "hani.co.kr": [".article-text"],
+    # 선택자 없는 도메인은 휴리스틱 폴백 + 가드가 안전망.
 }
 
 
