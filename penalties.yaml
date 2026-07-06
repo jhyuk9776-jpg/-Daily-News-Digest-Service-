@@ -4,6 +4,23 @@
 # 규칙: 매칭 1건당 weight 감점(반복 등장 시 횟수만큼 합산). 정밀도 우선.
 # observe_candidates: 오탐 여지가 있어 감점하지 않고 등장만 기록한다.
 
+# 튜너블 상수(시드값 — 데이터 축적 후 보정). 코드 수정 없이 여기서 조정.
+scoring:
+  tiers: {strong: 15, medium: 8, weak: 3}
+  escalation: {T: 3, step: 5, cap: 45}   # hit가 T 초과 시 step만큼 볼록 가산, per-기사 cap 상한
+  body_factor: 0.5                        # 본문 매칭은 제목/리드의 절반 가중
+
+# 인용·출처 밀도(② 중립 가점 관찰축). 감점 아님 — 등장수만 기록.
+attribution_markers:
+  - "에 따르면"
+  - "라고 밝혔다"
+  - "고 밝혔다"
+  - "고 말했다"
+  - "라고 말했다"
+  - "측은"
+  - "측이"
+  - "당국은"
+
 penalties:
   # ── strong: 조롱·단정·불안조장 낚시 (weight 15) ──
   - expr: "[가-힣]+가 다 했네"
@@ -26,6 +43,26 @@ penalties:
     tier: strong
     weight: 15
     근거: "불안 조장 낚시"
+
+  # ── ① 구조적 낚시 (제목 한정, scope:title) ──
+  - expr: "\\?$"
+    type: regex
+    tier: medium
+    weight: 8
+    scope: title
+    근거: "물음표 종결 낚시"
+  - expr: "(할까|일까|되나|아니냐|셈인가|것인가)\\??$"
+    type: regex
+    tier: medium
+    weight: 8
+    scope: title
+    근거: "추측형 종결"
+  - expr: "(\\?!|!!+|…)"
+    type: regex
+    tier: weak
+    weight: 3
+    scope: title
+    근거: "과도한 문장부호"
 
   # ── medium: 평가·전망·감정 (weight 8) ──
   - expr: "논란이 커지고 있다"
@@ -93,6 +130,21 @@ penalties:
     tier: medium
     weight: 8
     근거: "전망성 낚시"
+  - expr: "파문"
+    type: phrase
+    tier: medium
+    weight: 8
+    근거: "과장 프레이밍"
+  - expr: "발칵"
+    type: phrase
+    tier: medium
+    weight: 8
+    근거: "감정 과장"
+  - expr: "초강수"
+    type: phrase
+    tier: medium
+    weight: 8
+    근거: "드라마화"
 
   # ── weak: 약한 과장·주관 묘사 (weight 3) ──
   - expr: "슬금슬금"

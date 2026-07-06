@@ -197,6 +197,16 @@ class ActiveSourceFilterTest(unittest.TestCase):
         self.assertNotIn("이코노미스트 타임스", sources)
 
 
+class ScoringConfigTest(unittest.TestCase):
+    def test_load_scoring_from_real_file(self):
+        cfg = objectivity.load_scoring(objectivity.PENALTIES_FILE)
+        self.assertEqual(cfg["tiers"]["strong"], 15)
+        self.assertEqual(cfg["escalation"]["T"], 3)
+        self.assertEqual(cfg["escalation"]["cap"], 45)
+        self.assertEqual(cfg["body_factor"], 0.5)
+        self.assertIn("에 따르면", cfg["attribution_markers"])
+
+
 class PenaltyLoaderTest(unittest.TestCase):
     def _write(self, tmp, text):
         p = Path(tmp) / "penalties.yaml"
