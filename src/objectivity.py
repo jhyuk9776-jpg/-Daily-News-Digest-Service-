@@ -190,11 +190,14 @@ def outlier_flags(articles: list[dict]) -> dict:
         groups.setdefault(normalize_title(a.get("title", "")), set()).add(a.get("source", ""))
     flags: dict[str, bool] = {}
     for a in articles:
+        link = a.get("link", "")
+        if not link:
+            continue
         norm = normalize_title(a.get("title", ""))
         singleton = len(groups[norm]) == 1
         has_hit = bool(score_article(
             {"title": a.get("title", ""), "lead": a.get("summary", ""), "body": ""})["hits"])
-        flags[a.get("link", "")] = singleton and has_hit
+        flags[link] = singleton and has_hit
     return flags
 
 

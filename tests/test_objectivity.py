@@ -103,11 +103,13 @@ class StoreIOTest(unittest.TestCase):
             mf = Path(tmp) / "media.json"
             with patch.object(objectivity, "MEDIA_FILE", mf), \
                  patch.object(objectivity, "SCORES_DIR", Path(tmp)):
-                objectivity.save_store({"media": {"A": {"score": 90.0, "count": 1,
-                                       "penalized": 0, "last_seen": "2026-07-01"}},
+                objectivity.save_store({"media": {"A": {"penalty_points_total": 8.0,
+                                       "article_count": 2, "attribution_total": 0,
+                                       "outlier_total": 0, "density_per_1000": 4000.0,
+                                       "count": 2, "last_seen": "2026-07-01"}},
                                        "processed_dates": ["2026-07-01"]})
                 store = objectivity.load_store()
-        self.assertEqual(store["media"]["A"]["score"], 90.0)
+        self.assertEqual(store["media"]["A"]["density_per_1000"], 4000.0)
         self.assertIn("updated_at", store)
 
     def test_article_report_saves_only_penalized(self):
