@@ -57,12 +57,12 @@ penalties:
     weight: 8
     scope: title
     근거: "추측형 종결"
-  - expr: "(\\?!|!!+|…)"
+  - expr: "(\\?!|!!+)"
     type: regex
     tier: weak
     weight: 3
     scope: title
-    근거: "과도한 문장부호"
+    근거: "과도한 문장부호(감탄/의문 중복). …(말줄임표)는 한국 제목 표준 연결부호라 제외"
 
   # ── medium: 평가·전망·감정 (weight 8) ──
   - expr: "논란이 커지고 있다"
