@@ -14,6 +14,7 @@
 from __future__ import annotations
 
 import re
+from urllib.parse import urlparse
 
 import requests
 from bs4 import BeautifulSoup
@@ -49,27 +50,53 @@ def looks_like_body(text: str, title: str = "") -> bool:
     return True
 
 
-def extract_body(url: str) -> str | None:
-    """원문 링크에서 본문 텍스트를 추출한다. 실패하면 None."""
+# 도메인 → 진짜 본문 컨테이너 CSS 선택자 후보(있으면 우선, 없으면 휴리스틱 폴백).
+# 선택자가 매치되면 컨테이너 전체 텍스트를 쓴다(본문이 <p> 없이 div에 직접 들어가는 매체 대응).
+SITE_SELECTORS: dict[str, list[str]] = {
+    "hankyung.com": ["#articletxt", ".article-body"],
+    # 나머지 도메인은 Task 6에서 확인해 채운다(폴백+가드가 안전망).
+}
+
+
+def _domain(url: str) -> str:
+    host = urlparse(url).netloc.lower()
+    return host[4:] if host.startswith("www.") else host
+
+
+def _parse_body(html: str, url: str, title: str = "") -> str | None:
+    """HTML에서 본문을 추출한다(도메인 선택자 우선 → 휴리스틱 폴백 → 가드). 실패 시 None."""
+    soup = BeautifulSoup(html, "html.parser")
+    for tag in soup(["script", "style", "nav", "header", "footer", "aside"]):
+        tag.decompose()
+
+    container = None
+    for sel in SITE_SELECTORS.get(_domain(url), []):
+        container = soup.select_one(sel)
+        if container:
+            break
+
+    if container is not None:
+        text = container.get_text(" ", strip=True)
+    else:
+        # 기사 본문은 보통 <article> 또는 다수의 <p>에 들어 있다.
+        article = soup.find("article")
+        paragraphs = (article or soup).find_all("p")
+        text = " ".join(p.get_text(" ", strip=True) for p in paragraphs)
+
+    text = " ".join(text.split())[:MAX_CHARS]  # 공백 정리
+    if not looks_like_body(text, title):
+        return None
+    return text
+
+
+def extract_body(url: str, title: str = "") -> str | None:
+    """원문 링크에서 본문 텍스트를 추출한다(도메인 선택자+가드). 실패하면 None."""
     try:
         resp = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=TIMEOUT)
         resp.raise_for_status()
     except requests.RequestException:
         return None
-
-    soup = BeautifulSoup(resp.text, "html.parser")
-    for tag in soup(["script", "style", "nav", "header", "footer", "aside"]):
-        tag.decompose()
-
-    # 기사 본문은 보통 <article> 또는 다수의 <p>에 들어 있다.
-    article = soup.find("article")
-    paragraphs = (article or soup).find_all("p")
-    text = " ".join(p.get_text(" ", strip=True) for p in paragraphs)
-    text = " ".join(text.split())  # 공백 정리
-
-    if len(text) < MIN_BODY:
-        return None
-    return text[:MAX_CHARS]
+    return _parse_body(resp.text, url, title)
 
 
 def candidate_sources(item: dict):

@@ -3,12 +3,15 @@
 실행: python3 -m unittest discover -s tests
 """
 import os
+import pathlib
 import sys
 import unittest
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 
 import extract  # noqa: E402
+
+FIXTURES = pathlib.Path(__file__).parent / "fixtures"
 
 _LONG = "가" * 100  # MIN_BODY(80) 이상 확보용
 
@@ -35,3 +38,22 @@ class LooksLikeBodyTest(unittest.TestCase):
     def test_no_title_skips_relevance(self):
         text = "제목 없이 들어온 충분히 긴 본문입니다. " + _LONG
         self.assertTrue(extract.looks_like_body(text, ""))
+
+
+class ParseBodyTest(unittest.TestCase):
+    def setUp(self):
+        self.html = (FIXTURES / "hankyung_food.html").read_text(encoding="utf-8")
+        self.url = "https://www.hankyung.com/article/2026070455227"
+
+    def test_extracts_real_body_not_recommendation(self):
+        body = extract._parse_body(self.html, self.url, title="세계 식량가격지수 2개월 연속 하락")
+        self.assertIsNotNone(body)
+        # 진짜 본문 신호: 제목 키워드 + 원문 수치가 살아 있음
+        self.assertIn("식량가격지수", body)
+        self.assertIn("130.3", body)   # ISSUE-002: 본문 수치 보존 확인
+        # 추천위젯/저작권 상투구가 본문을 지배하지 않음
+        self.assertNotIn("무단전재", body)
+
+    def test_domain_helper(self):
+        self.assertEqual(extract._domain("https://www.hankyung.com/article/1"), "hankyung.com")
+        self.assertEqual(extract._domain("https://news.sbs.co.kr/x"), "news.sbs.co.kr")
