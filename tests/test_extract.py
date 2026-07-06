@@ -11,6 +11,7 @@ from unittest.mock import MagicMock, patch
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 
 import extract  # noqa: E402
+import summarize  # noqa: E402
 
 FIXTURES = pathlib.Path(__file__).parent / "fixtures"
 
@@ -97,3 +98,9 @@ class IterContentsOrderTest(unittest.TestCase):
         cands = list(extract.iter_contents(self._item()))
         self.assertEqual(len(cands), 1)
         self.assertEqual(cands[0]["method"], "rss")
+
+
+class PromptNumberRuleTest(unittest.TestCase):
+    def test_prompt_requires_number_preservation(self):
+        self.assertIn("수치", summarize.SYSTEM_PROMPT)
+        self.assertIn("보존", summarize.SYSTEM_PROMPT)
