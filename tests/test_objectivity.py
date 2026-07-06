@@ -37,11 +37,11 @@ class ScoreTest(unittest.TestCase):
         self.assertTrue(r["hits"])
 
     def test_floor_clamp(self):
-        # 감점이 아무리 쌓여도 FLOOR(0) 미만으로 내려가지 않는다.
+        # 가속·cap 도달: 반복 감점은 per-기사 cap(45)에서 멈춘다 → score 55
         text = "논란이 커지고 있다 " * 20
         art = {"title": text, "summary": ""}
         r = objectivity.objectivity_score(art)
-        self.assertEqual(r["score"], 0)
+        self.assertEqual(r["score"], 55)
 
 
 class MediaAggregateTest(unittest.TestCase):
@@ -276,9 +276,51 @@ class GradedScoreTest(unittest.TestCase):
         self.assertIn("극적", r["observe_hits"])
 
     def test_floor_clamp_with_weights(self):
-        art = {"title": "반도체가 다 했네 " * 10, "summary": ""}  # 15*10=150 > 100
+        art = {"title": "반도체가 다 했네 " * 10, "summary": ""}  # cap 45에서 멈춤
         r = objectivity.objectivity_score(art, self.P, self.OBS)
-        self.assertEqual(r["score"], 0)
+        self.assertEqual(r["score"], 55)
+
+
+class ChannelScoreTest(unittest.TestCase):
+    P = [
+        {"expr": "아우성", "type": "phrase", "tier": "medium", "weight": 8,
+         "scope": "text", "근거": "감정"},
+        {"expr": "\\?$", "type": "regex", "tier": "medium", "weight": 8,
+         "scope": "title", "근거": "물음표"},
+    ]
+    SCORING = {"tiers": {}, "escalation": {"T": 3, "step": 5, "cap": 45},
+               "body_factor": 0.5, "attribution_markers": []}
+
+    def test_title_scope_only_matches_title(self):
+        # 물음표는 제목에만 감점(scope:title). 리드의 물음표는 무시.
+        r = objectivity.score_article(
+            {"title": "정말일까?", "lead": "", "body": ""}, self.P, [], self.SCORING)
+        self.assertEqual(r["points"], 8)
+        r2 = objectivity.score_article(
+            {"title": "무역흑자 361억달러", "lead": "정말일까?", "body": ""},
+            self.P, [], self.SCORING)
+        self.assertEqual(r2["points"], 0)
+
+    def test_body_factor_halves_body_hit(self):
+        # 본문의 '아우성'(scope:text는 title+lead만; body는 별도) → body_factor 검증용 body scope
+        P = [{"expr": "아우성", "type": "phrase", "tier": "medium", "weight": 8,
+              "scope": "body", "근거": "감정"}]
+        r = objectivity.score_article(
+            {"title": "", "lead": "", "body": "여기저기 아우성"}, P, [], self.SCORING)
+        self.assertEqual(r["points"], 4.0)   # 8 × body_factor 0.5
+
+    def test_escalation_above_threshold(self):
+        # 5회 등장: raw=40, n_hits=5>T3 → +step*(5-3)=10 → 50, cap45 → 45
+        art = {"title": "아우성 아우성 아우성 아우성 아우성", "lead": "", "body": ""}
+        r = objectivity.score_article(art, self.P, [], self.SCORING)
+        self.assertEqual(r["n_hits"], 5)
+        self.assertEqual(r["points"], 45)    # cap
+        self.assertEqual(r["score"], 55)
+
+    def test_below_threshold_is_linear(self):
+        art = {"title": "아우성 아우성", "lead": "", "body": ""}
+        r = objectivity.score_article(art, self.P, [], self.SCORING)
+        self.assertEqual(r["points"], 16)    # 2×8, 가속 없음(n=2≤3)
 
 
 class PenaltyMemoTest(unittest.TestCase):

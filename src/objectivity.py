@@ -123,29 +123,55 @@ def _count_matches(entry: dict, text: str) -> int:
     return text.count(entry["expr"])
 
 
-def objectivity_score(article: dict, penalties=None, observe=None) -> dict:
-    """기사 1건의 객관성 점수(등급 가중 감점)와 감점·관찰 근거를 계산한다.
+def _scope_text(scope: str, channels: dict) -> str:
+    if scope == "text":
+        return f"{channels.get('title', '')} {channels.get('lead', '')}"
+    return channels.get(scope, "")
 
-    매칭 1건당 그 항목의 weight만큼 감점(반복 등장 시 횟수만큼 합산).
-    observe 후보는 감점하지 않고 등장만 observe_hits로 기록한다.
+
+def score_article(channels: dict, penalties=None, observe=None, scoring=None) -> dict:
+    """기사 1건을 채널별로 채점한다(등급·scope·가속·차등가중).
+
+    channels: {"title","lead","body"} 중 있는 것만. 없는 키는 빈 문자열.
+    body 채널 매칭은 scoring.body_factor로 가중. 가속은 n_hits가 T 초과 시 볼록 가산.
     """
     penalties = ACTIVE_PENALTIES if penalties is None else penalties
     observe = OBSERVE_PENALTIES if observe is None else observe
-    text = f"{article.get('title', '')} {article.get('summary', '')}"
+    scoring = SCORING if scoring is None else scoring
+    esc = scoring["escalation"]
+    body_factor = scoring["body_factor"]
+
     hits: list[str] = []
-    deducted = 0
+    raw = 0.0
+    n_hits = 0
     for p in penalties:
-        c = _count_matches(p, text)
+        scope = p.get("scope", "text")
+        c = _count_matches(p, _scope_text(scope, channels))
         if c:
+            factor = body_factor if scope == "body" else 1.0
+            raw += p["weight"] * c * factor
+            n_hits += c
             hits.extend([p["expr"]] * c)
-            deducted += p["weight"] * c
+
     observe_hits: list[str] = []
     for p in observe:
-        c = _count_matches(p, text)
+        scope = p.get("scope", "text")
+        c = _count_matches(p, _scope_text(scope, channels))
         if c:
             observe_hits.extend([p["expr"]] * c)
-    score = max(FLOOR, BASELINE - deducted)
-    return {"score": score, "hits": hits, "observe_hits": observe_hits}
+
+    points = raw + esc["step"] * max(0, n_hits - esc["T"])
+    points = min(esc["cap"], points)
+    score = max(FLOOR, BASELINE - points)
+    return {"points": points, "hits": hits, "n_hits": n_hits,
+            "observe_hits": observe_hits, "score": int(score)}
+
+
+def objectivity_score(article: dict, penalties=None, observe=None) -> dict:
+    """호환 래퍼: 기사(title+summary)를 title/lead 채널로 채점."""
+    channels = {"title": article.get("title", ""),
+                "lead": article.get("summary", ""), "body": ""}
+    return score_article(channels, penalties, observe)
 
 
 def penalty_memo(records: list[dict], penalties=None) -> dict:
