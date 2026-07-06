@@ -73,3 +73,27 @@ class ParseDigestTest(unittest.TestCase):
     def test_source_without_extra(self):
         art = self.d["categories"][1]["articles"][0]
         self.assertEqual(art["source"]["extra"], "")
+
+
+class RenderEmailTest(unittest.TestCase):
+    def setUp(self):
+        digest = notify.parse_digest(SAMPLE_MD)
+        self.subject, self.html, self.text = notify.render_email(digest)
+
+    def test_subject(self):
+        self.assertEqual(
+            self.subject, "📰 오늘의 뉴스 요약 - 2026년 07월 06일 월요일 (2건)"
+        )
+
+    def test_text_is_kakao_plain(self):
+        self.assertIn("▪ 삼성 사내대출 제한", self.text)
+        self.assertIn("──────── 경제 ────────", self.text)
+        self.assertIn("https://www.hankyung.com/article/1", self.text)
+        self.assertNotIn("](", self.text)  # 마크다운 링크 문법 없음
+        self.assertIn("요약실패 1건", self.text)
+
+    def test_html_has_links_and_kakao_block(self):
+        self.assertIn('<a href="https://www.etnews.com/2">전자신문</a>', self.html)
+        self.assertIn("<h2>경제</h2>", self.html)
+        self.assertIn("카카오톡용", self.html)
+        self.assertIn("<pre>", self.html)

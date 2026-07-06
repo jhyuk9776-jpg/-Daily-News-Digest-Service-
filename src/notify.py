@@ -60,3 +60,55 @@ def parse_digest(md_text: str) -> dict:
         "categories": categories,
         "total_count": total_count,
     }
+
+
+def _render_text(digest: dict) -> str:
+    lines = [digest["title_line"], ""]
+    for cat in digest["categories"]:
+        lines.append(f"──────── {cat['name']} ────────")
+        for art in cat["articles"]:
+            lines.append(f"▪ {art['title']}")
+            for b in art["bullets"]:
+                lines.append(f"  · {b}")
+            src = art["source"]
+            if src:
+                extra = f" {src['extra']}" if src["extra"] else ""
+                lines.append(f"  출처: {src['label']} {src['url']}{extra}")
+            lines.append("")
+    if digest["meta"]:
+        lines.append(f"— {digest['meta']}")
+    return "\n".join(lines).strip() + "\n"
+
+
+def _render_html(digest: dict, text_body: str) -> str:
+    esc = html_lib.escape
+    parts = [f"<h1>{esc(digest['title_line'])}</h1>"]
+    for cat in digest["categories"]:
+        parts.append(f"<h2>{esc(cat['name'])}</h2>")
+        for art in cat["articles"]:
+            parts.append(f"<h3>{esc(art['title'])}</h3>")
+            if art["bullets"]:
+                parts.append("<ul>")
+                parts += [f"<li>{esc(b)}</li>" for b in art["bullets"]]
+                parts.append("</ul>")
+            src = art["source"]
+            if src:
+                extra = f" {esc(src['extra'])}" if src["extra"] else ""
+                parts.append(
+                    f'<p>출처: <a href="{esc(src["url"])}">{esc(src["label"])}</a>{extra}</p>'
+                )
+    if digest["meta"]:
+        parts.append(
+            f'<p style="color:#888;font-size:12px">{esc(digest["meta"])}</p>'
+        )
+    parts.append("<hr>")
+    parts.append("<h3>─ 카카오톡용 (아래 블록만 복사) ─</h3>")
+    parts.append(f"<pre>{esc(text_body)}</pre>")
+    return "<html><body>" + "\n".join(parts) + "</body></html>"
+
+
+def render_email(digest: dict) -> tuple[str, str, str]:
+    subject = f"📰 {digest['title_line']} ({digest['total_count']}건)"
+    text_body = _render_text(digest)
+    html_body = _render_html(digest, text_body)
+    return subject, html_body, text_body
