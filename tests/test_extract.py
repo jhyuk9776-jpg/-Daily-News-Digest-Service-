@@ -6,6 +6,7 @@ import os
 import pathlib
 import sys
 import unittest
+from unittest.mock import MagicMock, patch
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 
@@ -57,3 +58,20 @@ class ParseBodyTest(unittest.TestCase):
     def test_domain_helper(self):
         self.assertEqual(extract._domain("https://www.hankyung.com/article/1"), "hankyung.com")
         self.assertEqual(extract._domain("https://news.sbs.co.kr/x"), "news.sbs.co.kr")
+
+
+class ExtractBodyWrapperTest(unittest.TestCase):
+    @patch("extract.requests.get")
+    def test_delegates_to_parse_body_with_title(self, m_get):
+        m_get.return_value = MagicMock(
+            status_code=200,
+            text="<article><p>" + ("식량가격지수 " * 20) + "</p></article>",
+        )
+        m_get.return_value.raise_for_status = MagicMock()
+        body = extract.extract_body("https://www.hankyung.com/article/1", title="식량가격지수 하락")
+        self.assertIsNotNone(body)
+        self.assertIn("식량가격지수", body)
+
+    @patch("extract.requests.get", side_effect=extract.requests.RequestException("boom"))
+    def test_request_failure_returns_none(self, m_get):
+        self.assertIsNone(extract.extract_body("https://x.test/1", title="제목"))
