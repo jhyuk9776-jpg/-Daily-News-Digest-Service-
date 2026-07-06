@@ -3,9 +3,9 @@ name: Daily News Digest
 # 매일 아침 파이프라인을 실행해 News/YYYY-MM-DD.md 를 생성하고 main에 자동 커밋한다.
 on:
   schedule:
-    # cron은 UTC 기준. 22:00 UTC = 다음날 07:00 KST(아침 브리핑 시각).
-    # 시각을 바꾸려면 이 값을 조정한다(예: 21:00 UTC = 06:00 KST).
-    - cron: "0 22 * * *"
+    # cron은 UTC 기준. 21:00 UTC = 다음날 06:00 KST(아침 브리핑 시각).
+    # 시각을 바꾸려면 이 값을 조정한다(예: 22:00 UTC = 07:00 KST).
+    - cron: "0 21 * * *"
   workflow_dispatch: {}  # 수동 실행 버튼(Actions 탭에서 즉시 실행)
 
 # 생성된 다이제스트를 커밋·푸시하기 위해 쓰기 권한이 필요하다.
