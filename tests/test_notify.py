@@ -4,7 +4,10 @@
 """
 import os
 import sys
+import tempfile
 import unittest
+from datetime import datetime
+from pathlib import Path
 from unittest.mock import MagicMock, patch
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
@@ -123,3 +126,32 @@ class SendEmailTest(unittest.TestCase):
         notify.send_email("s", "h", "t", "me@gmail.com", "pw", to="other@x.com")
         msg = server.send_message.call_args[0][0]
         self.assertEqual(msg["To"], "other@x.com")
+
+
+class MainTest(unittest.TestCase):
+    def _write_today(self, tmp):
+        date = datetime.now(notify.KST).strftime("%Y-%m-%d")
+        (Path(tmp) / f"{date}.md").write_text(SAMPLE_MD, encoding="utf-8")
+
+    def test_skip_when_no_file(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            with patch.object(notify, "NEWS_DIR", Path(tmp)):
+                self.assertEqual(notify.main(), 0)
+
+    def test_missing_env_returns_1(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            self._write_today(tmp)
+            with patch.object(notify, "NEWS_DIR", Path(tmp)), patch.dict(
+                os.environ, {}, clear=True
+            ):
+                self.assertEqual(notify.main(), 1)
+
+    def test_success_sends_and_returns_0(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            self._write_today(tmp)
+            env = {"GMAIL_ADDRESS": "me@gmail.com", "GMAIL_APP_PASSWORD": "pw"}
+            with patch.object(notify, "NEWS_DIR", Path(tmp)), patch.dict(
+                os.environ, env, clear=True
+            ), patch.object(notify, "send_email") as mock_send:
+                self.assertEqual(notify.main(), 0)
+                mock_send.assert_called_once()

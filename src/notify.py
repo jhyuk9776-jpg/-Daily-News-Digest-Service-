@@ -134,3 +134,30 @@ def send_email(
     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
         server.login(address, app_password)
         server.send_message(msg)
+
+
+def main() -> int:
+    date = datetime.now(KST).strftime("%Y-%m-%d")
+    path = NEWS_DIR / f"{date}.md"
+    if not path.exists():
+        print(f"발송 스킵: 오늘 다이제스트 없음 ({path})")
+        return 0
+    address = os.environ.get("GMAIL_ADDRESS")
+    app_password = os.environ.get("GMAIL_APP_PASSWORD")
+    if not address or not app_password:
+        print("발송 실패: GMAIL_ADDRESS/GMAIL_APP_PASSWORD 미설정", file=sys.stderr)
+        return 1
+    to = os.environ.get("NOTIFY_TO") or address
+    digest = parse_digest(path.read_text(encoding="utf-8"))
+    subject, html_body, text_body = render_email(digest)
+    try:
+        send_email(subject, html_body, text_body, address, app_password, to)
+    except Exception as exc:  # noqa: BLE001 - 실패는 빨간불로 노출, 스택 대신 원인 요약
+        print(f"발송 실패: {exc}", file=sys.stderr)
+        return 1
+    print(f"발송 완료: {to}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
