@@ -22,10 +22,11 @@ from pathlib import Path
 
 import yaml
 
-from curate import (  # 날짜창·출처목록 재사용(격리: 단방향 의존)
+from curate import (  # 날짜창·출처목록·정규화 재사용(격리: 단방향 의존)
     SOURCES_FILE,
     in_date_window,
     load_priority_map,
+    normalize_title,
 )
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -165,6 +166,36 @@ def score_article(channels: dict, penalties=None, observe=None, scoring=None) ->
     score = max(FLOOR, BASELINE - points)
     return {"points": points, "hits": hits, "n_hits": n_hits,
             "observe_hits": observe_hits, "score": int(score)}
+
+
+def attribution_count(channels: dict, markers=None) -> int:
+    """제목+리드에서 귀속(출처 명시) 표지 등장수(② 중립 관찰축, 감점 아님).
+
+    긴 표지가 짧은 표지를 포함할 때 이중 계산을 막기 위해 정규식 교대(alternation)로
+    비겹침 최장 일치를 사용한다(예: '라고 밝혔다' 매칭 후 '고 밝혔다' 재계산 방지).
+    """
+    markers = SCORING["attribution_markers"] if markers is None else markers
+    if not markers:
+        return 0
+    text = f"{channels.get('title','')} {channels.get('lead','')}"
+    # 긴 표지가 먼저 소비되도록 길이 내림차순 정렬
+    pattern = "|".join(re.escape(m) for m in sorted(markers, key=len, reverse=True))
+    return len(re.findall(pattern, text))
+
+
+def outlier_flags(articles: list[dict]) -> dict:
+    """④ 교차 이상치: 단독(제목그룹 distinct source==1) & 감점 hit 동반 기사 표시."""
+    groups: dict[str, set] = {}
+    for a in articles:
+        groups.setdefault(normalize_title(a.get("title", "")), set()).add(a.get("source", ""))
+    flags: dict[str, bool] = {}
+    for a in articles:
+        norm = normalize_title(a.get("title", ""))
+        singleton = len(groups[norm]) == 1
+        has_hit = bool(score_article(
+            {"title": a.get("title", ""), "lead": a.get("summary", ""), "body": ""})["hits"])
+        flags[a.get("link", "")] = singleton and has_hit
+    return flags
 
 
 def objectivity_score(article: dict, penalties=None, observe=None) -> dict:

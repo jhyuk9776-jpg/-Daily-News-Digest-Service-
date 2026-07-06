@@ -344,5 +344,28 @@ class PenaltyMemoTest(unittest.TestCase):
         self.assertEqual(memo["by_expr"], {})
 
 
+class ObservationAxisTest(unittest.TestCase):
+    def test_attribution_count(self):
+        ch = {"title": "정부에 따르면 흑자", "lead": "관계자는 사실이라고 밝혔다", "body": ""}
+        n = objectivity.attribution_count(
+            ch, ["에 따르면", "라고 밝혔다", "고 밝혔다"])
+        self.assertEqual(n, 2)   # '에 따르면' 1 + '고 밝혔다' 1
+
+    def test_outlier_only_singleton_with_hit(self):
+        arts = [
+            # 단독 + 감점(아우성) → 이상치
+            {"title": "혼자만 아우성", "summary": "", "link": "L1", "source": "A"},
+            # 교차(같은 제목 다른 매체) + 감점 → 이상치 아님(단독 아님)
+            {"title": "공동 논란이 커지고 있다", "summary": "", "link": "L2", "source": "B"},
+            {"title": "공동 논란이 커지고 있다", "summary": "", "link": "L3", "source": "C"},
+            # 단독 + 무감점 → 이상치 아님
+            {"title": "혼자 깨끗한 기사", "summary": "", "link": "L4", "source": "D"},
+        ]
+        flags = objectivity.outlier_flags(arts)
+        self.assertTrue(flags["L1"])
+        self.assertFalse(flags["L2"])
+        self.assertFalse(flags["L4"])
+
+
 if __name__ == "__main__":
     unittest.main()
