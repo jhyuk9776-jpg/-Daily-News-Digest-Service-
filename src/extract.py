@@ -13,6 +13,8 @@
 
 from __future__ import annotations
 
+import re
+
 import requests
 from bs4 import BeautifulSoup
 
@@ -25,6 +27,26 @@ USER_AGENT = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
 )
+
+_DATE_RE = re.compile(r"20\d{2}[.\-/]\s?\d{1,2}[.\-/]\s?\d{1,2}")
+_TITLE_STOPWORDS = {"오늘", "관련", "기자", "뉴스", "속보", "단독"}
+
+
+def _title_keywords(title: str) -> list[str]:
+    toks = re.findall(r"[가-힣A-Za-z0-9]{2,}", title)
+    return [t for t in toks if t not in _TITLE_STOPWORDS]
+
+
+def looks_like_body(text: str, title: str = "") -> bool:
+    """추출 텍스트가 진짜 기사 본문인지 검증한다(추천위젯·제목불일치 기각)."""
+    if len(text) < MIN_BODY:
+        return False
+    if len(_DATE_RE.findall(text)) >= 3:
+        return False
+    keywords = _title_keywords(title)
+    if keywords and not any(k in text for k in keywords):
+        return False
+    return True
 
 
 def extract_body(url: str) -> str | None:
