@@ -13,6 +13,9 @@
 
 from __future__ import annotations
 
+import re
+from urllib.parse import urlparse
+
 import requests
 from bs4 import BeautifulSoup
 
@@ -26,28 +29,76 @@ USER_AGENT = (
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
 )
 
+_DATE_RE = re.compile(r"20\d{2}[.\-/]\s?\d{1,2}[.\-/]\s?\d{1,2}")
+_TITLE_STOPWORDS = {"오늘", "관련", "기자", "뉴스", "속보", "단독"}
 
-def extract_body(url: str) -> str | None:
-    """원문 링크에서 본문 텍스트를 추출한다. 실패하면 None."""
+
+def _title_keywords(title: str) -> list[str]:
+    toks = re.findall(r"[가-힣A-Za-z0-9]{2,}", title)
+    return [t for t in toks if t not in _TITLE_STOPWORDS]
+
+
+def looks_like_body(text: str, title: str = "") -> bool:
+    """추출 텍스트가 진짜 기사 본문인지 검증한다(추천위젯·제목불일치 기각)."""
+    if len(text) < MIN_BODY:
+        return False
+    if len(_DATE_RE.findall(text)) >= 3:
+        return False
+    keywords = _title_keywords(title)
+    if keywords and not any(k in text for k in keywords):
+        return False
+    return True
+
+
+# 도메인 → 진짜 본문 컨테이너 CSS 선택자 후보(있으면 우선, 없으면 휴리스틱 폴백).
+# 선택자가 매치되면 컨테이너 전체 텍스트를 쓴다(본문이 <p> 없이 div에 직접 들어가는 매체 대응).
+SITE_SELECTORS: dict[str, list[str]] = {
+    "hankyung.com": ["#articletxt", ".article-body"],
+    "yna.co.kr": [".story-news.article", "#articleWrap"],
+    "hani.co.kr": [".article-text"],
+    # 선택자 없는 도메인은 휴리스틱 폴백 + 가드가 안전망.
+}
+
+
+def _domain(url: str) -> str:
+    host = urlparse(url).netloc.lower()
+    return host[4:] if host.startswith("www.") else host
+
+
+def _parse_body(html: str, url: str, title: str = "") -> str | None:
+    """HTML에서 본문을 추출한다(도메인 선택자 우선 → 휴리스틱 폴백 → 가드). 실패 시 None."""
+    soup = BeautifulSoup(html, "html.parser")
+    for tag in soup(["script", "style", "nav", "header", "footer", "aside"]):
+        tag.decompose()
+
+    container = None
+    for sel in SITE_SELECTORS.get(_domain(url), []):
+        container = soup.select_one(sel)
+        if container:
+            break
+
+    if container is not None:
+        text = container.get_text(" ", strip=True)
+    else:
+        # 기사 본문은 보통 <article> 또는 다수의 <p>에 들어 있다.
+        article = soup.find("article")
+        paragraphs = (article or soup).find_all("p")
+        text = " ".join(p.get_text(" ", strip=True) for p in paragraphs)
+
+    text = " ".join(text.split())[:MAX_CHARS]  # 공백 정리
+    if not looks_like_body(text, title):
+        return None
+    return text
+
+
+def extract_body(url: str, title: str = "") -> str | None:
+    """원문 링크에서 본문 텍스트를 추출한다(도메인 선택자+가드). 실패하면 None."""
     try:
         resp = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=TIMEOUT)
         resp.raise_for_status()
     except requests.RequestException:
         return None
-
-    soup = BeautifulSoup(resp.text, "html.parser")
-    for tag in soup(["script", "style", "nav", "header", "footer", "aside"]):
-        tag.decompose()
-
-    # 기사 본문은 보통 <article> 또는 다수의 <p>에 들어 있다.
-    article = soup.find("article")
-    paragraphs = (article or soup).find_all("p")
-    text = " ".join(p.get_text(" ", strip=True) for p in paragraphs)
-    text = " ".join(text.split())  # 공백 정리
-
-    if len(text) < MIN_BODY:
-        return None
-    return text[:MAX_CHARS]
+    return _parse_body(resp.text, url, title)
 
 
 def candidate_sources(item: dict):
@@ -64,13 +115,15 @@ def iter_contents(item: dict):
     """선별 항목에서 요약에 쓸 텍스트 후보를 우선순위 순으로 하나씩 내보낸다.
 
     각 후보: {"text", "content_source", "method", "link"}.
-    method: "rss"(요약 그대로) | "body"(본문 추출).
-    매체마다 충분한 RSS 요약을 먼저, 이어서 본문 추출 결과를 내보낸다.
+    method: "body"(본문 추출) | "rss"(요약 그대로).
+    각 후보 매체마다 검증 통과한 '본문'을 먼저, 이어서 충분한 RSS 요약을 내보낸다.
+    본문 우선이라 원문의 수치가 살아난다(ISSUE-002). 본문은 제목으로 가드된다(ISSUE-001).
     제너레이터라 소비자가 필요할 때만 다음 후보(및 본문 추출)를 계산한다.
     """
+    title = item.get("title", "")
     for source, link, summary in candidate_sources(item):
-        if summary and len(summary) >= MIN_SUMMARY:
-            yield {"text": summary, "content_source": source, "method": "rss", "link": link}
-        body = extract_body(link)
+        body = extract_body(link, title)
         if body:
             yield {"text": body, "content_source": source, "method": "body", "link": link}
+        if summary and len(summary) >= MIN_SUMMARY:
+            yield {"text": summary, "content_source": source, "method": "rss", "link": link}
