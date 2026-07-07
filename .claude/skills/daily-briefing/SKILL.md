@@ -27,8 +27,11 @@ description: Use when starting a work day on this AI 뉴스 다이제스트 proj
      `git log origin/main`·`git ls-tree origin/main News/`로 `News/<오늘>.md` 존재를 확인(초록불이 아니라 산출물로).
    - **실패:** `failures/failures-<오늘>.json`(원격 포함)이 있으면 **무엇이·왜**(원인별: api_failed/call_error/extract_failed) 실패했는지 요약.
    - **점수:** cron이 매일 아침 자동 채점해 `scores/`를 커밋하므로, **로컬에서 다시 돌리지 말고**
-     `git fetch` 후 커밋된 결과를 읽어 낸다: `scores/articles-<오늘>.json`의 `penalty_memo`(당일 감점)와
-     `scores/media.json`(누적). 자동 채점이 안 돌았거나 결과가 없을 때만 `objectivity-score` 스킬로 수동 채점.
+     `git fetch` 후 커밋된 결과를 읽어 낸다:
+     - `scores/articles-<오늘>.json` → `total_points`·`density_per_1000`·`penalty_memo.by_expr`·`by_source`(당일 감점 메모)
+     - `scores/media.json` → 매체별 `density_per_1000`(낮을수록 객관적) + 인용(`attribution_total`)·이상치(`outlier_total`) 관찰축
+     - `scores/digest-audit-<오늘>.json`이 있으면 "본문 감사: 감사 N건, 감점 M건" 요약 포함
+     자동 채점이 안 돌았거나 결과가 없을 때만 `objectivity-score` 스킬로 수동 채점.
 4. **브리핑 출력** — 아래 섹션으로, 짧게.
 5. **시작 확인** — 마지막에 "오늘 이 순서로 시작할까요?"와
    "먼저 정해야 할 결정"을 물어 사용자 승인을 받는다. 승인 전 구현 시작 금지.
@@ -42,8 +45,9 @@ description: Use when starting a work day on this AI 뉴스 다이제스트 proj
 - ✅/⚠️ 자동 실행: 오늘자 다이제스트 생성·커밋 여부(산출물 기준)
 - 실패: N건 — <무엇>(<원인>). 없으면 "실패 0건"
 - 점수(observe-only):
-  - 당일 감점 메모: 총 -X · <표현(근거)×횟수> … · 매체별 -X
-  - 누적: 하위 몇 개 매체 점수(표본·감점기사수). 채점 불가 시 이유 1줄
+  - 당일 감점 메모: 총 -X pt · 밀도 Y/1k · <표현(근거)×횟수·감점> … · 매체별 -X
+  - 누적(밀도 낮을수록 객관적): 상위 몇 개 매체 density_per_1000 · 인용 · 이상치. 채점 불가 시 이유 1줄
+  - 본문 감사(digest-audit 있을 때): 감사 N건, 감점 M건
 
 ## 1. 오늘 위치 + 목표
 - 로드맵상 오늘 목표 1줄

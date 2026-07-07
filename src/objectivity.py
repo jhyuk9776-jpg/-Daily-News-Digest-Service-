@@ -1,7 +1,7 @@
 """Phase 2: 매체 객관성 점수 축적기 (observe-only, record-only).
 
-요약하지 않은 수집 기사까지 감점 휴리스틱으로 채점해 매체별 객관성 점수를
-이동평균(EWMA)으로 누적한다. 선별·랭킹에는 반영하지 않는다(관찰만).
+요약하지 않은 수집 기사까지 감점 휴리스틱으로 채점해 매체별 감점 밀도
+(1000건당 감점 point, 낮을수록 객관적)를 누적한다. 선별·랭킹에는 반영하지 않는다(관찰만).
 
 설계: 기획/시스템기획/기능설계/04-객관성-점수축적기.md
 감점 사전 시드: AI_CONTEXT.md §6 "피해야 할 표현".
@@ -22,10 +22,11 @@ from pathlib import Path
 
 import yaml
 
-from curate import (  # 날짜창·출처목록 재사용(격리: 단방향 의존)
+from curate import (  # 날짜창·출처목록·정규화 재사용(격리: 단방향 의존)
     SOURCES_FILE,
     in_date_window,
     load_priority_map,
+    normalize_title,
 )
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -37,7 +38,6 @@ KST = timezone(timedelta(hours=9))
 
 BASELINE = 100
 FLOOR = 0
-EWMA_ALPHA = 0.1
 
 # 시드 폴백(penalties.yaml 없을 때만). AI_CONTEXT §6 "피해야 할 표현".
 _SEED_PENALTIES = [
@@ -47,6 +47,14 @@ _SEED_PENALTIES = [
     {"expr": "업계가 주목하고 있다", "type": "phrase", "tier": "medium", "weight": 10, "근거": "관심 예단"},
     {"expr": "[가-힣]+가 다 했네", "type": "regex", "tier": "strong", "weight": 10, "근거": "조롱조 단정"},
 ]
+
+_DEFAULT_SCORING = {
+    "tiers": {"strong": 15, "medium": 8, "weak": 3},
+    "escalation": {"T": 3, "step": 5, "cap": 45},
+    "body_factor": 0.5,
+    "attribution_markers": ["에 따르면", "라고 밝혔다", "고 밝혔다", "고 말했다",
+                            "라고 말했다", "측은", "측이", "당국은"],
+}
 
 
 def _normalize_entry(entry: dict) -> dict | None:
@@ -67,6 +75,7 @@ def _normalize_entry(entry: dict) -> dict | None:
         "tier": entry.get("tier", "medium"),
         "weight": int(entry.get("weight", 8)),
         "근거": entry.get("근거", ""),
+        "scope": entry.get("scope", "text"),
     }
 
 
@@ -86,7 +95,26 @@ def load_penalties(path: Path = PENALTIES_FILE):
     return active, observe, exclusions
 
 
+def load_scoring(path: Path = PENALTIES_FILE) -> dict:
+    """penalties.yaml의 scoring 블록·attribution_markers를 읽는다(없으면 시드)."""
+    path = Path(path)
+    if not path.exists():
+        return {k: (dict(v) if isinstance(v, dict) else (v if isinstance(v, float) else list(v)))
+                for k, v in _DEFAULT_SCORING.items()}
+    data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    cfg = {k: (dict(v) if isinstance(v, dict) else (v if isinstance(v, float) else list(v)))
+           for k, v in _DEFAULT_SCORING.items()}
+    for key in ("tiers", "escalation"):
+        cfg[key].update(data.get("scoring", {}).get(key, {}) or {})
+    if "scoring" in data and "body_factor" in data["scoring"]:
+        cfg["body_factor"] = float(data["scoring"]["body_factor"])
+    if data.get("attribution_markers"):
+        cfg["attribution_markers"] = list(data["attribution_markers"])
+    return cfg
+
+
 ACTIVE_PENALTIES, OBSERVE_PENALTIES, EXCLUSIONS = load_penalties()
+SCORING = load_scoring()
 
 
 def _count_matches(entry: dict, text: str) -> int:
@@ -95,29 +123,98 @@ def _count_matches(entry: dict, text: str) -> int:
     return text.count(entry["expr"])
 
 
-def objectivity_score(article: dict, penalties=None, observe=None) -> dict:
-    """기사 1건의 객관성 점수(등급 가중 감점)와 감점·관찰 근거를 계산한다.
+def _scope_text(scope: str, channels: dict) -> str:
+    if scope == "text":
+        return f"{channels.get('title', '')} {channels.get('lead', '')}"
+    return channels.get(scope, "")
 
-    매칭 1건당 그 항목의 weight만큼 감점(반복 등장 시 횟수만큼 합산).
-    observe 후보는 감점하지 않고 등장만 observe_hits로 기록한다.
+
+def score_article(channels: dict, penalties=None, observe=None, scoring=None) -> dict:
+    """기사 1건을 채널별로 채점한다(등급·scope·가속·차등가중).
+
+    channels: {"title","lead","body"} 중 있는 것만. 없는 키는 빈 문자열.
+    body 채널 매칭은 scoring.body_factor로 가중. 가속은 n_hits가 T 초과 시 볼록 가산.
+    scope=="text" 항목은 제목+리드(전체 가중) 외에 body도 body_factor 가중으로 추가 검사한다
+    (트랙1 래퍼는 body=""를 전달하므로 동작 불변).
     """
     penalties = ACTIVE_PENALTIES if penalties is None else penalties
     observe = OBSERVE_PENALTIES if observe is None else observe
-    text = f"{article.get('title', '')} {article.get('summary', '')}"
+    scoring = SCORING if scoring is None else scoring
+    esc = scoring["escalation"]
+    body_factor = scoring["body_factor"]
+
     hits: list[str] = []
-    deducted = 0
+    raw = 0.0
+    n_hits = 0
     for p in penalties:
-        c = _count_matches(p, text)
+        scope = p.get("scope", "text")
+        c = _count_matches(p, _scope_text(scope, channels))
         if c:
+            factor = body_factor if scope == "body" else 1.0
+            raw += p["weight"] * c * factor
+            n_hits += c
             hits.extend([p["expr"]] * c)
-            deducted += p["weight"] * c
+        # text scope 항목: body도 body_factor 가중으로 추가 검사
+        if scope == "text":
+            body_text = channels.get("body", "")
+            cb = _count_matches(p, body_text) if body_text else 0
+            if cb:
+                raw += p["weight"] * cb * body_factor
+                n_hits += cb
+                hits.extend([p["expr"]] * cb)
+
     observe_hits: list[str] = []
     for p in observe:
-        c = _count_matches(p, text)
+        scope = p.get("scope", "text")
+        c = _count_matches(p, _scope_text(scope, channels))
         if c:
             observe_hits.extend([p["expr"]] * c)
-    score = max(FLOOR, BASELINE - deducted)
-    return {"score": score, "hits": hits, "observe_hits": observe_hits}
+
+    points = raw + esc["step"] * max(0, n_hits - esc["T"])
+    points = min(esc["cap"], points)
+    score = max(FLOOR, BASELINE - points)
+    return {"points": points, "hits": hits, "n_hits": n_hits,
+            "observe_hits": observe_hits, "score": int(score)}
+
+
+def attribution_count(channels: dict, markers=None) -> int:
+    """제목+리드에서 귀속(출처 명시) 표지 등장수(② 중립 관찰축, 감점 아님).
+
+    긴 표지가 짧은 표지를 포함할 때 이중 계산을 막기 위해 정규식 교대(alternation)로
+    비겹침 최장 일치를 사용한다(예: '라고 밝혔다' 매칭 후 '고 밝혔다' 재계산 방지).
+    """
+    markers = SCORING["attribution_markers"] if markers is None else markers
+    if not markers:
+        return 0
+    text = f"{channels.get('title','')} {channels.get('lead','')}"
+    # 긴 표지가 먼저 소비되도록 길이 내림차순 정렬
+    pattern = "|".join(re.escape(m) for m in sorted(markers, key=len, reverse=True))
+    return len(re.findall(pattern, text))
+
+
+def outlier_flags(articles: list[dict]) -> dict:
+    """④ 교차 이상치: 단독(제목그룹 distinct source==1) & 감점 hit 동반 기사 표시."""
+    groups: dict[str, set] = {}
+    for a in articles:
+        groups.setdefault(normalize_title(a.get("title", "")), set()).add(a.get("source", ""))
+    flags: dict[str, bool] = {}
+    for a in articles:
+        link = a.get("link", "")
+        if not link:
+            continue
+        norm = normalize_title(a.get("title", ""))
+        singleton = len(groups[norm]) == 1
+        has_hit = bool(score_article(
+            {"title": a.get("title", ""), "lead": a.get("summary", ""), "body": ""})["hits"])
+        flags[link] = singleton and has_hit
+    return flags
+
+
+def objectivity_score(article: dict, penalties=None, observe=None) -> dict:
+    """호환 래퍼: 기사(title+summary)를 title/lead 채널로 채점."""
+    channels = {"title": article.get("title", ""),
+                "lead": article.get("summary", ""), "body": ""}
+    return score_article(channels, penalties, observe)
 
 
 def penalty_memo(records: list[dict], penalties=None) -> dict:
@@ -125,6 +222,8 @@ def penalty_memo(records: list[dict], penalties=None) -> dict:
 
     입력: records = [{"source":..., "hits":[expr,...]}...]
     출력: {total_deducted, by_expr:{expr:{count,deducted,근거}}, by_source:{src:deducted}}
+    주의: 여기 합계는 표현별 raw weight 합(가속·cap·body_factor 적용 전)이라
+    리포트의 total_points(실제 부과 point)와 가속 발화 시 어긋날 수 있다.
     """
     penalties = ACTIVE_PENALTIES if penalties is None else penalties
     weight = {p["expr"]: p["weight"] for p in penalties}
@@ -145,36 +244,35 @@ def penalty_memo(records: list[dict], penalties=None) -> dict:
 
 
 def update_media_scores(store: dict, dated_articles: list[dict], date: str) -> dict:
-    """그날 기사들을 매체별로 채점해 EWMA로 store에 누적한다(멱등)."""
+    """그날 기사들을 매체별로 채점해 감점 밀도로 누적한다(멱등)."""
     if date in store.get("processed_dates", []):
-        return store  # 이미 처리한 날짜 — 이중 반영 방지
+        return store
 
-    # 매체별 그날 점수 모으기
-    by_source: dict[str, list[int]] = {}
-    penalized: dict[str, int] = {}
+    flags = outlier_flags(dated_articles)
+    agg: dict[str, dict] = {}
     for art in dated_articles:
         source = art.get("source", "")
-        r = objectivity_score(art)
-        by_source.setdefault(source, []).append(r["score"])
-        if r["hits"]:
-            penalized[source] = penalized.get(source, 0) + 1
+        ch = {"title": art.get("title", ""), "lead": art.get("summary", ""), "body": ""}
+        r = score_article(ch)
+        a = agg.setdefault(source, {"points": 0.0, "count": 0, "attr": 0, "outlier": 0})
+        a["points"] += r["points"]
+        a["count"] += 1
+        a["attr"] += attribution_count(ch)
+        a["outlier"] += 1 if flags.get(art.get("link", "")) else 0
 
     media = store.setdefault("media", {})
-    for source, scores in by_source.items():
-        day_avg = sum(scores) / len(scores)
-        if source in media:
-            prev = media[source]
-            prev["score"] = (1 - EWMA_ALPHA) * prev["score"] + EWMA_ALPHA * day_avg
-            prev["count"] += len(scores)
-            prev["penalized"] += penalized.get(source, 0)
-            prev["last_seen"] = date
-        else:
-            media[source] = {
-                "score": day_avg,
-                "count": len(scores),
-                "penalized": penalized.get(source, 0),
-                "last_seen": date,
-            }
+    for source, a in agg.items():
+        m = media.setdefault(source, {"penalty_points_total": 0.0, "article_count": 0,
+                                      "attribution_total": 0, "outlier_total": 0,
+                                      "density_per_1000": 0.0, "count": 0, "last_seen": date})
+        m["penalty_points_total"] += a["points"]
+        m["article_count"] += a["count"]
+        m["attribution_total"] += a["attr"]
+        m["outlier_total"] += a["outlier"]
+        m["count"] = m["article_count"]
+        m["last_seen"] = date
+        m["density_per_1000"] = (m["penalty_points_total"] / m["article_count"] * 1000
+                                 if m["article_count"] else 0.0)
 
     store.setdefault("processed_dates", []).append(date)
     return store
@@ -196,11 +294,16 @@ def save_store(store: dict) -> None:
 
 def save_article_report(date: str, records: list[dict]) -> None:
     SCORES_DIR.mkdir(parents=True, exist_ok=True)
-    penalized = [r for r in records if r["score"] < BASELINE]
+    penalized = [r for r in records if r.get("points", 0) > 0]
+    total_points = sum(r.get("points", 0) for r in records)
     payload = {
         "date": date,
         "scored": len(records),
         "penalized_count": len(penalized),
+        "total_points": total_points,
+        "density_per_1000": (total_points / len(records) * 1000) if records else 0.0,
+        "attribution_total": sum(r.get("attribution", 0) for r in records),
+        "outlier_total": sum(1 for r in records if r.get("outlier")),
         "penalty_memo": penalty_memo(records),
         "articles": penalized,
     }
@@ -236,16 +339,21 @@ def process_date(store: dict, date: str) -> dict:
     already = date in store.get("processed_dates", [])
     store = update_media_scores(store, articles, date)
     if not already:
+        flags = outlier_flags(articles)
         records = []
         for a in articles:
-            r = objectivity_score(a)
+            ch = {"title": a.get("title", ""), "lead": a.get("summary", ""), "body": ""}
+            r = score_article(ch)
             records.append({
                 "source": a.get("source", ""),
                 "category": a.get("category", ""),
                 "title": a.get("title", ""),
                 "link": a.get("link", ""),
                 "score": r["score"],
+                "points": r["points"],
                 "hits": r["hits"],
+                "attribution": attribution_count(ch),
+                "outlier": bool(flags.get(a.get("link", ""))),
             })
         save_article_report(date, records)
     return store
@@ -283,10 +391,12 @@ def main() -> int:
         return 1
     save_store(store)
 
-    print(f"=== 객관성 점수 축적 ({date}) ===")
-    for source, m in sorted(store["media"].items(), key=lambda kv: kv[1]["score"]):
-        print(f"  {m['score']:5.1f} · {source} "
-              f"(표본 {m['count']}, 감점 {m['penalized']})")
+    print(f"=== 객관성 감점 밀도 ({date}) — 낮을수록 객관적 ===")
+    for source, m in sorted(store["media"].items(),
+                            key=lambda kv: kv[1].get("density_per_1000", 0), reverse=True):
+        print(f"  {m.get('density_per_1000', 0):7.1f}/1k · {source} "
+              f"(표본 {m['count']}, 인용 {m.get('attribution_total',0)}, "
+              f"이상치 {m.get('outlier_total',0)})")
     print(f"저장됨: {MEDIA_FILE}")
     return 0
 

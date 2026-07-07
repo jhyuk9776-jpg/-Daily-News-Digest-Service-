@@ -1,10 +1,24 @@
 {
   "date": "2026-07-03",
   "scored": 521,
-  "penalized_count": 7,
+  "penalized_count": 14,
+  "total_points": 97.0,
+  "density_per_1000": 186.18042226487523,
+  "attribution_total": 170,
+  "outlier_total": 14,
   "penalty_memo": {
-    "total_deducted": 41,
+    "total_deducted": 97,
     "by_expr": {
+      "\\?$": {
+        "count": 4,
+        "deducted": 32,
+        "근거": "물음표 종결 낚시"
+      },
+      "(할까|일까|되나|아니냐|셈인가|것인가)\\??$": {
+        "count": 1,
+        "deducted": 8,
+        "근거": "추측형 종결"
+      },
       "후폭풍": {
         "count": 1,
         "deducted": 8,
@@ -15,10 +29,20 @@
         "deducted": 6,
         "근거": "과장 수량 묘사"
       },
+      "파문": {
+        "count": 1,
+        "deducted": 8,
+        "근거": "과장 프레이밍"
+      },
       "논란이 커지고 있다": {
         "count": 2,
         "deducted": 16,
         "근거": "평가성 상투구"
+      },
+      "발칵": {
+        "count": 1,
+        "deducted": 8,
+        "근거": "감정 과장"
       },
       "총력전": {
         "count": 1,
@@ -32,23 +56,52 @@
       }
     },
     "by_source": {
-      "SBS": 8,
-      "경향신문": 19,
-      "매일신문": 3,
+      "매일신문": 35,
+      "SBS": 16,
+      "경향신문": 35,
       "전자신문": 3,
       "ZDNet Korea": 8
     }
   },
   "articles": [
     {
+      "source": "매일신문",
+      "category": "경제",
+      "title": "[구미 투자유치 해법] 땅값 평당 1천원·전력 풍부…이래도 구미 패싱?",
+      "link": "https://www.imaeil.com/page/view/2026070215262652549",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "매일신문",
+      "category": "경제",
+      "title": "금리·실적·주주환원 '삼박자'…은행주 하반기 재평가 되나",
+      "link": "https://www.imaeil.com/page/view/2026070209253214965",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "(할까|일까|되나|아니냐|셈인가|것인가)\\??$"
+      ],
+      "attribution": 1,
+      "outlier": true
+    },
+    {
       "source": "SBS",
       "category": "경제",
       "title": "[자막뉴스] MBK '후폭풍'에 결국 업계 2위 '붕괴'…사실상 '파산'에 직원 9천 명 '길거리'",
       "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008640566",
       "score": 92,
+      "points": 8.0,
       "hits": [
         "후폭풍"
-      ]
+      ],
+      "attribution": 0,
+      "outlier": true
     },
     {
       "source": "경향신문",
@@ -56,9 +109,25 @@
       "title": "청각장애인들 명의로 강남 초고가 아파트 등 30여채 ‘특공’ 싹쓸이···브로커 등 일당 40명 검거",
       "link": "https://www.khan.co.kr/article/202607031022001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
       "score": 97,
+      "points": 3.0,
       "hits": [
         "무더기"
-      ]
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "매일신문",
+      "category": "사회",
+      "title": "[커버스토리] TK표 AI산업 유치 조건은?",
+      "link": "https://www.imaeil.com/page/view/2026062911555961323",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 0,
+      "outlier": true
     },
     {
       "source": "매일신문",
@@ -66,9 +135,51 @@
       "title": "'스타벅스 구호' 배재고 징계에 들끓는 보수진영…야구협회 무더기 고발",
       "link": "https://www.imaeil.com/page/view/2026070306341307060",
       "score": 97,
+      "points": 3.0,
       "hits": [
         "무더기"
-      ]
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "매일신문",
+      "category": "사회",
+      "title": "'광주 여고생 살해' 장윤기 경찰 부친, 리얼돌 폐기…처벌은 어렵다?",
+      "link": "https://www.imaeil.com/page/view/2026070206374282521",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 1,
+      "outlier": true
+    },
+    {
+      "source": "SBS",
+      "category": "사회",
+      "title": "배재고 야구부 전원, 6일 광주일고 방문사과…5·18 참배도",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008640842",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "파문"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "경향신문",
+      "category": "세계",
+      "title": "우크라 “러, 북 포로 2명 보내달라 했다”…한국에 공개 왜?",
+      "link": "https://www.khan.co.kr/article/202607022125005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 0,
+      "outlier": true
     },
     {
       "source": "경향신문",
@@ -76,9 +187,12 @@
       "title": "트럼프 믿고 코인 샀는데 트럼프만 수조원 챙겼다",
       "link": "https://www.khan.co.kr/article/202607022102015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
       "score": 92,
+      "points": 8.0,
       "hits": [
         "논란이 커지고 있다"
-      ]
+      ],
+      "attribution": 0,
+      "outlier": true
     },
     {
       "source": "경향신문",
@@ -86,9 +200,25 @@
       "title": "트럼프, 취임 1년간 코인으로 3조4000억원 벌었다···이해충돌 논란 확산",
       "link": "https://www.khan.co.kr/article/202607021816001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
       "score": 92,
+      "points": 8.0,
       "hits": [
         "논란이 커지고 있다"
-      ]
+      ],
+      "attribution": 1,
+      "outlier": true
+    },
+    {
+      "source": "경향신문",
+      "category": "세계",
+      "title": "세탁기에 가두고 물 뿌리고···어린이집 아동학대에 ‘발칵’ 뒤집힌 인도",
+      "link": "https://www.khan.co.kr/article/202607021534001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "발칵"
+      ],
+      "attribution": 0,
+      "outlier": true
     },
     {
       "source": "전자신문",
@@ -96,9 +226,12 @@
       "title": "李 대통령 “영남, 글로벌 첨단 제조업 거점으로…우주항공이 새로운 먹거리 될 것”",
       "link": "https://www.etnews.com/20260703000280",
       "score": 97,
+      "points": 3.0,
       "hits": [
         "총력전"
-      ]
+      ],
+      "attribution": 1,
+      "outlier": true
     },
     {
       "source": "ZDNet Korea",
@@ -106,9 +239,12 @@
       "title": "시프트업 '니케', 여름 업데이트로 국내 앱스토어 매출 1위 탈환",
       "link": "https://zdnet.co.kr/view/?no=20260703151916",
       "score": 92,
+      "points": 8.0,
       "hits": [
         "(성과|잠재력|경쟁력|저력).{0,3}입증"
-      ]
+      ],
+      "attribution": 0,
+      "outlier": true
     }
   ]
 }

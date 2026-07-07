@@ -1,0 +1,24 @@
+{
+  "date": "2026-07-07",
+  "generated_at": "2026-07-07T07:15:39+09:00",
+  "total_articles": 16,
+  "failed_count": 2,
+  "failures": [
+    {
+      "category": "경제",
+      "source": "한국경제",
+      "title": "보조금 끊기자 \"직접 쏘겠다\"…파격 승부수 내건 '전기車'",
+      "link": "https://www.hankyung.com/article/202607068304g",
+      "reason": "api_failed",
+      "detail": "모든 후보 불릿 0"
+    },
+    {
+      "category": "경제",
+      "source": "한국경제",
+      "title": "\"재고 바닥\" 외친지 2주만에…\"원유 공급 과잉\" 우려로",
+      "link": "https://www.hankyung.com/article/202607078939i",
+      "reason": "api_failed",
+      "detail": "모든 후보 불릿 0"
+    }
+  ]
+}
