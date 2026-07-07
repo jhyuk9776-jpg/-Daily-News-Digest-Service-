@@ -32,6 +32,7 @@ from failure_log import save_failure_log
 ROOT = Path(__file__).resolve().parent.parent
 SELECTED_DIR = ROOT / "selected"
 NEWS_DIR = ROOT / "News"
+WEB_DATA_DIR = ROOT / "web" / "public" / "data"
 CACHE_FILE = ROOT / "cache" / "summaries.json"
 
 KST = timezone(timedelta(hours=9))
@@ -286,6 +287,13 @@ def run(date: str, dry_run: bool) -> int:
     NEWS_DIR.mkdir(parents=True, exist_ok=True)
     out_path = NEWS_DIR / f"{date}.md"
     out_path.write_text(markdown, encoding="utf-8")
+
+    # 웹 계약 JSON (마크다운과 같은 collect_digest 구조에서 파생)
+    digest = collect_digest(selected, results)
+    data_json = json.dumps(digest, ensure_ascii=False, indent=2)
+    WEB_DATA_DIR.mkdir(parents=True, exist_ok=True)
+    (WEB_DATA_DIR / f"{date}.json").write_text(data_json, encoding="utf-8")
+    (WEB_DATA_DIR / "latest.json").write_text(data_json, encoding="utf-8")
 
     total = (counters["ok"] + counters["api_failed"] + counters["call_error"]
              + counters["extract_failed"])
