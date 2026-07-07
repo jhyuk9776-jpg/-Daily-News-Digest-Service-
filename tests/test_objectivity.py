@@ -37,47 +37,46 @@ class ScoreTest(unittest.TestCase):
         self.assertTrue(r["hits"])
 
     def test_floor_clamp(self):
-        # 감점이 아무리 쌓여도 FLOOR(0) 미만으로 내려가지 않는다.
+        # 가속·cap 도달: 반복 감점은 per-기사 cap(45)에서 멈춘다 → score 55
         text = "논란이 커지고 있다 " * 20
         art = {"title": text, "summary": ""}
         r = objectivity.objectivity_score(art)
-        self.assertEqual(r["score"], 0)
+        self.assertEqual(r["score"], 55)
 
 
-class MediaAggregateTest(unittest.TestCase):
-    def _empty_store(self):
+class MediaDensityTest(unittest.TestCase):
+    def _empty(self):
         return {"media": {}, "processed_dates": []}
 
-    def test_new_media_uses_day_average_as_initial(self):
+    def test_new_media_density(self):
         arts = [
-            {"title": "깨끗한 기사", "summary": "", "source": "한국경제"},
-            {"title": "논란이 커지고 있다", "summary": "", "source": "한국경제"},
-        ]  # 점수 100, 92 → 그날 평균 96 (medium -8)
-        store = objectivity.update_media_scores(self._empty_store(), arts, "2026-07-01")
+            {"title": "깨끗한 기사", "summary": "", "source": "한국경제", "link": "L1"},
+            {"title": "논란이 커지고 있다", "summary": "", "source": "한국경제", "link": "L2"},
+        ]  # points 0 + 8 = 8, count 2 → 8/2*1000 = 4000
+        store = objectivity.update_media_scores(self._empty(), arts, "2026-07-01")
         m = store["media"]["한국경제"]
-        self.assertAlmostEqual(m["score"], 96.0)
-        self.assertEqual(m["count"], 2)
-        self.assertEqual(m["penalized"], 1)
-        self.assertEqual(m["last_seen"], "2026-07-01")
+        self.assertEqual(m["penalty_points_total"], 8)
+        self.assertEqual(m["article_count"], 2)
+        self.assertEqual(m["density_per_1000"], 4000.0)
 
-    def test_ewma_blends_with_existing(self):
-        store = {
-            "media": {"한국경제": {"score": 92.0, "count": 10, "penalized": 0,
-                                   "last_seen": "2026-06-30"}},
-            "processed_dates": ["2026-06-30"],
-        }
-        arts = [{"title": "깨끗", "summary": "", "source": "한국경제"}]  # 그날 평균 100
+    def test_density_accumulates_across_days(self):
+        store = {"media": {"한국경제": {"penalty_points_total": 8, "article_count": 2,
+                 "attribution_total": 0, "outlier_total": 0, "density_per_1000": 4000.0,
+                 "count": 2, "last_seen": "2026-06-30"}},
+                 "processed_dates": ["2026-06-30"]}
+        arts = [{"title": "깨끗", "summary": "", "source": "한국경제", "link": "L3"}]
         store = objectivity.update_media_scores(store, arts, "2026-07-01")
-        # 0.9*92 + 0.1*100 = 92.8
-        self.assertAlmostEqual(store["media"]["한국경제"]["score"], 92.8)
-        self.assertEqual(store["media"]["한국경제"]["count"], 11)
+        m = store["media"]["한국경제"]
+        self.assertEqual(m["article_count"], 3)          # 2+1
+        self.assertEqual(m["penalty_points_total"], 8)   # +0
+        self.assertAlmostEqual(m["density_per_1000"], 8/3*1000)
 
-    def test_idempotent_same_date_skipped(self):
-        arts = [{"title": "깨끗", "summary": "", "source": "한국경제"}]
-        store = objectivity.update_media_scores(self._empty_store(), arts, "2026-07-01")
-        before = objectivity_snapshot(store)
+    def test_idempotent_same_date(self):
+        arts = [{"title": "깨끗", "summary": "", "source": "한국경제", "link": "L1"}]
+        store = objectivity.update_media_scores(self._empty(), arts, "2026-07-01")
+        snap = objectivity_snapshot(store)
         store = objectivity.update_media_scores(store, arts, "2026-07-01")
-        self.assertEqual(objectivity_snapshot(store), before)
+        self.assertEqual(objectivity_snapshot(store), snap)
 
 
 def objectivity_snapshot(store):
@@ -104,11 +103,13 @@ class StoreIOTest(unittest.TestCase):
             mf = Path(tmp) / "media.json"
             with patch.object(objectivity, "MEDIA_FILE", mf), \
                  patch.object(objectivity, "SCORES_DIR", Path(tmp)):
-                objectivity.save_store({"media": {"A": {"score": 90.0, "count": 1,
-                                       "penalized": 0, "last_seen": "2026-07-01"}},
+                objectivity.save_store({"media": {"A": {"penalty_points_total": 8.0,
+                                       "article_count": 2, "attribution_total": 0,
+                                       "outlier_total": 0, "density_per_1000": 4000.0,
+                                       "count": 2, "last_seen": "2026-07-01"}},
                                        "processed_dates": ["2026-07-01"]})
                 store = objectivity.load_store()
-        self.assertEqual(store["media"]["A"]["score"], 90.0)
+        self.assertEqual(store["media"]["A"]["density_per_1000"], 4000.0)
         self.assertIn("updated_at", store)
 
     def test_article_report_saves_only_penalized(self):
@@ -116,7 +117,7 @@ class StoreIOTest(unittest.TestCase):
             with patch.object(objectivity, "SCORES_DIR", Path(tmp)):
                 objectivity.save_article_report("2026-07-01", [
                     {"source": "A", "category": "경제", "title": "논란이 커지고 있다",
-                     "link": "L1", "score": 90, "hits": ["논란이 커지고 있다"]},
+                     "link": "L1", "score": 92, "points": 8, "hits": ["논란이 커지고 있다"]},
                 ])
                 data = json.loads((Path(tmp) / "articles-2026-07-01.json").read_text())
         self.assertEqual(data["penalized_count"], 1)
@@ -197,6 +198,16 @@ class ActiveSourceFilterTest(unittest.TestCase):
         self.assertNotIn("이코노미스트 타임스", sources)
 
 
+class ScoringConfigTest(unittest.TestCase):
+    def test_load_scoring_from_real_file(self):
+        cfg = objectivity.load_scoring(objectivity.PENALTIES_FILE)
+        self.assertEqual(cfg["tiers"]["strong"], 15)
+        self.assertEqual(cfg["escalation"]["T"], 3)
+        self.assertEqual(cfg["escalation"]["cap"], 45)
+        self.assertEqual(cfg["body_factor"], 0.5)
+        self.assertIn("에 따르면", cfg["attribution_markers"])
+
+
 class PenaltyLoaderTest(unittest.TestCase):
     def _write(self, tmp, text):
         p = Path(tmp) / "penalties.yaml"
@@ -266,9 +277,51 @@ class GradedScoreTest(unittest.TestCase):
         self.assertIn("극적", r["observe_hits"])
 
     def test_floor_clamp_with_weights(self):
-        art = {"title": "반도체가 다 했네 " * 10, "summary": ""}  # 15*10=150 > 100
+        art = {"title": "반도체가 다 했네 " * 10, "summary": ""}  # cap 45에서 멈춤
         r = objectivity.objectivity_score(art, self.P, self.OBS)
-        self.assertEqual(r["score"], 0)
+        self.assertEqual(r["score"], 55)
+
+
+class ChannelScoreTest(unittest.TestCase):
+    P = [
+        {"expr": "아우성", "type": "phrase", "tier": "medium", "weight": 8,
+         "scope": "text", "근거": "감정"},
+        {"expr": "\\?$", "type": "regex", "tier": "medium", "weight": 8,
+         "scope": "title", "근거": "물음표"},
+    ]
+    SCORING = {"tiers": {}, "escalation": {"T": 3, "step": 5, "cap": 45},
+               "body_factor": 0.5, "attribution_markers": []}
+
+    def test_title_scope_only_matches_title(self):
+        # 물음표는 제목에만 감점(scope:title). 리드의 물음표는 무시.
+        r = objectivity.score_article(
+            {"title": "정말일까?", "lead": "", "body": ""}, self.P, [], self.SCORING)
+        self.assertEqual(r["points"], 8)
+        r2 = objectivity.score_article(
+            {"title": "무역흑자 361억달러", "lead": "정말일까?", "body": ""},
+            self.P, [], self.SCORING)
+        self.assertEqual(r2["points"], 0)
+
+    def test_body_factor_halves_body_hit(self):
+        # 본문의 '아우성'(scope:text는 title+lead만; body는 별도) → body_factor 검증용 body scope
+        P = [{"expr": "아우성", "type": "phrase", "tier": "medium", "weight": 8,
+              "scope": "body", "근거": "감정"}]
+        r = objectivity.score_article(
+            {"title": "", "lead": "", "body": "여기저기 아우성"}, P, [], self.SCORING)
+        self.assertEqual(r["points"], 4.0)   # 8 × body_factor 0.5
+
+    def test_escalation_above_threshold(self):
+        # 5회 등장: raw=40, n_hits=5>T3 → +step*(5-3)=10 → 50, cap45 → 45
+        art = {"title": "아우성 아우성 아우성 아우성 아우성", "lead": "", "body": ""}
+        r = objectivity.score_article(art, self.P, [], self.SCORING)
+        self.assertEqual(r["n_hits"], 5)
+        self.assertEqual(r["points"], 45)    # cap
+        self.assertEqual(r["score"], 55)
+
+    def test_below_threshold_is_linear(self):
+        art = {"title": "아우성 아우성", "lead": "", "body": ""}
+        r = objectivity.score_article(art, self.P, [], self.SCORING)
+        self.assertEqual(r["points"], 16)    # 2×8, 가속 없음(n=2≤3)
 
 
 class PenaltyMemoTest(unittest.TestCase):
@@ -290,6 +343,29 @@ class PenaltyMemoTest(unittest.TestCase):
         memo = objectivity.penalty_memo([{"source": "A", "hits": []}], self.P)
         self.assertEqual(memo["total_deducted"], 0)
         self.assertEqual(memo["by_expr"], {})
+
+
+class ObservationAxisTest(unittest.TestCase):
+    def test_attribution_count(self):
+        ch = {"title": "정부에 따르면 흑자", "lead": "관계자는 사실이라고 밝혔다", "body": ""}
+        n = objectivity.attribution_count(
+            ch, ["에 따르면", "라고 밝혔다", "고 밝혔다"])
+        self.assertEqual(n, 2)   # '에 따르면' 1 + '고 밝혔다' 1
+
+    def test_outlier_only_singleton_with_hit(self):
+        arts = [
+            # 단독 + 감점(아우성) → 이상치
+            {"title": "혼자만 아우성", "summary": "", "link": "L1", "source": "A"},
+            # 교차(같은 제목 다른 매체) + 감점 → 이상치 아님(단독 아님)
+            {"title": "공동 논란이 커지고 있다", "summary": "", "link": "L2", "source": "B"},
+            {"title": "공동 논란이 커지고 있다", "summary": "", "link": "L3", "source": "C"},
+            # 단독 + 무감점 → 이상치 아님
+            {"title": "혼자 깨끗한 기사", "summary": "", "link": "L4", "source": "D"},
+        ]
+        flags = objectivity.outlier_flags(arts)
+        self.assertTrue(flags["L1"])
+        self.assertFalse(flags["L2"])
+        self.assertFalse(flags["L4"])
 
 
 if __name__ == "__main__":
