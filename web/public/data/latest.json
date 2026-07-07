@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-07",
+  "categories": [
+    {
+      "name": "경제",
+      "items": [
+        {
+          "title": "샘플 기사 제목",
+          "bullets": ["샘플 사실 1", "샘플 사실 2"],
+          "source": "한국경제",
+          "link": "https://www.hankyung.com/",
+          "related_links": [
+            { "source": "매일경제", "link": "https://www.mk.co.kr/" }
+          ]
+        }
+      ]
+    },
+    { "name": "사회", "items": [] }
+  ]
+}

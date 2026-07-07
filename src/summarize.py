@@ -32,6 +32,7 @@ from failure_log import save_failure_log
 ROOT = Path(__file__).resolve().parent.parent
 SELECTED_DIR = ROOT / "selected"
 NEWS_DIR = ROOT / "News"
+WEB_DATA_DIR = ROOT / "web" / "public" / "data"
 CACHE_FILE = ROOT / "cache" / "summaries.json"
 
 KST = timezone(timedelta(hours=9))
@@ -175,6 +176,33 @@ def summarize_item(item: dict, cache: dict, dry_run: bool):
     return [], None, "api_failed", False, "모든 후보 불릿 0"
 
 
+def collect_digest(selected: dict, results: dict) -> dict:
+    """선별 항목+요약 결과를 웹 계약(JSON) 구조로 모은다.
+
+    마크다운 렌더와 JSON 직렬화가 이 단일 구조에서 파생돼 서로 어긋나지 않는다.
+    요약 성공(link in results)한 항목만 담고, 분야는 빈 분야도 포함한다.
+    """
+    categories = []
+    for category, items in selected["categories"].items():
+        ok = []
+        for item in items:
+            if item["link"] not in results:
+                continue
+            bullets = results[item["link"]][0]
+            ok.append({
+                "title": item["title"],
+                "bullets": bullets,
+                "source": item["source"],
+                "link": item["link"],
+                "related_links": [
+                    {"source": rl["source"], "link": rl["link"]}
+                    for rl in item.get("related_links", [])
+                ],
+            })
+        categories.append({"name": category, "items": ok})
+    return {"date": selected["date"], "categories": categories}
+
+
 def render_item(item: dict, bullets: list[str]) -> str:
     """선별 항목 1건(요약 성공)을 마크다운으로 만든다."""
     lines = [f"### {item['title']}"]
@@ -188,7 +216,8 @@ def render_item(item: dict, bullets: list[str]) -> str:
 
 
 def build_markdown(selected: dict, results: dict, counters: dict) -> str:
-    date = selected["date"]
+    digest = collect_digest(selected, results)
+    date = digest["date"]
     now = datetime.now(KST).strftime("%Y-%m-%d %H:%M KST")
     parts = [
         f"# 오늘의 뉴스 요약 - {korean_date(date)}",
@@ -196,15 +225,13 @@ def build_markdown(selected: dict, results: dict, counters: dict) -> str:
         f"> 생성: {now} · 요약실패 {counters['api_failed']}건 · 호출오류 "
         f"{counters['call_error']}건 · 추출실패 {counters['extract_failed']}건",
     ]
-    for category, items in selected["categories"].items():
-        parts += ["", f"## {category}"]
-        ok_items = [it for it in items if it["link"] in results]
-        if not ok_items:
+    for cat in digest["categories"]:
+        parts += ["", f"## {cat['name']}"]
+        if not cat["items"]:
             parts += ["", "오늘 수집된 주요 기사가 없습니다."]
             continue
-        for item in ok_items:
-            bullets, status = results[item["link"]]
-            parts += ["", render_item(item, bullets)]
+        for item in cat["items"]:
+            parts += ["", render_item(item, item["bullets"])]
     parts.append("")
     return "\n".join(parts)
 
@@ -260,6 +287,13 @@ def run(date: str, dry_run: bool) -> int:
     NEWS_DIR.mkdir(parents=True, exist_ok=True)
     out_path = NEWS_DIR / f"{date}.md"
     out_path.write_text(markdown, encoding="utf-8")
+
+    # 웹 계약 JSON (마크다운과 같은 collect_digest 구조에서 파생)
+    digest = collect_digest(selected, results)
+    data_json = json.dumps(digest, ensure_ascii=False, indent=2)
+    WEB_DATA_DIR.mkdir(parents=True, exist_ok=True)
+    (WEB_DATA_DIR / f"{date}.json").write_text(data_json, encoding="utf-8")
+    (WEB_DATA_DIR / "latest.json").write_text(data_json, encoding="utf-8")
 
     total = (counters["ok"] + counters["api_failed"] + counters["call_error"]
              + counters["extract_failed"])

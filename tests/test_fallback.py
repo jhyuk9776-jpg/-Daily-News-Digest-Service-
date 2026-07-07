@@ -146,7 +146,8 @@ class RunExitCodeTest(unittest.TestCase):
                  patch("summarize.save_cache"), \
                  patch("summarize.save_failure_log"), \
                  patch("summarize.summarize_item", side_effect=side), \
-                 patch.object(summarize, "NEWS_DIR", Path(tmp)):
+                 patch.object(summarize, "NEWS_DIR", Path(tmp)), \
+                 patch.object(summarize, "WEB_DATA_DIR", Path(tmp) / "web" / "public" / "data"):
                 return summarize.run("2026-07-01", dry_run=False)
 
     def test_majority_api_failed_returns_nonzero(self):
