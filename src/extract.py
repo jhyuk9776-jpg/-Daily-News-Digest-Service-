@@ -91,14 +91,23 @@ def _parse_body(html: str, url: str, title: str = "") -> str | None:
     return text
 
 
-def extract_body(url: str, title: str = "") -> str | None:
-    """원문 링크에서 본문 텍스트를 추출한다(도메인 선택자+가드). 실패하면 None."""
+def extract_body(url: str, title: str = "", cache: dict | None = None) -> str | None:
+    """원문 링크에서 본문 텍스트를 추출한다(도메인 선택자+가드). 실패하면 None.
+
+    cache가 주어지면 url 단위로 결과(None 포함)를 기억해 같은 run에서 재추출을 막는다.
+    """
+    if cache is not None and url in cache:
+        return cache[url]
     try:
         resp = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=TIMEOUT)
         resp.raise_for_status()
     except requests.RequestException:
-        return None
-    return _parse_body(resp.text, url, title)
+        result = None
+    else:
+        result = _parse_body(resp.text, url, title)
+    if cache is not None:
+        cache[url] = result
+    return result
 
 
 def candidate_sources(item: dict):
@@ -111,7 +120,7 @@ def candidate_sources(item: dict):
         yield (rl["source"], rl["link"], "")
 
 
-def iter_contents(item: dict):
+def iter_contents(item: dict, cache: dict | None = None):
     """선별 항목에서 요약에 쓸 텍스트 후보를 우선순위 순으로 하나씩 내보낸다.
 
     각 후보: {"text", "content_source", "method", "link"}.
@@ -122,7 +131,7 @@ def iter_contents(item: dict):
     """
     title = item.get("title", "")
     for source, link, summary in candidate_sources(item):
-        body = extract_body(link, title)
+        body = extract_body(link, title, cache=cache)
         if body:
             yield {"text": body, "content_source": source, "method": "body", "link": link}
         if summary and len(summary) >= MIN_SUMMARY:
