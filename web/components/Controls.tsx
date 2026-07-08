@@ -1,38 +1,69 @@
 "use client";
-import type { DigestSettings } from "../lib/types";
-import { ALL_CATEGORIES } from "../lib/types";
 
 export default function Controls({
-  settings,
+  categories,
+  globalCount,
+  countOf,
+  isEnabled,
   onToggleCategory,
-  onEconomyCount,
+  onSetCount,
+  onSetGlobalCount,
+  onReset,
 }: {
-  settings: DigestSettings;
+  categories: string[];
+  globalCount: number;
+  countOf: (name: string) => number;
+  isEnabled: (name: string) => boolean;
   onToggleCategory: (name: string) => void;
-  onEconomyCount: (n: number) => void;
+  onSetCount: (name: string, n: number) => void;
+  onSetGlobalCount: (n: number) => void;
+  onReset: () => void;
 }) {
   return (
     <div className="controls">
-      <div className="controls-filters">
-        {ALL_CATEGORIES.map((name) => (
-          <label key={name} className="filter-chip">
-            <input
-              type="checkbox"
-              checked={settings.enabledCategories.includes(name)}
-              onChange={() => onToggleCategory(name)}
-            />
-            {name}
-          </label>
+      <div className="controls-categories">
+        {categories.map((name) => (
+          <div key={name} className="category-row">
+            <label className="filter-chip">
+              <input
+                type="checkbox"
+                checked={isEnabled(name)}
+                onChange={() => onToggleCategory(name)}
+              />
+              {name}
+            </label>
+            <div className="count-stepper">
+              <button
+                aria-label={`${name} 줄이기`}
+                onClick={() => onSetCount(name, countOf(name) - 1)}
+              >
+                −
+              </button>
+              <span className="count-value">{countOf(name)}</span>
+              <button
+                aria-label={`${name} 늘리기`}
+                onClick={() => onSetCount(name, countOf(name) + 1)}
+              >
+                +
+              </button>
+            </div>
+          </div>
         ))}
       </div>
-      <div className="controls-count">
-        <span>경제 표시</span>
-        <button aria-label="줄이기" onClick={() => onEconomyCount(settings.economyCount - 1)}>
-          −
-        </button>
-        <span className="count-value">{settings.economyCount}</span>
-        <button aria-label="늘리기" onClick={() => onEconomyCount(settings.economyCount + 1)}>
-          +
+
+      <div className="controls-global">
+        <span className="global-label">전체</span>
+        <div className="count-stepper">
+          <button aria-label="전체 줄이기" onClick={() => onSetGlobalCount(globalCount - 1)}>
+            −
+          </button>
+          <span className="count-value">{globalCount}</span>
+          <button aria-label="전체 늘리기" onClick={() => onSetGlobalCount(globalCount + 1)}>
+            +
+          </button>
+        </div>
+        <button className="reset-btn" onClick={onReset}>
+          기본값으로 되돌리기
         </button>
       </div>
     </div>

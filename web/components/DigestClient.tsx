@@ -6,14 +6,28 @@ import DigestView from "./Digest";
 import type { Digest } from "../lib/types";
 
 export default function DigestClient({ digest }: { digest: Digest }) {
-  const { settings, setEconomyCount, toggleCategory } = useDigestSettings();
+  const names = digest.categories.map((c) => c.name);
+  const {
+    settings,
+    countOf,
+    isEnabled,
+    setCount,
+    setGlobalCount,
+    toggleCategory,
+    reset,
+  } = useDigestSettings(names);
   const view = applySettings(digest, settings);
   return (
     <>
       <Controls
-        settings={settings}
+        categories={names}
+        globalCount={settings.globalCount}
+        countOf={countOf}
+        isEnabled={isEnabled}
         onToggleCategory={toggleCategory}
-        onEconomyCount={setEconomyCount}
+        onSetCount={setCount}
+        onSetGlobalCount={setGlobalCount}
+        onReset={reset}
       />
       <DigestView digest={view} />
     </>

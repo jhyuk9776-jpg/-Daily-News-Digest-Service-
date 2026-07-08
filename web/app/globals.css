@@ -30,25 +30,41 @@ article a:hover { text-decoration: underline; }
 .controls {
   position: sticky; top: 0; z-index: 10;
   max-width: var(--max); margin: 0 auto;
-  display: flex; flex-wrap: wrap; gap: 0.75rem 1rem;
-  align-items: center; justify-content: space-between;
+  display: flex; flex-direction: column; gap: 0.6rem;
   padding: 0.75rem 1rem; background: #fff;
   border-bottom: 1px solid var(--line);
 }
-.controls-filters { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.controls-categories {
+  display: flex; flex-wrap: wrap; gap: 0.4rem 1rem;
+}
+.category-row {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+}
 .filter-chip {
   display: inline-flex; align-items: center; gap: 0.3rem;
   font-size: 0.9rem; padding: 0.2rem 0.5rem;
   border: 1px solid var(--line); border-radius: 999px; cursor: pointer;
+  min-width: 4.2rem;
 }
-.controls-count { display: flex; align-items: center; gap: 0.4rem; font-size: 0.9rem; }
-.controls-count button {
+.count-stepper { display: inline-flex; align-items: center; gap: 0.3rem; }
+.count-stepper button {
   width: 1.8rem; height: 1.8rem; font-size: 1.1rem; line-height: 1;
   border: 1px solid var(--line); border-radius: 6px; background: #fafafa; cursor: pointer;
 }
 .count-value { min-width: 1.2rem; text-align: center; font-variant-numeric: tabular-nums; }
 
+.controls-global {
+  display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;
+  padding-top: 0.5rem; border-top: 1px dashed var(--line);
+}
+.global-label { font-weight: 600; }
+.reset-btn {
+  margin-left: auto; font-size: 0.85rem; padding: 0.3rem 0.7rem;
+  border: 1px solid var(--line); border-radius: 6px; background: #fafafa; cursor: pointer;
+}
+.reset-btn:hover { background: #f0f0f0; }
+
 @media (max-width: 480px) {
-  .controls { flex-direction: column; align-items: stretch; }
-  .controls-count { justify-content: flex-end; }
+  .category-row { width: 100%; justify-content: space-between; }
+  .controls-categories { gap: 0.4rem; }
 }

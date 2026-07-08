@@ -1,27 +1,36 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import type { DigestSettings } from "./types";
-import { DEFAULT_SETTINGS, ALL_CATEGORIES } from "./types";
+import {
+  DEFAULT_SETTINGS,
+  DEFAULT_COUNT,
+  MIN_COUNT,
+  MAX_COUNT,
+  countForCategory,
+  isCategoryEnabled,
+} from "./types";
 
 export const STORAGE_KEY = "digest-settings";
 
 function clampCount(n: number): number {
-  if (Number.isNaN(n)) return DEFAULT_SETTINGS.economyCount;
-  return Math.max(2, Math.min(10, Math.round(n)));
+  if (Number.isNaN(n)) return DEFAULT_COUNT;
+  return Math.max(MIN_COUNT, Math.min(MAX_COUNT, Math.round(n)));
 }
 
 function sanitize(raw: unknown): DigestSettings {
-  const obj = (raw ?? {}) as Partial<DigestSettings>;
-  const cats = Array.isArray(obj.enabledCategories)
-    ? obj.enabledCategories.filter((c) => ALL_CATEGORIES.includes(c))
+  const obj =
+    typeof raw === "object" && raw !== null ? (raw as Partial<DigestSettings>) : {};
+  const counts: Record<string, number> = {};
+  if (obj.counts && typeof obj.counts === "object") {
+    for (const [k, v] of Object.entries(obj.counts)) counts[k] = clampCount(Number(v));
+  }
+  const disabled = Array.isArray(obj.disabled)
+    ? obj.disabled.filter((c): c is string => typeof c === "string")
     : [];
-  return {
-    economyCount: clampCount(Number(obj.economyCount)),
-    enabledCategories: cats.length > 0 ? cats : [...ALL_CATEGORIES],
-  };
+  return { globalCount: clampCount(Number(obj.globalCount)), counts, disabled };
 }
 
-export function useDigestSettings() {
+export function useDigestSettings(categoryNames: string[]) {
   const [settings, setSettings] = useState<DigestSettings>(DEFAULT_SETTINGS);
   const firstSave = useRef(true);
 
@@ -46,20 +55,38 @@ export function useDigestSettings() {
     }
   }, [settings]);
 
-  const setEconomyCount = (n: number) =>
-    setSettings((s) => ({ ...s, economyCount: clampCount(n) }));
+  // 개별 분야 개수 조절
+  const setCount = (name: string, n: number) =>
+    setSettings((s) => ({ ...s, counts: { ...s.counts, [name]: clampCount(n) } }));
+
+  // 전체 조절: 모든 개별값을 지우고 전체값으로 통일 → 이후 개별 조절
+  const setGlobalCount = (n: number) =>
+    setSettings((s) => ({ ...s, globalCount: clampCount(n), counts: {} }));
+
+  // 기본값 되돌리기: 개수만 초기화(전체값 2·개별값 제거), 켜짐/꺼짐 상태는 유지
+  const reset = () =>
+    setSettings((s) => ({ ...s, globalCount: DEFAULT_COUNT, counts: {} }));
 
   const toggleCategory = (name: string) =>
     setSettings((s) => {
-      const on = s.enabledCategories.includes(name);
-      if (on && s.enabledCategories.length === 1) return s; // 마지막 분야 보호
-      return {
-        ...s,
-        enabledCategories: on
-          ? s.enabledCategories.filter((c) => c !== name)
-          : [...s.enabledCategories, name],
-      };
+      if (s.disabled.includes(name)) {
+        return { ...s, disabled: s.disabled.filter((c) => c !== name) };
+      }
+      const enabledPresent = categoryNames.filter((c) => !s.disabled.includes(c));
+      if (enabledPresent.length <= 1) return s; // 마지막 남은 분야 보호
+      return { ...s, disabled: [...s.disabled, name] };
     });
 
-  return { settings, setEconomyCount, toggleCategory };
+  const countOf = (name: string) => countForCategory(settings, name);
+  const isEnabled = (name: string) => isCategoryEnabled(settings, name);
+
+  return {
+    settings,
+    countOf,
+    isEnabled,
+    setCount,
+    setGlobalCount,
+    toggleCategory,
+    reset,
+  };
 }

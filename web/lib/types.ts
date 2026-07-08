@@ -22,14 +22,26 @@ export interface Digest {
 }
 
 export interface DigestSettings {
-  economyCount: number;
-  enabledCategories: string[];
+  globalCount: number; // 전체 스텝퍼 값 + 개별값 없는 분야의 기본 개수
+  counts: Record<string, number>; // 분야명 → 개별 개수 (없으면 globalCount 사용)
+  disabled: string[]; // 꺼진 분야명
 }
 
-export const ALL_CATEGORIES = ["경제", "사회", "세계", "IT/테크"];
-export const ECONOMY_CATEGORY = "경제";
+export const DEFAULT_COUNT = 2;
+export const MIN_COUNT = 1;
+export const MAX_COUNT = 10;
 
 export const DEFAULT_SETTINGS: DigestSettings = {
-  economyCount: 10,
-  enabledCategories: [...ALL_CATEGORIES],
+  globalCount: DEFAULT_COUNT,
+  counts: {},
+  disabled: [],
 };
+
+// 한 분야의 유효 표시 개수: 개별값이 있으면 그것, 없으면 전체값.
+export function countForCategory(settings: DigestSettings, name: string): number {
+  return settings.counts[name] ?? settings.globalCount;
+}
+
+export function isCategoryEnabled(settings: DigestSettings, name: string): boolean {
+  return !settings.disabled.includes(name);
+}
