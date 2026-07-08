@@ -34,7 +34,12 @@ def reporter_key(source: str, author: str) -> str:
 
 
 def classify_body(body: str | None) -> str | None:
-    """대표 기사 본문 품질을 판정한다. 'empty' | 'sparse' | None(정상)."""
+    """대표 기사 본문 품질을 판정한다. 'empty' | 'sparse' | None(정상).
+
+    입력은 extract.extract_body 결과를 전제한다. extract_body는 본문이
+    extract.MIN_BODY(80자) 미만이면 None을 돌려주므로, 여기 도달하는 body는
+    None이거나 80자 이상이다(→ 'sparse' 구간은 실질적으로 80~199자).
+    """
     if body is None:
         return "empty"
     if len(body) < SPARSE_MIN_CHARS:
