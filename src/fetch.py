@@ -65,6 +65,7 @@ def fetch_feed(category: str, source: dict, fetched_at: str) -> list[dict]:
                 "published": entry.get("published", entry.get("updated", "")),
                 "published_iso": _to_iso(entry),
                 "summary": html.unescape(entry.get("summary", "")).strip(),
+                "author": entry.get("author", "").strip(),
                 "source": name,
                 "category": category,
                 "fetched_at": fetched_at,
