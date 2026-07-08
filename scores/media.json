@@ -1,92 +1,93 @@
 {
   "media": {
     "한국경제": {
-      "penalty_points_total": 0.0,
-      "article_count": 200,
+      "penalty_points_total": 8.0,
+      "article_count": 250,
       "attribution_total": 0,
-      "outlier_total": 0,
-      "density_per_1000": 0.0,
-      "count": 200,
-      "last_seen": "2026-07-08"
+      "outlier_total": 1,
+      "density_per_1000": 32.0,
+      "count": 250,
+      "last_seen": "2026-07-09"
     },
     "매일경제": {
       "penalty_points_total": 42.0,
-      "article_count": 194,
-      "attribution_total": 14,
+      "article_count": 240,
+      "attribution_total": 15,
       "outlier_total": 4,
-      "density_per_1000": 216.49484536082474,
-      "count": 194,
-      "last_seen": "2026-07-08"
+      "density_per_1000": 175.0,
+      "count": 240,
+      "last_seen": "2026-07-09"
     },
     "매일신문": {
-      "penalty_points_total": 205.0,
-      "article_count": 654,
-      "attribution_total": 312,
-      "outlier_total": 23,
-      "density_per_1000": 313.45565749235476,
-      "count": 654,
-      "last_seen": "2026-07-08"
+      "penalty_points_total": 224.0,
+      "article_count": 848,
+      "attribution_total": 401,
+      "outlier_total": 26,
+      "density_per_1000": 264.1509433962264,
+      "count": 848,
+      "last_seen": "2026-07-09"
     },
     "SBS": {
-      "penalty_points_total": 124.0,
-      "article_count": 348,
-      "attribution_total": 15,
-      "outlier_total": 12,
-      "density_per_1000": 356.32183908045977,
-      "count": 348,
-      "last_seen": "2026-07-08"
+      "penalty_points_total": 141.0,
+      "article_count": 435,
+      "attribution_total": 19,
+      "outlier_total": 16,
+      "density_per_1000": 324.13793103448273,
+      "count": 435,
+      "last_seen": "2026-07-09"
     },
     "경향신문": {
-      "penalty_points_total": 99.0,
-      "article_count": 349,
-      "attribution_total": 91,
-      "outlier_total": 12,
-      "density_per_1000": 283.6676217765043,
-      "count": 349,
-      "last_seen": "2026-07-08"
+      "penalty_points_total": 110.0,
+      "article_count": 433,
+      "attribution_total": 110,
+      "outlier_total": 14,
+      "density_per_1000": 254.0415704387991,
+      "count": 433,
+      "last_seen": "2026-07-09"
     },
     "전자신문": {
-      "penalty_points_total": 38.0,
-      "article_count": 120,
-      "attribution_total": 65,
-      "outlier_total": 6,
-      "density_per_1000": 316.66666666666663,
-      "count": 120,
-      "last_seen": "2026-07-08"
+      "penalty_points_total": 41.0,
+      "article_count": 150,
+      "attribution_total": 85,
+      "outlier_total": 7,
+      "density_per_1000": 273.3333333333333,
+      "count": 150,
+      "last_seen": "2026-07-09"
     },
     "ZDNet Korea": {
-      "penalty_points_total": 11.0,
-      "article_count": 120,
-      "attribution_total": 161,
-      "outlier_total": 2,
-      "density_per_1000": 91.66666666666666,
-      "count": 120,
-      "last_seen": "2026-07-08"
+      "penalty_points_total": 19.0,
+      "article_count": 150,
+      "attribution_total": 211,
+      "outlier_total": 3,
+      "density_per_1000": 126.66666666666667,
+      "count": 150,
+      "last_seen": "2026-07-09"
     },
     "연합뉴스": {
-      "penalty_points_total": 8.0,
-      "article_count": 360,
-      "attribution_total": 15,
-      "outlier_total": 0,
-      "density_per_1000": 22.22222222222222,
-      "count": 360,
-      "last_seen": "2026-07-08"
+      "penalty_points_total": 35.0,
+      "article_count": 720,
+      "attribution_total": 61,
+      "outlier_total": 4,
+      "density_per_1000": 48.611111111111114,
+      "count": 720,
+      "last_seen": "2026-07-09"
     },
     "한겨레": {
-      "penalty_points_total": 16.0,
-      "article_count": 90,
+      "penalty_points_total": 32.0,
+      "article_count": 180,
       "attribution_total": 0,
-      "outlier_total": 2,
+      "outlier_total": 4,
       "density_per_1000": 177.77777777777777,
-      "count": 90,
-      "last_seen": "2026-07-08"
+      "count": 180,
+      "last_seen": "2026-07-09"
     }
   },
   "processed_dates": [
     "2026-06-30",
     "2026-07-01",
     "2026-07-03",
-    "2026-07-08"
+    "2026-07-08",
+    "2026-07-09"
   ],
-  "updated_at": "2026-07-08T07:14:06+09:00"
+  "updated_at": "2026-07-09T07:04:37+09:00"
 }
