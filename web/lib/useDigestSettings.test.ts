@@ -78,6 +78,25 @@ test("여러 분야를 순서대로 끌 수 있다", () => {
   expect(result.current.isEnabled("세계")).toBe(true);
 });
 
+test("로드 시 현재 분야에 없는 counts·disabled를 정리한다", () => {
+  localStorage.setItem(
+    STORAGE_KEY,
+    JSON.stringify({ globalCount: 2, counts: { 경제: 5, 없는분야: 9 }, disabled: ["사회", "없는분야"] })
+  );
+  const { result } = renderHook(() => useDigestSettings(CATS));
+  expect(result.current.settings.counts).toEqual({ 경제: 5 });
+  expect(result.current.settings.disabled).toEqual(["사회"]);
+});
+
+test("로드 시 모든 분야가 disabled면 필터를 초기화한다", () => {
+  localStorage.setItem(
+    STORAGE_KEY,
+    JSON.stringify({ globalCount: 2, counts: {}, disabled: [...CATS] })
+  );
+  const { result } = renderHook(() => useDigestSettings(CATS));
+  expect(result.current.settings.disabled).toEqual([]);
+});
+
 test("마지막 남은 분야는 끌 수 없다", () => {
   const { result } = renderHook(() => useDigestSettings(CATS));
   act(() => result.current.toggleCategory("경제"));

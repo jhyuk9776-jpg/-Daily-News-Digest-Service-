@@ -30,6 +30,22 @@ function sanitize(raw: unknown): DigestSettings {
   return { globalCount: clampCount(Number(obj.globalCount)), counts, disabled };
 }
 
+// 로드된 설정을 현재 실제 분야에 맞춰 정리한다:
+// - 없는 분야의 개별값/필터는 버려 stale 키 누적을 막고
+// - 모든 분야가 꺼진 상태면 필터를 초기화해 빈 화면을 방지한다(최소 1개 표시).
+function reconcile(settings: DigestSettings, categoryNames: string[]): DigestSettings {
+  const present = new Set(categoryNames);
+  const counts: Record<string, number> = {};
+  for (const [k, v] of Object.entries(settings.counts)) {
+    if (present.has(k)) counts[k] = v;
+  }
+  let disabled = settings.disabled.filter((c) => present.has(c));
+  if (categoryNames.length > 0 && disabled.length >= categoryNames.length) {
+    disabled = [];
+  }
+  return { ...settings, counts, disabled };
+}
+
 export function useDigestSettings(categoryNames: string[]) {
   const [settings, setSettings] = useState<DigestSettings>(DEFAULT_SETTINGS);
   const firstSave = useRef(true);
@@ -37,7 +53,7 @@ export function useDigestSettings(categoryNames: string[]) {
   useEffect(() => {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
-      if (raw) setSettings(sanitize(JSON.parse(raw)));
+      if (raw) setSettings(reconcile(sanitize(JSON.parse(raw)), categoryNames));
     } catch {
       /* 접근 불가/깨진 값 → 기본값 유지 */
     }
