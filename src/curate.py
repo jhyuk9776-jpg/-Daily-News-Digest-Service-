@@ -25,6 +25,8 @@ from pathlib import Path
 
 import yaml
 
+import reporters
+
 ROOT = Path(__file__).resolve().parent.parent
 SOURCES_FILE = ROOT / "sources.yaml"
 RAW_DIR = ROOT / "raw"
@@ -78,6 +80,19 @@ def load_raw(date: str) -> dict:
         raise FileNotFoundError(f"수집 결과가 없음: {path} (먼저 fetch.py 실행)")
     with path.open("r", encoding="utf-8") as f:
         return json.load(f)
+
+
+def filter_blacklisted(articles: list[dict], blacklist: set[str]) -> list[dict]:
+    """블랙리스트 (매체,기자) 기사를 후보에서 제거한다.
+
+    author 필드가 없거나 빈 기사는 키가 블랙리스트에 없으므로 통과한다(안전).
+    """
+    if not blacklist:
+        return articles
+    return [
+        a for a in articles
+        if reporters.reporter_key(a["source"], a.get("author", "")) not in blacklist
+    ]
 
 
 def in_date_window(article: dict, today: datetime) -> bool:
@@ -240,6 +255,8 @@ def main() -> int:
 
     priority_map = load_priority_map(SOURCES_FILE)
     default_limit, per_category_limits = load_limits(LIMITS_FILE)
+    blacklist = reporters.blacklisted_keys(reporters.load())
+    raw["articles"] = filter_blacklisted(raw["articles"], blacklist)
     today = datetime.now(KST)
     result = select(raw, priority_map, today, default_limit, per_category_limits)
     out_path = save(result)

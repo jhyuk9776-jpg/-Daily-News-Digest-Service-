@@ -22,6 +22,10 @@ src/summarize.py  요약     → News/YYYY-MM-DD.md       (Claude Haiku 4.5, 사
   └ src/extract.py 로 본문 확보(짧은 RSS는 본문 추출, 실패 시 다음 순위 매체로 폴백)
 ```
 
+> 본문이 없거나 한두 문장뿐인 부실 기사를 반복해서 내는 기자는 `scores/reporters.json`에
+> 누적되어(본문 없음 +1점 · 부실 3회 +1점), 3점 도달 시 `curate` 선별에서 제외된다.
+> 설계: [`docs/superpowers/specs/2026-07-08-부실기사-기자블랙리스트-design.md`](docs/superpowers/specs/2026-07-08-부실기사-기자블랙리스트-design.md).
+
 ## 준비 (최초 1회)
 
 ```bash

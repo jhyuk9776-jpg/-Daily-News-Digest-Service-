@@ -91,7 +91,7 @@ class IterContentsOrderTest(unittest.TestCase):
         self.assertEqual(cands[0]["method"], "body")
         self.assertEqual(cands[0]["text"], "추출된 본문 텍스트")
         self.assertEqual(cands[1]["method"], "rss")
-        m_body.assert_called_with("L1", "제목")  # title 전달
+        m_body.assert_called_with("L1", "제목", cache=None)  # title 전달, cache=None
 
     @patch("extract.extract_body", return_value=None)
     def test_rss_used_when_body_fails(self, m_body):
@@ -104,3 +104,27 @@ class PromptNumberRuleTest(unittest.TestCase):
     def test_prompt_requires_number_preservation(self):
         self.assertIn("수치", summarize.SYSTEM_PROMPT)
         self.assertIn("보존", summarize.SYSTEM_PROMPT)
+
+
+class ExtractBodyCacheTest(unittest.TestCase):
+    def test_cache_prevents_second_http_call(self):
+        html = "<html><body><article><p>" + ("가" * 300) + "</p></article></body></html>"
+        cache = {}
+        with patch("extract.requests.get") as m_get:
+            m_get.return_value.text = html
+            m_get.return_value.raise_for_status = lambda: None
+            first = extract.extract_body("http://x/1", "가", cache=cache)
+            second = extract.extract_body("http://x/1", "가", cache=cache)
+        self.assertEqual(first, second)
+        self.assertEqual(m_get.call_count, 1)  # 두 번째는 캐시 히트
+
+    def test_none_result_is_cached(self):
+        cache = {}
+        with patch("extract.requests.get") as m_get:
+            m_get.return_value.text = "<html><body><p>짧음</p></body></html>"
+            m_get.return_value.raise_for_status = lambda: None
+            extract.extract_body("http://x/2", "제목없는키워드", cache=cache)
+            extract.extract_body("http://x/2", "제목없는키워드", cache=cache)
+        self.assertIn("http://x/2", cache)
+        self.assertIsNone(cache["http://x/2"])
+        self.assertEqual(m_get.call_count, 1)

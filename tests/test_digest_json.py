@@ -39,7 +39,7 @@ class DigestJsonTest(unittest.TestCase):
             tmp = Path(tmp)
             web_data = tmp / "web" / "public" / "data"
 
-            def fake_summarize_item(item, cache, dry_run):
+            def fake_summarize_item(item, cache, dry_run, body_cache=None):
                 # (bullets, source, status, cached, detail)
                 return (["사실1", "사실2"], item["source"], "ok", False, None)
 
