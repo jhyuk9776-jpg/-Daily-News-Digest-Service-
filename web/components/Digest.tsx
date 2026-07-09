@@ -4,6 +4,9 @@ export default function DigestView({ digest }: { digest: Digest }) {
   return (
     <main>
       <h1>오늘의 뉴스 요약 — {digest.date}</h1>
+      {digest.categories.length === 0 && (
+        <p>표시할 분야가 없습니다. 위에서 개수를 1건 이상으로 설정하세요.</p>
+      )}
       {digest.categories.map((cat) => (
         <section key={cat.name}>
           <h2>{cat.name}</h2>

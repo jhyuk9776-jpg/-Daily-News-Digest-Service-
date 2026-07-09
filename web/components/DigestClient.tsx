@@ -1,21 +1,14 @@
 "use client";
 import { useDigestSettings } from "../lib/useDigestSettings";
-import { applySettings } from "../lib/applySettings";
+import { applySettings, totalShown } from "../lib/applySettings";
 import Controls from "./Controls";
+import CopyKakaoButton from "./CopyKakaoButton";
 import DigestView from "./Digest";
 import type { Digest } from "../lib/types";
 
 export default function DigestClient({ digest }: { digest: Digest }) {
   const names = digest.categories.map((c) => c.name);
-  const {
-    settings,
-    countOf,
-    isEnabled,
-    setCount,
-    setGlobalCount,
-    toggleCategory,
-    reset,
-  } = useDigestSettings(names);
+  const { settings, countOf, setCount, setGlobalCount, reset } = useDigestSettings(names);
   const view = applySettings(digest, settings);
   return (
     <>
@@ -23,12 +16,14 @@ export default function DigestClient({ digest }: { digest: Digest }) {
         categories={names}
         globalCount={settings.globalCount}
         countOf={countOf}
-        isEnabled={isEnabled}
-        onToggleCategory={toggleCategory}
+        totalShown={totalShown(digest, settings)}
         onSetCount={setCount}
         onSetGlobalCount={setGlobalCount}
         onReset={reset}
       />
+      <div className="copy-bar">
+        <CopyKakaoButton digest={view} />
+      </div>
       <DigestView digest={view} />
     </>
   );
