@@ -1,6 +1,6 @@
 "use client";
 import type { ReactNode } from "react";
-import { COUNT_OPTIONS } from "../lib/types";
+import CategoryControl from "./CategoryControl";
 import { LiquidButton } from "@/components/ui/liquid-glass-button";
 
 export default function Controls({
@@ -26,38 +26,17 @@ export default function Controls({
     <div className="controls">
       <div className="controls-categories">
         {categories.map((name) => (
-          <div key={name} className="category-row">
-            <span className="category-name">{name}</span>
-            <select
-              className="count-select"
-              aria-label={`${name} 표시 개수`}
-              value={countOf(name)}
-              onChange={(e) => onSetCount(name, Number(e.target.value))}
-            >
-              {COUNT_OPTIONS.map((n) => (
-                <option key={n} value={n}>
-                  {n === 0 ? "숨김" : `${n}건`}
-                </option>
-              ))}
-            </select>
-          </div>
+          <CategoryControl
+            key={name}
+            name={name}
+            count={countOf(name)}
+            onChange={(n) => onSetCount(name, n)}
+          />
         ))}
       </div>
 
       <div className="controls-global">
-        <span className="global-label">전체</span>
-        <select
-          className="count-select"
-          aria-label="전체 표시 개수"
-          value={globalCount}
-          onChange={(e) => onSetGlobalCount(Number(e.target.value))}
-        >
-          {COUNT_OPTIONS.map((n) => (
-            <option key={n} value={n}>
-              {n === 0 ? "숨김" : `${n}건`}
-            </option>
-          ))}
-        </select>
+        <CategoryControl name="전체" count={globalCount} onChange={onSetGlobalCount} />
         <span className="total-shown">총 {totalShown}건 표시 중</span>
         {actions}
         <LiquidButton className="liquid-button--ghost" onClick={onReset}>

@@ -94,26 +94,30 @@ article a:hover { text-decoration: underline; }
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset,
     0 10px 30px -12px rgba(15, 76, 58, 0.3);
 }
-.controls-categories {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-  gap: 0.5rem 1rem;
-}
-.category-row { display: flex; align-items: center; justify-content: flex-start; gap: 0.35rem; }
-.category-name { font-size: 0.9rem; font-weight: 600; color: var(--primary); }
+.controls-categories { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 
-.count-select {
-  font: inherit; font-size: 0.85rem; padding: 0.28rem 0.5rem;
-  color: var(--text-primary);
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid var(--border); border-radius: 9px; cursor: pointer;
+/* 분야·전체 개수 컨트롤 — 유리 pill(카톡 복사·되돌리기 버튼과 같은 모양) */
+.category-chip {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  padding: 0.28rem 0.4rem 0.28rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(6px) saturate(1.4);
+  backdrop-filter: blur(6px) saturate(1.4);
+  box-shadow: inset 0 0 0 1px var(--border), 0 2px 8px -5px rgba(15, 76, 58, 0.2);
 }
-.count-select:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.category-chip__name { font-size: 0.85rem; font-weight: 600; color: var(--primary); }
+.category-chip__select {
+  font: inherit; font-size: 0.82rem; font-weight: 600; color: var(--primary);
+  background: rgba(15, 76, 58, 0.07); border: none; border-radius: 999px;
+  padding: 0.18rem 0.4rem; cursor: pointer;
+}
+.category-chip__select:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
 
 .controls-global {
   display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; font-size: 0.9rem;
   padding-top: 0.6rem; border-top: 1px dashed var(--border);
 }
-.global-label { font-weight: 700; color: var(--primary); }
 .total-shown { color: var(--text-secondary); font-variant-numeric: tabular-nums; margin-right: auto; }
 
 /* ---------- Liquid Glass 버튼 ---------- */
@@ -194,9 +198,6 @@ article a:hover { text-decoration: underline; }
 .site-footer a:hover { text-decoration: underline; }
 .site-footer p { margin: 0; }
 
-@media (max-width: 480px) {
-  .controls-categories { grid-template-columns: repeat(2, 1fr); gap: 0.5rem 0.75rem; }
-}
 
 @media (prefers-reduced-motion: reduce) {
   .liquid-button { transition: none; }
