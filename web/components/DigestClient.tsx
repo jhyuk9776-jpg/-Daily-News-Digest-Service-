@@ -11,7 +11,9 @@ export default function DigestClient({ digest }: { digest: Digest }) {
   const { settings, countOf, setCount, setGlobalCount, reset } = useDigestSettings(names);
   const view = applySettings(digest, settings);
   return (
-    <>
+    <main>
+      {/* UX 순서: ① 제목(서비스 파악) → ② 메뉴(기능 짐작) → ③ 본문 */}
+      <h1>오늘의 뉴스 요약 — {digest.date}</h1>
       <Controls
         categories={names}
         globalCount={settings.globalCount}
@@ -20,11 +22,9 @@ export default function DigestClient({ digest }: { digest: Digest }) {
         onSetCount={setCount}
         onSetGlobalCount={setGlobalCount}
         onReset={reset}
+        actions={<CopyKakaoButton digest={view} />}
       />
-      <div className="copy-bar">
-        <CopyKakaoButton digest={view} />
-      </div>
       <DigestView digest={view} />
-    </>
+    </main>
   );
 }

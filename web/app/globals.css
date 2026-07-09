@@ -25,7 +25,6 @@
 
 body {
   margin: 0;
-  overflow-x: hidden;
   color: var(--text-primary);
   background: var(--surface);
   font-family: "Pretendard Variable", Pretendard, system-ui, -apple-system,
@@ -82,10 +81,9 @@ article p { color: var(--text-secondary); font-size: 0.9rem; margin: 0; }
 article a { color: var(--primary); text-decoration: none; font-weight: 600; }
 article a:hover { text-decoration: underline; }
 
-/* ---------- 컨트롤 바(유리 패널) ---------- */
+/* ---------- 컨트롤 바(유리 패널) — 제목 아래, 스크롤과 함께 흐름 ---------- */
 .controls {
-  position: sticky; top: 0.6rem; z-index: 10;
-  max-width: var(--max); margin: 0.6rem auto 0;
+  margin: 0 0 1.5rem;
   display: flex; flex-direction: column; gap: 0.7rem;
   padding: 0.85rem 1rem;
   background: var(--glass-strong);
@@ -100,8 +98,8 @@ article a:hover { text-decoration: underline; }
   display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   gap: 0.5rem 1rem;
 }
-.category-row { display: flex; align-items: center; justify-content: space-between; gap: 0.45rem; }
-.category-name { font-size: 0.9rem; color: var(--text-primary); }
+.category-row { display: flex; align-items: center; justify-content: flex-start; gap: 0.35rem; }
+.category-name { font-size: 0.9rem; font-weight: 600; color: var(--primary); }
 
 .count-select {
   font: inherit; font-size: 0.85rem; padding: 0.28rem 0.5rem;
@@ -115,7 +113,7 @@ article a:hover { text-decoration: underline; }
   display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; font-size: 0.9rem;
   padding-top: 0.6rem; border-top: 1px dashed var(--border);
 }
-.global-label { font-weight: 700; color: var(--text-primary); }
+.global-label { font-weight: 700; color: var(--primary); }
 .total-shown { color: var(--text-secondary); font-variant-numeric: tabular-nums; margin-right: auto; }
 
 /* ---------- Liquid Glass 버튼 ---------- */
@@ -159,6 +157,17 @@ article a:hover { text-decoration: underline; }
 }
 .liquid-button--ghost:hover { filter: brightness(1); background: rgba(255, 255, 255, 0.7); }
 
+/* 연한(soft) 버튼 — 카톡 복사 등 눈에 덜 띄어야 하는 보조 액션 */
+.liquid-button--soft {
+  color: var(--primary);
+  background: rgba(109, 159, 138, 0.18);
+  box-shadow: inset 0 0 0 1px rgba(15, 76, 58, 0.14), 0 2px 8px -5px rgba(15, 76, 58, 0.25);
+}
+.liquid-button--soft .liquid-button__shine {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 55%);
+}
+.liquid-button--soft:hover { filter: brightness(1); background: rgba(109, 159, 138, 0.28); }
+
 /* Chromium: 유리 가장자리 굴절(진짜 liquid). 미지원 브라우저는 위 blur 폴백. */
 @supports (backdrop-filter: url(#liquid-glass)) {
   .liquid-button__glass {
@@ -166,9 +175,6 @@ article a:hover { text-decoration: underline; }
     backdrop-filter: url(#liquid-glass) blur(5px) saturate(1.5);
   }
 }
-
-/* ---------- 카톡 복사 바 ---------- */
-.copy-bar { max-width: var(--max); margin: 0.8rem auto 0; padding: 0 1rem; }
 
 /* ---------- 문서 페이지 ---------- */
 .legal h1 { font-size: 1.55rem; font-weight: 800; letter-spacing: -0.02em; margin: 0.5rem 0 1rem; }

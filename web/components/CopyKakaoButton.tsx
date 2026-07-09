@@ -20,6 +20,8 @@ export default function CopyKakaoButton({ digest }: { digest: Digest }) {
   };
 
   return (
-    <LiquidButton onClick={onCopy}>{copied ? "복사됨 ✓" : "카톡용 복사"}</LiquidButton>
+    <LiquidButton className="liquid-button--soft" onClick={onCopy}>
+      {copied ? "복사됨 ✓" : "카톡용 복사"}
+    </LiquidButton>
   );
 }

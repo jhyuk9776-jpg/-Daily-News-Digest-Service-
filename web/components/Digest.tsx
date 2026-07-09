@@ -1,12 +1,13 @@
 import type { Digest } from "../lib/types";
 
+// 본문(분야별 섹션)만 렌더한다. 제목·컨트롤은 DigestClient가 상단에 배치한다
+// (UX 순서: 제목 → 메뉴 → 본문).
 export default function DigestView({ digest }: { digest: Digest }) {
+  if (digest.categories.length === 0) {
+    return <p>표시할 분야가 없습니다. 위에서 개수를 1건 이상으로 설정하세요.</p>;
+  }
   return (
-    <main>
-      <h1>오늘의 뉴스 요약 — {digest.date}</h1>
-      {digest.categories.length === 0 && (
-        <p>표시할 분야가 없습니다. 위에서 개수를 1건 이상으로 설정하세요.</p>
-      )}
+    <>
       {digest.categories.map((cat) => (
         <section key={cat.name}>
           <h2>{cat.name}</h2>
@@ -35,6 +36,6 @@ export default function DigestView({ digest }: { digest: Digest }) {
           )}
         </section>
       ))}
-    </main>
+    </>
   );
 }
