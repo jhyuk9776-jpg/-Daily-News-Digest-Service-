@@ -68,3 +68,22 @@ article a:hover { text-decoration: underline; }
   .category-row { width: 100%; justify-content: space-between; }
   .controls-categories { gap: 0.4rem; }
 }
+
+/* 소개·약관·개인정보 등 문서 페이지 */
+.legal { }
+.legal h1 { font-size: 1.5rem; margin: 0 0 1rem; }
+.legal h2 { font-size: 1.1rem; margin: 1.75rem 0 0.5rem; }
+.legal p { margin: 0.5rem 0; }
+.legal ul { padding-left: 1.2rem; margin: 0.5rem 0; }
+.legal li { margin: 0.25rem 0; }
+.muted { color: var(--muted); font-size: 0.9rem; }
+
+/* 사이트 푸터(전 페이지 공통) */
+.site-footer {
+  max-width: var(--max); margin: 2rem auto 0; padding: 1.25rem 1rem 2rem;
+  border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85rem;
+}
+.site-footer nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; margin-bottom: 0.5rem; }
+.site-footer a { color: var(--accent); text-decoration: none; }
+.site-footer a:hover { text-decoration: underline; }
+.site-footer p { margin: 0; }
