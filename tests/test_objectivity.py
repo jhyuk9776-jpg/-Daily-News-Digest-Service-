@@ -166,11 +166,45 @@ class ProcessAndBackfillTest(unittest.TestCase):
             with patch.object(objectivity, "RAW_DIR", raw_dir), \
                  patch.object(objectivity, "SCORES_DIR", tmp_p / "scores"), \
                  patch.object(objectivity, "MEDIA_FILE", tmp_p / "scores" / "media.json"), \
+                 patch.object(objectivity, "RANK_HISTORY_FILE", tmp_p / "scores" / "media-rank-history.json"), \
                  patch.object(objectivity, "active_sources", return_value={"A"}):
                 store = objectivity.run_backfill()
         self.assertIn(old, store["processed_dates"])
         self.assertIn("A", store["media"])  # 파일 날짜 기준이라 통과
         self.assertEqual(store["media"]["A"]["count"], 1)
+
+
+class RankHistoryTest(unittest.TestCase):
+    def _store(self):
+        return {"media": {
+            "저밀도": {"density_per_1000": 30.0, "article_count": 10, "count": 10},
+            "고밀도": {"density_per_1000": 200.0, "article_count": 10, "count": 10},
+            "중밀도": {"density_per_1000": 100.0, "article_count": 10, "count": 10},
+            "표본없음": {"density_per_1000": 0.0, "article_count": 0, "count": 0},
+        }}
+
+    def test_ranks_by_density_ascending(self):
+        ranks = objectivity.compute_ranks(self._store())
+        self.assertEqual(ranks["저밀도"], 1)  # 낮을수록 객관적 → 1위
+        self.assertEqual(ranks["중밀도"], 2)
+        self.assertEqual(ranks["고밀도"], 3)
+
+    def test_ranks_exclude_zero_sample(self):
+        ranks = objectivity.compute_ranks(self._store())
+        self.assertNotIn("표본없음", ranks)
+
+    def test_history_appends_and_is_idempotent(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            with patch.object(objectivity, "SCORES_DIR", Path(tmp)), \
+                 patch.object(objectivity, "RANK_HISTORY_FILE", Path(tmp) / "media-rank-history.json"):
+                objectivity.update_rank_history("2026-07-09", {"저밀도": 1, "고밀도": 2})
+                objectivity.update_rank_history("2026-07-10", {"고밀도": 1, "저밀도": 2})
+                # 같은 날짜 재실행 → 덮어씀(중복 없음)
+                objectivity.update_rank_history("2026-07-10", {"저밀도": 1, "고밀도": 2})
+                hist = objectivity.load_rank_history()
+        dates = [e["date"] for e in hist["history"]]
+        self.assertEqual(dates, ["2026-07-09", "2026-07-10"])  # 날짜순, 중복 없음
+        self.assertEqual(hist["history"][-1]["ranks"], {"저밀도": 1, "고밀도": 2})
 
 
 class ActiveSourceFilterTest(unittest.TestCase):

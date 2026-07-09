@@ -33,6 +33,7 @@ ROOT = Path(__file__).resolve().parent.parent
 RAW_DIR = ROOT / "raw"
 SCORES_DIR = ROOT / "scores"
 MEDIA_FILE = SCORES_DIR / "media.json"
+RANK_HISTORY_FILE = SCORES_DIR / "media-rank-history.json"
 PENALTIES_FILE = ROOT / "penalties.yaml"
 KST = timezone(timedelta(hours=9))
 
@@ -292,6 +293,38 @@ def save_store(store: dict) -> None:
         json.dump(store, f, ensure_ascii=False, indent=2)
 
 
+def compute_ranks(store: dict) -> dict:
+    """표본이 있는 매체를 감점 밀도 오름차순(낮을수록 객관적)으로 1위부터 매긴다.
+    동밀도는 매체명으로 안정 정렬해 결정적이다."""
+    media = store.get("media", {})
+    ranked = sorted(
+        (s for s, m in media.items() if m.get("article_count", m.get("count", 0)) > 0),
+        key=lambda s: (media[s].get("density_per_1000", 0.0), s),
+    )
+    return {s: i + 1 for i, s in enumerate(ranked)}
+
+
+def load_rank_history() -> dict:
+    if RANK_HISTORY_FILE.exists():
+        with RANK_HISTORY_FILE.open("r", encoding="utf-8") as f:
+            return json.load(f)
+    return {"history": []}
+
+
+def update_rank_history(date: str, ranks: dict) -> dict:
+    """그날의 순위 스냅샷을 이력에 남긴다(같은 날짜 재실행은 덮어씀, 날짜순 정렬).
+    이 이력으로 '전일 대비 변동'과 '어떤 매체가 1위를 며칠 유지했나'를 계산한다."""
+    hist = load_rank_history()
+    entries = [e for e in hist.get("history", []) if e.get("date") != date]
+    entries.append({"date": date, "ranks": ranks})
+    entries.sort(key=lambda e: e["date"])
+    hist["history"] = entries
+    SCORES_DIR.mkdir(parents=True, exist_ok=True)
+    with RANK_HISTORY_FILE.open("w", encoding="utf-8") as f:
+        json.dump(hist, f, ensure_ascii=False, indent=2)
+    return hist
+
+
 def save_article_report(date: str, records: list[dict]) -> None:
     SCORES_DIR.mkdir(parents=True, exist_ok=True)
     penalized = [r for r in records if r.get("points", 0) > 0]
@@ -366,6 +399,8 @@ def run_backfill() -> dict:
     for date in dates:
         store = process_date(store, date)
     save_store(store)
+    if dates:
+        update_rank_history(dates[-1], compute_ranks(store))
     print(f"백필 완료: {len(dates)}일 처리, 매체 {len(store['media'])}곳")
     return store
 
@@ -390,6 +425,7 @@ def main() -> int:
         print(f"오류: {exc}", file=sys.stderr)
         return 1
     save_store(store)
+    update_rank_history(date, compute_ranks(store))
 
     print(f"=== 객관성 감점 밀도 ({date}) — 낮을수록 객관적 ===")
     for source, m in sorted(store["media"].items(),

@@ -74,8 +74,9 @@ def _render_text(digest: dict) -> str:
                 lines.append(f"  · {b}")
             src = art["source"]
             if src:
+                # 카톡용(plain)은 출처명만 — URL은 복붙 시 지저분해 뺀다(링크는 HTML에만).
                 extra = f" {src['extra']}" if src["extra"] else ""
-                lines.append(f"  출처: {src['label']} {src['url']}{extra}")
+                lines.append(f"  출처: {src['label']}{extra}")
             lines.append("")
     if digest["meta"]:
         lines.append(f"— {digest['meta']}")

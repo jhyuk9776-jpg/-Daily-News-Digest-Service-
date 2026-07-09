@@ -92,7 +92,10 @@ class RenderEmailTest(unittest.TestCase):
     def test_text_is_kakao_plain(self):
         self.assertIn("▪ 삼성 사내대출 제한", self.text)
         self.assertIn("──────── 경제 ────────", self.text)
-        self.assertIn("https://www.hankyung.com/article/1", self.text)
+        # 카톡용은 출처명만 남기고 링크(URL)는 뺀다(복붙 시 지저분한 URL 방지).
+        self.assertIn("출처: 한국경제", self.text)
+        self.assertNotIn("https://www.hankyung.com/article/1", self.text)
+        self.assertNotIn("http", self.text)  # plain 블록에 URL 없음
         self.assertNotIn("](", self.text)  # 마크다운 링크 문법 없음
         self.assertIn("요약실패 1건", self.text)
 

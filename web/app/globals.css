@@ -1,70 +1,205 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
 :root {
-  --fg: #1a1a1a;
-  --muted: #666;
-  --line: #e5e5e5;
-  --accent: #1257a8;
+  /* Brand */
+  --primary: #0f4c3a;
+  --primary-hover: #0b3f30;
+  --primary-light: #eaf4f0;
+  /* Neutral */
+  --background: #ffffff;
+  --surface: #f7f9f8;
+  --border: #e4eae7;
+  /* Text */
+  --text-primary: #1b1f1d;
+  --text-secondary: #5e6b65;
+  /* Accent */
+  --accent: #6d9f8a;
+
   --max: 720px;
+  --glass: rgba(255, 255, 255, 0.62);
+  --glass-strong: rgba(247, 249, 248, 0.72);
+  --radius: 16px;
 }
+
 * { box-sizing: border-box; }
+
 body {
   margin: 0;
-  color: var(--fg);
-  font-family: system-ui, -apple-system, "Segoe UI", "Apple SD Gothic Neo", sans-serif;
+  color: var(--text-primary);
+  background: var(--surface);
+  font-family: "Pretendard Variable", Pretendard, system-ui, -apple-system,
+    "Apple SD Gothic Neo", sans-serif;
   line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
 }
-main { max-width: var(--max); margin: 0 auto; padding: 1.25rem 1rem 4rem; }
-main > h1 { font-size: 1.5rem; margin: 0 0 1rem; }
+
+/* 은은한 그린 앰비언트 필드 — 유리가 굴절할 배경(가독성 위해 매우 옅게) */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(60% 50% at 15% 0%, var(--primary-light) 0%, transparent 60%),
+    radial-gradient(50% 45% at 100% 10%, rgba(109, 159, 138, 0.22) 0%, transparent 55%),
+    radial-gradient(70% 60% at 50% 100%, rgba(15, 76, 58, 0.06) 0%, transparent 60%),
+    var(--surface);
+}
+
+/* ---------- 다이제스트 본문 ---------- */
+main { max-width: var(--max); margin: 0 auto; padding: 1rem 1rem 4rem; }
+main > h1 {
+  font-size: 1.6rem; font-weight: 800; letter-spacing: -0.02em;
+  margin: 0.5rem 0 1.25rem; color: var(--text-primary);
+}
+main > section { margin-top: 1.5rem; }
 main > section > h2 {
-  font-size: 1.15rem; margin: 2rem 0 0.5rem;
-  padding-top: 0.75rem; border-top: 2px solid var(--line);
+  font-size: 0.8rem; font-weight: 700; letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary); margin: 0 0 0.6rem;
+  display: flex; align-items: center; gap: 0.5rem;
 }
-article { margin: 1.25rem 0; }
-article h3 { font-size: 1.05rem; margin: 0 0 0.4rem; }
-article ul { margin: 0 0 0.4rem; padding-left: 1.2rem; }
-article li { margin: 0.15rem 0; }
-article p { color: var(--muted); font-size: 0.9rem; margin: 0; }
-article a { color: var(--accent); text-decoration: none; }
+main > section > h2::before {
+  content: ""; width: 0.65rem; height: 0.65rem; border-radius: 3px;
+  background: var(--accent);
+}
+
+article {
+  background: var(--glass);
+  -webkit-backdrop-filter: blur(10px) saturate(1.3);
+  backdrop-filter: blur(10px) saturate(1.3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.1rem;
+  margin: 0.75rem 0;
+  box-shadow: 0 1px 2px rgba(27, 31, 29, 0.04), 0 8px 24px -18px rgba(15, 76, 58, 0.35);
+}
+article h3 { font-size: 1.05rem; font-weight: 700; margin: 0 0 0.5rem; letter-spacing: -0.01em; }
+article ul { margin: 0 0 0.6rem; padding-left: 1.2rem; }
+article li { margin: 0.2rem 0; }
+article p { color: var(--text-secondary); font-size: 0.9rem; margin: 0; }
+article a { color: var(--primary); text-decoration: none; font-weight: 600; }
 article a:hover { text-decoration: underline; }
 
-/* 상단 컨트롤 바 */
+/* ---------- 컨트롤 바(유리 패널) — 제목 아래, 스크롤과 함께 흐름 ---------- */
 .controls {
-  position: sticky; top: 0; z-index: 10;
-  max-width: var(--max); margin: 0 auto;
-  display: flex; flex-direction: column; gap: 0.6rem;
-  padding: 0.75rem 1rem; background: #fff;
-  border-bottom: 1px solid var(--line);
+  margin: 0 0 1.5rem;
+  display: flex; flex-direction: column; gap: 0.7rem;
+  padding: 0.85rem 1rem;
+  background: var(--glass-strong);
+  -webkit-backdrop-filter: blur(16px) saturate(1.5);
+  backdrop-filter: blur(16px) saturate(1.5);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: var(--radius);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset,
+    0 10px 30px -12px rgba(15, 76, 58, 0.3);
 }
-.controls-categories {
-  display: flex; flex-wrap: wrap; gap: 0.4rem 1rem;
+.controls-categories { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+/* 분야·전체 개수 컨트롤 — 유리 pill(카톡 복사·되돌리기 버튼과 같은 모양) */
+.category-chip {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  padding: 0.28rem 0.4rem 0.28rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(6px) saturate(1.4);
+  backdrop-filter: blur(6px) saturate(1.4);
+  box-shadow: inset 0 0 0 1px var(--border), 0 2px 8px -5px rgba(15, 76, 58, 0.2);
 }
-.category-row {
-  display: inline-flex; align-items: center; gap: 0.5rem;
+.category-chip__name { font-size: 0.85rem; font-weight: 600; color: var(--primary); }
+.category-chip__select {
+  font: inherit; font-size: 0.82rem; font-weight: 600; color: var(--primary);
+  background: rgba(15, 76, 58, 0.07); border: none; border-radius: 999px;
+  padding: 0.18rem 0.4rem; cursor: pointer;
 }
-.filter-chip {
-  display: inline-flex; align-items: center; gap: 0.3rem;
-  font-size: 0.9rem; padding: 0.2rem 0.5rem;
-  border: 1px solid var(--line); border-radius: 999px; cursor: pointer;
-  min-width: 4.2rem;
-}
-.count-stepper { display: inline-flex; align-items: center; gap: 0.3rem; }
-.count-stepper button {
-  width: 1.8rem; height: 1.8rem; font-size: 1.1rem; line-height: 1;
-  border: 1px solid var(--line); border-radius: 6px; background: #fafafa; cursor: pointer;
-}
-.count-value { min-width: 1.2rem; text-align: center; font-variant-numeric: tabular-nums; }
+.category-chip__select:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
 
 .controls-global {
-  display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;
-  padding-top: 0.5rem; border-top: 1px dashed var(--line);
+  display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; font-size: 0.9rem;
+  padding-top: 0.6rem; border-top: 1px dashed var(--border);
 }
-.global-label { font-weight: 600; }
-.reset-btn {
-  margin-left: auto; font-size: 0.85rem; padding: 0.3rem 0.7rem;
-  border: 1px solid var(--line); border-radius: 6px; background: #fafafa; cursor: pointer;
-}
-.reset-btn:hover { background: #f0f0f0; }
+.total-shown { color: var(--text-secondary); font-variant-numeric: tabular-nums; margin-right: auto; }
 
-@media (max-width: 480px) {
-  .category-row { width: 100%; justify-content: space-between; }
-  .controls-categories { gap: 0.4rem; }
+/* ---------- Liquid Glass 버튼 ---------- */
+.liquid-button {
+  position: relative; isolation: isolate; overflow: hidden;
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 0.55rem 1.15rem; border: none; border-radius: 999px;
+  font: inherit; font-size: 0.9rem; font-weight: 600; color: #fff;
+  cursor: pointer;
+  background: linear-gradient(135deg, rgba(15, 76, 58, 0.9), rgba(11, 63, 48, 0.9));
+  box-shadow: 0 6px 16px -6px rgba(15, 76, 58, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35), inset 0 -2px 4px rgba(0, 0, 0, 0.16);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
+}
+.liquid-button__glass {
+  position: absolute; inset: 0; z-index: -1; border-radius: inherit;
+  -webkit-backdrop-filter: blur(6px) saturate(1.5);
+  backdrop-filter: blur(6px) saturate(1.5);
+}
+.liquid-button__shine {
+  position: absolute; inset: 0; z-index: 1; border-radius: inherit; pointer-events: none;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0) 48%);
+}
+.liquid-button__label { position: relative; z-index: 2; display: inline-flex; }
+.liquid-button:hover {
+  transform: translateY(-1px); filter: brightness(1.06);
+  box-shadow: 0 10px 22px -8px rgba(15, 76, 58, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.45);
+}
+.liquid-button:active { transform: translateY(0); filter: brightness(0.98); }
+.liquid-button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* 보조(고스트) 버튼 — 프로스트 바 위의 되돌리기 등 */
+.liquid-button--ghost {
+  color: var(--primary);
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0 0 0 1px var(--border), 0 2px 8px -4px rgba(27, 31, 29, 0.15);
+}
+.liquid-button--ghost .liquid-button__shine {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0) 55%);
+}
+.liquid-button--ghost:hover { filter: brightness(1); background: rgba(255, 255, 255, 0.7); }
+
+/* 연한(soft) 버튼 — 카톡 복사 등 눈에 덜 띄어야 하는 보조 액션 */
+.liquid-button--soft {
+  color: var(--primary);
+  background: rgba(109, 159, 138, 0.18);
+  box-shadow: inset 0 0 0 1px rgba(15, 76, 58, 0.14), 0 2px 8px -5px rgba(15, 76, 58, 0.25);
+}
+.liquid-button--soft .liquid-button__shine {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 55%);
+}
+.liquid-button--soft:hover { filter: brightness(1); background: rgba(109, 159, 138, 0.28); }
+
+/* Chromium: 유리 가장자리 굴절(진짜 liquid). 미지원 브라우저는 위 blur 폴백. */
+@supports (backdrop-filter: url(#liquid-glass)) {
+  .liquid-button__glass {
+    -webkit-backdrop-filter: url(#liquid-glass) blur(5px) saturate(1.5);
+    backdrop-filter: url(#liquid-glass) blur(5px) saturate(1.5);
+  }
+}
+
+/* ---------- 문서 페이지 ---------- */
+.legal h1 { font-size: 1.55rem; font-weight: 800; letter-spacing: -0.02em; margin: 0.5rem 0 1rem; }
+.legal h2 { font-size: 1.1rem; font-weight: 700; margin: 1.75rem 0 0.5rem; color: var(--primary); }
+.legal p { margin: 0.5rem 0; }
+.legal ul { padding-left: 1.2rem; margin: 0.5rem 0; }
+.legal li { margin: 0.25rem 0; }
+.muted { color: var(--text-secondary); font-size: 0.9rem; }
+
+/* ---------- 푸터 ---------- */
+.site-footer {
+  max-width: var(--max); margin: 2.5rem auto 0; padding: 1.25rem 1rem 2.5rem;
+  border-top: 1px solid var(--border); color: var(--text-secondary); font-size: 0.85rem;
+}
+.site-footer nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; margin-bottom: 0.5rem; }
+.site-footer a { color: var(--primary); text-decoration: none; font-weight: 600; }
+.site-footer a:hover { text-decoration: underline; }
+.site-footer p { margin: 0; }
+
+
+@media (prefers-reduced-motion: reduce) {
+  .liquid-button { transition: none; }
+  .liquid-button:hover, .liquid-button:active { transform: none; }
 }
