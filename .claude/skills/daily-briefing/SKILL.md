@@ -30,6 +30,8 @@ description: Use when starting a work day on this AI 뉴스 다이제스트 proj
      `git fetch` 후 커밋된 결과를 읽어 낸다:
      - `scores/articles-<오늘>.json` → `total_points`·`density_per_1000`·`penalty_memo.by_expr`·`by_source`(당일 감점 메모)
      - `scores/media.json` → 매체별 `density_per_1000`(낮을수록 객관적) + 인용(`attribution_total`)·이상치(`outlier_total`) 관찰축
+     - `scores/media-rank-history.json` → 일별 순위 스냅샷. **현재 순위**(마지막 항목)와 **전일 대비 변동**(직전 항목과 비교: 순위 상승 ▲n, 하락 ▼n, 유지 −)을 계산해 표시.
+       추가로 이력에서 **1위 연속 유지 일수**(가장 최근부터 1위가 같은 매체로 이어진 날 수)를 세어 "N위를 M일째 유지"로 곁들이면 객관성 지속의 증거가 된다.
      - `scores/digest-audit-<오늘>.json`이 있으면 "본문 감사: 감사 N건, 감점 M건" 요약 포함
      자동 채점이 안 돌았거나 결과가 없을 때만 `objectivity-score` 스킬로 수동 채점.
 4. **브리핑 출력** — 아래 섹션으로, 짧게.
@@ -46,7 +48,7 @@ description: Use when starting a work day on this AI 뉴스 다이제스트 proj
 - 실패: N건 — <무엇>(<원인>). 없으면 "실패 0건"
 - 점수(observe-only):
   - 당일 감점 메모: 총 -X pt · 밀도 Y/1k · <표현(근거)×횟수·감점> … · 매체별 -X
-  - 누적(밀도 낮을수록 객관적): 상위 몇 개 매체 density_per_1000 · 인용 · 이상치. 채점 불가 시 이유 1줄
+  - 누적 순위(밀도 낮을수록 객관적): `1위 매체 density(▲2)` `2위 매체 density(−)` … 전일 대비 변동 화살표 포함. 1위는 "M일째 유지"를 곁들임. 채점 불가 시 이유 1줄
   - 본문 감사(digest-audit 있을 때): 감사 N건, 감점 M건
 
 ## 1. 오늘 위치 + 목표
