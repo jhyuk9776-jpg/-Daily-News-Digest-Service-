@@ -1,3 +1,4 @@
 node_modules/
 .next/
+*.tsbuildinfo
 /public/data/*.json
