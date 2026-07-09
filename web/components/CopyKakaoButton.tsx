@@ -2,6 +2,7 @@
 import { useState } from "react";
 import type { Digest } from "../lib/types";
 import { buildKakaoText } from "../lib/kakaoText";
+import { LiquidButton } from "@/components/ui/liquid-glass-button";
 
 // 현재 화면 기준 카톡용 plain 텍스트를 클립보드로 원클릭 복사.
 // (이메일은 JS가 막혀 이 버튼을 넣을 수 없어 웹 전용.)
@@ -19,8 +20,6 @@ export default function CopyKakaoButton({ digest }: { digest: Digest }) {
   };
 
   return (
-    <button className="copy-kakao" onClick={onCopy}>
-      {copied ? "복사됨 ✓" : "카톡용 복사"}
-    </button>
+    <LiquidButton onClick={onCopy}>{copied ? "복사됨 ✓" : "카톡용 복사"}</LiquidButton>
   );
 }

@@ -1,5 +1,6 @@
 "use client";
 import { COUNT_OPTIONS } from "../lib/types";
+import { LiquidButton } from "@/components/ui/liquid-glass-button";
 
 export default function Controls({
   categories,
@@ -55,9 +56,9 @@ export default function Controls({
           ))}
         </select>
         <span className="total-shown">총 {totalShown}건 표시 중</span>
-        <button className="reset-btn" onClick={onReset}>
+        <LiquidButton className="liquid-button--ghost" onClick={onReset}>
           기본값으로 되돌리기
-        </button>
+        </LiquidButton>
       </div>
     </div>
   );

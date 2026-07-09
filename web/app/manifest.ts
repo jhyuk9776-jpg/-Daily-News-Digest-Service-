@@ -8,8 +8,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: "매일 아침 사실 중심으로 요약한 뉴스 다이제스트",
     start_url: "/",
     display: "standalone",
-    background_color: "#ffffff",
-    theme_color: "#1257a8",
+    background_color: "#f7f9f8",
+    theme_color: "#0f4c3a",
     lang: "ko",
     icons: [
       { src: "/icons/icon-192.png", sizes: "192x192", type: "image/png", purpose: "any" },
