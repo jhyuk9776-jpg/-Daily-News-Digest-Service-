@@ -45,10 +45,14 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add News/ failures/ scores/
+          # 웹(Vercel) 데이터. web/.gitignore가 data JSON을 (로컬 dev 노이즈 방지로)
+          # 무시하므로 CI에서만 -f로 강제 스테이징한다. latest.json 갱신 → main push →
+          # Vercel 재빌드 → 웹 자동 갱신. 날짜별 파일도 함께 커밋(향후 네비게이션용).
+          git add -f web/public/data/
           if git diff --staged --quiet; then
             echo "변경된 산출물 없음 — 커밋 생략"
           else
-            git commit -m "docs: $(date +%F) 다이제스트 자동 생성 + 객관성 점수 축적"
+            git commit -m "docs: $(date +%F) 다이제스트 자동 생성 + 객관성 점수 축적 + 웹 데이터 갱신"
             git push
           fi
 
