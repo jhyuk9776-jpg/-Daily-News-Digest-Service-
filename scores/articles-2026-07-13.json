@@ -1,0 +1,211 @@
+{
+  "date": "2026-07-13",
+  "scored": 697,
+  "penalized_count": 12,
+  "total_points": 94.0,
+  "density_per_1000": 134.86370157819223,
+  "attribution_total": 140,
+  "outlier_total": 12,
+  "penalty_memo": {
+    "total_deducted": 94,
+    "by_expr": {
+      "(할까|일까|되나|아니냐|셈인가|것인가)\\??$": {
+        "count": 5,
+        "deducted": 40,
+        "근거": "추측형 종결"
+      },
+      "\\?$": {
+        "count": 3,
+        "deducted": 24,
+        "근거": "물음표 종결 낚시"
+      },
+      "총력전": {
+        "count": 1,
+        "deducted": 3,
+        "근거": "드라마화"
+      },
+      "파문": {
+        "count": 1,
+        "deducted": 8,
+        "근거": "과장 프레이밍"
+      },
+      "(성과|잠재력|경쟁력|저력).{0,3}입증": {
+        "count": 2,
+        "deducted": 16,
+        "근거": "홍보성 단정"
+      },
+      "무더기": {
+        "count": 1,
+        "deducted": 3,
+        "근거": "과장 수량 묘사"
+      }
+    },
+    "by_source": {
+      "매일경제": 16,
+      "SBS": 11,
+      "연합뉴스": 3,
+      "경향신문": 16,
+      "매일신문": 40,
+      "한겨레": 8
+    }
+  },
+  "articles": [
+    {
+      "source": "매일경제",
+      "category": "경제",
+      "title": "SK하이닉스 조달액 265억弗 국내 풀린다…외환시장 숨통 트일까",
+      "link": "https://www.mk.co.kr/news/economy/12096510",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "(할까|일까|되나|아니냐|셈인가|것인가)\\??$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "매일경제",
+      "category": "경제",
+      "title": "“내 월급 왜 이래” 김 부장의 한숨…7월부턴 국민연금 더 떼간다고?",
+      "link": "https://www.mk.co.kr/news/economy/12096334",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "SBS",
+      "category": "경제",
+      "title": "[자막뉴스] 265억 달러 조달한 SK하이닉스…국내 외환시장 '구원투수' 되나",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008653718",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "(할까|일까|되나|아니냐|셈인가|것인가)\\??$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "연합뉴스",
+      "category": "사회",
+      "title": "수사 속도 끌어올리는 종합특검…'3차 연장' 염두 막바지 총력전",
+      "link": "https://www.yna.co.kr/view/AKR20260712024300004",
+      "score": 97,
+      "points": 3.0,
+      "hits": [
+        "총력전"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "경향신문",
+      "category": "사회",
+      "title": "“억울하다”던 장윤기 반성문 냈다···‘성범죄 살인’ 인정할까",
+      "link": "https://www.khan.co.kr/article/202607121123001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "(할까|일까|되나|아니냐|셈인가|것인가)\\??$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "매일신문",
+      "category": "사회",
+      "title": "라면 거절했더니 선풍기가 날아왔다…가족이 올린 폭로글 파문",
+      "link": "https://www.imaeil.com/page/view/2026071222222608264",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "파문"
+      ],
+      "attribution": 1,
+      "outlier": true
+    },
+    {
+      "source": "매일신문",
+      "category": "사회",
+      "title": "\"AGT vs 모노레일\" 대구 도시철도 4호선 재검토, 걸림돌은?",
+      "link": "https://www.imaeil.com/page/view/2026071212445740152",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 2,
+      "outlier": true
+    },
+    {
+      "source": "매일신문",
+      "category": "사회",
+      "title": "동양대 영상미디어학과, 생성형 AI 영화연출 연구로 학술성과 입증",
+      "link": "https://www.imaeil.com/page/view/2026071210531599610",
+      "score": 84,
+      "points": 16.0,
+      "hits": [
+        "(성과|잠재력|경쟁력|저력).{0,3}입증",
+        "(성과|잠재력|경쟁력|저력).{0,3}입증"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "SBS",
+      "category": "사회",
+      "title": "3000명 발 묶였다…태풍급 강풍에 제주공항 '북새통'",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008653791",
+      "score": 97,
+      "points": 3.0,
+      "hits": [
+        "무더기"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "경향신문",
+      "category": "세계",
+      "title": "이란, 호르무즈 해협 재봉쇄 공식화···‘강대강’ 대치 미·이란 다시 원점으로?",
+      "link": "https://www.khan.co.kr/article/202607121603001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "매일신문",
+      "category": "세계",
+      "title": "휴전은 고사하고 암살 언급까지…종전협상 가능할까",
+      "link": "https://www.imaeil.com/page/view/2026071214421001203",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "(할까|일까|되나|아니냐|셈인가|것인가)\\??$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "한겨레",
+      "category": "세계",
+      "title": "다시 닫힌 호르무즈, 내부 엇박자 터진 이란…MOU 휴짓조각 되나",
+      "link": "https://www.hani.co.kr/arti/international/arabafrica/1267870.html",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "(할까|일까|되나|아니냐|셈인가|것인가)\\??$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    }
+  ]
+}
