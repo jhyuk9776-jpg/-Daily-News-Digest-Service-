@@ -218,10 +218,11 @@ def objectivity_score(article: dict, penalties=None, observe=None) -> dict:
     return score_article(channels, penalties, observe)
 
 
-def body_objectivity(body: str, penalties=None, observe=None) -> dict:
-    """본문 채널만으로 객관성(감점) 채점. 제목/리드 빈 문자열이라 scope:title 룰은 미발화.
-    scope=='text' 룰은 score_article 내부에서 body에 body_factor(0.5) 가중으로 적용된다."""
-    channels = {"title": "", "lead": "", "body": body}
+def body_objectivity(body: str, title: str = "", penalties=None, observe=None) -> dict:
+    """기사 객관성(감점) 채점. 제목+본문 전체를 본다(제목만 채점하던 걸 본문까지 확장).
+    title="" 이면 제목 전용 룰(scope:title)은 미발화하고 본문만 채점한다.
+    scope=='text' 룰은 제목+리드(전체 가중) + body(body_factor 0.5 가중)에 적용된다."""
+    channels = {"title": title, "lead": "", "body": body}
     return score_article(channels, penalties, observe)
 
 

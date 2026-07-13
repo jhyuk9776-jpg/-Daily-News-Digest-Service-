@@ -21,5 +21,25 @@ class BodyObjectivityTest(unittest.TestCase):
         self.assertEqual(r["score"], 100)
 
 
+# 라벨 예시의 실제 제목(홍보성 평가어는 헤드라인에 산다 → 객관성은 제목+본문을 함께 본다).
+PROMO_TITLE = "지속가능한 미래 그리는 JB금융, 작년 ESG 성과 입증"
+GOOD_TITLE = '"스타벅스 가야지"…고교야구 대회 중 \'광주 조롱 논란\' 불거져'
+
+
+class LabelObjectivityTest(unittest.TestCase):
+    def test_promo_article_penalized(self):
+        # 감점 1호(JB금융 ESG): 헤드라인 "성과 입증" 홍보성 평가어 → 기존 룰이 감점
+        body = (FIX / "label_zdnet_esg.txt").read_text(encoding="utf-8")
+        r = objectivity.body_objectivity(body, PROMO_TITLE)
+        self.assertGreater(r["points"], 0)
+        self.assertTrue(any("입증" in h for h in r["hits"]))
+
+    def test_good_example_low_penalty(self):
+        # 예시 1호(배재고 스타벅스): 객관적 사건 보도 → 홍보성 감점 미발화
+        body = (FIX / "label_naver_088.txt").read_text(encoding="utf-8")
+        r = objectivity.body_objectivity(body, GOOD_TITLE)
+        self.assertFalse(any("입증" in h for h in r["hits"]))
+
+
 if __name__ == "__main__":
     unittest.main()
