@@ -22,8 +22,9 @@ from pathlib import Path
 
 import yaml
 
-from curate import (  # 날짜창·출처목록·정규화 재사용(격리: 단방향 의존)
+from curate import (  # 날짜창·출처목록·정규화·증거신호 재사용(격리: 단방향 의존)
     SOURCES_FILE,
+    evidence_signals,
     in_date_window,
     load_priority_map,
     normalize_title,
@@ -224,6 +225,13 @@ def body_objectivity(body: str, title: str = "", penalties=None, observe=None) -
     scope=='text' 룰은 제목+리드(전체 가중) + body(body_factor 0.5 가중)에 적용된다."""
     channels = {"title": title, "lead": "", "body": body}
     return score_article(channels, penalties, observe)
+
+
+def body_richness(body: str) -> float:
+    """본문의 증거 신호 밀도(1000자당). 본문은 길어 절대개수 대신 밀도로 정규화한다."""
+    if not body:
+        return 0.0
+    return evidence_signals(body) / max(len(body), 1) * 1000
 
 
 def penalty_memo(records: list[dict], penalties=None) -> dict:

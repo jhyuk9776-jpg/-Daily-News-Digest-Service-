@@ -111,9 +111,8 @@ def in_date_window(article: dict, today: datetime) -> bool:
     return 0 <= delta_days <= 1
 
 
-def evidence_score(article: dict) -> int:
-    """제목+요약에서 증거 신호 개수를 센다(AI 미사용)."""
-    text = f"{article.get('title', '')} {article.get('summary', '')}"
+def evidence_signals(text: str) -> int:
+    """텍스트에서 증거 신호 개수를 센다(숫자·%·기관·인용·기간, AI 미사용, 0~5)."""
     score = 0
     if NUMBER_PATTERN.search(text):
         score += 1
@@ -126,6 +125,11 @@ def evidence_score(article: dict) -> int:
     if PERIOD_PATTERN.search(text):
         score += 1
     return score
+
+
+def evidence_score(article: dict) -> int:
+    """제목+요약의 증거 신호 개수(기존 호출부 호환 래퍼)."""
+    return evidence_signals(f"{article.get('title', '')} {article.get('summary', '')}")
 
 
 def recency_key(iso: str) -> float:
