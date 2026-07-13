@@ -218,6 +218,13 @@ def objectivity_score(article: dict, penalties=None, observe=None) -> dict:
     return score_article(channels, penalties, observe)
 
 
+def body_objectivity(body: str, penalties=None, observe=None) -> dict:
+    """본문 채널만으로 객관성(감점) 채점. 제목/리드 빈 문자열이라 scope:title 룰은 미발화.
+    scope=='text' 룰은 score_article 내부에서 body에 body_factor(0.5) 가중으로 적용된다."""
+    channels = {"title": "", "lead": "", "body": body}
+    return score_article(channels, penalties, observe)
+
+
 def penalty_memo(records: list[dict], penalties=None) -> dict:
     """그날 기사 기록의 hits를 집계해 "무엇이·왜·얼마나" 감점됐는지 요약한다.
 
