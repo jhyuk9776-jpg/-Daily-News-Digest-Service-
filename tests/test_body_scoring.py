@@ -56,22 +56,35 @@ class BodyRichnessTest(unittest.TestCase):
         self.assertEqual(curate.evidence_signals(text), 5)  # 숫자·%·기관·인용·기간
 
 
-class SentenceCoverageTest(unittest.TestCase):
-    def test_all_sentences_with_evidence(self):
-        body = '통계청은 3.5% 늘었다고 "밝혔다". 지난해 대비 100억 증가했다.'
-        self.assertAlmostEqual(objectivity.sentence_coverage(body), 1.0)
+class SourceCoverageTest(unittest.TestCase):
+    def test_institution_sentence_counts(self):
+        # 독립기관(통계청) 인용 문장 → 근거 인정
+        self.assertAlmostEqual(objectivity.source_coverage("통계청은 3.5% 올랐다고 밝혔다."), 1.0)
 
-    def test_partial_coverage(self):
-        body = '통계청은 3.5% 늘었다고 밝혔다. 그렇다고 한다. 좋은 일이다.'
-        # 3문장 중 1문장만 근거 → 1/3
-        self.assertAlmostEqual(objectivity.sentence_coverage(body), 1 / 3, places=3)
+    def test_independent_attribution_counts(self):
+        # 귀속표지 있고 자기지칭어 없음 → 인정
+        self.assertAlmostEqual(objectivity.source_coverage("연구진은 결과를 발표했다."), 1.0)
+
+    def test_self_reference_excluded(self):
+        # 자기 보고서 인용은 독립 출처 아님 → 제외
+        self.assertEqual(objectivity.source_coverage("회사 보고서에 따르면 성장했다고 밝혔다."), 0.0)
+
+    def test_bare_number_not_sourced(self):
+        # 출처 없는 단순 수치는 근거로 안 침
+        self.assertEqual(objectivity.source_coverage("매출이 100억이다."), 0.0)
 
     def test_empty_zero(self):
-        self.assertEqual(objectivity.sentence_coverage(""), 0.0)
+        self.assertEqual(objectivity.source_coverage(""), 0.0)
 
-    def test_promo_label_high_coverage(self):
+    def test_promo_label_zero(self):
+        # 감점1호(JB금융): 전부 자기인용 → 근거성 0
         body = (FIX / "label_zdnet_esg.txt").read_text(encoding="utf-8")
-        self.assertGreater(objectivity.sentence_coverage(body), 0.6)  # 홍보=과밀
+        self.assertEqual(objectivity.source_coverage(body), 0.0)
+
+    def test_good_label_positive(self):
+        # 예시1호(배재고): 독립 인용 존재 → 0보다 큼
+        body = (FIX / "label_naver_088.txt").read_text(encoding="utf-8")
+        self.assertGreater(objectivity.source_coverage(body), 0.2)
 
 
 class RepresentativeScoreTest(unittest.TestCase):

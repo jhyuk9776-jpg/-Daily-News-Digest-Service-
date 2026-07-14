@@ -22,7 +22,8 @@ from pathlib import Path
 
 import yaml
 
-from curate import (  # 날짜창·출처목록·정규화·증거신호 재사용(격리: 단방향 의존)
+from curate import (  # 날짜창·출처목록·정규화·증거신호·기관목록 재사용(격리: 단방향 의존)
+    INSTITUTIONS,
     SOURCES_FILE,
     evidence_signals,
     in_date_window,
@@ -236,15 +237,26 @@ def body_richness(body: str) -> float:
 
 # 문장 끝: 종결부호 뒤에 공백/문자열끝, 또는 개행. 소수점(3.5)은 뒤에 숫자가 와서 안 쪼갬.
 _SENT_SPLIT = re.compile(r"(?<=[.!?。])\s+|\n+")
+# 귀속표지: "누가 밝혔나"(출처 명시). 자기지칭어: 자화자찬(자기 보고서 인용) 신호.
+_SOURCE_MARKERS = re.compile(
+    r"에 따르면|밝혔다|말했다|전했다|설명했다|강조했다|덧붙였다|지적했다|분석했다|기술했다|부연|집계됐|발표")
+_SELF_REF = re.compile(r"회사|그룹|자사|보고서|기업")
 
 
-def sentence_coverage(body: str) -> float:
-    """본문 문장 중 증거 신호(숫자·%·기관·인용·기간)를 담은 문장 비율(0~1).
-    길이가 아니라 문장 단위로 정규화 → 긴 기사에 불리하지 않고 상한 1.0."""
+def source_coverage(body: str) -> float:
+    """본문 문장 중 '독립 출처를 명시한' 문장 비율(0~1). 단순 수치가 아니라 '누가 밝혔나'를 잰다.
+    독립기관(통계청 등) 인용은 자기인용과 무관하게 인정, 귀속표지는 자기지칭어가 없을 때만 인정.
+    → 보도자료 자기인용은 근거로 안 침(홍보 기사 근거성 0)."""
     sents = [s for s in _SENT_SPLIT.split(body) if s.strip()]
     if not sents:
         return 0.0
-    return sum(1 for s in sents if evidence_signals(s) > 0) / len(sents)
+
+    def sourced(s: str) -> bool:
+        if any(inst in s for inst in INSTITUTIONS):
+            return True
+        return bool(_SOURCE_MARKERS.search(s)) and not _SELF_REF.search(s)
+
+    return sum(1 for s in sents if sourced(s)) / len(sents)
 
 
 # ponytail: 라벨 2개 보정 시드값. 16=medium 2건 → 객관성 0(=medium 1건이면 정확히 0.5).
@@ -254,10 +266,10 @@ OBJ_PENALTY_FULL = 16
 
 def representative_score(title: str, body: str) -> dict:
     """대표 선정용 결합 점수. 총합 = 0.6*객관성 + 0.4*근거성.
-    객관성 = 감점(제목+본문) 반전(1 - min(감점,16)/16), 근거성 = 문장 커버리지."""
+    객관성 = 감점(제목+본문) 반전(1 - min(감점,16)/16), 근거성 = 독립 출처 커버리지."""
     points = body_objectivity(body, title)["points"]
     objectivity = 1 - min(points, OBJ_PENALTY_FULL) / OBJ_PENALTY_FULL
-    coverage = sentence_coverage(body)
+    coverage = source_coverage(body)
     return {"objectivity": objectivity, "coverage": coverage,
             "total": 0.6 * objectivity + 0.4 * coverage}
 
