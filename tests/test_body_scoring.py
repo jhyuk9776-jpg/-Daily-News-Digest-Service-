@@ -74,5 +74,21 @@ class SentenceCoverageTest(unittest.TestCase):
         self.assertGreater(objectivity.sentence_coverage(body), 0.6)  # 홍보=과밀
 
 
+class RepresentativeScoreTest(unittest.TestCase):
+    def test_good_beats_promo(self):
+        good_body = (FIX / "label_naver_088.txt").read_text(encoding="utf-8")
+        promo_body = (FIX / "label_zdnet_esg.txt").read_text(encoding="utf-8")
+        g = objectivity.representative_score(GOOD_TITLE, good_body)
+        p = objectivity.representative_score(PROMO_TITLE, promo_body)
+        # 홍보(감점8)는 객관성 칼럼에서 손해 → 총합에서 객관 기사에 진다
+        self.assertGreater(g["total"], p["total"])
+        self.assertAlmostEqual(g["objectivity"], 1.0)   # 감점 0
+        self.assertLess(p["objectivity"], 1.0)          # 감점 8
+
+    def test_total_formula(self):
+        r = objectivity.representative_score("", '숫자 3개와 통계청 인용 "있다".')
+        self.assertAlmostEqual(r["total"], 0.6 * r["objectivity"] + 0.4 * r["coverage"], places=6)
+
+
 if __name__ == "__main__":
     unittest.main()

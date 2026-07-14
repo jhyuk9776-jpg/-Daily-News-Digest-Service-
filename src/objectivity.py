@@ -247,6 +247,21 @@ def sentence_coverage(body: str) -> float:
     return sum(1 for s in sents if evidence_signals(s) > 0) / len(sents)
 
 
+# ponytail: 라벨 2개 보정 시드값. 16=medium 2건 → 객관성 0(=medium 1건이면 정확히 0.5).
+# 데이터 축적 후 tier 가중치와 함께 재보정.
+OBJ_PENALTY_FULL = 16
+
+
+def representative_score(title: str, body: str) -> dict:
+    """대표 선정용 결합 점수. 총합 = 0.6*객관성 + 0.4*근거성.
+    객관성 = 감점(제목+본문) 반전(1 - min(감점,16)/16), 근거성 = 문장 커버리지."""
+    points = body_objectivity(body, title)["points"]
+    objectivity = 1 - min(points, OBJ_PENALTY_FULL) / OBJ_PENALTY_FULL
+    coverage = sentence_coverage(body)
+    return {"objectivity": objectivity, "coverage": coverage,
+            "total": 0.6 * objectivity + 0.4 * coverage}
+
+
 def penalty_memo(records: list[dict], penalties=None) -> dict:
     """그날 기사 기록의 hits를 집계해 "무엇이·왜·얼마나" 감점됐는지 요약한다.
 
