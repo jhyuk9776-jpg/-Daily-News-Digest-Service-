@@ -56,5 +56,23 @@ class BodyRichnessTest(unittest.TestCase):
         self.assertEqual(curate.evidence_signals(text), 5)  # 숫자·%·기관·인용·기간
 
 
+class SentenceCoverageTest(unittest.TestCase):
+    def test_all_sentences_with_evidence(self):
+        body = '통계청은 3.5% 늘었다고 "밝혔다". 지난해 대비 100억 증가했다.'
+        self.assertAlmostEqual(objectivity.sentence_coverage(body), 1.0)
+
+    def test_partial_coverage(self):
+        body = '통계청은 3.5% 늘었다고 밝혔다. 그렇다고 한다. 좋은 일이다.'
+        # 3문장 중 1문장만 근거 → 1/3
+        self.assertAlmostEqual(objectivity.sentence_coverage(body), 1 / 3, places=3)
+
+    def test_empty_zero(self):
+        self.assertEqual(objectivity.sentence_coverage(""), 0.0)
+
+    def test_promo_label_high_coverage(self):
+        body = (FIX / "label_zdnet_esg.txt").read_text(encoding="utf-8")
+        self.assertGreater(objectivity.sentence_coverage(body), 0.6)  # 홍보=과밀
+
+
 if __name__ == "__main__":
     unittest.main()

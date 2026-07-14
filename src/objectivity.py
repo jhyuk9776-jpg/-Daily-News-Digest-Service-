@@ -234,6 +234,19 @@ def body_richness(body: str) -> float:
     return evidence_signals(body) / max(len(body), 1) * 1000
 
 
+# 문장 끝: 종결부호 뒤에 공백/문자열끝, 또는 개행. 소수점(3.5)은 뒤에 숫자가 와서 안 쪼갬.
+_SENT_SPLIT = re.compile(r"(?<=[.!?。])\s+|\n+")
+
+
+def sentence_coverage(body: str) -> float:
+    """본문 문장 중 증거 신호(숫자·%·기관·인용·기간)를 담은 문장 비율(0~1).
+    길이가 아니라 문장 단위로 정규화 → 긴 기사에 불리하지 않고 상한 1.0."""
+    sents = [s for s in _SENT_SPLIT.split(body) if s.strip()]
+    if not sents:
+        return 0.0
+    return sum(1 for s in sents if evidence_signals(s) > 0) / len(sents)
+
+
 def penalty_memo(records: list[dict], penalties=None) -> dict:
     """그날 기사 기록의 hits를 집계해 "무엇이·왜·얼마나" 감점됐는지 요약한다.
 
