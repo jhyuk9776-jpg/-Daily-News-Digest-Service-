@@ -47,5 +47,48 @@ class StatsTest(unittest.TestCase):
         self.assertEqual(top[1][0], "환율")
 
 
+class WeightTest(unittest.TestCase):
+    def _store(self):
+        return {"weights": {}, "processed_dates": []}
+
+    def test_update_applies_rank_points(self):
+        store = self._store()
+        top3 = [("코스피", {}), ("환율", {}), ("금리", {})]
+        core_words.update_core_weights(store, top3, "2026-07-15", alpha=0.1)
+        self.assertAlmostEqual(store["weights"]["코스피"], 0.5)  # 5*0.1
+        self.assertAlmostEqual(store["weights"]["환율"], 0.3)
+        self.assertAlmostEqual(store["weights"]["금리"], 0.1)
+
+    def test_weight_of_base_one(self):
+        store = {"weights": {"코스피": 0.5}, "processed_dates": []}
+        self.assertAlmostEqual(core_words.weight_of(store, "코스피"), 1.5)  # 1 + 0.5
+        self.assertAlmostEqual(core_words.weight_of(store, "미등록"), 1.0)  # 기본 1
+
+    def test_date_idempotent(self):
+        store = self._store()
+        core_words.update_core_weights(store, [("코스피", {})], "2026-07-15")
+        core_words.update_core_weights(store, [("코스피", {})], "2026-07-15")
+        self.assertAlmostEqual(store["weights"]["코스피"], 0.5)  # 한 번만
+
+    def test_accumulates_across_dates(self):
+        store = self._store()
+        core_words.update_core_weights(store, [("코스피", {})], "2026-07-15")
+        core_words.update_core_weights(store, [("코스피", {})], "2026-07-16")
+        self.assertAlmostEqual(store["weights"]["코스피"], 1.0)  # 0.5 + 0.5
+
+
+class RecordTopicsTest(unittest.TestCase):
+    def test_writes_topics_file(self):
+        import json
+        import tempfile
+        from pathlib import Path
+        top3 = [("코스피", {"score": 2.6, "media_count": 2, "article_count": 3})]
+        with tempfile.TemporaryDirectory() as d:
+            core_words.record_topics("2026-07-15", top3, scores_dir=Path(d))
+            data = json.loads((Path(d) / "topics-2026-07-15.json").read_text(encoding="utf-8"))
+            self.assertEqual(data["topics"][0]["word"], "코스피")
+            self.assertAlmostEqual(data["topics"][0]["score"], 2.6)
+
+
 if __name__ == "__main__":
     unittest.main()

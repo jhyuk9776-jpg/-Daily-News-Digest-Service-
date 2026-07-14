@@ -11,8 +11,16 @@
 
 from __future__ import annotations
 
+import json
 import re
 from collections import Counter
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+SCORES_DIR = ROOT / "scores"
+WEIGHTS_FILE = SCORES_DIR / "core-word-weights.json"
+RANK_POINTS = [5, 3, 1]   # 오늘의 주제 1·2·3위 점수
+ALPHA = 0.1               # 감쇠 상수(큰 폭 변화 방지). weight += 점수*ALPHA
 
 _TOKEN = re.compile(r"[가-힣A-Za-z0-9]{2,}")
 # 화제어가 아닌 상투 토큰(제목 표준어구). extract._TITLE_STOPWORDS 시드 + 확장.
@@ -45,3 +53,46 @@ def core_word_stats(articles, core_words) -> dict:
 def top_topics(stats: dict, n: int = 3):
     """점수 상위 n개 (word, stat) 리스트. 동점은 단어명 오름차순으로 결정적."""
     return sorted(stats.items(), key=lambda kv: (-kv[1]["score"], kv[0]))[:n]
+
+
+def load_weights(path: Path = WEIGHTS_FILE) -> dict:
+    """코어단어 가중치 저장소. 빈 상태로 시작(수동 시드 없음, 첫날 top-3가 초기값)."""
+    path = Path(path)
+    if path.exists():
+        return json.loads(path.read_text(encoding="utf-8"))
+    return {"weights": {}, "processed_dates": []}
+
+
+def save_weights(store: dict, path: Path = WEIGHTS_FILE) -> None:
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(store, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def update_core_weights(store: dict, top3, date: str, alpha: float = ALPHA) -> dict:
+    """오늘의 주제 top3에 순위점수(5/3/1)를 alpha 감쇠로 누적(증분만 저장). 날짜 멱등.
+    weights[word]는 증분 합이고, 정렬용 실가중치는 weight_of가 1(기본)을 더해 돌려준다."""
+    if date in store.get("processed_dates", []):
+        return store
+    weights = store.setdefault("weights", {})
+    for (word, _stat), pts in zip(top3, RANK_POINTS):
+        weights[word] = weights.get(word, 0) + pts * alpha
+    store.setdefault("processed_dates", []).append(date)
+    return store
+
+
+def weight_of(store: dict, word: str) -> float:
+    """정렬 tiebreak용 코어단어 가중치 = 1(기본) + 누적 증분. 미등록 단어는 1."""
+    return 1 + store.get("weights", {}).get(word, 0)
+
+
+def record_topics(date: str, top3, scores_dir: Path = SCORES_DIR) -> None:
+    """오늘의 주제 top3를 topics-<date>.json에 기록(observe, 활용은 나중)."""
+    scores_dir = Path(scores_dir)
+    scores_dir.mkdir(parents=True, exist_ok=True)
+    payload = {"date": date, "topics": [
+        {"word": w, "score": s.get("score", 0),
+         "media_count": s.get("media_count", 0),
+         "article_count": s.get("article_count", 0)} for w, s in top3]}
+    (scores_dir / f"topics-{date}.json").write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
