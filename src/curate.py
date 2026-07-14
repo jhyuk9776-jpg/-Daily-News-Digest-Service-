@@ -26,6 +26,7 @@ from pathlib import Path
 import yaml
 
 import reporters
+from core_words import extract_core_words, load_weights, weight_of
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCES_FILE = ROOT / "sources.yaml"
@@ -152,55 +153,93 @@ def normalize_title(title: str) -> str:
     return re.sub(r"\s+", " ", t).strip().lower()
 
 
-def cluster_articles(articles: list[dict], priority_map: dict) -> list[dict]:
-    """같은 사건끼리 묶어 클러스터 리스트를 만든다.
+CORE_WORD_BONUS = 0.15   # 코어단어 1개 공유당 유사도 가산(과병합 방지 위해 소폭)
 
-    각 클러스터: 대표 기사 + 교차검증수(독립 매체 수) + 관련 링크 + 증거점수.
-    """
-    clusters: list[dict] = []
-    for art in articles:
-        norm = normalize_title(art["title"])
-        placed = False
-        for cl in clusters:
-            if SequenceMatcher(None, norm, cl["_norm"]).ratio() >= SIMILARITY_THRESHOLD:
-                cl["members"].append(art)
-                placed = True
+
+def _title_cores(title: str, core_words) -> frozenset:
+    """제목에 든 코어단어 집합."""
+    return frozenset(w for w in core_words if w in title)
+
+
+def _effective_ratio(a: tuple, b: tuple) -> float:
+    """유효 유사도 = 실 제목유사도 + 0.15*공유 코어단어수. a,b = (정규화제목, 코어단어집합)."""
+    return SequenceMatcher(None, a[0], b[0]).ratio() + CORE_WORD_BONUS * len(a[1] & b[1])
+
+
+def _greedy_clusters(keys: list, threshold: float = SIMILARITY_THRESHOLD) -> list:
+    """keys=[(norm,cores)...]를 유효유사도 threshold로 그리디 병합. 클러스터별 인덱스 리스트."""
+    clusters: list = []  # [(key, [idx,...]), ...]
+    for i, k in enumerate(keys):
+        for key, idx in clusters:
+            if _effective_ratio(k, key) >= threshold:
+                idx.append(i)
                 break
-        if not placed:
-            clusters.append({"_norm": norm, "members": [art]})
+        else:
+            clusters.append((k, [i]))
+    return [idx for _, idx in clusters]
 
+
+def _newest(arts: list[dict]) -> dict:
+    """발행 최신 기사(recency_key가 작을수록 최신)."""
+    return min(arts, key=lambda a: recency_key(a.get("published_iso", "")))
+
+
+def cluster_articles(articles: list[dict], core_words=None) -> list[dict]:
+    """2단계 클러스터링. core_words=None이면 제목에서 자동 추출.
+
+    1차(같은 매체 내부): 유사도+코어단어로 묶고 최근 1건만 유지(나머지는 개수로만).
+    2차(매체 간): 1차 생존자를 교차 클러스터링 → 교차검증수(독립 매체 수) 집계.
+    """
+    if core_words is None:
+        core_words = extract_core_words([a["title"] for a in articles])
+
+    # 1차: 매체 내부 병합 → 최근 1건 (survivors: [(대표기사, 붕괴전 개수), ...])
+    survivors: list = []
+    by_source: dict[str, list] = {}
+    for a in articles:
+        by_source.setdefault(a.get("source", ""), []).append(a)
+    for arts in by_source.values():
+        keys = [(normalize_title(a["title"]), _title_cores(a["title"], core_words)) for a in arts]
+        for idx in _greedy_clusters(keys):
+            group = [arts[i] for i in idx]
+            survivors.append((_newest(group), len(group)))
+
+    # 2차: 매체 간 병합
+    keys = [(normalize_title(s[0]["title"]), _title_cores(s[0]["title"], core_words))
+            for s in survivors]
     result = []
-    for cl in clusters:
-        members = cl["members"]
-        # 대표 기사: 우선순위 최상위(숫자 작은 값)
-        rep = min(members, key=lambda a: priority_map.get((a["category"], a["source"]), 99))
-        sources = {m["source"] for m in members}
-        related = [
-            {"source": m["source"], "link": m["link"]}
-            for m in members
-            if m["link"] != rep["link"]
-        ]
-        result.append(
-            {
-                "title": rep["title"],
-                "link": rep["link"],
-                "source": rep["source"],
-                "published": rep.get("published", ""),
-                "published_iso": rep.get("published_iso", ""),
-                "date_known": rep.get("date_known", True),
-                "summary": rep.get("summary", ""),
-                "evidence_score": max(evidence_score(m) for m in members),
-                "corroboration_count": len(sources),
-                "related_links": related,
-            }
-        )
+    for idx in _greedy_clusters(keys):
+        members = [survivors[i][0] for i in idx]
+        intra_total = sum(survivors[i][1] for i in idx)
+        rep = _newest(members)
+        sources = {m.get("source", "") for m in members}
+        result.append({
+            "title": rep["title"],
+            "link": rep["link"],
+            "source": rep["source"],
+            "published": rep.get("published", ""),
+            "published_iso": rep.get("published_iso", ""),
+            "date_known": rep.get("date_known", True),
+            "summary": rep.get("summary", ""),
+            "author": rep.get("author", ""),
+            "evidence_score": max(evidence_score(m) for m in members),
+            "corroboration_count": len(sources),
+            "article_total": intra_total,             # 붕괴 전 총 기사 수(중요도 신호)
+            "core_words": sorted(_title_cores(rep["title"], core_words)),
+            "members": members,                       # Phase 4 본문 채점용
+            "related_links": [{"source": m["source"], "link": m["link"]}
+                              for m in members if m["link"] != rep["link"]],
+        })
     return result
 
 
 def select(raw: dict, priority_map: dict, today: datetime,
-           default_limit: int = 2, per_category_limits: dict = None) -> dict:
+           default_limit: int = 2, per_category_limits: dict = None,
+           core_weights: dict = None) -> dict:
     if per_category_limits is None:
         per_category_limits = {}
+    if core_weights is None:
+        core_weights = load_weights()
     categories: dict[str, list[dict]] = {}
     stats: dict[str, dict] = {}
 
@@ -211,12 +250,14 @@ def select(raw: dict, priority_map: dict, today: datetime,
 
     for category, arts in by_cat.items():
         dated = [a for a in arts if in_date_window(a, today)]
-        clusters = cluster_articles(dated, priority_map)
+        cwords = extract_core_words([a["title"] for a in dated])
+        clusters = cluster_articles(dated, cwords)
         clusters.sort(
             key=lambda c: (
-                -c["corroboration_count"],                       # 1순위: 여러 매체가 보도할수록 위로
-                priority_map.get((category, c["source"]), 99),   # 2순위: 매체 우선순위 높을수록 위로
-                recency_key(c["published_iso"]),                 # 3순위: 발행 최신순(동점 시 임의성 제거)
+                -c["corroboration_count"],                            # 1순위: 등장 매체 수↓
+                0 if c["core_words"] else 1,                          # 2순위: 제목 코어단어 포함 우선
+                -sum(weight_of(core_weights, w) for w in c["core_words"]),  # 3순위: 코어단어 가중치 합↓
+                recency_key(c["published_iso"]),                      # 4순위: 발행 최신순
             )
         )
         limit = per_category_limits.get(category, default_limit)
