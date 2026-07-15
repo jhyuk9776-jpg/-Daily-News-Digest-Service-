@@ -237,17 +237,33 @@ def cluster_articles(articles: list[dict], core_words=None) -> list[dict]:
 LENGTH_MIN, LENGTH_MAX = 300, 1500   # 대표 후보 본문 길이 범위(벗어나면 제외·기록)
 
 
+def record_representative_strike(rep_data: dict, item: dict, body, date: str) -> bool:
+    """멤버 본문 품질(empty/sparse)을 판정해 기자 스트라이크를 기록. 기록했으면 True.
+    author 없으면 skip. 정상 본문(≥200자)은 무기록. reporters.record_strike로 날짜·링크 멱등."""
+    if not item.get("author"):
+        return False
+    reason = reporters.classify_body(body)
+    if not reason:
+        return False
+    reporters.record_strike(rep_data, item["source"], item["author"], date,
+                            item["link"], reason, 0 if body is None else len(body))
+    return True
+
+
 def pick_representative(cluster: dict, extract_fn, score_fn, ranks: dict,
                         excluded: list, min_len: int = LENGTH_MIN,
-                        max_len: int = LENGTH_MAX):
+                        max_len: int = LENGTH_MAX, on_body=None):
     """클러스터 멤버 본문을 추출→길이필터(300~1500)→score_fn 총합 최고를 대표 멤버로.
 
     유효 길이 멤버가 없으면 None(클러스터 탈락). 길이 이탈 멤버는 excluded에 기록.
-    동점은 매체 density 순위(낮을수록 우선). extract_fn/score_fn 주입으로 테스트는 네트워크 불필요.
+    동점은 매체 density 순위(낮을수록 우선). on_body(member, body)는 추출 직후 호출(기자 스트라이크 판정).
+    extract_fn/score_fn 주입으로 테스트는 네트워크 불필요.
     """
     scored = []
     for m in cluster["members"]:
         body = extract_fn(m["link"], m.get("title", "")) or ""
+        if on_body is not None:
+            on_body(m, body)
         n = len(body)
         if n < min_len or n > max_len:
             excluded.append({"source": m.get("source", ""), "link": m["link"],
@@ -296,7 +312,7 @@ def _apply_representative(cluster: dict, rep: dict) -> dict:
 def select(raw: dict, priority_map: dict, today: datetime,
            default_limit: int = 2, per_category_limits: dict = None,
            core_weights: dict = None, extract_fn=None, score_fn=None,
-           ranks: dict = None) -> dict:
+           ranks: dict = None, on_body=None) -> dict:
     """extract_fn·score_fn 주입 시 본문 채점 대표 선정 + 길이필터 + density 백필(Phase 4).
     미주입 시 기존 동작(정렬 후 상한 슬라이스, 본문 미검증)."""
     if per_category_limits is None:
@@ -338,7 +354,8 @@ def select(raw: dict, priority_map: dict, today: datetime,
             for c in ordered:
                 if len(selected) >= limit:
                     break
-                rep = pick_representative(c, extract_fn, score_fn, ranks, excluded)
+                rep = pick_representative(c, extract_fn, score_fn, ranks, excluded,
+                                          on_body=on_body)
                 if rep is not None:                                   # 유효 길이 멤버 없으면 탈락
                     selected.append(_apply_representative(c, rep))
                     if c["corroboration_count"] >= 2:                 # 교차검증만 평판 반영
@@ -406,9 +423,13 @@ def main() -> int:
     # density 순위(매체 우선순위 대체) — 백필·동점 tiebreak용.
     store = objectivity.load_store()
     ranks = objectivity.compute_ranks(store)
+    # 기자 부실 스트라이크: 대표 후보 본문 판정 시점(선별)에 기록(요약 단계에서 이동).
+    rep_data = reporters.load()
+    on_body = lambda m, body: record_representative_strike(rep_data, m, body, date)  # noqa: E731
     result = select(raw, priority_map, today, default_limit, per_category_limits,
                     core_weights=wstore, extract_fn=extract_body,
-                    score_fn=objectivity.representative_score, ranks=ranks)
+                    score_fn=objectivity.representative_score, ranks=ranks, on_body=on_body)
+    reporters.save(rep_data)
     out_path = save(result)
 
     # 선택률 평판 갱신(교차검증 클러스터 부산물, 날짜 멱등).

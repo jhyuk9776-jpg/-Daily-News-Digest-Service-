@@ -48,6 +48,17 @@ class PickRepresentativeTest(unittest.TestCase):
             cluster, lambda link, title="": "짧", lambda t, b: {"total": 1.0}, {}, [])
         self.assertIsNone(rep)
 
+    def test_on_body_called_for_each_member(self):
+        cluster = self._cluster(
+            {"source": "A", "link": "x", "title": "T", "category": "경제"},
+            {"source": "B", "link": "y", "title": "T", "category": "경제"},
+        )
+        seen = []
+        curate.pick_representative(
+            cluster, lambda link, title="": "본문 " * 200, lambda t, b: {"total": 0.5},
+            {}, [], on_body=lambda m, body: seen.append(m["link"]))
+        self.assertEqual(set(seen), {"x", "y"})   # 스트라이크 판정용 콜백이 멤버마다 호출
+
 
 class BackfillTest(unittest.TestCase):
     def test_round_robin_top3_only(self):
