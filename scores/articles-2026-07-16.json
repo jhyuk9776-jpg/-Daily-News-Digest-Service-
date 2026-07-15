@@ -1,0 +1,174 @@
+{
+  "date": "2026-07-16",
+  "scored": 877,
+  "penalized_count": 10,
+  "total_points": 81.0,
+  "density_per_1000": 92.36031927023946,
+  "attribution_total": 168,
+  "outlier_total": 10,
+  "penalty_memo": {
+    "total_deducted": 81,
+    "by_expr": {
+      "\\?$": {
+        "count": 7,
+        "deducted": 56,
+        "근거": "물음표 종결 낚시"
+      },
+      "무더기": {
+        "count": 3,
+        "deducted": 9,
+        "근거": "과장 수량 묘사"
+      },
+      "충격을 주고 있다": {
+        "count": 1,
+        "deducted": 8,
+        "근거": "감정 과장"
+      },
+      "발칵": {
+        "count": 1,
+        "deducted": 8,
+        "근거": "감정 과장"
+      }
+    },
+    "by_source": {
+      "매일신문": 38,
+      "SBS": 27,
+      "연합뉴스": 8,
+      "경향신문": 8
+    }
+  },
+  "articles": [
+    {
+      "source": "매일신문",
+      "category": "경제",
+      "title": "美 상무부 조사 받고 있는 韓 기업, 트럼프 가족기업에 30억 제공… 무슨 일?",
+      "link": "https://www.imaeil.com/page/view/2026071515085001271",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "매일신문",
+      "category": "경제",
+      "title": "간암 신약 FDA 불발 우려 완화에…HLB그룹株, 무더기 상한가",
+      "link": "https://www.imaeil.com/page/view/2026071510143788270",
+      "score": 94,
+      "points": 6.0,
+      "hits": [
+        "무더기",
+        "무더기"
+      ],
+      "attribution": 1,
+      "outlier": true
+    },
+    {
+      "source": "SBS",
+      "category": "경제",
+      "title": "'음의 복리'에 휘청…'레버리지 ETF' 보완책은?",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008659790",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "SBS",
+      "category": "경제",
+      "title": "[오그랲] 1,500조 투입되는 '메가 프로젝트'…성공으로 가는 결정적 변수는?",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008651003",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "SBS",
+      "category": "경제",
+      "title": "하이닉스 역대급 흥행에…삼전 ADR 발행 '실무 검토설'?",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008659178",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "SBS",
+      "category": "사회",
+      "title": "산불 쫓아다닌 '유령'…\"기술자 모십니다\" 무더기로",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008659799",
+      "score": 97,
+      "points": 3.0,
+      "hits": [
+        "무더기"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "연합뉴스",
+      "category": "세계",
+      "title": "[영상] 美, 재봉쇄·공습에 이란 반격…전쟁 다시 시작?",
+      "link": "https://www.yna.co.kr/view/AKR20260715101800704",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "경향신문",
+      "category": "세계",
+      "title": "반도체 규제 완화 ‘선물 보따리’ 받은 UAE···전쟁서 미국 편에 선 대가?",
+      "link": "https://www.khan.co.kr/article/202607151422011/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 1,
+      "outlier": true
+    },
+    {
+      "source": "매일신문",
+      "category": "세계",
+      "title": "70대 男 환자 링거에 사람 대변 섞어 살해한 간호사…日 '발칵'",
+      "link": "https://www.imaeil.com/page/view/2026071520584408078",
+      "score": 84,
+      "points": 16.0,
+      "hits": [
+        "충격을 주고 있다",
+        "발칵"
+      ],
+      "attribution": 3,
+      "outlier": true
+    },
+    {
+      "source": "매일신문",
+      "category": "세계",
+      "title": "美 상무부 조사 받고 있는 韓 기업, 트럼프 가족기업에 30억 제공… 무슨 일?",
+      "link": "https://www.imaeil.com/page/view/2026071515085001271",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    }
+  ]
+}
