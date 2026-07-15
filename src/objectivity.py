@@ -335,6 +335,25 @@ def update_media_scores(store: dict, dated_articles: list[dict], date: str) -> d
     return store
 
 
+def update_selection_rates(store: dict, daily_stats: list[dict], date: str) -> dict:
+    """교차검증 클러스터의 멤버 등장·대표 승리를 매체별로 누적(날짜 멱등).
+    selection_rate = win/appear (등장 0이면 null). 단독 클러스터는 호출부에서 제외."""
+    if date in store.get("selection_dates", []):
+        return store
+    media = store.setdefault("media", {})
+    for cl in daily_stats:
+        for src in cl["members"]:
+            m = media.setdefault(src, {})
+            m["appear_total"] = m.get("appear_total", 0) + 1
+        w = media.setdefault(cl["winner"], {})
+        w["win_total"] = w.get("win_total", 0) + 1
+    for m in media.values():
+        appear = m.get("appear_total", 0)
+        m["selection_rate"] = (m.get("win_total", 0) / appear) if appear else None
+    store.setdefault("selection_dates", []).append(date)
+    return store
+
+
 def load_store() -> dict:
     if MEDIA_FILE.exists():
         with MEDIA_FILE.open("r", encoding="utf-8") as f:
@@ -486,9 +505,12 @@ def main() -> int:
     print(f"=== 객관성 감점 밀도 ({date}) — 낮을수록 객관적 ===")
     for source, m in sorted(store["media"].items(),
                             key=lambda kv: kv[1].get("density_per_1000", 0), reverse=True):
+        sr = m.get("selection_rate")
+        sr_str = f"{sr:.2f}" if sr is not None else "-"
         print(f"  {m.get('density_per_1000', 0):7.1f}/1k · {source} "
-              f"(표본 {m['count']}, 인용 {m.get('attribution_total',0)}, "
-              f"이상치 {m.get('outlier_total',0)})")
+              f"(표본 {m.get('count', 0)}, 인용 {m.get('attribution_total',0)}, "
+              f"이상치 {m.get('outlier_total',0)}, "
+              f"선택률 {sr_str} [{m.get('win_total',0)}/{m.get('appear_total',0)}])")
     print(f"저장됨: {MEDIA_FILE}")
     return 0
 

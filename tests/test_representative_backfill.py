@@ -101,6 +101,10 @@ class SelectIntegrationTest(unittest.TestCase):
         self.assertNotIn("members", econ[0])              # 경량화
         excluded_links = [e["link"] for e in result["length_excluded"]]
         self.assertIn("c2", excluded_links)
+        # 교차검증 클러스터만 평판 통계 배출(단독 백필 제외)
+        self.assertEqual(len(result["selection_stats"]), 1)
+        self.assertEqual(set(result["selection_stats"][0]["members"]), {"A", "B"})
+        self.assertEqual(result["selection_stats"][0]["winner"], "A")  # c1(A) 대표
 
 
 if __name__ == "__main__":

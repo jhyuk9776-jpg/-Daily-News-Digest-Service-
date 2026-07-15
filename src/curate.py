@@ -307,6 +307,7 @@ def select(raw: dict, priority_map: dict, today: datetime,
     categories: dict[str, list[dict]] = {}
     stats: dict[str, dict] = {}
     excluded: list[dict] = []
+    selection_stats: list[dict] = []   # 교차검증 클러스터 평판 갱신용(멤버 등장·대표 승리)
 
     # 분야별로 기사 모으기
     by_cat: dict[str, list[dict]] = {}
@@ -340,6 +341,10 @@ def select(raw: dict, priority_map: dict, today: datetime,
                 rep = pick_representative(c, extract_fn, score_fn, ranks, excluded)
                 if rep is not None:                                   # 유효 길이 멤버 없으면 탈락
                     selected.append(_apply_representative(c, rep))
+                    if c["corroboration_count"] >= 2:                 # 교차검증만 평판 반영
+                        selection_stats.append({
+                            "members": [m["source"] for m in c["members"]],
+                            "winner": rep["source"]})
         categories[category] = selected
         stats[category] = {
             "candidates": len(arts),
@@ -358,6 +363,7 @@ def select(raw: dict, priority_map: dict, today: datetime,
         "stats": stats,
         "categories": categories,
         "length_excluded": excluded,
+        "selection_stats": selection_stats,
     }
 
 
@@ -398,11 +404,16 @@ def main() -> int:
     core_words.save_weights(wstore)
 
     # density 순위(매체 우선순위 대체) — 백필·동점 tiebreak용.
-    ranks = objectivity.compute_ranks(objectivity.load_store())
+    store = objectivity.load_store()
+    ranks = objectivity.compute_ranks(store)
     result = select(raw, priority_map, today, default_limit, per_category_limits,
                     core_weights=wstore, extract_fn=extract_body,
                     score_fn=objectivity.representative_score, ranks=ranks)
     out_path = save(result)
+
+    # 선택률 평판 갱신(교차검증 클러스터 부산물, 날짜 멱등).
+    objectivity.update_selection_rates(store, result["selection_stats"], date)
+    objectivity.save_store(store)
 
     if result["length_excluded"]:
         excl_path = SCORES_DIR / f"length-excluded-{date}.json"
