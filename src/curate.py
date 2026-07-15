@@ -233,15 +233,79 @@ def cluster_articles(articles: list[dict], core_words=None) -> list[dict]:
     return result
 
 
+LENGTH_MIN, LENGTH_MAX = 300, 1500   # 대표 후보 본문 길이 범위(벗어나면 제외·기록)
+
+
+def pick_representative(cluster: dict, extract_fn, score_fn, ranks: dict,
+                        excluded: list, min_len: int = LENGTH_MIN,
+                        max_len: int = LENGTH_MAX):
+    """클러스터 멤버 본문을 추출→길이필터(300~1500)→score_fn 총합 최고를 대표 멤버로.
+
+    유효 길이 멤버가 없으면 None(클러스터 탈락). 길이 이탈 멤버는 excluded에 기록.
+    동점은 매체 density 순위(낮을수록 우선). extract_fn/score_fn 주입으로 테스트는 네트워크 불필요.
+    """
+    scored = []
+    for m in cluster["members"]:
+        body = extract_fn(m["link"], m.get("title", "")) or ""
+        n = len(body)
+        if n < min_len or n > max_len:
+            excluded.append({"source": m.get("source", ""), "link": m["link"],
+                             "length": n, "category": m.get("category", "")})
+            continue
+        rank = ranks.get(m.get("source", ""), 10 ** 9)
+        scored.append(((score_fn(m.get("title", ""), body)["total"], -rank), m))
+    if not scored:
+        return None
+    return max(scored, key=lambda t: t[0])[1]
+
+
+def backfill_round_robin(solo: list[dict], ranks: dict, need: int) -> list[dict]:
+    """상한 미달 시 단독 클러스터로 채운다. 매체 density 상위 3곳만 라운드로빈(1·2·3·1·2·3…).
+
+    각 매체 내부는 최신순. 상위 3곳 소진 시 need 미달이어도 멈춘다(그 매체들만 사용).
+    """
+    top3 = sorted((s for s in ranks), key=lambda s: ranks[s])[:3]
+    by_src: dict[str, list] = {s: [] for s in top3}
+    for c in solo:
+        if c.get("source", "") in by_src:
+            by_src[c["source"]].append(c)
+    for s in top3:
+        by_src[s].sort(key=lambda c: recency_key(c.get("published_iso", "")))
+    out: list = []
+    while len(out) < need and any(by_src[s] for s in top3):
+        for s in top3:
+            if by_src[s]:
+                out.append(by_src[s].pop(0))
+                if len(out) >= need:
+                    break
+    return out
+
+
+def _apply_representative(cluster: dict, rep: dict) -> dict:
+    """클러스터의 대표를 body 채점 승자(rep)로 교체하고 members는 뺀다(선정 결과 경량화)."""
+    c = {k: v for k, v in cluster.items() if k != "members"}
+    c.update({"title": rep["title"], "link": rep["link"], "source": rep["source"],
+              "published_iso": rep.get("published_iso", c.get("published_iso", "")),
+              "summary": rep.get("summary", ""), "author": rep.get("author", "")})
+    c["related_links"] = [{"source": m["source"], "link": m["link"]}
+                          for m in cluster["members"] if m["link"] != rep["link"]]
+    return c
+
+
 def select(raw: dict, priority_map: dict, today: datetime,
            default_limit: int = 2, per_category_limits: dict = None,
-           core_weights: dict = None) -> dict:
+           core_weights: dict = None, extract_fn=None, score_fn=None,
+           ranks: dict = None) -> dict:
+    """extract_fn·score_fn 주입 시 본문 채점 대표 선정 + 길이필터 + density 백필(Phase 4).
+    미주입 시 기존 동작(정렬 후 상한 슬라이스, 본문 미검증)."""
     if per_category_limits is None:
         per_category_limits = {}
     if core_weights is None:
         core_weights = load_weights()
+    ranks = ranks or {}
     categories: dict[str, list[dict]] = {}
     stats: dict[str, dict] = {}
+    excluded: list[dict] = []
 
     # 분야별로 기사 모으기
     by_cat: dict[str, list[dict]] = {}
@@ -261,7 +325,20 @@ def select(raw: dict, priority_map: dict, today: datetime,
             )
         )
         limit = per_category_limits.get(category, default_limit)
-        selected = clusters[:limit]
+        if score_fn is None:
+            selected = clusters[:limit]                               # 본문 미검증(기존 동작)
+        else:
+            # 교차검증 우선 + 부족분 단독 density 3위 라운드로빈 백필, 대표는 본문 채점으로
+            corroborated = [c for c in clusters if c["corroboration_count"] >= 2]
+            solo = [c for c in clusters if c["corroboration_count"] < 2]
+            ordered = corroborated + backfill_round_robin(solo, ranks, limit)
+            selected = []
+            for c in ordered:
+                if len(selected) >= limit:
+                    break
+                rep = pick_representative(c, extract_fn, score_fn, ranks, excluded)
+                if rep is not None:                                   # 유효 길이 멤버 없으면 탈락
+                    selected.append(_apply_representative(c, rep))
         categories[category] = selected
         stats[category] = {
             "candidates": len(arts),
@@ -279,6 +356,7 @@ def select(raw: dict, priority_map: dict, today: datetime,
         },
         "stats": stats,
         "categories": categories,
+        "length_excluded": excluded,
     }
 
 
