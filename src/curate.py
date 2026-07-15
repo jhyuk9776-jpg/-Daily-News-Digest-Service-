@@ -32,6 +32,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SOURCES_FILE = ROOT / "sources.yaml"
 RAW_DIR = ROOT / "raw"
 SELECTED_DIR = ROOT / "selected"
+SCORES_DIR = ROOT / "scores"
 LIMITS_FILE = ROOT / "limits.yaml"
 
 KST = timezone(timedelta(hours=9))
@@ -376,13 +377,39 @@ def main() -> int:
         print(f"오류: {exc}", file=sys.stderr)
         return 1
 
+    # objectivity는 curate를 import하므로 순환 회피 위해 지역 import.
+    import core_words
+    import objectivity
+    from extract import extract_body
+
     priority_map = load_priority_map(SOURCES_FILE)
     default_limit, per_category_limits = load_limits(LIMITS_FILE)
     blacklist = reporters.blacklisted_keys(reporters.load())
     raw["articles"] = filter_blacklisted(raw["articles"], blacklist)
     today = datetime.now(KST)
-    result = select(raw, priority_map, today, default_limit, per_category_limits)
+
+    # 코어단어 주제·가중치(관찰 + 정렬 tiebreak) — 선별 전에 갱신해 그날 정렬에 반영.
+    dated_all = [a for a in raw["articles"] if in_date_window(a, today)]
+    cwords = extract_core_words([a["title"] for a in dated_all])
+    top3 = core_words.top_topics(core_words.core_word_stats(dated_all, cwords), 3)
+    core_words.record_topics(date, top3)
+    wstore = core_words.load_weights()
+    core_words.update_core_weights(wstore, top3, date)
+    core_words.save_weights(wstore)
+
+    # density 순위(매체 우선순위 대체) — 백필·동점 tiebreak용.
+    ranks = objectivity.compute_ranks(objectivity.load_store())
+    result = select(raw, priority_map, today, default_limit, per_category_limits,
+                    core_weights=wstore, extract_fn=extract_body,
+                    score_fn=objectivity.representative_score, ranks=ranks)
     out_path = save(result)
+
+    if result["length_excluded"]:
+        excl_path = SCORES_DIR / f"length-excluded-{date}.json"
+        SCORES_DIR.mkdir(parents=True, exist_ok=True)
+        with excl_path.open("w", encoding="utf-8") as f:
+            json.dump({"date": date, "excluded": result["length_excluded"]},
+                      f, ensure_ascii=False, indent=2)
 
     print(f"=== 선별 결과 ({date}, 창: {result['window']['from']}~{result['window']['to']}) ===")
     for category, items in result["categories"].items():
