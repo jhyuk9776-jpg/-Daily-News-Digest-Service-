@@ -22,6 +22,26 @@ class ExtractTest(unittest.TestCase):
         titles = ["코스피 코스피 코스피", "다른 뉴스"]
         self.assertNotIn("코스피", core_words.extract_core_words(titles))
 
+    def test_numbers_not_core(self):
+        # D2①: 숫자 파편은 사건을 특정 못 하므로 코어단어에서 배제
+        titles = ["2026 관세 발표", "2026 관세 인상", "10시 20분 개장"]
+        core = core_words.extract_core_words(titles)
+        self.assertIn("관세", core)
+        self.assertNotIn("2026", core)
+        self.assertNotIn("20", core)
+
+    def test_predicate_not_core(self):
+        # D2②: 일반 서술어는 아무 사건에나 붙으므로 배제
+        titles = ["A대학 세미나 개최", "B은행 세미나 개최", "C사 세미나 개최"]
+        self.assertNotIn("세미나", core_words.extract_core_words(titles))
+        self.assertNotIn("개최", core_words.extract_core_words(titles))
+
+    def test_tokenize_splits_without_substring(self):
+        # D2③: 토큰 단위 분리 — '하나'가 '하나은행' 안에서 잡히지 않음
+        toks = core_words.tokenize("하나은행 만보기 적금")
+        self.assertIn("하나은행", toks)
+        self.assertNotIn("하나", toks)
+
 
 class StatsTest(unittest.TestCase):
     def _articles(self):

@@ -22,10 +22,22 @@ WEIGHTS_FILE = SCORES_DIR / "core-word-weights.json"
 RANK_POINTS = [5, 3, 1]   # 오늘의 주제 1·2·3위 점수
 ALPHA = 0.1               # 감쇠 상수(큰 폭 변화 방지). weight += 점수*ALPHA
 
-_TOKEN = re.compile(r"[가-힣A-Za-z0-9]{2,}")
-# 화제어가 아닌 상투 토큰(제목 표준어구). extract._TITLE_STOPWORDS 시드 + 확장.
+# D2①: 숫자 파편(00·20·2026)은 사건을 특정 못 하므로 토큰에서 제외(한글·영문만).
+_TOKEN = re.compile(r"[가-힣A-Za-z]{2,}")
+# 화제어가 아닌 상투 토큰. 앞줄: 제목 표준어구. 뒤: D2② 일반 서술어("사건이 일어났다"류) —
+# 아무 사건에나 붙어 클러스터링 오병합 연결어가 됨. 서술어는 유한·안정이라 관찰하며 채운다.
 STOPWORDS = {"오늘", "관련", "기자", "뉴스", "속보", "단독", "종합", "확대", "위해",
-             "대한", "이번", "그대로", "때문", "공개", "출시", "진행"}
+             "대한", "이번", "그대로", "때문", "공개", "출시", "진행",
+             "개최", "세미나", "공모전", "개막", "지정", "선정", "발표", "발굴",
+             "혁신", "기술", "포럼", "협약", "도입", "추진", "운영", "참여",
+             "방문", "행사", "기념", "우승", "수상", "모집", "교육", "강화",
+             "지원", "체결", "오픈", "시상", "계약", "협력"}
+
+
+def tokenize(text: str) -> set[str]:
+    """텍스트를 코어단어 후보 토큰 집합으로 자른다(숫자·불용어 배제 규칙 공유).
+    제목 부분문자열 오탐 방지: '하나'는 '하나은행' 안에서 잡히지 않는다."""
+    return {t for t in _TOKEN.findall(text) if t not in STOPWORDS}
 
 
 def extract_core_words(titles, min_freq: int = 2) -> set[str]:
@@ -33,8 +45,7 @@ def extract_core_words(titles, min_freq: int = 2) -> set[str]:
     빈도는 제목 단위(한 제목에서 반복돼도 1회)."""
     freq: Counter[str] = Counter()
     for title in titles:
-        toks = {t for t in _TOKEN.findall(title) if t not in STOPWORDS}
-        freq.update(toks)
+        freq.update(tokenize(title))
     return {w for w, c in freq.items() if c >= min_freq}
 
 

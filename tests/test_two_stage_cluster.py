@@ -48,6 +48,16 @@ class TwoStageClusterTest(unittest.TestCase):
         # 코어단어 1개 공유 → +0.15 가산
         self.assertAlmostEqual(curate._effective_ratio(a, b), r_no + 0.15)
 
+    def test_core_word_bonus_capped(self):
+        # D3: 가산은 코어단어 1개어치(0.15)로 상한 — 여러 단어 공유해도 유사도를
+        # 압도하지 못하게(서술어 조합 오병합 방어). 제목이 다르면 병합 안 됨.
+        # 실데이터 오병합 사례: 넵튠 게임 계약 vs 강스템 제약 계약(제목 유사도 0.32)
+        a = ("넵튠 바람의흔적 글로벌 퍼블리싱 계약", frozenset({"글로벌", "계약", "넵튠"}))
+        b = ("강스템바이오텍 톱5 제약사 오가노이드 계약", frozenset({"글로벌", "계약", "제약"}))
+        r_no = SequenceMatcher(None, a[0], b[0]).ratio()
+        self.assertAlmostEqual(curate._effective_ratio(a, b), r_no + 0.15)  # 2개 공유해도 0.15 상한
+        self.assertLess(curate._effective_ratio(a, b), 0.6)  # 상한 덕에 분리
+
     def test_distinct_topics_not_merged(self):
         arts = [
             _art("금리 동결", "한국경제", "a", "2026-07-15T09:00:00+09:00"),
