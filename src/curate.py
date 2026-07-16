@@ -81,19 +81,6 @@ def load_raw(date: str) -> dict:
         return json.load(f)
 
 
-def filter_blacklisted(articles: list[dict], blacklist: set[str]) -> list[dict]:
-    """블랙리스트 (매체,기자) 기사를 후보에서 제거한다.
-
-    author 필드가 없거나 빈 기사는 키가 블랙리스트에 없으므로 통과한다(안전).
-    """
-    if not blacklist:
-        return articles
-    return [
-        a for a in articles
-        if reporters.reporter_key(a["source"], a.get("author", "")) not in blacklist
-    ]
-
-
 def in_date_window(article: dict, today: datetime) -> bool:
     """오늘·어제(KST) 기사인지 판정. 날짜 없으면 통과(date_known=False로 표시)."""
     iso = article.get("published_iso", "")
@@ -251,27 +238,56 @@ def record_representative_strike(rep_data: dict, item: dict, body, date: str) ->
     return True
 
 
-def pick_representative(cluster: dict, extract_fn, score_fn, ranks: dict,
-                        excluded: list, min_len: int = LENGTH_MIN,
-                        max_len: int = LENGTH_MAX, on_body=None):
-    """클러스터 멤버 본문을 추출→길이필터(300~1500)→score_fn 총합 최고를 대표 멤버로.
+# 대표 후보 본문 점수 관찰선. 관찰 모드: 이 밑이면 로그만 남기고 배제하지 않는다.
+# 라벨(예시1호 total≈0.8·감점1호 0.3)이 2개뿐이라 임의 하한으로 진짜 기사를 떨구는
+# 대신, 며칠 분포를 관찰한 뒤 하드 하한으로 승격한다.
+# ponytail: observe-only 시드값, 라벨 축적 후 하드 게이트로 전환.
+REP_SCORE_FLOOR = 0.35
 
-    유효 길이 멤버가 없으면 None(클러스터 탈락). 길이 이탈 멤버는 excluded에 기록.
-    동점은 매체 density 순위(낮을수록 우선). on_body(member, body)는 추출 직후 호출(기자 스트라이크 판정).
-    extract_fn/score_fn 주입으로 테스트는 네트워크 불필요.
+
+def _rep_gate_reason(m: dict, body: str, blacklist: set, title_penalty_fn,
+                     min_len: int, max_len: int):
+    """대표 후보 하드 게이트: 배제 사유 문자열 or None. 길이 → 블랙리스트 → 제목 낚시.
+    배제돼도 멤버는 클러스터에 남아 교차검증엔 기여한다(대표 자격만 잃음)."""
+    n = len(body)
+    if n < min_len or n > max_len:
+        return f"length:{n}"
+    if reporters.reporter_key(m.get("source", ""), m.get("author", "")) in blacklist:
+        return "blacklist"
+    if title_penalty_fn and title_penalty_fn(m.get("title", "")) > 0:
+        return "clickbait"
+    return None
+
+
+def pick_representative(cluster: dict, extract_fn, score_fn, ranks: dict,
+                        excluded: list, blacklist: set = None, title_penalty_fn=None,
+                        min_len: int = LENGTH_MIN, max_len: int = LENGTH_MAX, on_body=None):
+    """클러스터 멤버 본문을 추출→하드 게이트→score_fn 총합 최고를 대표 멤버로.
+
+    하드 게이트(대표 자격 박탈): 길이 300~1500 이탈 · 블랙리스트 기자 · 제목 낚시(감점>0).
+    관찰 게이트(로그만, 배제 안 함): 본문 점수 < REP_SCORE_FLOOR.
+    유효 멤버가 없으면 None(클러스터 탈락). 배제·관찰 모두 excluded에 reason과 함께 기록.
+    동점은 매체 density 순위(낮을수록 우선). on_body는 추출 직후 호출(기자 스트라이크 판정).
+    extract_fn/score_fn/title_penalty_fn 주입으로 테스트는 네트워크 불필요.
     """
+    blacklist = blacklist or set()
     scored = []
     for m in cluster["members"]:
         body = extract_fn(m["link"], m.get("title", "")) or ""
         if on_body is not None:
             on_body(m, body)
-        n = len(body)
-        if n < min_len or n > max_len:
+        reason = _rep_gate_reason(m, body, blacklist, title_penalty_fn, min_len, max_len)
+        if reason:
             excluded.append({"source": m.get("source", ""), "link": m["link"],
-                             "length": n, "category": m.get("category", "")})
+                             "reason": reason, "category": m.get("category", "")})
             continue
+        sc = score_fn(m.get("title", ""), body)
+        if sc["total"] < REP_SCORE_FLOOR:   # 관찰 모드: 로그만, 배제하지 않음
+            excluded.append({"source": m.get("source", ""), "link": m["link"],
+                             "reason": "low_score_observed", "score": round(sc["total"], 3),
+                             "category": m.get("category", "")})
         rank = ranks.get(m.get("source", ""), 10 ** 9)
-        scored.append(((score_fn(m.get("title", ""), body)["total"], -rank), m))
+        scored.append(((sc["total"], -rank), m))
     if not scored:
         return None
     return max(scored, key=lambda t: t[0])[1]
@@ -313,7 +329,8 @@ def _apply_representative(cluster: dict, rep: dict) -> dict:
 def select(raw: dict, today: datetime,
            default_limit: int = 2, per_category_limits: dict = None,
            core_weights: dict = None, extract_fn=None, score_fn=None,
-           ranks: dict = None, on_body=None) -> dict:
+           ranks: dict = None, on_body=None,
+           blacklist: set = None, title_penalty_fn=None) -> dict:
     """extract_fn·score_fn 주입 시 본문 채점 대표 선정 + 길이필터 + density 백필(Phase 4).
     미주입 시 기존 동작(정렬 후 상한 슬라이스, 본문 미검증)."""
     if per_category_limits is None:
@@ -356,6 +373,7 @@ def select(raw: dict, today: datetime,
                 if len(selected) >= limit:
                     break
                 rep = pick_representative(c, extract_fn, score_fn, ranks, excluded,
+                                          blacklist=blacklist, title_penalty_fn=title_penalty_fn,
                                           on_body=on_body)
                 if rep is not None:                                   # 유효 길이 멤버 없으면 탈락
                     selected.append(_apply_representative(c, rep))
@@ -380,7 +398,7 @@ def select(raw: dict, today: datetime,
         },
         "stats": stats,
         "categories": categories,
-        "length_excluded": excluded,
+        "gate_excluded": excluded,
         "selection_stats": selection_stats,
     }
 
@@ -408,8 +426,9 @@ def main(date: str = None, dry_run: bool = False) -> int:
     from extract import extract_body
 
     default_limit, per_category_limits = load_limits(LIMITS_FILE)
+    # 블랙리스트는 pool 선제거가 아니라 대표 게이트에서 적용(D5) — 블랙 기자 기사도
+    # 클러스터 멤버로 남아 교차검증에 기여하되, 대표로만 안 뽑힌다.
     blacklist = reporters.blacklisted_keys(reporters.load())
-    raw["articles"] = filter_blacklisted(raw["articles"], blacklist)
     today = datetime.now(KST)
 
     # 코어단어 주제·가중치(관찰 + 정렬 tiebreak) — 선별 전에 갱신해 그날 정렬에 반영.
@@ -430,7 +449,8 @@ def main(date: str = None, dry_run: bool = False) -> int:
     on_body = lambda m, body: record_representative_strike(rep_data, m, body, date)  # noqa: E731
     result = select(raw, today, default_limit, per_category_limits,
                     core_weights=wstore, extract_fn=extract_body,
-                    score_fn=objectivity.representative_score, ranks=ranks, on_body=on_body)
+                    score_fn=objectivity.representative_score, ranks=ranks, on_body=on_body,
+                    blacklist=blacklist, title_penalty_fn=objectivity.title_penalty)
     out_path = save(result)   # selected/ 는 gitignore 산출물 — dry-run에서도 기록(체이닝·검수용)
 
     if not dry_run:
@@ -438,11 +458,11 @@ def main(date: str = None, dry_run: bool = False) -> int:
         # 선택률 평판 갱신(교차검증 클러스터 부산물, 날짜 멱등).
         objectivity.update_selection_rates(store, result["selection_stats"], date)
         objectivity.save_store(store)
-        if result["length_excluded"]:
-            excl_path = SCORES_DIR / f"length-excluded-{date}.json"
+        if result["gate_excluded"]:
+            excl_path = SCORES_DIR / f"gate-excluded-{date}.json"
             SCORES_DIR.mkdir(parents=True, exist_ok=True)
             with excl_path.open("w", encoding="utf-8") as f:
-                json.dump({"date": date, "excluded": result["length_excluded"]},
+                json.dump({"date": date, "excluded": result["gate_excluded"]},
                           f, ensure_ascii=False, indent=2)
     else:
         print("  [dry-run] scores/ 상태 미기록 (media.json·가중치·평판·주제 보존)")

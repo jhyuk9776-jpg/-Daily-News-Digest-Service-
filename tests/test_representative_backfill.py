@@ -59,6 +59,31 @@ class PickRepresentativeTest(unittest.TestCase):
             {}, [], on_body=lambda m, body: seen.append(m["link"]))
         self.assertEqual(set(seen), {"x", "y"})   # 스트라이크 판정용 콜백이 멤버마다 호출
 
+    def test_clickbait_title_excluded(self):
+        # D4: 제목 낚시(감점>0)는 대표 후보에서 하드 배제. 깨끗한 제목이 대표.
+        cluster = self._cluster(
+            {"source": "A", "link": "x", "title": "이대로 괜찮을까?", "category": "경제"},
+            {"source": "B", "link": "y", "title": "한은 기준금리 인상", "category": "경제"},
+        )
+        excluded = []
+        rep = curate.pick_representative(
+            cluster, lambda link, title="": "본문 " * 100,
+            lambda t, b: {"total": 0.9}, {}, excluded,
+            title_penalty_fn=lambda t: 8.0 if t.endswith("?") else 0.0)
+        self.assertEqual(rep["link"], "y")
+        self.assertTrue(any(e["reason"] == "clickbait" for e in excluded))
+
+    def test_low_score_observed_not_excluded(self):
+        # D4 관찰 모드: 본문 하한 미달은 로그만 남기고 배제하지 않는다(대표 될 수 있음).
+        cluster = self._cluster(
+            {"source": "A", "link": "x", "title": "T", "category": "경제"})
+        excluded = []
+        rep = curate.pick_representative(
+            cluster, lambda link, title="": "본문 " * 100,
+            lambda t, b: {"total": 0.2}, {}, excluded)   # 0.2 < 0.35 관찰선
+        self.assertEqual(rep["link"], "x")               # 배제 안 됨
+        self.assertTrue(any(e["reason"] == "low_score_observed" for e in excluded))
+
 
 class BackfillTest(unittest.TestCase):
     def test_round_robin_top3_only(self):
@@ -110,7 +135,7 @@ class SelectIntegrationTest(unittest.TestCase):
         self.assertEqual(econ[0]["link"], "c1")           # c2 길이미달 → c1 대표
         self.assertEqual(econ[1]["corroboration_count"], 1)  # 백필 단독
         self.assertNotIn("members", econ[0])              # 경량화
-        excluded_links = [e["link"] for e in result["length_excluded"]]
+        excluded_links = [e["link"] for e in result["gate_excluded"]]
         self.assertIn("c2", excluded_links)
         # 교차검증 클러스터만 평판 통계 배출(단독 백필 제외)
         self.assertEqual(len(result["selection_stats"]), 1)

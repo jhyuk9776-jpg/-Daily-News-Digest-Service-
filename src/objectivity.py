@@ -264,6 +264,12 @@ def source_coverage(body: str) -> float:
 OBJ_PENALTY_FULL = 16
 
 
+def title_penalty(title: str) -> float:
+    """제목 편파·낚시 감점(scope:title 낚시 룰 + 제목에 걸린 평가·전망 룰). 대표 게이트용.
+    >0 이면 편파적 제목 = 대표로 안 뽑는다(본문은 채점 total로 별도 판정)."""
+    return body_objectivity("", title)["points"]
+
+
 def representative_score(title: str, body: str) -> dict:
     """대표 선정용 결합 점수. 총합 = 0.6*객관성 + 0.4*근거성.
     객관성 = 감점(제목+본문) 반전(1 - min(감점,16)/16), 근거성 = 독립 출처 커버리지."""
