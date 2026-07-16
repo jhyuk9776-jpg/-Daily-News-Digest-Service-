@@ -100,7 +100,7 @@ class SelectIntegrationTest(unittest.TestCase):
         good = "본문 " * 200
         bodies = {"c1": good, "c2": "짧", "s1": good, "s2": good}  # c2는 길이 미달
         result = curate.select(
-            raw, {}, today, default_limit=2,
+            raw, today, default_limit=2,
             extract_fn=lambda link, title="": bodies[link],
             score_fn=lambda title, body: {"total": 0.5},
             ranks={"A": 1, "B": 2})

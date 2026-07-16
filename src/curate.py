@@ -4,7 +4,8 @@ raw/YYYY-MM-DD.json(수집 결과)을 입력으로 받아
   1) 날짜 필터: 오늘·어제(KST) 기사만 통과
   2) 증거 점수: 숫자/%/기관명/인용/기간표현 휴리스틱(AI 미사용, 기록용 메타데이터)
   3) 중복 제거 + 교차검증: 제목 유사도로 같은 사건 묶고 독립 매체 수 집계
-  4) 분야별 상위 2건 선택: (교차검증수↓, 우선순위↑, 발행최신순)
+  4) 분야별 상한만큼 선택: (교차검증수↓, 코어단어 포함, 가중치합↓, 발행최신순)
+     대표는 본문 채점(객관성 0.6 + 근거성 0.4)으로 뽑는다. 매체 수동 우선순위는 폐지됨.
 결과를 selected/YYYY-MM-DD.json 으로 저장한다(Day 4 입력).
 
 증거 우선 전략은 기획/04-decision-log.md "1.1 증거 기반 품질 전략" 참고.
@@ -51,15 +52,11 @@ NUMBER_PATTERN = re.compile(r"\d")
 QUOTE_PATTERN = re.compile(r"[\"'“”‘’]")
 
 
-def load_priority_map(path: Path) -> dict[tuple[str, str], int]:
-    """(분야, 매체명) -> 우선순위 매핑을 만든다."""
+def load_source_names(path: Path) -> set[str]:
+    """sources.yaml에 등록된 매체명 집합."""
     with path.open("r", encoding="utf-8") as f:
         data = yaml.safe_load(f)
-    mapping: dict[tuple[str, str], int] = {}
-    for category, sources in data.items():
-        for s in sources:
-            mapping[(category, s["매체명"])] = s.get("우선순위", 99)
-    return mapping
+    return {s["매체명"] for sources in data.values() for s in sources}
 
 
 def load_limits(path: Path):
@@ -309,7 +306,7 @@ def _apply_representative(cluster: dict, rep: dict) -> dict:
     return c
 
 
-def select(raw: dict, priority_map: dict, today: datetime,
+def select(raw: dict, today: datetime,
            default_limit: int = 2, per_category_limits: dict = None,
            core_weights: dict = None, extract_fn=None, score_fn=None,
            ranks: dict = None, on_body=None) -> dict:
@@ -405,7 +402,6 @@ def main() -> int:
     import objectivity
     from extract import extract_body
 
-    priority_map = load_priority_map(SOURCES_FILE)
     default_limit, per_category_limits = load_limits(LIMITS_FILE)
     blacklist = reporters.blacklisted_keys(reporters.load())
     raw["articles"] = filter_blacklisted(raw["articles"], blacklist)
@@ -426,7 +422,7 @@ def main() -> int:
     # 기자 부실 스트라이크: 대표 후보 본문 판정 시점(선별)에 기록(요약 단계에서 이동).
     rep_data = reporters.load()
     on_body = lambda m, body: record_representative_strike(rep_data, m, body, date)  # noqa: E731
-    result = select(raw, priority_map, today, default_limit, per_category_limits,
+    result = select(raw, today, default_limit, per_category_limits,
                     core_weights=wstore, extract_fn=extract_body,
                     score_fn=objectivity.representative_score, ranks=ranks, on_body=on_body)
     reporters.save(rep_data)

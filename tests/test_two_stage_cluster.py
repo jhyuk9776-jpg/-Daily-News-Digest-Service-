@@ -70,7 +70,7 @@ class SortTest(unittest.TestCase):
         today = datetime(2026, 7, 15, 12, tzinfo=KST)
         # 둘 다 교차검증 2·코어단어 있음 → 가중치 합으로 결정. 코스피>금리
         weights = {"weights": {"코스피": 1.0, "금리": 0.0}, "processed_dates": []}
-        result = curate.select(raw, {}, today, default_limit=10, core_weights=weights)
+        result = curate.select(raw, today, default_limit=10, core_weights=weights)
         econ = result["categories"]["경제"]
         self.assertEqual(len(econ), 2)
         self.assertIn("코스피", econ[0]["core_words"])   # 가중치 높은 코스피 먼저

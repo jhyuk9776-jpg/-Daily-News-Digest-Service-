@@ -27,7 +27,7 @@ from curate import (  # 날짜창·출처목록·정규화·증거신호·기관
     SOURCES_FILE,
     evidence_signals,
     in_date_window,
-    load_priority_map,
+    load_source_names,
     normalize_title,
 )
 
@@ -425,7 +425,7 @@ def active_sources() -> set[str]:
     제외된(더 이상 sources.yaml에 없는) 매체는 채점 대상에서 뺀다. 과거 raw를
     백필해도 옛 출처가 다시 점수에 잡히지 않게 하는 방어선.
     """
-    return {source for (_cat, source) in load_priority_map(SOURCES_FILE)}
+    return load_source_names(SOURCES_FILE)
 
 
 def dated_articles_for(date: str) -> list[dict]:
