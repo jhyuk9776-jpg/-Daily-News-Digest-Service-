@@ -393,8 +393,9 @@ def save(result: dict) -> Path:
     return out_path
 
 
-def main() -> int:
-    date = sys.argv[1] if len(sys.argv) > 1 else datetime.now(KST).strftime("%Y-%m-%d")
+def main(date: str = None, dry_run: bool = False) -> int:
+    if date is None:
+        date = datetime.now(KST).strftime("%Y-%m-%d")
     try:
         raw = load_raw(date)
     except FileNotFoundError as exc:
@@ -415,10 +416,11 @@ def main() -> int:
     dated_all = [a for a in raw["articles"] if in_date_window(a, today)]
     cwords = extract_core_words([a["title"] for a in dated_all])
     top3 = core_words.top_topics(core_words.core_word_stats(dated_all, cwords), 3)
-    core_words.record_topics(date, top3)
     wstore = core_words.load_weights()
-    core_words.update_core_weights(wstore, top3, date)
-    core_words.save_weights(wstore)
+    core_words.update_core_weights(wstore, top3, date)   # 메모리 갱신(이번 정렬 반영)
+    if not dry_run:                                       # 상태 영속화는 dry-run에서 생략
+        core_words.record_topics(date, top3)
+        core_words.save_weights(wstore)
 
     # density 순위(매체 우선순위 대체) — 백필·동점 tiebreak용.
     store = objectivity.load_store()
@@ -429,19 +431,21 @@ def main() -> int:
     result = select(raw, today, default_limit, per_category_limits,
                     core_weights=wstore, extract_fn=extract_body,
                     score_fn=objectivity.representative_score, ranks=ranks, on_body=on_body)
-    reporters.save(rep_data)
-    out_path = save(result)
+    out_path = save(result)   # selected/ 는 gitignore 산출물 — dry-run에서도 기록(체이닝·검수용)
 
-    # 선택률 평판 갱신(교차검증 클러스터 부산물, 날짜 멱등).
-    objectivity.update_selection_rates(store, result["selection_stats"], date)
-    objectivity.save_store(store)
-
-    if result["length_excluded"]:
-        excl_path = SCORES_DIR / f"length-excluded-{date}.json"
-        SCORES_DIR.mkdir(parents=True, exist_ok=True)
-        with excl_path.open("w", encoding="utf-8") as f:
-            json.dump({"date": date, "excluded": result["length_excluded"]},
-                      f, ensure_ascii=False, indent=2)
+    if not dry_run:
+        reporters.save(rep_data)
+        # 선택률 평판 갱신(교차검증 클러스터 부산물, 날짜 멱등).
+        objectivity.update_selection_rates(store, result["selection_stats"], date)
+        objectivity.save_store(store)
+        if result["length_excluded"]:
+            excl_path = SCORES_DIR / f"length-excluded-{date}.json"
+            SCORES_DIR.mkdir(parents=True, exist_ok=True)
+            with excl_path.open("w", encoding="utf-8") as f:
+                json.dump({"date": date, "excluded": result["length_excluded"]},
+                          f, ensure_ascii=False, indent=2)
+    else:
+        print("  [dry-run] scores/ 상태 미기록 (media.json·가중치·평판·주제 보존)")
 
     print(f"=== 선별 결과 ({date}, 창: {result['window']['from']}~{result['window']['to']}) ===")
     for category, items in result["categories"].items():
@@ -459,4 +463,7 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    _args = sys.argv[1:]
+    _dry = "--dry-run" in _args
+    _rest = [a for a in _args if a != "--dry-run"]
+    raise SystemExit(main(_rest[0] if _rest else None, dry_run=_dry))
