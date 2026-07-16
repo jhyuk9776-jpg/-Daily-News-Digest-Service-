@@ -42,6 +42,19 @@ class PickRepresentativeTest(unittest.TestCase):
             lambda title, b: {"total": 0.5}, ranks, [])
         self.assertEqual(rep["source"], "B")        # 동점 → density 우선
 
+    def test_tie_broken_by_recency_when_ranks_equal(self):
+        # D7: 선택률 동률(첫날 등 ranks 무의미)이면 최신순으로 대표 선정.
+        cluster = self._cluster(
+            {"source": "A", "link": "old", "title": "T", "category": "경제",
+             "published_iso": "2026-07-15T09:00:00+09:00"},
+            {"source": "B", "link": "new", "title": "T", "category": "경제",
+             "published_iso": "2026-07-16T09:00:00+09:00"},
+        )
+        rep = curate.pick_representative(
+            cluster, lambda link, title="": "본문 " * 100,
+            lambda t, b: {"total": 0.5}, {}, [])   # ranks 비어있음 → 동률
+        self.assertEqual(rep["link"], "new")        # 최신 기사
+
     def test_none_when_all_out_of_range(self):
         cluster = self._cluster({"source": "A", "link": "x", "title": "T", "category": "경제"})
         rep = curate.pick_representative(

@@ -374,6 +374,19 @@ def save_store(store: dict) -> None:
         json.dump(store, f, ensure_ascii=False, indent=2)
 
 
+def compute_selection_ranks(store: dict) -> dict:
+    """파이프라인 서열: 선택률(win/appear) 내림차순으로 1위부터(높을수록 우선).
+    대표 동점 tie-break·백필 로테이션용. density(compute_ranks)를 대체 — density는
+    브리핑 관찰축(rank-history)으로만 유지한다(D6). 선택률 미축적(첫날) 매체는 0으로
+    취급 → 매체명 안정정렬(사실상 무순), 최신순 tie-break이 이어받는다(D7)."""
+    media = store.get("media", {})
+    ranked = sorted(
+        (s for s, m in media.items() if m.get("article_count", m.get("count", 0)) > 0),
+        key=lambda s: (-(media[s].get("selection_rate") or 0.0), s),
+    )
+    return {s: i + 1 for i, s in enumerate(ranked)}
+
+
 def compute_ranks(store: dict) -> dict:
     """표본이 있는 매체를 감점 밀도 오름차순(낮을수록 객관적)으로 1위부터 매긴다.
     동밀도는 매체명으로 안정 정렬해 결정적이다."""

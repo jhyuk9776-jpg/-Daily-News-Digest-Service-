@@ -287,7 +287,8 @@ def pick_representative(cluster: dict, extract_fn, score_fn, ranks: dict,
                              "reason": "low_score_observed", "score": round(sc["total"], 3),
                              "category": m.get("category", "")})
         rank = ranks.get(m.get("source", ""), 10 ** 9)
-        scored.append(((sc["total"], -rank), m))
+        # tie-break: 점수 → 선택률 순위(rank↓) → 최신순(D7). recency_key는 -ts라 부호 반전.
+        scored.append(((sc["total"], -rank, -recency_key(m.get("published_iso", ""))), m))
     if not scored:
         return None
     return max(scored, key=lambda t: t[0])[1]
@@ -441,9 +442,9 @@ def main(date: str = None, dry_run: bool = False) -> int:
         core_words.record_topics(date, top3)
         core_words.save_weights(wstore)
 
-    # density 순위(매체 우선순위 대체) — 백필·동점 tiebreak용.
+    # 파이프라인 서열 = 선택률 순위(D6). density는 브리핑 관찰축으로만 유지(여기 미사용).
     store = objectivity.load_store()
-    ranks = objectivity.compute_ranks(store)
+    ranks = objectivity.compute_selection_ranks(store)
     # 기자 부실 스트라이크: 대표 후보 본문 판정 시점(선별)에 기록(요약 단계에서 이동).
     rep_data = reporters.load()
     on_body = lambda m, body: record_representative_strike(rep_data, m, body, date)  # noqa: E731
