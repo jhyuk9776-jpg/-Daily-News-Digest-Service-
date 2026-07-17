@@ -98,62 +98,52 @@ class PickRepresentativeTest(unittest.TestCase):
         self.assertTrue(any(e["reason"] == "low_score_observed" for e in excluded))
 
 
-class BackfillTest(unittest.TestCase):
-    def test_round_robin_top3_only(self):
-        iso = "2026-07-15T09:00:00+09:00"
-        solo = [
-            {"source": "A", "link": "a1", "published_iso": iso},
-            {"source": "A", "link": "a2", "published_iso": iso},
-            {"source": "B", "link": "b1", "published_iso": iso},
-            {"source": "C", "link": "c1", "published_iso": iso},
-            {"source": "D", "link": "d1", "published_iso": iso},  # 4위 → 제외
-        ]
-        ranks = {"A": 1, "B": 2, "C": 3, "D": 4}
-        out = curate.backfill_round_robin(solo, ranks, need=4)
-        self.assertEqual([c["link"] for c in out], ["a1", "b1", "c1", "a2"])
-        self.assertNotIn("d1", [c["link"] for c in out])
-
-    def test_stops_at_need(self):
-        iso = "2026-07-15T09:00:00+09:00"
-        solo = [{"source": "A", "link": f"a{i}", "published_iso": iso} for i in range(5)]
-        ranks = {"A": 1}
-        out = curate.backfill_round_robin(solo, ranks, need=2)
-        self.assertEqual(len(out), 2)
-
-
 class SelectIntegrationTest(unittest.TestCase):
     def _art(self, title, source, link):
         return {"title": title, "source": source, "link": link, "category": "경제",
                 "summary": "", "published_iso": "2026-07-15T09:00:00+09:00"}
 
-    def test_body_scoring_length_filter_and_backfill(self):
+    def test_min3_media_only_no_backfill(self):
         arts = [
-            self._art("금리 동결 결정", "A", "c1"),   # 교차검증 쌍
+            self._art("금리 동결 결정", "A", "c1"),   # 3매체 → 통과
             self._art("금리 동결 결정", "B", "c2"),
-            self._art("환율 급등 마감", "A", "s1"),   # 단독
-            self._art("유가 하락 지속", "B", "s2"),   # 단독
+            self._art("금리 동결 결정", "C", "c3"),
+            self._art("환율 급등 마감", "A", "s1"),   # 2매체 → 미달, 드롭
+            self._art("환율 급등 마감", "B", "s2"),
+            self._art("유가 하락 지속", "D", "solo"),  # 단독 → 드롭(백필 없음)
         ]
         raw = {"date": "2026-07-15", "articles": arts}
         today = datetime(2026, 7, 15, 12, tzinfo=KST)
-        good = "본문 " * 200
-        bodies = {"c1": good, "c2": "짧", "s1": good, "s2": good}  # c2는 길이 미달
         result = curate.select(
-            raw, today, default_limit=2,
-            extract_fn=lambda link, title="": bodies[link],
-            score_fn=lambda title, body: {"total": 0.5},
-            ranks={"A": 1, "B": 2})
+            raw, today, default_limit=10,
+            extract_fn=lambda link, title="": "본문 " * 200,
+            score_fn=lambda title, body: {"total": 0.9}, ranks={})
         econ = result["categories"]["경제"]
-        self.assertEqual(len(econ), 2)                    # 교차검증 1 + 백필 1
-        self.assertEqual(econ[0]["corroboration_count"], 2)
-        self.assertEqual(econ[0]["link"], "c1")           # c2 길이미달 → c1 대표
-        self.assertEqual(econ[1]["corroboration_count"], 1)  # 백필 단독
+        self.assertEqual(len(econ), 1)                    # 3매체 사건 1건만(백필 없음)
+        self.assertEqual(econ[0]["corroboration_count"], 3)
         self.assertNotIn("members", econ[0])              # 경량화
-        excluded_links = [e["link"] for e in result["gate_excluded"]]
-        self.assertIn("c2", excluded_links)
-        # 교차검증 클러스터만 평판 통계 배출(단독 백필 제외)
+        # 통과 클러스터만 평판 통계 배출
         self.assertEqual(len(result["selection_stats"]), 1)
-        self.assertEqual(set(result["selection_stats"][0]["members"]), {"A", "B"})
-        self.assertEqual(result["selection_stats"][0]["winner"], "A")  # c1(A) 대표
+        self.assertEqual(set(result["selection_stats"][0]["members"]), {"A", "B", "C"})
+
+    def test_length_filter_drops_member(self):
+        arts = [
+            self._art("금리 동결 결정", "A", "c1"),
+            self._art("금리 동결 결정", "B", "c2"),
+            self._art("금리 동결 결정", "C", "c3"),
+        ]
+        raw = {"date": "2026-07-15", "articles": arts}
+        today = datetime(2026, 7, 15, 12, tzinfo=KST)
+        bodies = {"c1": "짧", "c2": "본문 " * 200, "c3": "본문 " * 200}  # c1 길이 미달
+        result = curate.select(
+            raw, today, default_limit=10,
+            extract_fn=lambda link, title="": bodies[link],
+            score_fn=lambda title, body: {"total": 0.9}, ranks={})
+        econ = result["categories"]["경제"]
+        self.assertEqual(len(econ), 1)
+        self.assertNotEqual(econ[0]["link"], "c1")        # c1 길이미달 → 대표 아님
+        excluded_links = [e["link"] for e in result["gate_excluded"]]
+        self.assertIn("c1", excluded_links)
 
 
 if __name__ == "__main__":

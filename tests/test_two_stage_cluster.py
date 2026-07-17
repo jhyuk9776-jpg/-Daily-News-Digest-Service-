@@ -68,22 +68,22 @@ class TwoStageClusterTest(unittest.TestCase):
 
 
 class SortTest(unittest.TestCase):
-    def test_higher_core_weight_ranks_first(self):
+    def test_more_media_ranks_first(self):
+        # D8: 정렬은 매체 다양성(교차검증수) 내림차순. 코어단어 가중치는 정렬서 뺐다.
         iso = "2026-07-15T09:00:00+09:00"
         arts = [
-            _art("코스피 강세 지속", "한국경제", "a", iso),
+            _art("코스피 강세 지속", "한국경제", "a", iso),   # 2매체
             _art("코스피 강세 지속", "연합뉴스", "a2", iso),
-            _art("금리 인하 전망", "SBS", "b", iso),
+            _art("금리 인하 전망", "SBS", "b", iso),          # 3매체
             _art("금리 인하 전망", "매일경제", "b2", iso),
+            _art("금리 인하 전망", "경향신문", "b3", iso),
         ]
         raw = {"date": "2026-07-15", "articles": arts}
         today = datetime(2026, 7, 15, 12, tzinfo=KST)
-        # 둘 다 교차검증 2·코어단어 있음 → 가중치 합으로 결정. 코스피>금리
-        weights = {"weights": {"코스피": 1.0, "금리": 0.0}, "processed_dates": []}
-        result = curate.select(raw, today, default_limit=10, core_weights=weights)
+        result = curate.select(raw, today, default_limit=10)   # 레거시(본문 미검증) 정렬 확인
         econ = result["categories"]["경제"]
-        self.assertEqual(len(econ), 2)
-        self.assertIn("코스피", econ[0]["core_words"])   # 가중치 높은 코스피 먼저
+        self.assertEqual(econ[0]["corroboration_count"], 3)    # 매체 많은 금리가 먼저
+        self.assertIn("금리", econ[0]["core_words"])
 
 
 if __name__ == "__main__":

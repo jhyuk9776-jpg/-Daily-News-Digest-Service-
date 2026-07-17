@@ -27,7 +27,7 @@ from pathlib import Path
 import yaml
 
 import reporters
-from core_words import extract_core_words, load_weights, tokenize, weight_of
+from core_words import extract_core_words, tokenize
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCES_FILE = ROOT / "sources.yaml"
@@ -38,6 +38,7 @@ LIMITS_FILE = ROOT / "limits.yaml"
 
 KST = timezone(timedelta(hours=9))
 SIMILARITY_THRESHOLD = 0.6  # 제목 유사도 중복 판정 기준
+MIN_MEDIA = 3  # 대표 후보 최소 보도 매체 수(교차검증). 미만은 드롭 — 억지로 안 채움(로드맵 §8)
 
 # 증거 신호: 공신력 있는 기관명 (있으면 가점)
 INSTITUTIONS = [
@@ -294,28 +295,6 @@ def pick_representative(cluster: dict, extract_fn, score_fn, ranks: dict,
     return max(scored, key=lambda t: t[0])[1]
 
 
-def backfill_round_robin(solo: list[dict], ranks: dict, need: int) -> list[dict]:
-    """상한 미달 시 단독 클러스터로 채운다. 매체 density 상위 3곳만 라운드로빈(1·2·3·1·2·3…).
-
-    각 매체 내부는 최신순. 상위 3곳 소진 시 need 미달이어도 멈춘다(그 매체들만 사용).
-    """
-    top3 = sorted((s for s in ranks), key=lambda s: ranks[s])[:3]
-    by_src: dict[str, list] = {s: [] for s in top3}
-    for c in solo:
-        if c.get("source", "") in by_src:
-            by_src[c["source"]].append(c)
-    for s in top3:
-        by_src[s].sort(key=lambda c: recency_key(c.get("published_iso", "")))
-    out: list = []
-    while len(out) < need and any(by_src[s] for s in top3):
-        for s in top3:
-            if by_src[s]:
-                out.append(by_src[s].pop(0))
-                if len(out) >= need:
-                    break
-    return out
-
-
 def _apply_representative(cluster: dict, rep: dict) -> dict:
     """클러스터의 대표를 body 채점 승자(rep)로 교체하고 members는 뺀다(선정 결과 경량화)."""
     c = {k: v for k, v in cluster.items() if k != "members"}
@@ -329,15 +308,13 @@ def _apply_representative(cluster: dict, rep: dict) -> dict:
 
 def select(raw: dict, today: datetime,
            default_limit: int = 2, per_category_limits: dict = None,
-           core_weights: dict = None, extract_fn=None, score_fn=None,
+           extract_fn=None, score_fn=None,
            ranks: dict = None, on_body=None,
            blacklist: set = None, title_penalty_fn=None) -> dict:
-    """extract_fn·score_fn 주입 시 본문 채점 대표 선정 + 길이필터 + density 백필(Phase 4).
-    미주입 시 기존 동작(정렬 후 상한 슬라이스, 본문 미검증)."""
+    """score_fn 주입 시: 최소 3매체 통과분만 매체 다양성순으로, 대표는 본문 채점+게이트로.
+    미주입 시 기존 동작(정렬 후 상한 슬라이스, 본문 미검증 — 카운트 테스트용)."""
     if per_category_limits is None:
         per_category_limits = {}
-    if core_weights is None:
-        core_weights = load_weights()
     ranks = ranks or {}
     categories: dict[str, list[dict]] = {}
     stats: dict[str, dict] = {}
@@ -353,35 +330,29 @@ def select(raw: dict, today: datetime,
         dated = [a for a in arts if in_date_window(a, today)]
         cwords = extract_core_words([a["title"] for a in dated])
         clusters = cluster_articles(dated, cwords)
+        # 정렬(D8): 매체 다양성↓ → 최신순. 코어단어 가중치는 관찰용이라 정렬서 뺐다.
         clusters.sort(
-            key=lambda c: (
-                -c["corroboration_count"],                            # 1순위: 등장 매체 수↓
-                0 if c["core_words"] else 1,                          # 2순위: 제목 코어단어 포함 우선
-                -sum(weight_of(core_weights, w) for w in c["core_words"]),  # 3순위: 코어단어 가중치 합↓
-                recency_key(c["published_iso"]),                      # 4순위: 발행 최신순
-            )
+            key=lambda c: (-c["corroboration_count"], recency_key(c["published_iso"]))
         )
         limit = per_category_limits.get(category, default_limit)
         if score_fn is None:
             selected = clusters[:limit]                               # 본문 미검증(기존 동작)
         else:
-            # 교차검증 우선 + 부족분 단독 density 3위 라운드로빈 백필, 대표는 본문 채점으로
-            corroborated = [c for c in clusters if c["corroboration_count"] >= 2]
-            solo = [c for c in clusters if c["corroboration_count"] < 2]
-            ordered = corroborated + backfill_round_robin(solo, ranks, limit)
+            # 최소 3매체 통과분만, 상위 limit개. 부족하면 그대로 둔다(백필 없음).
             selected = []
-            for c in ordered:
+            for c in clusters:
                 if len(selected) >= limit:
                     break
+                if c["corroboration_count"] < MIN_MEDIA:
+                    continue
                 rep = pick_representative(c, extract_fn, score_fn, ranks, excluded,
                                           blacklist=blacklist, title_penalty_fn=title_penalty_fn,
                                           on_body=on_body)
-                if rep is not None:                                   # 유효 길이 멤버 없으면 탈락
+                if rep is not None:                                   # 유효 대표 없으면 클러스터 탈락
                     selected.append(_apply_representative(c, rep))
-                    if c["corroboration_count"] >= 2:                 # 교차검증만 평판 반영
-                        selection_stats.append({
-                            "members": [m["source"] for m in c["members"]],
-                            "winner": rep["source"]})
+                    selection_stats.append({
+                        "members": [m["source"] for m in c["members"]],
+                        "winner": rep["source"]})
         categories[category] = selected
         stats[category] = {
             "candidates": len(arts),
@@ -449,7 +420,7 @@ def main(date: str = None, dry_run: bool = False) -> int:
     rep_data = reporters.load()
     on_body = lambda m, body: record_representative_strike(rep_data, m, body, date)  # noqa: E731
     result = select(raw, today, default_limit, per_category_limits,
-                    core_weights=wstore, extract_fn=extract_body,
+                    extract_fn=extract_body,
                     score_fn=objectivity.representative_score, ranks=ranks, on_body=on_body,
                     blacklist=blacklist, title_penalty_fn=objectivity.title_penalty)
     out_path = save(result)   # selected/ 는 gitignore 산출물 — dry-run에서도 기록(체이닝·검수용)
