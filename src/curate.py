@@ -430,14 +430,16 @@ def main(date: str = None, dry_run: bool = False) -> int:
         # 선택률 평판 갱신(교차검증 클러스터 부산물, 날짜 멱등).
         objectivity.update_selection_rates(store, result["selection_stats"], date)
         objectivity.save_store(store)
-        if result["gate_excluded"]:
-            excl_path = SCORES_DIR / f"gate-excluded-{date}.json"
-            SCORES_DIR.mkdir(parents=True, exist_ok=True)
-            with excl_path.open("w", encoding="utf-8") as f:
-                json.dump({"date": date, "excluded": result["gate_excluded"]},
-                          f, ensure_ascii=False, indent=2)
     else:
         print("  [dry-run] scores/ 상태 미기록 (media.json·가중치·평판·주제 보존)")
+
+    # gate-excluded는 날짜 멱등한 관찰 스냅샷(누적 상태 아님) — 하한값 관찰용이라 dry-run에서도 기록.
+    if result["gate_excluded"]:
+        excl_path = SCORES_DIR / f"gate-excluded-{date}.json"
+        SCORES_DIR.mkdir(parents=True, exist_ok=True)
+        with excl_path.open("w", encoding="utf-8") as f:
+            json.dump({"date": date, "excluded": result["gate_excluded"]},
+                      f, ensure_ascii=False, indent=2)
 
     print(f"=== 선별 결과 ({date}, 창: {result['window']['from']}~{result['window']['to']}) ===")
     for category, items in result["categories"].items():
