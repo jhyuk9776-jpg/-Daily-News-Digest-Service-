@@ -99,11 +99,11 @@ class RenderEmailTest(unittest.TestCase):
         self.assertNotIn("](", self.text)  # 마크다운 링크 문법 없음
         self.assertIn("요약실패 1건", self.text)
 
-    def test_html_has_links_and_kakao_block(self):
+    def test_html_has_links_no_kakao_block(self):
         self.assertIn('<a href="https://www.etnews.com/2">전자신문</a>', self.html)
         self.assertIn("<h2>경제</h2>", self.html)
-        self.assertIn("카카오톡용", self.html)
-        self.assertIn("<pre>", self.html)
+        self.assertNotIn("카카오톡용", self.html)
+        self.assertNotIn("<pre>", self.html)
 
 
 class SendEmailTest(unittest.TestCase):
