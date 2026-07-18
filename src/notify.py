@@ -1,4 +1,4 @@
-"""오늘의 뉴스 요약(News/<date>.md)을 HTML+카톡용 plain 메일로 발송한다.
+"""오늘의 뉴스 요약(News/<date>.md)을 HTML 메일로 발송한다(plain은 MIME 폴백).
 
 파싱→렌더→발송을 함수로 분리해 unittest로 검증 가능하게 한다(네트워크/SMTP 미사용).
 아침 cron이 다이제스트를 커밋한 뒤 워크플로에서 `python3 src/notify.py`로 실행된다.
@@ -83,7 +83,7 @@ def _render_text(digest: dict) -> str:
     return "\n".join(lines).strip() + "\n"
 
 
-def _render_html(digest: dict, text_body: str) -> str:
+def _render_html(digest: dict) -> str:
     esc = html_lib.escape
     parts = [f"<h1>{esc(digest['title_line'])}</h1>"]
     for cat in digest["categories"]:
@@ -104,16 +104,13 @@ def _render_html(digest: dict, text_body: str) -> str:
         parts.append(
             f'<p style="color:#888;font-size:12px">{esc(digest["meta"])}</p>'
         )
-    parts.append("<hr>")
-    parts.append("<h3>─ 카카오톡용 (아래 블록만 복사) ─</h3>")
-    parts.append(f"<pre>{esc(text_body)}</pre>")
     return "<html><body>" + "\n".join(parts) + "</body></html>"
 
 
 def render_email(digest: dict) -> tuple[str, str, str]:
     subject = f"📰 {digest['title_line']} ({digest['total_count']}건)"
     text_body = _render_text(digest)
-    html_body = _render_html(digest, text_body)
+    html_body = _render_html(digest)
     return subject, html_body, text_body
 
 
