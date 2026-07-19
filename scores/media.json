@@ -10,76 +10,76 @@
       "last_seen": "2026-07-09"
     },
     "매일경제": {
-      "penalty_points_total": 106.0,
-      "article_count": 530,
-      "attribution_total": 33,
-      "outlier_total": 12,
-      "density_per_1000": 200.0,
-      "count": 530,
-      "last_seen": "2026-07-19"
+      "penalty_points_total": 109.0,
+      "article_count": 561,
+      "attribution_total": 34,
+      "outlier_total": 13,
+      "density_per_1000": 194.29590017825313,
+      "count": 561,
+      "last_seen": "2026-07-20"
     },
     "매일신문": {
-      "penalty_points_total": 471.0,
-      "article_count": 2036,
-      "attribution_total": 957,
-      "outlier_total": 59,
-      "density_per_1000": 231.335952848723,
-      "count": 2036,
-      "last_seen": "2026-07-19"
+      "penalty_points_total": 490.0,
+      "article_count": 2110,
+      "attribution_total": 995,
+      "outlier_total": 62,
+      "density_per_1000": 232.22748815165878,
+      "count": 2110,
+      "last_seen": "2026-07-20"
     },
     "SBS": {
-      "penalty_points_total": 347.0,
-      "article_count": 1160,
-      "attribution_total": 41,
-      "outlier_total": 43,
-      "density_per_1000": 299.1379310344828,
-      "count": 1160,
-      "last_seen": "2026-07-19"
+      "penalty_points_total": 369.0,
+      "article_count": 1237,
+      "attribution_total": 43,
+      "outlier_total": 47,
+      "density_per_1000": 298.30234438156833,
+      "count": 1237,
+      "last_seen": "2026-07-20"
     },
     "경향신문": {
-      "penalty_points_total": 198.0,
-      "article_count": 1061,
-      "attribution_total": 254,
-      "outlier_total": 25,
-      "density_per_1000": 186.61639962299716,
-      "count": 1061,
-      "last_seen": "2026-07-19"
+      "penalty_points_total": 215.0,
+      "article_count": 1119,
+      "attribution_total": 269,
+      "outlier_total": 28,
+      "density_per_1000": 192.13583556747096,
+      "count": 1119,
+      "last_seen": "2026-07-20"
     },
     "전자신문": {
       "penalty_points_total": 127.0,
-      "article_count": 390,
-      "attribution_total": 238,
+      "article_count": 420,
+      "attribution_total": 251,
       "outlier_total": 18,
-      "density_per_1000": 325.64102564102564,
-      "count": 390,
-      "last_seen": "2026-07-19"
+      "density_per_1000": 302.38095238095235,
+      "count": 420,
+      "last_seen": "2026-07-20"
     },
     "ZDNet Korea": {
-      "penalty_points_total": 113.0,
-      "article_count": 439,
-      "attribution_total": 628,
-      "outlier_total": 15,
-      "density_per_1000": 257.40318906605927,
-      "count": 439,
-      "last_seen": "2026-07-19"
+      "penalty_points_total": 121.0,
+      "article_count": 469,
+      "attribution_total": 683,
+      "outlier_total": 16,
+      "density_per_1000": 257.9957356076759,
+      "count": 469,
+      "last_seen": "2026-07-20"
     },
     "연합뉴스": {
-      "penalty_points_total": 189.0,
-      "article_count": 3954,
-      "attribution_total": 308,
-      "outlier_total": 27,
-      "density_per_1000": 47.79969650986343,
-      "count": 3954,
-      "last_seen": "2026-07-19"
+      "penalty_points_total": 208.0,
+      "article_count": 4239,
+      "attribution_total": 329,
+      "outlier_total": 30,
+      "density_per_1000": 49.068176456711484,
+      "count": 4239,
+      "last_seen": "2026-07-20"
     },
     "한겨레": {
-      "penalty_points_total": 120.0,
-      "article_count": 1079,
+      "penalty_points_total": 136.0,
+      "article_count": 1169,
       "attribution_total": 0,
-      "outlier_total": 15,
-      "density_per_1000": 111.21408711770157,
-      "count": 1079,
-      "last_seen": "2026-07-19"
+      "outlier_total": 17,
+      "density_per_1000": 116.33875106929,
+      "count": 1169,
+      "last_seen": "2026-07-20"
     }
   },
   "processed_dates": [
@@ -97,7 +97,8 @@
     "2026-07-16",
     "2026-07-17",
     "2026-07-18",
-    "2026-07-19"
+    "2026-07-19",
+    "2026-07-20"
   ],
-  "updated_at": "2026-07-19T06:52:00+09:00"
+  "updated_at": "2026-07-20T06:53:42+09:00"
 }

@@ -1,0 +1,277 @@
+{
+  "date": "2026-07-20",
+  "scored": 675,
+  "penalized_count": 17,
+  "total_points": 104.0,
+  "density_per_1000": 154.07407407407408,
+  "attribution_total": 145,
+  "outlier_total": 17,
+  "penalty_memo": {
+    "total_deducted": 104,
+    "by_expr": {
+      "총력전": {
+        "count": 4,
+        "deducted": 12,
+        "근거": "드라마화"
+      },
+      "무더기": {
+        "count": 4,
+        "deducted": 12,
+        "근거": "과장 수량 묘사"
+      },
+      "\\?$": {
+        "count": 3,
+        "deducted": 24,
+        "근거": "물음표 종결 낚시"
+      },
+      "(할까|일까|되나|아니냐|셈인가|것인가)\\??$": {
+        "count": 3,
+        "deducted": 24,
+        "근거": "추측형 종결"
+      },
+      "(성과|잠재력|경쟁력|저력).{0,3}입증": {
+        "count": 2,
+        "deducted": 16,
+        "근거": "홍보성 단정"
+      },
+      "발칵": {
+        "count": 2,
+        "deducted": 16,
+        "근거": "감정 과장"
+      }
+    },
+    "by_source": {
+      "연합뉴스": 19,
+      "매일경제": 3,
+      "SBS": 22,
+      "경향신문": 17,
+      "매일신문": 19,
+      "한겨레": 16,
+      "ZDNet Korea": 8
+    }
+  },
+  "articles": [
+    {
+      "source": "연합뉴스",
+      "category": "경제",
+      "title": "검찰도 '부동산 투기와 전쟁'…전국에 전담검사 지정·엄정 대응",
+      "link": "https://www.yna.co.kr/view/AKR20260718002900004",
+      "score": 97,
+      "points": 3.0,
+      "hits": [
+        "총력전"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "매일경제",
+      "category": "경제",
+      "title": "“고객이 성장의 근간”…우리금융, 하반기 고객기반 확대 총력전",
+      "link": "https://www.mk.co.kr/news/economy/12101582",
+      "score": 97,
+      "points": 3.0,
+      "hits": [
+        "총력전"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "SBS",
+      "category": "경제",
+      "title": "검찰도 '부동산 투기와 전쟁'…전국에 전담검사 지정해 엄정 대응",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008663677",
+      "score": 97,
+      "points": 3.0,
+      "hits": [
+        "총력전"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "경향신문",
+      "category": "사회",
+      "title": "경찰, 토착비리 단속 4개월간 535명 송치",
+      "link": "https://www.khan.co.kr/article/202607192118015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "score": 94,
+      "points": 6.0,
+      "hits": [
+        "무더기",
+        "무더기"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "경향신문",
+      "category": "사회",
+      "title": "수사 종료 4일 앞두고 ‘몰아치기’···종합특검, ‘기한 연장은 따놓은 당상’ 기대감?",
+      "link": "https://www.khan.co.kr/article/202607191817001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "경향신문",
+      "category": "사회",
+      "title": "경찰, 토착비리 사범 535명 송치···신설 TF ‘수의계약 비리’ 집중 수사",
+      "link": "https://www.khan.co.kr/article/202607191057001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "score": 97,
+      "points": 3.0,
+      "hits": [
+        "무더기"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "매일신문",
+      "category": "사회",
+      "title": "1조원 투입에도 \"지역의료 격차 여전\"…3조6천억 승부수 통할까",
+      "link": "https://www.imaeil.com/page/view/2026071716255743738",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "(할까|일까|되나|아니냐|셈인가|것인가)\\??$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "매일신문",
+      "category": "사회",
+      "title": "'독립기념관법 개정' 대비…대구시, 분원 유치 총력전 위한 밑그림 그린다",
+      "link": "https://www.imaeil.com/page/view/2026071311020256499",
+      "score": 97,
+      "points": 3.0,
+      "hits": [
+        "총력전"
+      ],
+      "attribution": 1,
+      "outlier": true
+    },
+    {
+      "source": "매일신문",
+      "category": "사회",
+      "title": "국내 유일 '영주대한복싱전용훈련장'서 해외 국가대표팀 전지훈련 성료",
+      "link": "https://www.imaeil.com/page/view/2026071910011698408",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "(성과|잠재력|경쟁력|저력).{0,3}입증"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "SBS",
+      "category": "사회",
+      "title": "\"공부한 사람만 바보\"…AI '딸깍'으로 무더기 만점",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008664151",
+      "score": 97,
+      "points": 3.0,
+      "hits": [
+        "무더기"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "SBS",
+      "category": "사회",
+      "title": "\"새치기도 단체전?\"…인천공항 발칵 뒤집은 '중국 보따리상'",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008663841",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "발칵"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "연합뉴스",
+      "category": "세계",
+      "title": "[쇼츠] 드론으로 373억원 방공망 '쾅!'…우크라, 러 '낚시'에 속았다?",
+      "link": "https://www.yna.co.kr/view/AKR20260719039700704",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "연합뉴스",
+      "category": "세계",
+      "title": "[특파원시선] 중간선거 앞 트럼프의 목표는 '유권자ID법'뿐일까",
+      "link": "https://www.yna.co.kr/view/AKR20260718004400071",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "(할까|일까|되나|아니냐|셈인가|것인가)\\??$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "SBS",
+      "category": "세계",
+      "title": "[자막뉴스] \"우리 AI 훔쳐서\" 발칵 뒤집힌 미국…\"주권은요?\" 머뭇대는 한국 콕 집었다",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008664076",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "발칵"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "한겨레",
+      "category": "세계",
+      "title": "메시 “국민 어렵다”에 아르헨 대통령 격노설…월드컵 결승 앞 무슨 일?",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1268874.html",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "한겨레",
+      "category": "세계",
+      "title": "일본 ‘국기 손괴죄’ 국회 통과…헌법 보장 ‘표현의 자유’ 침해되나",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1268767.html",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "(할까|일까|되나|아니냐|셈인가|것인가)\\??$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "ZDNet Korea",
+      "category": "IT/테크",
+      "title": "삼성전자, 사우디 모스크 100여 곳에 HVAC 솔루션 공급",
+      "link": "https://zdnet.co.kr/view/?no=20260719084749",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "(성과|잠재력|경쟁력|저력).{0,3}입증"
+      ],
+      "attribution": 1,
+      "outlier": true
+    }
+  ]
+}
