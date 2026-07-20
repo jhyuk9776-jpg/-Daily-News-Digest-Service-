@@ -1,0 +1,16 @@
+{
+  "date": "2026-07-21",
+  "generated_at": "2026-07-21T07:02:22+09:00",
+  "total_articles": 16,
+  "failed_count": 1,
+  "failures": [
+    {
+      "category": "경제",
+      "source": "연합뉴스",
+      "title": "이해진, 캐나다· 미국 방문…투자 유치에 젠슨황 회동할듯(종합)",
+      "link": "https://www.yna.co.kr/view/AKR20260720077551017",
+      "reason": "api_failed",
+      "detail": "모든 후보 불릿 0"
+    }
+  ]
+}
