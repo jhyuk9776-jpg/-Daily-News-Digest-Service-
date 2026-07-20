@@ -223,7 +223,9 @@ def cluster_articles(articles: list[dict], core_words=None) -> list[dict]:
     return result
 
 
-LENGTH_MIN, LENGTH_MAX = 300, 1500   # 대표 후보 본문 길이 범위(벗어나면 제외·기록)
+LENGTH_MIN, LENGTH_MAX = 300, 2000   # 대표 후보 본문 길이 범위(벗어나면 제외·기록)
+# 상한 2000 = extract.MAX_CHARS(요약 입력 clamp)와 정렬. 도달 기사 p75≈1478·p90≈1933이라
+# 1500은 정상 기사 상위 24%를 떨궜다(2026-07-18 분포 확인). 2000↑(8%)만 목록성으로 배제.
 
 
 def record_representative_strike(rep_data: dict, item: dict, body, date: str) -> bool:
@@ -266,8 +268,10 @@ def pick_representative(cluster: dict, extract_fn, score_fn, ranks: dict,
     """클러스터 멤버 본문을 추출→하드 게이트→score_fn 총합 최고를 대표 멤버로.
 
     하드 게이트(대표 자격 박탈): 길이 300~1500 이탈 · 블랙리스트 기자 · 제목 낚시(감점>0).
-    관찰 게이트(로그만, 배제 안 함): 본문 점수 < REP_SCORE_FLOOR.
-    유효 멤버가 없으면 None(클러스터 탈락). 배제·관찰 모두 excluded에 reason과 함께 기록.
+    관찰 게이트(로그만, 배제 안 함): 게이트 통과 대표 후보 전원의 본문 점수를 기록
+    (reason=score_observed, 하한 미달은 low_score_observed) — 하드 하한값을 정하려면
+    미달만이 아니라 점수 분포 전체가 필요하기 때문.
+    유효 멤버가 없으면 None(클러스터 탈락). 배제·관찰 모두 excluded에 reason·title과 함께 기록.
     동점은 매체 density 순위(낮을수록 우선). on_body는 추출 직후 호출(기자 스트라이크 판정).
     extract_fn/score_fn/title_penalty_fn 주입으로 테스트는 네트워크 불필요.
     """
@@ -280,13 +284,16 @@ def pick_representative(cluster: dict, extract_fn, score_fn, ranks: dict,
         reason = _rep_gate_reason(m, body, blacklist, title_penalty_fn, min_len, max_len)
         if reason:
             excluded.append({"source": m.get("source", ""), "link": m["link"],
-                             "reason": reason, "category": m.get("category", "")})
+                             "reason": reason, "title": m.get("title", ""),
+                             "category": m.get("category", "")})
             continue
         sc = score_fn(m.get("title", ""), body)
-        if sc["total"] < REP_SCORE_FLOOR:   # 관찰 모드: 로그만, 배제하지 않음
-            excluded.append({"source": m.get("source", ""), "link": m["link"],
-                             "reason": "low_score_observed", "score": round(sc["total"], 3),
-                             "category": m.get("category", "")})
+        # 관찰 모드: 통과 후보 전원의 점수를 기록(분포 확인용). 배제는 안 함.
+        excluded.append({"source": m.get("source", ""), "link": m["link"],
+                         "reason": "low_score_observed" if sc["total"] < REP_SCORE_FLOOR
+                                   else "score_observed",
+                         "score": round(sc["total"], 3), "title": m.get("title", ""),
+                         "category": m.get("category", "")})
         rank = ranks.get(m.get("source", ""), 10 ** 9)
         # tie-break: 점수 → 선택률 순위(rank↓) → 최신순(D7). recency_key는 -ts라 부호 반전.
         scored.append(((sc["total"], -rank, -recency_key(m.get("published_iso", ""))), m))

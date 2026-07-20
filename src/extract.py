@@ -38,11 +38,15 @@ def _title_keywords(title: str) -> list[str]:
     return [t for t in toks if t not in _TITLE_STOPWORDS]
 
 
-def looks_like_body(text: str, title: str = "") -> bool:
-    """추출 텍스트가 진짜 기사 본문인지 검증한다(추천위젯·제목불일치 기각)."""
+def looks_like_body(text: str, title: str = "", strict: bool = True) -> bool:
+    """추출 텍스트가 진짜 기사 본문인지 검증한다(추천위젯·제목불일치 기각).
+
+    strict=False(도메인 선택자로 정확히 잡은 컨테이너)면 '날짜 3개↑=목록페이지'
+    휴리스틱을 끈다. 선택자가 이미 본문을 특정하므로, 날짜가 많은 정상 기사
+    (부동산 준공연도·연표 등)를 목록으로 오인해 떨구는 것을 막는다."""
     if len(text) < MIN_BODY:
         return False
-    if len(_DATE_RE.findall(text)) >= 3:
+    if strict and len(_DATE_RE.findall(text)) >= 3:
         return False
     keywords = _title_keywords(title)
     if keywords and not any(k in text for k in keywords):
@@ -56,6 +60,18 @@ SITE_SELECTORS: dict[str, list[str]] = {
     "hankyung.com": ["#articletxt", ".article-body"],
     "yna.co.kr": [".story-news.article", "#articleWrap"],
     "hani.co.kr": [".article-text"],
+    "mk.co.kr": [".news_cnt_detail_wrap"],
+    "imaeil.com": [".article_view"],
+    "news.sbs.co.kr": [".text_area", ".main_text"],
+    "newsis.com": [".viewer"],
+    "view.asiae.co.kr": ["#txt_area"],
+    "khan.co.kr": [".art_body", "#articleBody"],
+    "inews24.com": ["#articleBody"],
+    "it.chosun.com": ["#article-view-content-div", ".article-view-content"],
+    "digitaltoday.co.kr": [".article-body"],
+    "byline.network": [".entry-content"],
+    "etnews.com": ["#articleBody", ".article_body"],
+    "zdnet.co.kr": ["#articleBody", ".view_cont"],
     # 선택자 없는 도메인은 휴리스틱 폴백 + 가드가 안전망.
 }
 
@@ -86,7 +102,8 @@ def _parse_body(html: str, url: str, title: str = "") -> str | None:
         text = " ".join(p.get_text(" ", strip=True) for p in paragraphs)
 
     text = " ".join(text.split())[:MAX_CHARS]  # 공백 정리
-    if not looks_like_body(text, title):
+    # 도메인 선택자로 잡은 컨테이너는 본문을 특정하므로 날짜가드 완화(strict=False).
+    if not looks_like_body(text, title, strict=container is None):
         return None
     return text
 

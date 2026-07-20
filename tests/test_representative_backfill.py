@@ -27,8 +27,10 @@ class PickRepresentativeTest(unittest.TestCase):
             cluster, lambda link, title="": bodies[link],
             lambda title, body: {"total": 0.9}, {}, excluded)
         self.assertEqual(rep["link"], "y")
-        self.assertEqual(len(excluded), 1)          # x 길이 이탈 기록
-        self.assertEqual(excluded[0]["link"], "x")
+        # x는 길이 이탈로 기록, y는 통과 후보 점수 관찰로 기록(분포 수집)
+        by_link = {e["link"]: e for e in excluded}
+        self.assertTrue(by_link["x"]["reason"].startswith("length"))
+        self.assertEqual(by_link["y"]["reason"], "score_observed")
 
     def test_tie_broken_by_density_rank(self):
         cluster = self._cluster(
