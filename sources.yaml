@@ -72,12 +72,14 @@ IT/테크:
   # IT 전문지
   - 매체명: 아이뉴스24
     url: https://www.inews24.com/rss/news_it.xml
+  # 전체기사(allArticle) 피드는 공시 봇·제약실적 등 비테크 스팸을 IT/테크 칸에 쏟아
+  # 넣어 AI/테크 섹션 피드로 교체(2026-07-21). 분야=피드버킷이라 섹션이 곧 필터.
   - 매체명: IT조선
-    url: https://it.chosun.com/rss/allArticle.xml
+    url: https://it.chosun.com/rss/S1N11.xml       # 컴퓨팅·AI
   - 매체명: 디지털투데이
-    url: https://www.digitaltoday.co.kr/rss/allArticle.xml
+    url: https://www.digitaltoday.co.kr/rss/S1N10.xml  # AI·엔터프라이즈
   - 매체명: 바이라인네트워크
-    url: https://byline.network/feed/
+    url: https://byline.network/category/ai/feed/
   - 매체명: 전자신문
     url: https://rss.etnews.com/Section901.xml
   - 매체명: ZDNet Korea

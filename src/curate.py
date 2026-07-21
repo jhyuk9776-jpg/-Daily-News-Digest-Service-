@@ -39,6 +39,10 @@ LIMITS_FILE = ROOT / "limits.yaml"
 KST = timezone(timedelta(hours=9))
 SIMILARITY_THRESHOLD = 0.6  # 제목 유사도 중복 판정 기준
 MIN_MEDIA = 3  # 대표 후보 최소 보도 매체 수(교차검증). 미만은 드롭 — 억지로 안 채움(로드맵 §8)
+# 분야별 오버라이드: IT/테크는 테크 매체가 같은 사건을 3곳 독립보도하는 일이 드물어(단독·전문
+# 기사 많음) 3매체 문턱에선 구조적으로 0~1건. 소스를 AI섹션 피드로 정제해 노이즈를 이미 잡았으니
+# 문턱만 2로 완화(2026-07-21). 나머지 분야는 3 유지.
+MIN_MEDIA_BY_CAT = {"IT/테크": 2}
 
 # 증거 신호: 공신력 있는 기관명 (있으면 가점)
 INSTITUTIONS = [
@@ -345,12 +349,13 @@ def select(raw: dict, today: datetime,
         if score_fn is None:
             selected = clusters[:limit]                               # 본문 미검증(기존 동작)
         else:
-            # 최소 3매체 통과분만, 상위 limit개. 부족하면 그대로 둔다(백필 없음).
+            # 최소 매체 통과분만, 상위 limit개. 부족하면 그대로 둔다(백필 없음).
+            min_media = MIN_MEDIA_BY_CAT.get(category, MIN_MEDIA)
             selected = []
             for c in clusters:
                 if len(selected) >= limit:
                     break
-                if c["corroboration_count"] < MIN_MEDIA:
+                if c["corroboration_count"] < min_media:
                     continue
                 rep = pick_representative(c, extract_fn, score_fn, ranks, excluded,
                                           blacklist=blacklist, title_penalty_fn=title_penalty_fn,
