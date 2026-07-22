@@ -1,0 +1,543 @@
+{
+  "date": "2026-07-23",
+  "scored": 1712,
+  "penalized_count": 36,
+  "total_points": 280.0,
+  "attribution_total": 883,
+  "outlier_total": 36,
+  "penalty_memo": {
+    "total_deducted": 280,
+    "by_expr": {
+      "\\?$": {
+        "count": 17,
+        "deducted": 136,
+        "근거": "물음표 종결 낚시"
+      },
+      "무더기": {
+        "count": 8,
+        "deducted": 24,
+        "근거": "과장 수량 묘사"
+      },
+      "논란이 커지고 있다": {
+        "count": 1,
+        "deducted": 8,
+        "근거": "평가성 상투구"
+      },
+      "충격을 주고 있다": {
+        "count": 1,
+        "deducted": 8,
+        "근거": "감정 과장"
+      },
+      "발칵": {
+        "count": 3,
+        "deducted": 24,
+        "근거": "감정 과장"
+      },
+      "초강수": {
+        "count": 2,
+        "deducted": 16,
+        "근거": "드라마화"
+      },
+      "(할까|일까|되나|아니냐|셈인가|것인가)\\??$": {
+        "count": 4,
+        "deducted": 32,
+        "근거": "추측형 종결"
+      },
+      "후폭풍": {
+        "count": 1,
+        "deducted": 8,
+        "근거": "과장 프레이밍"
+      },
+      "(성과|잠재력|경쟁력|저력).{0,3}입증": {
+        "count": 3,
+        "deducted": 24,
+        "근거": "홍보성 단정"
+      }
+    },
+    "by_source": {
+      "매일신문": 25,
+      "한국경제": 27,
+      "매일경제": 30,
+      "경향신문": 27,
+      "SBS": 24,
+      "뉴시스": 51,
+      "한겨레": 48,
+      "전자신문": 16,
+      "ZDNet Korea": 32
+    }
+  },
+  "articles": [
+    {
+      "source": "매일신문",
+      "category": "경제",
+      "title": "연이은 급락후 반등, 변동성은 여전…코스피 '바닥'은?",
+      "link": "https://www.imaeil.com/page/view/2026072116141568040",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "한국경제",
+      "category": "사회",
+      "title": "해외직구 젤리·음료 22개서 '마약 성분' 무더기 검출",
+      "link": "https://www.hankyung.com/article/2026072297297",
+      "score": 97,
+      "points": 3.0,
+      "hits": [
+        "무더기"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "매일경제",
+      "category": "사회",
+      "title": "“한국에서 이런 일이”…주택서 ‘대마’ 재배한 힙합 가수·작곡가 등 12명 기소",
+      "link": "https://www.mk.co.kr/news/society/12104854",
+      "score": 97,
+      "points": 3.0,
+      "hits": [
+        "무더기"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "매일경제",
+      "category": "사회",
+      "title": "주거지서 대마 직접재배 힙합 가수 등 12명 기소",
+      "link": "https://www.mk.co.kr/news/society/12104690",
+      "score": 97,
+      "points": 3.0,
+      "hits": [
+        "무더기"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "매일신문",
+      "category": "사회",
+      "title": "도심 주거지서 대마 재배한 힙합 가수·작곡가 등 12명, 무더기 기소",
+      "link": "https://www.imaeil.com/page/view/2026072220261602445",
+      "score": 94,
+      "points": 6.0,
+      "hits": [
+        "무더기",
+        "무더기"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "매일신문",
+      "category": "사회",
+      "title": "거리서 발견된 3천만원 수표, 주인 누구?…최초 발행인은 \"수표 발행한 적도 없다\"",
+      "link": "https://www.imaeil.com/page/view/2026072217583709882",
+      "score": 97,
+      "points": 3.0,
+      "hits": [
+        "무더기"
+      ],
+      "attribution": 1,
+      "outlier": true
+    },
+    {
+      "source": "매일신문",
+      "category": "사회",
+      "title": "앞산 낙석 사망사고에도…대구시, 군위 붕괴위험급경사지 정비 중단 논란",
+      "link": "https://www.imaeil.com/page/view/2026071220583953925",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "논란이 커지고 있다"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "경향신문",
+      "category": "사회",
+      "title": "‘경연 프로 출신’ 힙합 가수부터 작곡가까지···집·공장에서 대마 재배한 12명 기소",
+      "link": "https://www.khan.co.kr/article/202607221544011/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "score": 97,
+      "points": 3.0,
+      "hits": [
+        "무더기"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "SBS",
+      "category": "사회",
+      "title": "[단독] 사건 2주 전 '병합수사 활성화' 회의까지 했는데…왜?",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008670248",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "SBS",
+      "category": "사회",
+      "title": "'여론조사 대납' 오세훈 1심 벌금 1천만 원…최종 판결 언제쯤?",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008670003",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "뉴시스",
+      "category": "사회",
+      "title": "\"공과금 석달 체납\"…의정부 일가족 4명 사망, 생활고 때문?",
+      "link": "https://www.newsis.com/view/NISX20260722_0003719098",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 2,
+      "outlier": true
+    },
+    {
+      "source": "뉴시스",
+      "category": "사회",
+      "title": "\"유골함이 왜 쓰레기통 옆에…\" 장례지도사도 충격, 무슨 일?",
+      "link": "https://www.newsis.com/view/NISX20260722_0003719412",
+      "score": 84,
+      "points": 16.0,
+      "hits": [
+        "\\?$",
+        "충격을 주고 있다"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "뉴시스",
+      "category": "사회",
+      "title": "피서지서 분실한 아이패드 되찾은 기적…자전거만 훔쳐가는 나라?",
+      "link": "https://www.newsis.com/view/NISX20260722_0003719375",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 1,
+      "outlier": true
+    },
+    {
+      "source": "뉴시스",
+      "category": "사회",
+      "title": "오세훈 1심 당선무효형에 즉각 \"항소할 것\"…2심·3심 언제쯤?",
+      "link": "https://www.newsis.com/view/NISX20260722_0003719295",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 2,
+      "outlier": true
+    },
+    {
+      "source": "뉴시스",
+      "category": "사회",
+      "title": "\"관상용인 줄 알았다\"…골목길 화단에 양귀비 600주 재배한 주민 검거",
+      "link": "https://www.newsis.com/view/NISX20260722_0003719146",
+      "score": 97,
+      "points": 3.0,
+      "hits": [
+        "무더기"
+      ],
+      "attribution": 3,
+      "outlier": true
+    },
+    {
+      "source": "뉴시스",
+      "category": "사회",
+      "title": "오세훈 '여론조사비 대납' 유죄 판단한 조형우 부장판사는?",
+      "link": "https://www.newsis.com/view/NISX20260722_0003719107",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 1,
+      "outlier": true
+    },
+    {
+      "source": "한국경제",
+      "category": "세계",
+      "title": "젠데이아 '금귀걸이', 이란 고대 유물이었다…고고학계 '발칵'",
+      "link": "https://www.hankyung.com/article/2026072204207",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "발칵"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "한국경제",
+      "category": "세계",
+      "title": "\"아저씨 맨다리 불쾌해\"…반바지 출근에 '발칵' 뒤집혔다",
+      "link": "https://www.hankyung.com/article/2026072203037",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "발칵"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "한겨레",
+      "category": "세계",
+      "title": "미사일 부족 모르고 이란전 재개했나…미 국방부가 백악관에 숨겼다?",
+      "link": "https://www.hani.co.kr/arti/international/arabafrica/1269493.html",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "매일경제",
+      "category": "세계",
+      "title": "40도→30도 ‘뚝’…유럽 살인폭염 물러난다는데, 무슨 일?",
+      "link": "https://www.mk.co.kr/news/world/12104790",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 1,
+      "outlier": true
+    },
+    {
+      "source": "매일경제",
+      "category": "세계",
+      "title": "“AI 요약 ‘먹튀’에 못참겠다”…구글에 초강수 두는 언론사들",
+      "link": "https://www.mk.co.kr/news/world/12104390",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "초강수"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "매일경제",
+      "category": "세계",
+      "title": "“12명 숨지고 13명 실종”…가스 폭발로 공사장 터널 붕괴, 인도 ‘발칵’",
+      "link": "https://www.mk.co.kr/news/world/12104316",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "발칵"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "경향신문",
+      "category": "세계",
+      "title": "이 난리 통에 이스라엘은 왜 조용할까?",
+      "link": "https://www.khan.co.kr/article/202607230600061/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "score": 84,
+      "points": 16.0,
+      "hits": [
+        "\\?$",
+        "(할까|일까|되나|아니냐|셈인가|것인가)\\??$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "경향신문",
+      "category": "세계",
+      "title": "젤렌스키, 시르스키 총사령관도 경질···‘페도로프 해임’ 후폭풍은 여전",
+      "link": "https://www.khan.co.kr/article/202607221700001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "후폭풍"
+      ],
+      "attribution": 1,
+      "outlier": true
+    },
+    {
+      "source": "SBS",
+      "category": "세계",
+      "title": "\"대미 1호 투자, 이르면 8월 말\"…새 관세 어떻게?",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008670354",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "한국경제",
+      "category": "IT/테크",
+      "title": "\"중학생 이하 킥보드 타지 마\"…청소년 이용 차단 '초강수'",
+      "link": "https://www.hankyung.com/article/202607228403i",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "초강수"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "한겨레",
+      "category": "IT/테크",
+      "title": "아이 같던 인류 40kg→60kg, 200만년 전 훌쩍 커져…왜?",
+      "link": "https://www.hani.co.kr/arti/science/science_general/1269351.html",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "한겨레",
+      "category": "IT/테크",
+      "title": "노폐물 청소하고 배출된 뇌척수액, 뇌막은 어떻게 빠져나갔나?",
+      "link": "https://www.hani.co.kr/arti/science/science_general/1269331.html",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "한겨레",
+      "category": "IT/테크",
+      "title": "바다 건넌 병뚜껑엔 300여종의 생태계…플라스틱 ‘외래종 방주’ 되나",
+      "link": "https://www.hani.co.kr/arti/science/science_general/1268744.html",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "(할까|일까|되나|아니냐|셈인가|것인가)\\??$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "한겨레",
+      "category": "IT/테크",
+      "title": "다윈도 몰랐던 ‘똥’의 물리학…배설물은 왜 나선형으로 쌓일까",
+      "link": "https://www.hani.co.kr/arti/science/science_general/1268487.html",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "(할까|일까|되나|아니냐|셈인가|것인가)\\??$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "한겨레",
+      "category": "IT/테크",
+      "title": "‘모아나’가 태평양을 건너 동쪽으로 항해한 까닭은?",
+      "link": "https://www.hani.co.kr/arti/science/science_general/1268025.html",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "전자신문",
+      "category": "IT/테크",
+      "title": "40도 펄펄 끓더니, 갑자기 12도 '뚝' 급랭…유럽에 무슨 일이?",
+      "link": "https://www.etnews.com/20260722000353",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 1,
+      "outlier": true
+    },
+    {
+      "source": "전자신문",
+      "category": "IT/테크",
+      "title": "애플 '아이폰 임대' 출시…9월 가격 인상 앞두고 승부수?",
+      "link": "https://www.etnews.com/20260722000318",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "\\?$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "ZDNet Korea",
+      "category": "IT/테크",
+      "title": "[카드뉴스] 집으로 번 돈, 그냥 번 돈일까",
+      "link": "https://zdnet.co.kr/view/?no=20260722125121",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "(할까|일까|되나|아니냐|셈인가|것인가)\\??$"
+      ],
+      "attribution": 0,
+      "outlier": true
+    },
+    {
+      "source": "ZDNet Korea",
+      "category": "IT/테크",
+      "title": "네이버웹툰·문피아, '지상최대 웹소설 공모전' 흥행…1만 편 몰렸다",
+      "link": "https://zdnet.co.kr/view/?no=20260722192727",
+      "score": 92,
+      "points": 8.0,
+      "hits": [
+        "(성과|잠재력|경쟁력|저력).{0,3}입증"
+      ],
+      "attribution": 2,
+      "outlier": true
+    },
+    {
+      "source": "ZDNet Korea",
+      "category": "IT/테크",
+      "title": "이그니스 엑쎄라피, 레드닷 디자인 어워드 본상…홈 뷰티 디자인 경쟁력 인정",
+      "link": "https://zdnet.co.kr/view/?no=20260722175544",
+      "score": 84,
+      "points": 16.0,
+      "hits": [
+        "(성과|잠재력|경쟁력|저력).{0,3}입증",
+        "(성과|잠재력|경쟁력|저력).{0,3}입증"
+      ],
+      "attribution": 1,
+      "outlier": true
+    }
+  ]
+}

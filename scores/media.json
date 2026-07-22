@@ -1,8 +1,75 @@
 {
-  "media": {},
+  "media": {
+    "연합뉴스": {
+      "appear_total": 24,
+      "win_total": 8,
+      "selection_rate": 0.3333333333333333
+    },
+    "매일신문": {
+      "appear_total": 6,
+      "win_total": 2,
+      "selection_rate": 0.3333333333333333
+    },
+    "SBS": {
+      "appear_total": 18,
+      "win_total": 1,
+      "selection_rate": 0.05555555555555555
+    },
+    "한국경제": {
+      "appear_total": 12,
+      "win_total": 4,
+      "selection_rate": 0.3333333333333333
+    },
+    "아시아경제": {
+      "appear_total": 10,
+      "selection_rate": 0.0
+    },
+    "한겨레": {
+      "appear_total": 7,
+      "win_total": 5,
+      "selection_rate": 0.7142857142857143
+    },
+    "매일경제": {
+      "appear_total": 14,
+      "win_total": 2,
+      "selection_rate": 0.14285714285714285
+    },
+    "경향신문": {
+      "appear_total": 9,
+      "win_total": 2,
+      "selection_rate": 0.2222222222222222
+    },
+    "뉴시스": {
+      "appear_total": 16,
+      "win_total": 6,
+      "selection_rate": 0.375
+    },
+    "아이뉴스24": {
+      "appear_total": 8,
+      "win_total": 2,
+      "selection_rate": 0.25
+    },
+    "전자신문": {
+      "appear_total": 3,
+      "selection_rate": 0.0
+    },
+    "ZDNet Korea": {
+      "appear_total": 7,
+      "win_total": 5,
+      "selection_rate": 0.7142857142857143
+    },
+    "디지털투데이": {
+      "appear_total": 2,
+      "win_total": 2,
+      "selection_rate": 1.0
+    }
+  },
   "processed_dates": [
-    "2026-07-22"
+    "2026-07-22",
+    "2026-07-23"
   ],
-  "selection_dates": [],
-  "updated_at": "2026-07-22T11:21:34+09:00"
+  "selection_dates": [
+    "2026-07-23"
+  ],
+  "updated_at": "2026-07-23T07:14:16+09:00"
 }

@@ -1,0 +1,44 @@
+{
+  "매일경제::매일경제": {
+    "sparse_count": 1,
+    "points": 0,
+    "blacklisted": false,
+    "last_updated": "2026-07-23",
+    "history": [
+      {
+        "date": "2026-07-23",
+        "link": "https://www.mk.co.kr/news/society/12104418",
+        "reason": "sparse",
+        "chars": 0
+      }
+    ]
+  },
+  "뉴시스::이재은": {
+    "sparse_count": 1,
+    "points": 0,
+    "blacklisted": false,
+    "last_updated": "2026-07-23",
+    "history": [
+      {
+        "date": "2026-07-23",
+        "link": "https://www.newsis.com/view/NISX20260723_0003719500",
+        "reason": "sparse",
+        "chars": 0
+      }
+    ]
+  },
+  "전자신문::남궁경": {
+    "sparse_count": 1,
+    "points": 0,
+    "blacklisted": false,
+    "last_updated": "2026-07-23",
+    "history": [
+      {
+        "date": "2026-07-23",
+        "link": "https://www.etnews.com/20260722000341",
+        "reason": "sparse",
+        "chars": 0
+      }
+    ]
+  }
+}
