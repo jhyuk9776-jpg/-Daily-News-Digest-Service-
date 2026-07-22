@@ -177,21 +177,24 @@ class ProcessAndBackfillTest(unittest.TestCase):
 class RankHistoryTest(unittest.TestCase):
     def _store(self):
         return {"media": {
-            "저밀도": {"density_per_1000": 30.0, "article_count": 10, "count": 10},
-            "고밀도": {"density_per_1000": 200.0, "article_count": 10, "count": 10},
-            "중밀도": {"density_per_1000": 100.0, "article_count": 10, "count": 10},
-            "표본없음": {"density_per_1000": 0.0, "article_count": 0, "count": 0},
+            "고선택": {"selection_rate": 0.75, "win_total": 6, "appear_total": 8, "article_count": 8},
+            "저선택": {"selection_rate": 0.25, "win_total": 2, "appear_total": 8, "article_count": 8},
+            "중선택": {"selection_rate": 0.50, "win_total": 4, "appear_total": 8, "article_count": 8},
+            "등장없음": {"selection_rate": None, "win_total": 0, "appear_total": 0, "article_count": 0},
         }}
 
-    def test_ranks_by_density_ascending(self):
-        ranks = objectivity.compute_ranks(self._store())
-        self.assertEqual(ranks["저밀도"], 1)  # 낮을수록 객관적 → 1위
-        self.assertEqual(ranks["중밀도"], 2)
-        self.assertEqual(ranks["고밀도"], 3)
+    def test_rank_history_uses_selection_rate(self):
+        ranks = objectivity.compute_selection_ranks(self._store())
+        self.assertEqual(ranks["고선택"], 1)  # 선택률 높을수록 → 1위
+        self.assertEqual(ranks["중선택"], 2)
+        self.assertEqual(ranks["저선택"], 3)
 
-    def test_ranks_exclude_zero_sample(self):
-        ranks = objectivity.compute_ranks(self._store())
-        self.assertNotIn("표본없음", ranks)
+    def test_ranks_exclude_zero_appear(self):
+        ranks = objectivity.compute_selection_ranks(self._store())
+        self.assertNotIn("등장없음", ranks)
+
+    def test_compute_ranks_removed(self):
+        self.assertFalse(hasattr(objectivity, "compute_ranks"))
 
     def test_history_appends_and_is_idempotent(self):
         with tempfile.TemporaryDirectory() as tmp:

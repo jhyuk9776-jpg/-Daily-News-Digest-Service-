@@ -387,17 +387,6 @@ def compute_selection_ranks(store: dict) -> dict:
     return {s: i + 1 for i, s in enumerate(ranked)}
 
 
-def compute_ranks(store: dict) -> dict:
-    """표본이 있는 매체를 감점 밀도 오름차순(낮을수록 객관적)으로 1위부터 매긴다.
-    동밀도는 매체명으로 안정 정렬해 결정적이다."""
-    media = store.get("media", {})
-    ranked = sorted(
-        (s for s, m in media.items() if m.get("article_count", m.get("count", 0)) > 0),
-        key=lambda s: (media[s].get("density_per_1000", 0.0), s),
-    )
-    return {s: i + 1 for i, s in enumerate(ranked)}
-
-
 def load_rank_history() -> dict:
     if RANK_HISTORY_FILE.exists():
         with RANK_HISTORY_FILE.open("r", encoding="utf-8") as f:
@@ -494,7 +483,7 @@ def run_backfill() -> dict:
         store = process_date(store, date)
     save_store(store)
     if dates:
-        update_rank_history(dates[-1], compute_ranks(store))
+        update_rank_history(dates[-1], compute_selection_ranks(store))
     print(f"백필 완료: {len(dates)}일 처리, 매체 {len(store['media'])}곳")
     return store
 
@@ -519,7 +508,7 @@ def main() -> int:
         print(f"오류: {exc}", file=sys.stderr)
         return 1
     save_store(store)
-    update_rank_history(date, compute_ranks(store))
+    update_rank_history(date, compute_selection_ranks(store))
 
     print(f"=== 객관성 감점 밀도 ({date}) — 낮을수록 객관적 ===")
     for source, m in sorted(store["media"].items(),
