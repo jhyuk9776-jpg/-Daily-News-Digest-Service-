@@ -306,41 +306,6 @@ def penalty_memo(records: list[dict], penalties=None) -> dict:
     return {"total_deducted": total, "by_expr": by_expr, "by_source": by_source}
 
 
-def update_media_scores(store: dict, dated_articles: list[dict], date: str) -> dict:
-    """그날 기사들을 매체별로 채점해 감점 밀도로 누적한다(멱등)."""
-    if date in store.get("processed_dates", []):
-        return store
-
-    flags = outlier_flags(dated_articles)
-    agg: dict[str, dict] = {}
-    for art in dated_articles:
-        source = art.get("source", "")
-        ch = {"title": art.get("title", ""), "lead": art.get("summary", ""), "body": ""}
-        r = score_article(ch)
-        a = agg.setdefault(source, {"points": 0.0, "count": 0, "attr": 0, "outlier": 0})
-        a["points"] += r["points"]
-        a["count"] += 1
-        a["attr"] += attribution_count(ch)
-        a["outlier"] += 1 if flags.get(art.get("link", "")) else 0
-
-    media = store.setdefault("media", {})
-    for source, a in agg.items():
-        m = media.setdefault(source, {"penalty_points_total": 0.0, "article_count": 0,
-                                      "attribution_total": 0, "outlier_total": 0,
-                                      "density_per_1000": 0.0, "count": 0, "last_seen": date})
-        m["penalty_points_total"] += a["points"]
-        m["article_count"] += a["count"]
-        m["attribution_total"] += a["attr"]
-        m["outlier_total"] += a["outlier"]
-        m["count"] = m["article_count"]
-        m["last_seen"] = date
-        m["density_per_1000"] = (m["penalty_points_total"] / m["article_count"] * 1000
-                                 if m["article_count"] else 0.0)
-
-    store.setdefault("processed_dates", []).append(date)
-    return store
-
-
 def update_selection_rates(store: dict, daily_stats: list[dict], date: str) -> dict:
     """교차검증 클러스터의 멤버 등장·대표 승리를 매체별로 누적(날짜 멱등).
     selection_rate = win/appear (등장 0이면 null). 단독 클러스터는 호출부에서 제외."""
@@ -375,13 +340,13 @@ def save_store(store: dict) -> None:
 
 
 def compute_selection_ranks(store: dict) -> dict:
-    """파이프라인 서열: 선택률(win/appear) 내림차순으로 1위부터(높을수록 우선).
-    대표 동점 tie-break·백필 로테이션용. density(compute_ranks)를 대체 — density는
-    브리핑 관찰축(rank-history)으로만 유지한다(D6). 선택률 미축적(첫날) 매체는 0으로
-    취급 → 매체명 안정정렬(사실상 무순), 최신순 tie-break이 이어받는다(D7)."""
+    """파이프라인 서열 + rank-history: 선택률(win/appear) 내림차순으로 1위부터(높을수록 우선).
+    대표 동점 tie-break·백필 로테이션·브리핑 순위에 쓴다. 선택률 미축적(첫날) 매체는 0으로
+    취급 → 매체명 안정정렬(사실상 무순), 최신순 tie-break이 이어받는다(D7).
+    등장 이력(appear_total>0)이 있는 매체만 순위에 넣는다."""
     media = store.get("media", {})
     ranked = sorted(
-        (s for s, m in media.items() if m.get("article_count", m.get("count", 0)) > 0),
+        (s for s, m in media.items() if m.get("appear_total", 0) > 0),
         key=lambda s: (-(media[s].get("selection_rate") or 0.0), s),
     )
     return {s: i + 1 for i, s in enumerate(ranked)}
@@ -450,28 +415,29 @@ def dated_articles_for(date: str) -> list[dict]:
 
 
 def process_date(store: dict, date: str) -> dict:
-    """하루치 raw를 채점해 store에 누적하고 감점 리포트를 저장한다."""
+    """하루치 raw를 채점해 당일 감점 리포트를 저장한다(날짜 멱등).
+    매체 누적은 선택률(update_selection_rates, curate 흐름)이 맡고, 여기선 리포트만 낸다."""
+    if date in store.get("processed_dates", []):
+        return store
     articles = dated_articles_for(date)
-    already = date in store.get("processed_dates", [])
-    store = update_media_scores(store, articles, date)
-    if not already:
-        flags = outlier_flags(articles)
-        records = []
-        for a in articles:
-            ch = {"title": a.get("title", ""), "lead": a.get("summary", ""), "body": ""}
-            r = score_article(ch)
-            records.append({
-                "source": a.get("source", ""),
-                "category": a.get("category", ""),
-                "title": a.get("title", ""),
-                "link": a.get("link", ""),
-                "score": r["score"],
-                "points": r["points"],
-                "hits": r["hits"],
-                "attribution": attribution_count(ch),
-                "outlier": bool(flags.get(a.get("link", ""))),
-            })
-        save_article_report(date, records)
+    flags = outlier_flags(articles)
+    records = []
+    for a in articles:
+        ch = {"title": a.get("title", ""), "lead": a.get("summary", ""), "body": ""}
+        r = score_article(ch)
+        records.append({
+            "source": a.get("source", ""),
+            "category": a.get("category", ""),
+            "title": a.get("title", ""),
+            "link": a.get("link", ""),
+            "score": r["score"],
+            "points": r["points"],
+            "hits": r["hits"],
+            "attribution": attribution_count(ch),
+            "outlier": bool(flags.get(a.get("link", ""))),
+        })
+    save_article_report(date, records)
+    store.setdefault("processed_dates", []).append(date)
     return store
 
 

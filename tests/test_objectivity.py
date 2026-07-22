@@ -44,46 +44,6 @@ class ScoreTest(unittest.TestCase):
         self.assertEqual(r["score"], 55)
 
 
-class MediaDensityTest(unittest.TestCase):
-    def _empty(self):
-        return {"media": {}, "processed_dates": []}
-
-    def test_new_media_density(self):
-        arts = [
-            {"title": "깨끗한 기사", "summary": "", "source": "한국경제", "link": "L1"},
-            {"title": "논란이 커지고 있다", "summary": "", "source": "한국경제", "link": "L2"},
-        ]  # points 0 + 8 = 8, count 2 → 8/2*1000 = 4000
-        store = objectivity.update_media_scores(self._empty(), arts, "2026-07-01")
-        m = store["media"]["한국경제"]
-        self.assertEqual(m["penalty_points_total"], 8)
-        self.assertEqual(m["article_count"], 2)
-        self.assertEqual(m["density_per_1000"], 4000.0)
-
-    def test_density_accumulates_across_days(self):
-        store = {"media": {"한국경제": {"penalty_points_total": 8, "article_count": 2,
-                 "attribution_total": 0, "outlier_total": 0, "density_per_1000": 4000.0,
-                 "count": 2, "last_seen": "2026-06-30"}},
-                 "processed_dates": ["2026-06-30"]}
-        arts = [{"title": "깨끗", "summary": "", "source": "한국경제", "link": "L3"}]
-        store = objectivity.update_media_scores(store, arts, "2026-07-01")
-        m = store["media"]["한국경제"]
-        self.assertEqual(m["article_count"], 3)          # 2+1
-        self.assertEqual(m["penalty_points_total"], 8)   # +0
-        self.assertAlmostEqual(m["density_per_1000"], 8/3*1000)
-
-    def test_idempotent_same_date(self):
-        arts = [{"title": "깨끗", "summary": "", "source": "한국경제", "link": "L1"}]
-        store = objectivity.update_media_scores(self._empty(), arts, "2026-07-01")
-        snap = objectivity_snapshot(store)
-        store = objectivity.update_media_scores(store, arts, "2026-07-01")
-        self.assertEqual(objectivity_snapshot(store), snap)
-
-
-def objectivity_snapshot(store):
-    import json
-    return json.dumps(store, sort_keys=True, ensure_ascii=False)
-
-
 import json  # noqa: E402
 import tempfile  # noqa: E402
 from datetime import datetime  # noqa: E402
@@ -149,11 +109,10 @@ class ProcessAndBackfillTest(unittest.TestCase):
                  patch.object(objectivity, "MEDIA_FILE", tmp_p / "scores" / "media.json"):
                 store = objectivity.process_date(
                     {"media": {}, "processed_dates": []}, today)
-                self.assertIn("한국경제", store["media"])
-                self.assertEqual(store["media"]["한국경제"]["count"], 2)
+                self.assertIn(today, store["processed_dates"])   # 멱등 마킹
                 report = json.loads(
                     (tmp_p / "scores" / f"articles-{today}.json").read_text())
-                self.assertEqual(report["penalized_count"], 1)
+                self.assertEqual(report["penalized_count"], 1)   # 매체 누적 아닌 당일 리포트만
 
     def test_backfill_processes_old_files(self):
         # 과거 날짜(오래된 raw)도 걸러지지 않고 처리돼야 한다(now()가 아니라 파일 날짜 기준).
@@ -169,9 +128,7 @@ class ProcessAndBackfillTest(unittest.TestCase):
                  patch.object(objectivity, "RANK_HISTORY_FILE", tmp_p / "scores" / "media-rank-history.json"), \
                  patch.object(objectivity, "active_sources", return_value={"A"}):
                 store = objectivity.run_backfill()
-        self.assertIn(old, store["processed_dates"])
-        self.assertIn("A", store["media"])  # 파일 날짜 기준이라 통과
-        self.assertEqual(store["media"]["A"]["count"], 1)
+        self.assertIn(old, store["processed_dates"])  # 파일 날짜 기준이라 처리됨
 
 
 class RankHistoryTest(unittest.TestCase):
@@ -195,6 +152,14 @@ class RankHistoryTest(unittest.TestCase):
 
     def test_compute_ranks_removed(self):
         self.assertFalse(hasattr(objectivity, "compute_ranks"))
+
+    def test_update_media_scores_removed(self):
+        self.assertFalse(hasattr(objectivity, "update_media_scores"))
+
+    def test_selection_ranks_filter_on_appear(self):
+        # density 필드(article_count) 없이 선택률 데이터만 있어도 순위가 잡혀야 한다.
+        store = {"media": {"A": {"appear_total": 2, "win_total": 2, "selection_rate": 1.0}}}
+        self.assertEqual(objectivity.compute_selection_ranks(store), {"A": 1})
 
     def test_history_appends_and_is_idempotent(self):
         with tempfile.TemporaryDirectory() as tmp:

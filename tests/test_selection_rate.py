@@ -33,11 +33,11 @@ class SelectionRateTest(unittest.TestCase):
 
 class SelectionRanksTest(unittest.TestCase):
     def test_ranked_by_rate_desc(self):
-        # D6: 파이프라인 서열은 선택률 내림차순(높을수록 1위). density 아님.
+        # 파이프라인 서열은 선택률 내림차순(높을수록 1위). 등장 이력(appear_total)이 자격.
         store = {"media": {
-            "A": {"count": 10, "selection_rate": 0.1},
-            "B": {"count": 10, "selection_rate": 0.3},
-            "C": {"count": 10, "selection_rate": 0.0},
+            "A": {"appear_total": 10, "selection_rate": 0.1},
+            "B": {"appear_total": 10, "selection_rate": 0.3},
+            "C": {"appear_total": 10, "selection_rate": 0.0},
         }}
         ranks = objectivity.compute_selection_ranks(store)
         self.assertEqual(ranks["B"], 1)  # 최고 선택률
@@ -46,7 +46,7 @@ class SelectionRanksTest(unittest.TestCase):
 
     def test_cold_start_all_zero_deterministic(self):
         # 첫날 전부 0 → 매체명 안정정렬(무순), 최신순 tie-break이 이어받음
-        store = {"media": {"나": {"count": 5}, "가": {"count": 5}}}
+        store = {"media": {"나": {"appear_total": 5}, "가": {"appear_total": 5}}}
         ranks = objectivity.compute_selection_ranks(store)
         self.assertEqual(ranks["가"], 1)  # 이름 오름차순
         self.assertEqual(ranks["나"], 2)
