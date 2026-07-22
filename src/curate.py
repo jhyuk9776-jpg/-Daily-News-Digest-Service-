@@ -274,7 +274,7 @@ def pick_representative(cluster: dict, extract_fn, score_fn, ranks: dict,
     · 본문 점수 < REP_SCORE_FLOOR(reason=low_score). 통과분 점수도 기록(reason=score_observed)해
     분포 추적을 유지한다.
     유효 멤버가 없으면 None(클러스터 탈락). 배제·관찰 모두 excluded에 reason·title과 함께 기록.
-    동점은 매체 density 순위(낮을수록 우선). on_body는 추출 직후 호출(기자 스트라이크 판정).
+    동점은 선택률 순위(rank↓, compute_selection_ranks). on_body는 추출 직후 호출(기자 스트라이크 판정).
     extract_fn/score_fn/title_penalty_fn 주입으로 테스트는 네트워크 불필요.
     """
     blacklist = blacklist or set()
