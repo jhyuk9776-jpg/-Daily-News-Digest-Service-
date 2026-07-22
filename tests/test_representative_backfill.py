@@ -88,16 +88,16 @@ class PickRepresentativeTest(unittest.TestCase):
         self.assertEqual(rep["link"], "y")
         self.assertTrue(any(e["reason"] == "clickbait" for e in excluded))
 
-    def test_low_score_observed_not_excluded(self):
-        # D4 관찰 모드: 본문 하한 미달은 로그만 남기고 배제하지 않는다(대표 될 수 있음).
+    def test_low_score_excluded(self):
+        # 하드 하한(2026-07-22 승격): 본문 점수 < REP_SCORE_FLOOR면 대표 자격 박탈.
         cluster = self._cluster(
             {"source": "A", "link": "x", "title": "T", "category": "경제"})
         excluded = []
         rep = curate.pick_representative(
             cluster, lambda link, title="": "본문 " * 100,
-            lambda t, b: {"total": 0.2}, {}, excluded)   # 0.2 < 0.35 관찰선
-        self.assertEqual(rep["link"], "x")               # 배제 안 됨
-        self.assertTrue(any(e["reason"] == "low_score_observed" for e in excluded))
+            lambda t, b: {"total": 0.2}, {}, excluded)   # 0.2 < 0.45 하한
+        self.assertIsNone(rep)                            # 유일 멤버 배제 → 클러스터 탈락
+        self.assertTrue(any(e["reason"] == "low_score" for e in excluded))
 
 
 class SelectIntegrationTest(unittest.TestCase):

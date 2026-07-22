@@ -245,11 +245,10 @@ def record_representative_strike(rep_data: dict, item: dict, body, date: str) ->
     return True
 
 
-# 대표 후보 본문 점수 관찰선. 관찰 모드: 이 밑이면 로그만 남기고 배제하지 않는다.
-# 라벨(예시1호 total≈0.8·감점1호 0.3)이 2개뿐이라 임의 하한으로 진짜 기사를 떨구는
-# 대신, 며칠 분포를 관찰한 뒤 하드 하한으로 승격한다.
-# ponytail: observe-only 시드값, 라벨 축적 후 하드 게이트로 전환.
-REP_SCORE_FLOOR = 0.35
+# 대표 후보 본문 점수 하한(하드 게이트). 이 밑이면 대표 자격 박탈.
+# 07-20~22 3일 관찰 분포(min 0.45→0.45→0.56, 0.35 미만 0건)를 근거로 0.35 관찰선을
+# 0.45 하드 하한으로 승격(2026-07-22). 통과분 점수는 계속 로그해 분포 추적을 유지한다.
+REP_SCORE_FLOOR = 0.45
 
 
 def _rep_gate_reason(m: dict, body: str, blacklist: set, title_penalty_fn,
@@ -271,10 +270,9 @@ def pick_representative(cluster: dict, extract_fn, score_fn, ranks: dict,
                         min_len: int = LENGTH_MIN, max_len: int = LENGTH_MAX, on_body=None):
     """클러스터 멤버 본문을 추출→하드 게이트→score_fn 총합 최고를 대표 멤버로.
 
-    하드 게이트(대표 자격 박탈): 길이 300~1500 이탈 · 블랙리스트 기자 · 제목 낚시(감점>0).
-    관찰 게이트(로그만, 배제 안 함): 게이트 통과 대표 후보 전원의 본문 점수를 기록
-    (reason=score_observed, 하한 미달은 low_score_observed) — 하드 하한값을 정하려면
-    미달만이 아니라 점수 분포 전체가 필요하기 때문.
+    하드 게이트(대표 자격 박탈): 길이 300~1500 이탈 · 블랙리스트 기자 · 제목 낚시(감점>0)
+    · 본문 점수 < REP_SCORE_FLOOR(reason=low_score). 통과분 점수도 기록(reason=score_observed)해
+    분포 추적을 유지한다.
     유효 멤버가 없으면 None(클러스터 탈락). 배제·관찰 모두 excluded에 reason·title과 함께 기록.
     동점은 매체 density 순위(낮을수록 우선). on_body는 추출 직후 호출(기자 스트라이크 판정).
     extract_fn/score_fn/title_penalty_fn 주입으로 테스트는 네트워크 불필요.
@@ -292,12 +290,14 @@ def pick_representative(cluster: dict, extract_fn, score_fn, ranks: dict,
                              "category": m.get("category", "")})
             continue
         sc = score_fn(m.get("title", ""), body)
-        # 관찰 모드: 통과 후보 전원의 점수를 기록(분포 확인용). 배제는 안 함.
+        # 하드 하한: 미달은 대표 자격 박탈(로그 후 continue). 통과분도 점수를 계속 기록(분포 추적).
+        below = sc["total"] < REP_SCORE_FLOOR
         excluded.append({"source": m.get("source", ""), "link": m["link"],
-                         "reason": "low_score_observed" if sc["total"] < REP_SCORE_FLOOR
-                                   else "score_observed",
+                         "reason": "low_score" if below else "score_observed",
                          "score": round(sc["total"], 3), "title": m.get("title", ""),
                          "category": m.get("category", "")})
+        if below:
+            continue
         rank = ranks.get(m.get("source", ""), 10 ** 9)
         # tie-break: 점수 → 선택률 순위(rank↓) → 최신순(D7). recency_key는 -ts라 부호 반전.
         scored.append(((sc["total"], -rank, -recency_key(m.get("published_iso", ""))), m))
