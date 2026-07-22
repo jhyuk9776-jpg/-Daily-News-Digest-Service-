@@ -1,6 +1,7 @@
 .venv/
 __pycache__/
 *.pyc
+.DS_Store
 
 # 매일 바뀌는 생성 산출물 (저장소에 쌓지 않음)
 raw/

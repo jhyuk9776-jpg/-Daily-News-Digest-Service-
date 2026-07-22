@@ -1,0 +1,849 @@
+{
+  "date": "2026-07-20",
+  "excluded": [
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260720041200002",
+      "reason": "score_observed",
+      "score": 0.787,
+      "title": "구윤철 \"국익 최우선으로 대미 통상관계 안정적 관리\"",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008664803",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "구윤철 \"대미 통상관계 안정적 관리…관세 조치 등 국익 최우선 대응\"",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260720_0003714656",
+      "reason": "score_observed",
+      "score": 0.813,
+      "title": "구윤철 \"대미 통상관계 안정적으로 관리…'국익 최우선' 협의\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260718001500002",
+      "reason": "score_observed",
+      "score": 0.652,
+      "title": "5대銀 가계대출 목표치 초과…금리상승 겹쳐 실수요자 '이중고'",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/finance/1268845.html",
+      "reason": "score_observed",
+      "score": 0.677,
+      "title": "은행권 가계대출 목표 초과…하반기 대출 문턱 더 높아진다",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026071910255112783",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "5대 은행 가계대출 목표치 사실상 소진…연간 한도 이미 초과",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260716190951002",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "한은 \"반도체發 교역조건 개선, 내수 파급효과 과거보다 클 것\"(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008663965",
+      "reason": "score_observed",
+      "score": 0.66,
+      "title": "한은 \"'반도체 효과' 교역 조건 개선, 내수 파급효과 과거보다 클 것\"",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026071916303301561",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "\"반도체 호조·교역조건 개선, 내수 파급효과 여느 때보다 크다\"",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026071928801",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "국민 10명중 9명 \"핵심기술 유출범, 처벌 대폭 강화해야\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260719028800003",
+      "reason": "score_observed",
+      "score": 0.712,
+      "title": "국민 10명 중 9명 \"핵심기술 해외유출 심각…처벌 강화해야\"",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008663989",
+      "reason": "score_observed",
+      "score": 0.638,
+      "title": "국민 10명 중 9명 \"핵심기술 해외 유출 영향 '심각'…처벌 강화해야\"",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026071928791",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "대기업 27% \"3년내 지방투자 확대\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260719026200003",
+      "reason": "score_observed",
+      "score": 0.624,
+      "title": "\"대기업 4곳 중 1곳, 지방투자 확대 검토…세제·재정지원 필요\"",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1268948.html",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "류진 회장 “풍산 방산업 지금은 안 판다…지방투자 확대”",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260718029600003",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "최태원 \"내년 반도체 수요 최소 50% 증가…빠른 증설이 생명줄\"",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1268851.html",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "최태원 “메모리 부족 ‘아비규환’…내년 AI반도체 수요 100% 늘어”",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008663976",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "최태원 \"내년 수요 최소 50% 증가…빠른 증설이 반도체 생명줄\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260717060000002",
+      "reason": "score_observed",
+      "score": 0.612,
+      "title": "1인가구도 '머니무브'…예·적금 줄이고 주식·ETF 늘렸다",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008663754",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "1인 가구도 '머니무브'…예·적금 줄이고 주식·ETF 늘렸다",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026071909030803588",
+      "reason": "score_observed",
+      "score": 0.615,
+      "title": "1인가구도 '머니무브'…예적금 줄고 주식·ETF 늘었다",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072036507",
+      "reason": "length:0",
+      "title": "[속보] 투표지 합수본, '외유성 출장 의혹' 선관위 압수수색",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260720042100004",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "투표지 합수본 '외유성 출장 의혹' 중앙선관위원장 사무실 압수수색",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026072009320831660",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "'외유성 출장' 의혹 노태악 압수수색…선관위 강제수사",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008664804",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "투표지 합수본, '외유성 출장 의혹' 선관위 압수수색",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026072009552496316",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "투표용지 합수본, '외유성 출장 의혹' 중앙선관위원장 사무실 압수수색",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026071930957",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "[속보] 인천 서해구 \"쿠팡물류센터 붕괴 가능성에 인근 대피령\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260720005100065",
+      "reason": "score_observed",
+      "score": 0.642,
+      "title": "인천 쿠팡물류센터 화재 사흘째…붕괴 가능성 속 진화 총력",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026071908485683199",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "인천 쿠팡 물류센터 화재 장기화…현장서 소방관 탈진",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008664792",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "쿠팡물류센터 진화 아직…붕괴 가능성에 주민 대피령도",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026071920281068652",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "인천 쿠팡물류센터 화재 37시간째 …이틀째 밤샘 진화",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202607203718i",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "합수본, 중앙선관위 압수수색…노태악 부부 해외출장 의혹 수사",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1268961.html",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "[속보] 합수본, 선관위 압수수색…노태악 ‘부부 해외출장’ 의혹 관련",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607200933001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "[속보]검경 합수본, ‘노태악 부부 해외출장’ 중앙선관위 압수수색",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260720_0003714687",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "합수본, 선관위 '수상한 출장' 압수수색…서울시선관위 관계자 조사(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260720_0003714713",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "합수본, '외유성 해외출장 의혹' 중앙선관위 압수수색",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260720039100004",
+      "reason": "score_observed",
+      "score": 0.92,
+      "title": "尹, '체포방해' 재판소원 안하기로…\"현행 사법권 체계와 안맞아\"",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12101954",
+      "reason": "score_observed",
+      "score": 0.822,
+      "title": "尹, ‘체포 방해’ 징역 7년 대법 선고에 재판소원 않기로…실익 없다 판단한 듯",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008664815",
+      "reason": "score_observed",
+      "score": 0.829,
+      "title": "윤석열, '체포 방해' 재판소원 안 하기로…\"현행 사법권 체계와 조화 어려워\"",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260720_0003714640",
+      "reason": "score_observed",
+      "score": 0.855,
+      "title": "'체포방해' 재판소원 안 하는 尹 \"헌법 질서와 안 맞아\"",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260719_0003714294",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "尹, '체포방해' 징역 7년 확정 판결에 재판소원 안 하기로",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072031947",
+      "reason": "score_observed",
+      "score": 0.66,
+      "title": "47시간째 안 꺼진 인천 쿠팡 불…붕괴 우려에 주민 168명 대피",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12102029",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "47시간째 진화에 진땀…인천 쿠팡물류센터 화재 사흘째",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12102000",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "인천 서해구 “인천 쿠팡물류센터 붕괴 가능성에 인근 대피령”",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026071923074206819",
+      "reason": "score_observed",
+      "score": 0.642,
+      "title": "인천 서해구 \"인천 쿠팡물류센터 붕괴 가능성에 인근 대피령\"",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607200830001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "인천 쿠팡물류센터 화재 사흘째···붕괴 가능성에 반경 116m ‘주민 대피령’",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12102027",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "여고생 목숨 앗아간 은마아파트 화재…무면허 전기공사 화불렀나",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008664505",
+      "reason": "score_observed",
+      "score": 0.611,
+      "title": "여고생 앗아간 은마아파트 화마…\"무자격자가 테이프로 전선 붙여\"",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260719_0003714141",
+      "reason": "score_observed",
+      "score": 0.695,
+      "title": "'여고생 참변' 은마아파트 화재…'무자격 전기공사' 발화 가능성 제기",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026071914002486370",
+      "reason": "score_observed",
+      "score": 0.674,
+      "title": "'여고생 사망' 은마아파트 화재…\"무자격자가 전기 부실시공 추정\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260719031000004",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "법원 \"탈세 제보시 구체적 자료 없으면 포상금 지급대상 아냐\"",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008664871",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "법원 \"구체적 자료 없으면 탈세 제보 포상금 지급 대상 아냐\"",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260716_0003712768",
+      "reason": "clickbait",
+      "title": "제보 덕분에 탈세 알았는데…法 \"포상금 지급 대상 아냐\", 왜?",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260719040400004",
+      "reason": "score_observed",
+      "score": 0.675,
+      "title": "착공지연? 공사정지? 지연배상금 소송…대법 \"엄격히 구별해야\"",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008664856",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "대법 \"착공 정지 때는 지연 배상금 지급 의무 없어\"",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026071821095014607",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "대법 \"발주처 잘못으로 착공 지연됐어도 '공사정지 지연배상금' 청구 못해\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260720042400051",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "바벨에 목 눌려 숨진 회원…헬스장 대표·트레이너 무죄",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12102083",
+      "reason": "clickbait",
+      "title": "70kg 바벨에 목 눌려 숨진 헬스장 회원…대표·직원은 모두 무죄, 이유는?",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008664826",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "바벨에 목 눌려 숨진 회원…헬스장 대표·트레이너 무죄",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026071928621",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "AI 아니었어?…중국인 '집단 새치기'에 인천공항 '아수라장'",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008664324",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "\"나 먼저\" 중국인 우르르…새치기에 공항 직원 다쳤다",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260719_0003714165",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "\"차단선 뚫고 우르르\"…인천공항, 중국인 추정 '집단 새치기'에 몸살",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260719009900009",
+      "reason": "score_observed",
+      "score": 0.747,
+      "title": "젤렌스키, 국방장관 경질에 시위 번지자 총사령관 교체 검토",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/europe/1268885.html",
+      "reason": "score_observed",
+      "score": 0.634,
+      "title": "드론전 vs 지상전…젤렌스키, 35살 국방장관 해임에 시위 번져",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12101864",
+      "reason": "clickbait",
+      "title": "전쟁중 국방장관 경질한 젤렌스키, 총사령관도 아웃?",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026071915445599385",
+      "reason": "score_observed",
+      "score": 0.45,
+      "title": "젤렌스키, 총사령관까지 교체 검토… 최대 軍 리더십 위기",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260720_0003714349",
+      "reason": "score_observed",
+      "score": 0.663,
+      "title": "우크라, 국방장관·총사령관 갈등에 분열…軍 지도부, 총사령관 공개 지지",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260720002500071",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "이라크서 미군 1명 사망…\"이란 드론 불발탄 통제폭파하다 사고\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/arabafrica/1268952.html",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "미군 1명 또 사망…“이란 드론 불발탄 처리하다 사고”",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607200758001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "이라크서 미군 1명 사망···“이란 드론 불발탄 폭파 과정서 사고”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008664683",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "이라크서 미군 1명 사망…\"이란 드론 불발탄 통제·폭파하다 사고\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026071930107",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "\"여성은 남성에 종속\"…'여혐 인플루언서' 테이트 형제 체포",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260719046600082",
+      "reason": "score_observed",
+      "score": 0.687,
+      "title": "'여혐 인플루언서' 테이트 형제 미국서 체포…성범죄 59건",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1268847.html",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "남성우월·여성혐오 인플루언서 테이트 형제 체포…성폭행·인신매매 혐의",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026071918303572013",
+      "reason": "score_observed",
+      "score": 0.687,
+      "title": "\"여성은 남성의 소유물\" 여혐 인플루언서 테이트 형제 美서 체포…성범죄 59건",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260719061600072",
+      "reason": "score_observed",
+      "score": 0.694,
+      "title": "이스라엘, 美부정여론 돌리려 'AI문자 발송' 750억원 홍보전",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12101861",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "이스라엘, 부정여론 바꾸려 미국 국민에 문자폭탄 발송",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008664347",
+      "reason": "score_observed",
+      "score": 0.675,
+      "title": "이스라엘, 미국 부정여론 돌리려 'AI문자 발송' 750억 원 홍보전",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260719_0003714264",
+      "reason": "score_observed",
+      "score": 0.704,
+      "title": "이스라엘, 美 부정여론 바꾸려 750억 투입…AI 문자 수백만건 발송",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260719055600108",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "이란 \"호르무즈서 배 2척 멈춰서…美에 속아 진입시 사고\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1268794.html",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "이란 “호르무즈 기뢰 구역서 유조선 2척 폭발” 주장…미국 “사실 아냐”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008664278",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "이란 \"호르무즈서 배 2척 멈춰서…미국에 속아 진입시 사고\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260719_0003714326",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "이란혁명수비대 \"호르무즈 '안전하지 않은' 항로서 선박 2척 사고\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260719058100009",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "트럼프 \"대러 제재 법안에 이란도 추가해야\"…경제 압박 강조",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12101996",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "“대러 제재 법안에 이란도 추가해야”…트란프, 경제 압박 강조",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607192147001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "트럼프 “대러 제재 법안에 이란 추가해야” 압박 나서",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260719_0003714320",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "트럼프 \"대러 제재 법안에 이란도 추가해야\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026071928951",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "\"이란, 한달 휴전 틈타 원유 9조원어치 수출\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260719021300009",
+      "reason": "score_observed",
+      "score": 0.767,
+      "title": "\"이란, 휴전 틈타 9조원어치 원유 수출…중국행 유력\"",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12101588",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "이란, 휴전 틈타 9조원어치 원유 수출…중국행 유력",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260719_0003714044",
+      "reason": "score_observed",
+      "score": 0.71,
+      "title": "\"이란, 美 봉쇄 해제 한달 만에 9조원 원유 수출…중국행 유력\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260720028100009",
+      "reason": "score_observed",
+      "score": 0.687,
+      "title": "\"중국 AI 기업 문샷, 6개월내 홍콩 상장 추진\"",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12102136",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "“기업가치 44조원 목표…中 AI 스타트업 문샷, 홍콩 증시 상장 추진”",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260720_0003714679",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "[올댓차이나] 中 AI 스타트업 문샷 6개월내 홍콩 상장  …기업가치 300억＄이상 평가",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260720012300072",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "미·이란 충돌 격화에 국제유가 급등…브렌트유 90달러 재돌파",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607200907001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "미·이란 충돌 격화에 국제 유가 급등···브렌트유 배럴당 90달러 돌파",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008664684",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "미·이란 충돌 격화에 국제유가 급등…브렌트유 90달러 재돌파",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260720026000009",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "우크라 \"러, 튀르키예 화물선에 미사일 공격…6명 사망\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008664652",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "우크라 \"러, 튀르키예 화물선에 미사일 공격…6명 사망\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260720_0003714356",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "우크라 \"러, 튀르키예 소유 화물선에 미사일 발사…선원 6명 사망\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202607203376i",
+      "reason": "score_observed",
+      "score": 0.624,
+      "title": "삼성바이오로직스, 2.7조원에 스위스 펩타이드 CDMO 기업 인수",
+      "category": "IT/테크"
+    },
+    {
+      "source": "IT조선",
+      "link": "https://it.chosun.com/news/articleView.html?idxno=2023092166062",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "삼성바이오로직스, 2.7조에 폴리펩타이드 인수… 비만약 CDMO 시장 본격 진출",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260720000013",
+      "reason": "score_observed",
+      "score": 0.642,
+      "title": "삼성바이오로직스, 2.7조원 '빅딜'…스위스 폴리펩타이드 인수",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026071928441",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "SK텔레콤·하나금융, 청년 AI 인재 모아 해커톤",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1986571",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "SKT-하나금융, AI 인재 육성 프로그램 '테크포굿 해커톤' 성료",
+      "category": "IT/테크"
+    },
+    {
+      "source": "IT조선",
+      "link": "https://it.chosun.com/news/articleView.html?idxno=2023092166042",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "SKT·하나금융, AI 사회문제 해결 해커톤 개최",
+      "category": "IT/테크"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "date": "2026-07-18",
+  "excluded": [
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260718_0003713476",
+      "reason": "length:0",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008663050",
+      "reason": "length:206",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026071816697",
+      "reason": "length:216",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260718_0003713538",
+      "reason": "length:297",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260718000300108",
+      "reason": "length:0",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008662846",
+      "reason": "length:272",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260717025500071",
+      "reason": "length:218",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260717_0003713203",
+      "reason": "length:0",
+      "category": "세계"
+    }
+  ]
+}

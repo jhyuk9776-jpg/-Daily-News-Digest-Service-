@@ -26,8 +26,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-import reporters
-from extract import extract_body, iter_contents
+from extract import iter_contents
 from failure_log import save_failure_log
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -255,8 +254,6 @@ def run(date: str, dry_run: bool) -> int:
             return 1
 
     cache = load_cache()
-    rep_data = reporters.load()
-    rep_dirty = False
     body_cache: dict = {}
     results: dict[str, tuple[list[str], str]] = {}
     counters = {"ok": 0, "api_failed": 0, "call_error": 0,
@@ -268,17 +265,7 @@ def run(date: str, dry_run: bool) -> int:
             bullets, source, status, cached, detail = summarize_item(
                 item, cache, dry_run, body_cache)
 
-            # 기자 부실 스트라이크: 대표 기사 본문 품질을 판정해 누적(3점 → 블랙리스트).
-            # 요약 성패와 무관하게 대표 기사 자체를 판정한다(본문 없음은 실패의 원인이기도 함).
-            if not dry_run and item.get("author"):
-                rep_body = extract_body(item["link"], item.get("title", ""), cache=body_cache)
-                reason = reporters.classify_body(rep_body)
-                if reason:
-                    reporters.record_strike(
-                        rep_data, item["source"], item["author"], date,
-                        item["link"], reason, 0 if rep_body is None else len(rep_body))
-                    rep_dirty = True
-
+            # 기자 부실 스트라이크는 선별 단계(curate.record_representative_strike)로 이동.
             if status == "ok":
                 results[item["link"]] = (bullets, status)
                 counters["ok"] += 1
@@ -300,8 +287,6 @@ def run(date: str, dry_run: bool) -> int:
 
     if not dry_run:
         save_cache(cache)
-        if rep_dirty:
-            reporters.save(rep_data)
 
     markdown = build_markdown(selected, results, counters)
     NEWS_DIR.mkdir(parents=True, exist_ok=True)

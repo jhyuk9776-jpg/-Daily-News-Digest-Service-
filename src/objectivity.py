@@ -22,10 +22,12 @@ from pathlib import Path
 
 import yaml
 
-from curate import (  # 날짜창·출처목록·정규화 재사용(격리: 단방향 의존)
+from curate import (  # 날짜창·출처목록·정규화·증거신호·기관목록 재사용(격리: 단방향 의존)
+    INSTITUTIONS,
     SOURCES_FILE,
+    evidence_signals,
     in_date_window,
-    load_priority_map,
+    load_source_names,
     normalize_title,
 )
 
@@ -218,6 +220,66 @@ def objectivity_score(article: dict, penalties=None, observe=None) -> dict:
     return score_article(channels, penalties, observe)
 
 
+def body_objectivity(body: str, title: str = "", penalties=None, observe=None) -> dict:
+    """기사 객관성(감점) 채점. 제목+본문 전체를 본다(제목만 채점하던 걸 본문까지 확장).
+    title="" 이면 제목 전용 룰(scope:title)은 미발화하고 본문만 채점한다.
+    scope=='text' 룰은 제목+리드(전체 가중) + body(body_factor 0.5 가중)에 적용된다."""
+    channels = {"title": title, "lead": "", "body": body}
+    return score_article(channels, penalties, observe)
+
+
+def body_richness(body: str) -> float:
+    """본문의 증거 신호 밀도(1000자당). 본문은 길어 절대개수 대신 밀도로 정규화한다."""
+    if not body:
+        return 0.0
+    return evidence_signals(body) / max(len(body), 1) * 1000
+
+
+# 문장 끝: 종결부호 뒤에 공백/문자열끝, 또는 개행. 소수점(3.5)은 뒤에 숫자가 와서 안 쪼갬.
+_SENT_SPLIT = re.compile(r"(?<=[.!?。])\s+|\n+")
+# 귀속표지: "누가 밝혔나"(출처 명시). 자기지칭어: 자화자찬(자기 보고서 인용) 신호.
+_SOURCE_MARKERS = re.compile(
+    r"에 따르면|밝혔다|말했다|전했다|설명했다|강조했다|덧붙였다|지적했다|분석했다|기술했다|부연|집계됐|발표")
+_SELF_REF = re.compile(r"회사|그룹|자사|보고서|기업")
+
+
+def source_coverage(body: str) -> float:
+    """본문 문장 중 '독립 출처를 명시한' 문장 비율(0~1). 단순 수치가 아니라 '누가 밝혔나'를 잰다.
+    독립기관(통계청 등) 인용은 자기인용과 무관하게 인정, 귀속표지는 자기지칭어가 없을 때만 인정.
+    → 보도자료 자기인용은 근거로 안 침(홍보 기사 근거성 0)."""
+    sents = [s for s in _SENT_SPLIT.split(body) if s.strip()]
+    if not sents:
+        return 0.0
+
+    def sourced(s: str) -> bool:
+        if any(inst in s for inst in INSTITUTIONS):
+            return True
+        return bool(_SOURCE_MARKERS.search(s)) and not _SELF_REF.search(s)
+
+    return sum(1 for s in sents if sourced(s)) / len(sents)
+
+
+# ponytail: 라벨 2개 보정 시드값. 16=medium 2건 → 객관성 0(=medium 1건이면 정확히 0.5).
+# 데이터 축적 후 tier 가중치와 함께 재보정.
+OBJ_PENALTY_FULL = 16
+
+
+def title_penalty(title: str) -> float:
+    """제목 편파·낚시 감점(scope:title 낚시 룰 + 제목에 걸린 평가·전망 룰). 대표 게이트용.
+    >0 이면 편파적 제목 = 대표로 안 뽑는다(본문은 채점 total로 별도 판정)."""
+    return body_objectivity("", title)["points"]
+
+
+def representative_score(title: str, body: str) -> dict:
+    """대표 선정용 결합 점수. 총합 = 0.6*객관성 + 0.4*근거성.
+    객관성 = 감점(제목+본문) 반전(1 - min(감점,16)/16), 근거성 = 독립 출처 커버리지."""
+    points = body_objectivity(body, title)["points"]
+    objectivity = 1 - min(points, OBJ_PENALTY_FULL) / OBJ_PENALTY_FULL
+    coverage = source_coverage(body)
+    return {"objectivity": objectivity, "coverage": coverage,
+            "total": 0.6 * objectivity + 0.4 * coverage}
+
+
 def penalty_memo(records: list[dict], penalties=None) -> dict:
     """그날 기사 기록의 hits를 집계해 "무엇이·왜·얼마나" 감점됐는지 요약한다.
 
@@ -279,6 +341,25 @@ def update_media_scores(store: dict, dated_articles: list[dict], date: str) -> d
     return store
 
 
+def update_selection_rates(store: dict, daily_stats: list[dict], date: str) -> dict:
+    """교차검증 클러스터의 멤버 등장·대표 승리를 매체별로 누적(날짜 멱등).
+    selection_rate = win/appear (등장 0이면 null). 단독 클러스터는 호출부에서 제외."""
+    if date in store.get("selection_dates", []):
+        return store
+    media = store.setdefault("media", {})
+    for cl in daily_stats:
+        for src in cl["members"]:
+            m = media.setdefault(src, {})
+            m["appear_total"] = m.get("appear_total", 0) + 1
+        w = media.setdefault(cl["winner"], {})
+        w["win_total"] = w.get("win_total", 0) + 1
+    for m in media.values():
+        appear = m.get("appear_total", 0)
+        m["selection_rate"] = (m.get("win_total", 0) / appear) if appear else None
+    store.setdefault("selection_dates", []).append(date)
+    return store
+
+
 def load_store() -> dict:
     if MEDIA_FILE.exists():
         with MEDIA_FILE.open("r", encoding="utf-8") as f:
@@ -291,6 +372,19 @@ def save_store(store: dict) -> None:
     store["updated_at"] = datetime.now(KST).isoformat(timespec="seconds")
     with MEDIA_FILE.open("w", encoding="utf-8") as f:
         json.dump(store, f, ensure_ascii=False, indent=2)
+
+
+def compute_selection_ranks(store: dict) -> dict:
+    """파이프라인 서열: 선택률(win/appear) 내림차순으로 1위부터(높을수록 우선).
+    대표 동점 tie-break·백필 로테이션용. density(compute_ranks)를 대체 — density는
+    브리핑 관찰축(rank-history)으로만 유지한다(D6). 선택률 미축적(첫날) 매체는 0으로
+    취급 → 매체명 안정정렬(사실상 무순), 최신순 tie-break이 이어받는다(D7)."""
+    media = store.get("media", {})
+    ranked = sorted(
+        (s for s, m in media.items() if m.get("article_count", m.get("count", 0)) > 0),
+        key=lambda s: (-(media[s].get("selection_rate") or 0.0), s),
+    )
+    return {s: i + 1 for i, s in enumerate(ranked)}
 
 
 def compute_ranks(store: dict) -> dict:
@@ -350,7 +444,7 @@ def active_sources() -> set[str]:
     제외된(더 이상 sources.yaml에 없는) 매체는 채점 대상에서 뺀다. 과거 raw를
     백필해도 옛 출처가 다시 점수에 잡히지 않게 하는 방어선.
     """
-    return {source for (_cat, source) in load_priority_map(SOURCES_FILE)}
+    return load_source_names(SOURCES_FILE)
 
 
 def dated_articles_for(date: str) -> list[dict]:
@@ -430,9 +524,12 @@ def main() -> int:
     print(f"=== 객관성 감점 밀도 ({date}) — 낮을수록 객관적 ===")
     for source, m in sorted(store["media"].items(),
                             key=lambda kv: kv[1].get("density_per_1000", 0), reverse=True):
+        sr = m.get("selection_rate")
+        sr_str = f"{sr:.2f}" if sr is not None else "-"
         print(f"  {m.get('density_per_1000', 0):7.1f}/1k · {source} "
-              f"(표본 {m['count']}, 인용 {m.get('attribution_total',0)}, "
-              f"이상치 {m.get('outlier_total',0)})")
+              f"(표본 {m.get('count', 0)}, 인용 {m.get('attribution_total',0)}, "
+              f"이상치 {m.get('outlier_total',0)}, "
+              f"선택률 {sr_str} [{m.get('win_total',0)}/{m.get('appear_total',0)}])")
     print(f"저장됨: {MEDIA_FILE}")
     return 0
 

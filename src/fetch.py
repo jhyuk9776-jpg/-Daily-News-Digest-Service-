@@ -16,6 +16,7 @@ import calendar
 import html
 import json
 import sys
+import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -33,6 +34,10 @@ USER_AGENT = (
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
 )
 
+# 바이트 직접수신 폴백용 UA. 일부 매체(한국경제)는 전체 Chrome UA를 403으로 막지만
+# 짧은 범용 UA는 허용한다. 폴백은 1차 UA가 이미 실패했을 때만 쓰므로 대안 UA가 맞다.
+FALLBACK_USER_AGENT = "Mozilla/5.0"
+
 
 def load_sources(path: Path) -> dict:
     """sources.yaml 을 읽어 {분야: [출처...]} 형태로 돌려준다."""
@@ -43,12 +48,29 @@ def load_sources(path: Path) -> dict:
     return data
 
 
+def _fetch_bytes(url: str) -> bytes:
+    """RSS 원문 바이트를 직접 받아 온다.
+
+    feedparser 내장 HTTP 경로는 gzip 응답을 잘못 처리해 일부 피드(예: 한국경제)에서
+    'not well-formed' 파싱 오류를 낸다. urllib은 기본적으로 gzip을 요청하지 않아
+    평문 응답을 받으므로 이 결함을 피한다. 이 바이트를 feedparser에 넘겨 재파싱한다.
+    """
+    req = urllib.request.Request(url, headers={"User-Agent": FALLBACK_USER_AGENT})
+    with urllib.request.urlopen(req, timeout=15) as resp:
+        return resp.read()
+
+
 def fetch_feed(category: str, source: dict, fetched_at: str) -> list[dict]:
     """한 RSS 피드를 파싱해 기사 리스트를 돌려준다. 실패하면 예외를 올린다."""
     name = source.get("매체명", "(이름없음)")
     url = source["url"]
 
     parsed = feedparser.parse(url, agent=USER_AGENT)
+
+    # feedparser 내장 HTTP 경로가 gzip 등으로 깨지면 bozo·엔트리0이 된다(한국경제).
+    # 이 경우 바이트를 직접 받아 재파싱해 구제한다.
+    if parsed.bozo and not parsed.entries:
+        parsed = feedparser.parse(_fetch_bytes(url))
 
     # bozo: 파싱 중 문제가 있었음을 의미. 단, 엔트리가 있으면 사용 가능한 경우가 많다.
     if parsed.bozo and not parsed.entries:
