@@ -1,4 +1,4 @@
-"""대표 선정(길이필터+채점) + density 3위 라운드로빈 백필 테스트(주입식, 네트워크 없음)."""
+"""대표 선정(길이필터+채점) + 선택률 순위 tie-break 테스트(주입식, 네트워크 없음)."""
 
 import os
 import sys
@@ -32,17 +32,17 @@ class PickRepresentativeTest(unittest.TestCase):
         self.assertTrue(by_link["x"]["reason"].startswith("length"))
         self.assertEqual(by_link["y"]["reason"], "score_observed")
 
-    def test_tie_broken_by_density_rank(self):
+    def test_tie_broken_by_selection_rank(self):
         cluster = self._cluster(
             {"source": "A", "link": "x", "title": "T", "category": "경제"},
             {"source": "B", "link": "y", "title": "T", "category": "경제"},
         )
         body = "본문 " * 200  # 유효 길이
-        ranks = {"A": 2, "B": 1}  # B가 우선(rank 낮음)
+        ranks = {"A": 2, "B": 1}  # B가 우선(선택률 순위 낮음=상위)
         rep = curate.pick_representative(
             cluster, lambda link, title="": body,
             lambda title, b: {"total": 0.5}, ranks, [])
-        self.assertEqual(rep["source"], "B")        # 동점 → density 우선
+        self.assertEqual(rep["source"], "B")        # 동점 → 선택률 순위 우선
 
     def test_tie_broken_by_recency_when_ranks_equal(self):
         # D7: 선택률 동률(첫날 등 ranks 무의미)이면 최신순으로 대표 선정.

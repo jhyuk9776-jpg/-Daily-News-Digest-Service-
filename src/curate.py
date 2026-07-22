@@ -425,7 +425,7 @@ def main(date: str = None, dry_run: bool = False) -> int:
         core_words.record_topics(date, top3)
         core_words.save_weights(wstore)
 
-    # 파이프라인 서열 = 선택률 순위(D6). density는 브리핑 관찰축으로만 유지(여기 미사용).
+    # 파이프라인 서열 = 선택률 순위(win/appear). 대표 동점 tie-break에 쓴다.
     store = objectivity.load_store()
     ranks = objectivity.compute_selection_ranks(store)
     # 기자 부실 스트라이크: 대표 후보 본문 판정 시점(선별)에 기록(요약 단계에서 이동).

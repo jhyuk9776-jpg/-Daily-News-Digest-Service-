@@ -42,8 +42,8 @@ class LabelObjectivityTest(unittest.TestCase):
 
 
 class BodyRichnessTest(unittest.TestCase):
-    def test_rich_body_has_positive_density(self):
-        # 감점 1호는 홍보성이지만 증거는 풍부(수치·%·전년대비·기관) → 밀도 > 0
+    def test_rich_body_has_positive_richness(self):
+        # 감점 1호는 홍보성이지만 증거는 풍부(수치·%·전년대비·기관) → 증거 풍부도 > 0
         body = (FIX / "label_zdnet_esg.txt").read_text(encoding="utf-8")
         self.assertGreater(objectivity.body_richness(body), 0.0)
 
