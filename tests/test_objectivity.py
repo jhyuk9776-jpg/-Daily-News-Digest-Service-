@@ -82,6 +82,8 @@ class StoreIOTest(unittest.TestCase):
                 data = json.loads((Path(tmp) / "articles-2026-07-01.json").read_text())
         self.assertEqual(data["penalized_count"], 1)
         self.assertEqual(data["articles"][0]["source"], "A")
+        self.assertNotIn("density_per_1000", data)   # density 개념 제거
+        self.assertEqual(data["total_points"], 8)    # 규모는 total_points가 지킴
 
 
 class ProcessAndBackfillTest(unittest.TestCase):

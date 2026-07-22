@@ -382,7 +382,6 @@ def save_article_report(date: str, records: list[dict]) -> None:
         "scored": len(records),
         "penalized_count": len(penalized),
         "total_points": total_points,
-        "density_per_1000": (total_points / len(records) * 1000) if records else 0.0,
         "attribution_total": sum(r.get("attribution", 0) for r in records),
         "outlier_total": sum(1 for r in records if r.get("outlier")),
         "penalty_memo": penalty_memo(records),
@@ -476,15 +475,12 @@ def main() -> int:
     save_store(store)
     update_rank_history(date, compute_selection_ranks(store))
 
-    print(f"=== 객관성 감점 밀도 ({date}) — 낮을수록 객관적 ===")
+    print(f"=== 매체 선택률 ({date}) — 높을수록 대표 승률 ===")
     for source, m in sorted(store["media"].items(),
-                            key=lambda kv: kv[1].get("density_per_1000", 0), reverse=True):
+                            key=lambda kv: -(kv[1].get("selection_rate") or 0.0)):
         sr = m.get("selection_rate")
         sr_str = f"{sr:.2f}" if sr is not None else "-"
-        print(f"  {m.get('density_per_1000', 0):7.1f}/1k · {source} "
-              f"(표본 {m.get('count', 0)}, 인용 {m.get('attribution_total',0)}, "
-              f"이상치 {m.get('outlier_total',0)}, "
-              f"선택률 {sr_str} [{m.get('win_total',0)}/{m.get('appear_total',0)}])")
+        print(f"  선택률 {sr_str} [{m.get('win_total',0)}/{m.get('appear_total',0)}] · {source}")
     print(f"저장됨: {MEDIA_FILE}")
     return 0
 
