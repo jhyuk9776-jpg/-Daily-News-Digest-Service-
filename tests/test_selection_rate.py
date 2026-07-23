@@ -30,6 +30,27 @@ class SelectionRateTest(unittest.TestCase):
         s = objectivity.update_selection_rates(s, stats, "2026-07-15")  # 재실행
         self.assertEqual(s["media"]["연합뉴스"]["appear_total"], 1)
 
+    def test_by_category_nested(self):
+        stats = [
+            {"members": ["연합뉴스", "한국경제"], "winner": "한국경제", "category": "경제"},
+            {"members": ["연합뉴스", "SBS"], "winner": "연합뉴스", "category": "IT/테크"},
+        ]
+        s = objectivity.update_selection_rates(self._empty(), stats, "2026-07-15")
+        yh = s["media"]["연합뉴스"]
+        # 전역은 종전대로
+        self.assertEqual(yh["appear_total"], 2)
+        self.assertEqual(yh["selection_rate"], 0.5)
+        # 분야별 분리
+        self.assertEqual(yh["by_category"]["경제"]["appear_total"], 1)
+        self.assertEqual(yh["by_category"]["경제"]["selection_rate"], 0.0)
+        self.assertEqual(yh["by_category"]["IT/테크"]["win_total"], 1)
+        self.assertEqual(yh["by_category"]["IT/테크"]["selection_rate"], 1.0)
+
+    def test_missing_category_bucketed_empty_string(self):
+        stats = [{"members": ["연합뉴스"], "winner": "연합뉴스"}]  # category 없음
+        s = objectivity.update_selection_rates(self._empty(), stats, "2026-07-15")
+        self.assertEqual(s["media"]["연합뉴스"]["by_category"][""]["win_total"], 1)
+
 
 class SelectionRanksTest(unittest.TestCase):
     def test_ranked_by_rate_desc(self):

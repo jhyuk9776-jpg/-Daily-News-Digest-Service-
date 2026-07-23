@@ -308,19 +308,28 @@ def penalty_memo(records: list[dict], penalties=None) -> dict:
 
 def update_selection_rates(store: dict, daily_stats: list[dict], date: str) -> dict:
     """교차검증 클러스터의 멤버 등장·대표 승리를 매체별로 누적(날짜 멱등).
-    selection_rate = win/appear (등장 0이면 null). 단독 클러스터는 호출부에서 제외."""
+    전역 selection_rate = win/appear + 분야별(by_category) 동일 누적. 생짜 비율(소표본 보정 없음).
+    단독 클러스터는 호출부에서 제외."""
     if date in store.get("selection_dates", []):
         return store
     media = store.setdefault("media", {})
     for cl in daily_stats:
+        cat = cl.get("category", "")
         for src in cl["members"]:
             m = media.setdefault(src, {})
             m["appear_total"] = m.get("appear_total", 0) + 1
+            bc = m.setdefault("by_category", {}).setdefault(cat, {})
+            bc["appear_total"] = bc.get("appear_total", 0) + 1
         w = media.setdefault(cl["winner"], {})
         w["win_total"] = w.get("win_total", 0) + 1
+        wbc = w.setdefault("by_category", {}).setdefault(cat, {})
+        wbc["win_total"] = wbc.get("win_total", 0) + 1
     for m in media.values():
         appear = m.get("appear_total", 0)
         m["selection_rate"] = (m.get("win_total", 0) / appear) if appear else None
+        for bc in m.get("by_category", {}).values():
+            a = bc.get("appear_total", 0)
+            bc["selection_rate"] = (bc.get("win_total", 0) / a) if a else None
     store.setdefault("selection_dates", []).append(date)
     return store
 
