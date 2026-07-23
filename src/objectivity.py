@@ -1,15 +1,11 @@
-"""Phase 2: 매체 객관성 점수 축적기 (observe-only, record-only).
+"""매체 선택률·본문 점수 유틸 (curate 파이프라인이 소비).
 
-요약하지 않은 수집 기사까지 감점 휴리스틱으로 채점해 매체별 감점 밀도
-(1000건당 감점 point, 낮을수록 객관적)를 누적한다. 선별·랭킹에는 반영하지 않는다(관찰만).
+- score_article/body_objectivity: 낚시 게이트·본문 객관성 점수(제목+본문 감점 휴리스틱)
+- representative_score/title_penalty/source_coverage: 대표 선정 결합 점수
+- update_selection_rates/compute_selection_ranks/update_rank_history: 선택률(win/appear,
+  전역+분야별) 누적·순위. curate가 라이브 실행에서 호출·영속화한다(observe-only).
 
-설계: 기획/시스템기획/기능설계/04-객관성-점수축적기.md
 감점 사전 시드: AI_CONTEXT.md §6 "피해야 할 표현".
-
-실행:
-    python3 src/objectivity.py            # 오늘(KST) 채점·누적
-    python3 src/objectivity.py 2026-06-30 # 특정 날짜
-    python3 src/objectivity.py --backfill # raw/*.json 전부 재구축
 """
 
 from __future__ import annotations
@@ -22,17 +18,9 @@ from pathlib import Path
 
 import yaml
 
-from curate import (  # 날짜창·출처목록·정규화·증거신호·기관목록 재사용(격리: 단방향 의존)
-    INSTITUTIONS,
-    SOURCES_FILE,
-    evidence_signals,
-    in_date_window,
-    load_source_names,
-    normalize_title,
-)
+from curate import INSTITUTIONS, evidence_signals  # 증거신호·기관목록 재사용(격리: 단방향 의존)
 
 ROOT = Path(__file__).resolve().parent.parent
-RAW_DIR = ROOT / "raw"
 SCORES_DIR = ROOT / "scores"
 MEDIA_FILE = SCORES_DIR / "media.json"
 RANK_HISTORY_FILE = SCORES_DIR / "media-rank-history.json"
@@ -180,39 +168,6 @@ def score_article(channels: dict, penalties=None, observe=None, scoring=None) ->
             "observe_hits": observe_hits, "score": int(score)}
 
 
-def attribution_count(channels: dict, markers=None) -> int:
-    """제목+리드에서 귀속(출처 명시) 표지 등장수(② 중립 관찰축, 감점 아님).
-
-    긴 표지가 짧은 표지를 포함할 때 이중 계산을 막기 위해 정규식 교대(alternation)로
-    비겹침 최장 일치를 사용한다(예: '라고 밝혔다' 매칭 후 '고 밝혔다' 재계산 방지).
-    """
-    markers = SCORING["attribution_markers"] if markers is None else markers
-    if not markers:
-        return 0
-    text = f"{channels.get('title','')} {channels.get('lead','')}"
-    # 긴 표지가 먼저 소비되도록 길이 내림차순 정렬
-    pattern = "|".join(re.escape(m) for m in sorted(markers, key=len, reverse=True))
-    return len(re.findall(pattern, text))
-
-
-def outlier_flags(articles: list[dict]) -> dict:
-    """④ 교차 이상치: 단독(제목그룹 distinct source==1) & 감점 hit 동반 기사 표시."""
-    groups: dict[str, set] = {}
-    for a in articles:
-        groups.setdefault(normalize_title(a.get("title", "")), set()).add(a.get("source", ""))
-    flags: dict[str, bool] = {}
-    for a in articles:
-        link = a.get("link", "")
-        if not link:
-            continue
-        norm = normalize_title(a.get("title", ""))
-        singleton = len(groups[norm]) == 1
-        has_hit = bool(score_article(
-            {"title": a.get("title", ""), "lead": a.get("summary", ""), "body": ""})["hits"])
-        flags[link] = singleton and has_hit
-    return flags
-
-
 def objectivity_score(article: dict, penalties=None, observe=None) -> dict:
     """호환 래퍼: 기사(title+summary)를 title/lead 채널로 채점."""
     channels = {"title": article.get("title", ""),
@@ -278,32 +233,6 @@ def representative_score(title: str, body: str) -> dict:
     coverage = source_coverage(body)
     return {"objectivity": objectivity, "coverage": coverage,
             "total": 0.6 * objectivity + 0.4 * coverage}
-
-
-def penalty_memo(records: list[dict], penalties=None) -> dict:
-    """그날 기사 기록의 hits를 집계해 "무엇이·왜·얼마나" 감점됐는지 요약한다.
-
-    입력: records = [{"source":..., "hits":[expr,...]}...]
-    출력: {total_deducted, by_expr:{expr:{count,deducted,근거}}, by_source:{src:deducted}}
-    주의: 여기 합계는 표현별 raw weight 합(가속·cap·body_factor 적용 전)이라
-    리포트의 total_points(실제 부과 point)와 가속 발화 시 어긋날 수 있다.
-    """
-    penalties = ACTIVE_PENALTIES if penalties is None else penalties
-    weight = {p["expr"]: p["weight"] for p in penalties}
-    reason = {p["expr"]: p.get("근거", "") for p in penalties}
-    by_expr: dict[str, dict] = {}
-    by_source: dict[str, int] = {}
-    total = 0
-    for rec in records:
-        for expr in rec.get("hits", []):
-            w = weight.get(expr, 0)
-            total += w
-            e = by_expr.setdefault(expr, {"count": 0, "deducted": 0, "근거": reason.get(expr, "")})
-            e["count"] += 1
-            e["deducted"] += w
-            src = rec.get("source", "")
-            by_source[src] = by_source.get(src, 0) + w
-    return {"total_deducted": total, "by_expr": by_expr, "by_source": by_source}
 
 
 def update_selection_rates(store: dict, daily_stats: list[dict], date: str) -> dict:
@@ -382,117 +311,3 @@ def update_rank_history(date: str, ranks: dict) -> dict:
     return hist
 
 
-def save_article_report(date: str, records: list[dict]) -> None:
-    SCORES_DIR.mkdir(parents=True, exist_ok=True)
-    penalized = [r for r in records if r.get("points", 0) > 0]
-    total_points = sum(r.get("points", 0) for r in records)
-    payload = {
-        "date": date,
-        "scored": len(records),
-        "penalized_count": len(penalized),
-        "total_points": total_points,
-        "attribution_total": sum(r.get("attribution", 0) for r in records),
-        "outlier_total": sum(1 for r in records if r.get("outlier")),
-        "penalty_memo": penalty_memo(records),
-        "articles": penalized,
-    }
-    with (SCORES_DIR / f"articles-{date}.json").open("w", encoding="utf-8") as f:
-        json.dump(payload, f, ensure_ascii=False, indent=2)
-
-
-def active_sources() -> set[str]:
-    """sources.yaml에 등록된 현재 활성 매체명 집합.
-
-    제외된(더 이상 sources.yaml에 없는) 매체는 채점 대상에서 뺀다. 과거 raw를
-    백필해도 옛 출처가 다시 점수에 잡히지 않게 하는 방어선.
-    """
-    return load_source_names(SOURCES_FILE)
-
-
-def dated_articles_for(date: str) -> list[dict]:
-    path = RAW_DIR / f"{date}.json"
-    if not path.exists():
-        raise FileNotFoundError(f"수집 결과가 없음: {path} (먼저 fetch.py 실행)")
-    with path.open("r", encoding="utf-8") as f:
-        raw = json.load(f)
-    # 날짜창 기준은 now()가 아니라 그 raw 파일의 날짜(정오 KST). 재백필 시 과거 파일도 정확.
-    ref = datetime.fromisoformat(date).replace(tzinfo=KST) + timedelta(hours=12)
-    active = active_sources()
-    return [a for a in raw["articles"]
-            if in_date_window(a, ref) and a.get("source", "") in active]
-
-
-def process_date(store: dict, date: str) -> dict:
-    """하루치 raw를 채점해 당일 감점 리포트를 저장한다(날짜 멱등).
-    매체 누적은 선택률(update_selection_rates, curate 흐름)이 맡고, 여기선 리포트만 낸다."""
-    if date in store.get("processed_dates", []):
-        return store
-    articles = dated_articles_for(date)
-    flags = outlier_flags(articles)
-    records = []
-    for a in articles:
-        ch = {"title": a.get("title", ""), "lead": a.get("summary", ""), "body": ""}
-        r = score_article(ch)
-        records.append({
-            "source": a.get("source", ""),
-            "category": a.get("category", ""),
-            "title": a.get("title", ""),
-            "link": a.get("link", ""),
-            "score": r["score"],
-            "points": r["points"],
-            "hits": r["hits"],
-            "attribution": attribution_count(ch),
-            "outlier": bool(flags.get(a.get("link", ""))),
-        })
-    save_article_report(date, records)
-    store.setdefault("processed_dates", []).append(date)
-    return store
-
-
-def run_backfill() -> dict:
-    """raw/*.json을 날짜 오름차순으로 전부 재처리해 store를 새로 구축한다."""
-    store = {"media": {}, "processed_dates": []}
-    dates = sorted(p.stem for p in RAW_DIR.glob("*.json"))
-    for date in dates:
-        store = process_date(store, date)
-    save_store(store)
-    if dates:
-        update_rank_history(dates[-1], compute_selection_ranks(store))
-    print(f"백필 완료: {len(dates)}일 처리, 매체 {len(store['media'])}곳")
-    return store
-
-
-def main() -> int:
-    import argparse
-    parser = argparse.ArgumentParser(description="매체 객관성 점수 축적기(observe-only)")
-    parser.add_argument("date", nargs="?", help="처리할 날짜 YYYY-MM-DD (기본: 오늘 KST)")
-    parser.add_argument("--backfill", action="store_true",
-                        help="raw/*.json 전부 재처리(전체 재구축)")
-    args = parser.parse_args()
-
-    if args.backfill:
-        run_backfill()
-        return 0
-
-    date = args.date or datetime.now(KST).strftime("%Y-%m-%d")
-    store = load_store()
-    try:
-        store = process_date(store, date)
-    except FileNotFoundError as exc:
-        print(f"오류: {exc}", file=sys.stderr)
-        return 1
-    save_store(store)
-    update_rank_history(date, compute_selection_ranks(store))
-
-    print(f"=== 매체 선택률 ({date}) — 높을수록 대표 승률 ===")
-    for source, m in sorted(store["media"].items(),
-                            key=lambda kv: -(kv[1].get("selection_rate") or 0.0)):
-        sr = m.get("selection_rate")
-        sr_str = f"{sr:.2f}" if sr is not None else "-"
-        print(f"  선택률 {sr_str} [{m.get('win_total',0)}/{m.get('appear_total',0)}] · {source}")
-    print(f"저장됨: {MEDIA_FILE}")
-    return 0
-
-
-if __name__ == "__main__":
-    raise SystemExit(main())
