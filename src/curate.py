@@ -364,7 +364,10 @@ def select(raw: dict, today: datetime,
                     selected.append(_apply_representative(c, rep))
                     selection_stats.append({
                         "members": [m["source"] for m in c["members"]],
-                        "winner": rep["source"]})
+                        "winner": rep["source"],
+                        "category": category,
+                        "winner_author": rep.get("author", ""),
+                        "winner_link": rep["link"]})
         categories[category] = selected
         stats[category] = {
             "candidates": len(arts),
@@ -438,10 +441,14 @@ def main(date: str = None, dry_run: bool = False) -> int:
     out_path = save(result)   # selected/ 는 gitignore 산출물 — dry-run에서도 기록(체이닝·검수용)
 
     if not dry_run:
+        for st in result["selection_stats"]:                     # 기자 선택 기록(관찰용)
+            reporters.record_selection(rep_data, st["winner"], st["winner_author"],
+                                       date, st["winner_link"])
         reporters.save(rep_data)
-        # 선택률 평판 갱신(교차검증 클러스터 부산물, 날짜 멱등).
+        # 선택률 평판 갱신(교차검증 클러스터 부산물, 날짜 멱등) + 순위 이력.
         objectivity.update_selection_rates(store, result["selection_stats"], date)
         objectivity.save_store(store)
+        objectivity.update_rank_history(date, objectivity.compute_selection_ranks(store))
     else:
         print("  [dry-run] scores/ 상태 미기록 (media.json·가중치·평판·주제 보존)")
 

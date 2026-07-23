@@ -19,7 +19,8 @@ ISO = "2026-07-02T01:00:00+00:00"
 
 def _art(category, source, title):
     return {"category": category, "source": source, "title": title,
-            "summary": "", "link": f"L-{category}-{source}", "published_iso": ISO}
+            "summary": "", "link": f"L-{category}-{source}", "published_iso": ISO,
+            "author": f"기자{source}"}
 
 
 def _event(category, title, n_sources):
@@ -51,6 +52,15 @@ class MinMediaOverrideTest(unittest.TestCase):
         raw = {"date": "2026-07-02", "articles": _event("경제", "금리동결결정", 3)}
         result = self._run(raw)
         self.assertEqual(len(result["categories"]["경제"]), 1)
+
+    def test_selection_stats_carries_category_and_author(self):
+        raw = {"date": "2026-07-02", "articles": _event("경제", "금리동결결정", 3)}
+        result = self._run(raw)
+        st = result["selection_stats"][0]
+        self.assertEqual(st["category"], "경제")
+        self.assertIn("winner_author", st)
+        self.assertIn("winner_link", st)
+        self.assertTrue(st["winner_link"].startswith("L-경제-"))
 
 
 if __name__ == "__main__":
