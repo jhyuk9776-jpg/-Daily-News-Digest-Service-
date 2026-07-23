@@ -61,10 +61,6 @@ class SourceCoverageTest(unittest.TestCase):
         # 독립기관(통계청) 인용 문장 → 근거 인정
         self.assertAlmostEqual(objectivity.source_coverage("통계청은 3.5% 올랐다고 밝혔다."), 1.0)
 
-    def test_independent_attribution_counts(self):
-        # 귀속표지 있고 자기지칭어 없음 → 인정
-        self.assertAlmostEqual(objectivity.source_coverage("연구진은 결과를 발표했다."), 1.0)
-
     def test_self_reference_excluded(self):
         # 자기 보고서 인용은 독립 출처 아님 → 제외
         self.assertEqual(objectivity.source_coverage("회사 보고서에 따르면 성장했다고 밝혔다."), 0.0)

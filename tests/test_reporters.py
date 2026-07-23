@@ -111,5 +111,32 @@ class LoadSaveTest(unittest.TestCase):
                 self.assertEqual(reporters.load(), {"연합뉴스::황철환": {"points": 1}})
 
 
+class RecordSelectionTest(unittest.TestCase):
+    def test_first_selection_counts_one(self):
+        data = reporters.record_selection({}, "연합뉴스", "김진성", "2026-07-23", "L1")
+        self.assertEqual(data["연합뉴스::김진성"]["selected_count"], 1)
+
+    def test_duplicate_date_link_is_noop(self):
+        data = reporters.record_selection({}, "연합뉴스", "김진성", "2026-07-23", "L1")
+        data = reporters.record_selection(data, "연합뉴스", "김진성", "2026-07-23", "L1")
+        self.assertEqual(data["연합뉴스::김진성"]["selected_count"], 1)
+
+    def test_different_link_increments(self):
+        data = reporters.record_selection({}, "연합뉴스", "김진성", "2026-07-23", "L1")
+        data = reporters.record_selection(data, "연합뉴스", "김진성", "2026-07-23", "L2")
+        self.assertEqual(data["연합뉴스::김진성"]["selected_count"], 2)
+
+    def test_suffix_normalized_same_key(self):
+        data = reporters.record_selection({}, "연합뉴스", "김진성 기자", "2026-07-23", "L1")
+        self.assertIn("연합뉴스::김진성", data)
+
+    def test_coexists_with_strike_record(self):
+        data = reporters.record_strike({}, "연합뉴스", "김진성", "2026-07-23", "S1", "empty", 0)
+        data = reporters.record_selection(data, "연합뉴스", "김진성", "2026-07-23", "L1")
+        rec = data["연합뉴스::김진성"]
+        self.assertEqual(rec["points"], 1)          # 스트라이크 보존
+        self.assertEqual(rec["selected_count"], 1)  # 선택 카운트 공존
+
+
 if __name__ == "__main__":
     unittest.main()

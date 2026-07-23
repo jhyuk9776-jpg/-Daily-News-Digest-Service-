@@ -90,3 +90,24 @@ def record_strike(data: dict, source: str, author: str, date: str,
     if rec["points"] >= BLACKLIST_POINTS:
         rec["blacklisted"] = True
     return data
+
+
+def record_selection(data: dict, source: str, author: str, date: str, link: str) -> dict:
+    """최종 대표로 선택된 기사의 기자에 선택 카운트를 더한다(관찰용). (date,link) 멱등.
+
+    스트라이크(record_strike)와 같은 파일·같은 '{매체}::{기자}' 키를 공유하되,
+    별도 필드(selected_count/selected_history)만 건드린다. 블랙리스트와 무관.
+    """
+    key = reporter_key(source, author)
+    rec = data.setdefault(
+        key, {"sparse_count": 0, "points": 0, "blacklisted": False,
+              "last_updated": "", "history": []},
+    )
+    rec.setdefault("selected_count", 0)         # 기존(스트라이크만 있던) 레코드 호환
+    rec.setdefault("selected_history", [])
+    if any(h["date"] == date and h["link"] == link for h in rec["selected_history"]):
+        return data
+    rec["selected_history"].append({"date": date, "link": link})
+    rec["selected_count"] += 1
+    rec["last_updated"] = date
+    return data

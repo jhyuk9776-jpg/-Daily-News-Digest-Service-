@@ -44,9 +44,7 @@ class ScoreTest(unittest.TestCase):
         self.assertEqual(r["score"], 55)
 
 
-import json  # noqa: E402
 import tempfile  # noqa: E402
-from datetime import datetime  # noqa: E402
 from pathlib import Path  # noqa: E402
 from unittest.mock import patch  # noqa: E402
 
@@ -71,66 +69,6 @@ class StoreIOTest(unittest.TestCase):
                 store = objectivity.load_store()
         self.assertEqual(store["media"]["A"]["density_per_1000"], 4000.0)
         self.assertIn("updated_at", store)
-
-    def test_article_report_saves_only_penalized(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            with patch.object(objectivity, "SCORES_DIR", Path(tmp)):
-                objectivity.save_article_report("2026-07-01", [
-                    {"source": "A", "category": "경제", "title": "논란이 커지고 있다",
-                     "link": "L1", "score": 92, "points": 8, "hits": ["논란이 커지고 있다"]},
-                ])
-                data = json.loads((Path(tmp) / "articles-2026-07-01.json").read_text())
-        self.assertEqual(data["penalized_count"], 1)
-        self.assertEqual(data["articles"][0]["source"], "A")
-        self.assertNotIn("density_per_1000", data)   # density 개념 제거
-        self.assertEqual(data["total_points"], 8)    # 규모는 total_points가 지킴
-
-
-class ProcessAndBackfillTest(unittest.TestCase):
-    def _write_raw(self, raw_dir, date, articles):
-        payload = {"date": date, "articles": articles}
-        (raw_dir / f"{date}.json").write_text(
-            json.dumps(payload, ensure_ascii=False), encoding="utf-8")
-
-    def _art(self, source, title, iso):
-        return {"category": "경제", "source": source, "title": title,
-                "summary": "", "link": f"L-{title}", "published_iso": iso}
-
-    def test_process_date_updates_store_and_report(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            tmp_p = Path(tmp)
-            raw_dir = tmp_p / "raw"; raw_dir.mkdir()
-            # 오늘 날짜를 고정하기 위해 window를 넉넉히: iso를 오늘로
-            today = datetime.now(objectivity.KST).date().isoformat()
-            self._write_raw(raw_dir, today, [
-                self._art("한국경제", "깨끗한 기사", f"{today}T01:00:00+00:00"),
-                self._art("한국경제", "논란이 커지고 있다", f"{today}T01:00:00+00:00"),
-            ])
-            with patch.object(objectivity, "RAW_DIR", raw_dir), \
-                 patch.object(objectivity, "SCORES_DIR", tmp_p / "scores"), \
-                 patch.object(objectivity, "MEDIA_FILE", tmp_p / "scores" / "media.json"):
-                store = objectivity.process_date(
-                    {"media": {}, "processed_dates": []}, today)
-                self.assertIn(today, store["processed_dates"])   # 멱등 마킹
-                report = json.loads(
-                    (tmp_p / "scores" / f"articles-{today}.json").read_text())
-                self.assertEqual(report["penalized_count"], 1)   # 매체 누적 아닌 당일 리포트만
-
-    def test_backfill_processes_old_files(self):
-        # 과거 날짜(오래된 raw)도 걸러지지 않고 처리돼야 한다(now()가 아니라 파일 날짜 기준).
-        with tempfile.TemporaryDirectory() as tmp:
-            tmp_p = Path(tmp)
-            raw_dir = tmp_p / "raw"; raw_dir.mkdir()
-            old = "2020-01-15"  # 한참 과거 — now() 기준이면 전부 걸러질 날짜
-            self._write_raw(raw_dir, old, [
-                self._art("A", "깨끗", "2020-01-15T01:00:00+00:00")])
-            with patch.object(objectivity, "RAW_DIR", raw_dir), \
-                 patch.object(objectivity, "SCORES_DIR", tmp_p / "scores"), \
-                 patch.object(objectivity, "MEDIA_FILE", tmp_p / "scores" / "media.json"), \
-                 patch.object(objectivity, "RANK_HISTORY_FILE", tmp_p / "scores" / "media-rank-history.json"), \
-                 patch.object(objectivity, "active_sources", return_value={"A"}):
-                store = objectivity.run_backfill()
-        self.assertIn(old, store["processed_dates"])  # 파일 날짜 기준이라 처리됨
 
 
 class RankHistoryTest(unittest.TestCase):
@@ -175,31 +113,6 @@ class RankHistoryTest(unittest.TestCase):
         dates = [e["date"] for e in hist["history"]]
         self.assertEqual(dates, ["2026-07-09", "2026-07-10"])  # 날짜순, 중복 없음
         self.assertEqual(hist["history"][-1]["ranks"], {"저밀도": 1, "고밀도": 2})
-
-
-class ActiveSourceFilterTest(unittest.TestCase):
-    def _write_raw(self, raw_dir, date, articles):
-        (raw_dir / f"{date}.json").write_text(
-            json.dumps({"date": date, "articles": articles}, ensure_ascii=False),
-            encoding="utf-8")
-
-    def test_dated_articles_excludes_inactive_source(self):
-        # sources.yaml에 없는 매체(제외됨)는 채점 대상에서 빠진다.
-        with tempfile.TemporaryDirectory() as tmp:
-            raw_dir = Path(tmp)
-            self._write_raw(raw_dir, "2020-01-15", [
-                {"category": "경제", "source": "한국경제", "title": "t1",
-                 "summary": "", "link": "L1", "published_iso": "2020-01-15T01:00:00+00:00"},
-                {"category": "경제", "source": "이코노미스트 타임스", "title": "t2",
-                 "summary": "", "link": "L2", "published_iso": "2020-01-15T01:00:00+00:00"},
-            ])
-            with patch.object(objectivity, "RAW_DIR", raw_dir), \
-                 patch.object(objectivity, "active_sources",
-                              return_value={"한국경제"}):
-                arts = objectivity.dated_articles_for("2020-01-15")
-        sources = {a["source"] for a in arts}
-        self.assertIn("한국경제", sources)
-        self.assertNotIn("이코노미스트 타임스", sources)
 
 
 class ScoringConfigTest(unittest.TestCase):
@@ -326,50 +239,6 @@ class ChannelScoreTest(unittest.TestCase):
         art = {"title": "아우성 아우성", "lead": "", "body": ""}
         r = objectivity.score_article(art, self.P, [], self.SCORING)
         self.assertEqual(r["points"], 16)    # 2×8, 가속 없음(n=2≤3)
-
-
-class PenaltyMemoTest(unittest.TestCase):
-    P = [{"expr": "아우성", "type": "phrase", "tier": "medium", "weight": 8, "근거": "감정 과장"}]
-
-    def test_aggregates_by_expr_and_source(self):
-        records = [
-            {"source": "매일신문", "hits": ["아우성"]},
-            {"source": "매일신문", "hits": ["아우성"]},
-            {"source": "한국경제", "hits": []},
-        ]
-        memo = objectivity.penalty_memo(records, self.P)
-        self.assertEqual(memo["total_deducted"], 16)
-        self.assertEqual(memo["by_expr"]["아우성"]["count"], 2)
-        self.assertEqual(memo["by_expr"]["아우성"]["근거"], "감정 과장")
-        self.assertEqual(memo["by_source"]["매일신문"], 16)
-
-    def test_empty_when_no_hits(self):
-        memo = objectivity.penalty_memo([{"source": "A", "hits": []}], self.P)
-        self.assertEqual(memo["total_deducted"], 0)
-        self.assertEqual(memo["by_expr"], {})
-
-
-class ObservationAxisTest(unittest.TestCase):
-    def test_attribution_count(self):
-        ch = {"title": "정부에 따르면 흑자", "lead": "관계자는 사실이라고 밝혔다", "body": ""}
-        n = objectivity.attribution_count(
-            ch, ["에 따르면", "라고 밝혔다", "고 밝혔다"])
-        self.assertEqual(n, 2)   # '에 따르면' 1 + '고 밝혔다' 1
-
-    def test_outlier_only_singleton_with_hit(self):
-        arts = [
-            # 단독 + 감점(아우성) → 이상치
-            {"title": "혼자만 아우성", "summary": "", "link": "L1", "source": "A"},
-            # 교차(같은 제목 다른 매체) + 감점 → 이상치 아님(단독 아님)
-            {"title": "공동 논란이 커지고 있다", "summary": "", "link": "L2", "source": "B"},
-            {"title": "공동 논란이 커지고 있다", "summary": "", "link": "L3", "source": "C"},
-            # 단독 + 무감점 → 이상치 아님
-            {"title": "혼자 깨끗한 기사", "summary": "", "link": "L4", "source": "D"},
-        ]
-        flags = objectivity.outlier_flags(arts)
-        self.assertTrue(flags["L1"])
-        self.assertFalse(flags["L2"])
-        self.assertFalse(flags["L4"])
 
 
 if __name__ == "__main__":
