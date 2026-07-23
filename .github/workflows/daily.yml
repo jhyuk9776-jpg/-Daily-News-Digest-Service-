@@ -34,12 +34,6 @@ jobs:
           REPLICATE_API_TOKEN: ${{ secrets.REPLICATE_API_TOKEN }}
         run: ./run.sh
 
-      # observe-only 객관성 채점. fetch가 방금 만든 오늘 raw로 채점하므로
-      # 디제스트와 동일한 스냅샷이며 AI 토큰이 들지 않는다. raw는 보관하지 않고
-      # 누적 결과(scores/)만 커밋한다. 수동 실행을 놓쳐도 매일 자동 누적된다.
-      - name: 객관성 점수 채점(observe-only)
-        run: python3 src/objectivity.py
-
       - name: 다이제스트·점수 자동 커밋
         run: |
           git config user.name "github-actions[bot]"
