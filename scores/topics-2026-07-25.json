@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-25",
+  "topics": [
+    {
+      "word": "AI",
+      "score": 32.8,
+      "media_count": 12,
+      "article_count": 104
+    },
+    {
+      "word": "한국",
+      "score": 23.8,
+      "media_count": 11,
+      "article_count": 64
+    },
+    {
+      "word": "트럼프",
+      "score": 21.6,
+      "media_count": 8,
+      "article_count": 68
+    }
+  ]
+}
