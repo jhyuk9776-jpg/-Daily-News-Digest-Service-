@@ -1,0 +1,777 @@
+{
+  "date": "2026-07-26",
+  "excluded": [
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072554217",
+      "reason": "length:80",
+      "title": "[속보] 네이버 이해진 \"엔비디아·브룩필드서 100억달러 거금 투자\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260725033600017",
+      "reason": "score_observed",
+      "score": 0.743,
+      "title": "이해진 \"엔비디아·브룩필드, 네이버에 14조6천억원 투자\"",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674483",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "네이버, 엔비디아·브룩필드서 100억 달러 투자 유치…\"글로벌 AI 시장 공략\"",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674356",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "이재용·정의선·이해진, 엔비디아 본사서 젠슨 황 만났다",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260724142900008",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "국내증시 출렁에 국장 이탈?…서학개미 이달 순매수 4배 늘었다",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12107229",
+      "reason": "score_observed",
+      "score": 0.684,
+      "title": "“국장 못 믿겠다” 해외로 쏠린 개미…이달 순매수 4배 폭증",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674307",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "국내증시 출렁에 국장 이탈?…서학개미 이달 순매수 4배 늘었다",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072555127",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "\"퇴근 시간이니 가겠다\"…'지시 거부' 군무원 감봉 취소 판결",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260724176400004",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "\"퇴근해야 한다\"며 상관 지시 거부한 군무원…법원 \"감봉은 부당\"",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12107233",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "“퇴근해야 한다” 상관 지시 거부하고 칼퇴근한 군무원… 법원 “감봉 처분 부당”",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026072516492463352",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "\"퇴근해야 한다\"며 상관 지시 거부한 군무원…법원 \"감봉 부당\"",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674428",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "\"퇴근해야 한다\"며 상관 지시 거부한 군무원…법원 \"감봉은 부당\"",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260725_0003723149",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "\"퇴근해야 한다\" 상관 지시 거부한 군무원…法 \"감봉 징계 부당\"",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072557837",
+      "reason": "score_observed",
+      "score": 0.84,
+      "title": "검찰, '서해 피격 사건' 문재인 전 대통령 불기소",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260725053000004",
+      "reason": "score_observed",
+      "score": 0.84,
+      "title": "검찰, '서해 피격' 문재인 불기소…시민단체 고발 3년7개월만",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026072519043820845",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "'서해 피격 논란' 문재인…검찰, 3년 7개월 만 불기소 처분",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607251924001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.88,
+      "title": "검찰, ‘서해 공무원 피격’ 문재인 전 대통령 불기소···고발 3년7개월만에 “증거 불충분”",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674695",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "검찰, '서해 공무원 피격' 문재인 전 대통령 불기소…\"증거 불충분\"",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260725_0003723227",
+      "reason": "score_observed",
+      "score": 0.785,
+      "title": "검찰, '서해 공무원 피격' 문재인 전 대통령 피고발 사건 불기소",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072557997",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "서울 주택가서 여고생에 흉기 휘두른 10대 구속",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260725027151004",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "서울 주택가서 여고생에 흉기 휘두른 10대 남성 구속(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12107210",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "‘10대 여고생’에 흉기 휘두른 10대男…경찰, 구속영장 신청",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607252139001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "서울 주택가에서 또래 여고생에게 흉기 휘두른 10대 남성 구속",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674749",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "서울 화곡동서 여고생에 흉기 휘두른 10대 남성 구속",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260725_0003723242",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "서울 강서구서 여고생에 흉기 휘두른 10대 구속(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072556547",
+      "reason": "length:200",
+      "title": "고양 마두동 아파트서 화재…'대응 1단계' 발령",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260725042452060",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "고양 마두동 아파트서 화재…주민 10명 부상(종합2보)",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12107364",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "고양 마두동 아파트서 화재…주민 10명 부상",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674769",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "장성 플라스틱 공장 화재…소방 대응 1단계 발령",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674585",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "고양 마두동 아파트서 불…50분 만에 진화",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260725_0003723164",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "고양 마두동 아파트 화재 진화 완료…대응1단계 해제(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260725053200004",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "잠실 개표소 시위중 경찰에 욕설한 20대 3명 검찰 송치",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607251938001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "잠실 개표소 시위 중 경찰 향해 욕한 3명···‘특수공무집행방해’ 검찰 송치",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674705",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "잠실 개표소 시위 중 경찰에 욕설한 20대 3명 검찰 송치",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260725_0003723231",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "'잠실 개표소 시위서 경찰 조롱' 20대 남성 구속 송치",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260725043200004",
+      "reason": "score_observed",
+      "score": 0.642,
+      "title": "'명태균 여론조사 무상 수수' 尹 항소심 내달 21일 시작",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12107317",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "‘명태균 여론조사’ 무상 수수’ 尹 항소심, 다음 달 21일 시작",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674696",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "'명태균 여론조사 무상 수수' 윤석열 항소심 다음 달 21일 시작",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260725_0003723183",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "'명태균 여론조사 무상 수수' 尹 항소심 내달 21일 첫 공판",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12107253",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "“‘나는 신이다’는 거짓” JMS 정명석 두둔한 유튜버…법원 “6000만원 배상”",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026072516295518985",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "\"'나는 신이다'는 거짓\"…JMS 두둔한 20만 유튜버, 법원은 \"6천만원 배상하라\"",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260725_0003723085",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "'나는 신이다'는 거짓…JMS 정명석 두둔한 유튜버 6000만원 배상",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12107398",
+      "reason": "length:0",
+      "title": "[속보] 1234회 로또 1등 ‘1, 15, 19, 31, 35, 43’",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607252053001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "1234회 로또 1등 ‘1, 15, 19, 31, 35, 43’···1등 18명 당첨금 각 15억9513만원",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260725_0003723263",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "1234회 로또 1등 각 15억씩…자동 12명·수동 6명(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12107204",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "“내 손길을 뿌리쳐?”…지인 8살 아이 목 졸라 실신시킨 50대",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026072511043558720",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "\"내 손길 뿌리쳐\" 8살 여아 때려 실신시키고 경찰까지 폭행한 50대…'집행유예'",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260725_0003723132",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "\"손 뿌리쳐?\" 8살 목 조르고 때린 50대 집유",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072557457",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "조업 중 그물에 걸린 3.2t 밍크고래…7100만원에 팔렸다",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260725031000052",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "울산 방어진 앞바다서 7.3ｍ 밍크고래 혼획…7천100만원 위판",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12107241",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "‘바다의 로또’ 횡재…울산 방어진서 7.3m 밍크고래 7100만원 낙찰",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260725004300079",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "이란군 \"미군 공습에 희생된 이란인 1명당 미군 1명 살해할 것\"",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12107181",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "이란군 “공습 희생자 1명당 미군 1명 살해할 것” 협박",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674655",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "'군사 작전' 압박에…\"1명 숨지면 1명 살해할 것\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260725_0003722882",
+      "reason": "score_observed",
+      "score": 0.809,
+      "title": "이란군 사령관 \"순교한 이란인 1명당 미군 1명씩 지옥행\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260725002551071",
+      "reason": "score_observed",
+      "score": 0.789,
+      "title": "트럼프 \"이란과 진지하게 대화중…즉시 행동할 준비도 돼있어\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1269912.html",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "트럼프 “이란과 진지하게 대화중…합의 불발 땐 공격강도 높일 수도”",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607250750001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "트럼프 “이란과 진지하게 대화 중…합의 안 되면 즉각 군사행동”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674172",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "트럼프 \"이란과 진지하게 대화중…즉시 행동할 준비도 돼있어\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260726001551099",
+      "reason": "score_observed",
+      "score": 0.743,
+      "title": "젤렌스키 \"러, 北병력 3만명 추가 파견 원해…접경지 배치 준비\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674793",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "젤렌스키 \"러, 북한 병력 3만 명 추가 파견 원해…접경지 배치 준비\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260726_0003723302",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "젤렌스키 \"러시아, 북한군 3만명 추가 배치 추진\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260726000300099",
+      "reason": "score_observed",
+      "score": 0.744,
+      "title": "후티 \"아람코 석유시설 공격\"…'중동 제2전선' 긴장 고조(종합2보)",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674786",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "후티 \"아람코 석유시설 공격\"…'중동 제2전선' 긴장 고조",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260725_0003723266",
+      "reason": "score_observed",
+      "score": 0.81,
+      "title": "후티, 사우디 아람코 석유시설 공격…예멘 정부군도 후티 거점 공습",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260725050552081",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "서유럽 최악 산불에 26만명 대피…투르드프랑스도 타격(종합2보)",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12107180",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "유럽 덮친 산불에 9만여명 대피…스페인은 ‘국가 비상사태’ 선포",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674764",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "프랑스·스페인 최악 산불에 26만 명 대피…진화 총력",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260725056300099",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "민주콩고 에볼라 확진 3천명 육박…사망자 1천300명 넘어",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/arabafrica/1269626.html",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "콩고 에볼라 사망자 3개월 만에 1000명…“역대 가장 빠른 확산”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674779",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "민주콩고 에볼라 확진 3천 명 육박…사망자 1천300명 넘어",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260725056800099",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "시리아서 버스 충돌로 최소 35명 사망·30명 부상",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674768",
+      "reason": "length:286",
+      "title": "시리아서 버스 충돌로 최소 35명 사망·30명 부상",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260725_0003723288",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "시리아 고속도로서 버스 2대 정면충돌…35명 사망·30명 부상",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260725_0003723202",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "中 산시성서 황토 붕괴로 주택 매몰…5명 사망",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260725040400009",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "미·영, 호르무즈 민간선박 보호 국제회의 내주 개최 추진",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674562",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "미·영, 호르무즈 선박 보호 국제회의 내주 개최 추진",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260725_0003723182",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "미·영, 호르무즈 선박 보호 연합 추진…내주 런던서 국제회의",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260725012700009",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "사우디, 후티반군 점령한 호데이다 공습…\"비례적 군사 대응\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674249",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "사우디, 후티반군 점령한 호데이다 공습…\"비례적 군사 대응\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260725_0003723052",
+      "reason": "score_observed",
+      "score": 0.708,
+      "title": "사우디, 예멘 호데이다 공습…후티 \"반드시 보복\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260725020400009",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "美 \"오만만서 봉쇄선 뚫으려던 이란 유조선 무력화\"",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607250956001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "미군 “오만만서 봉쇄선 뚫으려던 이란 유조선 무력화”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674375",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "미 \"오만만서 이란 유조선 엔진룸에 사격\"",
+      "category": "세계"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=686970",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "삼성SDS, 앤트로픽과도 동맹...클로드 기반 엔터프라이즈 AI 사업 본격화",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260725000018",
+      "reason": "score_observed",
+      "score": 0.617,
+      "title": "삼성SDS·앤트로픽, 전략적 파트너십…'클로드' 기반 엔터프라이즈 AI 사업 확대",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260725143028",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "삼성SDS, 오픈AI 이어 앤트로픽 맞손…\"AI 풀스택 사업 강화\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1988738",
+      "reason": "score_observed",
+      "score": 0.66,
+      "title": "이해진 \"엔비디아·브룩필드, 네이버에 14.6조원 투자⋯새로운 도약 계기\" [종합]",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=686967",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "엔비디아, 네이버에 10억달러 투자...AI데이터센터 구축 지원",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260725142431",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "네이버, 엔비디아·브룩쉴드서 14.6조 투자 유치…이해진 \"새 단계 도약\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1988723",
+      "reason": "score_observed",
+      "score": 0.655,
+      "title": "삼성전자, 브로드컴과 290조원 AI 반도체 협력",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260725000019",
+      "reason": "score_observed",
+      "score": 0.642,
+      "title": "삼성전자, 브로드컴과 292조원 규모 반도체 파운드리·메모리 협력",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260725134212",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "靑 김용범 \"삼성전자-브로드컴 2000억 달러 메모리 업무협약\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=686969",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "韓, 글로벌 빅테크와 9500억달러 AI 동맹…5GW AIDC 구축 추진",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260725000031",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "울산 글로벌 산업AX 선도도시 추진…'피지컬AI'와 'AIDC' 양축",
+      "category": "IT/테크"
+    },
+    {
+      "source": "IT조선",
+      "link": "https://it.chosun.com/news/articleView.html?idxno=2023092166562",
+      "reason": "score_observed",
+      "score": 0.611,
+      "title": "앤트로픽, ‘클로드 오퍼스 5’ 공개… 코딩 성능 높이고 가격은 동결",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=686954",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "앤트로픽, 클로드 오퍼스5 출시...성능 높이고 페이블5 가격 절반 수준",
+      "category": "IT/테크"
+    }
+  ]
+}
