@@ -1,0 +1,1055 @@
+{
+  "date": "2026-07-27",
+  "excluded": [
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260726017100002",
+      "reason": "score_observed",
+      "score": 0.741,
+      "title": "임광현 \"강남서 한 채 장특공제 200억 넘기도…역진성 끝판왕\"",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1269956.html",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "국세청장 “강남 1채로 장특공제 200억원 넘어…역진성 끝판왕”",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12107755",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "\"강남서 한 채 장특공제 200억원 넘게 받기도\"",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008675072",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "국세청장 \"강남서 장특공제 200억 넘기도…역진성 끝판왕\"",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260726_0003723586",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "임광현 \"1세대 1주택 장특공제 역진성 끝판왕…서울 90% 차지\"",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026072615042967477",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "임광현 \"강남집 1채 팔고 200억 장특공제…역진성 끝판왕\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260725005700002",
+      "reason": "score_observed",
+      "score": 0.637,
+      "title": "주택시장 진입 '바늘구멍'…2030 세대 보유율 30% 밑으로",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008675163",
+      "reason": "score_observed",
+      "score": 0.63,
+      "title": "주택시장 진입 '바늘구멍'…2030 세대 보유율 30% 밑으로",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260726_0003723712",
+      "reason": "score_observed",
+      "score": 0.691,
+      "title": "\"돈 모아도 집 못 산다\"…2030 주택 보유율 첫 20%대 추락",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026072615243586063",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "멀어지는 '내 집 마련'…2030 주택 보유율 27% '최저'",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072665111",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "하나은행, 인천 소상공인·기업 대상 금융 지원 확대",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260725059100002",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "하나은행, 인천신보와 포용금융 업무협약…55억원 특별출연",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12107748",
+      "reason": "length:153",
+      "title": "[포토] 하나은행, 인천 소상공인과 아름다운 동행",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026072610303756822",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "하나은행, 청라 이전 앞두고 인천 소상공인·기업 금융 지원",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260724140500002",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "한전 발주 파형관 입찰 짬짜미한 조합·업체, 과징금 8억7천만원",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008675240",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "한전 발주 파형관 입찰 짬짜미…조합·업체, 과징금 8억 7천만 원",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260725_0003722942",
+      "reason": "score_observed",
+      "score": 0.756,
+      "title": "공정위, 한전 입찰담합 10곳에 과징금 8억6800만원 부과",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026072410563019950",
+      "reason": "score_observed",
+      "score": 0.655,
+      "title": "중기 지원제도 허점 노렸다…한전 발주 파형관 입찰 짜고 친 3개 조합·7개 사업자 과징금 8억",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072666761",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "청년·신혼부부 '대출총량' 대상서 제외",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260725051900002",
+      "reason": "score_observed",
+      "score": 0.67,
+      "title": "금융위, 청년·서민 실수요자 대출총량 관리대상 제외 검토",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/finance/1269982.html",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "금융당국, 청년·서민 실수요 대출은 ‘총량 관리’에서 제외 검토",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260726021600003",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "건축사 자격시험 개편…2032년부터 필기·실기 병행",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026072415352293193",
+      "reason": "score_observed",
+      "score": 0.643,
+      "title": "건축사 자격제도 2032년 대개편…필기 도입·실무수련 관리 강화",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260726_0003723404",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "건축사 자격시험에 필기 도입·수련 내실화…단계적 개편",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260726035500003",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "8월 제조업 전망 '먹구름'…3개월 만에 기준치 하회",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12107632",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "8월 제조업 전망, 3개월 만에 기준치 하회…수출전망은 ‘맑음’",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260725_0003722927",
+      "reason": "score_observed",
+      "score": 0.617,
+      "title": "제조업 체감경기 다시 꺾였다…8월 전망도 기준치 하회",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260726016300030",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "한국, 홍콩에 신선 가금 제품 수출 재개…검역 협상 완료",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008675159",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "한국, 홍콩에 신선 가금 제품 수출 재개…검역 협상 완료",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026072611014099362",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "홍콩 닭고기 수출길 다시 열려…수출 재개 검역협상 완료",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260725050800002",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "상반기 車보험 적자 1천890억원…6년 만에 적자 전환",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/finance/1269967.html",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "한방에 몰린 ‘나이롱환자’…상반기 자동차보험 1900억 적자",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12107541",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "보험료 인하·정비원가 상승…상반기 車보험 6년만에 ‘적자’",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072666787",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "아동 성매매 혐의 최영중 전 청주시의원 경찰 출석…4시간가량 조사",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260726046651064",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "경찰, '아동 성매매' 최영중 전 청주시의원 15시간 밤샘 조사(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12107848",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "경찰, ‘아동 성매매’ 혐의 최영중 전 청주시의원 2차 소환 조사",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607261925001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "경찰, 최영중 전 청주시의원 소환 조사···‘아동 성매매’ 혐의",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008675548",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "'아동 성매매 혐의' 최영중 전 청주시의원, 경찰 출석해 두번째 조사",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026072619230521964",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "경찰, '아동 성매매 혐의' 최영중 前 국힘 청주시의원 소환 조사",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072665591",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "올 주요 10大 합격자, 검정고시 출신 최다",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260726025500530",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "주요 10개 대학 합격생 2%는 검정고시 출신…10년새 최대",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/schooling/1269978.html",
+      "reason": "score_observed",
+      "score": 0.632,
+      "title": "자퇴 후 수능 올인?…서울 상위 10개 대학 ‘검정고시 신입생’ 10년 새 최다",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12107771",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "주요 10개大 검정고시 출신 10년만에 최다",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026072613461577512",
+      "reason": "score_observed",
+      "score": 0.51,
+      "title": "주요 10개大 합격자 2%는 검정고시 출신…10년 새 최다",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072667147",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "여자친구 부모님 만난 날 산 복권…예비부부, 20억원 당첨",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12107839",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "“결혼 자금 걱정 끝”…여친 부모님 인사 후 산 복권 20억 당첨",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026072618464012139",
+      "reason": "score_observed",
+      "score": 0.754,
+      "title": "\"너무 놀라 아무 말도 못해\" 여친 부모님 뵙고 산 복권 '20억' 잭팟",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260726_0003723556",
+      "reason": "score_observed",
+      "score": 0.741,
+      "title": "여친 부모님 뵙고 나온 길에 산 복권…20억 잭팟 터졌다",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260726054200004",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "국민의힘 선거비용 397억원 반환 걸린 尹 공직선거법 1심 오늘 선고",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1269991.html",
+      "reason": "score_observed",
+      "score": 0.711,
+      "title": "국힘 선거비 397억 반환하게 될까…윤석열 ‘허위사실 공표’ 오늘 1심 선고",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12107572",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "국힘 선거비용 397억 토해낼까…윤 전 대통령 ‘허위발언’ 1심 27일 선고",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607261452001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.691,
+      "title": "국힘 대선 선거비 397억원 정말 반납하나···윤석열 ‘대선 허위 발언’ 오늘 1심 선고",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260726043500530",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "월요일도 대구 등 경상권 '극한 더위'…최고 체감온도 38도 이상",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026072618215216605",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "월요일도 대구 등 TK '극한 더위'…체감온도 38도까지 오른다",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260726_0003723679",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "전국 대부분 폭염특보…남부 체감온도 35도 이상 '찜통더위'",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260726_0003723443",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "대구·경산·청도 '폭염중대경보' 격상…체감 38도 무더위",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026072615520417320",
+      "reason": "score_observed",
+      "score": 0.684,
+      "title": "[날씨]'장마 끝, 전국 펄펄 끓는다'…체감온도 38도 찜통더위",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260726031000053",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "대구경북 대부분 지역 불볕더위 지속 \"야외활동 즉시 중단해야\"",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1269925.html",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "전남광주·대구·경북 고령 첫 폭염중대경보…“야외활동 즉시 중단”",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026072614385238645",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "대구경북 '폭염중대경보'…8월까지 '극한 더위' 지속",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260726_0003723595",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "서울시 \"연일 무더위 지속…낮 시간 야외 활동 자제해야\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260726050900055",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "폭염 속 온열질환자 잇따라…전북서는 100세 노인 사망",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12107865",
+      "reason": "length:279",
+      "title": "폭염 속 완주군 밭에서 100세 노인 숨진 채 발견…체온 42.2도",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008675549",
+      "reason": "length:240",
+      "title": "폭염 속 전북 완주군 밭에서 100세 노인 숨진 채 발견",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260726_0003723650",
+      "reason": "score_observed",
+      "score": 0.67,
+      "title": "39도 찜통더위에 응급실 온열질환자 1300명↑…사망 6명",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260725022300004",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "강북아리수정수센터, 전국 정수장 최초 '위생안전 인증'",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607262112015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "서울 강북아리수정수센터, 전국 최초 정수장 위생 안전 인증 취득",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260725_0003722917",
+      "reason": "score_observed",
+      "score": 0.767,
+      "title": "강북아리수정수센터, 국내 첫 정수장 위생안전 인증",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026072612471136456",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "서울 강북아리수정수센터, 전국 정수장 최초 '위생안전 인증' 취득",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072662807",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "충북 음성 길거리서 외국인 집단 난투극…20대 흉기 피살",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12107619",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "새벽 길거리서 외국인 집단 패싸움…20대 흉기에 찔려 숨져",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607261117001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "충북 음성 길거리서 외국인 10여 명 패싸움···1명 사망, 1명 부상",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026072618054259992",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "충북 음성서 외국인 10여명 집단 패싸움…2명 사상",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072666211",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "성수대교 단차 우려에…서울시, 29일 현장점검",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260725021600004",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "'성수대교 남단 9㎝ 단차' 도로포장 걷고 점검…29일 밤 통제",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607261138001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "성수대교 남단 ‘9㎝ 단차 논란’에 도로포장 뜯는다···서울시, 29일 밤 9시부터 지반 상태 안전 점검",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026072522322155196",
+      "reason": "score_observed",
+      "score": 0.635,
+      "title": "성수대교 단차 불안 없앤다… 서울시, 포장 걷어내고 지반까지 점검",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072667337",
+      "reason": "clickbait",
+      "title": "미국 공습 멈추자 이란도 보복 중단…협상 재개되나",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260726051951079",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "이란군 대변인 \"미국이 공습 멈춰 보복 작전 중단\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1270044.html",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "2주 만에 공격 멈춘 트럼프…이란도 보복 반격 중단",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12107863",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "이란군 “미국, 최근 이틀 간 공습 멈춰…우리도 보복 작전 중단”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008675510",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "이란군 대변인 \"미국이 공습 멈춰 보복 작전 중단\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260726_0003723796",
+      "reason": "score_observed",
+      "score": 0.754,
+      "title": "이란군 \"미군이 이틀 공습 중단해, 우리도 보복 작전 중단\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072667437",
+      "reason": "length:245",
+      "title": "\"호르무즈서 유조선 폭발…지정 항로 이탈해 기뢰 충돌\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260726052800079",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "\"호르무즈서 유조선 폭발…지정 항로 벗어나 기뢰 충돌\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1270046.html",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "“호르무즈 운항 유조선, 기뢰와 충돌해 폭발…이란 승인 항로 벗어나”",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12107870",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "“호르무즈서 유조선 폭발…지정 항로 벗어나 기뢰 충돌”",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607262137001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "length:288",
+      "title": "“호르무즈서 유조선 폭발…지정 항로 벗어나 기뢰 충돌”",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260726_0003723788",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "\"호르무즈서 유조선이 기뢰와 충돌해 폭발…지정 항로 벗어나\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260726001551099",
+      "reason": "score_observed",
+      "score": 0.743,
+      "title": "젤렌스키 \"러, 北병력 3만명 추가 파견 원해…접경지 배치 준비\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1270001.html",
+      "reason": "score_observed",
+      "score": 0.726,
+      "title": "젤렌스키 “러시아, 북한 추가 파병 3만명 원해…6월부터 준비”",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12107715",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "\"러, 北병력 3만명 더 원해\"…젤렌스키, 군사협력 경고",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607262127015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "젤렌스키 “러시아, 북한에 3만명 추가 파병 요청”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674793",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "젤렌스키 \"러, 북한 병력 3만 명 추가 파견 원해…접경지 배치 준비\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260726_0003723302",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "젤렌스키 \"러시아, 북한군 3만명 추가 배치 추진\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260726004553009",
+      "reason": "score_observed",
+      "score": 0.697,
+      "title": "독일 성소수자 행사 차량돌진 17명 사상…21세 용의자 지명수배(종합3보)",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12107523",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "베를린 성소수자 행사에 차량 돌진, 15명 사상…용의자는 도주",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607262130001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.676,
+      "title": "베를린 성소수자 축제 ‘차량 테러’ 30명 사상···당국 “이슬람 극단주의 공격”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008675345",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "독일 성소수자 행사 차량돌진 17명 사상…21세 용의자 지명수배",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260726_0003723322",
+      "reason": "score_observed",
+      "score": 0.683,
+      "title": "獨베를린 성소수자 집회에 승용차 돌진,  1명 죽고 최소 15명 부상",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260726008300009",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "미 국방부 이란전 전사 18→14명 '축소논란'…\"유족 뺨때린 격\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1270026.html",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "미, 이란전쟁 전사자 18명→14명 축소…군 가족·정치권 분노",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607261629001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.722,
+      "title": "미 국방, 이란전 전사자 18명→14명 수정…‘사상자 축소’ 논란",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008675135",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "미 국방부 이란전 전사 18→14명 '축소 논란'…\"유족 뺨때린 격\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260726_0003723505",
+      "reason": "score_observed",
+      "score": 0.754,
+      "title": "美 '이란전 사망자' 18→14명…4명은 별도 '해외작전' 재분류",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260727001551082",
+      "reason": "score_observed",
+      "score": 0.664,
+      "title": "'IS 추종' 베를린 퀴어축제 테러 용의자 사살(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12107917",
+      "reason": "score_observed",
+      "score": 0.66,
+      "title": "‘30명 사상’ 베를린 테러…용의자 하루 만에 경찰 총격 사살",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260727_0003723822",
+      "reason": "score_observed",
+      "score": 0.832,
+      "title": "베를린 차량돌진 테러 용의자, 경찰 작전 중 사살",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260726057000072",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "美 WSJ \"SK하이닉스 ADR 프리미엄, AI 거래 과열 신호\"",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/stock/12107916",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "“이건 비정상”…WSJ, SK하이닉스 ADR 괴리에 ‘AI 과열’ 경고",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260727_0003723811",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "WSJ \"SK하이닉스 ADR 프리미엄은 AI 거래 과열의 또 다른 신호\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072768316",
+      "reason": "score_observed",
+      "score": 0.867,
+      "title": "이란 외무부 \"美와 메시지 교환 지속\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260727002500079",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "이란 외무부 \"美와 메시지 교환·중재국 활동 지속\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260727_0003723825",
+      "reason": "score_observed",
+      "score": 0.867,
+      "title": "이란 외무부 \"중재국 통해 美와 메시지 교환 계속\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260727000300071",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "네타냐후 \"이란이 핵 포기해야 한다고 깨달을 때 전쟁 끝날 것\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008675573",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "네타냐후 \"이란이 핵 포기해야 한다고 깨달을 때 전쟁 끝날 것\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260727_0003723815",
+      "reason": "score_observed",
+      "score": 0.813,
+      "title": "네타냐후 \"이란이 핵프로그램 중단해야 한다고 인식했을 때 전쟁 종식\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260726_0003723304",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "\"네타냐후, 트럼프에 이란 핵개발 재개 정보 전달 예정\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260727000800079",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "이란외무 \"우크라, 이란 상선 공격해 선원 사망…이스라엘 사주\"",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026072616165441390",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "이란전쟁 카스피해까지 번졌다…우크라, 이란 선박 공격",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260727_0003723818",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "이란 외무 \"이스라엘 사주 받은 우크라가 이란 상선 공격…1명 사망\"",
+      "category": "세계"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1988773",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "KAIST-엔비디아, 피지컬 AI 테크놀로지센터 설립",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=687021",
+      "reason": "score_observed",
+      "score": 0.66,
+      "title": "\"인체 동작 모델 개발\"…KAIST·엔비디아, '피지컬 AI' 기술센터 설립",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260726190346",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "KAIST-엔비디아, \"인체동작 파운데이션 모델 개발\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1988781",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "SKT, 스타트업 3곳에 '독파모 API' 지원⋯\"생태계 활성화 기여\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=687030",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "SKT, 스타트업 AX 지원 박차…'A.X K1' API 제공",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1988619",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "KT, 상반기 금융 AX 22건 수주…\"AX 도입, 재무 성과로 이어지는 데 역점\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=686729",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "KT, 금융권 AX 가속...\"AI 도입 성과 수치로 증명하겠다\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1987955",
+      "reason": "score_observed",
+      "score": 0.612,
+      "title": "북미·유럽서 10주년 맞은 '검은사막'…흥행 비결은",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260726141929",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "북미·유럽 10년 동행 기념…펄어비스, 미국서 검은사막 '하이델 연회' 개최",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1988745",
+      "reason": "score_observed",
+      "score": 0.676,
+      "title": "샌프란시스코서 글로벌 AI 투자 이니셔티브…9500억 달러 반도체 협력",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260726000111",
+      "reason": "score_observed",
+      "score": 0.621,
+      "title": "李 '샌프란 AI 선언'… 韓·美, 9500억달러 초대형 AI·반도체 동맹",
+      "category": "IT/테크"
+    }
+  ]
+}
