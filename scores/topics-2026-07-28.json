@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-28",
+  "topics": [
+    {
+      "word": "AI",
+      "score": 40.8,
+      "media_count": 14,
+      "article_count": 134
+    },
+    {
+      "word": "으로",
+      "score": 23.200000000000003,
+      "media_count": 11,
+      "article_count": 61
+    },
+    {
+      "word": "기업",
+      "score": 22.4,
+      "media_count": 11,
+      "article_count": 57
+    }
+  ]
+}

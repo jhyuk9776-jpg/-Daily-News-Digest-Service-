@@ -23,7 +23,7 @@
     "sparse_count": 0,
     "points": 1,
     "blacklisted": false,
-    "last_updated": "2026-07-27",
+    "last_updated": "2026-07-28",
     "history": [
       {
         "date": "2026-07-24",
@@ -44,7 +44,7 @@
         "chars": 153
       }
     ],
-    "selected_count": 22,
+    "selected_count": 25,
     "selected_history": [
       {
         "date": "2026-07-24",
@@ -133,6 +133,18 @@
       {
         "date": "2026-07-27",
         "link": "https://www.mk.co.kr/news/world/12107523"
+      },
+      {
+        "date": "2026-07-28",
+        "link": "https://www.mk.co.kr/news/economy/12108120"
+      },
+      {
+        "date": "2026-07-28",
+        "link": "https://www.mk.co.kr/news/world/12109017"
+      },
+      {
+        "date": "2026-07-28",
+        "link": "https://www.mk.co.kr/news/world/12109028"
       }
     ]
   },
@@ -271,13 +283,17 @@
     "sparse_count": 0,
     "points": 0,
     "blacklisted": false,
-    "last_updated": "2026-07-24",
+    "last_updated": "2026-07-28",
     "history": [],
-    "selected_count": 1,
+    "selected_count": 2,
     "selected_history": [
       {
         "date": "2026-07-24",
         "link": "https://www.yna.co.kr/view/AKR20260723103200008"
+      },
+      {
+        "date": "2026-07-28",
+        "link": "https://www.yna.co.kr/view/AKR20260727116600008"
       }
     ]
   },
@@ -375,13 +391,17 @@
     "sparse_count": 0,
     "points": 0,
     "blacklisted": false,
-    "last_updated": "2026-07-24",
+    "last_updated": "2026-07-28",
     "history": [],
-    "selected_count": 1,
+    "selected_count": 2,
     "selected_history": [
       {
         "date": "2026-07-24",
         "link": "https://www.newsis.com/view/NISX20260723_0003721126"
+      },
+      {
+        "date": "2026-07-28",
+        "link": "https://www.newsis.com/view/NISX20260727_0003725384"
       }
     ]
   },
@@ -389,9 +409,9 @@
     "sparse_count": 0,
     "points": 0,
     "blacklisted": false,
-    "last_updated": "2026-07-25",
+    "last_updated": "2026-07-28",
     "history": [],
-    "selected_count": 2,
+    "selected_count": 4,
     "selected_history": [
       {
         "date": "2026-07-24",
@@ -400,6 +420,14 @@
       {
         "date": "2026-07-25",
         "link": "https://www.newsis.com/view/NISX20260724_0003722772"
+      },
+      {
+        "date": "2026-07-28",
+        "link": "https://www.newsis.com/view/NISX20260727_0003725367"
+      },
+      {
+        "date": "2026-07-28",
+        "link": "https://www.newsis.com/view/NISX20260727_0003725400"
       }
     ]
   },
@@ -543,9 +571,9 @@
     "sparse_count": 0,
     "points": 0,
     "blacklisted": false,
-    "last_updated": "2026-07-26",
+    "last_updated": "2026-07-28",
     "history": [],
-    "selected_count": 3,
+    "selected_count": 4,
     "selected_history": [
       {
         "date": "2026-07-24",
@@ -558,6 +586,10 @@
       {
         "date": "2026-07-26",
         "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=686954"
+      },
+      {
+        "date": "2026-07-28",
+        "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=687217"
       }
     ]
   },
@@ -565,9 +597,9 @@
     "sparse_count": 0,
     "points": 0,
     "blacklisted": false,
-    "last_updated": "2026-07-27",
+    "last_updated": "2026-07-28",
     "history": [],
-    "selected_count": 12,
+    "selected_count": 13,
     "selected_history": [
       {
         "date": "2026-07-24",
@@ -616,6 +648,10 @@
       {
         "date": "2026-07-27",
         "link": "https://www.inews24.com/view/1988745"
+      },
+      {
+        "date": "2026-07-28",
+        "link": "https://www.inews24.com/view/1988907"
       }
     ]
   },
@@ -651,9 +687,9 @@
     "sparse_count": 0,
     "points": 0,
     "blacklisted": false,
-    "last_updated": "2026-07-24",
+    "last_updated": "2026-07-28",
     "history": [],
-    "selected_count": 2,
+    "selected_count": 3,
     "selected_history": [
       {
         "date": "2026-07-24",
@@ -662,6 +698,10 @@
       {
         "date": "2026-07-24",
         "link": "https://www.hankyung.com/article/2026072325831"
+      },
+      {
+        "date": "2026-07-28",
+        "link": "https://www.hankyung.com/article/2026072789231"
       }
     ]
   },
@@ -1103,13 +1143,21 @@
     "sparse_count": 0,
     "points": 0,
     "blacklisted": false,
-    "last_updated": "2026-07-26",
+    "last_updated": "2026-07-28",
     "history": [],
-    "selected_count": 1,
+    "selected_count": 3,
     "selected_history": [
       {
         "date": "2026-07-26",
         "link": "https://www.yna.co.kr/view/AKR20260725050552081"
+      },
+      {
+        "date": "2026-07-28",
+        "link": "https://www.yna.co.kr/view/AKR20260727164700081"
+      },
+      {
+        "date": "2026-07-28",
+        "link": "https://www.yna.co.kr/view/AKR20260727154152081"
       }
     ]
   },
@@ -1241,13 +1289,17 @@
     "sparse_count": 0,
     "points": 0,
     "blacklisted": false,
-    "last_updated": "2026-07-27",
+    "last_updated": "2026-07-28",
     "history": [],
-    "selected_count": 1,
+    "selected_count": 2,
     "selected_history": [
       {
         "date": "2026-07-27",
         "link": "https://www.yna.co.kr/view/AKR20260725051900002"
+      },
+      {
+        "date": "2026-07-28",
+        "link": "https://www.yna.co.kr/view/AKR20260727153200002"
       }
     ]
   },
@@ -1255,13 +1307,17 @@
     "sparse_count": 0,
     "points": 0,
     "blacklisted": false,
-    "last_updated": "2026-07-27",
+    "last_updated": "2026-07-28",
     "history": [],
-    "selected_count": 1,
+    "selected_count": 2,
     "selected_history": [
       {
         "date": "2026-07-27",
         "link": "https://www.yna.co.kr/view/AKR20260726021600003"
+      },
+      {
+        "date": "2026-07-28",
+        "link": "https://www.yna.co.kr/view/AKR20260727148800003"
       }
     ]
   },
@@ -1339,13 +1395,17 @@
     "sparse_count": 0,
     "points": 0,
     "blacklisted": false,
-    "last_updated": "2026-07-27",
+    "last_updated": "2026-07-28",
     "history": [],
-    "selected_count": 1,
+    "selected_count": 2,
     "selected_history": [
       {
         "date": "2026-07-27",
         "link": "https://www.yna.co.kr/view/AKR20260726051951079"
+      },
+      {
+        "date": "2026-07-28",
+        "link": "https://www.yna.co.kr/view/AKR20260727165200079"
       }
     ]
   },
@@ -1372,6 +1432,370 @@
       {
         "date": "2026-07-27",
         "link": "https://www.newsis.com/view/NISX20260727_0003723818"
+      }
+    ]
+  },
+  "한국경제::강경주": {
+    "sparse_count": 1,
+    "points": 0,
+    "blacklisted": false,
+    "last_updated": "2026-07-28",
+    "history": [
+      {
+        "date": "2026-07-28",
+        "link": "https://www.hankyung.com/article/2026072788941",
+        "reason": "sparse",
+        "chars": 115
+      }
+    ]
+  },
+  "아시아경제::최태원": {
+    "sparse_count": 1,
+    "points": 0,
+    "blacklisted": false,
+    "last_updated": "2026-07-28",
+    "history": [
+      {
+        "date": "2026-07-28",
+        "link": "https://view.asiae.co.kr/article/2026072714471988125",
+        "reason": "sparse",
+        "chars": 0
+      }
+    ]
+  },
+  "한국경제::김소연": {
+    "sparse_count": 1,
+    "points": 0,
+    "blacklisted": false,
+    "last_updated": "2026-07-28",
+    "history": [
+      {
+        "date": "2026-07-28",
+        "link": "https://www.hankyung.com/article/2026072788127",
+        "reason": "sparse",
+        "chars": 0
+      }
+    ]
+  },
+  "SBS::sbsnewmedia@sbs.co.kr\n\t\t\t\t\t\t\t(유영규)": {
+    "sparse_count": 1,
+    "points": 0,
+    "blacklisted": false,
+    "last_updated": "2026-07-28",
+    "history": [
+      {
+        "date": "2026-07-28",
+        "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008677523",
+        "reason": "sparse",
+        "chars": 197
+      }
+    ]
+  },
+  "연합뉴스::구정모": {
+    "sparse_count": 0,
+    "points": 0,
+    "blacklisted": false,
+    "last_updated": "2026-07-28",
+    "history": [],
+    "selected_count": 1,
+    "selected_history": [
+      {
+        "date": "2026-07-28",
+        "link": "https://www.yna.co.kr/view/AKR20260727051100030"
+      }
+    ]
+  },
+  "뉴시스::정유선": {
+    "sparse_count": 0,
+    "points": 0,
+    "blacklisted": false,
+    "last_updated": "2026-07-28",
+    "history": [],
+    "selected_count": 1,
+    "selected_history": [
+      {
+        "date": "2026-07-28",
+        "link": "https://www.newsis.com/view/NISX20260727_0003725379"
+      }
+    ]
+  },
+  "연합뉴스::이도흔": {
+    "sparse_count": 0,
+    "points": 0,
+    "blacklisted": false,
+    "last_updated": "2026-07-28",
+    "history": [],
+    "selected_count": 1,
+    "selected_history": [
+      {
+        "date": "2026-07-28",
+        "link": "https://www.yna.co.kr/view/AKR20260727041100002"
+      }
+    ]
+  },
+  "뉴시스::양효원": {
+    "sparse_count": 0,
+    "points": 0,
+    "blacklisted": false,
+    "last_updated": "2026-07-28",
+    "history": [],
+    "selected_count": 1,
+    "selected_history": [
+      {
+        "date": "2026-07-28",
+        "link": "https://www.newsis.com/view/NISX20260727_0003725407"
+      }
+    ]
+  },
+  "뉴시스::강경호": {
+    "sparse_count": 0,
+    "points": 0,
+    "blacklisted": false,
+    "last_updated": "2026-07-28",
+    "history": [],
+    "selected_count": 1,
+    "selected_history": [
+      {
+        "date": "2026-07-28",
+        "link": "https://www.newsis.com/view/NISX20260727_0003725373"
+      }
+    ]
+  },
+  "경향신문::안광호": {
+    "sparse_count": 0,
+    "points": 0,
+    "blacklisted": false,
+    "last_updated": "2026-07-28",
+    "history": [],
+    "selected_count": 1,
+    "selected_history": [
+      {
+        "date": "2026-07-28",
+        "link": "https://www.khan.co.kr/article/202607271417001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news"
+      }
+    ]
+  },
+  "아시아경제::김현정": {
+    "sparse_count": 0,
+    "points": 0,
+    "blacklisted": false,
+    "last_updated": "2026-07-28",
+    "history": [],
+    "selected_count": 1,
+    "selected_history": [
+      {
+        "date": "2026-07-28",
+        "link": "https://view.asiae.co.kr/article/2026072718200979938"
+      }
+    ]
+  },
+  "SBS::minq@sbs.co.kr\n\t\t\t\t\t\t\t(권민규)": {
+    "sparse_count": 0,
+    "points": 0,
+    "blacklisted": false,
+    "last_updated": "2026-07-28",
+    "history": [],
+    "selected_count": 1,
+    "selected_history": [
+      {
+        "date": "2026-07-28",
+        "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008677617"
+      }
+    ]
+  },
+  "연합뉴스::강영훈": {
+    "sparse_count": 0,
+    "points": 0,
+    "blacklisted": false,
+    "last_updated": "2026-07-28",
+    "history": [],
+    "selected_count": 1,
+    "selected_history": [
+      {
+        "date": "2026-07-28",
+        "link": "https://www.yna.co.kr/view/AKR20260728006700061"
+      }
+    ]
+  },
+  "연합뉴스::김소연": {
+    "sparse_count": 0,
+    "points": 0,
+    "blacklisted": false,
+    "last_updated": "2026-07-28",
+    "history": [],
+    "selected_count": 1,
+    "selected_history": [
+      {
+        "date": "2026-07-28",
+        "link": "https://www.yna.co.kr/view/AKR20260727165000063"
+      }
+    ]
+  },
+  "뉴시스::신효령": {
+    "sparse_count": 0,
+    "points": 0,
+    "blacklisted": false,
+    "last_updated": "2026-07-28",
+    "history": [],
+    "selected_count": 1,
+    "selected_history": [
+      {
+        "date": "2026-07-28",
+        "link": "https://www.newsis.com/view/NISX20260727_0003725215"
+      }
+    ]
+  },
+  "연합뉴스::이유미": {
+    "sparse_count": 0,
+    "points": 0,
+    "blacklisted": false,
+    "last_updated": "2026-07-28",
+    "history": [],
+    "selected_count": 1,
+    "selected_history": [
+      {
+        "date": "2026-07-28",
+        "link": "https://www.yna.co.kr/view/AKR20260728001152071"
+      }
+    ]
+  },
+  "뉴시스::권성근": {
+    "sparse_count": 0,
+    "points": 0,
+    "blacklisted": false,
+    "last_updated": "2026-07-28",
+    "history": [],
+    "selected_count": 1,
+    "selected_history": [
+      {
+        "date": "2026-07-28",
+        "link": "https://www.newsis.com/view/NISX20260727_0003725083"
+      }
+    ]
+  },
+  "경향신문::박은경": {
+    "sparse_count": 0,
+    "points": 0,
+    "blacklisted": false,
+    "last_updated": "2026-07-28",
+    "history": [],
+    "selected_count": 1,
+    "selected_history": [
+      {
+        "date": "2026-07-28",
+        "link": "https://www.khan.co.kr/article/202607271956001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world"
+      }
+    ]
+  },
+  "연합뉴스::정성조": {
+    "sparse_count": 0,
+    "points": 0,
+    "blacklisted": false,
+    "last_updated": "2026-07-28",
+    "history": [],
+    "selected_count": 1,
+    "selected_history": [
+      {
+        "date": "2026-07-28",
+        "link": "https://www.yna.co.kr/view/AKR20260727138400083"
+      }
+    ]
+  },
+  "한국경제::유지희": {
+    "sparse_count": 0,
+    "points": 0,
+    "blacklisted": false,
+    "last_updated": "2026-07-28",
+    "history": [],
+    "selected_count": 1,
+    "selected_history": [
+      {
+        "date": "2026-07-28",
+        "link": "https://www.hankyung.com/article/2026072789221"
+      }
+    ]
+  },
+  "전자신문::이원지": {
+    "sparse_count": 0,
+    "points": 0,
+    "blacklisted": false,
+    "last_updated": "2026-07-28",
+    "history": [],
+    "selected_count": 1,
+    "selected_history": [
+      {
+        "date": "2026-07-28",
+        "link": "https://www.etnews.com/20260727000335"
+      }
+    ]
+  },
+  "IT조선::정서영": {
+    "sparse_count": 0,
+    "points": 0,
+    "blacklisted": false,
+    "last_updated": "2026-07-28",
+    "history": [],
+    "selected_count": 1,
+    "selected_history": [
+      {
+        "date": "2026-07-28",
+        "link": "https://it.chosun.com/news/articleView.html?idxno=2023092166603"
+      }
+    ]
+  },
+  "전자신문::권동준": {
+    "sparse_count": 0,
+    "points": 0,
+    "blacklisted": false,
+    "last_updated": "2026-07-28",
+    "history": [],
+    "selected_count": 1,
+    "selected_history": [
+      {
+        "date": "2026-07-28",
+        "link": "https://www.etnews.com/20260727000457"
+      }
+    ]
+  },
+  "전자신문::전소연": {
+    "sparse_count": 0,
+    "points": 0,
+    "blacklisted": false,
+    "last_updated": "2026-07-28",
+    "history": [],
+    "selected_count": 1,
+    "selected_history": [
+      {
+        "date": "2026-07-28",
+        "link": "https://www.etnews.com/20260727000386"
+      }
+    ]
+  },
+  "한국경제::최지희": {
+    "sparse_count": 0,
+    "points": 0,
+    "blacklisted": false,
+    "last_updated": "2026-07-28",
+    "history": [],
+    "selected_count": 1,
+    "selected_history": [
+      {
+        "date": "2026-07-28",
+        "link": "https://www.hankyung.com/article/202607277308i"
+      }
+    ]
+  },
+  "한국경제::김대영": {
+    "sparse_count": 0,
+    "points": 0,
+    "blacklisted": false,
+    "last_updated": "2026-07-28",
+    "history": [],
+    "selected_count": 1,
+    "selected_history": [
+      {
+        "date": "2026-07-28",
+        "link": "https://www.hankyung.com/article/202607277196g"
       }
     ]
   }
