@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-27",
+  "topics": [
+    {
+      "word": "AI",
+      "score": 32.6,
+      "media_count": 13,
+      "article_count": 98
+    },
+    {
+      "word": "이란",
+      "score": 24.4,
+      "media_count": 9,
+      "article_count": 77
+    },
+    {
+      "word": "폭염",
+      "score": 21.200000000000003,
+      "media_count": 9,
+      "article_count": 61
+    }
+  ]
+}

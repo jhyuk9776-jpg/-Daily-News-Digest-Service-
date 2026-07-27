@@ -1,0 +1,629 @@
+{
+  "date": "2026-07-26",
+  "categories": [
+    {
+      "name": "경제",
+      "items": [
+        {
+          "title": "이해진 \"엔비디아·브룩필드, 네이버에 14조6천억원 투자\"",
+          "bullets": [
+            "이해진 네이버 이사회 의장은 엔비디아와 브룩필드로부터 100억달러(약 14조6천300억원) 규모의 투자를 유치했다고 밝혔다.",
+            "이 의장은 현지시간 24일 미국 샌프란시스코에서 열린 AI 관련 행사에서 이번 투자로 네이버의 AI와 데이터센터 사업을 글로벌 시장으로 확장하겠다고 말했다.",
+            "네이버는 현재 엔비디아와 AI 컴퓨팅 인프라부터 AI 모델, 기업용 서비스까지 아우르는 'AI 팩토리' 협력을 추진 중이다."
+          ],
+          "source": "연합뉴스",
+          "link": "https://www.yna.co.kr/view/AKR20260725033600017",
+          "related_links": [
+            {
+              "source": "한국경제",
+              "link": "https://www.hankyung.com/article/2026072554217"
+            },
+            {
+              "source": "SBS",
+              "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674483"
+            },
+            {
+              "source": "SBS",
+              "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674356"
+            }
+          ]
+        },
+        {
+          "title": "“국장 못 믿겠다” 해외로 쏠린 개미…이달 순매수 4배 폭증",
+          "bullets": [
+            "이달 1~23일 국내 투자자의 미국 주식 순매수액은 25억 3026만 달러로 지난달 6억 3296만 달러의 4배다.",
+            "지난 23일 기준 투자자 예탁금은 104조 2975억 원으로 지난달 4일의 역대 최고치 139조 6948억 원에서 감소했다.",
+            "신용거래융자 잔고는 23일 기준 32조 7492억 원으로 전주보다 1.8% 줄었고, 주가 하락에 베팅하는 대차거래 잔고는 같은 기간 150조 4721억 원에서 158조 6047억 원으로 5.1% 늘었다."
+          ],
+          "source": "매일경제",
+          "link": "https://www.mk.co.kr/news/economy/12107229",
+          "related_links": [
+            {
+              "source": "연합뉴스",
+              "link": "https://www.yna.co.kr/view/AKR20260724142900008"
+            },
+            {
+              "source": "SBS",
+              "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674307"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "사회",
+      "items": [
+        {
+          "title": "“퇴근해야 한다” 상관 지시 거부하고 칼퇴근한 군무원… 법원 “감봉 처분 부당”",
+          "bullets": [
+            "서울행정법원이 군무원 A씨의 감봉 징계처분 취소 청구 소송에서 원고 승소 판결했다.",
+            "A씨는 회의 참석 대상자 조사 보고를 하라는 상관의 지시를 \"퇴근 시간이 다 됐다\"며 거부한 이유로 강등 처분을 받았고 이후 감봉으로 낮아졌다.",
+            "재판부는 상관의 지시가 군인복무기본법상 군사상 의무와 무관한 일반 행정 업무에 불과하다고 판단했다."
+          ],
+          "source": "매일경제",
+          "link": "https://www.mk.co.kr/news/society/12107233",
+          "related_links": [
+            {
+              "source": "한국경제",
+              "link": "https://www.hankyung.com/article/2026072555127"
+            },
+            {
+              "source": "연합뉴스",
+              "link": "https://www.yna.co.kr/view/AKR20260724176400004"
+            },
+            {
+              "source": "매일신문",
+              "link": "https://www.imaeil.com/page/view/2026072516492463352"
+            },
+            {
+              "source": "SBS",
+              "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674428"
+            },
+            {
+              "source": "뉴시스",
+              "link": "https://www.newsis.com/view/NISX20260725_0003723149"
+            }
+          ]
+        },
+        {
+          "title": "검찰, ‘서해 공무원 피격’ 문재인 전 대통령 불기소···고발 3년7개월만에 “증거 불충분”",
+          "bullets": [
+            "서울중앙지검이 서해 공무원 피격 사건 은폐·축소 혐의로 고발된 문재인 전 대통령을 증거 불충분 사유로 불기소 처분했다.",
+            "2022년 12월 시민단체 자유대한호국단이 고발한 지 약 3년7개월 만의 결정이다.",
+            "검찰이 기소했던 박지원 전 국가정보원장, 서욱 전 국방부 장관, 노은채 전 국정원 비서실장은 1월 무죄가 확정됐고, 서훈 전 청와대 국가안보실장과 김홍희 전 해양경찰청장의 일부 혐의도 지난달 2심에서 무죄가 확정됐다."
+          ],
+          "source": "경향신문",
+          "link": "https://www.khan.co.kr/article/202607251924001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+          "related_links": [
+            {
+              "source": "한국경제",
+              "link": "https://www.hankyung.com/article/2026072557837"
+            },
+            {
+              "source": "연합뉴스",
+              "link": "https://www.yna.co.kr/view/AKR20260725053000004"
+            },
+            {
+              "source": "매일신문",
+              "link": "https://www.imaeil.com/page/view/2026072519043820845"
+            },
+            {
+              "source": "SBS",
+              "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674695"
+            },
+            {
+              "source": "뉴시스",
+              "link": "https://www.newsis.com/view/NISX20260725_0003723227"
+            }
+          ]
+        },
+        {
+          "title": "‘10대 여고생’에 흉기 휘두른 10대男…경찰, 구속영장 신청",
+          "bullets": [
+            "10대 남성 A군이 23일 오후 1시 26분쯤 서울 강서구 화곡동에서 10대 여고생 B양에게 흉기를 휘두른 혐의를 받는다.",
+            "경찰은 24일 A군을 살인미수 혐의로 구속영장을 신청했다.",
+            "B양은 복부에 자상을 입었으나 생명에 지장은 없는 것으로 파악됐다."
+          ],
+          "source": "매일경제",
+          "link": "https://www.mk.co.kr/news/society/12107210",
+          "related_links": [
+            {
+              "source": "한국경제",
+              "link": "https://www.hankyung.com/article/2026072557997"
+            },
+            {
+              "source": "연합뉴스",
+              "link": "https://www.yna.co.kr/view/AKR20260725027151004"
+            },
+            {
+              "source": "경향신문",
+              "link": "https://www.khan.co.kr/article/202607252139001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news"
+            },
+            {
+              "source": "SBS",
+              "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674749"
+            },
+            {
+              "source": "뉴시스",
+              "link": "https://www.newsis.com/view/NISX20260725_0003723242"
+            }
+          ]
+        },
+        {
+          "title": "고양 마두동 아파트서 화재…주민 10명 부상",
+          "bullets": [
+            "경기도 고양시 일산동구 마두동 아파트 4층에서 25일 오후 2시 35분께 화재가 발생했다.",
+            "50대 남성이 목뒤 화상을 입었고, 같은 아파트 주민 9명이 연기를 마셔 치료받아 총 10명이 부상당했다.",
+            "소방당국이 소방차 15대와 인원 44명을 투입해 약 1시간 40분 만에 진화를 완료했다."
+          ],
+          "source": "매일경제",
+          "link": "https://www.mk.co.kr/news/society/12107364",
+          "related_links": [
+            {
+              "source": "한국경제",
+              "link": "https://www.hankyung.com/article/2026072556547"
+            },
+            {
+              "source": "연합뉴스",
+              "link": "https://www.yna.co.kr/view/AKR20260725042452060"
+            },
+            {
+              "source": "SBS",
+              "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674769"
+            },
+            {
+              "source": "SBS",
+              "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674585"
+            },
+            {
+              "source": "뉴시스",
+              "link": "https://www.newsis.com/view/NISX20260725_0003723164"
+            }
+          ]
+        },
+        {
+          "title": "'잠실 개표소 시위서 경찰 조롱' 20대 남성 구속 송치",
+          "bullets": [
+            "서울 송파구 올림픽공원 핸드볼경기장 개표소에서 경찰관에게 욕설하며 공무집행을 방해한 20대 남성 A씨가 특수공무집행방해 혐의로 구속 송치됐다.",
+            "A씨 외 피의자 2명은 지난달 6일 개표소 시위 현장에서 경찰관에게 \"테무 경찰\"이라고 욕설한 혐의를 받으며, A씨만 구속영장이 발부됐다.",
+            "개표소 시위 현장에서 체육단체 관계자 출입을 막은 30대 여성 B씨와 여자 핸드볼 주니어 대표팀을 불법 수색한 30대 남성 C씨는 다음주 중 검찰에 송치될 방침이다."
+          ],
+          "source": "뉴시스",
+          "link": "https://www.newsis.com/view/NISX20260725_0003723231",
+          "related_links": [
+            {
+              "source": "연합뉴스",
+              "link": "https://www.yna.co.kr/view/AKR20260725053200004"
+            },
+            {
+              "source": "경향신문",
+              "link": "https://www.khan.co.kr/article/202607251938001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news"
+            },
+            {
+              "source": "SBS",
+              "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674705"
+            }
+          ]
+        },
+        {
+          "title": "'명태균 여론조사 무상 수수' 尹 항소심 내달 21일 첫 공판",
+          "bullets": [
+            "윤석열 전 대통령의 명태균으로부터 무상 여론조사 수수 혐의 항소심이 내달 21일 오후 2시 서울고법에서 시작된다.",
+            "1심에서 윤 전 대통령은 징역 2년, 명태균은 징역 1년 6개월을 선고받았다.",
+            "윤 전 대통령은 2021년 6월부터 2022년 3월까지 명씨로부터 총 2억7000만원 상당의 여론조사를 58회 무상으로 받은 혐의로 재판에 넘겨졌다."
+          ],
+          "source": "뉴시스",
+          "link": "https://www.newsis.com/view/NISX20260725_0003723183",
+          "related_links": [
+            {
+              "source": "연합뉴스",
+              "link": "https://www.yna.co.kr/view/AKR20260725043200004"
+            },
+            {
+              "source": "매일경제",
+              "link": "https://www.mk.co.kr/news/society/12107317"
+            },
+            {
+              "source": "SBS",
+              "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674696"
+            }
+          ]
+        },
+        {
+          "title": "“‘나는 신이다’는 거짓” JMS 정명석 두둔한 유튜버…법원 “6000만원 배상”",
+          "bullets": [
+            "수원지법 안산지원이 JMS 신도 출신 유튜버 A씨에게 메이플씨와 김도형 교수에 대한 명예훼손 및 초상권 침해로 6000만 원의 손해배상을 판결했다.",
+            "A씨는 2023년 4월부터 약 5개월간 구독자 20만여 명의 유튜브 채널에 79개 영상을 올렸으며, 이 영상들에는 허위 사실이 담기거나 원고들의 얼굴이 노출되었다.",
+            "A씨는 영상에서 넷플릭스 다큐멘터리 '나는 신이다'가 제보자들의 거짓말을 바탕으로 제작됐다는 주장과 김도형 교수를 사기꾼이라는 조롱을 포함한 허위 사실을 유포했다."
+          ],
+          "source": "매일경제",
+          "link": "https://www.mk.co.kr/news/society/12107253",
+          "related_links": [
+            {
+              "source": "매일신문",
+              "link": "https://www.imaeil.com/page/view/2026072516295518985"
+            },
+            {
+              "source": "뉴시스",
+              "link": "https://www.newsis.com/view/NISX20260725_0003723085"
+            }
+          ]
+        },
+        {
+          "title": "1234회 로또 1등 ‘1, 15, 19, 31, 35, 43’···1등 18명 당첨금 각 15억9513만원",
+          "bullets": [
+            "동행복권이 제1234회 로또복권 추첨 결과 1등 당첨번호를 '1, 15, 19, 31, 35, 43'으로 밝혔다.",
+            "1등 당첨자는 18명이며 각각 15억9513만원씩 받는다.",
+            "2등 보너스 번호는 '27'이고 71명이 각 6740만원씩 받는다."
+          ],
+          "source": "경향신문",
+          "link": "https://www.khan.co.kr/article/202607252053001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+          "related_links": [
+            {
+              "source": "매일경제",
+              "link": "https://www.mk.co.kr/news/society/12107398"
+            },
+            {
+              "source": "뉴시스",
+              "link": "https://www.newsis.com/view/NISX20260725_0003723263"
+            }
+          ]
+        },
+        {
+          "title": "\"손 뿌리쳐?\" 8살 목 조르고 때린 50대 집유",
+          "bullets": [
+            "춘천지법이 8살 아이의 목을 조르고 배를 때려 실신하게 한 50대 A씨에게 징역 1년에 집행유예 2년을 선고했다.",
+            "A씨는 지난해 7월 편의점 앞에서 아이가 자신의 손길을 뿌리쳤다는 이유로 폭력을 휘둘렀으며, 이를 말리던 40대 남성도 폭행했다.",
+            "A씨는 경찰 순찰차 이동 중 20대 순경에게 욕설을 하며 머리로 얼굴을 들이받아 전치 2주의 상해를 입혔다."
+          ],
+          "source": "뉴시스",
+          "link": "https://www.newsis.com/view/NISX20260725_0003723132",
+          "related_links": [
+            {
+              "source": "매일경제",
+              "link": "https://www.mk.co.kr/news/society/12107204"
+            },
+            {
+              "source": "매일신문",
+              "link": "https://www.imaeil.com/page/view/2026072511043558720"
+            }
+          ]
+        },
+        {
+          "title": "울산 방어진 앞바다서 7.3ｍ 밍크고래 혼획…7천100만원 위판",
+          "bullets": [
+            "울산 방어진항 남동쪽 약 37㎞ 해상에서 24일 오후 7시 30분께 어선이 길이 7.3ｍ, 무게 약 3.2t의 수컷 밍크고래를 혼획했다.",
+            "울산해양경찰서는 금속탐지 검사 결과 불법 포획 정황이 확인되지 않았다.",
+            "혼획된 밍크고래는 방어진수협 위판장에서 7천100만원에 판매됐다."
+          ],
+          "source": "연합뉴스",
+          "link": "https://www.yna.co.kr/view/AKR20260725031000052",
+          "related_links": [
+            {
+              "source": "한국경제",
+              "link": "https://www.hankyung.com/article/2026072557457"
+            },
+            {
+              "source": "매일경제",
+              "link": "https://www.mk.co.kr/news/society/12107241"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "세계",
+      "items": [
+        {
+          "title": "이란군 사령관 \"순교한 이란인 1명당 미군 1명씩 지옥행\"(종합)",
+          "bullets": [
+            "이란 합동작전사령부 하탐 알안비야의 알리 압돌라히 사령관이 24일 \"순교한 이란인 1명당 미군 1명을 지옥으로 보낼 것\"이라고 말했다.",
+            "이란 보건당국은 6월 27일부터 24일까지 미국 공습으로 59명이 사망하고 666명이 다쳤다고 밝혔다.",
+            "이슬람혁명수비대는 쿠웨이트 알리 알살렘 공군기지, 바레인 셰이크 이사 공군기지, 요르단 알 아즈라크·무와파크 살티 공군기지를 드론으로 공격했다고 발표했다."
+          ],
+          "source": "뉴시스",
+          "link": "https://www.newsis.com/view/NISX20260725_0003722882",
+          "related_links": [
+            {
+              "source": "연합뉴스",
+              "link": "https://www.yna.co.kr/view/AKR20260725004300079"
+            },
+            {
+              "source": "매일경제",
+              "link": "https://www.mk.co.kr/news/world/12107181"
+            },
+            {
+              "source": "SBS",
+              "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674655"
+            }
+          ]
+        },
+        {
+          "title": "트럼프 \"이란과 진지하게 대화중…즉시 행동할 준비도 돼있어\"(종합)",
+          "bullets": [
+            "트럼프 대통령은 24일 이란과 진지하게 대화하고 있으나 합의가 안 될 경우 즉시 군사적 행동에 나서겠다고 밝혔다.",
+            "트럼프 대통령은 전날 악시오스와의 인터뷰에서 이란을 상대로 \"대규모 공격을 검토하고 있다\"며 \"이전 어느 때보다 더 큰 공격\"이라고 말했다.",
+            "트럼프 대통령은 시진핑 중국 국가주석이 5월 베이징 회담에서 이란에 무기를 제공하지 않겠다고 했고, 푸틴 러시아 대통령도 이란에 무기를 판매하지 않겠다고 했다고 밝혔다."
+          ],
+          "source": "연합뉴스",
+          "link": "https://www.yna.co.kr/view/AKR20260725002551071",
+          "related_links": [
+            {
+              "source": "한겨레",
+              "link": "https://www.hani.co.kr/arti/international/america/1269912.html"
+            },
+            {
+              "source": "경향신문",
+              "link": "https://www.khan.co.kr/article/202607250750001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world"
+            },
+            {
+              "source": "SBS",
+              "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674172"
+            }
+          ]
+        },
+        {
+          "title": "젤렌스키 \"러, 北병력 3만명 추가 파견 원해…접경지 배치 준비\"(종합)",
+          "bullets": [
+            "젤렌스키 우크라이나 대통령은 25일 러시아가 북한으로부터 병력 3만명을 추가로 파견받기를 원하고 있다고 밝혔다.",
+            "러시아는 6월부터 우크라이나와 국경을 접한 보로네시 지역에 북한 추가 파병 병력을 수용하기 위한 준비를 진행하고 있다.",
+            "젤렌스키 대통령은 북한이 추가 탄도미사일 발사대를 러시아에 배치하려고 준비하고 있다고 밝혔다."
+          ],
+          "source": "연합뉴스",
+          "link": "https://www.yna.co.kr/view/AKR20260726001551099",
+          "related_links": [
+            {
+              "source": "SBS",
+              "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674793"
+            },
+            {
+              "source": "뉴시스",
+              "link": "https://www.newsis.com/view/NISX20260726_0003723302"
+            }
+          ]
+        },
+        {
+          "title": "후티, 사우디 아람코 석유시설 공격…예멘 정부군도 후티 거점 공습",
+          "bullets": [
+            "후티 반군이 25일 성명을 통해 지잔과 얀부의 사우디 아람코 석유시설을 탄도미사일과 드론으로 공격했다고 주장했다.",
+            "후티 반군이 사우디의 호데이다 항구, 카마란섬 공습에 대응한다며 \"예멘에 대한 봉쇄와 주권 침해는 결코 용납할 수 없다\"고 주장했다.",
+            "예멘 정부군이 마리브주와 알자우프주에 집결한 후티 반군 증원 병력을 공습했으며, 미사일 발사 전문가를 포함한 후티 반군 여명이 사망했다고 예멘TV가 보도했다."
+          ],
+          "source": "뉴시스",
+          "link": "https://www.newsis.com/view/NISX20260725_0003723266",
+          "related_links": [
+            {
+              "source": "연합뉴스",
+              "link": "https://www.yna.co.kr/view/AKR20260726000300099"
+            },
+            {
+              "source": "SBS",
+              "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674786"
+            }
+          ]
+        },
+        {
+          "title": "서유럽 최악 산불에 26만명 대피…투르드프랑스도 타격(종합2보)",
+          "bullets": [
+            "프랑스와 스페인의 산불로 25일 현재까지 26만명 이상이 대피했다.",
+            "프랑스 지롱드 데파르트망에서 22일부터 시작된 산불로 4만㏊ 이상이 불에 탔으며, 올해 1월부터 프랑스 전역에서 약 9만8천㏊가 불에 타 사상 최대 규모를 기록했다.",
+            "프랑스에서만 19만7천명이 대피했고, 스페인 마드리드 인근에서는 7만명이 대피했으며 스페인은 국가 비상사태를 선포했다."
+          ],
+          "source": "연합뉴스",
+          "link": "https://www.yna.co.kr/view/AKR20260725050552081",
+          "related_links": [
+            {
+              "source": "매일경제",
+              "link": "https://www.mk.co.kr/news/world/12107180"
+            },
+            {
+              "source": "SBS",
+              "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674764"
+            }
+          ]
+        },
+        {
+          "title": "콩고 에볼라 사망자 3개월 만에 1000명…“역대 가장 빠른 확산”",
+          "bullets": [
+            "콩고민주공화국에서 에볼라바이러스 분디부교종으로 인한 사망자가 유행 발생 약 3개월 만에 1000명을 넘어섰다.",
+            "아프리카 질병통제예방센터 사무총장은 사망자가 1031명으로 확인됐으며 \"백신도, 의약품도, 자금도 없다\"고 밝혔다.",
+            "콩고 보건부는 20일 기준 누적 감염자 2473건, 사망자 999명, 격리·입원 중인 자 최소 737명이라고 밝혔다."
+          ],
+          "source": "한겨레",
+          "link": "https://www.hani.co.kr/arti/international/arabafrica/1269626.html",
+          "related_links": [
+            {
+              "source": "연합뉴스",
+              "link": "https://www.yna.co.kr/view/AKR20260725056300099"
+            },
+            {
+              "source": "SBS",
+              "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674779"
+            }
+          ]
+        },
+        {
+          "title": "시리아 고속도로서 버스 2대 정면충돌…35명 사망·30명 부상",
+          "bullets": [
+            "시리아 다마스쿠스와 데이르에조르주를 연결하는 고속도로에서 민간 버스와 내무부 소속 버스가 정면충돌해 최소 35명이 사망했다.",
+            "약 30명이 부상을 입어 병원으로 이송됐다.",
+            "구조 작업을 위해 시리아 군 헬기가 투입됐다."
+          ],
+          "source": "뉴시스",
+          "link": "https://www.newsis.com/view/NISX20260725_0003723288",
+          "related_links": [
+            {
+              "source": "연합뉴스",
+              "link": "https://www.yna.co.kr/view/AKR20260725056800099"
+            },
+            {
+              "source": "SBS",
+              "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674768"
+            },
+            {
+              "source": "뉴시스",
+              "link": "https://www.newsis.com/view/NISX20260725_0003723202"
+            }
+          ]
+        },
+        {
+          "title": "미·영, 호르무즈 민간선박 보호 국제회의 내주 개최 추진",
+          "bullets": [
+            "미국과 영국이 호르무즈 해협의 상업 운항 안전을 위한 다국적 연합체 창설 회의를 다음 주 런던에서 개최할 계획이다.",
+            "회의에는 피트 헤그세스 미국 국방장관과 댄 케인 합참의장을 비롯한 서방 및 중동 국가들의 국방장관과 군 수뇌부가 참석할 가능성이 있다.",
+            "미국은 동맹국들이 기뢰 제거함, 군함, 드론 등의 자산을 호르무즈 해협에 파견하기를 바라고 있다."
+          ],
+          "source": "연합뉴스",
+          "link": "https://www.yna.co.kr/view/AKR20260725040400009",
+          "related_links": [
+            {
+              "source": "SBS",
+              "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674562"
+            },
+            {
+              "source": "뉴시스",
+              "link": "https://www.newsis.com/view/NISX20260725_0003723182"
+            }
+          ]
+        },
+        {
+          "title": "사우디, 후티반군 점령한 호데이다 공습…\"비례적 군사 대응\"",
+          "bullets": [
+            "사우디아라비아가 24일 예멘 호데이다를 향해 공습을 단행했다.",
+            "사우디가 주도하는 아랍 연합군은 후티 반군과 연계된 군사 목표물들을 겨냥해 '비례적 군사 대응 작전'을 수행했다고 밝혔다.",
+            "후티 반군 매체 알마시라 TV는 사우디의 공격으로 호데이다주에서 2명이 부상했다고 보도했다."
+          ],
+          "source": "연합뉴스",
+          "link": "https://www.yna.co.kr/view/AKR20260725012700009",
+          "related_links": [
+            {
+              "source": "SBS",
+              "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674249"
+            },
+            {
+              "source": "뉴시스",
+              "link": "https://www.newsis.com/view/NISX20260725_0003723052"
+            }
+          ]
+        },
+        {
+          "title": "美 \"오만만서 봉쇄선 뚫으려던 이란 유조선 무력화\"",
+          "bullets": [
+            "미군은 24일 오만만에서 봉쇄선을 뚫으려던 이란 유조선 M/T 라빈호의 엔진룸에 사격해 무력화했다.",
+            "라빈호는 최소 4차례 봉쇄망을 통과하려 시도했으며 선원들에게 경고했으나 따르지 않았다.",
+            "미군은 이달 15일 해상 봉쇄를 재개한 이후 이란 선박을 차단한 것이 벨마호에 이어 두 번째라고 밝혔다."
+          ],
+          "source": "연합뉴스",
+          "link": "https://www.yna.co.kr/view/AKR20260725020400009",
+          "related_links": [
+            {
+              "source": "경향신문",
+              "link": "https://www.khan.co.kr/article/202607250956001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world"
+            },
+            {
+              "source": "SBS",
+              "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008674375"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "IT/테크",
+      "items": [
+        {
+          "title": "삼성SDS, 오픈AI 이어 앤트로픽 맞손…\"AI 풀스택 사업 강화\"",
+          "bullets": [
+            "삼성SDS가 24일 샌프란시스코 AI 서밋에서 앤트로픽과 엔터프라이즈 AI 시장 확대를 위한 전략적 파트너십을 맺었다.",
+            "삼성SDS는 현재 20개 삼성 관계사 임직원 약 7만명에게 클로드 엔터프라이즈를 제공하고 있다.",
+            "삼성SDS는 지난해 12월 국내 기업 중 처음으로 오픈AI 챗GPT 엔터프라이즈 리셀러·서비스 파트너 계약을 맺었고, 올해 4월 구글클라우드와 AI·클라우드·보안 전 영역의 전략적 파트너십을 맺었다."
+          ],
+          "source": "ZDNet Korea",
+          "link": "https://zdnet.co.kr/view/?no=20260725143028",
+          "related_links": [
+            {
+              "source": "디지털투데이",
+              "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=686970"
+            },
+            {
+              "source": "전자신문",
+              "link": "https://www.etnews.com/20260725000018"
+            }
+          ]
+        },
+        {
+          "title": "엔비디아, 네이버에 10억달러 투자...AI데이터센터 구축 지원",
+          "bullets": [
+            "엔비디아가 네이버에 10억달러를 투자해 AI 데이터센터 자금을 지원한다.",
+            "이번 투자로 네이버는 데이터센터 규모를 기존보다 3배 넘게 키울 수 있게 됐다.",
+            "엔비디아는 SK그룹과 함께 2기가와트 넘는 AI 데이터센터를 구축하며, SK텔레콤이 짓는 첫 'AI 팩토리'는 내년 오픈 예정이다."
+          ],
+          "source": "디지털투데이",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=686967",
+          "related_links": [
+            {
+              "source": "아이뉴스24",
+              "link": "https://www.inews24.com/view/1988738"
+            },
+            {
+              "source": "ZDNet Korea",
+              "link": "https://zdnet.co.kr/view/?no=20260725142431"
+            }
+          ]
+        },
+        {
+          "title": "靑 김용범 \"삼성전자-브로드컴 2000억 달러 메모리 업무협약\"",
+          "bullets": [
+            "김용범 청와대 정책실장이 삼성전자와 브로드컴이 향후 5년간 2000억 달러 규모의 첨단 메모리 반도체 공급과 AI 칩 생산 파운드리 협력 업무협약을 체결했다고 24일 밝혔다.",
+            "이재명 대통령이 샌프란시스코에서 개최된 AI 서밋에서 '샌프란시스코 AI 선언'을 발표했다.",
+            "SK가 엔비디아 등 글로벌 빅테크 기업들과 향후 5년간 7500억 달러 규모 메모리 반도체 장기 공급 협력을 체결했다."
+          ],
+          "source": "ZDNet Korea",
+          "link": "https://zdnet.co.kr/view/?no=20260725134212",
+          "related_links": [
+            {
+              "source": "아이뉴스24",
+              "link": "https://www.inews24.com/view/1988723"
+            },
+            {
+              "source": "전자신문",
+              "link": "https://www.etnews.com/20260725000019"
+            }
+          ]
+        },
+        {
+          "title": "울산 글로벌 산업AX 선도도시 추진…'피지컬AI'와 'AIDC' 양축",
+          "bullets": [
+            "울산시가 피지컬AI와 AI데이터센터(AIDC)를 양축으로 글로벌 산업AX 선도도시 추진을 목표로 24일 김상욱 시장 주재 '정부 3대 메가 프로젝트 대응 방안 보고회'를 열었다.",
+            "울산은 2023년 국내 제조업 생산액 14%, 2025년 수출액 12%를 차지하며 제조산업 기반을 보유하고 있다.",
+            "울산의 2027년 전력자립률은 신규 원전을 고려할 경우 238%에 달할 전망이다."
+          ],
+          "source": "전자신문",
+          "link": "https://www.etnews.com/20260725000031",
+          "related_links": [
+            {
+              "source": "디지털투데이",
+              "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=686969"
+            }
+          ]
+        },
+        {
+          "title": "앤트로픽, 클로드 오퍼스5 출시...성능 높이고 페이블5 가격 절반 수준",
+          "bullets": [
+            "앤트로픽이 새 인공지능 모델 '클로드 오퍼스 5'를 공개했다.",
+            "클로드 오퍼스 5는 클로드 페이블 5보다 코딩과 지식 업무 평가에서 더 높은 성능을 제공하면서 가격은 절반 수준이다.",
+            "클로드 오퍼스 5의 이용 요금은 입력 토큰 100만개당 5달러, 출력 토큰 100만개당 25달러다."
+          ],
+          "source": "디지털투데이",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=686954",
+          "related_links": [
+            {
+              "source": "IT조선",
+              "link": "https://it.chosun.com/news/articleView.html?idxno=2023092166562"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
