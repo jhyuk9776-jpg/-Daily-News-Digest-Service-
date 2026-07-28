@@ -1,0 +1,845 @@
+{
+  "date": "2026-07-29",
+  "excluded": [
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260728121051008",
+      "reason": "score_observed",
+      "score": 0.652,
+      "title": "증시 폭락 '검은 화요일'…코스피 10.8%·코스닥 7.7%↓(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/finance/1270345.html",
+      "reason": "score_observed",
+      "score": 0.642,
+      "title": "검은 화요일 10.8% 폭락…코스피 6000 무너졌다 ‘턱걸이’ 회복",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026072817141206419",
+      "reason": "score_observed",
+      "score": 0.621,
+      "title": "\"검은 화요일\" 코스피 10.84%↓…사이드카·서킷브레이커 잇달아",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026072811011389718",
+      "reason": "score_observed",
+      "score": 0.67,
+      "title": "'검은 화요일' 현실화…코스피·코스닥, 美·中발 반도체 악재에 동반 급락",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260728_0003726851",
+      "reason": "score_observed",
+      "score": 0.632,
+      "title": "아시아 증시 '검은 화요일'…코스피 10.84% 폭락, 日닛케이도 급락",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072813081",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "[단독] 대미투자 1호 프로젝트, 텍사스 가스발전소 낙점",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260728156400003",
+      "reason": "score_observed",
+      "score": 0.741,
+      "title": "정부, 대미투자 1호로 가스복합화력발전소 건설사업 낙점",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12109647",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "대미투자 1호 '美 텍사스 가스발전소' 부상",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260728_0003726751",
+      "reason": "score_observed",
+      "score": 0.704,
+      "title": "대미투자 1호 텍사스 가스복합발전 압축…198억弗 투자",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202607281183i",
+      "reason": "length:292",
+      "title": "[포토] 코스피 장중 6000선 붕괴",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260728118100008",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "코스피, 치열한 '6천피' 사수전…장중 한때 6,000선 아래로",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026072814395004175",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "코스피 10.8%·코스닥 7.7% '대폭락'…장중 6천피 붕괴[종합]",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072809897",
+      "reason": "score_observed",
+      "score": 0.767,
+      "title": "특검, '내란 가담' 김현태 前707단장에 징역 18년 구형",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260728125451004",
+      "reason": "score_observed",
+      "score": 0.812,
+      "title": "내란특검, 김현태 前707단장에 징역 18년 구형…내달 27일 선고(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1270344.html",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "‘내란 가담’ 김현태에 징역 18년 구형…“일말의 자성 없이 민주주의 조롱”",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12109722",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "'내란 가담' 특전사 대령 징역18년 구형",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026072818054629116",
+      "reason": "score_observed",
+      "score": 0.787,
+      "title": "\"내란 행동대장\"…특검, 김현태 前707단장에 징역 18년 구형",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607282123025/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.778,
+      "title": "특검, ‘내란 가담’ 김현태에 징역 18년 구형",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260728_0003727104",
+      "reason": "score_observed",
+      "score": 0.754,
+      "title": "특검, '계엄 가담' 김현태 전 707단장 징역 18년 구형…내달 27일 선고(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072810387",
+      "reason": "length:0",
+      "title": "[속보] 종합특검, '관저 이전 의혹' 윤한홍 의원 내달 1일 피의자 조사",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260728145200004",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "종합특검, '관저이전 의혹' 윤한홍 의원 내달 1일 피의자 조사",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1270381.html",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "종합특검, 윤한홍 다음달 1일 소환조사…‘윤 관저 공사’ 부당 선정 의혹",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12109524",
+      "reason": "length:262",
+      "title": "[속보] 종합특검, ‘관저 이전 의혹’ 윤한홍 의원 내달 1일 피의자 조사",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607281645001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "[속보]종합특검, ‘관저 이전 의혹’ 국힘 윤한홍 8월1일 소환 조사",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260723_0003720354",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "[단독]종합특검, 윤한홍 8월 1일 소환…'21그램 관저 공사 특혜'",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072814257",
+      "reason": "length:0",
+      "title": "[속보] 검찰 '300억대 사기 혐의' 차가원 구속영장 청구",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260728155951004",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "경찰 신청 3번 만에…檢, 연예기획사 대표 차가원 구속영장 청구(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12109668",
+      "reason": "score_observed",
+      "score": 0.85,
+      "title": "‘300억대 사기 의혹’ 원헌드레드 차가원 대표 구속영장 청구",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026072818300437857",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "검찰, '300억원대 사기 혐의' 차가원 연예기획사 대표 구속영장 청구",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026072814002231391",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "경찰, 아동 성매매 혐의 최영중 전 청주시의원 구속영장",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607282045001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.778,
+      "title": "검찰, 연예기획사 대표 차가원 구속영장 청구…300억대 사기 등 혐의",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072815617",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "마약 '야당'에 수사정보 넘긴 경찰…합수본, 서울청 압수수색",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260728167600061",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "마약 '야당'에 수사정보 유출한 경찰…합수본, 서울청 압수수색",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1270382.html",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "현직 경찰 마약 수사정보 거래 의혹…검경 합수본, 서울경찰청 압수수색",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12109865",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "‘마약 정보원’에 수사기밀 넘긴 경찰…합수본, 서울청 압수수색",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260728_0003727009",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "마약합수본, 서울청 압수수색…현직 경찰 수사정보 유출 의혹",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072811597",
+      "reason": "length:0",
+      "title": "[속보] 잠실개표소 시위 현장서 기자 폭행 2명 구속영장 기각",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260728107951004",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "개표소 시위서 기자 폭행한 30대·20대 구속영장 기각(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1270355.html",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "‘기자 폭행’ 올림픽공원 시위 참가자 2명 구속영장 기각",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12109581",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "‘기자 폭행’ 잠실 개표소 봉쇄 시위 참가자 2명, 영장 기각",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607281713001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "[속보]JTBC 기자 폭행 ‘잠실 시위’ 참가자 2명 구속영장 기각",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072813907",
+      "reason": "length:0",
+      "title": "[속보] 평택 K-55 미군기지 내 백린 누출…대피 명령",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260728155252061",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "평택 미군기지서 '백린 누출' 신고…한때 주민 대피령 '해프닝'(종합2보)",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12109676",
+      "reason": "length:263",
+      "title": "[속보] 평택 K-55 미군기지서 백린 누출 신고…시, 재난문자 발송",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026072818072138555",
+      "reason": "score_observed",
+      "score": 0.624,
+      "title": "평택 K-55 미군기지서 백린 누출…한때 주민 대피명령까지",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260728118751004",
+      "reason": "score_observed",
+      "score": 0.787,
+      "title": "'경찰관 가족 사건' 전수조사 117건 확인…감찰은 1건(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1270353.html",
+      "reason": "score_observed",
+      "score": 0.785,
+      "title": "‘경찰 가족’ 사건 117개…‘해킹 피싱 피해’ 직접 수사하기도",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026072815185046813",
+      "reason": "score_observed",
+      "score": 0.813,
+      "title": "경찰관 가족사건, 전수조사서 117건 확인…44건 이관",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607281632001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.813,
+      "title": "‘장윤기 사건’ 계기로 경찰관 가족사건 전수조사…117건 확인, 44건 이관",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072815667",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "'6.3 지선' 투표통계 조작 지역은 김포·의왕·진천…\"과다 입력분 분산 조정\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260728168700004",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "'6.3 지선' 김포·의왕·진천서 투표통계 조작…과다 입력분 분산 조정",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/politics/12109871",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "김포·의왕·진천서 투표자 수 오입력…선관위 “분산 수정”",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260728_0003727139",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "김포·의왕·진천서 6·3 지방선거 투표율 조작…과다 입력 조정",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072816197",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "무주 시장 상인에 흉기 휘두른 40대…\"다시 교도소 가려고\"",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026072819225378836",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "\"교도소 다시 가려고…\" 무주 전통시장서 상인 흉기 찌른 40대 男, 구속",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260728_0003727058",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "전 여친 애인에 흉기 휘두른 70대 남성 구속…\"증거인멸, 도주 우려\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260728156551054",
+      "reason": "score_observed",
+      "score": 0.818,
+      "title": "검찰 \"장윤기 수사 경찰, 강간살인죄 보완수사 요청 없었다\"(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026072818085632959",
+      "reason": "score_observed",
+      "score": 0.835,
+      "title": "檢 \"장윤기 담당 경찰, 강간살인 보완수사 요청 없었다\"…검경 진실공방",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260728_0003727064",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "檢 \"장윤기 수사 경찰, 강간살인 보완수사 요청 없었다\"",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072815927",
+      "reason": "length:0",
+      "title": "[속보] \"구마모토 대형쇼핑몰 직원 20~30명 연락 안닿아\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260729009700073",
+      "reason": "score_observed",
+      "score": 0.747,
+      "title": "구마모토 강진 쇼핑몰 붕괴로 2명 사망·1명 심정지…밤샘 구조",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12109843",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "구마모토 대형쇼핑몰 강진 붕괴…日 경찰 “상당수 사망 추정”",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607282109015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "쇼핑몰 ‘폭발 발생’ 붕괴…“20~30명 연락 두절”",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260728_0003727141",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "\"구마모토 지진붕괴 쇼핑몰, 종업원 20~30명 연락두절…갇혀있을 가능성\"(2보)",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260728_0003727136",
+      "reason": "length:0",
+      "title": "[속보] 일, 지진 붕괴 쇼핑몰서 직원 20~30명 생사불명",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260728_0003727116",
+      "reason": "score_observed",
+      "score": 0.705,
+      "title": "강진 구마모토 쇼핑몰에서 폭발…2층 붕괴돼 다수 갇힌 듯",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072814357",
+      "reason": "length:0",
+      "title": "[속보] 中매체 \"日규슈강진, 889㎞ 떨어진 상하이서도 흔들림 감지\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260728160100083",
+      "reason": "score_observed",
+      "score": 0.829,
+      "title": "\"사무실이 흔들렸다\"…日 규슈 강진에 中상하이서도 흔들림 감지",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12109694",
+      "reason": "length:0",
+      "title": "[속보] 中매체 “日규슈강진, 889㎞ 떨어진 상하이서도 흔들림 감지”",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026072818341081479",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "日규슈 서부 구마모토서 규모 7.1 강진…韓남부서도 흔들림 감지",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260728_0003727110",
+      "reason": "score_observed",
+      "score": 0.675,
+      "title": "日규슈 규모 7 강진에 中상하이서도 \"진동 느껴\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072814457",
+      "reason": "length:0",
+      "title": "[속보] \"규슈 강진 관련 쓰나미 주의보 해제\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260728159300073",
+      "reason": "length:260",
+      "title": "[속보] \"규슈 강진 관련 쓰나미 주의보 해제\" < NHK>",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1270351.html",
+      "reason": "score_observed",
+      "score": 0.754,
+      "title": "일본 규슈 구마모토서 규모 7.1 지진…쓰나미 주의보 발령",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12109730",
+      "reason": "length:0",
+      "title": "[속보] “규슈 강진 관련 쓰나미 주의보 해제” < NHK>",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607281653001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.833,
+      "title": "[속보] 일본 구마모토서 규모 7.1 지진···쓰나미 주의보 발령",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072816157",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "이란군 \"이란 동결 자금 받으면 호르무즈 통행 불허\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260728173700079",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "이란군 \"이란 동결 자금 받는 국가·기업, 호르무즈 통행 불허\"",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026072718233743798",
+      "reason": "score_observed",
+      "score": 0.691,
+      "title": "미국, 이란 공습 이틀째 중단…오만 중재 '호르무즈 통항 합의' 계속",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260729_0003727227",
+      "reason": "score_observed",
+      "score": 0.767,
+      "title": "이란 “동결자산 사용 기업·국가 호르무즈 해협 통과 금지”",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260728124600009",
+      "reason": "score_observed",
+      "score": 0.635,
+      "title": "美 '코로나19 지휘관' 파우치 일기 속 트럼프…\"완전 망신거리\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1270396.html",
+      "reason": "score_observed",
+      "score": 0.524,
+      "title": "‘코로나 사령탑’ 파우치 일지에…“트럼프 횡설수설·무능·미친”",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12109918",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "“히틀러 떠올랐다”…파우치 일기 공개에 트럼프와 갈등 재조명",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260728_0003726792",
+      "reason": "score_observed",
+      "score": 0.638,
+      "title": "美보건당국 전 수장 일기장서 트럼프 직격 \"완전 망신거리\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202607291761i",
+      "reason": "score_observed",
+      "score": 0.646,
+      "title": "구마모토 강진에 日반도체 산업 긴장…TSMC 생산 차질 우려",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1270397.html",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "일 구마모토 지진에…TSMC 공장 ‘일시 정지’ 뒤 직원 대피",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260729_0003727188",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "구마모토 강진에 TSMC 공장 긴급 점검…\"구조 안전 이상 없어\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072917447",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "후티 반군 \"사우디 유조선에 탄도미사일 공격…강제 회항\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260729004900079",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "후티 반군 \"사우디 유조선 겨냥 탄도미사일 발사\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/arabafrica/1270227.html",
+      "reason": "score_observed",
+      "score": 0.727,
+      "title": "‘친이란’ 후티 반군, 사우디·요르단 드론 공격…트럼프 또 시험대",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260728131551109",
+      "reason": "score_observed",
+      "score": 0.726,
+      "title": "젤렌스키 \"트럼프와 패트리엇 면허 논의…외교절차 재개 공감\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607281554001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.711,
+      "title": "젤렌스키, 오늘 백악관서 트럼프와 회담···패트리엇 지원 논의",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260729_0003727194",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "젤렌스키 \"트럼프와 패트리엇·평화협상 논의\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026072814227",
+      "reason": "length:0",
+      "title": "[속보] 다카이치 \"규슈 강진으로 부상자 발생…건물 손상도\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260728160700073",
+      "reason": "score_observed",
+      "score": 0.754,
+      "title": "다카이치 \"강진에 부상자 발생·다리 등 파괴…피해최소화 전력\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260728153500073",
+      "reason": "length:260",
+      "title": "[속보] \"규슈 강진으로 구마모토 공항 활주로 폐쇄\" <교도통신>",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260729_0003727190",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "다카이치, 구마모토 강진에 자위대 파견…\"정부 총력 대응\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260728174300079",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "이스라엘 총리실 \"트럼프·네타냐후, 전쟁 승리 방안 논의\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1270297.html",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "이스라엘 언론 “트럼프, 네타냐후 회담 뒤 이란 종전 MOU 되살릴지 결정”",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607281752001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.655,
+      "title": "전쟁 이후 처음 대면하는 트럼프·네타냐후···종전 돌파구 찾을까",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202607280872g",
+      "reason": "score_observed",
+      "score": 0.655,
+      "title": "카카오 '공짜 AI' 푼다…경량언어모델 4종 오픈소스로 공개",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1989362",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "카카오, 경량 언어모델 4종 오픈소스로 공개",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260728172730",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "카카오, '카나나' 경량 언어모델 4종 오픈소스 공개…스마트폰서 구동 가능",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1989438",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "KT커머스, AI 가격 협상 솔루션 '네고위즈' 고도화",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260728180413",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "KT커머스, AI 가격 협상 솔루션 ‘네고위즈’ 고도화",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202607280960i",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "더현대 서울서 'TFT 팬페스트'…내일부터 사전예약",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1989427",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "라이엇, 'TFT 와일드 팬페스트 in 더현대 서울' 사전예약 예고",
+      "category": "IT/테크"
+    }
+  ]
+}

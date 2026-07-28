@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-29",
+  "topics": [
+    {
+      "word": "AI",
+      "score": 27.8,
+      "media_count": 10,
+      "article_count": 89
+    },
+    {
+      "word": "강진",
+      "score": 25.2,
+      "media_count": 8,
+      "article_count": 86
+    },
+    {
+      "word": "일본",
+      "score": 18.6,
+      "media_count": 7,
+      "article_count": 58
+    }
+  ]
+}
