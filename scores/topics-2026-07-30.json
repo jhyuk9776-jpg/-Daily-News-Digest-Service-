@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-30",
+  "topics": [
+    {
+      "word": "AI",
+      "score": 36.400000000000006,
+      "media_count": 14,
+      "article_count": 112
+    },
+    {
+      "word": "투자",
+      "score": 24.8,
+      "media_count": 12,
+      "article_count": 64
+    },
+    {
+      "word": "구마모토",
+      "score": 24.0,
+      "media_count": 10,
+      "article_count": 70
+    }
+  ]
+}
