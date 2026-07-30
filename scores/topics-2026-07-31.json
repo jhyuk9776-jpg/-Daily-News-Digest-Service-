@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-31",
+  "topics": [
+    {
+      "word": "AI",
+      "score": 35.0,
+      "media_count": 14,
+      "article_count": 105
+    },
+    {
+      "word": "분기",
+      "score": 24.200000000000003,
+      "media_count": 13,
+      "article_count": 56
+    },
+    {
+      "word": "투자",
+      "score": 22.200000000000003,
+      "media_count": 12,
+      "article_count": 51
+    }
+  ]
+}

@@ -1,0 +1,1113 @@
+{
+  "date": "2026-07-31",
+  "excluded": [
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026073063871",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "하나·신한금융, 잠실 복합시설에 4조 PF 추진",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260730102100002",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "하나금융, '잠실 스포츠·마이스(MICE) 사업' 4조 규모 PF추진",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/finance/1270639.html",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "하나금융, ‘잠실 돔 야구장’ 복합공간 조성 4조원 PF 추진",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008682730",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "하나금융, '잠실 스포츠·마이스(MICE) 사업' 4조 규모 PF 추진",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026073015531510105",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "하나금융, 잠실 스포츠·마이스 복합공간 4조원 PF 주관",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026073066871",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "최태원, 하이닉스 주식 48억 매수",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1270756.html",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "최태원 회장, SK하이닉스 주식 48억원어치 첫 매수",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026073019271600232",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "최태원 회장, SK하이닉스 주식 3620주 매수",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008683424",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "최태원, SK하이닉스 주식 48억 규모 장내매수…\"책임경영 차원\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260730152400002",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "국민성장펀드, 'OLED 초격차' LG디스플레이에 1.5조 저리대출",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1270726.html",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "국민성장펀드, LG디스플레이 ‘OLED 고도화’ 사업에 1조5천억원 저리 대출",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12112039",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "국민성장펀드, LG디스플레이 1.3조 저리대출 의결…OLED 초격차 기술 투자 지원",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026073016532740401",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "국민성장펀드, LGD에 1.3조 저리대출…OLED 초격차 지원",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026073064461",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "삼성전자 영업익 89.5조…반도체가 89.2조 벌었다",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026073016115251207",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "삼성 반도체 영업익 89조 찍은 날 DX 첫 적자",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008682515",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "삼성전자, 2분기 영업익 89조…코스피 반등 시도",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1270684.html",
+      "reason": "score_observed",
+      "score": 0.789,
+      "title": "미 매파적 동결에…한은 기준금리 8월 인상 가능성 고개",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026073014521989026",
+      "reason": "score_observed",
+      "score": 0.818,
+      "title": "美연준 '깜짝 인상' 없이 '매파적 동결'…한은, 기준금리 인상 속도 내나",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026073010010383789",
+      "reason": "score_observed",
+      "score": 0.728,
+      "title": "美 FOMC '불안한 동결'…한은, 내달 금리 연속 인상 여부 관건은",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1270683.html",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "전국 농지 27% ‘농지법 위반’ 의심…드론으로 ‘투기 여부’ 조사",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12112144",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "농지 27% '법 위반' 의심 … 내달 심층조사",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026073014001507503",
+      "reason": "score_observed",
+      "score": 0.674,
+      "title": "'농지 27%' 불법 의심…다음달부터 현장조사",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260730151900002",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "케이뱅크, 상반기 순이익 601억원…작년 대비 29% 감소",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026072916583667842",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "예탁결제원 \"상반기 유상증자 6조2722억원…1년 새 24.5% 줄어\"",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026073016331239673",
+      "reason": "score_observed",
+      "score": 0.654,
+      "title": "케이뱅크, 상반기 순이익 601억원…비이자이익 감소에 28.6%↓",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260730092000002",
+      "reason": "score_observed",
+      "score": 0.846,
+      "title": "금감원 \"은행 ETF 신탁수수료, 고객 최적 수준의 7배 넘게 받아\"",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008682672",
+      "reason": "score_observed",
+      "score": 0.826,
+      "title": "금감원 \"은행 ETF 신탁수수료, 고객 최적 수준의 7배 넘게 받아\"",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026073015571537859",
+      "reason": "score_observed",
+      "score": 0.717,
+      "title": "\"1억 투자, 수수료 1704만원\"…금감원, 은행 ETF 신탁 수수료 손본다",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260730096000003",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "세제개편 임박 숨죽인 강남…서울 아파트값 2주 연속 상승 둔화",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/property/1270665.html",
+      "reason": "score_observed",
+      "score": 0.62,
+      "title": "토허제 묶인 동탄·구리…아파트값 상승폭 2주 연속 둔화",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008682756",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "세제 개편 앞두고 숨죽인 강남…서울 아파트값 2주 연속 둔화",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260730097300003",
+      "reason": "score_observed",
+      "score": 0.694,
+      "title": "광주대표도서관 붕괴는 '인재'…\"용접 전 과정 부실시공이 원인\"",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1270692.html",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "4명 숨진 광주대표도서관 붕괴 사고…“용접 부실시공이 원인”",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260730_0003729812",
+      "reason": "score_observed",
+      "score": 0.683,
+      "title": "4명 숨진 광주대표도서관 붕괴…\"용접 불량에 감리 소홀\" 결론",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260730187451061",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "양평 무한리필 음식점서 천장 무너져 14명 부상(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12112478",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "“갑자기 천장 와르르 무너져”…양평 무한리필 음식점서 14명 부상",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026073022262308261",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "양평 무한리필 식당 천장 '와르르'…손님 14명 부상",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607302028001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "저녁밥 먹다 ‘와장창’ 날벼락···경기 양평 음식점서 천장 무너져 14명 부상",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008683663",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "저녁 식사 중 천장 붕괴 '날벼락'…14명 부상",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260730_0003730650",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "양평서 식당 천장 붕괴…손님 등 14명 부상",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026073064867",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "'아동 성매매' 최영중 전 청주시의원 구속…\"증거인멸 우려\"",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12112262",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "“증거인멸 우려”…‘아동 성매매’ 최영중 전 청주시의원 구속",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026073017513865244",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "'아동 성범죄 혐의' 최영중 전 청주시의원 구속",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607302147005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "‘미성년자 성범죄 혐의’ 최영중 전 청주시의원 구속",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260730_0003730530",
+      "reason": "score_observed",
+      "score": 0.615,
+      "title": "'미성년자 성매수' 최영중 구속…法 \"증거인멸·도주우려\"(종합2보)",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026073018450892007",
+      "reason": "score_observed",
+      "score": 0.676,
+      "title": "'미성년자 성매수' 최영중 전 시의원 구속…法 \"증거인멸·도주우려\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260730189100004",
+      "reason": "score_observed",
+      "score": 0.818,
+      "title": "검찰 미래위, '김학의 긴급출금 수사' 진상조사 대상 선정",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1270758.html",
+      "reason": "score_observed",
+      "score": 0.829,
+      "title": "[단독] 법무부 미래위, ‘김학의 긴급출국금지 수사’ 진상조사 대상 선정",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607302102001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.818,
+      "title": "검찰 미래위, ‘김학의 불법 출금 수사’ 진상조사하기로",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260730_0003730678",
+      "reason": "score_observed",
+      "score": 0.857,
+      "title": "檢미래위, '김학의 불법 출국금지 사건' 추가 진상조사 대상 선정",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026073021284769900",
+      "reason": "score_observed",
+      "score": 0.829,
+      "title": "검찰 미래위, '김학의 출국금지 수사' 진상조사한다",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026073168217",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "'미공개정보 주식거래' 법무법인 前직원들 항소심 징역형",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260730171000004",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "'미공개 정보 빼내 주식거래' 법무법인 前직원들 항소심도 징역형",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12112964",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "미공개 정보 빼돌려 주식 투자…법무법인 직원들, 항소심도 징역형",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260730_0003730434",
+      "reason": "score_observed",
+      "score": 0.618,
+      "title": "'미공개정보 주식투자' 로펌 광장 직원들, 2심서 감형…징역 3년",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260731013000062",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "강원 동해안 열대야 지속…낮 최고 37도 찜통더위",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260730_0003730676",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "전국 폭염·열대야 지속…경남권 '최고체감 38도' 주의[오늘날씨]",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026073020174912574",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "[내일날씨]전국 무더위·열대야…낮 최고 38도",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260730180400061",
+      "reason": "score_observed",
+      "score": 0.943,
+      "title": "'32억 전세사기' 해외 도피 검찰수사관 구속 송치",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12112605",
+      "reason": "score_observed",
+      "score": 0.886,
+      "title": "동탄서 32억 전세사기 후 해외 도피 검찰수사관, 구속 송치",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260730_0003730641",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "화성 일대 '30억원대 전세사기' 검찰수사관 구속 송치",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260730183500061",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "경찰, '필로폰 투약' 40대 버스기사 약물운전 혐의 적용",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607301944001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "경찰, ‘필로폰 투약’ 버스기사에 약물운전 혐의 적용",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260730_0003730649",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "'안산 필로폰 투약' 中 국적 40대 버스기사 약물운전 혐의도 적용",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260730188100065",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "경찰, 인천 쿠팡물류센터 화재 관련 밤까지 압수수색(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12112268",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "‘109시간 만의 진화’...경찰, 인천 쿠팡 센터 압수수색",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026073013131172829",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "경찰, '인천 물류센터 대형 화재' 쿠팡 사무실 압수수색",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260730146100061",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "\"위험 알고 입주했어도 골프공 피해 배상해야\" 항소심 판결",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12112152",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "“위험 알고 입주했으니 책임 없다?”…법원 “골프장, 인근 빌라 주민에 배상하라”",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026073018251456692",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "위험 알고 입주했으니 나 몰라라?…법원 \"골프장, 인근 빌라 주민에 배상해야\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260730174700004",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "잠실 야구장서 경찰 행세한 50대 구속… 경찰제복장비법 위반",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260730_0003730511",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "복장에 무전기까지…잠실야구장서 경찰 행세한 50대 구속",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026073018130938119",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "경찰, 잠실야구장서 경찰 행세한 50대 구속",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026073167797",
+      "reason": "score_observed",
+      "score": 0.85,
+      "title": "이란 \"요르단·쿠웨이트 미군기지 공격…전투기 파괴\" 주장",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260730189251099",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "이란 \"요르단·쿠웨이트 美기지 공격…전투기 등 파괴\" 주장(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12112533",
+      "reason": "score_observed",
+      "score": 0.778,
+      "title": "이란 “요르단 미군 기지 공격해 F-35 전투기 3대 파괴” 주장",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12111623",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "[속보] 미군 “이란 상대 공습 개시…이란의 미군기지 공격 대응”",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026073021252478387",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "이란 \"요르단 미군기지 공격…F-35 3대 완전 파괴\" 주장",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607302214001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "이란 혁명수비대 “요르단 미군 기지 타격···전투기 3대 완전히 파괴”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008683485",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "이란 \"요르단 미군 기지 공격…F-35 전투기 3대 파괴\" 주장",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008683267",
+      "reason": "length:279",
+      "title": "\"이란, 쿠웨이트 내 중국 기업 건물 공격…1명 사망\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260730_0003730658",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "이란혁명수비대, \"요르단의 공군 기지 공격…미군 여러 명 사망해\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026073067167",
+      "reason": "score_observed",
+      "score": 0.833,
+      "title": "구마모토 강진 사흘째…사망자 34명으로 늘어",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260730105551073",
+      "reason": "score_observed",
+      "score": 0.84,
+      "title": "구마모토 강진 사망 34명으로 늘어…골든타임 소진 전 구조 총력(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1270660.html",
+      "reason": "score_observed",
+      "score": 0.818,
+      "title": "일본 구마모토 강진 사망자 28명으로 늘어…1만명 대피",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026073018141315231",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "日 구마모토 강진 사망자 34명으로 늘어…'골든타임 72시간' 임박",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607301453001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "다카이치 “구마모토 지진 사망자 30명”···사흘째 증가세",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008683336",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "구마모토 강진 사망 34명으로 늘어…제지 공장 8명·쇼핑몰 7명 등",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260731_0003730729",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "중국 충칭 산사태 사망자 51명으로 늘어…10명 여전히 실종",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260730_0003730507",
+      "reason": "score_observed",
+      "score": 0.767,
+      "title": "구마모토 강진 사망자 계속 증가…34명으로 또 4명 늘어",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260730180100081",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "싱가포르서 자판기 빨대 핥고 다시 꽂은 프랑스 10대 벌금형",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1270766.html",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "싱가포르서 음료 자판기 빨대 핥은 뒤 다시 꽂은 유학생…벌금 66만원",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12112486",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "“벌금 66만원”…싱가포르서 자판기 빨대 핥고 다시 꽂은 프랑스 10대",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008683714",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "싱가포르서 자판기 빨대 핥고 다시 꽂은 프랑스 10대 벌금형",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026073061727",
+      "reason": "score_observed",
+      "score": 0.765,
+      "title": "스틸 주한미대사 \"함께 더 강력하고 번영하는 동맹 비전 실현\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260731002500071",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "미셸 스틸 주한美대사, 부임 전 강경화 대사 만나 한미동맹 논의",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260730155800504",
+      "reason": "length:261",
+      "title": "[속보] 스틸 주한미대사 \"한미동맹, 세계서 가장 강력한 동맹 중 하나\"",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/politics/12112055",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "[속보] 스틸 주한미국대사 “함께 더 강력하고 번영하는 동맹 비전 실현”",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026073016055160726",
+      "reason": "score_observed",
+      "score": 0.677,
+      "title": "미셸 스틸 주한미국대사 부임, 1년 반 만에 대사 공백 해소",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026073066951",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "美 6월 근원 PCE 전년대비 3.3% 상승",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260730191551072",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "美 6월 PCE 물가 전년 대비 3.7%↑…전망치 부합(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12112603",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "[속보] 美 6월 PCE 물가 전년대비 3.7%↑…전망치 부합",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260730_0003730680",
+      "reason": "score_observed",
+      "score": 0.675,
+      "title": "미 6월 민간소비 규모 0.4% 증가…PCE 근원인플레 3.3%",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260731006400099",
+      "reason": "score_observed",
+      "score": 0.718,
+      "title": "사우디, '홍해 선박 보호' 14개국 해상 방위 연합 창설 발표",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607301048001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "‘홍해 통항하는 선박 보호’···사우디, 국제연합 창설 추진",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260731_0003730741",
+      "reason": "score_observed",
+      "score": 0.785,
+      "title": "사우디 '홍해 상선 보호' 14개국 참여 해상 방위 연합 창설 발표",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260731006700071",
+      "reason": "score_observed",
+      "score": 0.726,
+      "title": "\"트럼프정부, 외국인 졸업생에 '美 취업수수료' 1.4억원 검토\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008683659",
+      "reason": "score_observed",
+      "score": 0.818,
+      "title": "\"트럼프 정부, 외국인 졸업생에 '미 취업 수수료' 1.4억 원 검토\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260731_0003730738",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "트럼프 정부, 美유학생에 '1.4억원 취업수수료' 부과 검토",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260730152600704",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "[영상] 타지마할서 한국인 관광객 원숭이에 물려…앰뷸런스 '지각'",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026073019553742263",
+      "reason": "score_observed",
+      "score": 0.577,
+      "title": "타지마할 간 한국인, 원숭이에 팔 물려 피 철철…구급차는 1시간째 안 왔다",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008683221",
+      "reason": "score_observed",
+      "score": 0.624,
+      "title": "한국인 관광객, 인도 타지마할서 원숭이에 물려…구급차는 도착 안 해",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260730192151108",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "젤렌스키 \"러, 오랜만에 우크라에 북한 미사일 쏴\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008683536",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "\"러, 우크라이나 공습에 북한제 미사일 쏜 듯\"…약 1년 만",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260730_0003730698",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "\"러 1년만에 우크라 향해 북한제 미사일 발사한 듯\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260730186952085",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "영국 기준금리 3.75% 유지…중동 확전시 대응 시사(종합2보)",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12112403",
+      "reason": "length:151",
+      "title": "[속보] 영국 기준금리 3.75% 유지…5회 연속 동결",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260730_0003730639",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "英, 기준금리 3.75%로 올들어 5번째 동결",
+      "category": "세계"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1990237",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "삼성전자 \"해외 유망 로봇 스타트업 투자·M&A 확대\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260730000442",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "삼성전자, 반도체·DX 스타트업에 8000억원 출자",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260729162837",
+      "reason": "score_observed",
+      "score": 0.632,
+      "title": "그록부터 헤일로까지…해외 AI 칩 스타트업 'M&A 도미노' 왜",
+      "category": "IT/테크"
+    },
+    {
+      "source": "IT조선",
+      "link": "https://it.chosun.com/news/articleView.html?idxno=2023092166867",
+      "reason": "score_observed",
+      "score": 0.694,
+      "title": "‘알파폴드’ 해체한 구글… 제미나이 중심 범용 AI 개발 집중",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=688461",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "구글 알파폴드팀, 사실상 해체...제미나이로 인력 재배치",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1990397",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "NIPA, 오픈소스 AI·SW 커뮤니티 15곳 지원…글로벌 생태계 참여 확대",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=688427",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "NIPA, '오픈소스 AI·SW 커뮤니티' 발대식…생태계 확산 지원",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=688424",
+      "reason": "score_observed",
+      "score": 0.718,
+      "title": "이준희 삼성SDS 대표 \"멀티 LLM 전략으로 AX 사업 경쟁력 강화\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260730155717",
+      "reason": "score_observed",
+      "score": 0.669,
+      "title": "[컨콜종합] 이준희 삼성SDS 대표 \"AI 풀스택으로 미래 성장 기회 선점\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1990119",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "데이원컴퍼니, '서비스 종료' 백준온라인저지 인수⋯개발자 생태계 잇는다",
+      "category": "IT/테크"
+    },
+    {
+      "source": "IT조선",
+      "link": "https://it.chosun.com/news/articleView.html?idxno=2023092166926",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "데이원컴퍼니, 운영 종료한 ‘백준온라인저지’ 인수",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260730000456",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "최태원 SK그룹 회장, SK하이닉스 주식 48억 규모 장내매수",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260730185958",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "최태원 회장, SK하이닉스 지분 3620주 매수…기업가치 제고 의지",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202607304484i",
+      "reason": "score_observed",
+      "score": 0.656,
+      "title": "메타, AI 투자에 현금 다 썼다…영업익 감소에 주가 10% 급락",
+      "category": "IT/테크"
+    },
+    {
+      "source": "IT조선",
+      "link": "https://it.chosun.com/news/articleView.html?idxno=2023092166901",
+      "reason": "clickbait",
+      "title": "메타 AI 투자 후폭풍… 영업이익·순이익 동반 감소",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202607305714i",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "지씨셀, 2분기 영업손실 10억원…적자폭 70% 축소",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260730172115",
+      "reason": "score_observed",
+      "score": 0.624,
+      "title": "금호타이어, 2분기 영업이익 1822억원…전년비 4%↑",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1990291",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "구글, 개인 AI 에이전트 '제미나이 스파크' 韓 출시",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260730164809",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "저커버그 \"5년 안에 수십억명 개인 AI 에이전트 갖게 될 것\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1990420",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "메가존클라우드, 큐비스택과 '큐엑셀' 독점 판매 계약",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260730164613",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "메가존클라우드, 양자 시뮬레이터 '큐엑셀' 독점 판매…도입 문턱 낮춘다",
+      "category": "IT/테크"
+    }
+  ]
+}
