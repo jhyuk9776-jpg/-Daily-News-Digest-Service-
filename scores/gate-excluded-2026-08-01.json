@@ -1,0 +1,1093 @@
+{
+  "date": "2026-08-01",
+  "excluded": [
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026073186191",
+      "reason": "score_observed",
+      "score": 0.71,
+      "title": "한숨 돌린 롯데카드, 1.5개월 영업정지",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12113640",
+      "reason": "score_observed",
+      "score": 0.711,
+      "title": "'고객정보 유출' 롯데카드 금융위, 영업정지 1.5개월",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026073116584639644",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "'정보 유출' 롯데카드 1.5개월 업무정지…과징금 50억원",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008684874",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "금융위, '정보 유출' 롯데카드 제재 감경…업무 정지 1.5개월",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026073185751",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "장민영 기업은행장 \"포용금융 30조 지원\"",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12113642",
+      "reason": "length:133",
+      "title": "[포토] IBK 창립 65주년…\"포용금융 30조 지원\"",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026073115215668341",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "장민영 IBK기업은행장, 창립일 맞아 \"AI 뱅크·포용금융 선도\" 청사진 제시",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026073114061181710",
+      "reason": "score_observed",
+      "score": 0.624,
+      "title": "기은 창립 65주년…\"2030년까지 포용금융 30조원 지원\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260731105400002",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "카카오뱅크, 인터넷은행 첫 파업…조합원 700여명 참여",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12113485",
+      "reason": "clickbait",
+      "title": "카카오뱅크, 인뱅 최초 파업…휴가 기간인데 서비스 문제 없을까?",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008684630",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "카카오뱅크, 인터넷은행 첫 파업…조합원 700여 명 참여",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026073110371017001",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "카카오뱅크 노조 첫 파업 돌입",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260731062000002",
+      "reason": "score_observed",
+      "score": 0.623,
+      "title": "6월 증권거래세 482% 폭증…상반기 누적 세수 223조원",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12113243",
+      "reason": "score_observed",
+      "score": 0.663,
+      "title": "증시 거래 폭증에 세수도 ‘잭팟’…상반기 국세 33조 늘었다",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008684464",
+      "reason": "score_observed",
+      "score": 0.613,
+      "title": "6월 증권거래세 482% 폭증…상반기 누적 세수 223조 원",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026073110162453989",
+      "reason": "score_observed",
+      "score": 0.665,
+      "title": "증권거래세 338% 폭증에 상반기 국세수입 223조…1년새 33조원↑",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260731103600051",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "해수부 신청사 부지 경쟁 4파전…내달 7일 결과 발표",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260731_0003732256",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "부산 해수부 신청사 부지 공모…명지·용당·초량·중앙동 도전",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026073119180939066",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "해수부 부산 신청사 부지 경쟁 4파전…내달 7일 발표",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026073184187",
+      "reason": "length:0",
+      "title": "[속보] 금융위, '정보유출' 롯데카드 제재 감경…업무정지 4.5→1.5개월",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260731138852002",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "금융위, '정보유출' 롯데카드 제재 감경…업무정지 4.5→1.5개월(종합2보)",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026073117082082847",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "롯데카드 업무정지 4.5개월→1.5개월로 확정…신규 카드 발급 금지",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202607318674H",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "코스피 6595 마감… 18% 올라 사상 최대 폭 상승 [퇴근길 30초 경제]",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260731119651008",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "코스피, 17.9%·1000p 폭등하며 '불기둥'…사상최대 상승(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1270897.html",
+      "reason": "score_observed",
+      "score": 0.614,
+      "title": "코스피, 상승폭 1001 상승률 17.9% 사상 최대…널뛰는 증시에 ‘어질’",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202607318300i",
+      "reason": "length:263",
+      "title": "[포토] 코스피 상승률·상승폭 역대 최대 기록…17.9% '폭등'",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260731076100008",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "코스피 10% 이상 폭등세, 최고 17%↑…삼전닉스 20% 안팎↑",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008684706",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "코스피 상승률·상승폭 모두 역대 최대 기록…17.9% 폭등",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260731029351002",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "외국인 주식 7조 순매수…환율 13.4원 내린 1,424원(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/finance/1270898.html",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "환율 13.4원 내려 1424원…외국인 주식 7조원 순매수 효과",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1270878.html",
+      "reason": "score_observed",
+      "score": 0.615,
+      "title": "외국인 7조 순매수에 17%↑…폭락 뒤 폭등 ‘투전판’ 증시에 현기증",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008684099",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "6월 외국인 주식 순매도 '49조 원'…역대 최대",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202607318173g",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "홈플러스 노사, 임금·상여금 분할 지급 합의…정상화 위해 '고통분담'",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1270841.html",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "홈플러스 노사, ‘임금 순연·상여금 분할’ 합의…“회생 위해 협력”",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008684633",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "홈플러스 노사, 임금·상여 지연 지급 합의…\"영업 정상화 집중\"",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202607318695i",
+      "reason": "score_observed",
+      "score": 0.964,
+      "title": "구자현 검찰총장 대행 사의 표명…\"형소법 개정안 책임 통감\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260731157600004",
+      "reason": "score_observed",
+      "score": 0.953,
+      "title": "구자현 검찰총장 대행 사의 표명…\"형소법 개정에 책임 통감\"(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1270924.html",
+      "reason": "score_observed",
+      "score": 0.877,
+      "title": "구자현 검찰총장 대행, 사직서 제출…“형소법 통과 책임 통감”",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026073118170288047",
+      "reason": "score_observed",
+      "score": 0.92,
+      "title": "구자현 검찰총장 대행 사의표명…형소법 개정안 통과 반발",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008685017",
+      "reason": "score_observed",
+      "score": 0.867,
+      "title": "구자현 검찰총장 대행 사직서 제출…\"형소법 개정 책임 통감\"",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260731_0003732255",
+      "reason": "score_observed",
+      "score": 0.792,
+      "title": "구자현 검찰총장 직무대행 사의 표명 [뉴시스Pic]",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026073118173432004",
+      "reason": "score_observed",
+      "score": 0.822,
+      "title": "구자현 검찰총장 대행 사의 표명…\"형소법 개정 책임 통감\"",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026073188217",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "두 번 모두 기각된 '장윤기 사건' 전 형사과장 영장…이유는",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260731070952054",
+      "reason": "score_observed",
+      "score": 0.767,
+      "title": "'장윤기 사건' 지휘 형사과장, 구속영장 또 기각",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12113977",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "법원 “구속 필요성 부족”…‘장윤기 사건’ 전 형사과장 영장 또 기각",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607312101001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.88,
+      "title": "‘장윤기 사건’ 수사 형사과장, 두 번째 영장도 기각···법원 “다툼 여지”",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008685210",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "'장윤기 사건' 지휘 형사과장, 구속영장 또 기각",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260731_0003732233",
+      "reason": "score_observed",
+      "score": 0.675,
+      "title": "\"구속 필요성 없어\"…장윤기 사건 수사과장, 두 번째 구속영장 '기각'",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026073121505229145",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "'장윤기 사건' 지휘 전 형사과장, 구속영장 또 기각",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026073185421",
+      "reason": "score_observed",
+      "score": 0.618,
+      "title": "경남 양산 41.4도…기상 관측사상 최고",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260731146700530",
+      "reason": "score_observed",
+      "score": 0.618,
+      "title": "내일 경남 양산 낮 '41도' 예보…주말에도 '사람 잡는 더위'",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/environment/1270870.html",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "경남 양산 41.4도까지 치솟아…기상관측 사상 최고 기온",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12113659",
+      "reason": "length:248",
+      "title": "경남 양산 41.4도…관측사상 최악폭염",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607311422001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.622,
+      "title": "‘41.4도’ 지금껏 이런 기온은 없었다···기상 관측 사상 최고 기온 기록한 ‘이 도시’",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008685070",
+      "reason": "low_score",
+      "score": 0.45,
+      "title": "경남 양산 '41.4도' 관측사상 최고치…'폭염 한계' 뚫렸다",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260731_0003731976",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "2018년 홍천 기록 깨졌다…'양산 41.4도' 관측 이래 최고(종합2보)",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026073183107",
+      "reason": "length:0",
+      "title": "[속보] 검찰, '피습 자작극 혐의' 정이한 전 부산시장 후보 구속기소",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260731129000051",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "검찰, '피습 자작극 혐의' 정이한 전 부산시장 후보 구속기소",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/politics/12113527",
+      "reason": "score_observed",
+      "score": 0.787,
+      "title": "피습 자작극 계획하고 지시… 정이한 전 부산시장 후보 구속기소",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026073116140590520",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "檢, '피습 자작극' 정이한 전 부산시장 후보 구속기소",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607311639001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.741,
+      "title": "검찰, ‘피습 자작극 혐의’ 정이한 전 부산시장 후보 구속기소",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260731_0003731908",
+      "reason": "score_observed",
+      "score": 0.84,
+      "title": "'피습 자작극' 정이한 구속 기소…선거법위반 교사 혐의 추가",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026073177727",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "'李대통령 명예훼손' 모스탄, 출국정지 취소 소송 패소…\"항소할 것\"",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1270863.html",
+      "reason": "score_observed",
+      "score": 0.663,
+      "title": "‘이 대통령 명예훼손’ 모스 탄 출국정지 유지…법원, 취소 소송 각하·기각",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026073113075939537",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "'李대통령 명예훼손' 모스 탄, 출국정지 유지…법원 \"도피 가능성\" 판단",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607311109001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "[속보]‘이 대통령 명예훼손’ 모스 탄, 출국정지 내달 15일까지 그대로···취소 소송 기각",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026073113201382382",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "'李 명예훼손' 모스탄, 출국정지 취소 소송 패소…\"항소할 것\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260731155151053",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "'경산아파트 방화' 사망자 2명으로 늘어…화상치료 50대 숨져(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12113978",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "중상 입은 관리실 직원 사망…‘경산 아파트 방화’ 사망자 2명으로",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607311922001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "‘경산 아파트 방화’로 중상 입은 관리직원 숨져···사망자 2명으로 늘어",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260731_0003732264",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "경산 아파트 방화 피해 50대 여성 숨져…관리사무소 경리직원 (종합)",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026073119163035181",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "경산아파트 방화 사건, 사망자 2명…경찰, 범행동기 파악 주력",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026073188357",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "정성호 법무장관 \"이제 검사는 수사 못 한다…처음 가는 길\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260731168100004",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "정성호 \"이제 검사는 수사 못해…부작용시 신속 보완·수정해야\"",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1270935.html",
+      "reason": "score_observed",
+      "score": 0.84,
+      "title": "정성호 법무 “이제 검사는 수사 못 해…부작용 있다면 신속히 보완·수정해야”",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12113950",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "법무장관 “이제 검사는 수사할 수 없어…부작용 나오면 신속 보완·수정해야”",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260731076651004",
+      "reason": "score_observed",
+      "score": 0.74,
+      "title": "내란·종합특검 다시 충돌…\"박성재 사건 이첩\" vs \"대상 아냐\"(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1270896.html",
+      "reason": "score_observed",
+      "score": 0.775,
+      "title": "종합특검, 내란특검에 “박성재 ‘김건희 수사 무마’ 이첩 대상 아냐”",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12113586",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "내란특검·종합특검, 박성재 청탁금지법 사건 이첩 놓고 충돌",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260731_0003731879",
+      "reason": "score_observed",
+      "score": 0.676,
+      "title": "공소기각된 박성재 '청탁금지법' 사건 '핑퐁'…종합특검 \"이첩 대상 아냐\"(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260731124400004",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "여고생에 흉기 휘두른 10대 남성 송치…스토킹 혐의 추가",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12113669",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "대낮 주택가서 여고생 흉기 피습…10대 피의자 ‘스토킹 혐의’ 추가",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260731_0003731942",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "강서구 주택가서 여고생 피습 10대 구속 송치…스토킹 혐의도",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026073115313195986",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "서울 주택가 여고생 '흉기 피습' 10대 구속 송치",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026073187131",
+      "reason": "score_observed",
+      "score": 1.0,
+      "title": "[인사] 국회 ; 외교부 ; 행정안전부 등",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260731128400530",
+      "reason": "length:0",
+      "title": "[인사] 행정안전부",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12113517",
+      "reason": "score_observed",
+      "score": 1.0,
+      "title": "[인사] 국회 / 외교부 / 법무부 등",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260731_0003731825",
+      "reason": "length:0",
+      "title": "[인사]행정안전부",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026073186161",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "트럼프 \"가자 평화委서 하마스 무장해제 합의\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260801002851071",
+      "reason": "score_observed",
+      "score": 0.738,
+      "title": "트럼프 \"이스라엘 매우 만족\"…하마스 무장해제 합의 호응 압박(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12113611",
+      "reason": "score_observed",
+      "score": 0.728,
+      "title": "트럼프 \"하마스 가자지구 무장해제 합의\"",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026073107323825425",
+      "reason": "score_observed",
+      "score": 0.846,
+      "title": "트럼프 \"하마스 완전 무장해제 합의\"…가자전쟁 중대 분수령",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607310913001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.846,
+      "title": "트럼프 “하마스 무장해제 합의”···하마스는 아직 공식 확인 안 해",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008685333",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "\"이란 강타\"…이스라엘에 '하마스 무장해제 합의' 압박",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260801_0003732370",
+      "reason": "score_observed",
+      "score": 0.767,
+      "title": "트럼프 \"이스라엘, 하마스 무장해제 합의에 매우 만족\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026073177947",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "[속보] 일본은행 기준금리 1% 동결…찬성 8 반대 1 결정",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260731084853073",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "일본은행, 기준금리 1% 유지…경제 성장률 전망 0.6%로 상향(종합2보)",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008684533",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "일본은행, 기준금리 1% 유지…경제 성장률 전망 0.6%로 상향",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260731_0003731585",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "일본은행, 기준금리 1% 동결…올해 성장률 전망 0.6%로 상향(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026073067167",
+      "reason": "score_observed",
+      "score": 0.833,
+      "title": "구마모토 강진 사흘째…사망자 34명으로 늘어",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260731161300073",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "구마모토 강진 사망자 35명으로 늘어…폭염에 열사병 환자 속출",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026073018141315231",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "日 구마모토 강진 사망자 34명으로 늘어…'골든타임 72시간' 임박",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260731_0003731707",
+      "reason": "score_observed",
+      "score": 0.672,
+      "title": "日구마모토 강진 사망자 35명으로 늘어…매몰자 수색 계속(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260801001551071",
+      "reason": "score_observed",
+      "score": 0.767,
+      "title": "트럼프 \"스페인서 이주민 침략 재앙…민주 집권하면 미국서 재현\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008685314",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "트럼프 \"스페인 이주민 사태는 재앙…민주당 집권하면 미국도 침략당해\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260801_0003732371",
+      "reason": "score_observed",
+      "score": 0.694,
+      "title": "트럼프, 스페인 이민 사태 \"재앙…공화당 집권 못하면 같은일\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260731172500098",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "EU \"테무, 작년 EU 역외보조금 규정 조사 방해\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008685290",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "EU \"테무, 보조금 조사 방해\"…매출 1% 과징금 받나",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260801_0003732363",
+      "reason": "score_observed",
+      "score": 0.833,
+      "title": "EU \"테무, 지난해 EU 역외 보조금 조사 의무 위반\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1270597.html",
+      "reason": "score_observed",
+      "score": 0.763,
+      "title": "트럼프 “이란 매우 강하게 타격할 것”…사우디 참전·지중해 확전 우려",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008685316",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "트럼프 \"이란, 미사일 쏘며 신뢰 훼손…강력하게 타격할 것\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260801_0003732364",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "트럼프 \"이란, 강력하게 타격할 것…신뢰 잃어가고 있어\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1270831.html",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "사우디, 홍해 보호 다국적 해상방위연합 창설 추진",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12113615",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "중동전쟁, 이집트까지 확전 … 사우디 '홍해 방위 연합' 창설",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026073115041127489",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "사우디, 43개국 홍해 해상방위 연합 창설…후티 봉쇄 정면 대응",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260731173800079",
+      "reason": "score_observed",
+      "score": 0.908,
+      "title": "하마스 \"무장해제 조건은 이스라엘 철군…살상 중단 약속 먼저\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1270825.html",
+      "reason": "score_observed",
+      "score": 0.738,
+      "title": "‘하마스 무장 해제-이스라엘 철군’ 합의…알자지라 “가자 평화안 2단계”",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260731_0003732290",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "하마스, \"우리의 무장해제는 이스라엘군이 가자에서 완전철수할 때만 가능\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260731117552009",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "WSJ \"테슬라, 中사업부 매각 검토\"…머스크 \"가짜뉴스\" 반박(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12114000",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "“테슬라, 중국 사업부 매각 검토” 보도에…머스크 “가짜뉴스” 발끈",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260731_0003732326",
+      "reason": "score_observed",
+      "score": 0.659,
+      "title": "\"테슬라, 중국 사업부 매각 검토\" 보도에…머스크 \"가짜뉴스\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026073186231",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "트럼프 \"외국인 유학생, 美 취업하려면 10만달러 내라\"",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12113952",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "“미국 취업하는 외국인, 10만달러씩 내라”…수수료 걷겠다는 트럼프",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12113274",
+      "reason": "score_observed",
+      "score": 0.785,
+      "title": "“취업 원해? 1억4천만원 내”…트럼프, 외국인 졸업생에 ‘美 취업수수료’ 검토",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202607310827001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "트럼프, 외국인 유학생 취업에 ‘10만달러 수수료’ 검토",
+      "category": "세계"
+    },
+    {
+      "source": "IT조선",
+      "link": "https://it.chosun.com/news/articleView.html?idxno=2023092167034",
+      "reason": "score_observed",
+      "score": 0.659,
+      "title": "오픈AI, GPT-5.6 가격 최대 80% 인하… 소넷 5·키미 K3에 가격 공세",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=689025",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "오픈AI, GPT-5.6 루나 80% 인하…테라도 20% 내려",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1990873",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "'폴드8 흥행 자신감'…노태문, 삼성전자 주식 7억원어치 샀다",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260731175616",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "노태문 삼성전자 사장, 자사주 7억원 매입",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1990586",
+      "reason": "score_observed",
+      "score": 0.694,
+      "title": "LG AI연구원, 국내 최대 750B 'K-엑사원 2.0' 공개",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=688691",
+      "reason": "score_observed",
+      "score": 0.767,
+      "title": "LG AI연구원, 파라미터 7500억개 모델 ‘K-엑사원 2.0’ 공개",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1990876",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "SOOP, 2분기 영업익 126억원…전년 比 57.9% 감소",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260731173658",
+      "reason": "score_observed",
+      "score": 0.612,
+      "title": "효성, 2분기 영업익 2316억원…전력기기·화학 호조에 134%↑",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026073186181",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "SKT, 피지컬 AI 스타트업 8곳과 로보틱스 협업",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1990592",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "SKT, 피지컬 AI 스타트업 8개사와 협력…로보틱스 생태계 강화",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1990589",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "삼성 \"갤럭시 Z 예약 절반이 1030\"…폴드8·크림 색상 '인기'",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260731000220",
+      "reason": "score_observed",
+      "score": 0.619,
+      "title": "삼성 갤럭시Z8 사전판매 D-3…삼성닷컴 예약 절반이 1030",
+      "category": "IT/테크"
+    }
+  ]
+}
