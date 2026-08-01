@@ -1,0 +1,678 @@
+{
+  "date": "2026-08-02",
+  "excluded": [
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608019176i",
+      "reason": "score_observed",
+      "score": 0.628,
+      "title": "7월 수출 988억 달러…반도체가 전체 수출 40% 이끌었다",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260801021152003",
+      "reason": "score_observed",
+      "score": 0.659,
+      "title": "7월 수출 989억달러 역대 2위…반도체 두달째 400억달러대(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12114181",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "[속보] 7월 수출 989억달러로 62.8％↑…역대 2위",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008685806",
+      "reason": "length:205",
+      "title": "7월 수출 988.9억 달러…반도체 호조에 역대 2위",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080191297",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "주유소 기름값 11주 연속 하락⋯휘발유·경유 1800원대",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260731158400003",
+      "reason": "score_observed",
+      "score": 0.754,
+      "title": "주유소 기름값 11주째 하락…휘발유·경유 1천800원대 유지",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008685506",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "주유소 기름값 11주째 하락…휘발유·경유 1천800원대 유지",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080193427",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "[속보] '관저 이전 의혹' 윤한홍, 9시간 조사…\"나와 관련 없다\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260801047251004",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "\"관저이전 무관\" 부인한 윤한홍…특검은 \"지속 관여\" 진술 확보(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260801046900004",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "[속보] 종합특검, '관저 이전 의혹' 윤한홍 의원 9시간 조사",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080119173959998",
+      "reason": "score_observed",
+      "score": 0.675,
+      "title": "종합특검, '관저 이전 의혹' 윤한홍 의원 9시간 조사…\"혐의 부인 취지로 진술\"",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608011022001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "‘대통령실 관저 이전 부당 관여 의혹’ 국힘 윤한홍 종합특검 출석",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008685807",
+      "reason": "length:211",
+      "title": "종합특검, '관저 이전 의혹' 윤한홍 의원 소환",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260801_0003732692",
+      "reason": "score_observed",
+      "score": 0.708,
+      "title": "종합특검, '관저이전 특혜' 윤한홍 국힘 의원 9시간 조사(종합2보)",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260801045100057",
+      "reason": "score_observed",
+      "score": 0.584,
+      "title": "양산 41.6도·창원 40.4도…경남 곳곳 역대 최고 기온 경신",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/environment/1270952.html",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "경남 양산 41.6도 찍었다…‘122년 관측 사상 최고기온’ 하루 만에 경신",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12114237",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "[속보] 경남 양산 기온 41.6도…‘역대 최고기온’ 재차 경신",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080114212378308",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "경남 양산 기온 41.6도…'역대 최고' 하루 만에 재경신",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260801_0003732585",
+      "reason": "score_observed",
+      "score": 0.638,
+      "title": "양산 나흘 연속 40도 넘어…역대 최고기온 또 경신하나",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260801019700530",
+      "reason": "score_observed",
+      "score": 0.711,
+      "title": "'극한 폭염' 자택 온열질환자 비중 2배↑…\"냉방기기 가동해야\"",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1270953.html",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "38도 이상이면 ‘집’도 위험…자택 온열질환자 비율 2배 높아져",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080115564660100",
+      "reason": "score_observed",
+      "score": 0.694,
+      "title": "\"극한 폭염에는 자택 온열질환자 비중 2배↑…냉방기기 가동해야\"",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008685660",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "'극한 폭염'에 자택 온열질환자 비중 2배 높아진다…\"냉방 기기 적극 사용해야\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260801027700004",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "강남 대치동서 술취해 차도로 나온 40대 남성, 차에 치여 숨져",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12114226",
+      "reason": "length:293",
+      "title": "“미쳐 보지 못했다”…강남서 새벽 술취해 나온 40대 남성 차에 치여 숨져",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008685646",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "대치동서 술 취해 차도로 나온 40대 남성…차에 치여 숨져",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260801_0003732532",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "강남 대치동서 술 취한 40대 차에 치여 숨져",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260802002100034",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "전국 무더위·열대야 지속…낮 최고 39도 주의",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12114323",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "에어컨도 못 쉬는 날씨…낮 최고 39도 ‘찜통더위’ 유의",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260801_0003732732",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "'낮 최고 39도' 폭염 계속…열대야 주의보[오늘날씨]",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12114289",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "[속보] 로또 1등 9명, 30억9천만원씩…‘6, 7, 11, 15, 39, 43’",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608012052001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "1235회 로또 1등 ‘6, 7, 11, 15, 39, 43’…9명 30억씩",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260801_0003732737",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "1235회 로또 1등 각 30억씩…자동7명·수동2명(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260801045600063",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "천안 물류센터서 50대 근로자 쓰러져 숨져",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008685817",
+      "reason": "length:222",
+      "title": "천안 물류센터서 50대 근로자 쓰러져 숨져",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260801_0003732729",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "천안 물류센터 50대 근로자 심정지 숨져",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260801040852062",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "동해 삼화사 템플스테이 건물서 화재…2시간여 만에 초진(종합2보)",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008685746",
+      "reason": "length:203",
+      "title": "동해 삼화사서 화재…진화 중",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260801_0003732677",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "동해 삼화사 불, 진화중…템플스테이 참가자 등 6명 대피",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260801018700053",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "치료받던 입주민대표 사망…경산 아파트방화 희생자 3명으로 늘어",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080108321184675",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "경산 아파트 방화 희생자 3명째…치료 받던 입주민 대표도 숨져",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260801_0003732494",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "'경산 아파트 방화' 희생자 3명됐다…입주민 대표도 사망",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260801032700056",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "제주 방파제 앞서 수영하던 관광객 5명 구조",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008685745",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "\"못 나온다\" 방파제 벽 붙잡고…수영하던 관광객 구조",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260801_0003732596",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "방파제 벽 잡고 버텼다…제주 바다수영 관광객 5명 구조",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080189857",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "CBS \"美·이스라엘, 이번 주말 이란 에너지 시설 공습 계획\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260801011251071",
+      "reason": "score_observed",
+      "score": 0.704,
+      "title": "\"미국·이스라엘, 이번 주말 이란 에너지 인프라 공습 계획\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1270948.html",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "미·이스라엘, 주말 내 이란 에너지 시설 타격할 수도…“역대 가장 강력한 공습”",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12114211",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "“역대 가장 강력한 공습”…주말 이란 에너지 시설 타격 예고한  미국",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008685681",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "\"미·이스라엘, 이번 주말 이란 에너지 인프라 대규모 공습 계획\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260801_0003732476",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "미·이스라엘 주말 내내 이란 에너지 시설 공습 계획",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080191877",
+      "reason": "length:270",
+      "title": "호르무즈 해협 입구서 유조선 또 피격…항해 불능 상태",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260801031151009",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "미·이란 대치 속 호르무즈 입구서 유조선 잇따라 불길(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12114255",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "“큰 물보라와 함께 폭발했다”…호르무즈 입구서 유조선 잇따라 불길",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608011724001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "호르무즈 해협서 유조선 잇단 피격·폭발…“기관실 손상, 항해 불능 상태”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008685659",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "미국·이란 갈등 속 호르무즈 해협 입구서 유조선 또 피격",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260801047700108",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "이란, 쿠웨이트에 공습…\"美 방패막이는 불길 휩싸일 것\"",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608012113001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.822,
+      "title": "이란, 쿠웨이트 공습…“미국 방패막이 나라는 불길 속 타오르게 될 것”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008685940",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "이란, 쿠웨이트에 공습…\"미국 방패막이는 불길 휩싸일 것\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260801_0003732730",
+      "reason": "score_observed",
+      "score": 0.754,
+      "title": "이란군 \"美 방패되는 모든 국가, 전쟁의 불길 휩싸일 것\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260802002000072",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "페루 나스카 유적 상공 날던 소형 항공기 추락…\"13명 사망\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008686006",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "페루 나스카 유적 상공 날던 소형 항공기 추락…\"13명 사망\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260802_0003732781",
+      "reason": "score_observed",
+      "score": 0.663,
+      "title": "페루 나스카 관광 항공기 추락…탑승자 13명 전원 사망",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260801047000009",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "우주 떠돈 스페이스X 잔해, 달 충돌 예정…시속 8천700㎞ 접근중",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12114321",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "시속 8700㎞로 달 덮치는 스페이스X 잔해…5일 충돌 예고",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260801_0003732754",
+      "reason": "score_observed",
+      "score": 0.687,
+      "title": "우주 떠돌던 스페이스X 로켓, 5일 달 충돌",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260801052951081",
+      "reason": "score_observed",
+      "score": 0.74,
+      "title": "EU 법무·내무장관들, 4일 '세우타 사태' 긴급 화상회의(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008685921",
+      "reason": "score_observed",
+      "score": 0.675,
+      "title": "EU 22개국, '세우타 사태' 긴급 화상회의 소집 요구…\"유럽 차원 대응 촉구\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260802_0003732775",
+      "reason": "score_observed",
+      "score": 0.695,
+      "title": "EU 법무·내무장관들, 4일 '세우타 사태' 긴급 화상회의",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080192037",
+      "reason": "score_observed",
+      "score": 0.92,
+      "title": "인니 대통령 \"李대통령이 방북 의향 물어…기꺼이 가겠다 답변\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260801023351104",
+      "reason": "score_observed",
+      "score": 0.813,
+      "title": "인니 대통령 \"4월 방한 때 李대통령이 방북 의향 물어\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260801_0003732639",
+      "reason": "score_observed",
+      "score": 0.785,
+      "title": "인니 대통령 \"李, '방북 대화중재' 요청…靑 \"협력방안 지속 모색\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260731171652085",
+      "reason": "score_observed",
+      "score": 0.748,
+      "title": "스페인 세우타 '수만명 월경' 사태 진정…대다수 모로코로 귀환(종합2보)",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/europe/1270950.html",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "‘스페인 국경’ 몰려든 5만명 이주민 중 57명 사망…4만여명 모로코 귀환",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260801_0003732492",
+      "reason": "score_observed",
+      "score": 0.779,
+      "title": "스페인 세우타 무단입국 5만명 중 4.8만명 귀국…57명 사망",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260801000400099",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "민주콩고 에볼라 확진자 3천500명 넘어…역대 2번째 규모",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008685497",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "에볼라 확진자 3천500명…역대 2번째 규모 유행 중인 민주콩고",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260801_0003732360",
+      "reason": "score_observed",
+      "score": 0.695,
+      "title": "민주콩고 에볼라 확진 3500명 넘어…'빠른 속도'로 역대 2번째 규모 기록",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080190377",
+      "reason": "score_observed",
+      "score": 0.829,
+      "title": "NYT \"워시, '1년에 8번' Fed 금리결정 회의 축소 검토\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260801010900072",
+      "reason": "score_observed",
+      "score": 0.877,
+      "title": "NYT \"워시, 1년에 8번 열어온 연준 금리결정 회의 축소 검토\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260801_0003732391",
+      "reason": "score_observed",
+      "score": 0.888,
+      "title": "워시 미 연준의장, 금리 결정 횟수 줄일까 검토중-NYT",
+      "category": "세계"
+    },
+    {
+      "source": "IT조선",
+      "link": "https://it.chosun.com/news/articleView.html?idxno=2023092167113",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "오픈AI, 챗GPT 이용자 10억명 돌파… 출시 3년8개월만",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260801104214",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "오픈AI '챗GPT' 이용자 10억 명 넘었다",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=689030",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "오픈AI, AI 에이전트 샌드박스 이탈 추가 정황 포착",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260730180250",
+      "reason": "clickbait",
+      "title": "[유미's 픽] 구글 AI 에이전트 '제미나이 스파크', 韓서 통할까",
+      "category": "IT/테크"
+    }
+  ]
+}
