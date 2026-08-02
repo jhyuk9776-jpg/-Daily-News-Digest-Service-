@@ -1,0 +1,791 @@
+{
+  "date": "2026-08-03",
+  "excluded": [
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260731154900002",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "삼성화재, S&P 신용등급 'AA' 획득…국내 민간기업서 최초",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/finance/1270982.html",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "삼성화재, S&P 신용등급 ‘AA’ 획득…“한국 민간기업 최초”",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12114600",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "삼성화재, 국내 민간기업 최초…S&P 신용등급 'AA' 획득했다",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12114427",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "S&P 신용등급 ‘AA’ 획득…대한민국하고 신용등급 같아진 이 기업은",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080209420798520",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "삼성화재, S&P 신용등급 'AA' 획득…\"국내 민간기업 최초\"",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608029733i",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "독점 우려 크다던 KTX·SRT 통합…결론은 정반대였다",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080212190685014",
+      "reason": "score_observed",
+      "score": 0.663,
+      "title": "KTX+SRT 통합…9월부터 요금 10%↓",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008686608",
+      "reason": "length:195",
+      "title": "KTX·SRT 통합…운임 10% 낮추고 좌석 확대",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080202021",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "5대銀 주담대 11개월만에 '최대폭 증가'",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260801049800002",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "5대銀 주담대 11개월 만에 최대폭 증가…마통 6일간 1.8조↑",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080209241767254",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "5대 은행 주담대 11개월만에 최대 폭 증가…신용대출·마통도 '빚투'에 들썩",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260801046800002",
+      "reason": "score_observed",
+      "score": 0.818,
+      "title": "불법사채 대포폰 무력화 빨라진다…발신중단 7→3일 단축",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12114463",
+      "reason": "score_observed",
+      "score": 0.822,
+      "title": "불법사채의 집요한 공격, ‘대포폰 제로’로 차단 나선 금감원",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008686355",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "불법 사채 대포폰 무력화 빨라진다…발신 중단 7→3일 단축",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008686274",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "통상본부장, 미국 11개 주 주지사 면담…투자·원전 협력 논의",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260802_0003732907",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "통상본부장, 美 주 정부 대상 아웃리치…전략적 협력 외연 확대",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080211110558433",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "여한구 통상본부장, 美11개 주지사 연쇄 면담…원전·투자 협력 세일즈",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260731172800002",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "9월부터 KTX·SRT 통합…요금 10% 내리고 운행횟수·좌석 늘어나",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1270989.html",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "KTX 운임 10% 내리고 운행 횟수 늘어난다…SRT와 통합 효과",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026073116282005480",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "KTX 요금 10% 내리고 주말 1.7만석 늘린다…공정위, 코레일·SR 결합 승인",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608029927i",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "폭염에 중대본 2단계 격상…'가뭄 특교세' 57억 등 범정부 대응 강화",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260802025552530",
+      "reason": "score_observed",
+      "score": 0.67,
+      "title": "행안부, 폭염 중대본 3년만에 2단계 격상…범정부 대응 강화(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/labor/1271029.html",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "폭염 중대본 2단계…“물류·건설현장 옥외작업 중지 권고”",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12114428",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "전국 폭염 장기화에 중대본 2단계로 격상…범정부 대응 강화",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080213270288955",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "폭염 중대본 2단계 격상…경남 양산 42도",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608021346001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "행안부, 폭염 중대본 2단계 3년 만에 가동···“범정부 대응 강화”",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260802_0003733026",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "폭염 장기화에 중대본 2단계 가동…\"국민 피해 최소화\"",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080213363755868",
+      "reason": "score_observed",
+      "score": 0.696,
+      "title": "극심한 폭염에 중대본 2단계 가동…행안부, 남부권 중심 현장 대응",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260802033400055",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "송아지 우유 주던 70대 농장주, 어미 소에 들이받혀 숨져",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12114474",
+      "reason": "length:288",
+      "title": "송아지에 우유 먹이다 참변…70대 농장주, 어미 소에 들이받혀 숨져",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608021639001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "length:298",
+      "title": "송아지 우유 주던 70대 농장주 어미 소에 참변",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008686537",
+      "reason": "length:254",
+      "title": "전북 임실 축산농가서 70대 사망…\"소에 들이받혀\"",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260802_0003733141",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "송아지에 우유 주던 70대 농장주, 어미 소에 받혀 숨져",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080202171",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "'김병기 의혹' 11개월째 결론 못낸 경찰…\"이럴거면 수사심의위 열어라\"",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1270988.html",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "‘김병기 의혹’ 1년째 결론 못낸 경찰…고발인, ‘수심위 소집’ 요청",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12114628",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "김병기 고발단체, 경찰에 수사심의위 요청",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608022121035/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "‘김병기 의혹’ 수사, 일 년째 지지부진…고발한 시민단체, 수사심의위 요청",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260802043600004",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "경찰,  성동구서 외국인 여성에 흉기 휘두른 40대 체포",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12114674",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "“일면식도 없는데”…성동구서 외국인 여성 찌르고 달아난 40대 긴급 체포",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008686565",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "[단독] 서울 성동구서 외국인 여성에 흉기 휘둘러…40대 남성 긴급체포",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260802_0003733166",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "일면식 없는 외국인 여성에 칼부림·도주…40대 남성 체포",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260802032400004",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "서울 출생아 26개월 연속 증가…1∼5월 출생아 작년보다 18%↑",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260731_0003732337",
+      "reason": "score_observed",
+      "score": 0.652,
+      "title": "서울 출생아 26개월째 증가…100인과 '서울아이 공감토크'",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080218583502823",
+      "reason": "score_observed",
+      "score": 0.652,
+      "title": "서울시 출생아 수 26개월 연속 증가세…\"생애주기 지원 체계 덕분\"",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008686786",
+      "reason": "score_observed",
+      "score": 0.624,
+      "title": "'양산 42.5도'…122년 관측 사상 첫 42도 돌파",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260802_0003732976",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "[속보]경남 양산 40.3도…5일 연속 40도 넘어",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080213231336184",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "[속보]경남 양산 '42도'…국내 기상 관측 사상 최고 기록",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260802042900062",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "폭염 속 강원 동해안 해수욕장 35만명 몰려",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12114671",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "“바다서 더위 식히자”…강원 동해안 해수욕장 35만명 몰려",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008686809",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "폭염도 못 막은 피서 행렬…해운대 해수욕장 인산인해",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260802029351004",
+      "reason": "score_observed",
+      "score": 0.752,
+      "title": "'검찰수사 완전 폐지법' 처리됐지만…헌재서 최종라운드 예고(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608021757001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "clickbait",
+      "title": "검찰 수사권 78년만 완전 폐지…내 사건 처리는 어떻게 되나",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008686802",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "'검찰수사 완전 폐지법' 처리됐지만…헌재서 최종라운드 예고",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260802045800004",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "금천구 20대 지적장애인 닷새째 실종…줄무늬 반소매 티셔츠",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008686801",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "금천구 20대 지적장애인 닷새째 실종…줄무늬 반소매 티셔츠",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260802_0003733215",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "20대 지적장애인 금천구서 닷새째 실종…경찰 수색",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080202707",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "휴가 중 '업무 카톡' 띠링…직장인 절반은 결국 일했다",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080215070501330",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "\"쉬는날인데 미안\" 휴가 중 '카톡 지옥'…직장인 절반이 겪어",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008686474",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "소중한 연차 쓰고도…직장인 절반이 \"나도 당했다\"",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080203851",
+      "reason": "length:112",
+      "title": "[포토] 인니서 271명 탄 여객선 큰불…5명 사망·41명 실종",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260802039551104",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "인니 동자바주서 271명 탄 여객선에 큰불…5명 사망·41명 실종(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1271072.html",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "인도네시아 해상서 271명 탄 여객선 화재…5명 사망· 41명 실종",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608022141001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "인니 270명 탄 여객선에서 불···최소 5명 사망·수십명 실종",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008686576",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "인도네시아서 270여 명 탄 여객선에 큰불…5명 사망·41명 실종",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260802_0003733227",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "인니, 연락선 화재로 5명 사망 41명 실종…인근 배들이 225명 구조",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080304677",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "스페인 세우타 이주민 난입사태 사망자 72명으로 증가",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260802043351098",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "스페인 세우타 이주민 난입사태 사망자 72명으로 늘어(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608021535001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "세우타 이주민 사태, 사망자 더 늘듯···EU 회원국, 스페인과 갈등 커지나",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008686792",
+      "reason": "score_observed",
+      "score": 0.621,
+      "title": "'세우타 사태' 사망자 72명…EU, 4일 긴급회의",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260803_0003733274",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "\"'세우타 이주민 사태' 사망자 72명으로 확대…더 늘어날 수도\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080202617",
+      "reason": "score_observed",
+      "score": 0.833,
+      "title": "트럼프 \"공습 취소\"…이란 \"그런 합의 없었다\" 정면 반박",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260803002300079",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "\"트럼프의 이란 공격 취소, 이스라엘은 까맣게 몰랐다\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1270995.html",
+      "reason": "score_observed",
+      "score": 0.722,
+      "title": "트럼프, 이란 공습 전격 취소…“호르무즈 전면 개방 합의 윤곽”",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080214424872051",
+      "reason": "score_observed",
+      "score": 0.675,
+      "title": "트럼프, 대(對) 이란 공격 전격 보류",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260802021400009",
+      "reason": "score_observed",
+      "score": 0.775,
+      "title": "\"사우디 빈살만, 트럼프에 '대이란 공습' 만류…보복 우려\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008686352",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "\"사우디 빈살만, 트럼프에 '대이란 공습' 만류…보복 우려\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260803_0003733281",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "\"네타냐후, 트럼프 이란 공습 취소 SNS 보고 알아\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260803001300079",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "이란 외무부 \"오만과 호르무즈 해협 관리 협의 막바지\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008686793",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "\"오만과 호르무즈 협의 막바지\"…미 상수도망 해킹",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260803_0003733275",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "이란 외무 \"오만과 호르무즈 협상 순항 중…막바지 단계\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260803001600091",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "47도 찍은 美서부 열돔 폭염…워싱턴주 대형산불로 5천가구 대피",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008686839",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "47도 찍은 미국 서부 열돔 폭염…워싱턴주 대형산불로 5천 가구 대피",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260803_0003733278",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "美워싱턴주 잇단 대형 산불…\"600채 피해·5000가구 대피\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260802055900082",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "유럽 가뭄에 셧다운 위기…헝가리 원전 가동 완전 중단",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008686731",
+      "reason": "score_observed",
+      "score": 0.621,
+      "title": "유럽 가뭄에 셧다운 위기…헝가리 원전 가동 완전 중단",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260803_0003733272",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "'가뭄' 헝가리, 44년 만에 유일한 원전 가동 중단…\"전력 위기 심화\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260802050651079",
+      "reason": "score_observed",
+      "score": 0.765,
+      "title": "OPEC+, 9월부터 하루 18만8천배럴 증산 합의(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008686719",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "OPEC+, 9월부터 하루 18만 8천 배럴 증산",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260802_0003733250",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "OPEC 플러스, 9월도 전달보다 일 18.8만 배럴 증산 결정…연속 6차",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080297007",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "'강진' 구마모토 수색·구조 종료…이온몰 포함 복구단계 전환",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260802015951073",
+      "reason": "score_observed",
+      "score": 0.729,
+      "title": "日 구마모토 강진 현장 수색 종료…폭염·단수에 2차 피해도(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608021534001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.678,
+      "title": "구마모토 강진 구조 작업 사실상 종료···이제는 폭염과의 싸움[구마모토 강진]",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12114597",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "트럼프 또 '타코'…\"중동 요청에 이란 공격 취소\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008686408",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "[자막뉴스] \"강하게 타격할 것\" 트럼프 또 '타코'?…빈살만 \"공격 보류\" 요청에 '급제동'",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260802_0003732973",
+      "reason": "score_observed",
+      "score": 0.88,
+      "title": "트럼프 “중동 동맹국들, 종전 합의 조건에 도달, 이란에 대한 공격 명령 보류”",
+      "category": "세계"
+    },
+    {
+      "source": "IT조선",
+      "link": "https://it.chosun.com/news/articleView.html?idxno=2023092167129",
+      "reason": "score_observed",
+      "score": 0.615,
+      "title": "아마존, 오픈AI에 72조 투자… 지분 5% 확보",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260802100202",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "아마존, 오픈AI에 72조원 투자 완료…지분 5% 확보",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1991099",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "SKT, 가민·샥즈 도입…러너 고객 혜택 확대",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260802083816",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "SKT, '가민' 러닝워치·'샥즈' 골전도이어폰 싸게 판다",
+      "category": "IT/테크"
+    }
+  ]
+}
