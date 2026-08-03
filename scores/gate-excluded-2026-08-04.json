@@ -1,0 +1,991 @@
+{
+  "date": "2026-08-04",
+  "excluded": [
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260803034800002",
+      "reason": "score_observed",
+      "score": 0.661,
+      "title": "[부동산세 개편] 시가 35억 넘는 주택부터 종부세↑…46억부터 급증",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1271193.html",
+      "reason": "score_observed",
+      "score": 0.704,
+      "title": "시가 32억 이상·비거주 주택 내년부터 종부세 늘어난다",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12115461",
+      "reason": "score_observed",
+      "score": 0.683,
+      "title": "[뉴스&분석] 실거주해야 '장특공'… 시가 32억부터 종부세 오른다",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008688701",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "시가 20억부터 '종부세'…'비거주' 부담 확대",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260803_0003734451",
+      "reason": "score_observed",
+      "score": 0.655,
+      "title": "시가 35억 넘으면 종부세 증가…비거주 세부담 5배 늘기도[세제개편]",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260802047900002",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "[2026세법] 지방中企 청년 소득세 최장 10년 감면…기업 세액공제 1.5배로",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080123420715366",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "지방 R&D·투자 세액공제, 수도권보다 최대 1.5배",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260803_0003734455",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "R&D세액공제 등 지방 우대…청년 근소세 최대 10년 감면[세제개편]",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080313333971037",
+      "reason": "score_observed",
+      "score": 0.652,
+      "title": "지방 투자기업 세금 1.5배 더 깎아준다…지방 중기 청년 소득세 최장 10년 감면[2026 세제개편]",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260802036800002",
+      "reason": "score_observed",
+      "score": 0.675,
+      "title": "[2026세법] 총소득 5천200만원이하 맞벌이도 근로장려금…73만가구 더 혜택",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008688322",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "총소득 5천200만 원 이하 맞벌이도 근로장려금…73만 가구 더 혜택",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260803_0003733922",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "맞벌이 年5200만원까지 근로장려금 지원…최대 360만원[세제개편]",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080313541511153",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "[2026 세제개편]연 5200만원 저소득 맞벌이, 근로장려금 360만원 받는다",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608032771i",
+      "reason": "score_observed",
+      "score": 0.752,
+      "title": "트럼프, 이란 공격 취소에 유가 6% 급락…美 국채금리도 내려",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260804004400072",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "국제유가, 트럼프 이란공격 취소에 급락…브렌트 5%↓",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260803_0003734918",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "트럼프 이란 공격 보류에 국제유가 6.9% 급락",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080314212156620",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "14억 이하 1주택, 종부세 안 낸다…정부 세제개편안 내달 초 제출",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008687344",
+      "reason": "length:0",
+      "title": "[바로이뉴스] \"30억 이하 1주택 세금 부담 낮췄다\"…\"세금 탓에 전월세 가격 증가 맞지 않아\"",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260803_0003734897",
+      "reason": "score_observed",
+      "score": 0.813,
+      "title": "구윤철 \"20억 이하 종부세 제외·30억 이하 세금↓…시장 반발 제한적\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260803036751008",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "삼전닉스, 또 8%대 급락 마감…외국인·기관, 동반 매도",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080316093110164",
+      "reason": "score_observed",
+      "score": 0.619,
+      "title": "삼전닉스, 또 8%대 급락 마감…외국인·기관 '팔자'에 코스피 휘청",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008688415",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "'삼전닉스' 8%대 급락…레버리지 거래는 줄었지만",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260803000600002",
+      "reason": "score_observed",
+      "score": 0.617,
+      "title": "[2026세법] AI로봇·반도체 생산 촉진…6대 성장동력에 소득·법인세 특례",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008688454",
+      "reason": "score_observed",
+      "score": 0.615,
+      "title": "AI로봇·반도체 생산 촉진…6대 성장동력에 소득·법인세 특례",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080313155882685",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "반도체·배터리 등 6대 성장동력 국내 생산 시 소득·법인세 감면[2026 세제개편]",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260803109500002",
+      "reason": "score_observed",
+      "score": 0.704,
+      "title": "한은, 13년 만에 실물 금 산다…\"금값 떨어져 부담 완화\"",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1271196.html",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "한은 13년 만에 금 사들이나…국산 금 매입 경로 마련",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008688403",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "한은, 13년 만에 실물 금 산다…\"금값 떨어져 부담 완화\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260803078700002",
+      "reason": "score_observed",
+      "score": 0.697,
+      "title": "[부동산세 개편] 수백억 장특공제, 한도 설정으로 차단…보유→거주 전환",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12115468",
+      "reason": "score_observed",
+      "score": 0.616,
+      "title": "장특공제 한도 '무제한→20억→10억'… 비거주자는 혜택 배제",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008688396",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "수백억 장특공제, 한도 설정으로 차단…보유→거주 전환",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080325601",
+      "reason": "score_observed",
+      "score": 0.623,
+      "title": "메이플자이 종부세 453만원→978만원…비거주 땐 1970만원",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1271248.html",
+      "reason": "clickbait",
+      "title": "[Q&A] ‘시가 30억 종부세’ 실거주 91만→76만원, 비거주는?",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260803_0003734735",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "'반포자이' 국평 보유세 1810만→2764만원…비거주 땐 3318만원",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080328111",
+      "reason": "length:0",
+      "title": "'300억 사기혐의' 차가원 대표 구속",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260803053651004",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "'300억 사기 혐의' 차가원 기획사 대표 구속…\"증거인멸 염려\"(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1271245.html",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "‘300억원대 사기 의혹’ 차가원 원헌드레드 대표 구속",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12115642",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "‘300억대 사기 혐의’ 차가원, 구속됐다…“증거인멸 염려”",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608032149001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.743,
+      "title": "[속보]‘300억 사기 혐의’ 연예기획사 대표 차가원 구속…“증거인멸 염려”",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008688556",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "'300억 사기 혐의' 차가원 기획사 대표 구속…\"증거인멸 염려\"",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260803_0003734495",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "'300억대 사기 혐의' 차가원 구속…法 \"증거인멸 염려\"",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080322163163077",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "'300억대 사기 혐의' 차가원 구속…\"증거인멸 우려\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260803159800004",
+      "reason": "length:0",
+      "title": "[속보] 서울에 첫 폭염중대경보…온열질환자 어제만 18명",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12115638",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "[속보] 서울에 첫 폭염중대경보…온열질환자 어제만 18명",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080322161641821",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "서울에 첫 폭염중대경보…온열질환자 어제만 18명",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008688710",
+      "reason": "score_observed",
+      "score": 0.622,
+      "title": "수도권 첫 폭염중대경보…'온열질환자' 2천 명 돌파",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260803_0003734702",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "'폭염중대경보' 전남광주, 곳곳서 온열질환 피해 잇따라",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080318503108125",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "수도권 첫 ‘폭염중대경보’…오산시, 취약계층 보호 총력",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080323317",
+      "reason": "length:237",
+      "title": "[속보] 1호선 외대앞역 무정차 통과…전차선 긴급복구 작업 중",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260803137851004",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "지하철 1호선 외대앞역 장애 복구는 완료…\"지연·불규칙 운행 중\"(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12115312",
+      "reason": "length:217",
+      "title": "[속보] 1호선 외대앞역 무정차 통과…전차선 긴급복구 작업 중",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260803_0003734864",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "'전기 장애' 1호선 지연·외대앞역 무정차…복구 완료(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080318145301211",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "지하철 1호선 외대앞역 장애 복구 완료…\"지연·불규칙 운행 중\"(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080328167",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "경산 아파트 관리사무소 방화 사건 수사팀장 숨진 채 발견",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12115266",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "경산 아파트 관리사무소 방화사건 수사팀장 숨진 채 발견",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080316365983995",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "경산 아파트 방화사건 수사팀장 숨진 채 발견…\"경위 조사 중\"",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608031535001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "경산 방화 사건 수사 경찰관 숨진 채 발견···경찰, 경위 조사",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12115301",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "‘공직선거법 위반 혐의’ 안병윤 예천군수 구속영장 기각",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080316110392456",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "안병윤 예천군수 구속영장 기각…불구속 상태로 수사 계속",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608031657001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "‘언론인에 금품 제공 혐의’ 안병윤 예천군수 구속영장 기각",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260803_0003734678",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "'공직선거법 위반 혐의' 안병윤 예천군수 구속영장 기각",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260803147800004",
+      "reason": "score_observed",
+      "score": 0.79,
+      "title": "경찰수사개혁위 \"장윤기 사건은 수사결과 발표 후 제도 개선 검토\"",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608032046001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "경찰 수사개혁위 “장윤기 사건, 사실관계 확정 후 제도 개선 논의”",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260803_0003734808",
+      "reason": "score_observed",
+      "score": 0.92,
+      "title": "경찰 수사개혁위 \"장윤기 사건 수사결과 확정 뒤 제도개선안 마련\"",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080319294562658",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "경찰수사개혁위 \"장윤기 사건, 수사결과 발표 후 제도 개선 검토\"",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608032189i",
+      "reason": "score_observed",
+      "score": 0.85,
+      "title": "검찰 보완수사 요구에…'마약 기밀 유출 경감' 서울청 광수단 직접 수사",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260803131700004",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "마약 정보원에 수사기밀 유출 경찰관 사건, 서울청 광수단이 수사",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1271211.html",
+      "reason": "score_observed",
+      "score": 0.855,
+      "title": "현직 경찰 ‘마약 수사 기밀 유출’ 의혹…서울경찰청이 직접 수사",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080317225528133",
+      "reason": "score_observed",
+      "score": 0.717,
+      "title": "'마약 수사정보 유출' 경찰관 사건, 서울청이 직접 수사",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608032305H",
+      "reason": "score_observed",
+      "score": 0.739,
+      "title": "\"대통령님 보실 것 같아서 X 깔았다\"…'돌려차기' 피해자 절규",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12115585",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "“대통령님 X 보실 거 같아서 깔았다”…‘부산 돌려차기’ 피해자의 호소",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080320183665521",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "\"대통령님, X는 보실 것 같아서…피해자 편 돼달라\"…부산 돌려차기 피해자의 '절규'",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260803154800004",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "방산시장 일대 불질러 동료상인 숨지게 한 60대…2심 징역 20년",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12115853",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "“자신 무시했다” 방산시장 건물 방화·동료 살해 60대, 2심도 징역 20년",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260803_0003734654",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "서울 방산시장에 불 질러 동료 숨지게 한 60대…1·2심 징역 20년",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260803161600053",
+      "reason": "score_observed",
+      "score": 0.886,
+      "title": "경북 성주 어린이집서 상습 아동 학대…경찰, 원장·교사 송치",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008688731",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "경북 성주 어린이집서 상습 아동 학대…경찰, 원장·교사 송치",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260804_0003734955",
+      "reason": "score_observed",
+      "score": 0.85,
+      "title": "경찰, 상습 아동학대 혐의 성주 어린이집 원장·교사 송치",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1271181.html",
+      "reason": "score_observed",
+      "score": 0.663,
+      "title": "룰라 브라질 여당 대선후보 추대…4선 도전",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12115427",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "룰라 브라질 대통령 4선 도전 … 남미 '우파 물결' 막을지 주목",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080315254264255",
+      "reason": "score_observed",
+      "score": 0.642,
+      "title": "룰라 브라질 대통령, 노동자당 대선후보로 또 대권 도전",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608030857001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "81세 룰라, 브라질 여당 대선 후보 확정···4선 도전 나선다",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260803024451009",
+      "reason": "score_observed",
+      "score": 0.811,
+      "title": "이스라엘, 하마스 무장해제안 '심각한 우려' 美에 전달(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608031040001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.756,
+      "title": "이스라엘 “하마스 무장해제 전 철군 없다”···트럼프 가자 평화안 흔들리나",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008688565",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "이스라엘, 하마스 무장해제안 '심각한 우려' 미국에 전달",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260803_0003734004",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "이스라엘, 백악관에 \"하마스 재무장 우려\" 전달…가자 협상 난항",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260804004600071",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "트럼프, 이란 전쟁으로 떼돈 번 美 석유사들에 \"소매가 내려라\"",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608040622001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "트럼프, 이란 전쟁으로 떼돈 번 엑손모빌·셰브론에 “가격 낮춰라” 압박",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008688763",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "트럼프, 이란 전쟁으로 떼돈 번 미국 석유사들에 \"소매가 내려라\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260804003751071",
+      "reason": "score_observed",
+      "score": 0.655,
+      "title": "트럼프 \"참수 전 마지막 기회\"…이란에 신속 합의 고강도 압박(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1271257.html",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "마음 급한 트럼프 “참수 전 마지막 기회”…이란은 “미국과 직접 협상 안 해”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008688707",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "트럼프 \"이란과 대화중…참수 전 마지막 기회\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260804002500075",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "美 기생충 감염사태 첫 사망자 발생…기저질환자 2명 숨져",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008688655",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "미국 기생충 감염사태 첫 사망자 발생…기저질환자 2명 숨져",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260804_0003734950",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "美 사이클로스포리아 기생충 감염 첫 사망자 2명 발생…모두 기저질환자",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260804004400072",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "국제유가, 트럼프 이란공격 취소에 급락…브렌트 5%↓",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008688694",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "국제유가, 트럼프 이란공격 취소에 5% 안팎 급락",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260803_0003734918",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "트럼프 이란 공격 보류에 국제유가 6.9% 급락",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080324301",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "美·이란 4일 회담…\"호르무즈 개방 다음은 핵 협상\"",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12115426",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "트럼프 \"이란과 협상 재개 호르무즈 개방 합의 끝나\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260804_0003734939",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "트럼프 \"이란과 지금 협상중…호르무즈 통행료 부과없다\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260803161000071",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "美국방부, 재고 우려 속 '패트리엇 3배·사드 4배 증산' 계약",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008688579",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "미국 국방부, 재고 우려 속 '패트리엇 3배·사드 4배 증산' 계약",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260804_0003734933",
+      "reason": "score_observed",
+      "score": 0.767,
+      "title": "美, 재고 고갈 우려속 \"패트리엇 3배·사드 4배 증산 협약\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260803159100084",
+      "reason": "score_observed",
+      "score": 0.754,
+      "title": "태국 파타야 떼강도, 러시아인 남매 등 5명 살해…총리, 러에 사과",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12115646",
+      "reason": "score_observed",
+      "score": 0.767,
+      "title": "태국 총리, 러시아인 남매 등 5명 살해 공개 사과…“최고 수준 처벌”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008688554",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "태국 파타야 떼강도, 러시아인 남매 등 5명 살해…태국 총리, 러에 사과",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260803155600083",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "\"중국 CXMT, 베이징에 메모리 반도체 공장 추가 건설 추진\"",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12115564",
+      "reason": "score_observed",
+      "score": 0.66,
+      "title": "中 ‘메모리 굴기’ 속도전…“CXMT, 베이징에 두 번째 D램 공장 추진”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008688551",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "\"창신메모리, 베이징에 메모리 반도체 공장 추가 건설 추진\"",
+      "category": "세계"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1991384",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "해남서 '국가AI컴퓨팅센터' 착공⋯AI고속도로 구축 본격화",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=689254",
+      "reason": "score_observed",
+      "score": 0.719,
+      "title": "해남서 '국가 AI 컴퓨팅센터' 첫 삽...2028년 구축 목표",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=689263",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "티오리, 우리금융그룹에 AI 모의해킹 솔루션 ‘진트 웹’ 공급",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260803185310",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "티오리, 우리금융그룹에 AI 모의해킹 '진트 웹' 공급",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=689261",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "초록소프트, 중소 기업 겨냥 AX 솔루션 3종 출시",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260803174724",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "초록소프트, 'AI 전환 솔루션 3종'으로 중소기업 AX 사업 공략",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080325131",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "SK텔레콤, 순천향대와 AI 그림일기 교육",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1991194",
+      "reason": "score_observed",
+      "score": 0.655,
+      "title": "SKT, 순천향대와 'AI 그림일기' 교육…학생 문해력·표현력 강화",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1991224",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "구글클라우드 \"오라클 기업용 앱에 제미나이 지원\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260803175216",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "구글, 오라클 시스템에 '제미나이' 탑재…AI 자동화 시장 확대",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080323671",
+      "reason": "score_observed",
+      "score": 0.624,
+      "title": "네이버, AI팩토리 밑그림 공개…'100% 출자' 자회사 설립한다",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1991321",
+      "reason": "score_observed",
+      "score": 0.621,
+      "title": "네이버, AI 팩토리 계약 구조 공개⋯\"GPU 확보·재무 부담 완화\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608032017i",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "'IT 전문기업' NC IDS, NC AX로 사명 변경",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1991396",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "엔씨 자회사 NC IDS, 'NC AX'로 사명 변경…AX 전문 기업 새 출발",
+      "category": "IT/테크"
+    }
+  ]
+}
