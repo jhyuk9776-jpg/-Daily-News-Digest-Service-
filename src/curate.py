@@ -234,8 +234,9 @@ LENGTH_MIN, LENGTH_MAX = 300, 2000   # 대표 후보 본문 길이 범위(벗어
 
 def record_representative_strike(rep_data: dict, item: dict, body, date: str) -> bool:
     """멤버 본문 품질(empty/sparse)을 판정해 기자 스트라이크를 기록. 기록했으면 True.
-    author 없으면 skip. 정상 본문(≥200자)은 무기록. reporters.record_strike로 날짜·링크 멱등."""
-    if not item.get("author"):
+    기자명 아닌 author(빈값·매체명)는 record_strike가 skip. 정상 본문(≥200자)은 무기록.
+    reporters.record_strike로 날짜·링크 멱등."""
+    if not reporters.is_reporter(item["source"], item.get("author", "")):
         return False
     reason = reporters.classify_body(body)
     if not reason:

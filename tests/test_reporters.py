@@ -23,10 +23,44 @@ class NormalizeAuthorTest(unittest.TestCase):
     def test_plain_name_unchanged(self):
         self.assertEqual(reporters.normalize_author("이원지"), "이원지")
 
+    def test_strips_trailing_email(self):
+        self.assertEqual(reporters.normalize_author("홍준표 기자 pyoya@imaeil.com"), "홍준표")
+
+    def test_takes_name_inside_parens(self):
+        self.assertEqual(reporters.normalize_author("tai@sbs.co.kr\n\t\t(김용태 기자)"), "김용태")
+
+    def test_source_name_inside_parens_is_not_reporter(self):
+        self.assertFalse(reporters.is_reporter("SBS", "newsservice@sbs.co.kr(SBS)"))
+        self.assertTrue(reporters.is_reporter("SBS", "newsservice@sbs.co.kr(김은진)"))
+
 
 class ReporterKeyTest(unittest.TestCase):
     def test_key_scopes_by_source(self):
         self.assertEqual(reporters.reporter_key("연합뉴스", "황철환 기자"), "연합뉴스::황철환")
+
+
+class IsReporterTest(unittest.TestCase):
+    def test_real_name_is_reporter(self):
+        self.assertTrue(reporters.is_reporter("연합뉴스", "황철환 기자"))
+
+    def test_empty_author_is_not(self):
+        self.assertFalse(reporters.is_reporter("한겨레", ""))
+
+    def test_source_name_as_author_is_not(self):
+        self.assertFalse(reporters.is_reporter("매일경제", "매일경제"))
+
+    def test_bare_suffix_is_not(self):
+        self.assertFalse(reporters.is_reporter("뉴시스", "기자"))
+
+
+class InvalidAuthorNotRecordedTest(unittest.TestCase):
+    def test_selection_skips_non_reporter(self):
+        data = reporters.record_selection({}, "매일경제", "매일경제", "2026-08-04", "http://a")
+        self.assertEqual(data, {})
+
+    def test_strike_skips_non_reporter(self):
+        data = reporters.record_strike({}, "한겨레", "", "2026-08-04", "http://a", "empty", 0)
+        self.assertEqual(data, {})
 
 
 class ClassifyBodyTest(unittest.TestCase):

@@ -19,309 +19,6 @@
       }
     ]
   },
-  "매일경제::매일경제": {
-    "sparse_count": 2,
-    "points": 2,
-    "blacklisted": false,
-    "last_updated": "2026-08-04",
-    "history": [
-      {
-        "date": "2026-07-24",
-        "link": "https://www.mk.co.kr/news/economy/12106263",
-        "reason": "sparse",
-        "chars": 91
-      },
-      {
-        "date": "2026-07-26",
-        "link": "https://www.mk.co.kr/news/society/12107398",
-        "reason": "sparse",
-        "chars": 0
-      },
-      {
-        "date": "2026-07-27",
-        "link": "https://www.mk.co.kr/news/economy/12107748",
-        "reason": "sparse",
-        "chars": 153
-      },
-      {
-        "date": "2026-07-29",
-        "link": "https://www.mk.co.kr/news/world/12109694",
-        "reason": "sparse",
-        "chars": 0
-      },
-      {
-        "date": "2026-07-29",
-        "link": "https://www.mk.co.kr/news/world/12109730",
-        "reason": "sparse",
-        "chars": 0
-      },
-      {
-        "date": "2026-07-30",
-        "link": "https://www.mk.co.kr/news/economy/12110786",
-        "reason": "sparse",
-        "chars": 198
-      },
-      {
-        "date": "2026-07-31",
-        "link": "https://www.mk.co.kr/news/world/12112403",
-        "reason": "sparse",
-        "chars": 151
-      },
-      {
-        "date": "2026-08-01",
-        "link": "https://www.mk.co.kr/news/economy/12113642",
-        "reason": "sparse",
-        "chars": 133
-      }
-    ],
-    "selected_count": 56,
-    "selected_history": [
-      {
-        "date": "2026-07-24",
-        "link": "https://www.mk.co.kr/news/society/12105823"
-      },
-      {
-        "date": "2026-07-24",
-        "link": "https://www.mk.co.kr/news/society/12106056"
-      },
-      {
-        "date": "2026-07-24",
-        "link": "https://www.mk.co.kr/news/society/12105794"
-      },
-      {
-        "date": "2026-07-24",
-        "link": "https://www.mk.co.kr/news/world/12106038"
-      },
-      {
-        "date": "2026-07-24",
-        "link": "https://www.mk.co.kr/news/world/12105721"
-      },
-      {
-        "date": "2026-07-24",
-        "link": "https://www.mk.co.kr/news/world/12105908"
-      },
-      {
-        "date": "2026-07-25",
-        "link": "https://www.mk.co.kr/news/economy/12106473"
-      },
-      {
-        "date": "2026-07-25",
-        "link": "https://www.mk.co.kr/news/economy/12106825"
-      },
-      {
-        "date": "2026-07-25",
-        "link": "https://www.mk.co.kr/news/society/12106920"
-      },
-      {
-        "date": "2026-07-25",
-        "link": "https://www.mk.co.kr/news/society/12106635"
-      },
-      {
-        "date": "2026-07-25",
-        "link": "https://www.mk.co.kr/news/society/12107017"
-      },
-      {
-        "date": "2026-07-25",
-        "link": "https://www.mk.co.kr/news/world/12107182"
-      },
-      {
-        "date": "2026-07-26",
-        "link": "https://www.mk.co.kr/news/economy/12107229"
-      },
-      {
-        "date": "2026-07-26",
-        "link": "https://www.mk.co.kr/news/society/12107233"
-      },
-      {
-        "date": "2026-07-26",
-        "link": "https://www.mk.co.kr/news/society/12107210"
-      },
-      {
-        "date": "2026-07-26",
-        "link": "https://www.mk.co.kr/news/society/12107364"
-      },
-      {
-        "date": "2026-07-26",
-        "link": "https://www.mk.co.kr/news/society/12107253"
-      },
-      {
-        "date": "2026-07-27",
-        "link": "https://www.mk.co.kr/news/economy/12107632"
-      },
-      {
-        "date": "2026-07-27",
-        "link": "https://www.mk.co.kr/news/society/12107771"
-      },
-      {
-        "date": "2026-07-27",
-        "link": "https://www.mk.co.kr/news/society/12107619"
-      },
-      {
-        "date": "2026-07-27",
-        "link": "https://www.mk.co.kr/news/world/12107870"
-      },
-      {
-        "date": "2026-07-27",
-        "link": "https://www.mk.co.kr/news/world/12107523"
-      },
-      {
-        "date": "2026-07-28",
-        "link": "https://www.mk.co.kr/news/economy/12108120"
-      },
-      {
-        "date": "2026-07-28",
-        "link": "https://www.mk.co.kr/news/world/12109017"
-      },
-      {
-        "date": "2026-07-28",
-        "link": "https://www.mk.co.kr/news/world/12109028"
-      },
-      {
-        "date": "2026-07-29",
-        "link": "https://www.mk.co.kr/news/society/12109668"
-      },
-      {
-        "date": "2026-07-29",
-        "link": "https://www.mk.co.kr/news/politics/12109871"
-      },
-      {
-        "date": "2026-07-29",
-        "link": "https://www.mk.co.kr/news/world/12109918"
-      },
-      {
-        "date": "2026-07-30",
-        "link": "https://www.mk.co.kr/news/economy/12110735"
-      },
-      {
-        "date": "2026-07-30",
-        "link": "https://www.mk.co.kr/news/society/12110759"
-      },
-      {
-        "date": "2026-07-30",
-        "link": "https://www.mk.co.kr/news/society/12110741"
-      },
-      {
-        "date": "2026-07-30",
-        "link": "https://www.mk.co.kr/news/society/12110916"
-      },
-      {
-        "date": "2026-07-30",
-        "link": "https://www.mk.co.kr/news/world/12111113"
-      },
-      {
-        "date": "2026-07-30",
-        "link": "https://www.mk.co.kr/news/world/12111106"
-      },
-      {
-        "date": "2026-07-30",
-        "link": "https://www.mk.co.kr/news/world/12111001"
-      },
-      {
-        "date": "2026-07-31",
-        "link": "https://www.mk.co.kr/news/economy/12112144"
-      },
-      {
-        "date": "2026-07-31",
-        "link": "https://www.mk.co.kr/news/society/12112964"
-      },
-      {
-        "date": "2026-07-31",
-        "link": "https://www.mk.co.kr/news/world/12112486"
-      },
-      {
-        "date": "2026-07-31",
-        "link": "https://www.mk.co.kr/news/world/12112603"
-      },
-      {
-        "date": "2026-08-01",
-        "link": "https://www.mk.co.kr/news/society/12113669"
-      },
-      {
-        "date": "2026-08-01",
-        "link": "https://www.mk.co.kr/news/society/12113517"
-      },
-      {
-        "date": "2026-08-01",
-        "link": "https://www.mk.co.kr/news/world/12113615"
-      },
-      {
-        "date": "2026-08-01",
-        "link": "https://www.mk.co.kr/news/world/12114000"
-      },
-      {
-        "date": "2026-08-01",
-        "link": "https://www.mk.co.kr/news/world/12113274"
-      },
-      {
-        "date": "2026-08-02",
-        "link": "https://www.mk.co.kr/news/economy/12114181"
-      },
-      {
-        "date": "2026-08-02",
-        "link": "https://www.mk.co.kr/news/society/12114323"
-      },
-      {
-        "date": "2026-08-02",
-        "link": "https://www.mk.co.kr/news/society/12114289"
-      },
-      {
-        "date": "2026-08-02",
-        "link": "https://www.mk.co.kr/news/world/12114255"
-      },
-      {
-        "date": "2026-08-03",
-        "link": "https://www.mk.co.kr/news/economy/12114463"
-      },
-      {
-        "date": "2026-08-03",
-        "link": "https://www.mk.co.kr/news/society/12114428"
-      },
-      {
-        "date": "2026-08-03",
-        "link": "https://www.mk.co.kr/news/society/12114671"
-      },
-      {
-        "date": "2026-08-04",
-        "link": "https://www.mk.co.kr/news/society/12115638"
-      },
-      {
-        "date": "2026-08-04",
-        "link": "https://www.mk.co.kr/news/society/12115853"
-      },
-      {
-        "date": "2026-08-04",
-        "link": "https://www.mk.co.kr/news/world/12115427"
-      },
-      {
-        "date": "2026-08-04",
-        "link": "https://www.mk.co.kr/news/world/12115426"
-      },
-      {
-        "date": "2026-08-04",
-        "link": "https://www.mk.co.kr/news/world/12115646"
-      }
-    ]
-  },
-  "SBS::newsservice@sbs.co.kr(SBS)": {
-    "sparse_count": 2,
-    "points": 0,
-    "blacklisted": false,
-    "last_updated": "2026-07-30",
-    "history": [
-      {
-        "date": "2026-07-24",
-        "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008672510",
-        "reason": "sparse",
-        "chars": 0
-      },
-      {
-        "date": "2026-07-30",
-        "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008681647",
-        "reason": "sparse",
-        "chars": 0
-      }
-    ]
-  },
   "연합뉴스::박진형": {
     "sparse_count": 1,
     "points": 0,
@@ -479,88 +176,6 @@
       }
     ]
   },
-  "한겨레::": {
-    "sparse_count": 0,
-    "points": 0,
-    "blacklisted": false,
-    "last_updated": "2026-08-04",
-    "history": [],
-    "selected_count": 18,
-    "selected_history": [
-      {
-        "date": "2026-07-24",
-        "link": "https://www.hani.co.kr/arti/society/society_general/1269615.html"
-      },
-      {
-        "date": "2026-07-25",
-        "link": "https://www.hani.co.kr/arti/society/society_general/1269852.html"
-      },
-      {
-        "date": "2026-07-25",
-        "link": "https://www.hani.co.kr/arti/international/america/1269884.html"
-      },
-      {
-        "date": "2026-07-26",
-        "link": "https://www.hani.co.kr/arti/international/arabafrica/1269626.html"
-      },
-      {
-        "date": "2026-07-27",
-        "link": "https://www.hani.co.kr/arti/society/society_general/1269991.html"
-      },
-      {
-        "date": "2026-07-29",
-        "link": "https://www.hani.co.kr/arti/society/society_general/1270382.html"
-      },
-      {
-        "date": "2026-07-30",
-        "link": "https://www.hani.co.kr/arti/economy/economy_general/1270582.html"
-      },
-      {
-        "date": "2026-07-30",
-        "link": "https://www.hani.co.kr/arti/society/society_general/1270581.html"
-      },
-      {
-        "date": "2026-08-01",
-        "link": "https://www.hani.co.kr/arti/economy/finance/1270898.html"
-      },
-      {
-        "date": "2026-08-01",
-        "link": "https://www.hani.co.kr/arti/society/society_general/1270935.html"
-      },
-      {
-        "date": "2026-08-01",
-        "link": "https://www.hani.co.kr/arti/society/society_general/1270896.html"
-      },
-      {
-        "date": "2026-08-01",
-        "link": "https://www.hani.co.kr/arti/international/america/1270597.html"
-      },
-      {
-        "date": "2026-08-03",
-        "link": "https://www.hani.co.kr/arti/economy/finance/1270982.html"
-      },
-      {
-        "date": "2026-08-03",
-        "link": "https://www.hani.co.kr/arti/economy/economy_general/1270989.html"
-      },
-      {
-        "date": "2026-08-04",
-        "link": "https://www.hani.co.kr/arti/economy/economy_general/1271193.html"
-      },
-      {
-        "date": "2026-08-04",
-        "link": "https://www.hani.co.kr/arti/economy/economy_general/1271196.html"
-      },
-      {
-        "date": "2026-08-04",
-        "link": "https://www.hani.co.kr/arti/society/society_general/1271211.html"
-      },
-      {
-        "date": "2026-08-04",
-        "link": "https://www.hani.co.kr/arti/international/america/1271257.html"
-      }
-    ]
-  },
   "연합뉴스::노재현": {
     "sparse_count": 0,
     "points": 0,
@@ -663,7 +278,7 @@
       }
     ]
   },
-  "매일신문::신중언 기자 shyoung3@imaeil.com": {
+  "매일신문::신중언": {
     "sparse_count": 0,
     "points": 0,
     "blacklisted": false,
@@ -869,104 +484,6 @@
       }
     ]
   },
-  "아이뉴스24::": {
-    "sparse_count": 0,
-    "points": 0,
-    "blacklisted": false,
-    "last_updated": "2026-08-01",
-    "history": [],
-    "selected_count": 22,
-    "selected_history": [
-      {
-        "date": "2026-07-24",
-        "link": "https://www.inews24.com/view/1988078"
-      },
-      {
-        "date": "2026-07-24",
-        "link": "https://www.inews24.com/view/1987836"
-      },
-      {
-        "date": "2026-07-24",
-        "link": "https://www.inews24.com/view/1988178"
-      },
-      {
-        "date": "2026-07-24",
-        "link": "https://www.inews24.com/view/1988102"
-      },
-      {
-        "date": "2026-07-25",
-        "link": "https://www.inews24.com/view/1988573"
-      },
-      {
-        "date": "2026-07-25",
-        "link": "https://www.inews24.com/view/1988550"
-      },
-      {
-        "date": "2026-07-25",
-        "link": "https://www.inews24.com/view/1988383"
-      },
-      {
-        "date": "2026-07-25",
-        "link": "https://www.inews24.com/view/1988467"
-      },
-      {
-        "date": "2026-07-27",
-        "link": "https://www.inews24.com/view/1988773"
-      },
-      {
-        "date": "2026-07-27",
-        "link": "https://www.inews24.com/view/1988781"
-      },
-      {
-        "date": "2026-07-27",
-        "link": "https://www.inews24.com/view/1988619"
-      },
-      {
-        "date": "2026-07-27",
-        "link": "https://www.inews24.com/view/1988745"
-      },
-      {
-        "date": "2026-07-28",
-        "link": "https://www.inews24.com/view/1988907"
-      },
-      {
-        "date": "2026-07-29",
-        "link": "https://www.inews24.com/view/1989427"
-      },
-      {
-        "date": "2026-07-30",
-        "link": "https://www.inews24.com/view/1989804"
-      },
-      {
-        "date": "2026-07-30",
-        "link": "https://www.inews24.com/view/1989960"
-      },
-      {
-        "date": "2026-07-30",
-        "link": "https://www.inews24.com/view/1989885"
-      },
-      {
-        "date": "2026-07-30",
-        "link": "https://www.inews24.com/view/1989954"
-      },
-      {
-        "date": "2026-07-31",
-        "link": "https://www.inews24.com/view/1990237"
-      },
-      {
-        "date": "2026-07-31",
-        "link": "https://www.inews24.com/view/1990119"
-      },
-      {
-        "date": "2026-08-01",
-        "link": "https://www.inews24.com/view/1990876"
-      },
-      {
-        "date": "2026-08-01",
-        "link": "https://www.inews24.com/view/1990589"
-      }
-    ]
-  },
   "ZDNet Korea::한정호": {
     "sparse_count": 0,
     "points": 0,
@@ -1083,7 +600,7 @@
       }
     ]
   },
-  "매일신문::홍준표 기자 pyoya@imaeil.com": {
+  "매일신문::홍준표": {
     "sparse_count": 0,
     "points": 0,
     "blacklisted": false,
@@ -1599,20 +1116,6 @@
       }
     ]
   },
-  "전자신문::": {
-    "sparse_count": 0,
-    "points": 0,
-    "blacklisted": false,
-    "last_updated": "2026-07-26",
-    "history": [],
-    "selected_count": 1,
-    "selected_history": [
-      {
-        "date": "2026-07-26",
-        "link": "https://www.etnews.com/20260725000031"
-      }
-    ]
-  },
   "뉴시스::임소현": {
     "sparse_count": 0,
     "points": 0,
@@ -1893,7 +1396,7 @@
       }
     ]
   },
-  "SBS::sbsnewmedia@sbs.co.kr\n\t\t\t\t\t\t\t(유영규)": {
+  "SBS::유영규": {
     "sparse_count": 1,
     "points": 0,
     "blacklisted": false,
@@ -2009,7 +1512,7 @@
       }
     ]
   },
-  "SBS::minq@sbs.co.kr\n\t\t\t\t\t\t\t(권민규)": {
+  "SBS::권민규": {
     "sparse_count": 0,
     "points": 0,
     "blacklisted": false,
@@ -2335,7 +1838,7 @@
       }
     ]
   },
-  "매일신문::전한신 기자 pocha@imaeil.com": {
+  "매일신문::전한신": {
     "sparse_count": 0,
     "points": 0,
     "blacklisted": false,
@@ -2367,7 +1870,7 @@
       }
     ]
   },
-  "매일신문::남정운 기자 nju10@imaeil.com": {
+  "매일신문::남정운": {
     "sparse_count": 0,
     "points": 0,
     "blacklisted": false,
@@ -2788,7 +2291,7 @@
       }
     ]
   },
-  "매일신문::이해명 기자 bamboo@imaeil.com": {
+  "매일신문::이해명": {
     "sparse_count": 0,
     "points": 0,
     "blacklisted": false,
@@ -2904,7 +2407,7 @@
       }
     ]
   },
-  "매일신문::노경석 기자 newnks@imaeil.com": {
+  "매일신문::노경석": {
     "sparse_count": 0,
     "points": 0,
     "blacklisted": false,
@@ -2958,7 +2461,7 @@
       }
     ]
   },
-  "매일신문::김주원 기자 kjw@imaeil.com": {
+  "매일신문::김주원": {
     "sparse_count": 0,
     "points": 0,
     "blacklisted": false,
@@ -3028,7 +2531,7 @@
       }
     ]
   },
-  "SBS::jessy@sbs.co.kr\n\t\t\t\t\t\t\t(제희원)": {
+  "SBS::제희원": {
     "sparse_count": 0,
     "points": 0,
     "blacklisted": false,
@@ -3181,7 +2684,7 @@
       }
     ]
   },
-  "매일신문::심헌재 기자 gjswo0302@imaeil.com": {
+  "매일신문::심헌재": {
     "sparse_count": 0,
     "points": 0,
     "blacklisted": false,
@@ -3374,7 +2877,7 @@
       }
     ]
   },
-  "SBS::so5what@sbs.co.kr\n\t\t\t\t\t\t\t(심영구)": {
+  "SBS::심영구": {
     "sparse_count": 0,
     "points": 0,
     "blacklisted": false,
@@ -3430,7 +2933,7 @@
       }
     ]
   },
-  "SBS::newsservice@sbs.co.kr(김은진)": {
+  "SBS::김은진": {
     "sparse_count": 0,
     "points": 0,
     "blacklisted": false,
@@ -3504,7 +3007,7 @@
       }
     ]
   },
-  "SBS::noisycart@sbs.co.kr\n\t\t\t\t\t\t\t(최승훈)": {
+  "SBS::최승훈": {
     "sparse_count": 1,
     "points": 0,
     "blacklisted": false,
@@ -3599,7 +3102,7 @@
       }
     ]
   },
-  "SBS::psy05@sbs.co.kr\n\t\t\t\t\t\t\t(박세용)": {
+  "SBS::박세용": {
     "sparse_count": 0,
     "points": 0,
     "blacklisted": false,
@@ -3627,7 +3130,7 @@
       }
     ]
   },
-  "매일신문::김유진 기자 truth@imaeil.com": {
+  "매일신문::김유진": {
     "sparse_count": 0,
     "points": 0,
     "blacklisted": false,
@@ -3715,7 +3218,7 @@
       }
     ]
   },
-  "SBS::dan@sbs.co.kr\n\t\t\t\t\t\t\t(정다은)": {
+  "SBS::정다은": {
     "sparse_count": 1,
     "points": 0,
     "blacklisted": false,
@@ -3799,7 +3302,7 @@
       }
     ]
   },
-  "SBS::ho@sbs.co.kr\n\t\t\t\t\t\t\t(민경호)": {
+  "SBS::민경호": {
     "sparse_count": 0,
     "points": 0,
     "blacklisted": false,

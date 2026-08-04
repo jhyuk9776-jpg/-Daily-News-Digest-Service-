@@ -10,6 +10,7 @@ curate가 해당 기자 기사를 선별 후보에서 제외한다.
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -21,8 +22,11 @@ BLACKLIST_POINTS = 3     # 누적 점수가 이 값 이상이면 블랙리스트
 
 
 def normalize_author(name: str) -> str:
-    """기자명 정규화: 앞뒤 공백 제거 + 끝의 '기자' 접미사 제거."""
-    n = name.strip()
+    """기자명 정규화: 괄호 안 이름 우선(SBS 'a@b\\n\\t(김은진)') → 이메일 제거
+    (매일신문 'X 기자 a@b') → 끝의 '기자' 접미사 제거."""
+    paren = re.search(r"\(([^)]+)\)", name)
+    n = paren.group(1) if paren else re.sub(r"\S+@\S+", "", name)
+    n = n.strip()
     if n.endswith("기자"):
         n = n[:-2].strip()
     return n
@@ -31,6 +35,16 @@ def normalize_author(name: str) -> str:
 def reporter_key(source: str, author: str) -> str:
     """'{매체}::{정규화된 기자명}' 키."""
     return f"{source}::{normalize_author(author)}"
+
+
+def is_reporter(source: str, author: str) -> bool:
+    """RSS author가 실제 기자명인지. 빈값·매체명 자체는 기자가 아니다.
+
+    실측(raw/2026-07-22.json): 매일경제 author='매일경제', 한겨레·아이뉴스24 author=''.
+    이걸 기록하면 매체 전체가 한 '기자' 키에 뭉쳐 관찰값도 블랙리스트도 무의미해진다.
+    """
+    n = normalize_author(author)
+    return bool(n) and n != source.strip()
 
 
 def classify_body(body: str | None) -> str | None:
@@ -70,6 +84,8 @@ def record_strike(data: dict, source: str, author: str, date: str,
 
     같은 (date, link)가 이미 있으면 no-op(이중 감점 금지). 갱신된 data를 반환한다.
     """
+    if not is_reporter(source, author):
+        return data
     key = reporter_key(source, author)
     rec = data.setdefault(
         key, {"sparse_count": 0, "points": 0, "blacklisted": False,
@@ -98,6 +114,8 @@ def record_selection(data: dict, source: str, author: str, date: str, link: str)
     스트라이크(record_strike)와 같은 파일·같은 '{매체}::{기자}' 키를 공유하되,
     별도 필드(selected_count/selected_history)만 건드린다. 블랙리스트와 무관.
     """
+    if not is_reporter(source, author):
+        return data
     key = reporter_key(source, author)
     rec = data.setdefault(
         key, {"sparse_count": 0, "points": 0, "blacklisted": False,
