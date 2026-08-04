@@ -1,0 +1,1142 @@
+{
+  "date": "2026-08-05",
+  "excluded": [
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260804072400003",
+      "reason": "score_observed",
+      "score": 0.694,
+      "title": "교통사고 '나이롱환자' 거른다…염좌·타박 장기치료 심사받아야",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12116496",
+      "reason": "score_observed",
+      "score": 0.694,
+      "title": "교통사고 '나이롱환자' 막는다… 8주초과 치료땐 정부기관 검증",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080410025099773",
+      "reason": "score_observed",
+      "score": 0.691,
+      "title": "교통사고 경상환자 8주 넘게 치료하려면 의료 검토 받아야",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008690278",
+      "reason": "length:178",
+      "title": "'나이롱 환자' 거른다…경상환자 장기치료 시 심사",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260730_0003730583",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "교통사고 나이롱환자 막는 '8주룰' 9월 10일부터 시행",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080447721",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "79원 급등한 3월 환율, 3분의 1은 NDF 탓",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260804107700002",
+      "reason": "score_observed",
+      "score": 0.757,
+      "title": "한은 \"올해 3월 환율 급등 3분의 1은 NDF 탓…야간에 영향 커\"",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/finance/1271366.html",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "한은 “3월 환율 급등 3분의 1은 NDF 탓…야간에 영향 커”",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008689795",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "한은 \"올해 3월 환율 급등, 3분의 1은 NDF 탓…야간에 영향 커\"",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080415493832579",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "'몸통 대비 긴 꼬리'…한은 \"올해 3월 환율 급등 33%가 NDF 탓\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260804114100002",
+      "reason": "score_observed",
+      "score": 0.697,
+      "title": "대기업 계열사 자료 누락하면 총수 개인에게 과징금 물린다",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008690225",
+      "reason": "score_observed",
+      "score": 0.69,
+      "title": "공정위, 대기업 계열사 자료 누락하면 총수 개인에게 과징금",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260804_0003736069",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "계열사 누락 총수에 과징금 추진…국민 등에 직접고발권",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080418024782403",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "계열사 누락하면 총수 개인에 최대 10% '정률 과징금' 때린다[업무보고]",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608055178g",
+      "reason": "score_observed",
+      "score": 0.867,
+      "title": "쿠팡Inc \"국세청 3000억 과세 통지, 불복절차 착수\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260805007100030",
+      "reason": "score_observed",
+      "score": 0.867,
+      "title": "쿠팡Inc \"국세청, 3천억원 과세예고…화재 손실 3천500억 추산\"",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008690653",
+      "reason": "score_observed",
+      "score": 0.85,
+      "title": "쿠팡Inc \"국세청, 3천억 원 과세 예고…인천화재 손실 3천500억 원\"",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608045089i",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "美 증시, 호르무즈개방 기대에 실적 잔치…S&P사상 최고치",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12117120",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "호르무즈 재개방 기대·美기업 호실적에...S&P500 사상 최고 [월가월부]",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260805_0003736557",
+      "reason": "score_observed",
+      "score": 0.648,
+      "title": "뉴욕증시, 호르무즈 재개방 기대에 상승 마감…다우·S&P 최고치",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260804066400530",
+      "reason": "score_observed",
+      "score": 0.855,
+      "title": "자발적 이직 청년도 생애 1회 실업급여…정년연장 연내 입법",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080417582608185",
+      "reason": "score_observed",
+      "score": 0.867,
+      "title": "자발적 퇴사 청년도 실업급여 준다…생애 1회, 월 최대 100만원",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008690176",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "자발적 이직 청년도 실업급여…정년 연장 연내 입법",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608044438g",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "현대그린푸드, 2분기 영업익 381억…전년비 23.4% 증가",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260804132000030",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "삼양패키징, 2분기 영업이익 170억원…작년 대비 21.4% 증가",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080416201589352",
+      "reason": "score_observed",
+      "score": 0.617,
+      "title": "에코프로, 2분기 영업이익 329억원…전년 동기 대비 102.7%↑",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260804117100030",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "농식품부, 축산 폭염 전담상황실 운영…취약 농가 살수 지원",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080409553723723",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "농식품부, 폭염·가뭄 대응 전국 농업현장 특별점검",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260804_0003735185",
+      "reason": "score_observed",
+      "score": 0.785,
+      "title": "폭염 '가축 피해' 우려…전담 상황실 운영 등 대응 강화",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260804119600008",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "[속보] 코스피 1.6% 반등…코스닥 5.9%↑, 3거래일 연속 상승",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080410514003655",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "코스닥 5% 넘게 급등…3거래일 연속 사이드카",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008689901",
+      "reason": "score_observed",
+      "score": 0.612,
+      "title": "코스피, 1.6% 반등 6,300대 마감…코스닥 지수, 5.9% 급등",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260804135400002",
+      "reason": "score_observed",
+      "score": 0.867,
+      "title": "금통위원들 \"기준금리 인상 필요성 커지고 부담은 줄어\"",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008690118",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "금통위원들 \"기준금리 인상 필요성 커지고 부담은 줄어\"",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080418080108134",
+      "reason": "score_observed",
+      "score": 0.765,
+      "title": "7월 기준금리 인상 만장일치 이유는…\"금융리스크 커졌지만, 인상 부담 줄어\"",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080450177",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "서울 온열질환자 하루 23명 '최다'…첫 폭염중대경보 발령",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260804135200530",
+      "reason": "score_observed",
+      "score": 0.616,
+      "title": "온열질환자 하루 186명 올들어 최다…사망자도 2명 늘어",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1271349.html",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "극한 폭염에 온열질환자 3일 하루만 186명, 올해 최다…2명 숨져",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12116564",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "'생명위협' 폭염 지속…서울서만 온열질환 하루 23명",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608042134025/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.67,
+      "title": "서울 전역 사상 첫 폭염중대경보…체감온도 40도 육박",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008690388",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "서울 어제 온열질환자 올여름 최다 23명…폭염중대경보 첫 발효",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260804_0003736271",
+      "reason": "length:213",
+      "title": "서울 전역 폭염중대경보 [오늘의 한 컷]",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260804_0003736150",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "극한폭염에 온열질환자 하루 186명 폭증…누적 19명 사망",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080417045275967",
+      "reason": "score_observed",
+      "score": 0.655,
+      "title": "온열질환자 하루 186명 '올해 최다'…사망자 2명",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080449571",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "이흥구 대법관 후임 후보 4명으로 압축",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260804155552004",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "'이흥구 후임' 대법관 후보 4명 압축…두명 동시 제청하나(종합2보)",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260804154900004",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "[1보] 이흥구 대법관 후임 후보에 김문관·김성수·김예영·김정중",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1271411.html",
+      "reason": "score_observed",
+      "score": 0.789,
+      "title": "‘이흥구 대법관 후임’ 후보자 4명 압축…노태악 후임도 관건",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12116723",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "퇴임 앞둔 이흥구 대법관 후임 4명 압축",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608042111015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.764,
+      "title": "‘이흥구 후임’ 대법관 후보에 김예영·김문관·김성수·김정중 4명 압축",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080420051622959",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "이흥구 대법관 후임 후보 '김문관·김성수·김예영·김정중'(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260804164100004",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "폭염중대경보 서울 어제 온열질환자 23명…올여름 최다",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12116865",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "펄펄 끓는 서울...폭염중대경보 발령에 온열질환자 하루에만 23명 ‘최다’",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080322161641821",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "서울에 첫 폭염중대경보…온열질환자 어제만 18명",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608041412001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.622,
+      "title": "첫 폭염중대경보···서울시, 특별조정교부금 등 205억원 긴급지원",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080421355779636",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "폭염중대경보 내려진 서울…온열질환 23명 '올해 최다'",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080447911",
+      "reason": "score_observed",
+      "score": 0.704,
+      "title": "중수청 2874명 규모로 출범…평검사는 '4급 수사관' 임용",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260804108251530",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "중수청, 경력 10년미만 검사 4급 수사관 임용…정년·봉급 유지(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12116393",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "중수청 가는 10년 미만 검사, ‘4급 수사관’ 된다…10월 공식 출범",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608041634001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.677,
+      "title": "중수청, 2874명 규모로 출범···검사 1~4급 상당 수사관 임용한다",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260804_0003736203",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "중수청 정원 2874명 확정…\"검사→4급 이상 수사관, 불리함 없어\"(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608044618i",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "코스닥 상장사 인수 후 '주가 띄우기'…57억 챙긴 일당 '재판행'",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260804148400004",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "무자본으로 상장사 인수하고 시세조종…57억원 챙긴 일당 재판행",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1271376.html",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "‘무자본 인수합병’ 뒤 주가 조작…57억 챙긴 코스닥 상장사 대표 일당 구속 기소",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260804_0003736315",
+      "reason": "score_observed",
+      "score": 0.764,
+      "title": "무자본 M&A 뒤 조직적 시세조종…57억 챙긴 일당 구속 기소",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080417020858776",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "차명계좌로 '주가 띄우기' 3만번…57억 챙긴 일당 재판행",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608044672i",
+      "reason": "score_observed",
+      "score": 0.818,
+      "title": "\"자발적 퇴사도 실업급여\"…청년에 '생애 1회' 지원 추진",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260804066400530",
+      "reason": "score_observed",
+      "score": 0.855,
+      "title": "자발적 이직 청년도 생애 1회 실업급여…정년연장 연내 입법",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12116605",
+      "reason": "score_observed",
+      "score": 0.674,
+      "title": "정부, 청년들 자발적 퇴직에도 月 최대 100만원 실업급여 추진",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608042118015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "‘자발적 이직’ 청년에 생애 한 번 구직급여",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260805010300062",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "강원 내륙 낮 최고 37도…무더위 지속",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12116594",
+      "reason": "length:248",
+      "title": "[포토] 지구를 식혀라 … 5일도 서울 최고 38도 '극한 더위'",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260804_0003736501",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "폭염 무더위에 충남권 낮 최고 37도…서해안 한때 소나기",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260804140000530",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "\"뇌졸중 초기 재활교육이 우울감 낮추고 삶의 질 높인다\"",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260804_0003736479",
+      "reason": "score_observed",
+      "score": 0.727,
+      "title": "뇌졸중 환자 퇴원 전후 교육하니…우울증↓·삶의 질↑",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080416542627446",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "\"뇌졸중 환자, 퇴원 전후 교육으로 삶의 질·장애 개선\"",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080448507",
+      "reason": "length:0",
+      "title": "정년 4개월 앞두고…결혼한 아들 청첩장 돌린 초등학교 교장",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080414272504313",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "정년 앞두고 자녀 '허위 청첩장' 돌린 초교 교장…사기 혐의 송치",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080419462204833",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "정년 4개월 전 '가짜 청첩장' 뿌린 교장…축의금 얼마 챙겼나 보니",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608041904001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.88,
+      "title": "법무부 미래위, ‘청와대 기획사정 수사’ 진상조사 대상 추가",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260804_0003736401",
+      "reason": "score_observed",
+      "score": 0.787,
+      "title": "검찰미래위, '청와대 기획사정 수사' 진상조사 대상 선정",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080416102058390",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "[단독]법무부 미래위, ‘청와대 기획사정 수사’ 진상조사 대상 선정",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608044572i",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "NYT \"이란-오만, 호르무즈 해협에 '수수료' 도입 합의 목전\" [이상은의 워싱턴나우]",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260804166600071",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "美재무, 이란 호르무즈 통행료 여부 확답없이 \"금명간 합의 가능\"",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608041511021/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "NYT “이란·오만 호르무즈 합의 가까워져···이란 통제권 공고해질 수도”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008690428",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "미 재무, 이란 호르무즈 통행료 여부 확답없이 \"금명간 합의 가능\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260805_0003736548",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "이란 외무부 \"오만과 호르무즈 항로 협상 긍정적\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260804_0003736524",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "美재무 \"이란과 오늘 내일 중 호르무즈 개방 합의 가능성\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260801041000073",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "日방위백서, 22년째 '독도는 일본땅'…3년 연속 \"한국은 파트너\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1271301.html",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "다카이치 정부 첫 방위백서…22년째 ‘독도는 우리 땅’ 억지 주장",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12116280",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "일본 방위백서, 22년째 “독도는 일본땅”…한국 두고는 “파트너”",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608042121015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.768,
+      "title": "다카이치 첫 방위백서에 “독도는 일본 땅”…22년째 억지 주장",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260804_0003735716",
+      "reason": "score_observed",
+      "score": 0.773,
+      "title": "日방위백서, 22년째 '독도는 일본땅' 억지 주장…\"韓, 중요 이웃국가\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608055117i",
+      "reason": "clickbait",
+      "title": "美 재무장관 '원화 급격한 변동성' 언급…원화 약세 진정되나",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260804167451071",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "美재무 \"원화 과도한 변동성…엔화 약세에 다른 통화 뒤따를 것\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12116574",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "美재무 \"원화 변동성 과해…엔화약세 다른 통화에 영향\"",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080422573649241",
+      "reason": "score_observed",
+      "score": 0.743,
+      "title": "美재무 \"원화 과도한 변동성…엔화 약세면 다른 통화로 번질 수도\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080446791",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "\"호르무즈 통행료 부과…이란·오만, 재개방 합의\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260804166651071",
+      "reason": "score_observed",
+      "score": 0.785,
+      "title": "美 \"조만간 호르무즈 합의 기대…이란·오만 협상에 관여중\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008690545",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "미 \"호르무즈 합의 기대\"…이란 \"통항 협상 긍정적\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260804_0003736489",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "카타르, \"미-이란 협상 재개 합의안 마련중\"  (1보)",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260804115100009",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "전쟁 표적된 데이터센터…중동 AI 투자에 먹구름",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/arabafrica/1271311.html",
+      "reason": "score_observed",
+      "score": 0.695,
+      "title": "미·이란 전쟁의 새 표적 데이터센터…중동 AI 허브 구상에 그림자",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080415220259036",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "美·이란 전쟁 중 표적된 AI 데이터센터…5곳 피격",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008689912",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "이란 표적 된 미국 기업 데이터센터…중동 AI 투자에 먹구름",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080428987",
+      "reason": "score_observed",
+      "score": 0.664,
+      "title": "\"참수 전 마지막 기회\"…트럼프, 이란에 보낸 살벌한 경고",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1271257.html",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "마음 급한 트럼프 “참수 전 마지막 기회”…이란은 “미국과 직접 협상 안 해”",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12116573",
+      "reason": "score_observed",
+      "score": 0.78,
+      "title": "트럼프 \"이란, 참수 전 마지막 기회 … 오늘 안에 해협 완전 개방하라\"",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608040728001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.765,
+      "title": "트럼프 “이란, 참수 전 마지막 기회”···이란 “미국과 협상 계획 없다”",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260804156151109",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "도망치는 상인 뒤쫓아 쾅…자폭드론 영상에 우크라 격분(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12117190",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "“차 뒤 숨은 상인 끝까지 추격”…러시아 자폭드론 영상 ‘공분’",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008690549",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "애원하는 상인 쫓아가 '펑'…자폭 드론에 우크라 격분",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260805003500087",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "과테말라 '푸에고 화산' 분화…화산재 6㎞ 상공까지 치솟아",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008690589",
+      "reason": "length:283",
+      "title": "과테말라 '푸에고 화산' 분화…화산재 6㎞ 상공까지 치솟아",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260805_0003736562",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "과테말라 푸에고 화산 분화…화산재 해발 6㎞까지 치솟아",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080551707",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "역시 메시…스페인 산불 피해 지역에 1억원대 '통 큰 기부'",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260805000300081",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "'축구의 신' 메시, 스페인 산불 피해 지역에 1억원대 기부",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260805_0003736547",
+      "reason": "score_observed",
+      "score": 0.726,
+      "title": "'축구의 신' 메시, 스페인 산불 피해 복구에 1억3천만원 기부",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260804168951098",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "세우타 사태에 놀란 EU 긴급회의…국경 강화 등 재발 방지 논의(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008690591",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "세우타 사태에 놀란 EU 긴급회의…국경 강화 등 재발 방지 논의",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260805_0003736544",
+      "reason": "score_observed",
+      "score": 0.741,
+      "title": "EU, 세우타 이민 사태에 긴급 대응…\"국경 관리 재점검\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608044301g",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "KT, 한국산업인력공단과 손잡았다…공공 AX 사업 확대",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1991849",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "KT, 한국산업인력공단과 AI 역량 강화 '맞손'",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=689741",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "KT, 산업인력공단과 'AI 인재' 양성 협력…디지털 혁신 강화",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080446961",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "네이버, 크림에 1300억 출자",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1991845",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "네이버, 한정판 거래 플랫폼 크림에 1300억원 추가 출자",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260804172513",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "네이버, 크림에 1300억원 출자…사업 규모 제고 차원",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608055183i",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "SK하이닉스 \"HBM만으로는 부족\"…3D로 쌓는 D램·HBF 공개",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260804000263",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "SK하이닉스, 샌디스크와 HBF 첫 표준규격 공개",
+      "category": "IT/테크"
+    },
+    {
+      "source": "IT조선",
+      "link": "https://it.chosun.com/news/articleView.html?idxno=2023092167302",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "틸론·상명대, ‘AI 대전환’ 산학협력ㆍ인재양성 협력 나서",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260804174231",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "틸론, 상명대와 AI·클라우드 산학협력 및 인재양성 MOU",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1991635",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "영림원소프트랩, AI 기반 온보딩 서비스 '에버웰커밍' 출시",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=689695",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "영림원소프트랩, AI 기반 온보딩 서비스 ‘에버웰커밍’ 출시...HR 플랫폼 확장",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1991879",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "지니언스, 2분기 영업익 25억원…전년 比 143% 증가",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260804000259",
+      "reason": "score_observed",
+      "score": 0.62,
+      "title": "카카오페이, 영업익 586억원 '어닝서프라이즈'…6.3배 증가했다",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1991665",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "크래프톤, 배틀그라운드 e스포츠 국제 대회 'PGS 서킷 3' 개막",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260804172947",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "크래프톤, 배틀그라운드 이스포츠 'PGS 서킷 3' 5일 중국 상하이서 개막",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1991612",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "컴투스, 중앙아프리카 열대우림에 '소환사의 숲' 조성",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260804172707",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "컴투스, '서머너즈 워' 글로벌 12주년 기념 중앙아프리카에 '소환사의 숲' 조성",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1991659",
+      "reason": "score_observed",
+      "score": 0.62,
+      "title": "삼성 갤럭시 Z8 사전판매 144만대 '역대 최다'…폴드8 70%",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260804000222",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "삼성 갤럭시Z8, 사전판매 144만대 '역대 최다'…폴더블 3종 통했다",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608042948i",
+      "reason": "length:188",
+      "title": "LG U+, 보안 전문기업 파고네트웍스 인수…\"내부 보안 역량 강화\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1991590",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "LGU+, 보안 기업 '파고네트웍스' 인수…\"보안 체계 고도화\"",
+      "category": "IT/테크"
+    }
+  ]
+}
