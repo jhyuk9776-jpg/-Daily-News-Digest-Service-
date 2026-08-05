@@ -1,43 +1,43 @@
 {
   "media": {
     "연합뉴스": {
-      "appear_total": 301,
+      "appear_total": 323,
       "by_category": {
         "경제": {
-          "appear_total": 76,
-          "win_total": 33,
-          "selection_rate": 0.4342105263157895
+          "appear_total": 81,
+          "win_total": 34,
+          "selection_rate": 0.41975308641975306
         },
         "사회": {
-          "appear_total": 107,
-          "win_total": 21,
-          "selection_rate": 0.19626168224299065
+          "appear_total": 114,
+          "win_total": 24,
+          "selection_rate": 0.21052631578947367
         },
         "세계": {
-          "appear_total": 118,
-          "win_total": 45,
-          "selection_rate": 0.3813559322033898
+          "appear_total": 128,
+          "win_total": 49,
+          "selection_rate": 0.3828125
         }
       },
-      "win_total": 99,
-      "selection_rate": 0.3289036544850498
+      "win_total": 107,
+      "selection_rate": 0.33126934984520123
     },
     "한겨레": {
-      "appear_total": 105,
+      "appear_total": 116,
       "by_category": {
         "경제": {
-          "appear_total": 29,
-          "selection_rate": 0.2413793103448276,
-          "win_total": 7
+          "appear_total": 31,
+          "selection_rate": 0.25806451612903225,
+          "win_total": 8
         },
         "사회": {
-          "appear_total": 35,
+          "appear_total": 40,
           "win_total": 10,
-          "selection_rate": 0.2857142857142857
+          "selection_rate": 0.25
         },
         "세계": {
-          "appear_total": 40,
-          "selection_rate": 0.15,
+          "appear_total": 44,
+          "selection_rate": 0.13636363636363635,
           "win_total": 6
         },
         "IT/테크": {
@@ -45,188 +45,188 @@
           "selection_rate": 0.0
         }
       },
-      "win_total": 23,
-      "selection_rate": 0.21904761904761905
+      "win_total": 24,
+      "selection_rate": 0.20689655172413793
     },
     "SBS": {
-      "appear_total": 183,
+      "appear_total": 201,
       "by_category": {
         "경제": {
-          "appear_total": 54,
-          "selection_rate": 0.037037037037037035,
+          "appear_total": 60,
+          "selection_rate": 0.03333333333333333,
           "win_total": 2
         },
         "사회": {
-          "appear_total": 44,
-          "selection_rate": 0.09090909090909091,
+          "appear_total": 49,
+          "selection_rate": 0.08163265306122448,
           "win_total": 4
         },
         "세계": {
-          "appear_total": 85,
-          "selection_rate": 0.011764705882352941,
+          "appear_total": 92,
+          "selection_rate": 0.010869565217391304,
           "win_total": 1
         }
       },
-      "selection_rate": 0.03825136612021858,
+      "selection_rate": 0.03482587064676617,
       "win_total": 7
     },
     "뉴시스": {
-      "appear_total": 236,
+      "appear_total": 249,
+      "by_category": {
+        "경제": {
+          "appear_total": 39,
+          "win_total": 14,
+          "selection_rate": 0.358974358974359
+        },
+        "사회": {
+          "appear_total": 100,
+          "win_total": 28,
+          "selection_rate": 0.28
+        },
+        "세계": {
+          "appear_total": 110,
+          "win_total": 37,
+          "selection_rate": 0.33636363636363636
+        }
+      },
+      "win_total": 79,
+      "selection_rate": 0.3172690763052209
+    },
+    "한국경제": {
+      "appear_total": 187,
+      "by_category": {
+        "경제": {
+          "appear_total": 36,
+          "win_total": 8,
+          "selection_rate": 0.2222222222222222
+        },
+        "사회": {
+          "appear_total": 71,
+          "win_total": 14,
+          "selection_rate": 0.19718309859154928
+        },
+        "세계": {
+          "appear_total": 50,
+          "win_total": 11,
+          "selection_rate": 0.22
+        },
+        "IT/테크": {
+          "appear_total": 30,
+          "win_total": 18,
+          "selection_rate": 0.6
+        }
+      },
+      "win_total": 51,
+      "selection_rate": 0.2727272727272727
+    },
+    "매일경제": {
+      "appear_total": 192,
       "by_category": {
         "경제": {
           "appear_total": 37,
-          "win_total": 13,
-          "selection_rate": 0.35135135135135137
+          "selection_rate": 0.35135135135135137,
+          "win_total": 13
         },
         "사회": {
-          "appear_total": 95,
+          "appear_total": 90,
           "win_total": 28,
-          "selection_rate": 0.29473684210526313
+          "selection_rate": 0.3111111111111111
         },
         "세계": {
-          "appear_total": 104,
-          "win_total": 34,
-          "selection_rate": 0.3269230769230769
-        }
-      },
-      "win_total": 75,
-      "selection_rate": 0.3177966101694915
-    },
-    "한국경제": {
-      "appear_total": 169,
-      "by_category": {
-        "경제": {
-          "appear_total": 34,
-          "win_total": 8,
-          "selection_rate": 0.23529411764705882
-        },
-        "사회": {
-          "appear_total": 61,
-          "win_total": 11,
-          "selection_rate": 0.18032786885245902
-        },
-        "세계": {
-          "appear_total": 49,
-          "win_total": 11,
-          "selection_rate": 0.22448979591836735
-        },
-        "IT/테크": {
-          "appear_total": 25,
-          "win_total": 15,
-          "selection_rate": 0.6
-        }
-      },
-      "win_total": 45,
-      "selection_rate": 0.26627218934911245
-    },
-    "매일경제": {
-      "appear_total": 179,
-      "by_category": {
-        "경제": {
-          "appear_total": 35,
-          "selection_rate": 0.3142857142857143,
-          "win_total": 11
-        },
-        "사회": {
-          "appear_total": 83,
-          "win_total": 27,
-          "selection_rate": 0.3253012048192771
-        },
-        "세계": {
-          "appear_total": 61,
-          "win_total": 23,
-          "selection_rate": 0.3770491803278688
-        }
-      },
-      "win_total": 61,
-      "selection_rate": 0.3407821229050279
-    },
-    "매일신문": {
-      "appear_total": 93,
-      "by_category": {
-        "경제": {
-          "appear_total": 27,
-          "selection_rate": 0.4074074074074074,
-          "win_total": 11
-        },
-        "사회": {
-          "appear_total": 46,
-          "win_total": 6,
-          "selection_rate": 0.13043478260869565
-        },
-        "세계": {
-          "appear_total": 20,
-          "selection_rate": 0.1,
-          "win_total": 2
-        }
-      },
-      "win_total": 19,
-      "selection_rate": 0.20430107526881722
-    },
-    "경향신문": {
-      "appear_total": 105,
-      "by_category": {
-        "사회": {
-          "appear_total": 61,
-          "win_total": 15,
-          "selection_rate": 0.2459016393442623
-        },
-        "세계": {
-          "appear_total": 44,
-          "win_total": 8,
-          "selection_rate": 0.18181818181818182
-        }
-      },
-      "win_total": 23,
-      "selection_rate": 0.21904761904761905
-    },
-    "디지털투데이": {
-      "appear_total": 34,
-      "by_category": {
-        "IT/테크": {
-          "appear_total": 34,
-          "win_total": 13,
-          "selection_rate": 0.38235294117647056
-        }
-      },
-      "win_total": 13,
-      "selection_rate": 0.38235294117647056
-    },
-    "ZDNet Korea": {
-      "appear_total": 40,
-      "by_category": {
-        "IT/테크": {
-          "appear_total": 40,
-          "win_total": 24,
-          "selection_rate": 0.6
-        }
-      },
-      "win_total": 24,
-      "selection_rate": 0.6
-    },
-    "IT조선": {
-      "appear_total": 15,
-      "by_category": {
-        "IT/테크": {
-          "appear_total": 15,
-          "win_total": 6,
+          "appear_total": 65,
+          "win_total": 26,
           "selection_rate": 0.4
         }
       },
-      "win_total": 6,
-      "selection_rate": 0.4
+      "win_total": 67,
+      "selection_rate": 0.3489583333333333
     },
-    "아이뉴스24": {
-      "appear_total": 61,
+    "매일신문": {
+      "appear_total": 103,
       "by_category": {
-        "IT/테크": {
-          "appear_total": 61,
-          "win_total": 25,
-          "selection_rate": 0.4098360655737705
+        "경제": {
+          "appear_total": 29,
+          "selection_rate": 0.41379310344827586,
+          "win_total": 12
+        },
+        "사회": {
+          "appear_total": 52,
+          "win_total": 7,
+          "selection_rate": 0.1346153846153846
+        },
+        "세계": {
+          "appear_total": 22,
+          "selection_rate": 0.09090909090909091,
+          "win_total": 2
+        }
+      },
+      "win_total": 21,
+      "selection_rate": 0.20388349514563106
+    },
+    "경향신문": {
+      "appear_total": 113,
+      "by_category": {
+        "사회": {
+          "appear_total": 67,
+          "win_total": 17,
+          "selection_rate": 0.2537313432835821
+        },
+        "세계": {
+          "appear_total": 46,
+          "win_total": 8,
+          "selection_rate": 0.17391304347826086
         }
       },
       "win_total": 25,
-      "selection_rate": 0.4098360655737705
+      "selection_rate": 0.22123893805309736
+    },
+    "디지털투데이": {
+      "appear_total": 37,
+      "by_category": {
+        "IT/테크": {
+          "appear_total": 37,
+          "win_total": 16,
+          "selection_rate": 0.43243243243243246
+        }
+      },
+      "win_total": 16,
+      "selection_rate": 0.43243243243243246
+    },
+    "ZDNet Korea": {
+      "appear_total": 45,
+      "by_category": {
+        "IT/테크": {
+          "appear_total": 45,
+          "win_total": 27,
+          "selection_rate": 0.6
+        }
+      },
+      "win_total": 27,
+      "selection_rate": 0.6
+    },
+    "IT조선": {
+      "appear_total": 16,
+      "by_category": {
+        "IT/테크": {
+          "appear_total": 16,
+          "win_total": 6,
+          "selection_rate": 0.375
+        }
+      },
+      "win_total": 6,
+      "selection_rate": 0.375
+    },
+    "아이뉴스24": {
+      "appear_total": 69,
+      "by_category": {
+        "IT/테크": {
+          "appear_total": 69,
+          "win_total": 26,
+          "selection_rate": 0.37681159420289856
+        }
+      },
+      "win_total": 26,
+      "selection_rate": 0.37681159420289856
     },
     "전자신문": {
       "appear_total": 18,
@@ -271,7 +271,8 @@
     "2026-08-02",
     "2026-08-03",
     "2026-08-04",
-    "2026-08-05"
+    "2026-08-05",
+    "2026-08-06"
   ],
-  "updated_at": "2026-08-05T07:11:36+09:00"
+  "updated_at": "2026-08-06T07:18:02+09:00"
 }

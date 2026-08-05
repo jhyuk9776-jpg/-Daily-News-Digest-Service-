@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-06",
+  "topics": [
+    {
+      "word": "AI",
+      "score": 34.0,
+      "media_count": 12,
+      "article_count": 110
+    },
+    {
+      "word": "폭염",
+      "score": 29.200000000000003,
+      "media_count": 10,
+      "article_count": 96
+    },
+    {
+      "word": "한국",
+      "score": 19.8,
+      "media_count": 12,
+      "article_count": 39
+    }
+  ]
+}

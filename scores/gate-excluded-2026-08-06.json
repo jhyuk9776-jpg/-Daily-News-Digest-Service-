@@ -1,0 +1,1041 @@
+{
+  "date": "2026-08-06",
+  "excluded": [
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260805079000002",
+      "reason": "score_observed",
+      "score": 0.626,
+      "title": "55세 이상 고령 취업자 1천만명 첫 돌파…\"73.6세까지 일하고파\"",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1271477.html",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "55살 이상 취업자 1000만명 첫 돌파…‘일 있는 게 즐거워서’",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080513565425023",
+      "reason": "score_observed",
+      "score": 0.634,
+      "title": "[저출산·고령화 그늘] 고령층 취업자, 첫 1천만명 시대",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008691968",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "[D리포트] \"연금으로 생활비 턱없이 부족해\"…고령 취업자 '1천만' 첫 돌파",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260805_0003737146",
+      "reason": "score_observed",
+      "score": 0.623,
+      "title": "고령층 취업자, 첫 1천만명 돌파…69.2% \"73.6세까지 일하길\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260805053100002",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "'청년피자' 가맹본부 '배달 팁' 0원 특약 강제…과징금 2억원",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1271474.html",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "청년피자, 가맹점에 배달비 떠넘기고 과도한 위약금 부과까지…과징금 2억원",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008691451",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "'청년피자' 가맹본부 '배달 팁' 0원 특약 강제…과징금 2억 원",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260805_0003737101",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "청년피자 가맹본부, '배달팁 0원' 강제…공정위 과징금 약 2억 부과",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260805115400008",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "[속보] 코스피, 3.8% 급등한 6,598 마감…코스닥도 2.4%↑",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080515513888711",
+      "reason": "score_observed",
+      "score": 0.62,
+      "title": "코스피, 3.8% 급등…반도체 랠리에 사이드카 발동",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008691734",
+      "reason": "length:0",
+      "title": "[속보] 코스피, 3.8% 급등한 6,598 마감…코스닥도 2.4%↑",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080570411",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "\"방한객 수보다 체류기간·소비 늘려야\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260805073100002",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "한은 \"방한객 체류·지출 늘리고 부가가치 높여야\"",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008691449",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "한은 \"방한객 체류·지출 늘리고 부가가치 높여야\"",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080570781",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "5대 은행, 대출 1.2조 회수 포기",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12117340",
+      "reason": "score_observed",
+      "score": 0.646,
+      "title": "“또? 이 돈도 못 받겠네”…은행 회수 포기 대출 1.2조 ‘7년 만에 최대’",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008690963",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "5대 은행 추정손실 '1조 2천억' 넘어…7년 만에 최대",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260805068100002",
+      "reason": "score_observed",
+      "score": 0.9,
+      "title": "금융위, '韓 투자부적합' 블룸버그 칼럼 반박…\"우려 전혀 없어\"",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12117540",
+      "reason": "score_observed",
+      "score": 0.9,
+      "title": "“한국 투자부적합? 우려 전혀 없어”…금융위, 블룸버그 칼럼 반박",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008691455",
+      "reason": "score_observed",
+      "score": 0.833,
+      "title": "금융위, '한국 투자부적합' 블룸버그 칼럼 반박…\"우려 전혀 없어\"",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080571131",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "경찰, 홍명보 첫 피의자 조사…대표팀 감독 선임 의혹 수사",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1271535.html",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "‘감독 선임 수사’ 경찰, 홍명보 첫 출석 조사…업무방해·배임 혐의",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12118220",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "홍명보 전 감독, 경찰 비공개 소환…감독 선임 의혹 등 피의자 조사",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12117808",
+      "reason": "score_observed",
+      "score": 0.84,
+      "title": "경찰, 홍명보 전 축구대표팀 감독 첫 소환조사",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080517101847959",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "'대표팀 감독 선임 의혹' 홍명보…경찰, 첫 피의자 조사",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608051740001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "홍명보 전 축구대표팀 감독, 피의자 신분으로 경찰 출석해 조사",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260805_0003737857",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "경찰, 홍명보 전 감독 첫 소환…대한축구협회 선임 과정 수사",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080568457",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "[속보] 소방청, 전국 화재위험경보 '심각' 단계로 상향",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260805136400530",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "소방청, 폭염에 전국 화재위험경보 '심각' 단계로 상향",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12117999",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "소방청, 전국 화재위험경보 ‘심각’ 격상…폭염에 4년5개월만",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608051651001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "소방, 전국 화재위험경보 ‘심각’ 단계 상향···특별경계태세 강화",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008692318",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "쉴 새 없는 에어컨…전국 화재위험 최고 단계로",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260805_0003737894",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "길어지는 폭염…소방청, 전국 화재위험경보 '심각' 상향",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080573077",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "'양정원 수사 무마 의혹' 전 강남서 경찰관 구속",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260805162051004",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "'양정원 수사 무마 의혹' 경찰관 구속…\"증거인멸·도주우려\"(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1271610.html",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "‘양정원 수사 무마’ 의혹 현직 경찰 구속",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608052300001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "‘양정원 사건 무마 의혹’ 전직 강남서 수사팀장 구속…“증거인멸·도주우려”",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008692282",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "법원, '양정원 수사 무마 의혹' 전 강남서 수사팀장 '구속'",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260805_0003738121",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "'양정원 사건 무마 의혹' 전 강남서 수사팀장, 구속",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080572867",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "배우 이재룡, '술타기' 혐의 재판행…'음주운전'은 혐의 제외",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260805160600004",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "'뺑소니 후 술타기 의혹' 이재룡 재판행…음주운전 혐의는 제외",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12118165",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "이재룡, ‘술타기’ 의혹 기소…음주운전은 무혐의",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080522202491539",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "'뺑소니 후 술타기 의혹' 이재룡 재판간다…음주운전 혐의 제외",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260805_0003737435",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "검찰, '술타기 의혹' 배우 이재룡 재판행…'음주운전' 혐의는 제외",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080571987",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "아들 운영 불법 도박 수익 숨겨줬다가…父 징역 2년·70억원 몰수",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260805149800051",
+      "reason": "score_observed",
+      "score": 0.822,
+      "title": "아들 운영 불법 도박 수익 숨긴 아버지…검찰, 재산 70억원 몰수",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12118002",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "45억 아파트로 숨긴 아들 도박 수익…60대 아버지 재산 70억 전액 몰수",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080519075797294",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "아들 운영 불법 도박 수익 숨긴 父…검찰, 재산 70억원 몰수",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008692420",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "아들 운영 불법도박 수익 숨긴 아버지…검찰, 재산 70억 원 몰수",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080570621",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "경찰, 스타벅스 압수수색…'탱크데이 논란' 고의성 규명할 듯",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260805035952004",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "'탱크데이' 스타벅스 압수수색 종료…임원 등 휴대전화 확보(종합2보)",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080509091685805",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "경찰, 스타벅스 본사 첫 압수수색…'5·18 모욕' 의혹 수사",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608052102005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "경찰, 스타벅스 본사 압색…‘탱크데이’ 기획 의도 겨냥",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008692323",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "'탱크데이' 스타벅스 첫 압수수색…\"자체 감사 부실\"",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080566317",
+      "reason": "score_observed",
+      "score": 0.867,
+      "title": "[속보] 대법, 한덕수·이상민 내란 혐의 사건 전원합의체서 심리",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260805123852004",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "'내란' 한덕수·이상민, 대법 전합서 심리…\"역사적 사법평가\"(종합2보)",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1271516.html",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "대법, ‘내란 혐의’ 한덕수·이상민 전원합의체서 심리…“역사적 사법적 평가 필요”",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608051548001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.835,
+      "title": "[속보]대법, 한덕수·이상민 내란 상고심 전원합의체로 회부…내란 여부 첫 판단",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260805_0003737849",
+      "reason": "score_observed",
+      "score": 0.748,
+      "title": "대법 \"역사적 평가 필요\"…'내란' 한덕수·이상민, 전원합의체로(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080571111",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "지방 국립대 신입생에 등록금 전액 지원 추진",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/schooling/1271522.html",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "지역 국립대 신입생 ‘등록금 0원’…내년부터 전액 장학금 검토",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12118337",
+      "reason": "score_observed",
+      "score": 0.67,
+      "title": "지방 국립대 등록금 이르면 내년부터 0원",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080517060334470",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "인재 유출 방지책? 지방 국립대 신입생 전액 장학금 검토",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080564707",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "[속보] 경찰청 '형소법 후속조치 TF' 출범…청장 대행이 팀장",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1271513.html",
+      "reason": "score_observed",
+      "score": 0.822,
+      "title": "경찰, ‘개정 형소법 후속조치 TF’ 운영…팀장에 경찰청장 직무대행",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080514570355918",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "경찰청 '형소법 후속조치 TF' 출범…청장 대행이 직접 팀장 맡는다",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608051508011/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.9,
+      "title": "[속보]경찰청, ‘개정 형소법 후속 TF’ 운영…청장 직무대행이 팀장",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080572967",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "서울 폭염중대경보 이틀째…어제 온열질환자 39명 '올해 최다'",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260805161900004",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "서울 폭염중대경보 이틀째…어제 온열질환자 39명 '올해 최다'",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12118270",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "[속보] 서울 폭염중대경보 이틀째…어제 온열질환자 39명 ‘올해 최다’",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008692274",
+      "reason": "length:0",
+      "title": "[속보] 서울 폭염중대경보 이틀째…어제 온열질환자 39명 '올해 최다'",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260806000952079",
+      "reason": "score_observed",
+      "score": 0.818,
+      "title": "이란 \"호르무즈 새 항로 합의…상당부분 이란 영해 통과\"(종합2보)",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/arabafrica/1271631.html",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "이란·오만, 호르무즈 새 통항로 합의…미국과 이견 탓 최종 타결은 ‘아직’",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/arabafrica/1271436.html",
+      "reason": "score_observed",
+      "score": 0.748,
+      "title": "미 “호르무즈 합의 매우 임박”…이란 ‘선박 통제권’엔 여전히 이견",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12118604",
+      "reason": "score_observed",
+      "score": 0.829,
+      "title": "이란 “호르무즈 새 항로 합의…상당부분 이란 영해 통과”",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608051553001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "“미·이란, 호르무즈 합의 근접···5일 발표 목표”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008692403",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "\"오만과 호르무즈 새 항로 합의…미국과는 협상 없어\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260806_0003738136",
+      "reason": "score_observed",
+      "score": 0.96,
+      "title": "이란 외무 \"오만과 호르무즈 항로 좌표 합의…공동성명 조율 중\"(2보)",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260806005951072",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "뉴욕증시, 호르무즈 재개방 기대속 혼조 마감…나스닥 0.8%↓(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12117120",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "호르무즈 재개방 기대·美기업 호실적에...S&P500 사상 최고 [월가월부]",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008692482",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "뉴욕증시, 호르무즈 재개방 기대속 혼조 마감…나스닥 0.8%↓",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260806_0003738146",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "美 뉴욕증시 호르무즈 기대와 빅테크 부진 속 혼조마감 다우 0.49%↑",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260805151800083",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "中, 對美 드론 수출통제 강화…\"美 제재 철회 안하면 추가 반격\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/china/1271606.html",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "중국, 대미 드론 수출 통제 강화…미국 ‘로봇 제재’ 보복",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008692188",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "중국, 미국에 대한 드론 수출 통제 강화…미국 제재에 보복",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260805_0003737942",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "중국, 美 대상 드론·핵심부품 수출통제 강화",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080570461",
+      "reason": "score_observed",
+      "score": 0.684,
+      "title": "美, 폴리실리콘에 관세…韓태양광 '반사이익' 기대",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260806009000071",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "\"美, 이르면 6일 수입 폴리실리콘 관세\"…韓기업 영향 주목",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260805_0003737556",
+      "reason": "score_observed",
+      "score": 0.711,
+      "title": "\"미국, 폴리실리콘 관세 추진\"…중국 공급망 견제",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260806006400075",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "스페이스X 로켓 잔해, 달 표면에 충돌…우주쓰레기 4t 투척",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12118612",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "“우주쓰레기 4t 투척”…떠돌던 스페이스X 로켓 잔해, 달 표면에 충돌",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008692485",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "스페이스X 로켓 잔해, 달 표면에 충돌…우주쓰레기 4t 투척",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260806005200079",
+      "reason": "score_observed",
+      "score": 0.778,
+      "title": "이란 대통령 \"현재 최고지도자와 소통 매우 어려워\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008692396",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "이란 대통령 \"현재 최고지도자와 소통 매우 어려워\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260806_0003738147",
+      "reason": "score_observed",
+      "score": 0.844,
+      "title": "이란 페제시키안 대통령 “지금 최고지도자와 소통 매우 어려워”(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260805079700083",
+      "reason": "score_observed",
+      "score": 0.711,
+      "title": "中 코로나19 재확산에도 치료제 구매 어려워…약국 판매 제한",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/china/1271546.html",
+      "reason": "score_observed",
+      "score": 0.675,
+      "title": "중국 코로나19 확산…‘치료제 판매제한 지침’ 탓 약국서 구하기 어려워",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080515044616914",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "中, 코로나19 확산 속도 빠른데… 치료제 복용은 늦어",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260805164500072",
+      "reason": "score_observed",
+      "score": 0.867,
+      "title": "\"삼성전자·SK하이닉스, 재무건전성 유지속 주주환원 확대 검토\"",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080515055620449",
+      "reason": "score_observed",
+      "score": 0.676,
+      "title": "삼성전자·SK하이닉스, 차세대 AI 반도체 주도권 경쟁",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008692313",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "로이터 \"삼성전자·SK하이닉스, 주주환원 확대 검토\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260805164000098",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "EU \"러 동결자산서 얻은 수익 2조3천억원, 우크라에 지원\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008692309",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "EU \"러 동결자산서 얻은 수익 2조 3천억 원, 우크라에 지원\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260806_0003738132",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "EU “러 동결자산 수익 14억 유로 우크라이나 지원”",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260806000400079",
+      "reason": "length:0",
+      "title": "[속보] 이란 외무부 \"호르무즈 해협 경로 오만과 합의\"",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12117980",
+      "reason": "score_observed",
+      "score": 0.867,
+      "title": "美 \"이르면 오늘 호르무즈 개방 … 이란·오만과 협상중\"",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608052051015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "카타르 “미·이란 합의 초안 마련”…호르무즈 해협 재개방까진 먼 길",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080569411",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "캐나다 AI 코히어, 韓 법인 설립",
+      "category": "IT/테크"
+    },
+    {
+      "source": "IT조선",
+      "link": "https://it.chosun.com/news/articleView.html?idxno=2023092167408",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "코히어, “한국 법인 설립·아태지역 인력 두배 확대”",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=690239",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "엔터프라이즈 AI 플랫폼 코히어, 한국 법인 설립 추진...\"FDE도 대거 채용\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608056762g",
+      "reason": "score_observed",
+      "score": 0.655,
+      "title": "넷마블, 2분기 매출 7492억·영업익 801억",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1992230",
+      "reason": "length:246",
+      "title": "넷마블, 2분기 영업이익 801억원…전년比 20.8%↓",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260805183132",
+      "reason": "score_observed",
+      "score": 0.632,
+      "title": "아로마티카, 2분기 매출 177억·영업익 22억…미국 성장에 글로벌 사업 순항",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1992202",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "플리토, 올리브영 매장에 AI 통번역 솔루션 공급",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=690262",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "플리토, 올리브영 주요 매장에 AI 통번역 솔루션 공급",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=690188",
+      "reason": "score_observed",
+      "score": 0.659,
+      "title": "텐센트, 주력 AI 'Hy 3' 글로벌 무료 개방…오픈AI 출신 영입 후 첫 모델",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260805171532",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "텐센트 AI 'Hy3', 글로벌 이용자·기업 문 두드린다",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1992336",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "삼성전자, 넷리스트와 6년 특허분쟁 끝…AI 메모리 협력 재개",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260805202754",
+      "reason": "score_observed",
+      "score": 0.78,
+      "title": "삼성전자, 넷리스트와 특허분쟁 합의 종결",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080570451",
+      "reason": "score_observed",
+      "score": 0.618,
+      "title": "삼성 'HBM의 8배 성능'…차세대 3D 메모리 공개",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1991943",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "삼성전자, AI 메모리 미래 공개…'HBM 다음' 3D 메모리 첫선",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1992286",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "[컨콜] SKT \"SK하이닉스 AI 투자법인 출자, AIDC 경쟁력 강화에 효과적\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260805173533",
+      "reason": "score_observed",
+      "score": 0.718,
+      "title": "SKT \"외부 투자로 5GW AIDC 확장…직접 투자는 최소화\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1992185",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "우정사업본부-산업은행, 1조 규모 'AI 인프라 펀드' 조성",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260805135709",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "우본, 산업은행과 1조원 규모 AI인프라 펀드 조성",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080569401",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "LG CNS, 전국 공항에 'AI 솔루션' 도입한다",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1992053",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "LG CNS, 한국공항공사 'KAC AI 마스터플랜 수립' 사업 수주",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608056848i",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "네이버웹툰 日 라인망가, 애니메이션 구독 서비스 출시",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1992209",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "네이버웹툰 日 라인망가에서 애니메이션도 본다",
+      "category": "IT/테크"
+    }
+  ]
+}
