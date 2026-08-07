@@ -1,0 +1,873 @@
+{
+  "date": "2026-08-08",
+  "excluded": [
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080713361",
+      "reason": "score_observed",
+      "score": 0.705,
+      "title": "구윤철 \"청년·신혼부부·무주택자 핀셋 지원 검토\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260807032751002",
+      "reason": "score_observed",
+      "score": 0.818,
+      "title": "구윤철 '대출 완화' 주장에 \"핀셋 지원 고민 중…조만간 대책\"(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12121291",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "구윤철 “최대한 주택공급 빨리…‘핀셋 지원’도 고민해 조만간 대책”",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080711130743850",
+      "reason": "score_observed",
+      "score": 0.85,
+      "title": "구윤철 부총리 \"대출규제 대신 핀셋 지원 검토\"",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080712711",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "[단독] KDB생명 본입찰, 한화·한투·흥국 '3파전'",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260807141100002",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "KDB생명 인수에 한투·한화·흥국 '3파전'…삼성·교보 불참",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12121170",
+      "reason": "score_observed",
+      "score": 0.617,
+      "title": "'매각 7수' KDB생명 본입찰…한화·흥국생명·한투 3파전",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080718264746982",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "KDB생명 본입찰, 한화·흥국·한투 3파전…삼성·교보 '불참'",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080712661",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "SK하이닉스, 용인·청주에 54조 투자 확정",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12121053",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "“AI 메모리 수요 선제 대응”…SK하이닉스, 용인 Y2·청주 M17에 54조원 투자",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008695540",
+      "reason": "length:220",
+      "title": "SK하이닉스 1주당 375원 배당…\"주주환원안 9월 확정\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260807107251002",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "하나은행, 변동금리 주담대 신규 취급 중단…마통 한도도 제한(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008695471",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "하나은행, 변동금리 주담대 신규 취급 중단…마통 한도도 제한",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080718155628296",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "하나은행, 비대면·변동형 주담대 판매 중단…마통 한도 낮추기로(상보)",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260807049900002",
+      "reason": "length:178",
+      "title": "[인사] 기획예산처",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260807_0003740083",
+      "reason": "length:0",
+      "title": "[인사]기획예산처",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080710060003871",
+      "reason": "length:0",
+      "title": "[인사] 기획예산처",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080713141",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "합수본 '통계조작 의혹'…선관위 추가 압수수색",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12121163",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "투표율 통계조작 의혹 선관위 추가 압수수색",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080709133694221",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "합수본, '통계 조작' 서울·경기·충북 선관위 등 추가 압수수색",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608070912001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "[속보]합수본, ‘투표율 조작’ 중앙·서울·경기·충북 선관위 전방위 압수수색",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008695534",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "합수본, 선관위 9곳 압수수색…투표 가감 지침 수사한다",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080709360842871",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "합수본, '통계 조작' 서울·경기·충북 선관위 등 추가 압수수색",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608071425i",
+      "reason": "length:0",
+      "title": "경찰관 가족 사건, 다른 관서가 수사…내달 '상피제' 도입",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260807141500004",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "경찰, 내달부터 가족사건 수사 다른 경찰관서 맡기는 '상피제' 실시",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12121113",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "[속보] 경찰, 9월 초부터 ‘가족사건 상피제’ 전격 실시",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008695452",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "경찰, '가족 사건 상피제' 9월부터 실시",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260807_0003741012",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "경찰, 9월 초부터 경찰관 가족 사건 '상피제' 시행",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080713397",
+      "reason": "length:0",
+      "title": "[속보] 경찰 수사감찰, 국수본→감사관실…하반기 내부비리수사대 출범",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260807140100004",
+      "reason": "length:153",
+      "title": "[속보] 경찰 수사감찰, 국수본→감사관실…하반기 내부비리수사대 출범",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608071845001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "경찰, 9월부터 본인 가족 관련 사건 수사 금지…하반기 내부비리수사대 출범",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080717453453569",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "'수사 공정성' 흔들린 경찰, 하반기 내부비리수사대 출범",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1271884.html",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "‘채상병 순직’ 임성근, 항소심도 징역 3년…유족 “분통 터져”",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12121162",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "'채상병 사망 책임' 임성근 2심 징역3년",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608071101001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "[속보] ‘채상병 순직 책임’ 임성근, 항소심도 징역 3년",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080711224643610",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "'채상병 순직 책임' 임성근 전 사단장 항소심서도 징역 3년",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608070912i",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "종합특검, '계엄 수용 공간 확보' 신용해 前 교정본부장 불구속 기소",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608071443011/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "[속보]종합특검, ‘계엄령 위반자 구금 공간 확보’ 신용해 전 교정본부장 기소",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260807_0003740608",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "종합특검, 신용해 전 교정본부장 기소…계엄 수용공간 확보 혐의",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080715222892383",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "2차 종합특검, '계엄 수용공간 확보 혐의' 신용해 전 교정본부장 기소",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260807164400065",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "집에서 말다툼 중 어머니 흉기 살해…10대 아들 체포",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12121048",
+      "reason": "length:289",
+      "title": "변기 수리중이던 70대에게 흉기 휘두른 30대 체포",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008695778",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "버스 상가 돌진 8명 중경상…모친 살해 10대 체포",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260808002200053",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "폭염 속 대구 아파트단지 정전…1천200세대 2시간 넘게 불편",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008695801",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "대구 아파트 단지 1천200세대 정전…6시간 만에 복구 완료",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260807_0003741057",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "폭염 속 강북구 백화점 정전…1시간25분 만에 복구",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260807154500054",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "'장윤기 사건' 피해 여고생 돕다가 다친 고교생, 의상자 인정",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080720234648840",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "'장윤기 사건' 피해 여고생 돕다가 다친 고교생, 의상자 인정",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260807_0003741168",
+      "reason": "score_observed",
+      "score": 0.694,
+      "title": "'장윤기 사건' 피해자 돕다 중상 입은 고교생, 의상자 인정",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12121025",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "“바람 피워?”…불에 달군 공구로 아내 고문한 남성 구속영장",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080715123035557",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "'외도 의심' 아내 화장실에 묶고 불에 달군 공구로 고문…남편 검거",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260807_0003740979",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "불에 달군 공구로 아내 얼굴 지진 남편 구속…法 \"도주 우려\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260807163200063",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "청양 비닐하우스 앞서 90대 숨진 채 발견…온열질환 여부 조사",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008695688",
+      "reason": "length:240",
+      "title": "청양 비닐하우스 앞서 90대 숨진 채 발견…온열질환 여부 조사",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260807_0003740660",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "평택 주택 앞 80대 남성 사망…온열질환 여부 조사",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260807096952084",
+      "reason": "score_observed",
+      "score": 0.774,
+      "title": "태국 명문학교서 중학생 총기 난사…최소 7명 살해(종합2보)",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1271960.html",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "태국 14살 학생, 총기 난사…조부모·교직원 등 최소 7명 사망",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12121028",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "태국 학교서 학생이 총기 난사…교사·학생 등 7명 사망",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608072100001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.813,
+      "title": "방콕 외곽 고교서 14세 학생 총기 난사···교직원 5명 포함 7명 사망",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008695650",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "태국 명문학교서 중학생 총기 난사…최소 7명 살해",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260808_0003741189",
+      "reason": "score_observed",
+      "score": 0.775,
+      "title": "泰 명문사립학교 10대 집·학교 총기 난사…교사·학생 등 9명 사망(종합 2보)",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260807_0003740539",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "태국 학교서 학생이 총기 난사…사상자 10명 이상",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080715751",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "美 7월 '고용 둔화' 예상밖 2.3만명 감소",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260807160052072",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "美 7월 고용 예상밖 2만3천명 감소…실업률은 4.1%로 떨어져(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12121387",
+      "reason": "length:225",
+      "title": "[속보] 美 7월 ‘고용 충격’…예상 밖 2만3000명 감소",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008695770",
+      "reason": "score_observed",
+      "score": 0.785,
+      "title": "미국 7월 고용 예상 밖 감소…금리결정에 변수",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080715567",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "이례적인 폭염, 식품 가격도 올렸다…\"3년 반 만에 최고\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260807158400099",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "폭염·전쟁에 다시 뛰는 세계 식량가격…3년반 만에 최고",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008695654",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "폭염·전쟁에 다시 뛰는 세계 식량가격…3년 반 만에 최고",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260807_0003741052",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "세계 식품 가격, 전쟁과 폭염으로 3년 래 최고치…유엔 FAO",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080713211",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "美 원정출산 아기, 시민권 못 받는다",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1271852.html",
+      "reason": "score_observed",
+      "score": 0.812,
+      "title": "트럼프, ‘원정출산 아기에 미 시민권 부여 금지’ 행정명령 서명",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080707330538777",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "트럼프 美 '원정출산 자녀 시민권 제한' 행정명령 서명",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608070626001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "트럼프, ‘원정 출산’ 아기에 시민권 부여 금지하는 행정명령 서명",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608070618i",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "다카이치, 광복절 야스쿠니 참배할까…日 정부 \"본인 판단\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260807076100073",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "다카이치, 광복절 야스쿠니 참배할까…\"본인이 적절히 판단\"",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608071549001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "일본 정부 “광복절 야스쿠니 참배 여부, 총리 본인이 판단할 사안”",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260807_0003740385",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "日정부, 패전일 다카이치 야스쿠니 참배는 \"본인이 적절 판단\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260808004700079",
+      "reason": "clickbait",
+      "title": "이란 외무 \"무슬림 하나로 뭉쳐야\"…'형제애' 강조 왜?",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008695771",
+      "reason": "clickbait",
+      "title": "이란 외무 \"무슬림 하나로 뭉쳐야\"…'형제애' 강조 왜?",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260808_0003741194",
+      "reason": "score_observed",
+      "score": 0.67,
+      "title": "이란 외무, '메카협정' 체결일 \"이슬람 형제애로 단결해야\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260808005151072",
+      "reason": "score_observed",
+      "score": 0.74,
+      "title": "美증시, 금리인상 기대론 후퇴에 상승…S&P500 사상최고치 마감(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008695779",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "미국 증시, 금리 인상 기대론 후퇴에 상승…S&P500 사상 최고치 마감",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260808_0003741196",
+      "reason": "score_observed",
+      "score": 0.754,
+      "title": "美증시, '고용쇼크'에 금리동결 기대…S&P 0.6% 나스닥 1.3%↑",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260808003500071",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "트럼프, 대법원 제동에도 '눈엣가시' 연준 이사 해임 재추진",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008695742",
+      "reason": "score_observed",
+      "score": 0.788,
+      "title": "트럼프, 대법원 제동에도 '눈엣가시' 연준 이사 해임 재추진",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260808_0003741191",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "\"트럼프, 리사 쿡 연준이사 해임 재시동…'사기 소명하라' 통보\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260808003700071",
+      "reason": "score_observed",
+      "score": 0.621,
+      "title": "'트럼프 측근' 故그레이엄 의원의 러·이란 제재법안 상원 통과",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008695744",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "'트럼프 측근' 고 그레이엄 의원의 러·이란 제재법안 상원 통과",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260808_0003741190",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "美상원, 故그레이엄 대러제재법 통과…원유 수입국 관세",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260808002900071",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "美법원, 백악관 연회장 공사에 또 제동…트럼프 \"정치적 판결\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008695719",
+      "reason": "score_observed",
+      "score": 0.741,
+      "title": "\"대통령은 세입자\" 항소법원도 연회장 공사 '불법' 판결…트럼프 격분·대법원 상고",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260808_0003741186",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "美항소법원도 \"트럼프 백악관 연회장 공사는 불법\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608079704g",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "[속보] 네이버, 2분기 영업익 5203억원…전년비 0.2%↓",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1993105",
+      "reason": "score_observed",
+      "score": 0.622,
+      "title": "신성이엔지, 2분기 영업이익 31억원…흑자전환",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1992775",
+      "reason": "score_observed",
+      "score": 0.622,
+      "title": "네이버, 2분기 매출 '역대 최대' 3조3888억원⋯AI 투자로 영업익 5203억원 '감소' [종합]",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260807192727",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "그라비티, 2분기 영업이익 276억원…전년비 40.2% 증가",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260807170420",
+      "reason": "score_observed",
+      "score": 0.48,
+      "title": "신세계아이앤씨, 2분기 영업익 13%↑…저수익 사업 정리 효과",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080714791",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "'창사 첫 파업' 카카오, 연봉 6.3% 인상 합의",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260807170150",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "카카오 노사, 임금협약 타결…연봉 6.3% 인상·격려금 300만원",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1992840",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "그라비티 게임 어라이즈, 인디 게임 전시회 '도쿄 게임 던전 13' 참가",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260807184531",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "미공개 레트로 게임 최초 공개…그라비티 게임 어라이즈, '도쿄 게임 던전 13' 참가",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1993052",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "컴투스, 8월 26일 '제우스: 오만의 신' 출시…\"모두를 위한 MMORPG\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260807171028",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "컴투스·에이버튼 \"제우스: 오만의 신, 모두를 위한 MMORPG\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1992817",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "스마일게이트 오렌지플래닛, 스타트업 지원 프로그램 '오렌지가든·팜' 성료",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260807175713",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "스마일게이트 오렌지플래닛, 스타트업 21개 팀 배출…투자 유치·흑자 전환 결실",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1993043",
+      "reason": "score_observed",
+      "score": 0.754,
+      "title": "반도체공학회 \"연구개발직 주52시간 개선 필요\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260807174721",
+      "reason": "score_observed",
+      "score": 0.92,
+      "title": "반도체공학회 \"연구개발직 주52시간 개선해야…메가특구특별법 제정 지지\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608070507i",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "알테오젠, 상반기 매출 1405억원·영업이익 735억원",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260807164253",
+      "reason": "score_observed",
+      "score": 0.615,
+      "title": "CJ CGV, 2Q 매출 5939억원·영업익 115억원...\"세전이익 흑자 전환\"",
+      "category": "IT/테크"
+    }
+  ]
+}
