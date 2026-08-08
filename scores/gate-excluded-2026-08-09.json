@@ -1,0 +1,700 @@
+{
+  "date": "2026-08-09",
+  "excluded": [
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260808028951004",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "서울 면목동서 60대 남성 2명 흉기에 숨져…지인 사이 추정(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1271989.html",
+      "reason": "length:246",
+      "title": "서울 면목동 흉기 난동…‘지인 사이’ 60대 남성 2명 사망",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12121750",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "서울 면목동서 60대 남성 2명, 흉기에 찔려 모두 사망…지인 사이 추정",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080817264755523",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "서울 면목동서 60대 남성 2명 흉기에 숨져…지인 관계로 추정",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608081329001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "서울 중랑구서 흉기 난동···지인 사이 60대 2명 사망",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008696058",
+      "reason": "length:261",
+      "title": "서울 중랑구서 새벽 흉기 난동…60대 남성 2명 사망",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260808_0003741456",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "서울 면목동서 칼부림…지인 사이 60대 2명 숨져(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260808026253054",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "여수 오동도 해상서 5명 탄 모터보트 전복…2명 사망(종합3보)",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12121777",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "여수 오동도 해상서 가족 관광객 탄 모터보트 전복…선장 등 2명 사망",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080820130489128",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "전남 여수 오동도 해상서 5명 탄 유람용 모터보트 전복…2명 숨져",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608081748001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "여수 오동도 해상서 모터보트 전복…1명 사망·1명 실종",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260808_0003741453",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "여수 오동도 해상 보트 전복…5명 중 1명 사망·1명 심정지 발견(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260808048500004",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "서울 강동구 올림픽대로 달리던 차량서 화재…구간 정체",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12121781",
+      "reason": "length:186",
+      "title": "서울 강동구 올림픽대로 달리던 SUV 불에 타…원인불명, 인명 피해는 없어",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608081950001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "고덕토평대교 남단 올림픽대로서 달리던 SUV에 불···일대 정체",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008696270",
+      "reason": "length:261",
+      "title": "서울 강동구 올림픽대로 달리던 차량서 화재…구간 정체",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260808_0003741480",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "강동구 올림픽대로 달리던 SUV서 불…일부 차로 통제",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080819647",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "천안 교회서 11세 아동 숨져…경찰, 학대 여부 조사",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260808023051063",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "천안 교회서 지내던 11세 사망…경찰, 학대치사 여부 수사(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1271988.html",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "“침대 묶여 있었다” 천안 교회서 11살 숨져…함께 지내던 신도들 수사",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12121700",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "천안 교회서 11세 사망…함께 지낸 어른 3명 ‘아동학대치사’ 여부 조사",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008695997",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "교회서 실려온 11살 사망…목격자는 \"침대 묶여 있었다\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260808041700530",
+      "reason": "score_observed",
+      "score": 0.638,
+      "title": "불볕더위에 어제 200명 이상 응급실행…3명 숨져",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12121751",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "살인적인 폭염에 한국서 사망자 속출…어제만 200명 응급실, 3명은 숨져",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608081720001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.684,
+      "title": "‘극한 폭염’에 어제 하루새 200명 넘게 응급실행…3명 사망",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008696192",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "불볕더위에 어제 200명 넘게 응급실행…3명 숨져",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080816583044861",
+      "reason": "score_observed",
+      "score": 0.62,
+      "title": "폭염에 어제 200명 응급실 갔다…사망자 3명",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080819107",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "'김부장' 제작사 회장, 자본시장법 위반 혐의 피소",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260808038600004",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "'김부장' 제작사 판타지오 회장, 자본시장법 위반 혐의 피소",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12121743",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "‘김부장’ 제작사 판타지오 회장, 자본시장법 위반 혐의 피소",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608081635001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "드라마 ‘김부장’ 제작사 판타지오 회장, 자본시장법 위반 혐의 피소",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260808_0003741347",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "경찰, '김부장' 제작사 회장 수사…코스닥 '미공개 정보 이용' 의혹",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260808053300061",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "분당 1천600여세대 아파트서 7시간가량 정전…주민 불편",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12121801",
+      "reason": "length:243",
+      "title": "분당 1600세대 아파트서 7시간 정전…차단기 불량 추정",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608082112001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "폭염 속 대전 400세대 아파트 4시간 정전…당진서도 전선 끊겨 정전",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008696322",
+      "reason": "length:225",
+      "title": "분당 1천600여 세대 아파트서 7시간가량 정전…주민 불편",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260808048951051",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "부산 철강제조공장 불…많은 연기에 주민 외출 자제 당부(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608082154001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "부산 철강제조공장서 불…연기에 ‘주민 외출 자제’ 당부",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008696289",
+      "reason": "length:234",
+      "title": "부산 철강 제조공장서 불…소방 '대응 1단계' 진화 중",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260808_0003741490",
+      "reason": "length:275",
+      "title": "부산 사하구 철강 공장 불…대응1단계 발령(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12121785",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "[속보] 1236회 로또 1등 11명, 24억 대박…‘12, 18, 21, 29, 34, 38’",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608082123001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "1236회 로또 1등 ‘12, 18, 21, 29, 34, 38’···1등 11명 당첨금 각 24억4191만원",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260808_0003741491",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "1236회 로또 1등 각 24억씩…자동 5명·수동 5명·반자동 1명(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260808_0003741489",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "1236회 로또 1등 12, 18, 21, 29, 34, 38…보너스 10",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026080820524793083",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "1236회 로또 1등 11명…당첨금 각 24억4000만원",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260808033800004",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "종로구서 폐기물 수거하던 환경미화원, 수거차에 치여 숨져",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608081603001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "종로구서 폐기물 수거하던 청소노동자 수거차에 치여 사망",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008696133",
+      "reason": "length:235",
+      "title": "홀로 작업하던 환경미화원 수거차에 치여 숨져",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260808_0003741380",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "창신동서 폐기물 수거하던 환경미화원, 수거차에 깔려 숨져",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260808050900108",
+      "reason": "score_observed",
+      "score": 0.815,
+      "title": "이란 \"호르무즈 새 항로 합의 근접…美, MOU 위반 배상해야\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/arabafrica/1271805.html",
+      "reason": "score_observed",
+      "score": 0.727,
+      "title": "이란·오만, 호르무즈 개방 ‘합의 임박’…선박 통제·수수료는 이견",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12121792",
+      "reason": "score_observed",
+      "score": 1.0,
+      "title": "“이란·오만, 호르무즈 재개방 합의 근접…미국 ‘MOU 위반’ 배상해야”",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080821190389477",
+      "reason": "score_observed",
+      "score": 0.684,
+      "title": "막무가내 이란 \"美, MOU 위반 배상해야 호르무즈 재개방\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008696300",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "이란 \"호르무즈 재개방 합의 근접…미국이 MOU 위반 배상해야\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080820957",
+      "reason": "score_observed",
+      "score": 0.618,
+      "title": "세계 최고령 도전 119세…\"장수 비결? 일하고 건강하게 먹는 것\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260808001600009",
+      "reason": "score_observed",
+      "score": 0.617,
+      "title": "세계최고령 도전 119세…\"오래 살려면 일하고 건강하게 먹어라\"",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12121626",
+      "reason": "score_observed",
+      "score": 0.615,
+      "title": "119세 최고령 도전 노인, 장수 비결은 ‘이것’…의외로 평범하다는데",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008695925",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "\"오래 살려면\"…'최고령 도전' 119세의 장수 비결 3가지",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260808_0003741222",
+      "reason": "score_observed",
+      "score": 0.691,
+      "title": "'최고령 도전' 119세 노인의 건강 비결…\"열심히 일하고 건강하게 먹기\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260809001000085",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "스페인도 이탈리아 국경 검문 돌입…세우타발 갈등 고조",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1271982.html",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "‘세우타 사태’ 스페인, 이탈리아 국경 제한에 맞불…“여행객 검문”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008696337",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "스페인도 이탈리아 국경 검문 돌입…세우타발 갈등 고조",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260808_0003741201",
+      "reason": "score_observed",
+      "score": 0.825,
+      "title": "스페인, \"이탈리아 발 입국자 국경 검사\" 발표",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080820317",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "블룸버그 \"SK하이닉스, 中 충칭 패키징 공장 지분 매각 검토\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260808045500009",
+      "reason": "score_observed",
+      "score": 0.778,
+      "title": "\"SK하이닉스, 중국 충칭 패키징공장 지분매각 등 검토\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008696214",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "\"SK하이닉스, 중국 충칭 패키징공장 지분 매각 등 검토\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260808_0003741460",
+      "reason": "score_observed",
+      "score": 0.619,
+      "title": "SK하이닉스, 中 충칭 후공정 공장 지분매각 검토",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080817657",
+      "reason": "score_observed",
+      "score": 0.85,
+      "title": "한국 '독도 해양조사' 딴지거는 日…\"협의 없어 강한 유감\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260808019400073",
+      "reason": "score_observed",
+      "score": 0.855,
+      "title": "日 \"한국 선박이 독도 주변 해양조사 활동…강력 항의\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008695980",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "일 \"한국 선박이 독도 주변 해양조사 활동…강력 항의\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260808_0003741274",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "日 \"한국 독도 훈련, 사전 동의 없어…용납할 수 없다\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260808053500071",
+      "reason": "score_observed",
+      "score": 0.741,
+      "title": "\"트럼프, 두번째 국토안보장관에도 불만…'내 기조와 엇박자'\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008696332",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "\"트럼프, 두 번째 국토안보장관에도 불만…일각에서 해임 요구도\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260809_0003741519",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "트럼프, 놈 해임 이어 멀린 국토안보부 장관도 불만…“트럼프와 기조 달라”",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080820817",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "흑해 상선 잇단 피격에 튀르키예, 선박 통항 제한",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260808049700108",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "\"'흑해 길목' 튀르키예, 선박 피격 늘자 통항 제한\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008696302",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "\"'흑해 길목' 튀르키예, 선박 피격 늘자 통항 제한\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260808002100091",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "시장지배력 노린 오픈AI, 챗GPT 무료고객에 최신 모델 무한제공",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008695916",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "시장지배력 노린 오픈AI, 챗GPT 무료고객에 최신 모델 무한제공",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260808_0003741485",
+      "reason": "score_observed",
+      "score": 0.652,
+      "title": "오픈AI, 챗GPT 무료 이용자에 최신모델 무제한 개방",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260808035800089",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "中인민은행, 지난달 금 보유 20t 늘려…21개월 연속 증가세",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008696131",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "중 인민은행, 지난달 금 보유 20톤↑…21개월 연속 증가세",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260808_0003741479",
+      "reason": "score_observed",
+      "score": 0.684,
+      "title": "中인민은행, 지난달 금 19.9t 매입…21개월 연속 사들여",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080819857",
+      "reason": "score_observed",
+      "score": 0.663,
+      "title": "\"中 미사일망 뚫는다\"…美, 공격잠수함 19척 순항미사일잠수함 전환",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260808040200009",
+      "reason": "score_observed",
+      "score": 0.718,
+      "title": "美, 공격잠수함 19척 순항미사일잠수함 전환…中 견제 강화",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260808_0003741449",
+      "reason": "score_observed",
+      "score": 0.632,
+      "title": "美, 버지니아급 19척 '미사일 잠수함' 전환…中 견제 수중전력 강화",
+      "category": "세계"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=691211",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "오픈AI, 아스트라 모델 일부 개발 중단...\"심각한 사이버 공격 가능성 배제 못해\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260808063232",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "오픈AI, 차세대 AI '아스트라' 개발 늦춘다…사이버보안 우려",
+      "category": "IT/테크"
+    }
+  ]
+}
