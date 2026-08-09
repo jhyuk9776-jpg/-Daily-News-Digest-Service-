@@ -1,0 +1,819 @@
+{
+  "date": "2026-08-10",
+  "excluded": [
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260807102600002",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "신상품 아닌데도 판매장려금 챙긴 농협하나로…과징금 5억",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1272033.html",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "‘납품업자에 갑질’ 농협하나로유통에 과징금 4억6천만원",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008696750",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "신상품 아닌데도 판매장려금 챙긴 농협하나로…과징금 5억",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260809_0003741698",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "9년전 출시했는데 신상품 장려금?…공정위, 농협하나로유통 제재",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080926427",
+      "reason": "score_observed",
+      "score": 0.718,
+      "title": "1600원 코앞이더니 1300원?…환율 변동성 금융위기 이후 '최대'",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260808046200002",
+      "reason": "score_observed",
+      "score": 0.729,
+      "title": "환율 1,600원 향하다 1,300원대 눈앞…변동성 금융위기 후 최고",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080912385119000",
+      "reason": "score_observed",
+      "score": 0.88,
+      "title": "환율 1,600원 향하다 1,300원대 눈앞…변동성 금융위기 후 최고",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260808044600002",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "홈플 사태에 2분기 대형마트 판매 9.4%↓…역대 최대 감소",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1272063.html",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "대형마트 실적 ‘홈플러스 사태’ 직격타…2분기 판매 9.4% ‘역대 최대 감소’",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260809_0003741887",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "홈플러스 사태에 2분기 대형마트 판매 9.4%↓…역대 최대폭",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260808024200030",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "휴가철 축산물 원산지 위반 106곳 적발…돼지고기 최다",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008696663",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "휴가철 축산물 원산지 위반 106곳 적발…돼지고기 최다",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260809_0003741631",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "농관원, 휴가철 축산물 원산지 표시 위반 106곳 적발",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080922967",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "최태원, '노소영에 1조 지급' 어떻게…재상고 기한 임박",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1272050.html",
+      "reason": "score_observed",
+      "score": 0.695,
+      "title": "최태원, 9440억 주고 끝낼까…노소영과 재산 분할, 재상고 기한 임박",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/business/12121898",
+      "reason": "clickbait",
+      "title": "최태원, 노소영에 1조원 지급할까…‘9440억원 분할’ 법정싸움, 이번주 결론?",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008697188",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "최태원, 노소영에 약 1조 원 지급하나…17일까지 재상고 안 하면 확정",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260809_0003741957",
+      "reason": "score_observed",
+      "score": 0.643,
+      "title": "최태원·노소영 '9440억 분할', 이번주 확정될까…재상고 여부 주목",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260809040200065",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "말다툼하다 모친 살해한 10대 구속…반려견도 목 졸라 죽여",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12122341",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "말다툼 중 어머니 살해한 10대 아들…범행 후 반려견도 죽여",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080918061062777",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "말다툼하다 모친 살해한 10대, 구속…범행 직후 반려견도 죽여",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608091830001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "말다툼하다 모친 살해한 10대 구속···반려견도 목 졸라 죽여",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008697182",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "말다툼하다 모친 살해한 10대 구속…반려견도 목 졸라 죽여",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080922607",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "전한길, '출국금지 연장 취소해 달라' 소송했으나 패소",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12121899",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "전한길, ‘출국금지 연장’ 취소 소송 패소…법원 “출국하면 수사 차질 우려”",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080916044401896",
+      "reason": "score_observed",
+      "score": 0.694,
+      "title": "\"수사 차질 우려\"…전한길, '출국금지 연장' 취소 소송 패소",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260809_0003741613",
+      "reason": "score_observed",
+      "score": 0.747,
+      "title": "전한길, 출국금지 연장 취소소송 패소…법원 \"수사 차질 우려\"",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080930091",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "삼프로TV 개인정보 46만건 유출",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260809039800017",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "삼프로TV 개인정보 46만여건 유출…일부 계좌·카드정보 포함",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12122298",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "[속보] 삼프로TV 개인정보 46만여건 유출…일부 계좌·카드정보 포함",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608092028015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "삼프로TV 앱에서 계좌번호 등 개인정보 46만여건 유출",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260809048151061",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "매일유업 평택공장 연유탱크서 근로자 2명 사상(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12122379",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "매일유업 공장서 근로자 1명 사망·1명 부상…저장탱크 청소 중 사고",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608092024001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "매일유업 평택공장서 노동자 2명 쓰러진 채 발견···1명 숨져",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008697061",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "평택 매일유업 공장서 근로자 2명 쓰러진 채 발견…1명 숨져",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1272055.html",
+      "reason": "score_observed",
+      "score": 0.687,
+      "title": "‘경찰 가족’ 연루 사건 117건…안으로 굽는 팔 방치한 경찰청",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12122016",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "‘경찰 가족’ 피의자 사건 45건…9월부터 상피제 시행",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080907365941365",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "경찰 가족 연루 사건 117건…'장윤기 사건' 터지자 뒤늦게 전수조사",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260809_0003741652",
+      "reason": "score_observed",
+      "score": 0.536,
+      "title": "'현직 경찰 가족' 연루 사건 45건…파악·관리체계 없어",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260809054452055",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "전주 농수산물시장 화재 4시간 만에 완진…인명피해 없어(종합2보)",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008697176",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "전주 농수산물 시장 대형 화재…한때 '대응 2단계'",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260810_0003741987",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "전주 송천동 농수산물시장 불…사상 없이 4시간 지나 완진",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260809_0003741893",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "전남광주 봉선동 아파트 옥상 난간 붕괴…인명피해 없어",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260810004000063",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "대전·세종·충남 체감온도 33도 안팎 무더위 이어져",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12122361",
+      "reason": "score_observed",
+      "score": 0.622,
+      "title": "“물놀이도 하루 이틀이지, 이제 지친다”...월요일도 체감온도 33도 안팎 ‘무더위’",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260810_0003742000",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "충남권 최고체감온도 33도 안팎…미세먼지 수치 '좋음'",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260810_0003742006",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "전남광주, 체감온도 35도 '폭염'…해안가 너울 주의",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260809020400065",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "\"태극기 거꾸로 그렸다\" 논란…인천시, 광복절 현수막 철거",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12121901",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "‘거꾸로 태극기’ 논란 일자…인천시, 광복절 현수막 이틀 만에 철거",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080915351079503",
+      "reason": "score_observed",
+      "score": 0.694,
+      "title": "김희철도 \"X돌았네\"…'거꾸로 태극기 논란' 인천시 현수막, 이틀 만에 철거",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080928461",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "치매노인 예금 2천만원 가로챈 간병인 집행유예",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080915394633615",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "치매노인 예금 수천만원 체크카드 이용해 빼돌린 70대 간병인, 집행유예",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260808_0003741209",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "치매환자 체크카드로 수천만원 쓴 간병인, 징역형 집유",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080929887",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "젤렌스키, 한국에 '방공 지원' 요청…\"북한군 3만∼5만 러 배치\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260809041300109",
+      "reason": "score_observed",
+      "score": 0.785,
+      "title": "젤렌스키 \"북한군 3만∼5만 러 배치…韓과 협력 위해 접촉 중\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/europe/1272080.html",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "“북한군 5만명 온다”…젤렌스키, 한국에 방공무기 요청",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12122289",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "“북한, 러에 최대 5만명 파병”…한국에 ‘방공 지원’ 요청한 젤렌스키",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080918355948329",
+      "reason": "score_observed",
+      "score": 0.743,
+      "title": "젤렌스키 \"북한군 3만∼5만 러 배치됐다\"…\"韓과 협력 위해 접촉 중\"",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608092103025/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "젤렌스키 “북한군 3만~5만명 러시아 추가 파병 결정”",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260809_0003741693",
+      "reason": "score_observed",
+      "score": 0.752,
+      "title": "젤렌스키 \"북한, 러시아에 최대 5만명 파병 결정\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260809031700073",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "\"日축구협회, 韓축구협회 성 접대 의혹 심판 조사 중\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1272090.html",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "축협 성접대, 바다 건너 ‘불똥’…“일본인 심판 4명 조사 중”",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12122114",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "한국 축협 ‘성 접대 의혹’ 일본 심판들…日축구협회, 4명 조사 중",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080916404465084",
+      "reason": "score_observed",
+      "score": 0.617,
+      "title": "\"일본 축구협회, 한국 경기 '성접대 의혹' 심판 조사\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260809_0003741895",
+      "reason": "score_observed",
+      "score": 0.569,
+      "title": "축구협회, 성접대 논란 사과…\"쇄신의 기회로 삼겠다\"[간추린 주말 뉴스]",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260809_0003741875",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "일본축구협회, 한국서 성접대 의혹 관련 심판 4명 조사",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260809049851108",
+      "reason": "score_observed",
+      "score": 0.787,
+      "title": "후티 반군 \"예멘 모카항의 사우디군 집결지 타격\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608091959011/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "후티 반군 “사우디 아람코 정유 시설 타격”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008697058",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "후티 반군 \"예멘 모카항의 사우디군 집결지 타격\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260810_0003741991",
+      "reason": "score_observed",
+      "score": 0.853,
+      "title": "후티반군 \"홍해 모카항 드론·미사일 공격…사우디군 사상\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260810001400071",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "트럼프, 이란 강경 요구에 \"로키로 대응 중…이건 체스게임\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008697177",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "트럼프 \"로키 대응\"…이란 \"전쟁 피해 배상\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260810_0003742001",
+      "reason": "score_observed",
+      "score": 0.788,
+      "title": "트럼프, 이란 추가 요구에 \"저강도 대응…이건 체스게임\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260809002000071",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "\"트럼프, 혹시 부분가발 썼나?\"…'풍성 금발'에 시선 집중",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12121834",
+      "reason": "score_observed",
+      "score": 0.638,
+      "title": "“가발 쓴 것 아냐?”…트럼프 ‘풍성 금발’에 백악관 해명이",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008697187",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "\"트럼프, 혹시 부분 가발 썼나?\"…'풍성 금발'에 시선 집중",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260809012300075",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "\"'오징어게임' 미국판 제작 취소…넷플릭스 우선순위 바뀌어\"",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026080915570387982",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "\"'오징어게임 미국판 스핀오프', 제작 취소\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260809_0003741857",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "'오징어게임' 미국판 스핀오프 결국 무산…\"넷플릭스 우선순위 바뀌어\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260809039600109",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "우크라, '40일 작전' 성공 선언…\"러 물류망 17조원 손실\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008697074",
+      "reason": "score_observed",
+      "score": 0.638,
+      "title": "우크라, '40일 작전' 성공 선언…\"러 물류망 17조 원 손실\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260809_0003741977",
+      "reason": "score_observed",
+      "score": 0.726,
+      "title": "젤렌스키 \"40일 작전 결과 만족…러 모든 약점 파악\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260809053500108",
+      "reason": "score_observed",
+      "score": 0.813,
+      "title": "네타냐후 \"하마스 무장해제까지 철군 없다\"…트럼프에 반기",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1272113.html",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "네타냐후, 트럼프 주도 ‘하마스 무장해제-이스라엘 철군’ 가자 평화안 거부",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008697106",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "네타냐후 \"하마스 무장해제까지 철군 없다\"…트럼프에 반기",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080929287",
+      "reason": "score_observed",
+      "score": 0.62,
+      "title": "이란 매체, 최고지도자 영상 최초 공개…단, '날짜 미상' 영상",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260809051700108",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "이란 매체 \"최고지도자 사진 곧 공개\"…위독설 불식 나서",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008697078",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "이란 매체 \"최고지도자 사진 곧 공개\"…위독설 불식 나서",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260809032300083",
+      "reason": "score_observed",
+      "score": 0.718,
+      "title": "태풍 '돌핀', 中 동부 연안 상륙 임박…최고 수준 경보 발령",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008696979",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "태풍 '돌핀' 중국 상륙…50만 명 긴급 대피",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260809_0003741930",
+      "reason": "length:270",
+      "title": "태풍 돌핀, 중 저장성 타이저우시 해안에 상륙 (1보)",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260809_0003741788",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "제13호 태풍 돌핀 중국 저장성 상륙 임박…상하이 등 서 50만명 이상 대피",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026080927651",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "엔비디아, 전력 업체 랜시엄에 4조 투자",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1993173",
+      "reason": "score_observed",
+      "score": 0.622,
+      "title": "엔비디아, 美 전력업체 랜시엄에 4.2조 투자...AI 인프라 확보",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260809132821",
+      "reason": "score_observed",
+      "score": 0.619,
+      "title": "엔비디아, 전력망 투자 확대…美 랜시엄에 4.2조원 베팅",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/science/science_general/1272041.html",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "제2우주센터 공모에 전남광주·제주 응모…10월 결정",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1993161",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "재사용 로켓까지 품는 제2 우주센터…전남광주 or 제주",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260807180304",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "제2우주센터 건립지로 전남광주통합시·제주도 경쟁",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=691276",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "KOSA·KOEMA 제휴...산업 현장 AI 수요 발굴 협력",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260809110637",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "KOSA-KOEMA, 전기산업 AI 전환 맞손…인재·기술 연결",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1993175",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "LGU+, 와이파이8 기반 '홈 네트워크 AI 복구' 실증",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260809080840",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "LGU+, AI로 인터넷 품질 관리…와이파이8 기술 실증",
+      "category": "IT/테크"
+    }
+  ]
+}
