@@ -1,0 +1,938 @@
+{
+  "date": "2026-08-11",
+  "excluded": [
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260810027100003",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "100m 이상 높이서 작업 가능한 대형 고소작업차 건설현장 도입",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081012482467668",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "100m 이상 초고층 작업 가능한 고소작업차 나온다",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008697860",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "100m 이상 높이서 작업 가능한 대형 고소작업차 건설현장 도입",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260810_0003742197",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "국토부, 100m 이상 작업 '대형 고소작업차' 건설기계로 지정",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081052417",
+      "reason": "score_observed",
+      "score": 0.767,
+      "title": "청년미래적금 138만5000명 가입…금융위, 9월 추가 모집 검토",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260810146800002",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "청년미래적금, 138만5천명 최종가입…9월 추가모집 검토",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12123312",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "청년미래적금 138만5000명 최종 가입…9월 추가 모집 검토",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081020040568149",
+      "reason": "score_observed",
+      "score": 0.705,
+      "title": "청년미래적금 138만5000명 최종 가입",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260810114400008",
+      "reason": "score_observed",
+      "score": 0.655,
+      "title": "코스닥, 6.97%↑…코스피는 찔끔 상승, 3거래일 만에 반등(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081016191871940",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "코스닥, 6.97%↑…코스피는 찔끔 상승, 3거래일 만에 반등",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008698407",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "코스닥, 6.97%↑…코스피는 3거래일 만에 소폭 반등",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260810054200002",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "KB캐피탈-중고차매매사업조합, 중고차 시장상생 위한 업무협약",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12123155",
+      "reason": "length:127",
+      "title": "[포토] KB캐피탈, 중고차 사업자와 상생",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081009584613964",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "KB캐피탈, 중고차매매사업조합과 업무협약…매물정보 연계",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081050261",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "한화, KAI 지분 15% 돌파…우주·항공·방산 통합 속도",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1272232.html",
+      "reason": "score_observed",
+      "score": 0.659,
+      "title": "한화, KAI 지분 15.89% 확보…공정위 심사대 오른 K-우주항공 재편",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008698623",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "한화, KAI 지분 15% 넘겨…'우주·항공·방산' 협력 기대",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081049711",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "한화손보, 성조숙증 진단 담보…6개월 배타적 사용권 획득",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12122589",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "한화손보, ‘성조숙증 검사비’ 특약 배타적사용권 획득",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081008075597493",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "한화손보, ‘성조숙증 검사비’ 6개월 배타적사용권 획득",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260810039200002",
+      "reason": "score_observed",
+      "score": 0.663,
+      "title": "한은, 통안증권 발행제도 개편…1년물 통합발행 2→3개월로",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008698156",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "한은, 통안증권 발행제도 개편…1년물 통합발행 2→3개월로",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081011131459144",
+      "reason": "score_observed",
+      "score": 0.664,
+      "title": "한은, 1년물 통안증권 발행기간 3개월로 확대…지표종목 신설",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260810056400002",
+      "reason": "score_observed",
+      "score": 0.695,
+      "title": "작년 리콜 4.7% 증가…해외 리콜 제품 국내유통 늘어 당국 대응",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008698153",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "작년 리콜 4.7% 증가…해외 리콜 제품 국내 유통 늘어 당국 대응",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260810_0003742691",
+      "reason": "score_observed",
+      "score": 0.677,
+      "title": "작년 리콜 전년比 4.7% 증가…해외리콜 판매 차단 영향",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260810057100002",
+      "reason": "score_observed",
+      "score": 0.643,
+      "title": "KDI \"반도체 중심으로 경기 개선세 확대\"…물가·고용은 변수",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008698152",
+      "reason": "score_observed",
+      "score": 0.616,
+      "title": "KDI \"반도체 중심으로 경기 개선세 확대\"…물가·고용은 변수",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081011024524750",
+      "reason": "score_observed",
+      "score": 0.53,
+      "title": "KDI '완만한 개선'→'개선세 확대'…\"중동 긴장으로 불확실성 상존\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260810047900003",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "서울 전용 59㎡ 민간아파트 분양가 15.6억원…전국의 3배",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008697789",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "서울 전용 59㎡ 민간아파트 분양가 15.6억 원…전국의 3배",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260810_0003742648",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "서울 전용 59㎡ 평균 분양가 15.6억…1년 새 3.3억 올랐다",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081049387",
+      "reason": "score_observed",
+      "score": 0.778,
+      "title": "[속보] 경찰, 내부비리 자진신고 징계감면…기밀유출 신고포상금 확대",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260810132100004",
+      "reason": "score_observed",
+      "score": 0.767,
+      "title": "경찰, 내부비리 자진신고시 징계감면…신고포상금 예산 확대",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1272249.html",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "경찰, 내부비리 자진신고자 징계 감면·면제…포상금 예산 2700만원→1억원",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12123024",
+      "reason": "score_observed",
+      "score": 0.778,
+      "title": "[속보] 경찰, 내부비리 자진신고 징계감면…기밀유출 신고포상금 확대",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081017272119817",
+      "reason": "score_observed",
+      "score": 0.743,
+      "title": "경찰, 내부비리 자진 신고자 징계 감면…신고 포상금도 확대",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608101801001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "경찰, 내부비리 자진신고시 징계 감면한다…신고포상금도 확대",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260810_0003743416",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "경찰, '내부비리' 자진신고 땐 징계 감면·면제…포상금 1억원으로 확대",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260810151900004",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "어제 서울 온열질환자 5명…누그러진 더위에 8일만에 한자릿수",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608102226001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "더위 한풀 꺾이자 서울 온열질환자 5명, 8일 만에 한 자릿수 기록",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008698920",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "어제 서울 온열질환자 5명…누그러진 더위에 8일 만에 한 자릿수",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081022033767276",
+      "reason": "score_observed",
+      "score": 0.624,
+      "title": "더위 한풀 꺾이자 서울 온열질환자 5명…8일 만에 한 자릿수",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081052937",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "'어라, 문 열렸네' 유치장 도주한 10대…10분 자유 끝 덜미",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260810145900055",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "남원경찰서 유치장서 도주한 10대, 10분 만에 덜미",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12123313",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "유치장 문 열린 틈 타 도주한 10대, 10분 만에 덜미",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260810_0003743538",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "유치장 문 열린 틈 타 도주한 10대, 10여분만에 덜미",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260810129200004",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "노원구 기원서 지인 살해 60대 남성 구속…\"도망염려\"",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1272223.html",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "서울 노원구 기원에서 흉기 살해 60대 남성 구속",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260810_0003743381",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "노원구 기원서 흉기로 지인 살해 60대 구속…\"증거인멸·도망 염려\"(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081017262659880",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "노원구 기원서 지인에 흉기 휘두른 60대 구속",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260811004251061",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "평택 위험물 보관창고서 불…국가소방동원령 발령(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608110633001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "경기 평택 위험물 보관 창고 화재로 국가소방동원령 발령···대응 1단계 진화 중",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008699100",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "평택 위험물 보관창고서 불…국가소방동원령 발령",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260810122800530",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "당뇨환자 응급실행 AI로 미리 예측…질병청, 예측모델 개발",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260810_0003743428",
+      "reason": "score_observed",
+      "score": 0.691,
+      "title": "당뇨병 환자 23%, 1년내 응급실행…AI가 미리 막는다",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081022400100254",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "당뇨병 환자 응급실행, AI가 미리 예측…정확도 87% 달성",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081048837",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "김건희 \"로저비비에 가방 받았다, 나중에 인식\"…법원 출석 증언",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260810091551004",
+      "reason": "score_observed",
+      "score": 0.626,
+      "title": "김건희, 로저비비에 수수 인정…\"영부인에게 클러치백이 필수품\"(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081018371612592",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "김건희, 로저비비에 수수 인정…\"영부인에게 클러치백 필수품\"",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081047137",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "징역 47년 '박사방' 조주빈, 성폭행 감형 노렸지만…헌법소원 기각",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081012133464495",
+      "reason": "score_observed",
+      "score": 0.718,
+      "title": "'박사방' 조주빈 \"47년형 다시 다투겠다\"…헌재 전원일치 기각",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081013194635169",
+      "reason": "score_observed",
+      "score": 0.635,
+      "title": "헌재, 감형 노린 '박사방' 조주빈 헌법소원 기각",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081049097",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "\"위기 때 기댈 사람 없다\"…사회적 지지 OECD 최하위 기록",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12122978",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "“어려울 때 의지할 친구없다”…한국, ‘사회적지지’ OECD 중 ‘최하위’",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260810_0003743511",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "\"의지할 사람 없다\"…주거 1위 한국, 사회적 지지 '꼴찌'",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260810143300004",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "\"금 맡기면 배당줄게\" 150억대 사기 혐의 종로 금은방 업주 기소",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12123217",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "“금 맡기면 배당 챙겨주겠다” 150억대 사기 혐의 종로 금은방 업주",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260810_0003743529",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "150억대 '금 투자 사기' 금은방 업주 구속기소…유사수신 혐의 보완수사 요구",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260811000751072",
+      "reason": "score_observed",
+      "score": 0.846,
+      "title": "콜롬비아 10년래 최악 강진, 100여명 사망…도시 곳곳 건물 붕괴(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1272286.html",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "콜롬비아 강진 사망자 최소 20명…“붕괴 건물에 사람들 갇혀”",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608102156001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.742,
+      "title": "[속보]콜롬비아서 규모 7.4 강진···최소 20명 사망·건물 20채 붕괴",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008699049",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "콜롬비아서 규모 7.4 강진…\"최소 111명 사망\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260811_0003743609",
+      "reason": "score_observed",
+      "score": 0.758,
+      "title": "콜롬비아 규모 7.4 강진…최소 111명 사망·87명 부상(종합2보)",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081051817",
+      "reason": "score_observed",
+      "score": 0.911,
+      "title": "이란 \"오만과 호르무즈 협상 순조…통항 서비스료 부과 방침\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260810149400073",
+      "reason": "score_observed",
+      "score": 0.822,
+      "title": "다카이치, 오만 술탄과 통화…\"호르무즈 안전 항행 중요\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260810129851079",
+      "reason": "score_observed",
+      "score": 0.756,
+      "title": "이란 \"오만과 호르무즈 통항료 논의 안해…서비스료는 받아야\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12123229",
+      "reason": "score_observed",
+      "score": 0.88,
+      "title": "이란 “오만과 호르무즈 통항료 논의 안 해…서비스대가 받아야”",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081009153293218",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "이란, 오만과 호르무즈 협상 \"최종 단계\"…미군 철수·제재 해제 선행 요구",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008698686",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "이란 \"오만과 호르무즈 통항료 논의 안 해…서비스료는 받아야\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081050031",
+      "reason": "length:138",
+      "title": "[포토] 中 덮친 태풍 '돌핀'…21만명 대피령",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260810071700704",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "[쇼츠] '시속 151km' 최강 태풍 돌핀…중국 상륙 100만명 대피",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12122616",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "대만 휩쓴 태풍 ‘돌핀’ 중국 상륙…100만명 이상 대피",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608101332001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.638,
+      "title": "강풍·폭우에 나무도 쓰러져···태풍 ‘돌핀’ 중국 동부지역 강타, 100만명 이상 대피",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260810_0003743046",
+      "reason": "score_observed",
+      "score": 0.677,
+      "title": "中 태풍 ‘돌고래’ 상륙…100만명 대피, 상하이 항공편 2230편 결항",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260810152500098",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "콜롬비아서 규모 6.8 강진…\"수도 보고타도 흔들려\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1272285.html",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "콜롬비아서 규모 7.4 지진…수도 보고타도 흔들",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12123366",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "[속보] “콜롬비아서 규모 6.8 지진…수도 보고타도 흔들”",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260810_0003743567",
+      "reason": "length:0",
+      "title": "[속보]콜롬비아서 규모 6.8 지진…카르타고 인근서 발생",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1272129.html",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "경고 톤 낮춘 트럼프 “로키 대응”…이란에 군사행동 대신 경제압박 시사",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12123039",
+      "reason": "score_observed",
+      "score": 0.79,
+      "title": "트럼프, 이란 군사공격 대신 경제적 압박 강화 시사",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081009162722518",
+      "reason": "score_observed",
+      "score": 0.775,
+      "title": "트럼프 \"이란과 조용히 간다\"…군사 확대 대신 경제 압박 유지",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260810060400009",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "이탈리아 시칠리아 해저서 2천년 된 로마시대 난파선 발견",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12122762",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "항아리 수백개가 와르르…이탈리아 해안서 고대 로마시대 난파선 발견",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081009154386868",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "이탈리아 시칠리아 앞바다서 2100년 전 로마 난파선 발견…암포라 수백 점 원형 보존",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1272113.html",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "네타냐후, 트럼프 주도 ‘하마스 무장해제-이스라엘 철군’ 가자 평화안 거부",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081009152370921",
+      "reason": "score_observed",
+      "score": 0.694,
+      "title": "네타냐후 \"이스라엘, 트럼프 가자 15개항 문서 거부\"…철군도 없다",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260810_0003742241",
+      "reason": "score_observed",
+      "score": 0.757,
+      "title": "총선 앞둔 네타냐후 \"하마스 완전 무장해제 시 철군…팔 국가 인정 불가\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260810109000073",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "美日 엔 매수 공동개입에…\"내년 봄 日기준금리 1.5% 도달\" 전망",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008698534",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "미·일, 엔화 공동 개입에…\"내년 봄 일 기준금리 1.5%\" 전망 확산",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260810_0003743295",
+      "reason": "score_observed",
+      "score": 0.708,
+      "title": "美日 엔화 공조 개입에 日금리 인상 빨라지나…내년 봄 1.5% 전망",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081049037",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "\"좌석 앉기 싫어\" 민폐 어린이 승객에 결국…항공편 운항 취소",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260810106400009",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "\"앉기 싫어\"…어린이 착석 거부에 캐나다 항공편 운항 취소",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12122963",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "“의자 안앉을래” 어린이 승객 고집에…캐나다 여객기, 결국 항공편 취소",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260810110800009",
+      "reason": "score_observed",
+      "score": 0.789,
+      "title": "호주 이민구금시설서 중국인 사망…中대사관, 우려 표명",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1272122.html",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "미 이민단속국 구금시설서 한국인 3명 사망…2명은 자살",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008698569",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "호주 이민구금시설서 중국인 사망…중국 대사관, 우려 표명",
+      "category": "세계"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1993459",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "SK쉴더스 이큐스트, 해킹·보안 컨퍼런스 '데프콘 34' AI 빌리지 CTF서 5위",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=691462",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "SK쉴더스 EQST, 데프콘 34 참가 ... AI CTF서 5위",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081052341",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "키트루다 복제약 허가…삼성에피스, 국내 첫 신청",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260810000440",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "“46조원 '키트루다' 잡아라”…삼성바이오에피스, 국내 첫 허가 신청",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081050821",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "'해킹 올림픽' 휩쓴 한국 화이트해커…세계 정상급 실력 입증",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260810173414",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "세계 해킹 올림픽서 순수 한국팀 첫 세계 2위...'데프콘 34'서 시선",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1993559",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "국가기후위기대응委, 국제 기후거버넌스 논의 이끈다",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260810172044",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "기후대응위, 국제 기후거버넌스 논의 이끈다…강윤호 과장 공동의장 선임",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1993364",
+      "reason": "score_observed",
+      "score": 0.642,
+      "title": "\"폴드는 아재폰?\"…삼성 '갤럭시 Z 폴드8', 1030 여심 잡았다",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260810000238",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "'와이드 폴드' 대흥행에…삼성전자, 폴드8 100만대 증산",
+      "category": "IT/테크"
+    }
+  ]
+}
