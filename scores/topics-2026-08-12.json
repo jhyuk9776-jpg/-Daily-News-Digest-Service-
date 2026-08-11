@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-12",
+  "topics": [
+    {
+      "word": "AI",
+      "score": 34.400000000000006,
+      "media_count": 13,
+      "article_count": 107
+    },
+    {
+      "word": "최대",
+      "score": 21.0,
+      "media_count": 11,
+      "article_count": 50
+    },
+    {
+      "word": "만에",
+      "score": 20.8,
+      "media_count": 11,
+      "article_count": 49
+    }
+  ]
+}
