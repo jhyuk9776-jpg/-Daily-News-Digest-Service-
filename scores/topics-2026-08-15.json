@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-15",
+  "topics": [
+    {
+      "word": "AI",
+      "score": 35.2,
+      "media_count": 14,
+      "article_count": 106
+    },
+    {
+      "word": "최대",
+      "score": 27.0,
+      "media_count": 12,
+      "article_count": 75
+    },
+    {
+      "word": "억원",
+      "score": 26.200000000000003,
+      "media_count": 12,
+      "article_count": 71
+    }
+  ]
+}

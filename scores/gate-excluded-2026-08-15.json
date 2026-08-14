@@ -1,0 +1,1235 @@
+{
+  "date": "2026-08-15",
+  "excluded": [
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260814074300002",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "정부, 홈플러스 근로자에 실업급여·융자 등 총 778억원 지원",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1272938.html",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "홈플러스 노동자에 융자 포함 778억 지원됐다…정부 “지원 계속”",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008705654",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "정부, 홈플러스 근로자에 실업급여·융자 등 총 778억 원 지원",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260814_0003749451",
+      "reason": "score_observed",
+      "score": 0.711,
+      "title": "홈플러스 회생절차 이후 근로자에 778억 지원",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081415515952542",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "정부, 홈플러스 근로자에 융자 등 778억원 지원",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260814053200002",
+      "reason": "score_observed",
+      "score": 0.716,
+      "title": "7월 금융권 가계대출 6.2조↑…'빚투' 진정 등에 증가폭 축소",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1272911.html",
+      "reason": "score_observed",
+      "score": 0.646,
+      "title": "전세거래 줄자 가계대출 증가세 둔화…개인 '빚투' 증가 폭도 줄어",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/property/1272910.html",
+      "reason": "score_observed",
+      "score": 0.846,
+      "title": "금융위원장 “가계대출 총량 확대, 투기 수요 자극해선 안 돼”",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008705347",
+      "reason": "score_observed",
+      "score": 0.652,
+      "title": "7월 금융권 가계대출 6.2조↑…'빚투' 진정 등에 증가폭 축소",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081410240887044",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "7월 가계빚 6.2조 늘어…증가폭 두 달째 둔화, 총량 확대는 변수",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081425891",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "LS, 상반기에만 영업익 1조 돌파",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081415021934034",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "LS, 상반기 영업이익 1조717억원…지난해 연간 실적 넘어섰다",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260814_0003748959",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "동부건설, 상반기 매출 1조 돌파…당기순익 266.5%↑",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260814166400002",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "교보생명, 상반기 순이익 7천48억원 작년比 21%↑",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260814_0003749762",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "HL디앤아이한라, 상반기 영업이익 455억원…34.1%↑",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081418022596437",
+      "reason": "score_observed",
+      "score": 0.621,
+      "title": "교보생명, 상반기 연결 순이익 7048억원…전년비 21%↑",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608142397g",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "롯데호텔앤리조트, 2분기 영업익 320억…\"매출·영업익 사상 최대\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260814143900008",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "토스증권, 2분기 영업익 2천79억…분기·반기 실적 역대최대",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081418152436781",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "두나무, 올해 2분기 영업익 235억…전년比 84.6%↓",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608142269g",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "노랑풍선, 2분기 영업익 7억7000만원…전년비 흑자전환",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260814155100002",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "롯데손보, 2분기 당기순익 13억원…분기 흑자전환",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260814_0003750114",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "두산건설, 상반기 영업익 727억…전년 대비 35.6% 늘어",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260814130800003",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "빌 게이츠, 정재계 연쇄회동…'AI 전력난 해법' SMR 협력 본격화",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081321575576989",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "빌 게이츠 1년 만에 방한…정부·재계와 SMR 협력 논의",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008706206",
+      "reason": "score_observed",
+      "score": 0.646,
+      "title": "빌 게이츠, 정재계 연쇄 회동…'AI 전력난 해법' SMR 협력 본격화",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260814072100002",
+      "reason": "score_observed",
+      "score": 0.787,
+      "title": "외환시장 24시간 개장 이후 일평균 거래량 10% 증가",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12127950",
+      "reason": "score_observed",
+      "score": 0.812,
+      "title": "외환시장 24시간 개방 한 달, 원·달러 거래량 10% 껑충",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008705605",
+      "reason": "score_observed",
+      "score": 0.743,
+      "title": "외환시장 24시간 개장 이후 일평균 거래량 10% 증가",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260814040500002",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "롯데카드, AI 보안 협의체 '캐노피' 합류…정보보호 강화",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12127894",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "롯데카드, AI 보안 협의체 ‘프로젝트 캐노피’ 참여",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081408051906419",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "롯데카드, AI 보안 공익사업 참여…\"선제적 방어체계 강화\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260813157300017",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "AI 훈풍에 ICT 수출 534억달러…7월 역대 최대",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008705389",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "AI 훈풍에 ICT 수출 534억 달러…7월 역대 최대",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081411065320207",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "전세계 AI 투자 확대에…지난달 ICT 수출 '역대 최대'",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608142804i",
+      "reason": "score_observed",
+      "score": 0.676,
+      "title": "최태원, 재산분할 파기환송심 재상고…'9년 이혼소송' 다시 대법원으로",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260814113200004",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "[일지] 최태원·노소영 이혼부터 재산분할 파기환송심 재상고까지",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260814113100004",
+      "reason": "score_observed",
+      "score": 0.704,
+      "title": "'세기의 재산분할' 다시 대법원으로…최태원 재상고",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260814144400004",
+      "reason": "length:0",
+      "title": "[1보] 최태원, '노소영에 9천440억원 지급' 불복…다시 대법으로",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1273023.html",
+      "reason": "score_observed",
+      "score": 0.675,
+      "title": "최태원, 노소영에 ‘9440억 재산분할’ 불복…다시 대법으로",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12128434",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "‘최태원-노소영 9440억원 재산분할’…또 다시 대법원으로",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081500194153404",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "최태원, '노소영에 9440억 재산분할' 불복…이혼소송 다시 대법원으로",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008706447",
+      "reason": "score_observed",
+      "score": 0.691,
+      "title": "최태원, 재산분할 소송 재상고…다시 대법으로",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260814_0003749498",
+      "reason": "score_observed",
+      "score": 0.664,
+      "title": "최태원·노소영, 9440억 '세기의 재산분할'  다시 대법원으로",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081500515714889",
+      "reason": "score_observed",
+      "score": 0.67,
+      "title": "최태원 SK 회장, 노소영 상대 재상고…이혼 소송 다시 대법원으로",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081423347",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "황정민 상대 2억 손배소, 양측 불출석… 법원, 강제조정 결정",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260814139100004",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "황정민 측, 사생활폭로자 제기한 손배소 조정 불출석…法 강제조정",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1272982.html",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "법원, 배우 황정민-스토킹 혐의 여성 ‘손배소 사건’ 강제조정 결정",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12128190",
+      "reason": "score_observed",
+      "score": 0.638,
+      "title": "황정민 “합의 없다” 했지만…‘2억 손배소’ 법원 강제조정 결정",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081418430856403",
+      "reason": "score_observed",
+      "score": 0.624,
+      "title": "황정민, 불륜 주장女 '2억 손배소' 조정 안 나갔다…法 \"강제조정\"",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260814_0003750026",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "'사생활 폭로' A씨-황정민 2억 손배소…법원, 강제조정 결정",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081417543581289",
+      "reason": "score_observed",
+      "score": 0.67,
+      "title": "'황정민 스토킹 혐의' 여성 2억원 손배소 강제조정…양측 불출석",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081425181",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "나경원·김기현·윤상현·권영진, '尹 체포 방해' 불구속 기소",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1272936.html",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "특검, ‘윤석열 체포 방해’ 나경원·김기현·윤상현·권영진 기소",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12128255",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "특검 '尹 체포 방해' 나경원·김기현·윤상현·권영진 기소",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081412541217230",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "특검, '尹체포방해' 나경원·김기현·윤상현·권영진 기소",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608141317001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "[속보]‘윤석열 체포 방해’ 국힘 나경원·김기현·윤상현·권영진 기소···특검 “인간벽 형성해 영장집행 저지”",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260814_0003749466",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "종합특검, '尹 체포방해' 나경원·김기현·윤상현·권영진 불구속 기소",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081415211658180",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "특검, ‘尹 체포방해’ 나경원·김기현·윤상현·권영진 의원 기소",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608142453i",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "대검 '징계 불가' 뒤집은 법무부…'집단퇴정' 검사 2명 징계",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260814147951004",
+      "reason": "score_observed",
+      "score": 0.711,
+      "title": "정성호 법무, '수원지검 집단퇴정' 검사 2명 견책 징계 청구(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1273003.html",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "정성호, 이화영 ‘연어 술파티’ 위증 재판 집단 퇴정 검사 징계 청구",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12128140",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "[속보] 정성호 법무부 장관, ‘수원지검 집단퇴정’ 검사 2명 징계 청구",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608141751001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "정성호 법무장관, ‘이화영 재판 집단 퇴정’ 수원지검 검사 2명 징계 청구",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260814_0003750140",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "법무부, '이화영 재판 집단퇴정' 수원지검 검사 징계 청구",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081417103841001",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "정성호 장관, ‘수원지검 집단퇴정’ 검사 2명 징계 청구",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081423097",
+      "reason": "length:0",
+      "title": "[속보] 합수본, '사전투표함 입찰방해' 중앙선관위 등 압수수색",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260814151800004",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "합수본, '투표함 일감 몰아주기' 중앙선관위 등 압수수색",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1273004.html",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "합수본, 사전투표함 ‘입찰 방해 의혹’ 선관위 압수수색",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608141811001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "‘들러리 업체’ 세워 특정업체 낙찰 의혹…투표지 합수본, 중앙선관위 등 압수수색",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008706259",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "합수본, '전직 직원 일감 몰아주기' 중앙선관위 등 압수수색",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260814_0003750280",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "합수본, '사전투표함 들러리 입찰 의혹' 정조준…중앙선관위 등 압수수색(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081428497",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "모텔서 전 연인 둔기 폭행한 30대…달아나다 추락 '중환자실'",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260814179900061",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "분당 모텔서 전 연인 둔기로 때려 살해하려 한 30대 입건",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608142215001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "전 연인 둔기로 폭행하고 달아난 30대 검거···경찰, 살인미수 적용",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008706398",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "분당 모텔서 전 연인 둔기로 때려 살해하려 한 30대 입건",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260814_0003750359",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "모텔서 전 여자친구 둔기로 폭행, 도주한 30대 입건",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260814163100004",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "'서대문 초등생 유괴미수' 1년만에 재판행…檢, 아동학대 혐의 추가",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1273010.html",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "‘서대문구 초등생 유괴미수’ 2명, 사건 1년 만에 기소…아동학대 혐의 추가",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608141818001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "‘서대문 초등생 유괴 미수’ 20대 남성 2명, 불구속 기소",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260814_0003750195",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "검찰, '서대문 초등생 유괴 미수' 20대 2명 불구속 기소",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081419160529755",
+      "reason": "score_observed",
+      "score": 0.705,
+      "title": "'서대문 초등생 유괴미수' 1년 만에 재판행…아동학대 혐의 추가",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260814180100004",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "종합특검, '내란 가담' 강호필 前지작사령관 불구속 기소",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12128427",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "‘내란 가담 의혹’…종합특검, 강호필 전 지상작전사령관 불구속 기소",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608142203001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "종합특검, ‘내란 가담’ 강호필 전 지작사령관 기소",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260814_0003750366",
+      "reason": "score_observed",
+      "score": 0.628,
+      "title": "종합특검, 강호필 前지작사령관 기소…'블랙리스트' 여인형도 재판행(종합2보)",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260814028852004",
+      "reason": "score_observed",
+      "score": 0.752,
+      "title": "檢미래위, 성남FC·백현동·법카사건 조사…李대통령 관련만 8건(종합2보)",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008706136",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "\"성남FC·법카 유용 다시 조사\"…대통령 관련 사건만 '6개'로 늘었다",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260814_0003750021",
+      "reason": "score_observed",
+      "score": 0.764,
+      "title": "檢미래위, '성남FC' 등 12건 추가 선정…李기소 3건 '직권 선정' 논란 예상(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081416260229812",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "법무부 미래위, ‘성남FC 사건’ 등 조사 대상 12건 추가 선정",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260814141800004",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "'류중일 감독 아들 집에 홈캠 설치' 前사돈 아들 무죄→유죄",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081421244754222",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "별거로 집 비운 류중일 아들 부부…홈캠 몰래 설치한 전 처남 '유죄'",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260814_0003749962",
+      "reason": "score_observed",
+      "score": 0.621,
+      "title": "'류중일 감독 아들 집 홈캠 설치' 전 처남, 1심 무죄→2심 유죄",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081424911",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "美, 中 드론·부품 겨냥 '최대 100% 관세'",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260814179600083",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "中관영지, 美 드론 최대 100% 관세에 \"중국 겨냥한 보호주의\"",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12128611",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "트럼프 “중국산 드론, 국가안보 훼손우려”…최대 100% 관세폭탄",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081406393580018",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "[속보] 트럼프, 드론·드론부품에 최대 100% 관세…한국은 15%",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608140723001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "트럼프, 수입 드론·부품에 관세 100%···한국은 15%",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008706406",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "중국 관영지, 미국의 드론 최대 100% 관세에 \"중국 겨냥한 보호주의\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608141327i",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "트럼프 \"외국 조선소에서 美군함건조 일부 허용\"…2척 제한 [이상은의 워싱턴나우]",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260814012953071",
+      "reason": "score_observed",
+      "score": 0.691,
+      "title": "트럼프, '대미투자' 외국조선사에 美해군 함정 본국 건조 허용(종합2보)",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1272883.html",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "트럼프, 미국 투자하는 외국 조선사에 미 군함 2척 건조 승인",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081407322611051",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "트럼프, 함정 해외 건조 빗장 일부 푼다…최대 2척 조건부 허용",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608140807001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.778,
+      "title": "트럼프 “미국 투자한 외국 조선소, 선박 2척 건조 승인”···한화도 조건 부합",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260815003700071",
+      "reason": "score_observed",
+      "score": 0.778,
+      "title": "美, 고강도 이란 경제제재 예고…\"전례없는 고립 조치 적용\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/arabafrica/1272975.html",
+      "reason": "score_observed",
+      "score": 0.783,
+      "title": "미 재무장관, 이란 향해 “내주 전례 없는 경제 고립 조처 발표할 것”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008706512",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "미국, 고강도 이란 경제 제재 예고…\"전례 없는 고립 조치 적용\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260815_0003750405",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "美재무 \"다음주 이란 고강도 경제제재\"…국제유가, 1%대 상승",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260815000400071",
+      "reason": "score_observed",
+      "score": 0.857,
+      "title": "트럼프 행정부, 대법에 \"백악관 연회장 공사 계속하게 해달라\"",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608141325001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.867,
+      "title": "트럼프 행정부 하버드에 패소···“반유대주의 주장, 충분히 입증 못해”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008706466",
+      "reason": "score_observed",
+      "score": 0.815,
+      "title": "트럼프 행정부, 대법에 \"백악관 연회장 공사 계속하게 해달라\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260815_0003750391",
+      "reason": "score_observed",
+      "score": 0.867,
+      "title": "백악관 연회장 공사, 대법으로…美행정부 \"공사 계속하게 해달라\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081427997",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "3분 만에 도난당한 르누아르·세잔·마티스 작품…5개월 만에 찾았다",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260814178651109",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "3분만에 털린 르누아르·세잔·마티스 작품 찾았다(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008706386",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "이탈리아 경찰, 3분 만에 털린 르누아르·세잔·마티스 작품 찾았다",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260815_0003750382",
+      "reason": "score_observed",
+      "score": 0.785,
+      "title": "이탈리아 경찰, '3분 만에' 훔쳐간 세잔·르누아르·마티스 작품 회수",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260814169300083",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "'AI 특수' 대만, 올해 성장률 전망 9.64%→11.05% 상향",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608141923001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "AI 특수 맞은 대만···올해 성장률 전망치 11.05%로 상향",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008706327",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "'AI 특수' 타이완, 올해 성장률 전망 9.64%→11.05% 상향",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260814_0003750375",
+      "reason": "score_observed",
+      "score": 0.656,
+      "title": "[올댓차이나] 대만 올해 경제성장 전망 11.05%로 상향…AI 수요 힘입어 39년 만에 최고",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260814161400082",
+      "reason": "score_observed",
+      "score": 0.675,
+      "title": "'범죄와의 전쟁' 스웨덴 촉법소년 연령 15→14세 낮춘다",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/europe/1273019.html",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "‘10대 갱단 범죄’ 몸살 스웨덴, 촉법소년 연령 15→14살로 하향",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008706313",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "'범죄와의 전쟁' 스웨덴 촉법소년 연령 15→14세 낮춘다",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260814_0003749898",
+      "reason": "score_observed",
+      "score": 0.789,
+      "title": "스웨덴 의회, 형사책임 연령 15세→14세로 하향",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260815005200071",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "트럼프 \"호르무즈 해협, 조만간 미국 영토로 선언할 것\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008706527",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "트럼프 \"호르무즈 해협, 조만간 미국 영토로 선언\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260815_0003750401",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "트럼프 \"조만간 호르무즈 해협 미국 영해로 선포할 것\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260814186800081",
+      "reason": "score_observed",
+      "score": 0.615,
+      "title": "프랑스 조력 사망법 합헌…\"존엄 원칙 위배 안 돼\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008706464",
+      "reason": "score_observed",
+      "score": 0.617,
+      "title": "프랑스 조력 사망법 합헌…\"존엄 원칙 위배 안 돼\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260815_0003750394",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "프랑스, '조력 사망' 합법화…헌법위 최종 관문 통과",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260815002000071",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "美국무, 광복절 축하메시지…\"한국은 없어서는 안 될 파트너\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008706479",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "미국 국무부, 광복절 축하메시지…\"한국은 없어서는 안 될 파트너\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260815_0003750388",
+      "reason": "score_observed",
+      "score": 0.778,
+      "title": "美국무, 광복절 축하 성명…\"한국은 없어선 안될 파트너\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608141491i",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "동국제약, 상반기 영업이익 534억…사상 최대 매출 기록",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1995301",
+      "reason": "score_observed",
+      "score": 0.616,
+      "title": "SK스퀘어, 2분기 영업익 19조2354억원 '분기 최대'",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260814000191",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "어플라이드 3분기 영익 30억8000만달러…사상 최대치 경신",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=693298",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "이해민, 'AI 기본사회법' 발의…고용대체 기업에 분담금",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260814171346",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "AI 전환 충격 선제 대응한다…이해민, 'AI 기본사회법' 발의",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081425021",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "업스테이지 '솔라 프로4' 공개…글로벌 모델비교 플랫폼 첫 등재",
+      "category": "IT/테크"
+    },
+    {
+      "source": "IT조선",
+      "link": "https://it.chosun.com/news/articleView.html?idxno=2023092168167",
+      "reason": "score_observed",
+      "score": 0.642,
+      "title": "업스테이지 ‘솔라 프로 4’ 공개… 에이전트 성능 엔비디아 네모트론급",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608142011i",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "﻿SCL사이언스, 2분기 매출 전년비 116% 증가…별도 기준 영업흑자",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=693240",
+      "reason": "score_observed",
+      "score": 0.622,
+      "title": "마키나락스 상반기 매출 70억원…전년比 168% 증가",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1995228",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "이스트소프트, 상반기 매출 607억원 '역대 최대'⋯ AI·SW 성장 덕분",
+      "category": "IT/테크"
+    },
+    {
+      "source": "IT조선",
+      "link": "https://it.chosun.com/news/articleView.html?idxno=2023092168187",
+      "reason": "score_observed",
+      "score": 0.646,
+      "title": "한컴, 상반기 역대 최대 실적 달성 “AI 매출 성장 본격화”",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1995313",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "정신아 카카오 대표, 상반기 보수 12.1억원⋯전년 대비 30% 증가",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260814174216",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "두나무, 상반기 매출액 4081억원…전년비 반토막",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1995307",
+      "reason": "score_observed",
+      "score": 0.642,
+      "title": "SK하이닉스, 상반기 설비투자 18.3조·연구개발 6조...반도체 투자 가속",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260814175520",
+      "reason": "score_observed",
+      "score": 0.637,
+      "title": "삼성SDS, 상반기 영업익 전년比 37%↓…연구개발비도 줄었다",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260814000215",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "SK이노, 테라파워와 '나트륨' SMR 사업 협력…최태원·빌 게이츠 회동",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260814174410",
+      "reason": "score_observed",
+      "score": 0.646,
+      "title": "'K-나트륨' 띄우는 최태원·빌 게이츠…SMR 동맹 확대",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1995277",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "티맵, 2분기 매출 744억원⋯상각전영업이익(EBITDA) 44억원 흑자",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260814171929",
+      "reason": "score_observed",
+      "score": 0.694,
+      "title": "인텔리안테크, 2분기 매출 972억원 '역대 최대'…영업익 304% 급증",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260814171449",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "티맵모빌리티, 2분기 EBITDA 44억원 흑자",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081425011",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "토스에 올린 미니앱, 1년 만에 1만개 돌파",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1995173",
+      "reason": "score_observed",
+      "score": 0.66,
+      "title": "딥엑스, NPU 양산 1년 만에 글로벌 수주 77건…180억원 돌파",
+      "category": "IT/테크"
+    }
+  ]
+}
