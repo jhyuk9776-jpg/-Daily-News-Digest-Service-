@@ -1,0 +1,611 @@
+{
+  "date": "2026-08-16",
+  "excluded": [
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081531347",
+      "reason": "length:261",
+      "title": "'한미 관세협상 수장' 여한구 통상교섭본부장 경질",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008707084",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "'통상 실무 사령탑' 여한구 산업부 통상교섭본부장 경질",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260815_0003750492",
+      "reason": "score_observed",
+      "score": 0.822,
+      "title": "'대미 관세협상 참여' 여한구 직권면직…사유 미공개",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608153191i",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "여한구 통상교섭본부장 직권면직…통상 사령탑 돌연 공석",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1273030.html",
+      "reason": "score_observed",
+      "score": 0.744,
+      "title": "여한구 통상교섭본부장 직권면직…산업부 “임면권자 정무적 판단”",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081510055770431",
+      "reason": "score_observed",
+      "score": 0.708,
+      "title": "여한구 통상교섭본부장 '직권면직'…대미 협상 향방은",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081532197",
+      "reason": "length:258",
+      "title": "[속보] 서강대 개인정보 18만건 유출…신원미상 외부공격 추정",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1273040.html",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "박근혜도 털렸다…서강대 개인정보 18만건 유출 사고",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12128722",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "박근혜도 털렸나…서강대 개인정보 18만건 유출",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608151332001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "clickbait",
+      "title": "서강대도 털렸다…개인정보 18만건 무더기 유출",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008706824",
+      "reason": "length:242",
+      "title": "서강대 개인정보 18만 건 유출…신원미상 외부 공격 추정",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260815_0003750635",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "서강대, 18만명 개인정보 유출…박근혜 전 대통령도 포함(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081513112268953",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "서강대 개인정보 18만건 유출…이름·전화번호 포함돼",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081528607",
+      "reason": "length:0",
+      "title": "[속보] 최태원, '노소영에 9440억원 지급' 불복…다시 대법으로",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12128434",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "‘최태원-노소영 9440억원 재산분할’…또 다시 대법원으로",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081500194153404",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "최태원, '노소영에 9440억 재산분할' 불복…다시 대법원으로",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608150001001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.757,
+      "title": "[속보]최태원·노소영 ‘9440억원 재산 분할’ 또 한번 대법으로…시한 1분 남기고 ‘재상고’",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260815_0003750609",
+      "reason": "score_observed",
+      "score": 0.712,
+      "title": "최태원·노소영 '세기의 재산분할' 다시 대법간다…분할 비율이 쟁점",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081500515714889",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "최태원 SK 회장, 노소영 상대 재상고…재산분할 소송 다시 대법원으로",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081529547",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "맥박 돌아왔었지만…'4할 타자' 백인천 전 감독 결국 별세",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1273034.html",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "끝까지 싸운 전설의 4할 타자…백인천, 맥박 돌아왔지만 끝내 별세",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12128672",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "‘전설의 4할 타자’ 백인천 전 감독 별세…향년 83세",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081507200049070",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "'불멸의 4할 타자' 백인천 전 감독, 별세…향년 83세",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081509431728613",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "'불멸의 4할 타자' 백인천 전 감독 별세…KBO장 치른다",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12128797",
+      "reason": "clickbait",
+      "title": "[속보] 제1237회 로또 1등 12명 각 12.1억원씩…당첨번호는?",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608152100001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "로또 1237회 1등 23명···당첨번호 ‘10·20·23·34·37·40’",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260815_0003750766",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "1237회 로또 1등 각 12억씩…자동 14명·수동 9명(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081520592357436",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "로또 1237회 1등 '10·20·23·34·37·40'…23명 당첨(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/environment/1273029.html",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "구름 낀 광복절, 오후부터 전국에 비…남부·제주 연휴 사흘간 최대 200㎜",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12128799",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "“휴일 나들이 어쩌나”…일요일 전국 비, 남부엔 최대 200㎜",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081520362538781",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "광복절 연휴 둘째 날 전국 흐리고 비…남부·제주 강한 비",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12128752",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "밤에 태안 갯벌 해루질 나간 50대…10시간 만에 숨진 채 발견",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008706965",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "태안 갯벌서 야간 해루질 50대 실종 10시간 만에 숨진 채 발견",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260815_0003750649",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "태안 통개항 인근 갯벌서 실종됐던 50대 숨진 채 발견(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260815_0003750413",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "예산서 방화 추정 불…60대 용의자 숨진 채 발견",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081532627",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "송혜교, '만세운동 간호사' 박자혜 알린다",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260815_0003750473",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "서경덕·송혜교, '만세운동 간호사' 박자혜 알린다",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081509475235714",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "\"부상자들 치료하고 만세운동 이끌어\"…'간호사 박자혜' 영상 공개",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608151000001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "백범 김구의 ‘문화강국’ 꿈, K-컬처·반도체로 꽃피우다···제81주년 광복절 경축식 개최",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008706746",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "'내일이 더 빛나는 대한민국'…81주년 광복절 경축식 개최",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081508174377333",
+      "reason": "score_observed",
+      "score": 0.683,
+      "title": "\"생성형 AI로 김구 선생 구현\"…제81주년 광복절 경축식 개최",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081530367",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "[속보] 다카이치, 야스쿠니 공물 대금 봉납…\"자민당 총재 자격\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/japan/1273033.html",
+      "reason": "score_observed",
+      "score": 0.642,
+      "title": "다카이치, 야스쿠니에 공물 대금 봉납…자민당 핵심 간부들, 이례적 단체참배",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081508530610725",
+      "reason": "score_observed",
+      "score": 0.675,
+      "title": "다카이치, 야스쿠니 신사에 공물…\"자민당 총재 자격\"",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608150858001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "다카이치, 야스쿠니 공물 대금 봉납…자민당 총재 자격",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008706813",
+      "reason": "length:267",
+      "title": "일본 다카이치 총리, 야스쿠니 신사에 공물…장관 2명은 참배",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260815_0003750483",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "다카이치 일본 총리, 야스쿠니 신사에 공물",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081529767",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "트럼프 \"호르무즈, 조만간 미국 영토로 선언할 것\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1273044.html",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "트럼프 “호르무즈, 조만간 미 영토로 선언”…이란 “허황된 망상”",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081509522912023",
+      "reason": "score_observed",
+      "score": 0.743,
+      "title": "트럼프 \"호르무즈 해협, 조만간 美 영토로 선언\"…이란 \"허황된 망상\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008706674",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "이란, 트럼프 '호르무즈 미국 영토' 주장에 \"허황된 망상\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260815_0003750401",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "트럼프 \"조만간 호르무즈 해협 미국 영해로 선포할 것\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081529737",
+      "reason": "length:152",
+      "title": "[속보] 인도네시아 연안에 규모 7.7 강진…쓰나미 경보",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12128657",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "인도네시아 뒤흔든 규모 7.7 강진…쓰나미 경보까지 발령",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608151507001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "인도네시아 7.7 강진으로 최소 20명 사망…구조 난항",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008707120",
+      "reason": "length:162",
+      "title": "인도네시아 페마탕시안타르 북북서쪽서 규모 6.9 지진 발생",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008706922",
+      "reason": "length:203",
+      "title": "인도네시아 플로레스섬 규모 7.7 강진…최소 20명 사망",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260815_0003750555",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "규모 7.7 강진 印尼, 최소 5명 사망…다행히 인명피해 안크고 쓰나미 경보도 해제",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/arabafrica/1273056.html",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "레바논 남부 이스라엘군 공습으로 7명 사망…“6월 휴전 이후 최다”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008707175",
+      "reason": "score_observed",
+      "score": 0.618,
+      "title": "이스라엘 공격에 레바논서 11명 사망…\"6월 휴전 이후 최다\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260816_0003750811",
+      "reason": "score_observed",
+      "score": 0.719,
+      "title": "이스라엘, 레바논 남부 공습…사망 11명·부상 19명(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/asiapacific/1273037.html",
+      "reason": "score_observed",
+      "score": 0.778,
+      "title": "인니 7.7 강진에 38명 사망…여진도 수십차례",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12128727",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "‘7.7 강진’ 인니 플로레스섬서 38명 사망…2000명 대피",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260815_0003750775",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "인니 7.7 강진 사망자 47명…북수마트라서 또 6.9 지진(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1273051.html",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "BTS 보이콧 영향?…그래미 ‘아시안 팝 부문’ 재검토 가능성 시사",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608151703001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.78,
+      "title": "‘BTS 보이콧’에 결국 그래미 아카데미 움직였다···“아시안 팝 부문 재검토”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008706664",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "BTS 보이콧에 그래미  입장 선회?…\"아시안팝 부문 손질할 수도\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/japan/1273041.html",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "패전일 추도사에 ‘반성’ ‘부전의 맹세’ 빼먹은 다카이치…아베 따라하기",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008706921",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "다카이치, 패전일 추도사서 반성 언급 안 해…아베 계승",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260815_0003750632",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "다카이치, 전사자 추모연설서 \"반성·부전의 맹세\" 언급 안해",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081531217",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "챗GPT에 '전여친 살해계획' 입력한 남성, 오픈AI 신고로 체포",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1273047.html",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "챗GPT에 “전 여친 죽이겠다” 총 자랑까지…오픈AI 신고로 ‘쇠고랑’",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260815_0003750518",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "\"전여친 죽이겠다\" 챗GPT에 계획 털어놓은 美 남성…오픈AI 신고로 잡혀",
+      "category": "세계"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1995420",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "이통3사 대표 상반기 보수 보니…홍범식 LGU+ 대표 18억원 '최고'",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260815174803",
+      "reason": "score_observed",
+      "score": 0.622,
+      "title": "씨이랩, 상반기 매출 작년 동기 대비 108% 증가",
+      "category": "IT/테크"
+    },
+    {
+      "source": "IT조선",
+      "link": "https://it.chosun.com/news/articleView.html?idxno=2023092168264",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "스페이스X, AI 코딩 스타트업 ‘커서’ 85조원에 인수 완료",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=693378",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "스페이스X, 커서 600억달러 인수 완료…그록 개발 조직에 편입",
+      "category": "IT/테크"
+    }
+  ]
+}
