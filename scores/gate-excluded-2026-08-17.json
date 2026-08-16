@@ -1,0 +1,697 @@
+{
+  "date": "2026-08-17",
+  "excluded": [
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081641301",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "은행원 상반기 평균 급여 7150만원",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260815021700002",
+      "reason": "score_observed",
+      "score": 0.613,
+      "title": "4대은행 상반기 평균 급여 7천150만원…13년 만에 최고 상승률",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/finance/1273089.html",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "4대 은행 평균 급여, 상반기만 7150만원…삼성전자보다 많아",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12129093",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "은행직원 상반기 급여 … 13% 늘어 7150만원",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260817004651052",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "거제 시간당 100㎜ 물폭탄…일부 하천 범람속 긴급대피 요청(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608162059005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "밤새 200㎜ ‘물폭탄’…남부 침수 피해 속출",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008707863",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "거제 시간당 100㎜ 물폭탄…전남광주도 피해 잇따라",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260817_0003751168",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "거제·통영 시간당 100㎜ 이상 물폭탄…일부 지역 대피령",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260817005900034",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "광복절 대체공휴일 전국 비 소식…경남에 최대 250㎜ 폭우",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/environment/1273069.html",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "내일 오전까지 전국은 ‘비요일’…최대 강수량 250㎜",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/environment/1273029.html",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "구름 낀 광복절, 오후부터 전국에 비…남부·제주 연휴 사흘간 최대 200㎜",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12129103",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "가뭄 뒤 '물폭탄'… 남부 최대 250㎜ 폭우",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260816_0003751118",
+      "reason": "score_observed",
+      "score": 0.618,
+      "title": "오전까지 전국 비…경상권 시간당 50㎜ '물폭탄'[오늘날씨]",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260815_0003750746",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "전국 비 소식…제주·남부지방 200㎜ 강우[오늘날씨]",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260816020300004",
+      "reason": "score_observed",
+      "score": 0.635,
+      "title": "최태원 \"9천440억원 재산분할 일부 주식으로\"…노소영 \"현금만\"",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12128933",
+      "reason": "score_observed",
+      "score": 0.638,
+      "title": "“9440억원 재산분할 일부 주식으로”…최태원에 노소영 “현금만”",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081614271978789",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "'세기의 재산분할 소송' 최태원 \"9천440억원 중 일부 주식\"…노소영 \"현금만\" 대립",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260816_0003750987",
+      "reason": "score_observed",
+      "score": 0.712,
+      "title": "최태원, 막판 재상고 나선 배경은…\"일부 주식으로 지급, 노소영이 거절\"",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1273165.html",
+      "reason": "score_observed",
+      "score": 0.621,
+      "title": "허구연 KBO 총재, 백인천 감독 빈소 조문…닛폰햄도 조화 보내 애도",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081619415470722",
+      "reason": "score_observed",
+      "score": 0.622,
+      "title": "백인천 감독 빈소에 야구계 조문 행렬…일본 닛폰햄도 조화",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008707720",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "백인천 감독 빈소에 조문 행렬…일 닛폰햄 구단 조화 보내 애도",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260815020600004",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "서울시, 전기이륜차 배터리 화재 분석…6천여대 리콜",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608162055015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "“전기 이륜차 6000여대 리콜 이끌어”",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260815_0003750561",
+      "reason": "score_observed",
+      "score": 0.638,
+      "title": "서울시 화재 위험 분석…전기이륜차 6144대 리콜 확정",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260816042700530",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "기상청 \"전남광주 해남 서북서쪽서 규모 2.4 지진…피해 없을듯\"",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008707429",
+      "reason": "length:175",
+      "title": "전남광주 해남 서북서쪽서 규모 2.2 지진…기상청 \"피해 없을 듯\"",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260816_0003751101",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "전남 해남 서북서쪽 20㎞서 규모 2.4 지진…\"피해 없을 것\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260816026251004",
+      "reason": "score_observed",
+      "score": 0.726,
+      "title": "가습기살균제 피해자들 광화문 농성…\"국가가 사과할 때까지\"(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608161912001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "가습기살균제 피해자연대, 광화문 빈소 설치 두고 서울시와 대치···“투쟁 지속”",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260816_0003751099",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "가습기살균제 피해자단체…광화문 빈소 두고 서울시와 대치(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081642527",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "군대에서 축구하다가 다쳤다면…法 \"보훈 보상대상자 맞다\"",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081610443179663",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "\"군대서 축구하다 다친 것도 보훈 대상\"…법원 판단 나왔다",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608161702001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "군대에서 축구하다 ‘악’ 다리 다친 예비역 “국가유공자 아니지만 보훈보상대상자”",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260816032300064",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "보은 대청호 낚시객 50대 숨진 채 발견…실족사 추정",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12129140",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "“자고 일어나니, 물가에 신발만”…충북 대청호 낚시하던 50대 숨진채 발견",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608160920001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "“사라졌다”던 6세 아이, 아파트 화단서 숨진 채 발견···추락사 추정",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081642397",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "'70학번 박근혜' 등 개인정보 대량 유출…경찰, 내사 착수",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1273127.html",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "‘70학번’ 박근혜도…서강대 개인정보 18만건 유출 ‘2차 피해’ 우려",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260816_0003751052",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "박근혜도 털린 서강대 개인정보 해킹 사건…경찰, 입건 전 조사",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081641571",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "트럼프 \"김정은과 잘지내\"…7년 전 판문점 사진 소환",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260816001800071",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "트럼프, 이번엔 김정은과 판문점 회동 사진 게시…\"사이 좋아\"",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/politics/12128854",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "“웃고 있는 사진도 많다”…트럼프, 김정은과 판문점 회동 사진 게시",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081611211017246",
+      "reason": "score_observed",
+      "score": 0.66,
+      "title": "\"김정은과 나는 사이 좋다!\"…트럼프가 돌연 올린 판문점 사진",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008707252",
+      "reason": "length:264",
+      "title": "트럼프, 김정은과 판문점 회동 사진 게시…\"사이 좋아\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260817_0003751174",
+      "reason": "length:0",
+      "title": "[속보]트럼프 \"김정은과 좋은관계…한미연합훈련 규모 축소 지시\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260815040052109",
+      "reason": "score_observed",
+      "score": 0.687,
+      "title": "이스라엘 공격에 레바논서 11명 사망…\"6월 휴전 이후 최다\"(종합2보)",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/arabafrica/1273056.html",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "레바논 남부 이스라엘군 공습으로 7명 사망…“6월 휴전 이후 최다”",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12129082",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "이스라엘, 레바논 폭격…휴전 2개월만에 최다 사망",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608162049005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.741,
+      "title": "이스라엘, 또 레바논 공습…11명 사망에 “헤즈볼라 탓” 적반하장",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008707251",
+      "reason": "length:214",
+      "title": "이스라엘 공격에 레바논서 11명 사망…\"6월 휴전 이후 최다\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260816_0003750811",
+      "reason": "score_observed",
+      "score": 0.719,
+      "title": "이스라엘, 레바논 남부 공습…사망 11명·부상 19명(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260816038651079",
+      "reason": "score_observed",
+      "score": 0.744,
+      "title": "우크라, 모스크바 겨냥 \"역대 최대\" 공격…러, 탄도미사일 공격(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081623115227347",
+      "reason": "score_observed",
+      "score": 0.744,
+      "title": "우크라, 모스크바에 역대 최대 드론 공격…러시아도 탄도미사일 맞불",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008707786",
+      "reason": "score_observed",
+      "score": 0.638,
+      "title": "우크라, 모스크바 겨냥 대규모 드론 공격…러, 탄도미사일 공격",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260816_0003751117",
+      "reason": "score_observed",
+      "score": 0.683,
+      "title": "우크라, 모스크바주 역대 최대 드론 공격…와일드베리스 등 타격",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608174414i",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "김정관 \"美 요구, 투자속도 내자는 취지..막판 쟁점 어떻게든 해결\"[이상은의 워싱턴나우]",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260817002051071",
+      "reason": "score_observed",
+      "score": 0.882,
+      "title": "방미 김정관 \"대미투자 막판 다양한 쟁점…어떻게든 해결 목표\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1273183.html",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "3주 만에 재방미 김정관 “대미투자 막판 쟁점…어떻게든 해결”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008707846",
+      "reason": "score_observed",
+      "score": 0.768,
+      "title": "방미 김정관 \"대미투자 막판 다양한 쟁점…어떻게든 해결 목표\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081643887",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "이란군 \"미군 사살·생포하면 포상금 4200만원…여성은 두 배\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260816048300079",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "이란군 총사령관 \"미군 사살·생포하면 3만달러 포상금\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008707787",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "이란군 총사령관 \"미군 사살·생포하면 3만 달러 포상금\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260817_0003751161",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "이란, 미군 사살·생포에 3만 달러 현상금…여성은 2배",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260816017251104",
+      "reason": "score_observed",
+      "score": 0.712,
+      "title": "'인니 플로레스섬 강진' 사망자 51명으로 늘어…5천명 대피(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1273088.html",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "‘7.7 강진’ 인도네시아 사망 47명으로 늘어…최소 235번 여진",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608161051011/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.663,
+      "title": "‘불의 고리’ 인도네시아 플로레스섬 해안서 규모 7.7 강진…사망자 47명으로 늘어 [화보]",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008707450",
+      "reason": "score_observed",
+      "score": 0.621,
+      "title": "'인니 플로레스섬 강진' 사망자 47명으로 늘어…235차례 여진",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260817005151079",
+      "reason": "score_observed",
+      "score": 0.683,
+      "title": "쿠슈너, 장인 트럼프의 '가자 평화안' 살리려 하마스와 회동(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608161336001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.726,
+      "title": "하마스·쿠슈너 잇따라 이집트행···가자 평화안 돌파구 모색",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008707858",
+      "reason": "score_observed",
+      "score": 0.618,
+      "title": "쿠슈너, 장인 트럼프의 '가자 평화안' 살리려 하마스와 회동",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260816033400009",
+      "reason": "score_observed",
+      "score": 0.741,
+      "title": "中, 난징대학살 만행 일본군 편지 공개…\"패잔병 1만여명 살해\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008707629",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "중, 난징대학살 만행 일본군 편지 공개…\"패잔병 1만여 명 살해\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260816_0003751051",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "中, 난징대학살 일본군 만행 추가 공개…\"12일간 2000~3000명씩 살해\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081642011",
+      "reason": "score_observed",
+      "score": 0.767,
+      "title": "트럼프 \"호르무즈, 美 영토로 선언\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1273044.html",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "트럼프 “호르무즈, 조만간 미 영토로 선언”…이란 “허황된 망상”",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12129081",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "트럼프 \"호르무즈 곧 우리 영토\" … 이란 \"패배 안 받아들이고 망상\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081640617",
+      "reason": "score_observed",
+      "score": 0.726,
+      "title": "\"미국, 이란전 목표 낮춰\"…전쟁 장기화에 출구전략 바뀌나",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260816030200009",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "미, 이란전 목표 점점 후퇴…'비핵화'→'유가 안정' 축소",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008707601",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "미, 이란전 목표 점점 후퇴…'비핵화'→'유가 안정' 축소",
+      "category": "세계"
+    },
+    {
+      "source": "IT조선",
+      "link": "https://it.chosun.com/news/articleView.html?idxno=2023092168274",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "앤트로픽·오픈AI, 초대형 IPO 뜬다… 몸값 ‘3천조원’ 전망",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=693479",
+      "reason": "score_observed",
+      "score": 0.617,
+      "title": "앤트로픽 vs 오픈AI, 조단위 IPO 앞두고 다른 숙제",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081643347",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "선거 전 '수상한 유튜브' 대거 적발…구글, 채널 449개 폐쇄",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1995469",
+      "reason": "score_observed",
+      "score": 0.544,
+      "title": "구글, 韓 정치 유튜브 449개 폐쇄⋯\"여론조작 정황\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081641761",
+      "reason": "score_observed",
+      "score": 0.663,
+      "title": "앤트로픽, 창사 첫 분기 흑자…기업용 AI가 이끌었다",
+      "category": "IT/테크"
+    },
+    {
+      "source": "IT조선",
+      "link": "https://it.chosun.com/news/articleView.html?idxno=2023092168267",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "‘클로드’ 개발 앤트로픽, 사상 첫 흑자… 2분기 매출 16조원",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260815000030",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "LG전자, 브라질 파라나 가전 공장 가동 돌입…“글로벌 사우스 성장 가속화”",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260816081731",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "LG전자, 브라질 파라나 신공장 가동…글로벌 사우스 공략 속도",
+      "category": "IT/테크"
+    }
+  ]
+}

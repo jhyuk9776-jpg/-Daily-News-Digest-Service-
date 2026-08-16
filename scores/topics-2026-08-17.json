@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-17",
+  "topics": [
+    {
+      "word": "AI",
+      "score": 23.4,
+      "media_count": 13,
+      "article_count": 52
+    },
+    {
+      "word": "으로",
+      "score": 18.200000000000003,
+      "media_count": 10,
+      "article_count": 41
+    },
+    {
+      "word": "사망",
+      "score": 17.0,
+      "media_count": 9,
+      "article_count": 40
+    }
+  ]
+}
