@@ -1,0 +1,1003 @@
+{
+  "date": "2026-08-18",
+  "excluded": [
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081753061",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "정부, ISA 세제 손질…부동산은 국회 논의",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260816026051002",
+      "reason": "score_observed",
+      "score": 0.785,
+      "title": "정부 세제개편안 ISA '핀셋 손질'…부동산 골격은 국회논의 전망(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081713553028017",
+      "reason": "score_observed",
+      "score": 0.763,
+      "title": "정부 세제개편안 ISA '핀셋 손질'…부동산 골격은 국회논의 전망(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008708442",
+      "reason": "score_observed",
+      "score": 0.807,
+      "title": "정부 세제 개편안 ISA '핀셋 손질'…부동산 골격은 국회 논의 전망",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081714040906036",
+      "reason": "score_observed",
+      "score": 0.762,
+      "title": "정부 세제개편안 ISA '핀셋 손질'…부동산은 큰 틀 유지",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081754021",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "하나은행, 인천시와 지역성장 금융 지원",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260814182600002",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "하나은행, 인천시와 동반성장 금융 지원 업무협약",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12129484",
+      "reason": "length:131",
+      "title": "[포토] 하나銀, 인천시와 동반성장 협약",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081710595076700",
+      "reason": "score_observed",
+      "score": 0.618,
+      "title": "하나은행, 인천시와 동반성장 협약…\"민생부터 성장·투자까지\"",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608175249i",
+      "reason": "score_observed",
+      "score": 0.829,
+      "title": "금감원 노조 \"지방 이전은 초악수…금융소비자 피해 우려\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260817042400002",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "금감원 노조 \"감독기구 지방이전은 초악수, 즉각 중단해야\"",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12129355",
+      "reason": "score_observed",
+      "score": 0.867,
+      "title": "금감원 노조 “지방이전은 초악수…감독비용 증가로 소비자도 피해”",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081715361700568",
+      "reason": "score_observed",
+      "score": 0.778,
+      "title": "금감원 노조 \"지방이전은 초악수…감독역량 급격히 쇠퇴\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260814184500002",
+      "reason": "score_observed",
+      "score": 0.695,
+      "title": "PB 상품 판매 목표 미달하면 가맹 해지 압박…다비치안경 과징금",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1273214.html",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "‘가맹점에 판매목표 강제’ 다비치안경 과징금 15억원",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008708376",
+      "reason": "score_observed",
+      "score": 0.62,
+      "title": "PB 상품 판매 목표 미달하면 가맹 해지 압박…다비치안경 과징금",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081412531812182",
+      "reason": "score_observed",
+      "score": 0.652,
+      "title": "PB 강요하고 안 팔리면 \"가맹 해지\" 협박…가맹점주 상대 '갑질' 다비치안경 과징금 14억",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081753071",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "경총 \"성과급·신공장 투자는 노사합의 대상 아냐\"",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081712223635364",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "경총 \"성과급은 쟁의대상 제외해야\"",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081710195814497",
+      "reason": "score_observed",
+      "score": 0.774,
+      "title": "경총 \"영업이익 성과배분, 노동쟁의 대상 아냐\"",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081753041",
+      "reason": "score_observed",
+      "score": 0.9,
+      "title": "김정관 \"대미투자, 이달내 발표 목표\"",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12129479",
+      "reason": "score_observed",
+      "score": 0.84,
+      "title": "워싱턴 도착한 김정관 \"대미투자 디테일 협상\"",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260817_0003751158",
+      "reason": "score_observed",
+      "score": 0.778,
+      "title": "김정관 \"대미투자 1호, '8말9초' 목표로 협상…쟁점 해소차 방미\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260817029600002",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "카카오뱅크, 자사주 27만주 소각 추진…\"주주가치 제고\"",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/finance/1273224.html",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "카카오뱅크, 자사주 절반 소각 방침…60억원에 그쳐",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008708374",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "카카오뱅크, 자사주 27만 주 소각 추진…\"주주 가치 제고\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260815053000002",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "카드업계 막았던 홈플러스 대금 지급 재개…일부는 가압류 묶여",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/finance/1273211.html",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "카드사들, 재개장 홈플러스에 대금 지급 정상화",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008708249",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "카드업계 막았던 홈플러스 대금 지급 재개…일부는 가압류 묶여",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260817067600004",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "잠실 5성급 호텔 쓰레기장서 탄창·탄환 발견…경찰 수사",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1273302.html",
+      "reason": "length:282",
+      "title": "서울 잠실 5성급 호텔 쓰레기장서 9㎜ 총알·탄창 발견",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12129674",
+      "reason": "length:239",
+      "title": "잠실 5성급 호텔 쓰레기장서 탄환·탄창 발견…경찰 수사",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008708726",
+      "reason": "length:250",
+      "title": "잠실 5성급 호텔 쓰레기장서 탄창·탄환 발견",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260817_0003751576",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "송파구 5성급 호텔 쓰레기장서 탄창·탄환 발견…경찰 수사",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081754557",
+      "reason": "length:0",
+      "title": "[속보] 소방청, 경남 호우에 국가소방동원령 3차 발령…회복지원차 추가 투입",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260817060100530",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "소방당국, 거제에 3차 국가소방동원령…회복지원차 추가투입",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608171443001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.619,
+      "title": "가뭄에 이어 물폭탄으로 경남에 국가소방동원령···구조·복구 투입",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260817_0003751632",
+      "reason": "score_observed",
+      "score": 0.638,
+      "title": "거제 침수·산사태에 3차 '소방동원령'…회복지원차 투입(종합2보)",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081719231671005",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "소방당국, 거제에 3차 국가소방동원령…회복지원차 추가 투입",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081713491977102",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "거제·통영 물폭탄에 국가소방동원령 발령… 136명 구조, 1명 사망",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260817037700004",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "가습기살균제 피해자들 \"진상규명 활동·책임자 처벌 재개해야\"",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081715133413505",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "가습기살균제 피해자들 \"정부, 진상규명과 피해 보상 나서라\"",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608172049005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "광장에 모인 가습기살균제 피해자들 “호흡기뿐 아니라 가족 삶도 무너졌다”",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260817_0003751410",
+      "reason": "score_observed",
+      "score": 0.722,
+      "title": "광화문 빈소 놓고 이틀째 갈등…가습기살균제 피해자들 \"추모 활동 보장\"",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081753451",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "과학고 1858명 선발…216명 늘어 '역대 최대'",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12129445",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "내년 과학고 역대 최대 1858명 선발",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608172048015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "1858명, 내년 과학고 ‘역대 최대’ 선발",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260814_0003750248",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "내년 과학고 1858명 뽑는다…졸업생 진학 1위는 KAIST",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260817016851004",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "연휴 마지막날 귀경 일부 정체…오후 5시 기준 부산→서울 5시간(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12129214",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "연휴 마지막날, 오전 11시부터 귀경길 정체…·오후 4~5시 절정",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260817_0003751267",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "광복절 연휴 마지막 날 귀경 행렬…부산→서울 5시간40분",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081709074534070",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "광복절 연휴 마지막날 귀경길 정체…부산→서울 5시간20분",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12129444",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "\"이런 폭우는 처음\"… 하루 654㎜ 퍼부은 거제, 산사태로 1명 숨져",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608172112005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "‘하루 654㎜’…거제에 태풍 루사급 폭우",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008708845",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "하루 640mm '극한 호우'…산사태로 3명 사상",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260817026052530",
+      "reason": "score_observed",
+      "score": 0.628,
+      "title": "거제에 하루 640㎜…'2002년 태풍 루사' 이후 가장 많은 비(종합2보)",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008708864",
+      "reason": "score_observed",
+      "score": 0.619,
+      "title": "거제에 하루 640㎜…'2002년 태풍 루사' 이후 가장 많은 비",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081714501659187",
+      "reason": "score_observed",
+      "score": 0.632,
+      "title": "거제 하루 만에 577㎜… '2002년 태풍 루사' 이후 최다 강수",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081715243193890",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "무인점포 턴 10대, 경찰 쫓아오자 오토바이 버리고 도주까지…잡고보니 '무면허'",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008708754",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "무인점포 10곳 턴 10대…\"사이버도박 빚 갚으려\"",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081710391442479",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "무인점포 턴 10대 체포…\"사이버 도박 빚 갚으려고\"",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081756087",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "공동현관 비번 기억했다가…오피스텔 침입해 강도질한 40대",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12129245",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "“비번 그대로네”…예전 살던 오피스텔 침입, 20대 여성에 강도질한 40대",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260814_0003749635",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "과거 살던 오피스텔 침입해 여성 거주자에 강도짓, 40대 실형",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081755697",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "'강원랜드인 줄 알았는데…' 4만명·280억 오간 불법 도박사이트",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12129248",
+      "reason": "score_observed",
+      "score": 0.569,
+      "title": "“강원랜드는 온라인 도박 안 합니다”...몰랐던 4만명, 불법사이트에 당했다",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081713040628419",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "\"강원랜드인 줄 알았는데\"…'불법 도박 사이트에 780억 오갔다'",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081754467",
+      "reason": "score_observed",
+      "score": 0.84,
+      "title": "日 정부, 트럼프 한미 연합훈련 축소 지시에 '촉각'",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260818002951071",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "美국방부, 트럼프 '한미훈련 축소' 지시에 \"적극 이행 노력\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260817008200071",
+      "reason": "length:0",
+      "title": "[속보] 트럼프 \"한국과의 연합훈련 마음에 들지 않아\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260817008100071",
+      "reason": "length:0",
+      "title": "[속보] 트럼프 \"나와 김정은 매우 좋은 관계…한미합동훈련 축소 지시\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1273326.html",
+      "reason": "score_observed",
+      "score": 0.85,
+      "title": "[속보] 미 전쟁부 “트럼프 한미훈련 축소 지시 이행 작업 중”",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12129508",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "트럼프 \"한미 훈련 축소\"…김정은에 대화재개 손짓",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12129185",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "“김정은이 기분 상할 수도 있잖아”…트럼프, 한미 연합훈련 축소 지시",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12129183",
+      "reason": "score_observed",
+      "score": 0.829,
+      "title": "[속보] 트럼프 “나와 김정은 매우 좋은 관계…한미합동훈련 축소 지시”",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081717162878013",
+      "reason": "score_observed",
+      "score": 0.694,
+      "title": "트럼프, 한미훈련 축소 지시…김정은에 대화 손짓 '韓패싱'",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081706431912715",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "트럼프 \"나와 김정은 매우 좋은 관계…한미합동훈련 축소 지시했다\"",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608172110005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.705,
+      "title": "트럼프 “김정은과 좋은 관계” 한·미 훈련 축소 지시",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608171710001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.697,
+      "title": "돌연 ‘한·미 연합훈련 축소’ 카드···트럼프의 진짜 속내는",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008708757",
+      "reason": "clickbait",
+      "title": "한미연합훈련 전격 '축소' 지시…북한 호응 얻으려?",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008708582",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "\"김정은과 매우 좋은 관계\"…돌연 한미연합훈련 '축소' 지시",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260817_0003751509",
+      "reason": "score_observed",
+      "score": 0.659,
+      "title": "민주당 새 대표 김민석·거제 폭우·트럼프 한미훈련 축소·친일파 논란[간추린 주말 뉴스]",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260818_0003751725",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "美국방부 \"트럼프 을지훈련 축소 지시 이행 적극 노력중\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260817_0003751180",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "트럼프 \"한미연합연습 축소 지시…韓 이란 비핵화 동참 거부\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260817_0003751174",
+      "reason": "length:0",
+      "title": "[속보]트럼프 \"김정은과 좋은관계…한미연합훈련 규모 축소 지시\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260817054800082",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "백악관 비서실장 사칭에 속은 영국 신임 총리…문자 주고받아",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1273290.html",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "‘백악관 비서실장 사칭’에 속은 새 영국 총리, 문자까지 주고받았다",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12129500",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "英버넘 총리도 깜박 속았다…백악관 비서실장 사칭 인물과 문자 주고받아",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008708554",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "백악관 비서실장 사칭에 속은 영국 신임 총리…문자 주고받아",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260818_0003751713",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "英총리도 속았다…백악관 비서실장 사칭범과 문자 주고받아",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260818004451099",
+      "reason": "score_observed",
+      "score": 0.683,
+      "title": "'트럼프 사위' 쿠슈너, 네타냐후와 가자지구 회담…큰 진전 없어(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1273218.html",
+      "reason": "score_observed",
+      "score": 0.741,
+      "title": "트럼프 사위, 하마스 수장 만나 “가자지구 무장해제 타협 없다” 압박",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608172037005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "‘트럼프 사위’ 쿠슈너, 하마스 수장 만나 ‘완전 무장 해제’ 설득",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260818_0003751720",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "쿠슈너·네타냐후, 미군 감독하에 '가자지구 비무장화' 합의(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260817_0003751153",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "트럼프 사위 쿠슈너, 이집트 대통령과 가자 휴전 이행 논의",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260818003551071",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "트럼프 \"김정은, 북미대화 요청에 응답\"…시점·내용은 함구(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1273325.html",
+      "reason": "score_observed",
+      "score": 0.738,
+      "title": "[속보] 트럼프 “김정은, 대화 제안에 응답”…북미 정상외교 다시 움직이나",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008708808",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "트럼프 \"김정은, 북미 대화 요청에 응답했다\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260818_0003751721",
+      "reason": "score_observed",
+      "score": 0.688,
+      "title": "트럼프 \"김정은, 대화 요구에 반응\"…한국 향해선 불만 토로(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081755827",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "트럼프, 오만까지 때렸다…\"이란 협상 방해되면 폭격\" 경고",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260817073300071",
+      "reason": "score_observed",
+      "score": 0.812,
+      "title": "트럼프 \"이란, 백기 항복해야…오만이 방해하면 폭격할 것\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008708812",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "트럼프, '시한 만료' 이란 종전 양해각서에 \"연장 없다\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008708781",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "트럼프 \"이란, 백기 들어야…오만, 방해하면 폭격\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260818_0003751714",
+      "reason": "score_observed",
+      "score": 0.722,
+      "title": "트럼프 \"이란 백기 들고 항복해야…오만 방해하면 폭격할 것\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260817071600099",
+      "reason": "score_observed",
+      "score": 0.815,
+      "title": "후티 \"예멘 모카항 인근 사우디 군함 5척 탄도미사일로 공격\"",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608172216001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "후티 “예멘 모카항 인근 사우디 군함 5척에 미사일 공격”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008708744",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "후티 \"예멘 모카항 근처 사우디 군함 5척 탄도미사일로 공격\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260817_0003751701",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "후티반군 \"예멘 모카항 인근서 사우디 군함 5척 미사일로 공격\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260817004200071",
+      "reason": "score_observed",
+      "score": 0.708,
+      "title": "미·이란 '60일 협상시한' 종료…'압박 對 버티기' 경제전 전환",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12129496",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "미·이란 '60일 협상시한' 종료…트럼프 '경제적 압박' 더 강화",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608171508011/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.778,
+      "title": "미·이란 ‘60일 협상시한’ 종료···양보 없는 강경 대응에 장기전 이어질까",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260817_0003751165",
+      "reason": "score_observed",
+      "score": 0.675,
+      "title": "미·이란 '60일 핵협상' 사실상 무산…호르무즈 놓고 힘겨루기",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608174414i",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "김정관 \"美, 대미투자 속도 요구…막판 쟁점 해결 위해 방미\" [이상은의 워싱턴나우]",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260817002051071",
+      "reason": "score_observed",
+      "score": 0.882,
+      "title": "방미 김정관 \"대미투자 막판 다양한 쟁점…어떻게든 해결 목표\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008708277",
+      "reason": "length:248",
+      "title": "방미 김정관 \"대미 투자에 다양한 쟁점…어떻게든 해결\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260817_0003751158",
+      "reason": "score_observed",
+      "score": 0.778,
+      "title": "김정관 \"대미투자 1호, '8말9초' 목표로 협상…쟁점 해소차 방미\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260818004000072",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "美국채 매도세에 30년물 금리 5.31%…2007년 이후 최고치",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008708408",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "일 10년물 국채금리 한때 2.93%…30년 만에 최고치",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260818_0003751722",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "美 30년물 금리 5.31%…19년 만에 최고치",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081714141565377",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "미군 사살·생포에 3만 달러 포상금 건 이란군",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608170836001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.787,
+      "title": "이란군 “미군 사살·생포하면 3만달러”···여성은 포상금 2배",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260817_0003751161",
+      "reason": "score_observed",
+      "score": 0.775,
+      "title": "이란, 미군 사살·생포에 3만 달러 현상금…여성은 2배",
+      "category": "세계"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1995583",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "삼성, 국제올림피아드 수상자 15명에 장학금…이공계 인재 키운다",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260817105016",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "삼성전자·삼성바이오, 국제올림피아드 수상자 15명에 장학금 수여",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081753191",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "KT-서울대병원 협력…AX 플랫폼 구축 나서",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=693395",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "KT-서울대병원, 의료 AX 협력…플랫폼 구축 업무협약",
+      "category": "IT/테크"
+    }
+  ]
+}
