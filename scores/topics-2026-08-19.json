@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-19",
+  "topics": [
+    {
+      "word": "AI",
+      "score": 43.0,
+      "media_count": 14,
+      "article_count": 145
+    },
+    {
+      "word": "트럼프",
+      "score": 24.8,
+      "media_count": 8,
+      "article_count": 84
+    },
+    {
+      "word": "만에",
+      "score": 22.200000000000003,
+      "media_count": 12,
+      "article_count": 51
+    }
+  ]
+}

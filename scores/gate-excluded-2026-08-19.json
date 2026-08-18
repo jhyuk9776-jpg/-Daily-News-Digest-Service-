@@ -1,0 +1,1163 @@
+{
+  "date": "2026-08-19",
+  "excluded": [
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260818100500530",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "노동부, '잇단 끼임 사망' HD현대중공업 고강도 감독 착수",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008710536",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "노동부, '잇단 끼임 사망' HD현대중공업 고강도 감독 착수",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260818_0003752699",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "\"일주일 새 끼임사망 2건\"…노동부, 현대중공업 감독 착수",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081814544470111",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "끼임 사망 잇따라…노동부, HD현대중공업 고강도 감독 착수",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081879151",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "신한카드, 경남 집중호우 피해지역에  금융지원 실시",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260818105100002",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "[게시판] 롯데카드, 경남 집중호우 피해고객에게 특별 금융지원",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/finance/1273347.html",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "은행·카드사들, 경남 ‘극한 폭우’ 피해 고객에 긴급 금융지원",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081815141799180",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "롯데카드, 경남 집중호우 피해고객 결제대금 최대 6개월 청구유예",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081878161",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "우리금융, 동양·ABL 통합 착수…내년 자산 55조 생보사 출범",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260818037100002",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "우리금융, 동양·ABL 통합해 총자산 55조 대형 생보사로",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12130202",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "“동양·ABL생명 하나로”…우리금융, 55조 대형 생보사 만든다",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081811165921060",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "우리금융, '동양생명·ABL생명' 통합 작업 착수",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081879251",
+      "reason": "score_observed",
+      "score": 0.642,
+      "title": "유류할증료 뛴다…도쿄 왕복 3만원 올라",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260818053152003",
+      "reason": "score_observed",
+      "score": 0.641,
+      "title": "9월 발권 국제선 유류할증료 7단계 '껑충'…뉴욕 왕복 19만원↑(종합2보)",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1273379.html",
+      "reason": "score_observed",
+      "score": 0.621,
+      "title": "국제선 유류할증료 다시 오른다…9월부터 대한항공 미주 왕복 19만원 인상",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008709437",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "9월 발권 국제선 유류할증료 7단계 '껑충'…뉴욕 왕복 19만 원↑",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260818098300003",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "LH, 지방 준공후 미분양 아파트 추가매입 공고…연내 5천호",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081814214712095",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "LH, 지방 준공 후 미분양 아파트 추가 매입…연내 5000호 추진",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260818_0003752678",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "LH, 지방 '준공 후 미분양' 아파트 5000호 매입 공고",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081881957",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "국세청, '극한호우' 피해 지역 中企 세금 납부기간 연장",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260818076951002",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "국세청 '극한호우' 거제·통영 중기 세금 납부기간 두 달 연장(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260818_0003752789",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "국세청, 폭우 피해 거제·통영 중기 세정지원…법인세 납기 연장",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081878171",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "삼성 '모니모' 월 이용자 1000만명 돌파",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12130439",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "삼성금융 통합앱 모니모 … 4년만에 월 이용자 1천만",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081815240127592",
+      "reason": "score_observed",
+      "score": 0.624,
+      "title": "삼성금융 앱 '모니모' 월 활성사용자 수 1000만명 돌파",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081878851",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "사라진 청년 일자리 94%, AI에 뺏겼다",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260818079400002",
+      "reason": "score_observed",
+      "score": 0.683,
+      "title": "한은 \"청년 일자리 감소분 94%, AI 고노출 업종서 발생\"",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008709774",
+      "reason": "score_observed",
+      "score": 0.621,
+      "title": "한은 \"청년 일자리 감소분 94%, AI 고노출 업종서 발생\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260818154200003",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "7월 기준 서울 민간아파트 분양가 평당 6천209만원",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008710400",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "7월 기준 서울 민간아파트 분양가 평당 6천209만 원",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260818_0003752157",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "서울 민간아파트 분양가 또 올랐다…3.3㎡당 6209만원",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260818115051002",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "주담대 변동금리 넉 달째 상승…7월 코픽스 0.13%p↑(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/finance/1273412.html",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "주담대 변동금리 더 오른다…신규 코픽스 연 3.18%, 1년7개월 만에 최고",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081817242203995",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "\"'영끌족' 곡소리 커지겠네\" 주담대 변동금리 또 오른다…7월 코픽스 0.13%P 상승",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081881697",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "\"엄마 밥 먹고 싶어\"…'모텔 살인 김소영, 사형 구형에도 혐의 부인",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260818142951004",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "검찰, '강북 모텔 연쇄살인' 김소영에 사형 구형…\"반성 안해\"(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1273443.html",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "검찰, ‘모텔 연쇄 약물 살인’ 김소영에 사형 구형",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12130329",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "[속보] 검찰, ‘강북 모텔 연쇄살인’ 김소영에 사형 구형",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081816503784152",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "'강북 모텔 연쇄살인' 김소영…검찰, 사형 구형",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608182059035/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.78,
+      "title": "검찰, ‘모텔 약물 연쇄살인’ 김소영에 사형 구형",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008710658",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "'모텔 살인' 김소영에 사형 구형…끝까지 고의성 부인",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260818_0003753204",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "'모텔 약물 연쇄살인' 김소영 사형 구형…檢 \"전혀 반성 없어\"(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081817190586401",
+      "reason": "score_observed",
+      "score": 0.727,
+      "title": "\"거짓 진술 이어가며 반성 안해\" 검찰 '모텔 연쇄살인' 김소영에 사형 구형",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081882187",
+      "reason": "score_observed",
+      "score": 0.905,
+      "title": "조희대, '대통령 협의' 관례 깨고 대법관 2명 서면 제청",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1273452.html",
+      "reason": "score_observed",
+      "score": 0.825,
+      "title": "조희대, 노태악 후임 6개월 미루다…한번에 2명 제청한 까닭은",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1273423.html",
+      "reason": "score_observed",
+      "score": 0.92,
+      "title": "조희대 대법원장, 새 대법관에 손봉기·김성수 판사 임명 제청",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081817362822461",
+      "reason": "score_observed",
+      "score": 0.846,
+      "title": "조희대 대법원장, 새 대법관에 손봉기·김성수 임명 제청",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608182136005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.754,
+      "title": "조희대, 대법관 2명 임명 제청",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008710766",
+      "reason": "score_observed",
+      "score": 0.888,
+      "title": "조희대, 대법관 2명 제청…관례 깨고 청와대에 '서면 통보'",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008710494",
+      "reason": "length:176",
+      "title": "조희대, 새 대법관에 손봉기·김성수 임명 제청",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081816571399563",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "조희대 대법원장, 새 대법관에 손봉기·김성수 제청…노태악·이흥구 후임",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081882037",
+      "reason": "score_observed",
+      "score": 0.829,
+      "title": "웨딩홀 여성 탈의실 '불법촬영'…30대 男 사진기사 잡혔다",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260818147200004",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "웨딩홀 여성 탈의실에 카메라 불법설치…30대 사진기사 구속",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1273435.html",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "결혼식장 탈의실에 카메라 설치 불법촬영…30대 사진기사 구속",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008710760",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "웨딩홀 여성 탈의실에 카메라 불법 설치…30대 사진기사 구속",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260818_0003753250",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "웨딩홀 탈의실에 카메라 불법설치…30대 사진기사 구속",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081878901",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "'관저 이전 부당개입' 김건희·윤한홍 기소",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1273427.html",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "종합특검, ‘관저 이전 의혹’ 김건희·윤한홍 기소",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081816042509386",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "종합특검, '관저 이전 의혹' 김건희·윤한홍 불구속 기소",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608182059005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.624,
+      "title": "특검, ‘관저 이전’ 김건희 불구속 기소",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081816183570023",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "종합특검, ‘관저 이전 특혜’ 김건희·윤한홍 기소…21그램 선정 개입 혐의",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081877807",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "수요일 곳곳에 비·소나기…체감 33도 안팎 무더위",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260819008900064",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "충북 구름 많고 소나기…낮 최고 33도",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260818_0003753144",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "'다시 찜통 더위' 경기북부 체감 33도…밤엔 열대야 온다",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081820553062540",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "[날씨]내일 전국 곳곳에 빗방울…낮 최고기온 33도까지 올라",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260818160700004",
+      "reason": "score_observed",
+      "score": 0.893,
+      "title": "정성호 \"형소법 통과돼 역할 크지 않아…국회서 할일 더 많을 것\"",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/politics/12130532",
+      "reason": "score_observed",
+      "score": 0.96,
+      "title": "[속보] 정성호 “형소법 통과돼 역할 많지 않아, 국회서 할일 더 많을것”",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081818492335695",
+      "reason": "score_observed",
+      "score": 0.886,
+      "title": "사직서 낸 법무부 장관 \"형소법 통과돼 역할 크지 않아…국회서 할일 더 많을 것\"",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608181819001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.867,
+      "title": "[속보]정성호 법무장관 “형소법 통과돼 역할 별로 없어…국회에 할 일 많지 않겠나”",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260818159551057",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "'임협 난항' 현대차 노조, 10년 만에 전면파업한다(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/labor/1273489.html",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "현대차 노조, 21일 10년 만에 전면파업…임금 인상·정년 연장 이견 못 좁혀",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/business/12130567",
+      "reason": "score_observed",
+      "score": 0.62,
+      "title": "현대차 노조, 10년 만에 전면 파업…임금협상 끝내 결렬",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608182236005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.618,
+      "title": "현대차 노조, 10년 만에 ‘전면 파업’ 예고",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260818143700056",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "실종 신고 허위 종결 의혹 제주 경찰관 조사",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12130517",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "경찰 “실종자 연락 됐다” 허위 보고로 사건 종결 의혹…제주청 “수사 중”",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608181757001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "“실종자와 연락했다”더니 아직도 행방 묘연···‘허위보고 의혹’ 제주 경찰관 수사",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260818_0003753224",
+      "reason": "score_observed",
+      "score": 0.718,
+      "title": "'제주 여성 실종사건 허위보고 의혹' 경찰관 직무유기 입건(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608187486i",
+      "reason": "score_observed",
+      "score": 0.775,
+      "title": "'불법 하도급' 근로자 사망사고 낸 원청 대표…서울 첫 중대재해법 구속 기소",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260818135900004",
+      "reason": "score_observed",
+      "score": 0.84,
+      "title": "우즈벡 노동자 사망…하청에 책임넘긴 혐의로 원청 대표 구속 기소",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12130505",
+      "reason": "score_observed",
+      "score": 0.778,
+      "title": "불법하도급 주차설비 사고… '서울 첫 중처법 위반' 기소",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260818_0003753000",
+      "reason": "score_observed",
+      "score": 0.767,
+      "title": "檢, '노동차 추락사' 주차설비 원청 대표 중대재해법 구속기소…서울 처음",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1273383.html",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "이 대통령 “잘 버티시라” 했는데…정성호, 결국 사직서 제출",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12130737",
+      "reason": "score_observed",
+      "score": 0.812,
+      "title": "대통령 “잘 버티시라”에도 결국 사직서…근육맨장관 ‘건강 적신호’ 어디",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081814513316963",
+      "reason": "score_observed",
+      "score": 0.767,
+      "title": "정성호 법무부 장관 사직서 제출",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081869887",
+      "reason": "clickbait",
+      "title": "힐러리 \"트럼프, 지금 농담하냐?\"…한미 훈련 축소에 美 발칵",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260818159600073",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "트럼프 '한미 훈련 축소 지시'에 日방위상 \"한미일 협력은 필수\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1273326.html",
+      "reason": "score_observed",
+      "score": 0.85,
+      "title": "미 전쟁부 “트럼프 한미연합훈련 축소 지시 이행 작업 중”",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/politics/12130252",
+      "reason": "score_observed",
+      "score": 0.624,
+      "title": "[속보] 브런슨, 트럼프 ‘한미훈련 축소 지시’ 속 국방부 방문",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081717162878013",
+      "reason": "score_observed",
+      "score": 0.694,
+      "title": "트럼프, 한미훈련 축소 지시…김정은에 대화 손짓 '韓패싱'",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008710504",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "일, 트럼프 '한미 훈련 축소 지시'에 \"한미일 협력은 필수\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260818_0003753332",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "트럼프 한미훈련 축소 지시에 日방위상 \"한미일 협력 필수\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081879321",
+      "reason": "score_observed",
+      "score": 0.726,
+      "title": "대만 'AI 배당금' 추진…전국민에 44만원 준다",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260818087700009",
+      "reason": "score_observed",
+      "score": 0.853,
+      "title": "대만, 전국민에 44만원 보너스 쏜다…'AI특수에 역대급 GDP성장'",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/china/1273425.html",
+      "reason": "score_observed",
+      "score": 0.756,
+      "title": "대만, 전국민에 44만원 ‘AI 배당’ 추진…“결실 나눠야”",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12130447",
+      "reason": "score_observed",
+      "score": 0.754,
+      "title": "대만, 전국민에 'AI 보너스' 준다",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260818_0003752825",
+      "reason": "score_observed",
+      "score": 0.829,
+      "title": "대만, 내년 전국민에 44만원 지급…\"경제성장 특수 배당\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081857797",
+      "reason": "score_observed",
+      "score": 0.523,
+      "title": "\"매달 1260만원 받는다\"…전직 대통령 연금 폐지 나선 나라",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12129810",
+      "reason": "score_observed",
+      "score": 0.765,
+      "title": "“월 1260만원, 혈세로 호화생활하나”…전직 대통령 연금 폐지 나선 이 나라",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608180945001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.711,
+      "title": "전직 대통령 연금 월 1260만원 ‘호화 생활’···폐지 나선 코스타리카",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260818_0003752873",
+      "reason": "score_observed",
+      "score": 0.769,
+      "title": "코스타리카 대통령 \"월 1260만원 전직 대통령 연금 폐지…나도 예외 아니다\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260819000400071",
+      "reason": "score_observed",
+      "score": 0.74,
+      "title": "이란戰 꼬인 트럼프, 동맹에 화풀이…美언론 \"韓, 최근 희생양\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008710741",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "\"트럼프, 동맹에 화풀이…한국이 희생양 됐다\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260819_0003753364",
+      "reason": "score_observed",
+      "score": 0.677,
+      "title": "\"이란전 고전하는 트럼프, 동맹에 분노…한국도 희생양\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260819005500079",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "이스라엘 안보장관 \"팔레스타인 사형수 형 집행용 교수대 건설\"",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12130735",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "이스라엘 국가안보장관 “팔레스타인 사형수 형 집행용 교수대 건설”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008710776",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "이스라엘 안보장관 \"팔레스타인 사형수 형 집행용 교수대 건설\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081880967",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "얼마나 만졌길래…'국민가수 흉상' 복원 후 가슴만 '반짝'",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260818160800081",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "만지면 행운?…몽마르트 달리다 흉상 복원 보름만에 가슴 '반짝'",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008710773",
+      "reason": "score_observed",
+      "score": 0.621,
+      "title": "만지면 행운?…몽마르트 달리다 흉상 복원 보름만에 가슴 '반짝'",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260818162100083",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "'1시간에 커피 202잔 제조'…중국 로봇카페 기네스 인증",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12130622",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "“1시간에 202잔 뽑았다”…직원 한 명 없는 중국 로봇카페, 기네스 신기록",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008710772",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "'1시간에 커피 202잔 제조'…중국 로봇카페 기네스 인증",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260819003700079",
+      "reason": "score_observed",
+      "score": 0.743,
+      "title": "'트럼프의 평화안' 거부 이스라엘, 가자지구 또 공습…6명 사망",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008710733",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "'트럼프의 평화안' 거부 이스라엘, 가자지구 또 공습…6명 사망",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260819_0003753372",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "이스라엘, 美 가자 로드맵 거부 속 또 공습…6명 사망",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260818140552079",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "\"이스라엘, 시리아 군공항 공습\"…트럼프 특사 \"불필요한 긴장\" (종합2보)",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/arabafrica/1273490.html",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "이스라엘, 시리아 군공항 8차례 폭격…미국 “불필요한 긴장 고조” 비판",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008710728",
+      "reason": "score_observed",
+      "score": 0.675,
+      "title": "시리아 군  피격에…트럼프 특사 \"불필요한 긴장\" 이스라엘 비판",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260818173600109",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "젤렌스키, 새 국방장관 지명…'드론전 영웅' 해임 논란 일단락",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008710637",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "젤렌스키, 새 국방장관 지명…'드론전 영웅' 해임 논란 일단락",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260819_0003753368",
+      "reason": "score_observed",
+      "score": 0.514,
+      "title": "젤렌스키, 새 국방장관에 흐마라 지명…페도로우 후임",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081881087",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "'모두의 AI'에 6곳 도전장…SKT·카카오·KT 격돌",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1996020",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "'모두의 AI' SKT·KT·카카오 등 6곳 출사표⋯이달 말 사업자 선정(종합)",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=693847",
+      "reason": "score_observed",
+      "score": 0.754,
+      "title": "모두의 AI 공모에 SKT·KT·카카오 등 6곳 참여…이달 말 선정",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260818000352",
+      "reason": "score_observed",
+      "score": 0.635,
+      "title": "모두의 AI, SKT·KT·EST 도전…서비스가 당락 가른다",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260818192950",
+      "reason": "score_observed",
+      "score": 0.711,
+      "title": "모두의 AI, 6개 컨소시엄 출사표…SKT·카카오·KT 맞대결",
+      "category": "IT/테크"
+    },
+    {
+      "source": "IT조선",
+      "link": "https://it.chosun.com/news/articleView.html?idxno=2023092168360",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "알리바바 클라우드, 1년 만에 세 번째 데이터센터… 韓 AI 수요 대응",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=693787",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "알리바바 클라우드, 국내 세 번째 데이터센터 가동...기업 에이전틱 AI 시장 공략",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260818000325",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "알리바바 클라우드, 韓 제3 데이터센터 가동…AI 풀스택 사업 강화",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1995867",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "메가존클라우드, AWS와 AI 에이전트 솔루션 3종 공동 개발",
+      "category": "IT/테크"
+    },
+    {
+      "source": "IT조선",
+      "link": "https://it.chosun.com/news/articleView.html?idxno=2023092168373",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "메가존클라우드, AWS와 공동개발한 기업용 AI 에이전트 솔루션 3종 선보여",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1995681",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "링크드, 2분기 매출 40.7억원…AX 신사업 육성",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=693800",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "이노에이엑스, 상반기 매출 36% 성장...\"AX 사업 성과 가시화\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1996007",
+      "reason": "score_observed",
+      "score": 0.619,
+      "title": "노태문 12만주·곽노정 1.4만주…'삼전닉스' 임원 자사주 추적 사이트 등장",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260818000327",
+      "reason": "score_observed",
+      "score": 0.62,
+      "title": "노태문 12만4280주·곽노정 1만4312주…'삼전닉스 임원 자사주 보유' 추적 사이트 등장",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260818000443",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "모두의 AI, 6파전 경쟁 확정…통신·AI·플랫폼 기업 출사표",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260818174532",
+      "reason": "score_observed",
+      "score": 0.764,
+      "title": "'모두의 AI' 공모 마감…네이버·코난 불참 속 통신 3사·AI 기업 총출동",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081878201",
+      "reason": "score_observed",
+      "score": 0.743,
+      "title": "'국가대표 AI' 선발…SKT·LG·업스테이지 3파전 압축",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1995796",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "'국가대표 AI' 2차 관문 넘은 LG·SKT·업스테이지 \"실사용·기술 경쟁력 높일 것\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081878231",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "KT·농협·한국MS, 농산물 유통에 AI 심는다",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1995645",
+      "reason": "score_observed",
+      "score": 0.663,
+      "title": "KT, 농협경제지주·한국MS와 유통 AX 혁신…'에이전틱 AI' 도입",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081878251",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "포스코DX, 국산 NPU로 산업현장 비전 플랫폼 개발",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1995883",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "포스코DX, 국산 NPU 활용 산업현장 데이터 분석 플랫폼 개발",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608186588i",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "듀켐바이오, 상반기 영업익 25%↑…진단제 3종 성장 견인",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260818154704",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "와이즈넛, 상반기 매출 146억…AI 에이전트 성장 견인",
+      "category": "IT/테크"
+    }
+  ]
+}
