@@ -1,0 +1,1126 @@
+{
+  "date": "2026-08-20",
+  "excluded": [
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260819082051002",
+      "reason": "score_observed",
+      "score": 0.659,
+      "title": "KDI \"올해 성장률 전망치 3.2%, 0.7%p↑…체감경기 확산은 미진\"(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1273554.html",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "KDI, 올 한국 성장률 3.2%로 상향…고용 전망은 뒷걸음질",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081909440786296",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "KDI, 올 성장률 전망 3.2%로 상향",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008711985",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "[D리포트] KDI 올해 성장률 전망 3.2%로 대폭 상향…\"체감경기는 냉랭\"",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260819_0003754047",
+      "reason": "score_observed",
+      "score": 0.648,
+      "title": "KDI, 올 성장률 2.5→3.2% 상향…반도체 영향이 0.6%p",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081911441029092",
+      "reason": "score_observed",
+      "score": 0.626,
+      "title": "KDI, 올해 경제성장률 3.2% 전망…반도체 호황에 경상흑자 3600억달러 예상",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081904651",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "원·달러 환율, 한달 반만에 160원 급락",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260819088552002",
+      "reason": "score_observed",
+      "score": 0.719,
+      "title": "원/달러 환율 1,300원대로…11개월 만에 최저(종합2보)",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/finance/1273624.html",
+      "reason": "score_observed",
+      "score": 0.642,
+      "title": "환율 11개월 만에 1300원대로↓…코스피 5% 급락해 6471",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081916371126155",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "원·달러 환율 1,300원대로…11개월 만에 최저",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081914100013718",
+      "reason": "score_observed",
+      "score": 0.694,
+      "title": "美 금리 기대 약화·수출 네고에 원·달러 환율 10개월 반 만에 1,300원대",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081904751",
+      "reason": "clickbait",
+      "title": "하이닉스, 40조 자사주 소각…증시 흐름 바꿀 변곡점 되나",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1273657.html",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "하이닉스, ‘역대 최대’ 40조 자사주 매입·소각…배당 확대도 추진",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081916291795420",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "SK하이닉스, 40조 규모 자사주 취득·소각…국내 상장사 최대 규모",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008712597",
+      "reason": "clickbait",
+      "title": "6,500 무너졌지만…'하닉' 40조 자사주 소각 훈풍?",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260819081600002",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "[게시판] KB국민은행 \"KB국민인증서 누적 이용 고객 1천800만명\"",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12130923",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "국민은행, 인증서 고객 1800만명 넘었다…격화하는 인증서 경쟁 [금융가 톺아보기]",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081914291900012",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "일상 파고든 'KB국민인증서', 가입자 1천800만 넘어서",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081910374995656",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "KB국민은행, KB국민인증서 고객 1800만명 돌파",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081903121",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "농협은행, 변동형 주담대 두 달 만에 재개",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260819063100002",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "가계대출 빗장 풀리나…농협은행, 변동형 주담대 취급 재개",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/finance/1273595.html",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "농협은행, 변동형 주담대 창구 다시 연다…“실수요자 중심 지원”",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081915543426703",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "농협은행, 두 달 만에 주담대 신규 접수 재개",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260819128200002",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "우리銀, '상업은행 출신' 박경리 탄생 100주년 기념 지원 협약",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/finance/1273604.html",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "우리은행, 박경리 탄생 100주년 맞아 1억 기부…“상업은행 은행원 출신”",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12131364",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "은행일하며 작가 꿈 키운 박경리 … 우리은행, 탄생 100주년 기린다",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081916040959804",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "'토지' 박경리 탄생 100주년 기린다…우리은행서 '기획전' 열려",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260819063900002",
+      "reason": "score_observed",
+      "score": 0.612,
+      "title": "반도체 호조에 2분기 충북 광공업생산 28%↑…물가 전지역 상승",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1273552.html",
+      "reason": "score_observed",
+      "score": 0.62,
+      "title": "반도체 호황에…SK하이닉스 공장 있는 충북 광공업 생산 27.8%↑",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260819_0003753657",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "충북, 반도체 호황에 2분기 광공업 생산 27.8%↑",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081913394634975",
+      "reason": "score_observed",
+      "score": 0.613,
+      "title": "반도체 호조 덕에 2분기 광공업 생산 증가율 1위는 '충북'",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608190759i",
+      "reason": "score_observed",
+      "score": 0.663,
+      "title": "美재무부 국채 금리 방어에…뉴욕 증시 반등 시도",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12131755",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "채권발작 진정?...재무부 긴급처방에 금리 급락, 美증시 반등 [월가월부]",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081916151371804",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "美 국채 금리 쇼크에…코스피 6,500선도 붕괴",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081904721",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "입증된 방산강국…한화 K9, 美육군 뚫었다",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081915560821306",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "'K-방산'의 힘…한화 K9 자주포, 美 육군 뚫었다",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008711412",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "'K-방산' 한화, 미 육군 뚫었다…K9 자주포 계약금 보니",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260819077600002",
+      "reason": "score_observed",
+      "score": 0.664,
+      "title": "가계부채 2천조원 넘어 사상 최대…2분기 26조원 증가",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1273553.html",
+      "reason": "score_observed",
+      "score": 0.726,
+      "title": "가계부채 첫 2천조원 넘었다…2분기 26조원 증가",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008712389",
+      "reason": "length:201",
+      "title": "가계부채 2천조 넘어 사상 최대…2분기 26조 원 증가",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081901197",
+      "reason": "score_observed",
+      "score": 0.855,
+      "title": "종합특검, \"서강대교 넘지마라\" 조성현 대령 내란 혐의 기소",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260819168500004",
+      "reason": "score_observed",
+      "score": 0.705,
+      "title": "종합특검, 조태용·홍장원 등 前국정원 지휘부 내란 혐의 기소",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260819147200004",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "특검 \"서강대교 넘지말라\" 조성현 대령 불구속 기소…내란가담 혐의",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1273689.html",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "종합특검, 조태용·홍장원 등 전직 국정원 정무직 4명 내란 혐의로 기소",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12131475",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "비상계엄  조기  종식 '훈장' 조성현 前대령 내란혐의 기소",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608191844001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "[속보]종합특검, ‘내란 가담 혐의’ 홍장원 불구속 기소",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260819_0003754857",
+      "reason": "score_observed",
+      "score": 0.719,
+      "title": "종합특검, '서강대교 회군' 조성현 기소…'계엄 버스' 국수본 이첩(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081917063787415",
+      "reason": "score_observed",
+      "score": 0.711,
+      "title": "\"서강대교 넘지 말라\" 조성현 대령 재판행…종합특검 \"명령 거부로 볼 수 없어\"",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081906817",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "'쿠팡 입주' 인천 물류센터서 불…3000여명 대피",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260819164252065",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "쿠팡 입주 인천 물류센터서 불…3천여명 대피(종합2보)",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12131631",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "쿠팡 입주 쿠팡물류센터서 화재…3000여명 대피, 인명피해 無",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608191959001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "인천 쿠팡 입주 물류센터서 ‘불’···3000여명 대피·인명피해 없어",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260819_0003755011",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "'쿠팡 입주' 인천 원창동 물류센터 불…3000명 대피(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608199564i",
+      "reason": "score_observed",
+      "score": 0.718,
+      "title": "'계엄 직무유기' 조태용 항소심 징역 2년 6개월…1심보다 1년 늘어",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1273617.html",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "조태용, 2심서 징역 2년6개월…“윤석열 탄핵 저지할 정치 목적 있어”",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12131250",
+      "reason": "score_observed",
+      "score": 0.757,
+      "title": "조태용 전 국정원장, 2심서 징역 2년 6월...‘정치 관여’ 유죄",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081911355423880",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "[속보] 조태용 전 국정원장 '직무유기·정치관여' 2심 징역 2년 6개월",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081911471401456",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "'정치 관여' 조태용 전 국가정보원장 2심서 징역 2년6개월",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12131471",
+      "reason": "score_observed",
+      "score": 0.815,
+      "title": "생후 2일 딸 방치해 숨져 … 친모 10년만에 구속기소",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081920160412566",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "\"내연남 아기일까 봐\" 출생 2일 신생아 바다에 던진 친모…구속기소",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608191639001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.726,
+      "title": "내연남과 관계 들킬까봐···태어난지 이틀 된 아이 살해한 친모, 10년 만에 기소",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260820010700063",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "대전·세종·충남 '후텁지근'…낮 최고 32도, 최대 20㎜ 소나기",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260819_0003754775",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "대전·세종·충남, 낮 32도 폭염…'최대 50㎜' 소나기 온다",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081920054359808",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "[내일날씨]흐림…남부지방 최대 60㎜ 소나기",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260819161300061",
+      "reason": "score_observed",
+      "score": 0.691,
+      "title": "\"성욕 편지 제자와 수업하라니\"…분리 안 된 피해교사",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008712735",
+      "reason": "score_observed",
+      "score": 0.622,
+      "title": "\"성욕 편지 제자와 수업하라니\"…분리 겉돈 '1인 교과'",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081920113308387",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "\"헛구역질 올라와\" '성희롱 편지' 보낸 제자와 분리 안 된 피해 교사",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12131469",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "청소차 덮친 덤프트럭 … 환경미화원 3명 참변",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081914501152881",
+      "reason": "score_observed",
+      "score": 0.652,
+      "title": "영천서 환경미화원 3명, 새벽 청소 나섰다 참변",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008712382",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "\"굉음 1초 뒤 또 '쾅'\"…일터 가던 환경미화원 3명 참변",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081914043241665",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "경북대병원 등 국립대병원, 21년 만에 복지부로…지역 필수의료 '컨트롤타워' 맡는다",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608191531001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.677,
+      "title": "국립대병원 21년 만에 복지부로···인력·예산 늘려 ‘지역 필수의료 거점’으로",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081909262523151",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "국립대병원, 복지부 품으로…'지역의료 책임지는 핵심병원' 육성",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1273570.html",
+      "reason": "score_observed",
+      "score": 0.743,
+      "title": "“용변 실수한 승객 씻겨준 버스기사 찾습니다” 국토장관 나서",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260819_0003754988",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "용변실수 승객 씻겨 준 버스기사…김윤덕 \"표창하고 싶어\"",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081921331469657",
+      "reason": "score_observed",
+      "score": 0.705,
+      "title": "'용변 실수' 손님 도운 버스기사…국토부 장관 \"마음 뭉클, 표창하고 싶다\"",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12131617",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "‘3개월 실종 30대女’ 수색 골든타임 놓쳐…CCTV 보관 기간 끝나 수색 차질",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260819_0003754800",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "'3개월 실종 여성' 수색 골든타임 놓쳐…공공CCTV 저장기간 만료",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026081917584785194",
+      "reason": "score_observed",
+      "score": 0.676,
+      "title": "'제주 실종 30대女' 경찰 허위보고에 수색 골든타임 놓쳤다",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081905427",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "중국축구협회, '韓 성접대 의혹' 자국 관계자들 조사 착수",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260819152300083",
+      "reason": "score_observed",
+      "score": 0.886,
+      "title": "中축구협회, '韓 성접대 의혹' 자국 관계자들 조사 착수",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1273652.html",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "일본 이어 중국도…‘축협 성접대 연루’ 심판국장 조사 착수",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12131612",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "‘대한축협 성 접대 의혹’ 불거지자…중국축구협회, 자체 조사 착수",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081917392833066",
+      "reason": "score_observed",
+      "score": 0.85,
+      "title": "대한축구협회의 성 접대 사건…中축구협회, 자국 관계자들 조사 착수",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260819_0003754953",
+      "reason": "score_observed",
+      "score": 0.822,
+      "title": "中축구협회 \"'韓협회 접대 논란' 관련 직원 조사 진행\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081985247",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "[속보] \"트럼프, 北 김정은과 연내 만남 추진…11월 APEC 가능성\" [WSJ]",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260820001200071",
+      "reason": "length:164",
+      "title": "[속보] 트럼프, '김정은과 연내 회담 예상하나' 질문에 \"그럴 것\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1273715.html",
+      "reason": "score_observed",
+      "score": 0.708,
+      "title": "​[속보] 트럼프 “김정은, 연내 만날 것”…‘비핵화 목표냐’엔 “말하고 싶지 않다”",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1273503.html",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "“트럼프, 이르면 올가을 김정은과 정상회담 추진” WSJ 보도",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081908195476830",
+      "reason": "score_observed",
+      "score": 0.695,
+      "title": "\"트럼프, 北 김정은과 연내 만남 추진…11월 APEC 가능성\" [영상]",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008712592",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "\"트럼프, 올가을 김정은과 정상회담 추진 중\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260820_0003755059",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "트럼프 \"北김정은과 연내 만날 것…그는 57개 핵무기 보유\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260820007700072",
+      "reason": "length:0",
+      "title": "[속보] 美 국가부채, 사상 첫 40조달러 돌파",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1273716.html",
+      "reason": "score_observed",
+      "score": 0.663,
+      "title": "미 국가부채 사상 첫 40조달러 돌파…재무부, 장기국채 바이백 확대",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12131790",
+      "reason": "length:0",
+      "title": "[속보] 미국 국가부채, 사상 첫 40조달러 돌파",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260820_0003755073",
+      "reason": "length:0",
+      "title": "[속보]美 국가부채, 사상 첫 40조달러 돌파…10년새 두배 증가",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260820004800079",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "네타냐후 \"시리아 공군기지 공습, 튀르키예가 경고 무시한 결과\"",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608191519001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.763,
+      "title": "이스라엘, 시리아 공군기지 공습···튀르키예와의 밀착 견제하나",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008712684",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "네타냐후 \"시리아 공군기지 공습, 튀르키예가 경고 무시한 결과\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260820_0003755066",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "네타냐후, 시리아 공습 후 \"튀르키예 군사력 증강 용납못해\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260819178100071",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "美 여야 상원의원, 트럼프에 \"한미훈련 축소 철회\" 서한",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/politics/12131693",
+      "reason": "score_observed",
+      "score": 0.829,
+      "title": "“北에 잘못된 신호 보낸다”…美 여야, 트럼프에 초당적 훈련 축소 철회 촉구",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12131526",
+      "reason": "score_observed",
+      "score": 0.811,
+      "title": "트럼프 러브콜에 北 첫 반응 …\"한미훈련 축소해도 본질 그대로\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008712577",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "미국 여야 상원의원, 트럼프에 \"한미 훈련 축소 철회\" 서한",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260819_0003755045",
+      "reason": "score_observed",
+      "score": 0.79,
+      "title": "美초당파 상원의원, 트럼프에 \"한미훈련 축소 철회 요구\" 서한",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081983957",
+      "reason": "score_observed",
+      "score": 0.695,
+      "title": "트럼프의 '애착 담요' 참모 누구길래…백악관 총력 방어 나섰다",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12130938",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "“트럼프 애착 참모 누구길래?”…백악관, CNN기자와 가족까지 언급하며 설전",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081913534807449",
+      "reason": "score_observed",
+      "score": 0.643,
+      "title": "트럼프의 '애착담요'로 불리는 35세 참모…대체 누구길래",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260819_0003753813",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "트럼프 곁 '인간 프린터' 하프 누구길래…美민주-백악관, '비선실세' 공방",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260819077451083",
+      "reason": "score_observed",
+      "score": 0.648,
+      "title": "中유니트리, 상장 첫날 460% 급등…창업자 90허우 최대부호 등극(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/china/1273642.html",
+      "reason": "score_observed",
+      "score": 0.648,
+      "title": "중 로봇기업 유니트리, 상장 첫날 4배 올라…“수십 곳 기업공개 예정”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008712355",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "중국 유니트리, 상장 첫날 460% 급등…창업자 '90허우' 최대 부호 등극",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260819_0003754807",
+      "reason": "score_observed",
+      "score": 0.615,
+      "title": "[올댓차이나] 中 로봇 스타트업 유니트리 상장 첫날 460% 급등…“시총 70.9조원 달해”",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260819084200009",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "트럼프 \"캐나다 부과 예정이던 50% 관세 사흘간 중단\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1273551.html",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "트럼프, 캐나다 50% 관세 사흘 유예…“양쪽 합의 이뤘다”",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12131495",
+      "reason": "score_observed",
+      "score": 0.754,
+      "title": "트럼프 또 TACO … \"캐나다 관세 유예\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260819_0003754688",
+      "reason": "score_observed",
+      "score": 0.829,
+      "title": "美, 캐나다 50% 관세 사흘간 유예…加총리 \"중요 과제 남아\" (종합)",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260820007000072",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "뉴욕증시, 美 국채금리 하락에 소폭 상승…다우 0.2%↑",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12131683",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "[속보] 뉴욕증시, 美재무부 국채 매입 확대 소식에 상승 출발",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260819_0003754747",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "亞증시, 국채금리 쇼크에 동반 하락…키옥시아 12%↓(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260820001000071",
+      "reason": "score_observed",
+      "score": 0.743,
+      "title": "빅터차 \"트럼프, 핵불허 이란과 달리 핵보유 北엔 타협적 접근\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008712679",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "빅터차 \"트럼프, 핵 불허 이란과 달리 핵 보유 북한엔 타협적 접근\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260820_0003755060",
+      "reason": "score_observed",
+      "score": 0.862,
+      "title": "빅터 차 \"트럼프 이란엔 핵 보유 불허…北엔 타협적 접근법 취해\"",
+      "category": "세계"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1996207",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "KT \"모두의 AI 공모 참여…서비스·모델·인프라 총결집\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=693960",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "KT, 국내 AI 기업들과 '모두의 AI' 도전…서비스·인프라 역량 총동원",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1996447",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "[속보] \"삼성전자, 수요 급증에 파운드리 가격 최대 15% 인상\" 로이터",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260819000386",
+      "reason": "score_observed",
+      "score": 0.785,
+      "title": "로이터 “삼성전자, 수요 급증에 파운드리 가격 최대 15% 인상”",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1996221",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "스마일게이트, '이클립스' 캐릭터 사전 생성 시작",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260819180456",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "스마일게이트, 신작 MMORPG '이클립스' 캐릭터 사전 생성 개시",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081904951",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "AI·반도체에 8.9조 '뭉칫돈'…상반기 벤처투자 역대 최대",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260819000265",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "“벤처 호황기마저 제쳤다”…상반기 신규 벤처투자 8.9조 '역대 최대'",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026081904991",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "KT·리벨리온 '소버린 AI' 장비 출시",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1996115",
+      "reason": "score_observed",
+      "score": 0.617,
+      "title": "KT, 국산 NPU·LLM 결합 '소버린 AI 어플라이언스' 출시",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1996214",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "블리자드, 부산서 2026 오버워치 월드컵 그룹 스테이지 개최",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260819171044",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "블리자드 'OWWC 2026' 그룹 스테이지, 20일 부산서 개막…결선 진출권 8장 격돌",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1996341",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "한국IPTV방송협회, 제2차 정책위원회 개최⋯경쟁력 강화 현안 논의",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260819165708",
+      "reason": "score_observed",
+      "score": 0.775,
+      "title": "한국피지컬AI협회, 25일 국회서 피지컬AI 최강 전략 논의",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1996394",
+      "reason": "score_observed",
+      "score": 0.665,
+      "title": "SK하이닉스는 50%·美 메모리는 100%?…주주환원 숫자의 비밀",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260819000356",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "SK하이닉스 40조원 자사주 매입·소각…“주주환원 기준 상향”",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1996104",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "'넥써쓰 AI 랩스' 포털 오픈…AI 솔루션 11종 한자리에",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260819163951",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "넥써쓰, AI 솔루션 11종 집약한 'AI 랩스' 포털 공개",
+      "category": "IT/테크"
+    }
+  ]
+}
