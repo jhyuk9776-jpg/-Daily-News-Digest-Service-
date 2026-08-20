@@ -1,0 +1,1103 @@
+{
+  "date": "2026-08-21",
+  "excluded": [
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082029781",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "SK하이닉스, 직원 성과급…현금 40%·자사주 60% 준다",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/finance/1273864.html",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "나신평, SK하이닉스 ‘40조 자사주 취득’에 “신용도 영향 제한적”",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082014202061804",
+      "reason": "score_observed",
+      "score": 0.617,
+      "title": "SK하이닉스 성과급 7억?…PS 40% 현금·60% 자사주",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026081916291795420",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "SK하이닉스, 40조 규모 자사주 취득·소각…국내 상장사 최대 규모",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008713759",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "SK하이닉스 임단협 잠정합의…성과급 어떻게 되나 보니",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082033731",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "한국은행 부총재에 '국제통' 권민수 임명",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260820178900002",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "한은 부총재에 '국제통' 권민수 부총재보 임명",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/finance/1273925.html",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "한은 신임 부총재에 ‘국제통’ 권민수 부총재보 임명",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082020304593757",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "한은 신임 부총재에 권민수 부총재보 임명",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082030781",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "100세 이상 어르신, 10년새 3배 증가",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260820073600002",
+      "reason": "score_observed",
+      "score": 0.659,
+      "title": "100세 이상 8천604명, 10년 새 2.7배로…남성은 3.3배 '쑥'",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12132533",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "100세 이상 어르신 8천명 … 80% \"평생 술 마신적없어\"",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260820_0003755467",
+      "reason": "score_observed",
+      "score": 0.665,
+      "title": "100세 이상 고령자 8600명 돌파…10년 새 2.7배",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082031431",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "韓, 북극항로 개척 첫발 뗀다…컨테이너선 22일 부산 출항",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260820145900051",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "북극항로 시대 연다…국내 컨테이너선 22일 첫 시범운항",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12132503",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "북극항로 개척 '아크로호' 내일 첫 출항",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082017254109616",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "북극항로 뚫는다…22일 부산신항서 '팬스타 아크로호' 출항",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260820151900002",
+      "reason": "score_observed",
+      "score": 0.655,
+      "title": "유가 떨어지자 7월 생산자 물가 11개월 만에 하락",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1273964.html",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "생산자물가 11개월 만에 하락 반전",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082017074279068",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "생산자물가, 11개월 만에 하락 전환…\"이달 다시 오른다\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260820170300002",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "IBK기업은행서 94억원 규모 '사기' 금융사고",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008714783",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "IBK기업은행서 94억 원 규모 '사기' 금융사고",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082018420283993",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "기업은행, 94억원 규모 금융사고…산업은행 사기 사건과 동일",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082010491053637",
+      "reason": "score_observed",
+      "score": 0.711,
+      "title": "2분기 대외채무 8,128억달러…순대외채권 3분기 만에 반등",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260820_0003755408",
+      "reason": "score_observed",
+      "score": 0.694,
+      "title": "2분기 대외채무 8128억 달러로 증가…건전성 지표 소폭 악화",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082009314669165",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "2분기 대외채무 8100억달러…단기외채비율 46% 넘어",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082030021",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "은행권 '디에이치방배' 잔금대출 한도 확대",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260820176000002",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "은행권, 내달 입주 앞둔 '디에이치 방배' 잔금대출 한도 확대",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082020325236655",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "시중은행, '디에이치 방배' 잔금대출 한도 일제히 확대",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260820174400002",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "상조회사 지배주주 신용공여, 자본금 50% 이내…할부거래법 통과",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260820_0003756512",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "상조회사 지배주주 신용공여 50%로 제한…개정안 국회 통과",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082016435385988",
+      "reason": "score_observed",
+      "score": 0.691,
+      "title": "할부거래법 개정안 국회 통과…상조회사 지배주주 신용공여 한도, 자본금 50%로 제한",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082030011",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "신한은행, 중저신용자 대상 '슈퍼SOL중금리대출' 출시",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12132021",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "‘전업주부도 신용대출 받을 수 있다고?’…신한은행, ‘슈퍼SOL중금리대출’ 출시",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082008112443709",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "신한은행, '최저 연 5.5%' 슈퍼SOL중금리대출 출시",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082032471",
+      "reason": "score_observed",
+      "score": 0.85,
+      "title": "특검, 심우정 前 검찰총장 불구속 기소",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260820167800004",
+      "reason": "length:296",
+      "title": "[속보] 종합특검, '내란 가담 의혹' 심우정 前검찰총장 기소",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12132773",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "'내란가담 혐의' 심우정 … 종합특검, 불구속기소",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12132599",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "[속보] 종합특검, ‘내란 가담 의혹’ 심우정 전 검찰총장 기소",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608202106035/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.741,
+      "title": "‘계엄사 파견 검사 명단 검토’ 심우정 전 검찰총장 재판행",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260820_0003756711",
+      "reason": "score_observed",
+      "score": 0.757,
+      "title": "'내란 가담 의혹' 심우정 前검찰총장 재판행…沈 \"위법·부당 기소\"(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260820_0003756613",
+      "reason": "length:0",
+      "title": "[속보]종합특검, '윤석열 즉시항고 포기·석방지휘' 심우정 불구속 기소",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082020084503309",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "특검, 심우정·전무곤 불구속기소…“계엄 내란 중요임무 종사”",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082018090830429",
+      "reason": "score_observed",
+      "score": 0.867,
+      "title": "[속보] 종합특검, '내란 가담 의혹' 심우정 前검찰총장 기소",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608203084i",
+      "reason": "score_observed",
+      "score": 0.767,
+      "title": "경찰 '사건문의 금지제도' 내실화…물어보기만 해도 징계",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260820162600004",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "경찰 '사건문의 금지' 강화…미선임 변호사·사무장도 대상",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1273873.html",
+      "reason": "score_observed",
+      "score": 0.785,
+      "title": "‘내부 정보 유출’ 막는다…경찰, 사건 문의 금지하고 위반 시 징계",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12132423",
+      "reason": "length:0",
+      "title": "[속보] 경찰, 사건문의만 해도 징계…문의받은 수사관 신고 의무화",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608201837001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "경찰, 직원 간 ‘사건문의 금지제도’ 강화···행동강령에 명문화·신고 의무 신설",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260820_0003756580",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "경찰, 사건문의 받은 수사관 신고 의무화…미신고 땐 징계",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260820167400004",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "검찰, 송민호 '부실복무' 도운 공단 관리자에 징역 1년 구형",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12132645",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "무단결근·부실근무 ‘방조 혐의’…송민호 관리자에 징역 1년 구형",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082023062822052",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "\"102일 무단결근\" 송민호 도운 관리자…검찰, 징역 1년 구형",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260820_0003756677",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "검찰, '송민호 부실복무' 관리책임자 징역 1년 구형",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082019362150593",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "검찰, 송민호 무단결근 묵인한 관리책임자에 징역 1년 구형",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082033107",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "아들 학폭 가해자로 지목되자…교직원 21명에 욕설·행패 부린 학부모",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260820160400064",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "교직원 21명에게 274회 욕설·행패 부린 학부모 법정구속",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12132475",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "“274회 걸쳐 21명 피해”…교직원에 욕설·행패 부린 학부모, 결국",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008714785",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "교직원 21명에게 274회 욕설·행패 부린 학부모 법정구속",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082019543479457",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "\"우리 애가 학폭 가해자?\"…교직원 21명에게 274회 욕설한 학부모 법정구속",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082033911",
+      "reason": "score_observed",
+      "score": 0.756,
+      "title": "중수청 특례임용, 정원의 83%만 지원…검사 규모는 비공개",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260820185100530",
+      "reason": "length:266",
+      "title": "[속보] 중수청 특례임용 지원, 정원의 83%…\"세부 지원내역 비공개\"",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12132742",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "[속보] 중수청 특례임용에 수사관·검사 2375명 지원",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082016034211702",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "중수청 특례임용 마감…검사·고연차 수사관 지원 저조 우려",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260820_0003756765",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "중수청 2874명 모집에 82.6% 지원…\"검사 규모 공개 불가\"(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082033097",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "'4명 사망' 경산 아파트 방화범 숨져…수사 종결",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260820177800053",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "경산 아파트 방화 피의자도 숨져…사망자 5명으로 늘어",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12132664",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "경산 아파트 방화 피의자 치료 중 숨져…사망자 5명으로 늘어",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608202014001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "경산 아파트 방화 피의자, 사건 발생 28일 만에 숨져···사망자 5명으로 늘어",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260820_0003756665",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "경산 아파트 방화범 숨져, 총 5명 사망…공소권없음 종결",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260820155800060",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "왕숙천서 행적 끊긴 70대 여성 추정 시신 한 달 만에 발견",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12132677",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "지난달 실종된 70대 여성…구리 한강변서 추정 시신 발견",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008714782",
+      "reason": "length:298",
+      "title": "왕숙천서 행적 끊긴 70대 여성 추정 시신 한 달 만에 발견",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260820_0003756703",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "구리 한강변에서 지난달 실종된 70대 추정 시신 발견",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260820148300004",
+      "reason": "score_observed",
+      "score": 0.85,
+      "title": "'내란 가담' 김봉식 前서울경찰청장, 보석으로 석방",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082016571767053",
+      "reason": "score_observed",
+      "score": 0.822,
+      "title": "'내란 가담' 김봉식 전 서울경찰청장, 보석 석방",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608201535001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "[단독]‘내란 중요임무종사’ 김봉식 전 서울청장, 항소심에서 다시 석방",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260820_0003756380",
+      "reason": "score_observed",
+      "score": 0.775,
+      "title": "'내란 중요임무 혐의' 김봉식 前서울경찰청장, 항소심서 석방",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260820184652530",
+      "reason": "score_observed",
+      "score": 0.768,
+      "title": "중수청 특례임용에 검사 100여명 지원한듯…내달 임용대상자 선정(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608201628001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.757,
+      "title": "‘중수청 특례 임용’에 검사·수사관 2375명 지원···총 정원의 82.6% 수준",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008714583",
+      "reason": "score_observed",
+      "score": 0.778,
+      "title": "중수청 특례 임용에 검사·수사관 등 2천375명 지원…정원의 82.6%",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082022321621019",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "중수청 임용에 검사·수사관 등 2375명 지원…정원의 82.6%",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1273930.html",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "“썩변”“역대급 냄새” 현직 경찰관이 변사 사건 희화화…경찰, 수사 착수",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12132757",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "경찰, 블로그에 변사 사건 희화화 글·비공개 자료 올린 경찰관 수사",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008714401",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "[단독] \"썩변, 헛구역질\"…'황당 블로그' 경찰관 수사",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260820_0003756769",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "경찰, '변사사건 희화화·비공개 자료 게시' 현직 경찰관 수사",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082008717",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "트럼프 \"북한, 57개 핵무기 갖고 있어\"…핵 보유 숫자 첫 언급",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260820111900704",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "[영상] 트럼프 \"북한, 57개 핵무기 보유…올해 김정은 만날 것\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1273715.html",
+      "reason": "score_observed",
+      "score": 0.708,
+      "title": "트럼프 “김정은, 57개 강력한 핵무기 갖고 있다…연내 만날 것”",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12132585",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "트럼프 \"北핵무기 57개 있다\" … 핵 보유 기정사실 인정 '파장'",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082016115449050",
+      "reason": "score_observed",
+      "score": 0.775,
+      "title": "\"북한 핵무기 수 80∼120개\" 안규백도 핵보유 인정 발언",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260820_0003755583",
+      "reason": "score_observed",
+      "score": 0.704,
+      "title": "트럼프 \"北 핵무기 57기\" 논란…'사실상 핵보유국 인정' 우려 심화",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082030591",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "대만 TSMC, 1.6나노칩 개발 성공",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260820095900009",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "\"대만 TSMC, 1.6나노칩 개발 성공…올해 4분기 양산\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/asiapacific/1273852.html",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "TSMC, 1.6나노 칩 4분기 양산 전망…삼성 “1.4나노  칩 내년 양산”",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/business/12132267",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "“대만 TSMC, 1.6나노칩 개발 성공…올해 4분기부터 양산”",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260821007000087",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "페루 남부서 6.7 강진…\"인명 피해·쓰나미 위험 없어\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008714758",
+      "reason": "length:170",
+      "title": "페루 남부서 6.7 강진…\"인명피해 보고 없어\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260821_0003756801",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "페루 남부 안데스서 규모 6.7 강진…피해 보고 아직 없어",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260821001000079",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "이란 외무부 \"美 신규 제재는 경제 테러이자 반인륜 범죄\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008714759",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "이란 제재 '동맹국 동참' 압박…\"경제 테러리즘\" 반발",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260821_0003756792",
+      "reason": "score_observed",
+      "score": 0.833,
+      "title": "이란 \"美 추가 제재는 경제테러·반인도 범죄\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260821004200071",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "美, 친이란 단체 헤즈볼라 자금 이동책 10명 제재",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008714735",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "미, 친이란 단체 헤즈볼라 자금 이동책 10명 제재",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260821_0003756795",
+      "reason": "score_observed",
+      "score": 0.743,
+      "title": "美, 헤즈볼라 자금운반책 10명 제재…민항기로 수억달러 이동",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260821003400099",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "나이지리아 선박 전복으로 최소 51명 사망…대부분 어린이",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008714733",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "나이지리아 선박 전복으로 최소 51명 사망…\"대부분 어린이\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260821_0003756797",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "나이지리아 보트 전복 50명 사망…사망자 대부분 어린이",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260820_0003756701",
+      "reason": "score_observed",
+      "score": 0.694,
+      "title": "러 키이우 미사일 공격으로 최소 16명 사망 40명 부상(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260821001200108",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "러, 한미훈련 축소에 \"분쟁 가능성 줄이는 조치 환영\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008714688",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "러, 한미훈련 축소에 \"분쟁 가능성 줄이는 조치 환영\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260821_0003756793",
+      "reason": "score_observed",
+      "score": 0.833,
+      "title": "러, 한미훈련 축소에 환영…\"역내 긴장 완화에 도움\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260821000500079",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "이란 혁명수비대 \"새 전쟁 발발시 더 파괴적 무기 사용할 것\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008714667",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "이란 혁명수비대 \"새 전쟁 발발 시 더 파괴적 무기 사용\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260820_0003756763",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "이란혁명수비대 \"전쟁 재개시 더 파괴적인 무기 사용\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260820188500087",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "콜롬비아 불법 금광에서 산사태로 13명 사망…광산사고 잇따라",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/arabafrica/1273777.html",
+      "reason": "score_observed",
+      "score": 0.726,
+      "title": "중앙아프리카공화국서 불법 금광 붕괴로 최소 100명 사망",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008714666",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "콜롬비아 불법 금광에서 산사태로 13명 사망",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260820187300079",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "후티 반군 \"사우디 나즈란 공항·아람코 시설 등 공격\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008714621",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "후티 반군 \"사우디 나즈란 공항·아람코 시설 등 공격\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260820_0003756783",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "예멘 후티 \"사우디 나즈란공항·아람코 시설 공격\"",
+      "category": "세계"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1996771",
+      "reason": "score_observed",
+      "score": 0.626,
+      "title": "독파모 2차 세부 평가 공개…SKT·LG 각각 2개 분야 1위",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=694379",
+      "reason": "score_observed",
+      "score": 0.632,
+      "title": "과기정통부, 독파모 2차 세부평가 공개…모티프 벤치·LG 전문가평가 1위",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260820000331",
+      "reason": "score_observed",
+      "score": 0.635,
+      "title": "독파모 2차 평가, SK텔레콤·LG AI연구원 2개 항목씩 1위",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082029641",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "SKT, 23년 만에 3G 가입 중단…서비스는 당분간 지속 예정",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1996634",
+      "reason": "score_observed",
+      "score": 0.637,
+      "title": "SKT, 23년 역사 '3G 서비스' 종료 수순⋯KT도 \"다각도 검토\" [종합]",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260820000341",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "SKT, 23년 만에 3G 퇴장…내년 말 종료 목표",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=694434",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "더존비즈온·테크핀레이팅스·KAIST, 'AI 거래관계망 신용평가 모형' CIKM 논문 채택",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260820000367",
+      "reason": "score_observed",
+      "score": 0.63,
+      "title": "AI 거래관계망 신용평가 모형, 재무제표 한계 넘는다",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260820000366",
+      "reason": "score_observed",
+      "score": 0.62,
+      "title": "더존비즈온-테크핀레이팅스 'AI 신용평가모형', 국제 권위 CIKM논문 등재",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1996550",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "AWS, '피지컬 AI 프론티어 프로그램' 가동",
+      "category": "IT/테크"
+    },
+    {
+      "source": "IT조선",
+      "link": "https://it.chosun.com/news/articleView.html?idxno=2023092168498",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "AWS, 피지컬 AI 프론티어 프로그램 가동 …기업 15곳 상용화 지원",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260820000357",
+      "reason": "score_observed",
+      "score": 0.748,
+      "title": "메가프로젝트發 전력수요 급증…2040년 최대전력 165GW까지 높인다",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260820150244",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "AI·반도체 전력수요 폭증…2040년 전망 4개월 만에 대폭 상향",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1996785",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "엘리멘타, 몰입형 3D 아이돌 게임 '스타투유' 공개",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260820172042",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "엘리멘타, 3D 아이돌 신작 '스타투유'로 리브랜딩…신규 그룹 및 게임 플레이 공개",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608202614g",
+      "reason": "score_observed",
+      "score": 0.635,
+      "title": "위메이드 '나이트 크로우', 하반기 대규모 개편…신규 서버·싱글 플레이 추가",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1996742",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "위메이드, MMORPG '나이트 크로우' 하반기 로드맵 공개",
+      "category": "IT/테크"
+    }
+  ]
+}

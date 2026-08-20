@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-21",
+  "topics": [
+    {
+      "word": "AI",
+      "score": 31.8,
+      "media_count": 13,
+      "article_count": 94
+    },
+    {
+      "word": "만에",
+      "score": 24.8,
+      "media_count": 12,
+      "article_count": 64
+    },
+    {
+      "word": "으로",
+      "score": 23.0,
+      "media_count": 12,
+      "article_count": 55
+    }
+  ]
+}
