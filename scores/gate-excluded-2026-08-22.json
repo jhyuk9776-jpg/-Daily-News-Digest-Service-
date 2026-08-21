@@ -1,0 +1,1062 @@
+{
+  "date": "2026-08-22",
+  "excluded": [
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260821054300002",
+      "reason": "score_observed",
+      "score": 0.767,
+      "title": "구윤철 \"금리상승 부담 줄이도록 취약차주 지원책 조속히 마련\"",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1274026.html",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "구윤철 “금리 상승기 취약차주 지원 방안 조속히 마련”",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008715407",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "구윤철 \"금리 상승 부담 줄이도록 취약차주 지원책 조속히 마련\"",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260821_0003757124",
+      "reason": "score_observed",
+      "score": 0.747,
+      "title": "구윤철 \"취약차주 지원방안 조속히 발표…채무조정 활성화\"",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082110081571254",
+      "reason": "score_observed",
+      "score": 0.715,
+      "title": "구윤철 \"장기 금리 상승…소상공인·서민 등 취약차주 지원방안 곧 발표\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260821070752002",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "100조 넘보는 '미래기금' 신설…교육교부금 연동 55년만에 폐지(종합2보)",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1273995.html",
+      "reason": "score_observed",
+      "score": 0.728,
+      "title": "100조원 넘보는 미래대응기금 입법 예고…4대 중점 분야 투자",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12133047",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "교육교부금 ‘내국세 연동’ 55년만에 폐지한다…재정부담 20조 절감효과",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008716237",
+      "reason": "score_observed",
+      "score": 0.677,
+      "title": "100조 넘보는 '미래기금' 신설…교육교부금 연동 55년 만에 폐지",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260821069700002",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "소득 상위 10%에 보험료·교육비 공제 혜택 절반 이상",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1274061.html",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "고소득자일수록 혜택 쏠렸다…상위 10%가 연금·교육비 공제 ‘절반 이상’",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008715428",
+      "reason": "score_observed",
+      "score": 0.741,
+      "title": "소득 상위 10%에 보험료·교육비 공제 혜택 절반 이상",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260821_0003757281",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "소득 상위 10%가 세금 77.6% 부담…세제혜택 비중의 2배 넘어",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/it/1274107.html",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "카카오 노조, 회사 인적분할에 26일 판교역서 공동행동",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082113413730384",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "카카오, 'AI·투자' 인적분할 결정에 주가 10% 급락",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008716238",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "카카오 노조, 26일 판교역 광장서 공동행동…\"공동교섭 요구\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260821143900003",
+      "reason": "score_observed",
+      "score": 0.741,
+      "title": "석유 최고가격제 다시 동결…휘발유 1천784원·경유 1천773원",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12133514",
+      "reason": "score_observed",
+      "score": 0.756,
+      "title": "석유제품 최고가 동결 … 휘발유 1784원",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008716289",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "석유 최고가격제 다시 동결…휘발유 1,784원·경유 1,773원",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/finance/1273982.html",
+      "reason": "score_observed",
+      "score": 0.663,
+      "title": "고금리에도 은행 연체율 0.56% 완만한 상승…“앞으론 불확실성 커”",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082110553254214",
+      "reason": "score_observed",
+      "score": 0.663,
+      "title": "6월 은행 대출 연체율 0.56%로 하락…분기말 상매각 영향, 증가 우려 여전",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082016053639343",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "6월 은행 연체율 0.56%로 꺾였지만…동월 기준 10년 만에 최고",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082156397",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "휘발유 1784원·경유 1773원…석유 최고가격제 동결",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1274100.html",
+      "reason": "score_observed",
+      "score": 0.726,
+      "title": "석유 최고가격 9차도 동결…휘발유 1784원·경유 1773원",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260821_0003757765",
+      "reason": "length:0",
+      "title": "[속보]9차 석유 최고가격 '휘발유 1784원·경유 1773원' 동결",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082154301",
+      "reason": "score_observed",
+      "score": 0.621,
+      "title": "4대 금융지주, 경남 호우 피해 복구 '총력'",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260821076951002",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "4대 금융, 경남 수해 복구에 20억…대출·물품 지원도(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260821076900002",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "우리금융 5억·신한은행 2억…호우 피해 복구 성금",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/finance/1274063.html",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "4대 금융, ‘경남 폭우 피해복구 성금’ 5억~7억씩 기부한다",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260821084851008",
+      "reason": "score_observed",
+      "score": 0.646,
+      "title": "\"주주환원의 힘\"…美찬바람에도 삼전닉스 강세에 코스피 상승(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082016392237616",
+      "reason": "score_observed",
+      "score": 0.655,
+      "title": "하닉 주주환원 시동에 증시 '환호'…코스피 5.89% 급등",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008716082",
+      "reason": "score_observed",
+      "score": 0.646,
+      "title": "\"주주환원의 힘\"…미 찬바람에도 삼전닉스 강세에 코스피 상승",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260821036400002",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "태국산 이음매 없는 동관에 덤핑관세 부과…5년간 최고 8.41%",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260821_0003757063",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "정부, 태국산 이음매 없는 동관에 반덤핑관세 부과",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082110410468764",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "태국산 이음매 없는 동관에 덤핑 방지 관세 부과…최대 8.41%",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608215234i",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "제주 실종자 가족에 장난전화·조롱…경찰 \"2차가해 엄정 대응\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260821134100004",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "제주 실종여성 가족에 장난전화·조롱…경찰 \"2차 가해 엄정 대응\"",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12133297",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "경찰, ‘제주 실종’ 전단지 장난전화에 “엄정대응”…조롱글 포함",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082116490280328",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "제주 실종여성 가족에 장난전화·조롱…경찰 \"2차 가해 엄단\"",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608211648001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.85,
+      "title": "제주 실종 여성 가족에 2차 가해···경찰 “법 위반으로 처벌” 경고",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260821_0003757934",
+      "reason": "score_observed",
+      "score": 0.754,
+      "title": "제주 실종자 가족에 장난전화·조롱…경찰, 2차 가해 엄정 대응",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082116254938166",
+      "reason": "score_observed",
+      "score": 0.66,
+      "title": "\"사람이 할 짓인가\" 제주 실종여성 찾는 가족에 장난전화",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082142487",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "검찰, '노태우 비자금 의혹' 김옥숙 여사 자택 등 압수수색",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1273996.html",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "‘노태우 비자금’ 김옥숙 자택 등 압수수색…노소영·최태원 이혼소송서 불거져",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082112454875487",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "검찰, 김옥숙 여사 자택 압수수색…노태우 일가 비자금 의혹 수사",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608211334001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.778,
+      "title": "검찰, ‘노태우 비자금 의혹’ 김옥숙 여사 사저 압수수색···당시 비서관들 자택도 포함",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008716002",
+      "reason": "length:217",
+      "title": "검찰, '노태우 비자금 의혹' 김옥숙 연희동 자택 등 압수수색",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260821_0003758081",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "검찰, '노태우 비자금 의혹' 압수수색…\"피의자에 노소영 없어\"(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082110393117077",
+      "reason": "score_observed",
+      "score": 0.754,
+      "title": "‘세기의 이혼’ 불똥 튀었다…‘904억 비자금 메모’ 노태우 부인 자택 압수수색",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082110243195763",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "[속보] 검찰, '노태우 비자금 의혹' 김옥숙 여사 자택 등 압수수색",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082157431",
+      "reason": "length:0",
+      "title": "'통일교 1억 수수' 권성동 변호사 등록 취소…'징역 2년 확정' 결격 사유",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260821175900004",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "'통일교 1억' 징역 2년 확정에 권성동 변호사 등록 취소",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1274105.html",
+      "reason": "score_observed",
+      "score": 0.778,
+      "title": "‘통일교 정치자금’ 권성동, 변호사 자격 취소…징역형 확정 영향",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/politics/12133582",
+      "reason": "score_observed",
+      "score": 0.787,
+      "title": "‘통일교 1억’ 권성동, 의원직 이어 변호사 자격도 잃었다",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608212054001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "‘통일교 정치자금 1억’ 권성동 전 의원 변호사 등록 취소",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260821_0003758186",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "권성동 '통일교 뇌물'' 징역 2년 확정에…변협, 변호사 등록 취소",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608214202i",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "[속보] 교육교부금 내국세 연동제 55년 만에 없앤다",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260821070752002",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "100조 넘보는 '미래기금' 신설…교육교부금 연동 55년만에 폐지(종합2보)",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082118335818151",
+      "reason": "score_observed",
+      "score": 0.81,
+      "title": "교육교부금 연동 55년만에 폐지…대구교육청 \"교육정책 추진에 막대한 영향\"",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082115535730092",
+      "reason": "score_observed",
+      "score": 0.809,
+      "title": "지방교부세·교육교부금 산식 55년 만에 바꾼다",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082017130763655",
+      "reason": "score_observed",
+      "score": 0.764,
+      "title": "교육교부금 '20.79% 공식' 깨진다",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608211403001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.886,
+      "title": "교육교부금 연동제 54년 만의 폐지···교육계 “졸속 개편” 반발",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082115234594409",
+      "reason": "score_observed",
+      "score": 0.719,
+      "title": "\"최대 67시간 굶겨\" 19개월 딸 숨지게 한 20대 母…징역12년",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608211707001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.718,
+      "title": "19개월 딸 굶겨 숨지게 한 20대 1심서 징역 12년···법원 “살해 고의 없어”",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260821_0003757642",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "'19개월 딸 영양결핍 사망' 20대 친모, 징역 12년…아동학대치사죄",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082117030818582",
+      "reason": "score_observed",
+      "score": 0.695,
+      "title": "19개월 딸 방치해 사망…20대 친모 징역 12년",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608215364i",
+      "reason": "length:130",
+      "title": "[포토] 현대차 노조 10년 만에 전면 파업",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082107185886675",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "현대차 노조 10년 만에 전면 파업…생산라인 16시간 멈춘다",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008716262",
+      "reason": "length:232",
+      "title": "현대차 노조 10년 만에 8시간 전면 파업",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260821_0003757953",
+      "reason": "score_observed",
+      "score": 0.648,
+      "title": "\"정년 연장·원청 교섭\"…현대차 노조 10년만에 총파업 대회",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1274015.html",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "“5·18은 김일성 지령” SNS에 글 40대 남성 불구속 송치",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082111440482276",
+      "reason": "score_observed",
+      "score": 0.778,
+      "title": "\"5·18, 북한 김일성 지령\" 글 올린 40대 불구속 송치",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608211335001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.867,
+      "title": "경찰, SNS에 ‘5·18은 김일성 지령’ 40대 남성 불구속 송치",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082111461080847",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "\"5·18은 김일성 지령\"…SNS에 허위사실 올린 40대 불구속 송치",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082145897",
+      "reason": "length:292",
+      "title": "의정부 한 아파트서 남성 2명 숨진 채 발견",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12133564",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "의정부 아파트서 40·50대 형제 숨진 채 발견…경찰 수사",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260821_0003757693",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "의정부 아파트서 형제 숨진 채 발견…유서는 없어(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082117452203698",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "의정부 아파트서 형제 숨진 채 발견…동생 타살 흔적",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082141677",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "[속보] '동료 기장 살해' 김동환 무기징역 선고…법원 \"영구 격리 필요\"",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082110072834780",
+      "reason": "score_observed",
+      "score": 0.711,
+      "title": "\"전혀 미안하지 않다\"…동료 기장 살해한 김동환, 무기징역",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608211035001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "[속보] ‘동료 기장 살해’ 김동환 무기징역 선고···법원 “영구 격리 필요”",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082110420007554",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "'전 직장 동료 살해' 김동환 무기징역 선고…법원 \"재범 위험성 높아\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260821162400004",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "웨딩홀 여성 탈의실에 카메라 불법설치한 사진기사 구속 송치",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082118295270143",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "\"피해 여성 10명 넘어\" 웨딩홀 탈의실에 몰카 설치한 사진기사…구속 송치",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260821_0003757750",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "웨딩홀 여성 탈의실서 불법촬영한 웨딩 촬영 기사…구속송치",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260821095500073",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "日, 1년 2개월만에 사형 집행…'2009년 파친코 방화' 살해범",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1274020.html",
+      "reason": "score_observed",
+      "score": 0.717,
+      "title": "일 1년2개월 만에 또 사형 집행…한국은 29년째 없어",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12133177",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "14개월 만에 사형 집행한 일본…‘2009년 파친코 방화’ 살해범",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082114085672307",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "다카이치 정권 첫 사형…오사카 파친코 방화로 5명 살해한 58세",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260821_0003757204",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "日다카이치 내각서 첫 사형 집행…오사카 파칭코 방화범",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082156527",
+      "reason": "score_observed",
+      "score": 0.675,
+      "title": "해리 왕자와 함께 英 돌아오는 메건…8년 만에 연기 복귀하나",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260821166400085",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "해리 왕자 따라 영국 돌아오는 메건, 연기 복귀하나",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/europe/1273753.html",
+      "reason": "score_observed",
+      "score": 0.62,
+      "title": "해리 왕자·마클 왕자비, 6년 만에 영국 귀환…왕실 복귀는 아냐",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008716285",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "해리 왕자 따라 영국 돌아오는 메건, 연기 복귀하나",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260821141500083",
+      "reason": "low_score",
+      "score": 0.216,
+      "title": "中, '北 탄도미사일' 잇단 발사에도 \"입장 없다\" 반복",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1273987.html",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "미군, 북 탄도미사일 도발에 “즉각적 위협 아냐”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008716055",
+      "reason": "score_observed",
+      "score": 0.514,
+      "title": "중국, '북한 탄도미사일' 잇단 발사에도 \"입장 없다\" 반복",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260821_0003758112",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "北탄도미사일 발사에 中 \"논평 안해\" 함구",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260821115600009",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "역대급 엘니뇨 온다…\"2027년 '가장 더운 해' 될 수도\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008715911",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "역대급 엘니뇨 온다…\"2027년 '가장 더운 해' 될 수도\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260822_0003758298",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "\"이런 신호 처음\"…역대 최강 엘니뇨, 2027년 '가장 더운 해' 온다",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260822002000099",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "중동·이슬람권 8개국, 이스라엘의 서안 정착촌 확대 \"중단하라\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008716464",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "중동·이슬람 8개국, 이스라엘의 서안 정착촌 확대 규탄",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260821_0003757023",
+      "reason": "score_observed",
+      "score": 0.726,
+      "title": "英·佛·獨 등 7개국, 이스라엘 서안 정착촌 확대 규탄…철회 촉구",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260821182000108",
+      "reason": "score_observed",
+      "score": 0.754,
+      "title": "튀르키예, 네타냐후에 집단학살 혐의 체포영장 발부",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008716416",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "튀르키예 \"인터폴에 네타냐후 적색수배 요청\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260822_0003758287",
+      "reason": "score_observed",
+      "score": 0.718,
+      "title": "튀르키예, 네타냐후 인터폴 적색수배 요청…가자 구호선단 나포 혐의",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082156487",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "하버드 의대 전 직원, 시신 빼돌려 팔았다…\"유족에 737억원 배상\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260821055900009",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "'연구용 시신 빼돌려 팔다니…' 하버드 의대, 737억원 배상",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082114054787347",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "하버드 의대, 기증 시신 불법 판매 집단소송 737억 원 배상 합의",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082157217",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "민주콩고, 에볼라 사망자 2500명 넘어 '치명률 48%'…유엔 \"기하급수 확산\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260821177900099",
+      "reason": "score_observed",
+      "score": 0.775,
+      "title": "민주콩고 에볼라 사망 2천500명 넘어…유엔 \"기하급수적 증가\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008716386",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "민주콩고 에볼라 사망 2천500명 넘어…\"기하급수적 증가\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082157287",
+      "reason": "score_observed",
+      "score": 0.743,
+      "title": "미국 제재 압박하자…이란 \"우리가 우위, 지금이 전쟁 끝낼 때\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260821178800099",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "이란 대통령 \"우리가 힘 가진 지금이 전쟁 끝낼 때\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008716385",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "미 '경제 압박' 언급 후 이란 대통령 \"지금이 전쟁 끝낼 때\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260821132300009",
+      "reason": "score_observed",
+      "score": 0.722,
+      "title": "\"트럼프의 대이란 '경제전쟁', 군사작전 원치 않는다는 신호\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008716009",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "\"트럼프의 대이란 '경제전쟁', 군사작전 원치 않는다는 신호\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260821_0003758155",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "트럼프의 \"이란 경제압박\" 위협, 전쟁 복귀 원치 않는다는 신호…NYT",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082155967",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "[속보] 카카오 노조, 본사 인적분할에 26일 판교서 공동행동",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1997275",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "카카오 노조, 26일 판교서 공동교섭 추진 공식화⋯인적분할 대응 예고",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260821141013",
+      "reason": "score_observed",
+      "score": 0.624,
+      "title": "카카오 인적분할 결단...\"호재\" vs \"악재\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082148757",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "[속보] 카카오 \"카카오X 지주사 전환 계획 전혀 없다\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1997204",
+      "reason": "score_observed",
+      "score": 0.619,
+      "title": "[일문일답] 카카오 \"인적분할, 주주가치 제고 위한 결정⋯카카오X, 지주사 전환 계획 無\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260821155452",
+      "reason": "score_observed",
+      "score": 0.632,
+      "title": "카카오 \"34조 가치 제대로 평가받겠다…지주사 전환은 없어\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=694581",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "마이크론 CEO \"AI, 메모리 산업 완전히 바꿔…호황·불황 공식 깨졌다\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260821162124",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "美 마이크론, AI 메모리 연구소 설립…10년간 100억 달러 투자",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1997223",
+      "reason": "length:288",
+      "title": "[속보] 삼성전자, 올해 주주환원 90~110조원…3분기 30조 현금배당",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260821172439",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "삼성전자, 올해 주주환원 최대 110조원…3분기 30조원 현금배당",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1997212",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "방준혁 의장, 넷마블 지분 13.4% 추가 취득…책임경영 강화",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260821171206",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "방준혁 넷마블 의장, 텐센트 보유 지분 13.4% 인수…책임경영·지배구조 강화",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608214463i",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "엔씨, 신작 서브컬처 게임 '아스트라에 오라티오' 도쿄게임쇼 출전",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1997050",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "엔씨, 도쿄게임쇼 2026 참가…'아스트라에 오라티오' 단독 부스 운영",
+      "category": "IT/테크"
+    }
+  ]
+}
