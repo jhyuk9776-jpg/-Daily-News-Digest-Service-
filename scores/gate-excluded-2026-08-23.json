@@ -1,0 +1,484 @@
+{
+  "date": "2026-08-23",
+  "excluded": [
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260822037700004",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "제주 실종여성 가족에 '17회 장난전화·문자' 10대 검거",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12133828",
+      "reason": "score_observed",
+      "score": 0.767,
+      "title": "“신음 소리 들려주면”…제주 실종여성 가족에 ‘장난전화’ 범인 잡고보니",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082219252218525",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "\"신음소리 내면 찾아줄게\" 제주 실종여성 가족 울린 '장난전화' 10대 검거",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608221658001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "제주 실종여성 가족에 “신음소리 들려달라” 연락한 10대 남성 검거",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260822_0003758621",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "한 총리 \"제주 실종여성 가족에 장난전화 10대 체포…2차 가해 엄중 대응\"",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260822_0003758503",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "제주 실종자 가족에 \"신음소리 들려주면 찾아준다\"…장난전화 한 피의자 검거",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082216244306480",
+      "reason": "score_observed",
+      "score": 0.66,
+      "title": "\"신음소리 내봐\" 제주 실종자 가족에 장난전화 덜미",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082261217",
+      "reason": "score_observed",
+      "score": 0.663,
+      "title": "봉은사 주지 지낸 명진스님 입적…프리다이빙 중 사고",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1274137.html",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "MB 정권 비판하던 명진스님 입적…서귀포서 해양사고",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082219311174475",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "봉은사 주지 지낸 명진스님 입적···제주서 프리다이빙 사고",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260822_0003758486",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "봉은사 주지 지낸 명진스님, 제주 바다서 사고 입적…향년 76세(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082215172352385",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "봉은사 주지 지낸  명진스님, 제주 바다서 프리다이빙 사고로 입적",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260822026351061",
+      "reason": "score_observed",
+      "score": 0.62,
+      "title": "광교 도심 출몰 나일왕도마뱀 수색 11일 만에 뜰채로 포획(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1274138.html",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "광교 도심 출몰 70㎝ ‘나일왕도마뱀’ 11일 만에 잡혔다",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082214192183609",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "광교 주민 떨게 한 70㎝ 도마뱀, 11일 추격 끝에 잡혔다",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260822_0003758427",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "광교 출몰 나일왕도마뱀 포획, 수색 11일만…주인에 인계",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082213473547020",
+      "reason": "score_observed",
+      "score": 0.617,
+      "title": "광교 도심 출몰 '나일왕도마뱀' 11일 만에 무사 포획",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260822044051061",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "'숏컷 위장' 캐리비안 베이 女탈의실 불법촬영 20대 남성 체포(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12133869",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "“호기심에 그랬다”…워터파크 여자 탈의실서 불법 촬영 ‘여장 남성’ 체포",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082219353896065",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "\"호기심에\" 여장하고 캐리비안 베이 여자탈의실 몰카찍은 20대 체포",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082220290109325",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "“어? 여자 아니었어?”…캐리비안베이 탈의실 들어온 ‘몰카남’ 구속 기로",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082262107",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "경찰 왜 이러나…제주 여성 사건 경찰관 허위종결 추가 발견",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260822043300056",
+      "reason": "score_observed",
+      "score": 0.829,
+      "title": "제주실종사건 허위종결한 경찰관 긴급체포…추가 사례도 발견",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082219022237614",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "제주 여성 실종사건 허위종결한 경찰관 긴급체포",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608221909001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "제주 여성 실종사건 허위종결한 경찰관 긴급체포",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260822031100055",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "\"숨이 턱\" 전북 낮 최고 35도 찜통더위 기승",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/environment/1274135.html",
+      "reason": "score_observed",
+      "score": 0.621,
+      "title": "선선한 ‘처서 매직’ 없다…낮 최고 35도 무더위 속 소나기",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608220717001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "22일 전국 곳곳 비·소나기···낮 최고 34도 무더위 계속",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260822_0003758401",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "폭염 한풀 꺾이나 했더니…'낮 최고 35도' 무더위 계속[다음주 날씨]",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260821106500061",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "20대 지인 폭행해 살해하려 한 40대, 항소심서 집행유예로 감형",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082219150510106",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "20대女 파이프로 '퍽퍽'…살해하려 했는데 항소심서 집유로 감형",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260821_0003758228",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "술값 문제 다투다 둔기 폭행…살인미수 40대 2심서 감형",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12133874",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "‘제주 실종 여성 추정 시신 발견’ 사실 아냐…경찰 수색 계속",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260822_0003758591",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "제주 실종 30대 여성 시신 발견설 \"사실 아냐\"…경찰 수색 계속",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082301490660504",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "경찰 \"제주 실종여성 추정 시신 발견, 사실 아니다\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260822041600004",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "[날씨] 전국 무더위 속 곳곳 소나기…수도권·강원 새벽까지 비",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260822_0003758593",
+      "reason": "score_observed",
+      "score": 0.62,
+      "title": "전국 곳곳 비·소나기…'처서' 무더위·열대야 계속[오늘날씨]",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082209153044517",
+      "reason": "score_observed",
+      "score": 0.621,
+      "title": "[오늘날씨] 전국 곳곳 소나기 또는 비…무더위도 이어져",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1274144.html",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "‘장미란씨 실종’ 담당 경찰 긴급체포…허위종결 사건 또 있었다",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260822_0003758562",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "제주 여성 실종 허위 종결 의혹…담당 경찰관 긴급체포(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082219151745488",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "장미란씨 실종 허위종결 경찰관 긴급체포…\"또 다른 사건도 허위처리\"",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082260547",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "[속보] 美·캐나다 협상 결렬…캐나다산 제품 50% 관세 현실화",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260822028000009",
+      "reason": "length:182",
+      "title": "[속보] 미·캐나다 협상 결렬…캐나다산 제품 50% 관세 현실화",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1274134.html",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "미-캐나다 무역협상 결렬…“달러 대 달러” 관세전쟁 눈앞",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082213454983485",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "미·캐나다 끝내 결렬…트럼프, 캐나다산에 '50% 관세' 폭탄",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608221354001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "미국·캐나다 막판 무역협상 실패···캐나다산 50% 관세 현실화",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260822_0003758424",
+      "reason": "score_observed",
+      "score": 0.694,
+      "title": "美, 캐나다산 제품에 50% 추가 관세…\"최종 협상 결렬\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082260017",
+      "reason": "score_observed",
+      "score": 0.741,
+      "title": "트럼프 \"호르무즈 해협은 미국 영토\"…또 영유권 주장",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260822022700071",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "트럼프 \"호르무즈는 현재 美영토…이란, 합의 절실히 원해\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1274143.html",
+      "reason": "score_observed",
+      "score": 0.684,
+      "title": "트럼프 또 “호르무즈는 미국 영토” 이란 압박…“선거 지면 난 탄핵당해”",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082211221715600",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "트럼프 \"호르무즈 해협, 지금은 미국 영토\"…이란 압박에 국제법 논란까지",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260822_0003758446",
+      "reason": "score_observed",
+      "score": 0.728,
+      "title": "트럼프 \"이란, 합의 절실히 원해…호르무즈 美 영토\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260822027400009",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "美 연방법원, 75개국 대상 이민 비자 중단 조치에 제동",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1274132.html",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "미 연방법원, ‘75개국 이민 비자 중단’ 제동…백악관 침묵",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260822_0003758516",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "美연방법원, 75개국 이민 비자 발급 중단 제동…백악관 침묵",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260822006900091",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "틱톡, 美아동개인정보 위반 소송서 사상 최대 4억불 지급 합의",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12133726",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "“5500억원에 지급하겠다”…아동개인정보 위반 소송, 미국과 합의한 이 회사",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260822_0003758309",
+      "reason": "score_observed",
+      "score": 0.691,
+      "title": "틱톡, 아동 정보 보호 위반 소송 5500억 합의금으로 마무리",
+      "category": "세계"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=694763",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "앤트로픽, 이르면 8월 말 상장 신청…스페이스X급 IPO 추진",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260822000033",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "앤트로픽, '2조달러 몸값' 상장 추진…역대 최대 IPO 노린다",
+      "category": "IT/테크"
+    }
+  ]
+}

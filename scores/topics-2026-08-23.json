@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-23",
+  "topics": [
+    {
+      "word": "AI",
+      "score": 21.0,
+      "media_count": 11,
+      "article_count": 50
+    },
+    {
+      "word": "제주",
+      "score": 15.600000000000001,
+      "media_count": 8,
+      "article_count": 38
+    },
+    {
+      "word": "달러",
+      "score": 15.0,
+      "media_count": 10,
+      "article_count": 25
+    }
+  ]
+}
