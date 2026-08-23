@@ -1,0 +1,774 @@
+{
+  "date": "2026-08-24",
+  "excluded": [
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082371041",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "\"고가 법인주택 42%는 사주가 거주\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260823016500002",
+      "reason": "score_observed",
+      "score": 0.789,
+      "title": "임광현 \"고가 법인주택 42%는 '황제사택'…최고가 200억 넘어\"",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12134204",
+      "reason": "score_observed",
+      "score": 0.754,
+      "title": "고가 법인주택 42% '오너用'…국세청 \"엄정 세무조사\" 예고",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12133955",
+      "reason": "score_observed",
+      "score": 0.719,
+      "title": "임광현 “고가 법인 주택 42% 사주 일가 사용 …‘황제 사택’ 생각보다 심각”",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008717356",
+      "reason": "score_observed",
+      "score": 0.711,
+      "title": "임광현 \"고가 법인주택 42%는 '황제사택'…최고가 200억 넘어\"",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260823_0003758828",
+      "reason": "score_observed",
+      "score": 0.844,
+      "title": "임광현 \"고가 법인주택 42%가 사주일가 '황제사택'…최고가 200억\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260822041800002",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "올해 상반기 국내은행 이자이익 32조원 '역대 최대'…당기순익↓",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/finance/1274165.html",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "상반기 은행권 이자 이익 32조2천억…역대 최대",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12134238",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "은행 이자이익 역대 최고 … 올 상반기 32조 벌어들여",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008717476",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "올해 상반기 국내은행 이자이익 32조원 '역대 최대'…당기순익↓",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260822043000002",
+      "reason": "score_observed",
+      "score": 0.811,
+      "title": "지방이전 기로 금감원 매년 100명 넘게 퇴직…20∼40대 이탈 40%",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12133977",
+      "reason": "score_observed",
+      "score": 0.787,
+      "title": "지금도 매년 100명 사표 쓰는데…금감원 지방이전, 이탈 더 늘어날까 [금융가 톺아보기]",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082313263937571",
+      "reason": "score_observed",
+      "score": 0.822,
+      "title": "\"지방 가면 떠난다\" 금감원 술렁……젊은 직원 82.5% \"이직 고려\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260822038200530",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "고유가 지원금 사용률 97%…\"31일까지 안 쓰면 없어져요\"",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12134287",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "고유가 지원금 950억원 미사용…“31일까지 안 쓰면 소멸”",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260823_0003758755",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "\"고유가 지원금, 31일까지 꼭 사용하세요\"…잔액 자동 소멸",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082371531",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "韓, EU 지역 7월 철강 수출 41% 급감",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260821179800003",
+      "reason": "score_observed",
+      "score": 0.727,
+      "title": "한국 7월 EU 철강 수출 41%↓…신철강조치 영향 일부 반영",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008717282",
+      "reason": "score_observed",
+      "score": 0.66,
+      "title": "한국 7월 EU 철강 수출 41%↓…신철강조치 영향 일부 반영",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260822039251002",
+      "reason": "score_observed",
+      "score": 0.639,
+      "title": "상위 대기업 세제혜택 82%↑…기업 총감면 증가분의 71%(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1274187.html",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "상위 대기업 국세감면액 82% 늘어…중소기업은 4% 증가",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008717636",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "상위 대기업 세제혜택 82%↑…기업 총감면 증가분의 71%",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260822035100030",
+      "reason": "score_observed",
+      "score": 0.829,
+      "title": "해수부, 추석 맞이 비축 수산물 '역대 최대' 2만t 방출",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008717396",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "해수부, 추석맞이 비축 수산물 '역대 최대' 2만t 방출",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260823_0003758761",
+      "reason": "score_observed",
+      "score": 0.658,
+      "title": "추석 앞 정부 비축 수산물 2만톤 푼다…\"최대 40% 저렴\"",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082372517",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "'제주 실종사건 허위 종결' 경찰, \"왜 그랬나\" 물었더니…",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260823042800056",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "제주 실종사건 담당 경찰관 허위종결 동기 집중 수사",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12134174",
+      "reason": "clickbait",
+      "title": "'실종 허위종결' 파문 확산…경찰 전수조사",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082308374595262",
+      "reason": "score_observed",
+      "score": 0.62,
+      "title": "'장미란 실종' 허위 종결 경찰, 또 허위 종결…51일 만에 시신으로 발견",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082219022237614",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "제주 여성 실종사건 허위종결한 경찰관 긴급체포",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608232057005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.655,
+      "title": "제주 실종 ‘허위 종결’ 또 있었다…재신고 하루 만에 백골 시신",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008717680",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "제주 실종사건 담당 경찰관 '허위종결 동기' 집중 수사",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260823_0003759073",
+      "reason": "score_observed",
+      "score": 0.475,
+      "title": "\"실종자 연락됐다\" 또 허위 종결…경찰 안일한 대응 도마",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082371977",
+      "reason": "length:0",
+      "title": "[속보] 종합특검 \"전체 58명 기소…구속 7명·불구속 51명\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260823041400004",
+      "reason": "length:0",
+      "title": "[속보] 종합특검 \"전체 58명 기소…구속 7명·불구속 51명\"",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12134247",
+      "reason": "length:0",
+      "title": "[속보] 종합특검 “전체 58명 기소…구속 7명·불구속 51명”",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082318110768963",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "종합특검 \"전체 58명 기소…구속 7명·불구속 51명\"",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260823_0003759045",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "'180일 수사' 종합특검, 구속 7명 포함 58명 기소",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260823_0003759036",
+      "reason": "length:99",
+      "title": "[속보]종합특검 \"총 58명 기소…구속 7명, 불구속 51명\"",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/environment/1274135.html",
+      "reason": "score_observed",
+      "score": 0.621,
+      "title": "선선한 ‘처서 매직’ 없다…낮 최고 35도 무더위 속 소나기",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12134064",
+      "reason": "score_observed",
+      "score": 0.615,
+      "title": "“폭염, 아직 안끝났어” 월요일 낮 기온 35도…남부엔 요란한 소나기",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608231723001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "‘처서 매직’ 안 통했다···36도 찜통 더위, 밤에도 식지 않는 ‘열대야’",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260823_0003758798",
+      "reason": "score_observed",
+      "score": 0.619,
+      "title": "소나기 뒤 무더위…'낮 최고 35도' 폭염 지속[이주의 날씨]",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260823029951061",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "경기광주 쿠팡 물류센터서 지게차 사고…40대 심정지(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12134032",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "쿠팡 물류센터서 지게차 몰던 40대 끼임 사고…심정지 이송",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608231727001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "경기광주 쿠팡 물류센터서 끼임사고···40대 노동자 심정지",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260823_0003758999",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "쿠팡 물류센터서 사고로 근로자 심정지…\"필요 지원 아끼지 않을 것\"(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260823027951004",
+      "reason": "score_observed",
+      "score": 0.728,
+      "title": "180일 수사 마친 종합특검, 尹·김건희 등 58명 기소(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12134167",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "2차 특검 180일 수사 마무리…尹·김건희 등 50여명 기소",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008717902",
+      "reason": "length:224",
+      "title": "180일 수사 마친 종합특검…오늘 최종 브리핑",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082364537",
+      "reason": "score_observed",
+      "score": 0.622,
+      "title": "\"무사하다\" 경찰 말 믿었는데…실종 신고 또 '허위 종결'",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608230811001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.62,
+      "title": "“아버지 무사하다” 경찰 말 믿었는데 시신으로···‘장미란씨 실종 허위 종결’ 그 경찰이었다",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008717885",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "경찰 무사하다 했는데 51일간 실종상태…재신고후 시신 발견",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260823049700054",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "광주 송정동서 버스·승용차 충돌…인명피해 없어",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608232116001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "전남광주 광산구서 승용차·버스 충돌···인명피해 없어",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008717848",
+      "reason": "length:242",
+      "title": "광주 송정동서 버스·승용차 충돌…인명피해 없어",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260823021000056",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "홍석기 국가수사본부장 \"실종 허위 종결 사태 국민께 송구\"",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12134014",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "같은 경찰, 또 ‘허위 종결’ 실종사건 들통에…국수본부장 “국민께 사과”",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008717646",
+      "reason": "score_observed",
+      "score": 0.605,
+      "title": "제주 간 국수본부장 \"송구\"…'실종 종결사건' 전수조사",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/rights/1274159.html",
+      "reason": "score_observed",
+      "score": 0.743,
+      "title": "국민연금 받는다고 깎인 기초연금 804억원…4년새 3배 늘어",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608232054005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.754,
+      "title": "국민연금 받는다고 깎인 기초연금, 4년 새 3배로 늘어",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260823_0003758753",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "국민연금 잘 냈더니 기초연금 깎여…4년간 804억원",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608236796i",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "'납품업체에 판촉비 전가' GS리테일, 과징금 10억원 확정",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12134046",
+      "reason": "score_observed",
+      "score": 0.684,
+      "title": "‘납품업체 갑질’ GS리테일에 과징금 10억원 확정",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608231256001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.67,
+      "title": "‘사은품 비용 떠넘기고 납품업체에 갑질’ GS리테일 과징금 10억 대법에서 확정",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082370517",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "트럼프, 캐나다에 \"미국의 州 아니면서\" 직격…관세전쟁 격돌",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260823039500009",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "트럼프 \"캐나다, 미국의 州 아니면서도 혜택 누리려 해\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1274134.html",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "미-캐나다 무역협상 결렬…“달러 대 달러” 관세전쟁 눈앞",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008717615",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "트럼프 \"캐나다, 미국의 州 아니면서도 혜택 누리려 해\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260823_0003759022",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "트럼프 \"캐나다, 미국의 주 아니면서 혜택 원해\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260823016400075",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "AI 서버값 '고공행진'…엔비디아, 고객사에 가격 15% 인상 예고",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12134216",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "엔비디아, AI시스템 가격 15% 인상",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008717520",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "AI 서버값 '고공행진'…엔비디아, 고객사에 가격 15% 인상 예고",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260823_0003758789",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "엔비디아, 메모리값 급등에 AI 서버 가격 15% 인상 예고",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260824001351099",
+      "reason": "score_observed",
+      "score": 0.84,
+      "title": "서아프리카 기니 수도서 쓰레기 매립지 붕괴…최소 30명 사망(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008717824",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "서아프리카 기니 수도서 폐기물 더미 붕괴…\"최소 22명 사망\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260824_0003759130",
+      "reason": "score_observed",
+      "score": 0.739,
+      "title": "적도기니 쓰레기 매립장 붕괴로 최소 30명 사망 22명 부상",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260823000800087",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "캐나다 총리, 美에 보복관세 '맞불'…철강·낙농품 등에 부과",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12134214",
+      "reason": "score_observed",
+      "score": 0.69,
+      "title": "美·캐나다, 50% 관세 맞불…카니 \"미국과 전쟁중\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008717844",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "미국·캐나다 상호 보복관세…\"공격 받으면 전쟁 시작되는 것\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260823042552108",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "젤렌스키 \"전시에 선거 치르면 우크라 분열 쓰나미\"(종합2보)",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008717746",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "젤렌스키 \"선거 치르면 우크라 분열 쓰나미\"…'전시 선거' 거부",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260824_0003759117",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "젤렌스키 \"전시 선거 불가…우크라이나 갈라놓는다\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260823052300530",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "일본 홋카이도 삿포로시 남동쪽 바다서 규모 6.0 지진 발생",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008717765",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "일본 홋카이도 삿포로 남동쪽 바다서 규모 6.0 지진 발생",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260823_0003759114",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "일본 북부 홋카이도서 규모 6.0 강진…쓰나미 발생 안해",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260823049200083",
+      "reason": "score_observed",
+      "score": 0.85,
+      "title": "중국축구협회, '韓성접대 의혹' 조사…\"입증할 증거 없어\"",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12134291",
+      "reason": "score_observed",
+      "score": 0.95,
+      "title": "中축구협회, ‘韓 성접대 의혹’ 조사…“입증할 증거 없어”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008717759",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "중국축구협회, '한국 축협 성접대 의혹' 조사…\"입증할 증거 없어\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260823032900073",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "日, '투자·임금인상' 중소기업에 상속·증여세 면제 검토",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12134219",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "日 '투자·임금인상' 中企…후계자 파격적 감세 검토",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008717554",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "일, '투자·임금인상' 중소기업에 상속·증여세 면제 검토",
+      "category": "세계"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=694817",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "엔비디아, 주요 고객 대상 AI 서버 가격 인상 추진",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260823000044",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "엔비디아, 고객사에 AI 서버 가격 15% 인상 예고",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260823124959",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "\"엔비디아, AI 서버 가격 15% 이상 인상\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1997373",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "KT, '모두의 AI'에 국산 AI 풀스택 투입⋯서비스 기반 마련",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=694827",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "KT, '모두의 AI'에 국산 AI 기술 집결…풀스택 전략 추진",
+      "category": "IT/테크"
+    }
+  ]
+}

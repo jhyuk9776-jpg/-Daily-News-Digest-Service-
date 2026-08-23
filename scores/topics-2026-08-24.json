@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-24",
+  "topics": [
+    {
+      "word": "AI",
+      "score": 25.4,
+      "media_count": 12,
+      "article_count": 67
+    },
+    {
+      "word": "까지",
+      "score": 21.8,
+      "media_count": 11,
+      "article_count": 54
+    },
+    {
+      "word": "서울",
+      "score": 16.200000000000003,
+      "media_count": 8,
+      "article_count": 41
+    }
+  ]
+}
