@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-26",
+  "topics": [
+    {
+      "word": "AI",
+      "score": 38.0,
+      "media_count": 13,
+      "article_count": 125
+    },
+    {
+      "word": "이란",
+      "score": 24.6,
+      "media_count": 8,
+      "article_count": 83
+    },
+    {
+      "word": "경찰",
+      "score": 22.8,
+      "media_count": 9,
+      "article_count": 69
+    }
+  ]
+}
