@@ -1,0 +1,1148 @@
+{
+  "date": "2026-08-27",
+  "excluded": [
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082647641",
+      "reason": "score_observed",
+      "score": 0.776,
+      "title": "영호남 산업 전기료 최대 10% 인하…민간발전사는 반발",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12137043",
+      "reason": "score_observed",
+      "score": 0.697,
+      "title": "영호남 산업용 전기료 최대 10% 인하 … 지역별 차등 요금제 연내 도입",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008723514",
+      "reason": "score_observed",
+      "score": 0.684,
+      "title": "영·호남 최대 10% 내린다…연간 수백억 아낄 수도",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260826_0003763082",
+      "reason": "score_observed",
+      "score": 0.677,
+      "title": "영호남 산업용 전기료 최대 10%↓…'지역요금제' 연내 도입",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082613270801945",
+      "reason": "score_observed",
+      "score": 0.654,
+      "title": "정부, 산업용 전기요금 '지역별 차등'…비수도권 최대 10% 인하",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260826132700003",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "시외·고속버스 요금 10월부터 9% 오른다…3년여만에 인상",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1274718.html",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "10월부터 시외·고속버스 요금 9% 오른다…3년 만에 인상",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082614243525504",
+      "reason": "score_observed",
+      "score": 0.705,
+      "title": "시외·고속버스 요금, 10월 1일부터 9%씩 인상…3년 만의 손질",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008723425",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "시외·고속버스 요금 10월부터 9% 오른다…3년여 만에 인상",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260826_0003762991",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "시외·고속버스 운임 인상이 불가피…10월부터 9% 오른다",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260826160900002",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "하나은행도 당했다…'외부인 사기' 24억원 규모 금융사고",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12137100",
+      "reason": "length:278",
+      "title": "또 터진 ‘외부인 사기’…하나은행서 24억원 금융사고",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008723416",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "하나은행도 당했다…'외부인 사기' 24억 원 규모 금융사고",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082617572841757",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "산은·기업은행 이어 하나은행도…24억원 규모 사기 금융사고",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260826132000008",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "코스피, 또 '전약후강'…0.97% 상승 마감",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082618175789593",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "또 '전약후강' 코스피 0.97%↑…엔비디아 실적발표 경계감에 관망세",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008723395",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "또 '전약후강' 코스피 0.97%↑…거래량, 올해 평균의 절반 밑으로",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082649201",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "신한은행 고금리 대출, 금리 인하 '1년 연장'",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082616192755079",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "신한은행, 고금리 가계대출 인하 1년 연장…연 9.8% 상한선 적용 지속",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082608465122608",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "신한은행, 고금리 가계대출 금리인하 1년 연장",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082648751",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "공정위 조사 거부한 쿠팡, 주병기 \"형사 고발할 것\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260826158051001",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "주병기 \"공정위 현장 조사 거부한 쿠팡 형사 고발할 것\"(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260826_0003764056",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "공정위, '조사 거부' 쿠팡 제재 방침…위원장은 고발도 거론",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260826166251003",
+      "reason": "score_observed",
+      "score": 0.857,
+      "title": "김윤덕-오세훈 면담 후 공방…\"용산불가론 안돼\"vs\"철회가 전제\"(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008723576",
+      "reason": "score_observed",
+      "score": 0.778,
+      "title": "김윤덕·오세훈, 면담 이후에도 공방…\"용산 불가론 안 돼\" vs \"용산 철회\"",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260826_0003764178",
+      "reason": "score_observed",
+      "score": 0.84,
+      "title": "김윤덕 국토장관 \"오세훈 시장, 용산 불가론 고수 안 돼\"",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082647781",
+      "reason": "length:154",
+      "title": "[포토] 우리은행·기보, 1조 협력",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12136954",
+      "reason": "length:159",
+      "title": "[포토] 우리銀-기보, 전략산업에 1조원 공급협력",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082608200125429",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "우리은행, 기보와 손잡고 '미래전략사업' 금융 지원",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1274695.html",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "7월 주담대 금리 4.48%…2년8개월 만에 최고",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008722799",
+      "reason": "score_observed",
+      "score": 0.615,
+      "title": "가계대출 금리 석 달째 상승…주담대 2년 8개월 만에 최고",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082612050860923",
+      "reason": "score_observed",
+      "score": 0.648,
+      "title": "7월 주담대 금리 4.48%로 상승…2년8개월만에 최고치",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260826105300003",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "부영 우정교육문화재단, 외국인 유학생에 장학금 전달",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1274811.html",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "부영그룹, 32개국 외국인 유학생에 장학금 4억원 지급",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260826_0003763381",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "부영 우정교육문화재단, 32개국 외국인 유학생 98명에 장학금",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260826154251004",
+      "reason": "score_observed",
+      "score": 0.886,
+      "title": "대법 '서부지법 폭동' 가담자에 11억원대 소송…\"사법독립 위협\"(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1274788.html",
+      "reason": "score_observed",
+      "score": 0.833,
+      "title": "대법, 서부지법 폭동 5명에 11억 손해배상 소송",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12137065",
+      "reason": "score_observed",
+      "score": 0.775,
+      "title": "대법원, ‘서부지법 폭동’ 가담자 상대로 11억원대 민사소송 제기",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082616534015082",
+      "reason": "score_observed",
+      "score": 0.855,
+      "title": "대법, '서부지법 폭동사태' 가담자에 11억원대 손배소 제기",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608262117005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.933,
+      "title": "대법, ‘서부지법 폭동’ 5명에 11억 손배소",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260826_0003764142",
+      "reason": "score_observed",
+      "score": 0.675,
+      "title": "\"법치 침해 단호히 대응\"…대법, '서부지법 난동' 5명에 11억대 손배소(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082617060559185",
+      "reason": "score_observed",
+      "score": 0.743,
+      "title": "대법, '서부지법 폭동' 가담자 5명에 11억대 손배소…\"헌정질서 문란\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260826175151053",
+      "reason": "score_observed",
+      "score": 0.624,
+      "title": "中유학생 살해 대학강사 범행 일부 자백…오늘 영장심사(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12137365",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "中유학생 살해한 대학 강사 혐의 일부 자백…“20일 새벽 살해”",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082622573529342",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "경찰, 中유학생 살해한 중국인 대학강사 구속영장 신청",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608270805011/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.621,
+      "title": "중국인 유학생 살해 피의자 일부 자백···“20일 새벽 살해” 진술",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008723950",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "\"20일 새벽 살해\" 중국 유학생 살해한 대학강사 일부 자백",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260826_0003764287",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "경찰, 中유학생 살해 중국인 대학강사 구속영장 신청",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260826170100004",
+      "reason": "score_observed",
+      "score": 0.664,
+      "title": "경찰, 최근 3년 실종사건 31만건 전수점검…'비대면 종결' 금지",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1274817.html",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "경찰, 최근 3년 종결 실종사건 31만건 전수점검…‘비대면 종결’ 금지",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12137084",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "[속보]경찰, 최근 3년 실종사건 31만건 전수점검…‘비대면 종결’ 금지",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608262016001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "경찰, 실종 신고 ‘비대면 종결’ 금지키로…31만건 전수 점검",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260826_0003764192",
+      "reason": "score_observed",
+      "score": 0.659,
+      "title": "경찰, 실종사건 31만건 전수점검…'비대면 종결' 원칙적 금지",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082622025742354",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "'종결률 99%' 실종사건 31만건, 전부 다시 확인한다",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082651427",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "'장미란 씨 사건 허위 종결' 경찰, 실종 해결 공로로 표창 받았다",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12137441",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "‘장미란씨 사건 허위종결’ 경찰, 청장 표창받았다…‘실종자 발견’ 공로로",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12137064",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "실종사건 ‘허위 종결’ 제주경찰 “고인과 유가족에 죄송”",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082620401974717",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "'장미란 허위 종결' 남경, 한 달 뒤 '실종자 발견' 표창 받았다",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608262043001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "장미란씨 실종 허위 종결 경찰관, 한 달 뒤 경찰청장 표창도 받았다",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082620231090350",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "장미란 실종 허위종결 경찰, 한 달 뒤 ‘실종자 발견’ 경찰청장 표창 받았다",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1274757.html",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "가수 싸이, ‘수면제 대리 수령’ 혐의 약식기소…비대면 처방도",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082618102492886",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "싸이, '수면제 대리수령'으로 약식기소…의료법 위반 혐의",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608261722011/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.818,
+      "title": "가수 싸이, 의료법 위반으로 약식 기소···수면제 대리 처방·수령 혐의",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082618331156592",
+      "reason": "score_observed",
+      "score": 0.687,
+      "title": "'수면제 대리수령' 싸이…의료법 위반 혐의 약식기소",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082652527",
+      "reason": "score_observed",
+      "score": 0.908,
+      "title": "네팔 홍수로 고립된 한국인 10명 안전 확인…9명 연락 두절 [종합]",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/politics/12137277",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "[속보] 조현 “네팔 홍수 고립 국민 10명 안전 대피 확인”",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608262309001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "[속보] 조현 “네팔 홍수 고립 10명, 안전 확인”…연락두절은 9명으로 늘어",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260826_0003764311",
+      "reason": "score_observed",
+      "score": 0.729,
+      "title": "네팔 홍수 한국인 9명 연락두절, 정부 대응팀 급파 [뉴시스Pic]",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082648911",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "현우진 '현직 교사와 문항 거래' 1심 무죄",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12137050",
+      "reason": "length:285",
+      "title": "모의고사 문항 거래 의혹 … 현우진 강사, 1심서 무죄",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082614413709764",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "'사교육 카르텔' 논란 현우진…수능 문항 거래 1심 무죄",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082615334288875",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "'문항 거래 혐의' 현우진 1심 무죄…\"사적거래 대가\"",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1274769.html",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "필로폰 투약 뒤 현금 노리고…지인 살해 50대 구속기소",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12137146",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "“필로폰 투약 후 또”…지인 살해 50대, 알고 보니 ‘아동 성범죄 15범’",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260826_0003764101",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "'필로폰 투약 후 강도살인' 50대 재판행…\"결박도구\" 검색 기록도",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082617041104781",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "\"필로폰 투약하고 살해\"…수유동 오피스텔 살인범 구속 기소",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260826173600004",
+      "reason": "score_observed",
+      "score": 0.677,
+      "title": "경찰 '무작위 배당' 도입…전국 경찰서에 수사심사관 배치",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/politics/12137116",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "[속보] 경찰 ‘무작위 배당’ 도입…전국 경찰서에 수사심사관 배치",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260826_0003764213",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "경찰, '무작위 배당' 강화…중요사건은 총경·경정이 직접 수사",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082621521442708",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "경찰, 앞으로 사건 무작위 배당…'암장' 막을 법률가 배치",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082647447",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "\"여친이랑 헤어져\" 40대 아들 감금·통제한 70대 아버지",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12137193",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "“여친 만나고 나한테 소홀해졌네, 헤어져”…40대 아들 폭행·감금한 70대 父",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260826_0003763416",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "여친과 이별 않는 아들 폭행·감금한 70대 친부…집유",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082621365154875",
+      "reason": "score_observed",
+      "score": 0.684,
+      "title": "\"여자친구 생기니 소홀해졌다\"…40대 아들 폭행·감금한 70대 아버지 집행유예",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082753857",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "네팔 대홍수 사망자 160명으로 증가…원인 4.4 지진 아니었다",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260827005600091",
+      "reason": "score_observed",
+      "score": 0.778,
+      "title": "네팔 대홍수 사망자 160명으로 늘어…\"지진 아닌 빙하붕괴 재앙\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1274849.html",
+      "reason": "score_observed",
+      "score": 0.787,
+      "title": "네팔 대홍수 최소 160명 사망…“빙하 붕괴가 원인인 듯”",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12137360",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "‘규모 5.2 빙하붕괴’로 괴물 물살이…네팔 대홍수 사망자 160명으로 늘어 [영상]",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608270726001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "네팔 대홍수로 사망자 160명으로 늘어나···한국인 9명도 실종",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008723858",
+      "reason": "score_observed",
+      "score": 0.624,
+      "title": "'네팔 홍수' 최소 160명 사망…한국인 9명 연락두절",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260826_0003764295",
+      "reason": "length:0",
+      "title": "[속보] 네팔 홍수 사망자 72명으로 늘어…수백명 여전히 실종상태",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260826189351082",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "말라리아 모기, 항공편에 독일까지…공항 직원 2명 사망(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12137417",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "비행기 타고 독일 간 ‘말라리아 모기’…공항 직원 2명 감염 사망",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008723783",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "비행기 탄 말라리아 모기…독일 공항 직원 2명 사망",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260827_0003764344",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "비행기 통해 이동한 말라리아 모기…독일 공항 직원 2명 사망",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608262714H",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "\"난 아직 안 죽었다\" 했는데…'컨트리 여왕' 돌리 파튼 별세",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1274657.html",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "‘컨트리 음악의 여왕’ 돌리 파튼 별세…아메리칸 드림의 상징",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12136369",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "‘컨트리 여왕’ 돌리 파튼 별세…트럼프 대통령 “일주일간 조기 게양”",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082616132018904",
+      "reason": "score_observed",
+      "score": 0.624,
+      "title": "[주목, 이 사람] 美 '컨트리음악 여왕' 돌리 파튼(Dolly Parton)",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082626567",
+      "reason": "clickbait",
+      "title": "\"트럼프 막내아들 어디서 죽일까\"…이란 국영방송 영상에 '발칵'",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1274660.html",
+      "reason": "score_observed",
+      "score": 0.663,
+      "title": "이란, 키 2m 트럼프 막내 겨냥 “어디서 죽이지…” 맨해튼 비춘 3분 영상",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12136756",
+      "reason": "clickbait",
+      "title": "“트럼프 막내 아들을 어디서 죽일까”…이란 국영 방송 영상에 미국 ‘발칵’",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082615222788438",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "이란 국영 방송에 \"트럼프 막내 아들을 어디서 죽일까\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608265255i",
+      "reason": "score_observed",
+      "score": 0.829,
+      "title": "美 7월 PCE, 전년 대비 3.7% 상승…예상치 소폭 웃돌아",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260826184552072",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "美 7월 PCE 물가 전년대비 3.7%↑…전망치 소폭 상회(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12137249",
+      "reason": "length:226",
+      "title": "[속보] 美 7월 PCE 물가 전년대비 3.7%↑…전망치 소폭 상회",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260826_0003764299",
+      "reason": "score_observed",
+      "score": 0.756,
+      "title": "美 7월 PCE 물가 3.7%…시장 전망 웃돌며 고공행진",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608262571i",
+      "reason": "score_observed",
+      "score": 0.743,
+      "title": "모스크바 찾은 美 CIA 국장…푸틴에 메시지 전했나 [이상은의 워싱턴나우]",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260826182400108",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "크렘린궁, 美CIA 국장 러시아 방문 확인…\"푸틴은 안 만나\"",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608262103015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.684,
+      "title": "미 CIA 국장, 러시아 극비 방문…트럼프 ‘대북 메시지’ 전했나",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260826_0003764205",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "크렘린, \"미 CIA 국장 모스크바 왔으나 푸틴 안 만나\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260827006851072",
+      "reason": "score_observed",
+      "score": 0.757,
+      "title": "엔비디아 실적 앞뒀던 뉴욕증시 약보합…나스닥 0.08%↓(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008723990",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "엔비디아 실적 앞뒀던 뉴욕증시 약보합 마감…나스닥 0.08%↓",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260827_0003764581",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "日증시, 엔비디아 호실적에 상승 출발…닛케이 0.78%↑",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260827007451091",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "엔비디아, 분기 매출 133조원…전년동기 대비 106% '폭풍성장'(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008723968",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "엔비디아, 13분기 연속 매출 신기록…시간 외 거래 급등",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260827_0003764332",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "엔비디아, AI 열풍에 분기 매출 133조원…13분기 연속 기록경신",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260827010500072",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "캐나다 주정부, 대미 무역전쟁 동참…美주류에 50% 관세",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008723989",
+      "reason": "score_observed",
+      "score": 0.778,
+      "title": "캐나다·미 무역 갈등 격화…캐나다, 미 주류에 50% 관세",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260827_0003764349",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "캐나다 주정부도 대미 무역전쟁 가세…美주류에 50% 보복세",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260827003100108",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "러 극동 화학공장서 대형 화재…최소 7명 사망",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008723784",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "러 극동 화학공장서 대형 화재…최소 7명 사망",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260826_0003763956",
+      "reason": "score_observed",
+      "score": 0.778,
+      "title": "파키스탄 국립병원 신생아실서 화재…신생아 최소 14명 사망",
+      "category": "세계"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1998650",
+      "reason": "score_observed",
+      "score": 0.718,
+      "title": "정부, 국민AI서비스혁신추진단 신설⋯민간 개발자 모집",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=695570",
+      "reason": "score_observed",
+      "score": 0.787,
+      "title": "과기정통부, '국민AI서비스혁신추진단' 신설…민간 전문가 공모",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260826000247",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "정부 개발자 조직 '국민AI서비스혁신추진단' 신설…서비스 신속 개발 기대",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1998738",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "엔비디아 또 '어닝 서프라이즈'…AI는 질주했지만 월가의 눈높이는 더 높아졌다",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=695837",
+      "reason": "score_observed",
+      "score": 0.741,
+      "title": "엔비디아, 어닝 서프라이즈에도 주가 하락...AI 과잉 투자 불안 반영",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1998735",
+      "reason": "score_observed",
+      "score": 0.66,
+      "title": "메타, 청소년 SNS 중독 23조원 합의...'하루 2시간' 묶는다",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260827000015",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "메타, '청소년 SNS 중독' 소송 25조원 합의…셧다운제·나이 확인 기술 등 도입",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1998722",
+      "reason": "score_observed",
+      "score": 0.648,
+      "title": "엔비디아, 2분기 순익 83조 '어닝서프라이즈'...13분기 연속 신기록",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260827000001",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "엔비디아, 분기 매출 962억달러…13분기 연속 신기록",
+      "category": "IT/테크"
+    },
+    {
+      "source": "IT조선",
+      "link": "https://it.chosun.com/news/articleView.html?idxno=2023092168905",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "빌 게이츠 “AI에 대응할 ‘인간전용 일자리’ 정해둬야”",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=695820",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "빌 게이츠가 'AI와 일자리' 두고 던진 핵심 경고 3가지",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1998303",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "삼성디스플레이-마키나락스, 베트남 공장에 'AI 제어 최적화' 협력",
+      "category": "IT/테크"
+    },
+    {
+      "source": "IT조선",
+      "link": "https://it.chosun.com/news/articleView.html?idxno=2023092168859",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "마키나락스, 삼성디스플레이 PLC 코드 AI 최적화 지원",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1998622",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "리벨리온, 英 칼로섬과 유럽 소버린 AI 시장 공략",
+      "category": "IT/테크"
+    },
+    {
+      "source": "IT조선",
+      "link": "https://it.chosun.com/news/articleView.html?idxno=2023092168883",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "리벨리온, 칼로섬과 파트너십… 유럽 소버린 AI 프로젝트 진출 추진",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1998510",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "게임인재단, AI 시대 청소년 위한 '디지털 법률 교육' 개최",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260826212926",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "게임인재단, 청소년 윤리의식 강화 나서...제4회 디지털 법률 교육 실시",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1998661",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "中 YMTC \"내년 세계 낸드 1위 목표\"…삼성전자·SK하이닉스 추격",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260826000336",
+      "reason": "length:0",
+      "title": "YMTC “2027년 삼성·SK 제치고 낸드 1위 목표”",
+      "category": "IT/테크"
+    },
+    {
+      "source": "IT조선",
+      "link": "https://it.chosun.com/news/articleView.html?idxno=2023092168839",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "상장 앞둔 앤트로픽 “AI 시장 30조弗 넘어” 전망",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260826000333",
+      "reason": "score_observed",
+      "score": 0.624,
+      "title": "WSJ “앤트로픽, AI 잠재 시장규모 30조달러 제시할 것”",
+      "category": "IT/테크"
+    }
+  ]
+}
