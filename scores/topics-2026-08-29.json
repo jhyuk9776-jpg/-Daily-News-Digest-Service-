@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-29",
+  "topics": [
+    {
+      "word": "AI",
+      "score": 33.0,
+      "media_count": 14,
+      "article_count": 95
+    },
+    {
+      "word": "네팔",
+      "score": 31.200000000000003,
+      "media_count": 10,
+      "article_count": 106
+    },
+    {
+      "word": "홍수",
+      "score": 26.2,
+      "media_count": 10,
+      "article_count": 81
+    }
+  ]
+}

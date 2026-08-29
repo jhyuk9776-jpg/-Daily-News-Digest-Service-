@@ -1,0 +1,924 @@
+{
+  "date": "2026-08-29",
+  "excluded": [
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082905457",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "주유소 기름값 15주째 하락…휘발유 L당 1861.3원",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260828142200003",
+      "reason": "score_observed",
+      "score": 0.754,
+      "title": "주유소 기름값 15주째 하락…휘발유·경유 1천800원대 유지",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008727758",
+      "reason": "score_observed",
+      "score": 0.754,
+      "title": "주유소 기름값 15주째 하락…휘발유·경유 1천800원대 유지",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608280362i",
+      "reason": "score_observed",
+      "score": 0.741,
+      "title": "신협, 포용금융에 연간 1조…500억 기금도 조성",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260828125800002",
+      "reason": "score_observed",
+      "score": 0.822,
+      "title": "신협, 포용금융 매년 1조원 공급…500억원대 지원기금도 조성",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12138932",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "신협, 포용금융 연 1조원 쏜다…중저신용 대환도 출시",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/it/1275086.html",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "‘모두의 AI’ 사업자로 SKT·카카오·KT 선정…연내 서비스 출시",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082810005335132",
+      "reason": "score_observed",
+      "score": 0.694,
+      "title": "'모두의 AI' 누가 만드나…SKT·카카오·KT 3곳 최종 선정",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008726354",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "전 국민 무료 AI '모두의 AI'…SKT·카카오·KT 최종 선정",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/finance/1275145.html",
+      "reason": "score_observed",
+      "score": 0.695,
+      "title": "상반기 저축은행 순이익 7600억…“기업대출 연체율 상승세”",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12138635",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "저축은행·상호금융, 상반기 호실적…연체율은 다시 상승",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082811132989991",
+      "reason": "score_observed",
+      "score": 0.628,
+      "title": "보험·저축은행·상호금융 기업대출 연체율 동반상승…건전성 관리 '빨간불'(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082907047",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "중국인 유학생 살해 강사 데리고…경찰, 전국 돌며 시신 수색",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260828175300053",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "경찰, '中유학생 살해' 중국인 강사 데리고 전국 돌며 시신 수색",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12139310",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "전국 곳곳에 시신 유기…경찰, ‘중국인 유학생 살해’ 中강사 데리고 수색",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082906404120416",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "\"시신 어디에 유기했나\"…경산 中강사 데리고 전국 돌며 수색",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608280912001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "유학생 살해 혐의 중국인 ‘사이코패스 검사’ 거부···경찰, 시신 수색 계속",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260828_0003766779",
+      "reason": "score_observed",
+      "score": 0.642,
+      "title": "\"중국으로 송환해 사형해야\"…유학생 살해 강사에 中 여론 '부글부글'",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082906837",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "의왕역서 입환 작업하던 코레일 직원 열차에 깔려 숨져",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260829020651061",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "의왕역서 입환작업하던 50대 코레일 직원 깔림사…관계기관 수사(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1275226.html",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "의왕역서 작업하던 50대 코레일 직원 사망…관계기관 조사",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008727751",
+      "reason": "length:277",
+      "title": "경부선 의왕역서 작업하던 50대 직원 숨져",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260829_0003767803",
+      "reason": "length:280",
+      "title": "의왕역서 입환 작업하던 50대 직원 열차에 깔려 숨져",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082911261410402",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "의왕역서 50대 코레일 직원 작업 중 사망…관계기관 수사",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082907077",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "이번엔 제주서 20대 남성 실종…\"아들과 연락 안 돼\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260829019400056",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "\"제주서 근무하는 아들과 연락 안 돼\" 신고…이틀째 수색",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008727755",
+      "reason": "length:294",
+      "title": "제주서 또 20대 남성 실종…차량은 포구 등대 앞서 발견",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260829_0003767781",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "제주 서귀포서 20대 남성 실종…이틀째 수색 중",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082910295350332",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "\"제주서 일하는 아들과 연락 안 돼\"…가족 신고에 이틀째 수색",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082802937",
+      "reason": "score_observed",
+      "score": 0.825,
+      "title": "검찰, '불법 정치자금 수수' 노웅래 상고 포기…무죄 확정 [종합]",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260828119851004",
+      "reason": "score_observed",
+      "score": 0.822,
+      "title": "검찰, 노웅래 상고 포기해 무죄 확정…盧 \"조작기소 이겨내\"(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12139149",
+      "reason": "score_observed",
+      "score": 0.829,
+      "title": "뇌물수수 혐의 노웅래…검찰 상고 포기로 무죄",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260828_0003767578",
+      "reason": "score_observed",
+      "score": 0.86,
+      "title": "檢, 노웅래 '불법 정치자금 수수' 2심 무죄에 상고 포기…무죄 확정(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082818573890716",
+      "reason": "score_observed",
+      "score": 0.614,
+      "title": "검찰, 노웅래 상고 포기…무죄 확정에 盧 \"조작 기소 이겨내\"(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082818052537452",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "[속보]검찰, 노웅래 '뇌물수수' 2심 무죄에 상고 포기",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082892677",
+      "reason": "length:0",
+      "title": "[속보] '헌법재판관 미임명·지명' 한덕수 前총리에 징역 5년 구형",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1275117.html",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "특검, ‘헌법재판관 미임명’ 한덕수 징역 5년 구형",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608281355001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "특검, ‘헌법재판관 미임명’ 한덕수에 징역 5년 구형",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260828_0003767583",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "특검, '헌법재판관 미임명' 한덕수 징역 5년 구형…10월 26일 선고(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082814203052129",
+      "reason": "score_observed",
+      "score": 0.743,
+      "title": "내란특검, ‘헌법재판관 미임명’ 한덕수에 징역 5년 구형",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260829023200530",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "기상청 \"전남광주 해남 서북서쪽서 규모 2.6 지진 발생\"",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082808464249159",
+      "reason": "score_observed",
+      "score": 0.675,
+      "title": "\"또 흔들렸다\"…해남서 규모 2.2 지진, 2주간 10차례",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008727791",
+      "reason": "length:201",
+      "title": "\"전남광주 해남 서북서쪽서 규모 2.6 지진 발생\"",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082910431569598",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "기상청 \"전남광주 해남서 규모 2.6 지진 발생\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260828052500055",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "\"변할게\" 약속해놓고…다시 만난 여자친구 폭행·감금 60대 집유",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12139316",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "“변할 테니 다시 만나” 약속하더니…60대 남, 여자친구 폭행·감금",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008727757",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "\"변할게, 다시 만나자\"…열흘 뒤 감금·폭행한 60대 집행유예",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260828_0003766932",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "\"왜 늦게 들어와\" 동거녀 폭행하고 안방 감금, 60대 집유",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608289205i",
+      "reason": "score_observed",
+      "score": 0.634,
+      "title": "내년 지방 국립대 신입생 등록금 '0원'…의치약수는 제외",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260828119000062",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "지방 국립대 신입생 등록금 지원…가톨릭관동대 장학 혜택 확대",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608281721001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.672,
+      "title": "지방국립대 신입생 등록금 ‘한 푼도 안 낸다’…반수·자퇴 땐 장학금 환수",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082817192112944",
+      "reason": "score_observed",
+      "score": 0.727,
+      "title": "고3 절반 이상 \"지방 국립대 무상 등록금이라도 수도권大 갈 것\"",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082891797",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "\"실종자와 통화 거짓말\"…'허위 종결' 경찰관 결국 실토했다",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12139123",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "실종신고 허위 종결 경찰관 “실종자와 연락 없었다” 시인",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082812194955142",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "\"실종자와 통화했다\"던 경찰관…\"거짓말이었다\" 시인",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008727555",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "\"통화했다는 건 거짓말\"…'허위 종결' 일부 시인",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082800321",
+      "reason": "length:162",
+      "title": "[포토] 천안 페인트 공장 화재, 3명 사망",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12139176",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "울산에서, 천안에서 펑펑…페인트 사업장 잇단 화재에 인명피해",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082813181259356",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "천안 페인트 원료 공장 화재…1명 사망·2명 실종",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608281355011/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "행안장관, 천안 페인트 공장 화재에 “인명구조 총력” 긴급지시",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608281306011/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "천안 동식물 유지 가공 공장서 불···3명 사망·3명 부상",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082801141",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "'유럽 최고령 군주' 노르웨이 국왕 별세",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260828128600098",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "'유럽 최고령 군주' 노르웨이 국왕 별세…향년 89세",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1275190.html",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "‘유럽 최고령 군주’ 노르웨이 하랄드 5세, 즉위 35년 만에 별세…향년 89",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12139002",
+      "reason": "length:211",
+      "title": "유럽 최고령 군주 노르웨이 하랄 5세 서거",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608281654001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "노르웨이 국왕 하랄 5세 별세···향년 89세",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260828_0003767410",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "'유럽 최고령 군주' 노르웨이 하랄 5세 별세…향년 89세",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082803437",
+      "reason": "score_observed",
+      "score": 0.747,
+      "title": "'네팔·중국 대홍수' 사망자 543명…실종자 1535명 [종합]",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12139183",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "‘네팔·중국 대홍수’ 사망자 543명, 실종자 1535명",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082820402280044",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "'네팔 대홍수' 사망자 543명으로 늘어…한국인 9명 여전히 연락두절",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608282030001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.776,
+      "title": "네팔 대홍수 사망자 552명, 실종자 1500여명···네팔 정부 “자체 대응” 해외 구조팀 지원 거절",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008727787",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "대홍수로 중국 티베트 사망자 7명으로 늘어…실종 554명",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082804217",
+      "reason": "score_observed",
+      "score": 0.92,
+      "title": "워시 연준 의장, 美 높은 물가상승률에 \"우려스럽다\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260828180453072",
+      "reason": "score_observed",
+      "score": 0.792,
+      "title": "워시 연준의장 \"美 물가지표 더욱 우려\"…추가 긴축 시사(종합2보)",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12139245",
+      "reason": "score_observed",
+      "score": 0.818,
+      "title": "잭슨홀 데뷔한 워시 …\"美 물가 상승률 우려\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008727554",
+      "reason": "score_observed",
+      "score": 0.785,
+      "title": "연준 의장 \" 물가 상승 우려\"…금리 인상 시사",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260829_0003767685",
+      "reason": "score_observed",
+      "score": 0.783,
+      "title": "워시 연준의장 \"美인플레 우려스러워\"…추가 긴축 가능성(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082802967",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "네팔 대홍수 희생자 시신서 금귀걸이 훔쳐…두 남성 체포",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260828166200084",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "[네팔 대홍수] 희생자 시신 귀걸이 훔친 '인면수심' 2명 덜미",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12139202",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "“국경 넘어 인도까지”…네팔 대홍수 희생 추정 시신 7구 발견",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12138839",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "“정말 사람이 맞나?”…네팔 재난 틈타 시신에서 금귀고리 훔친 남성들",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082715361733878",
+      "reason": "score_observed",
+      "score": 0.747,
+      "title": "네팔 대홍수 외국인 실종 왜 많나…\"힌두교 순례, 트레킹 관문\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260828_0003766953",
+      "reason": "score_observed",
+      "score": 0.704,
+      "title": "네팔 대홍수 시신 하류서 잇따라 발견…당국, 안치·신원 확인 '안간힘'",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082906937",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "트럼프 \"베네수엘라 석유 650억배럴 과반 통제권 확보\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260829018000071",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "트럼프 \"베네수와 석유거래 합의…매장량 과반 통제권 확보\"",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082911112603017",
+      "reason": "score_observed",
+      "score": 0.728,
+      "title": "트럼프 \"베네수엘라 석유 650억 배럴 장악\"…\"美 휘발유값 낮아질 것\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260829_0003767751",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "트럼프 \"베네수엘라 석유 650억 배럴 장악 협정 체결\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260829006300075",
+      "reason": "score_observed",
+      "score": 0.747,
+      "title": "트럼프 행정부, 美유학생 인턴십까지 제한…취업길 틀어막기",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608281613001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "트럼프, 미국 유학생 ‘인턴십’도 제한···취업·정착 길 좁아진다",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008727610",
+      "reason": "score_observed",
+      "score": 0.694,
+      "title": "트럼프 행정부, 미 유학생 인턴십까지 제한…비자 이어 압박",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260829_0003767699",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "트럼프 행정부, 유학생 인턴까지 제한…취업문턱 높여",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082804167",
+      "reason": "length:0",
+      "title": "[속보] 로이터 \"네팔 대홍수 실종자 1924명\"…1000명가량 급증",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260828096852104",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "'네팔·중국 대홍수' 584명 사망…실종자 2천500명 육박(종합2보)",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/asiapacific/1275215.html",
+      "reason": "score_observed",
+      "score": 0.785,
+      "title": "네팔·중국 대홍수 현장 구조 재개…실종자 2482명으로 급증",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/asiapacific/1275028.html",
+      "reason": "score_observed",
+      "score": 0.788,
+      "title": "네팔 홍수 실종자 1400명 넘을 듯…사망자 최소 332명",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1275016.html",
+      "reason": "score_observed",
+      "score": 0.765,
+      "title": "네팔 경찰 “홍수 사망 최소 270명”…1300명 이상 실종 집계",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260828_0003767680",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "네팔 대홍수 사망자 584명으로 늘어…실종자도 1924명",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082899317",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "네팔 경찰 \"자연 댐 다시 붕괴\"…中·네팔 구조작업 중단 [종합]",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260828117653104",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "[네팔 대홍수] 中 국경서 '자연댐 호수' 범람…구조 일시 중단(종합2보)",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260828117651104",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "[네팔 대홍수] 네팔 경찰 \"티베트서 또 댐 붕괴\"…구조대원에 대피 경고",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12138847",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "[속보] 네팔 경찰 “티베트서 또 댐 붕괴 비상 사태…구조 대원 대피” < AFP>",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608282046001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "네팔·티베트서 ‘자연댐 호수’ 또 범람…구조중단·주민대피",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260829017100009",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "비트코인, 연준의장 매파 발언에 다시 8만달러 아래로",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12139341",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "비트코인, 지난주엔 23% 상승했는데…美연준의장 발언에 다시 8만달러 밑으로",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260829_0003767806",
+      "reason": "score_observed",
+      "score": 0.787,
+      "title": "워시 연준 의장 매파 발언에 비트코인, 8만달러선 아래로↓",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1275225.html",
+      "reason": "score_observed",
+      "score": 0.812,
+      "title": "네팔, 국제사회 압박에 외국 구조 지원 일부 수용…한국 헬기 수색 가능성 주목",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608290919001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.825,
+      "title": "네팔, 국제사회 압박에 외국 구조 지원 일부 수용…한국 헬기 재진입 시도할 듯",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260829_0003767692",
+      "reason": "score_observed",
+      "score": 0.743,
+      "title": "네팔, 국제사회 압박에 외국 구조 지원 수용키로…韓 등 4개국 투입",
+      "category": "세계"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1999391",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "데브시스터즈, '쿠키런: 크럼블' 누적 매출 200억원 돌파",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260828173519",
+      "reason": "clickbait",
+      "title": "[이기자의 게임픽] '영업손실' 데브시스터즈, 쿠키런: 크럼블로 경영위기 탈출할까",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1999599",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "스노우플레이크, \"AI 활용 범위, 안전하게 넓혀야\"⋯엔터프라이즈 AI 확장 전략 제시",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=696438",
+      "reason": "score_observed",
+      "score": 0.74,
+      "title": "세일즈포스, 'AI포스'로 엔터프라이즈 AI 하네스 정조준",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082801001",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "'모두의 AI' 사업자에 SKT·KT·카카오 선정",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1999338",
+      "reason": "score_observed",
+      "score": 0.708,
+      "title": "'모두의 AI' 본게임 시작…SKT·카카오·KT, 생활형 AI로 승부수 [종합]",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082801051",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "네이버, 기부증서도 발급…디지털 증서 서비스 확대",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1999342",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "네이버, '815런' 디지털 기부 증서 발급⋯\"상품 보증 넘어 영역 확장\"",
+      "category": "IT/테크"
+    }
+  ]
+}
