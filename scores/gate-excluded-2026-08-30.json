@@ -1,0 +1,712 @@
+{
+  "date": "2026-08-30",
+  "excluded": [
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082905457",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "주유소 기름값 15주째 하락…휘발유 L당 1861.3원",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260828142200003",
+      "reason": "score_observed",
+      "score": 0.754,
+      "title": "주유소 기름값 15주째 하락…휘발유·경유 1천800원대 유지",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008728010",
+      "reason": "length:156",
+      "title": "기름값 15주 연속 하락…휘발유·경우 1,800원대",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082908997",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "제주 실종 20대 남성, 하예포구서 숨진 채 발견",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260829041200056",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "제주 하예포구서 실종됐던 20대 숨진 채 발견",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260829030500004",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "무면허운전 붙잡힌 30대 남성…차 안에서 마약 주사기 발견",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1275252.html",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "제주서 실종자 또 숨진 채 발견…낚시도구 챙겨 나간 20대 남성",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12139545",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "“제주서 근무하는 아들과 연락 안돼”…실종 20대, 해안가서 숨진 채 발견",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608291835001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "제주 하예포구서 실종됐던 20대, 해안가서 숨진 채 발견",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008727974",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "제주 20대 남성 실종 신고 이틀 만에 숨진 채 발견",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260829_0003767961",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "제주 서귀포 실종 20대 남성 시신 발견…신고 25시간만",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082918162256903",
+      "reason": "score_observed",
+      "score": 0.584,
+      "title": "제주 서귀포서 실종됐던 20대, 숨진 채 발견(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260829033751056",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "경찰, '야자수 목맴사' 의혹에 재연 실험까지(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1275248.html",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "제주 ‘야자수 목맴사’ 발표 의혹에…재연 실험한 경찰 “가능하다”",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082916011807108",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "'제주 야자수 목맴사' 의혹 커지자…경찰, 재현 실험 후 \"가능하다\"",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608291819001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "제주 야자수 농장 ‘사인’ 의혹에 경찰 재연 실험",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008727851",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "\"야자수 줄기 목맴 불가\" 의혹에…경찰 재현 실험도 진행",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260829_0003767976",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "경찰, 제주 실종 '야자수 목맴' 재현 실험…\"사인 밝혀진 것 아니야\"(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082906837",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "의왕역서 입환 작업하던 코레일 직원 열차에 깔려 숨져",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260829041500061",
+      "reason": "score_observed",
+      "score": 0.727,
+      "title": "의왕역 코레일 직원 참변…노조 \"260m 열차에 단 2명 투입\" 반발",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1275226.html",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "의왕역서 작업하던 50대 코레일 직원 사망…관계기관 조사",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608291540001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "의왕역서 50대 코레일 직원 열차 깔려 숨져···입환 작업 중 사고",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260829_0003767803",
+      "reason": "length:280",
+      "title": "의왕역서 입환 작업하던 50대 직원 열차에 깔려 숨져",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082911261410402",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "의왕역서 50대 코레일 직원 작업 중 사망…관계기관 수사",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260830003400034",
+      "reason": "score_observed",
+      "score": 0.621,
+      "title": "전국 대부분 비 소식…충청 이틀간 최대 200㎜ 이상 쏟아져",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/environment/1275265.html",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "일요일 전국에 비… 충청·남부 시간당 20~30㎜ 강한 비",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008727866",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "월요일까지 전국에 강한 비…충남권 최대 200㎜ 넘는 폭우",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260829_0003767988",
+      "reason": "score_observed",
+      "score": 0.624,
+      "title": "전국에 비…충남·전북 등 이틀간 최대 200㎜[내일날씨]",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082907497",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "[속보] 정부, 네팔에 신속대응팀 9명 오늘 오후 추가파견",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608290804001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.813,
+      "title": "네팔 신속대응팀, 직접 헬기 못 띄워…“9명 수색 노력”",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008727868",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "정부, 오늘 신속대응팀 9명 추가 파견…헬기운항 계속 제한",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260830_0003768059",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "네팔 신속대응팀 \"오늘 2차례 헬기 수색…성과 없어\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260830001000004",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "네팔 신속대응팀 \"두차례 헬기 수색, 실종자 관련 성과 없어\"",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1275261.html",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "정부 대응팀, 헬기로 90분 수색했지만…“생존자 발견 성과 없어”",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008728212",
+      "reason": "score_observed",
+      "score": 0.675,
+      "title": "\"합동대응팀 두 차례 수색했지만 실종자 발견 못 해\"",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12139554",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "[속보] 로또 1239회 1등, 13명 ‘22억 대박’…11·13·22·32·33·36",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608292124001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "로또 1239회 1등 13명···당첨번호 ‘11·13·22·32·33·36’",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260829_0003768019",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "1239회 로또 1등 각 22억씩…자동 10명·수동 2명·반자동 1명(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260829047100065",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "인천 연수구 아파트서 화재…70대 심정지",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008728067",
+      "reason": "length:251",
+      "title": "인천 연수구 아파트서 화재…70대 심정지",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260829_0003768006",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "인천 동춘동 아파트 화재…70대 남성 심정지",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260829020652061",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "오봉역 사망 4년 만에 또…의왕역서 코레일 50대 '입환원' 참변(종합2보)",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082911332139091",
+      "reason": "score_observed",
+      "score": 0.754,
+      "title": "입환 작업 중 열차에 깔렸다…의왕역 코레일 직원 사망",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260829_0003767856",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "의왕역서 코레일 50대 직원 입환작업 중 사망…국토부, 원인조사 착수(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082909297",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "'수십 년 간병했는데'…아내 살해한 80대 남성 체포",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008727955",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "경기 남양주서 아내 살해한 80대 남편 검거…\"수십 년 간병\"",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260829_0003767950",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "수십년간 아내 간병한 80대, 살해 혐의로 긴급체포",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082908407",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "네팔·중국 대홍수 사망자 계속 늘어 '633명'…실종자 3000명 육박",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260829033351104",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "'네팔·중국 대홍수' 사망자 682명으로 늘어…실종자 3천명 육박(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1275260.html",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "‘네팔 대홍수’ 사망자 676명으로 늘어…실종자 3천명 육박",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12139463",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "“제발 살아있기를”…‘네팔·중국 대홍수’ 실종자 3천명 육박, 500명 늘어",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082820402280044",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "'네팔 대홍수' 사망자 543명으로 늘어…한국인 9명 여전히 연락두절",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608291502011/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.711,
+      "title": "네팔 홍수 사망자 600여명으로 늘어나…네팔 당국, 군·경 1만5000명 투입해 구조 중",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008728100",
+      "reason": "score_observed",
+      "score": 0.719,
+      "title": "'네팔·중국 대홍수' 사망자 682명으로 늘어…실종자 3천 명 육박",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260829_0003768046",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "네팔·티베트 대홍수 나흘째…682명 사망·3000명 실종(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260829044451079",
+      "reason": "score_observed",
+      "score": 0.603,
+      "title": "러 드론에 키이우 인근 마을 창고 연쇄 폭발…최소 37명 사망(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1275257.html",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "‘러 드론 공습’ 키이우 인근 마을 연쇄 폭발…최소 27명 사망",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608292231001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "러시아, 우크라이나 키이우 인근 드론 공격···최소 37명 사망",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008728214",
+      "reason": "length:250",
+      "title": "러, 키이우 일대 사흘째 드론 공격…최소 37명 사망",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260829_0003768041",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "러, 키이우 사흘째 드론 공습…탄약고 폭발로 37명 사망",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260829031100009",
+      "reason": "score_observed",
+      "score": 0.768,
+      "title": "트럼프, '포르노배우 입막음 돈 사건' 법원 바꾸려다 실패",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1275258.html",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "트럼프, ‘포르노 배우 입막음 돈 사건’ 법원 바꾸려다 실패",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12139400",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "“트럼프와 성관계”…‘포르노 배우 입막음 돈 사건’, 대통령 면책특권 노렸는데",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082915412322976",
+      "reason": "score_observed",
+      "score": 0.778,
+      "title": "\"트럼프와 성관계\"…'포르노 배우 입막음 돈 사건', 법원 바꾸려다 실패",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260829_0003767729",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "트럼프 포르노 스타 입막음 재판 이전 신청 또 기각",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026082906937",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "트럼프 \"베네수엘라 석유 650억배럴 과반 통제권 확보\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260829018051071",
+      "reason": "score_observed",
+      "score": 0.78,
+      "title": "美, 베네수엘라와 석유 합의…트럼프 \"매장원유에 과반 통제권\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082911112603017",
+      "reason": "score_observed",
+      "score": 0.728,
+      "title": "트럼프 \"베네수엘라 석유 650억 배럴 장악\"…\"美 휘발유값 낮아질 것\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260829_0003767751",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "트럼프 \"베네수엘라 석유 650억 배럴 장악 협정 체결\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260830004900072",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "\"언제나 온타리오호\" 캐나다에 대형 표식…트럼프 개명에 반격",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008728260",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "\"언제나 온타리오호\" 캐나다에 대형 표식…트럼프 개명에 반격",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260829_0003767829",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "\"평생 온타리오호로 불렀는데\"…트럼프 개명 추진에 미국인들도 비판",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12139579",
+      "reason": "length:0",
+      "title": "[속보] 네팔 신속대응팀 “두 차례 헬기 수색했지만 성과 없어”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008728121",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "네팔 신속대응팀 \"두 차례 헬기 수색, 실종자 관련 성과 없어\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260830_0003768059",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "네팔 신속대응팀 \"오늘 2차례 헬기 수색…성과 없어\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260828180453072",
+      "reason": "score_observed",
+      "score": 0.792,
+      "title": "워시 연준의장 \"美 물가지표 더욱 우려\"…추가 긴축 시사(종합2보)",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008728007",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "워시 \"물가 우려\"…미 금리 인상 강력 시사",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260829_0003767685",
+      "reason": "score_observed",
+      "score": 0.783,
+      "title": "워시 연준의장 \"美인플레 우려스러워\"…추가 긴축 가능성(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260829044700009",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "[네팔 대홍수] 아시아 산악 빙하 9만5천개…\"온난화 속 시한폭탄\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1275256.html",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "“매년 엠파이어스테이트빌딩 잠길 정도 녹아”…아시아 빙하 9만5천개 ‘시한폭탄’",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260829_0003767992",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "\"아시아 산악지대 빙하 9만5000개…총 면적, 한국 맞먹어\" CNN",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260829042700104",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "[네팔 대홍수] 복구 비용 최대 7조원 추정…네팔 전체 경제 규모의 10%",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008728030",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "네팔 대홍수 복구 비용 최대 7조 원 추정…네팔 전체 경제 규모의 10%",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260829_0003767984",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "네팔 재무 \"대홍수 재건 비용 최대 7조원\"…네팔 경제 10%",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260829036300009",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "\"러, 우크라전 사상자 급증에 병력 매월 6천명씩 순감\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008727966",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "\"러, 우크라전 사상자 급증에 병력 매월 6천 명씩 순감\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260829_0003767962",
+      "reason": "score_observed",
+      "score": 0.775,
+      "title": "\"러, 사상자 늘어 월 6000명 병력 순감소해\"",
+      "category": "세계"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=696642",
+      "reason": "score_observed",
+      "score": 0.785,
+      "title": "美 상무부, 중국 AI 기업 겨냥 반도체 우회 접근 차단 추진",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260829014347",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "美 트럼프 행정부, 中 AI '원격 연산 우회' 차단 추진…태국·싱가포르 정조준",
+      "category": "IT/테크"
+    }
+  ]
+}
