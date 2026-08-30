@@ -1,0 +1,984 @@
+{
+  "date": "2026-08-31",
+  "excluded": [
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026083125377",
+      "reason": "length:0",
+      "title": "[속보] 7월 소비 2.4%↓·투자 7.5%↑…생산은 보합",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260831014451002",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "[2보] 7월 소비 2.4% 감소…설비투자 7.5% 증가·5개월만 최대폭↑",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12140043",
+      "reason": "length:0",
+      "title": "[속보] 7월 산업생산 ‘보합’…소비 2.4%↓·투자 7.5%↑",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260831_0003768678",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "7월 산업생산 보합…소비 2.4%↓·투자 7.5%↑(1보)",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026083107543561344",
+      "reason": "low_score",
+      "score": 0.45,
+      "title": "[속보] 7월 소비 2.4%↓·투자 7.5%↑·생산 보합",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260830020951002",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "구윤철, 개각 소식에 G20 취소했다가 번복…예정대로 美 출국(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1275295.html",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "‘개각 대상’ 구윤철, G20 회의 출장 취소했다가 예정대로 출국",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008728644",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "구윤철, 개각 소식에 출국 번복하려다 G20 참석…예정대로 미국행",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260830_0003768266",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "구윤철, 경제 수장 교체에도 G20 재무장관회의 참석차 방미(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026083011570049000",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "구윤철, 취소했던 G20 출장 다시 간다…美 출국(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608301713i",
+      "reason": "score_observed",
+      "score": 0.813,
+      "title": "국세청, 태국에 세무 노하우 수출",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260829044600002",
+      "reason": "score_observed",
+      "score": 0.857,
+      "title": "국세청 태국에 세정경험 공유…현지 진출 기업 애로 해소 '물꼬'",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260830_0003768357",
+      "reason": "score_observed",
+      "score": 0.886,
+      "title": "국세청, 태국과 글로벌최저한세 이행 경험 공유",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026083010065028175",
+      "reason": "score_observed",
+      "score": 0.875,
+      "title": "국세청, 태국에 韓세정 노하우 수출…'글로벌최저한세' 신고지원·전산구축법 공유",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026083017337",
+      "reason": "score_observed",
+      "score": 0.66,
+      "title": "오징어·갈치에 광어까지 '들썩'…추석 앞두고 수산물 가격 비상",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260829023100030",
+      "reason": "score_observed",
+      "score": 0.674,
+      "title": "오징어·갈치에 광어까지 올라…추석 앞두고 수산물값 '들썩'",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026083012005307962",
+      "reason": "score_observed",
+      "score": 0.669,
+      "title": "갈치·오징어부터 광어까지…추석 앞두고 수산물값 줄줄이 상승",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026083019101",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "교보생명 \"금융 포용성·접근성 개선\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260830060100002",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "[게시판] 교보생명, 지속가능경영보고서 발간…소비자 보호·포용성 개선",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026083011315018883",
+      "reason": "score_observed",
+      "score": 0.675,
+      "title": "교보생명, 16번째 지속가능경영보고서…\"금융소비자 보호·포용성 개선\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260830056800003",
+      "reason": "score_observed",
+      "score": 0.791,
+      "title": "'현장형 관료' 홍지선 국토장관 후보자…주택공급 속도내나",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1275334.html",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "‘이재명 기본주택’ 실무, 홍지선 국토장관 후보자…첫 지방 관료 출신",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260830_0003768282",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "[프로필]홍지선 국토부 장관 후보자…경기도 주택실장·국토부 2차관 역임",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026083020111",
+      "reason": "length:190",
+      "title": "[포토] 하나금융, 대학생 홍보대사 해단식",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260829042900002",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "[게시판] 하나금융, 제20기 스마트 홍보대사 해단식",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12139901",
+      "reason": "length:123",
+      "title": "[포토] 하나금융 대학생 홍보대사 해단식",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260830049600002",
+      "reason": "score_observed",
+      "score": 0.867,
+      "title": "이형일 부총리 후보자 \"새로운 도전 필요한 시점…무한한 책임감\"",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1275338.html",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "이형일 경제부총리 후보자, 핵심 요직 맡아온 정통관료",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260830_0003768277",
+      "reason": "score_observed",
+      "score": 0.829,
+      "title": "[프로필]이형일 경제부총리 후보자…글로벌 감각 갖춘 거시정책통",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260829033600002",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "한은 \"수요 압력에 물가 상승세 더 광범위하게 확산 가능성\"",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008728650",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "한은 \"수요 압력에 물가 상승세 광범위하게 확산 가능성\"",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082818094929113",
+      "reason": "score_observed",
+      "score": 0.559,
+      "title": "이미 도달한 2% 중반 근원물가…한은, 물가 상승 광범위 확산 경고",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260829047200002",
+      "reason": "score_observed",
+      "score": 0.684,
+      "title": "홍콩 ELS 사태 막는다…은행 비예금상품 선정부터 책임 강화",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008728651",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "홍콩 ELS 사태 막는다…금감원, 은행 비예금상품 선정부터 책임 강화",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082814594538043",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "금감원, ELS 등 비예금상품 판매 전부터 관리 강화…\"손실 내용 담아라\"",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026083018767",
+      "reason": "score_observed",
+      "score": 0.92,
+      "title": "전남광주·울산·전북·경북 호우특보에 중대본 1단계 가동",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260830069300061",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "경기도, 100㎜ 이상 호우 예보에 '비상 1단계' 가동",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608301718001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "전남광주·울산·전북·경북 호우특보···중대본 1단계 가동",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260830_0003768484",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "전남광주·울산·전북·경북 호우특보…정부, 중대본 1단계 가동",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026083017453954721",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "전남광주·울산·전북·경북 호우특보…중대본 1단계 가동",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260830027451004",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "강남서 '마세라티 만취운전' 사망사고 낸 40대 구속(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026083021142627479",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "강남 '마세라티 만취운전 사망사고' 40대 가해자 '구속'",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608302037001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "[속보]만취 운전해 배달노동자 숨지게 한 40대 구속",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026083021002378578",
+      "reason": "score_observed",
+      "score": 0.475,
+      "title": "강남서 '마세라티 만취운전' 사망사고 낸 40대 운전자 구속",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026083019611",
+      "reason": "score_observed",
+      "score": 0.691,
+      "title": "월세 3배 올려 새 임차인 쫓았다면…대법 \"권리금 회수 방해\"",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12139766",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "월세 3배 요구에 계약 깨져…대법 “권리금 회수 방해 따져야”",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608302054005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "건물주가 새 임차인에 월세 3배 올려 계약 파기…대법 “기존 임차인 권리금 회수 방해 따져봐야”",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026082817032375140",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "월세 3.3배 올려 22억 권리금 날려…대법 \"임대인 방해 인정해야\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260830043400004",
+      "reason": "score_observed",
+      "score": 0.694,
+      "title": "'尹정부와 정교유착 혐의' 한학자 통일교 총재 오늘 1심 선고",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008729108",
+      "reason": "length:229",
+      "title": "'정교유착 혐의' 한학자 오늘 1심 선고…특검은 13년 구형",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260828_0003767452",
+      "reason": "score_observed",
+      "score": 0.642,
+      "title": "'정교유착 의혹' 통일교 한학자 오늘 1심 선고…구형 징역 13년",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260830072400004",
+      "reason": "score_observed",
+      "score": 0.748,
+      "title": "[네팔 대홍수] 구조된 현장소장 \"사방이 물보라…3시간 지나서야 현장 보여\"",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1275385.html",
+      "reason": "score_observed",
+      "score": 0.818,
+      "title": "구조된 두산 현장소장 “사방이 물보라…3~4시간 지나서야 보였다”",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008729076",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "구조된 현장소장 \"사방이 물보라…3시간 지나서야 현장 보여\"",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026083015371908095",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "檢, 제주 실종 허위종결 사건 직접 보완수사 방침…내주 송치 전망",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008729096",
+      "reason": "score_observed",
+      "score": 0.767,
+      "title": "제주 실종 허위종결 사건 곧 검찰로…검찰 직접 보완수사",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260830_0003768240",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "'실종 허위종결' 부 경장, 내주 송치…범행 동기 과연 뭘까",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1275259.html",
+      "reason": "score_observed",
+      "score": 0.788,
+      "title": "2차 신속대응팀·박정원 두산 회장, 네팔 도착…실종 9명 헬기 수색",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608310012001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.86,
+      "title": "“네팔 측 불허” 한국 신속대응팀, 헬기 수색 무산에 육로로 작업···실종 9명 여전히 ‘무소식’",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608301329001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "[속보]네팔 신속대응팀 “드론 등 가용 가능한 모든 수단 동원해 수색”",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260831_0003768623",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "박정원·지원 회장, 네팔서 구조 직원들 만나…\"모든 수색방식 동원\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260830041951061",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "과천시민회관 빙상장서 일산화탄소 누출…6시간 배연작업(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608301548001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "과천시민회관 빙상장서 일산화탄소 추정 가스 누출···이용객 140명 대피",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260830_0003768584",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "과천시민회관 빙상장서 일산화탄소 누출…140여명 대피(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026083018327",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "제주 실종사건 30%가 A경장 손에서 종결…경찰 \"전수조사 중\"",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12139887",
+      "reason": "score_observed",
+      "score": 0.622,
+      "title": "제주 실종사건 30% ‘그 경찰관’ 혼자 종결…298건 전수조사, 숨겨진 사건 또 있나",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260830_0003768563",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "제주 성인 실종 사건 10건 중 3건, 부 경장이 종결 처리",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260830050100004",
+      "reason": "score_observed",
+      "score": 0.88,
+      "title": "김승원 법무장관 후보자 \"새 형사사법체계 안정적 정착에 최선\"",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12139683",
+      "reason": "score_observed",
+      "score": 0.88,
+      "title": "[속보] 김승원 법무장관 후보자 지명…검찰청 폐지·공소청 전환 과제",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260830_0003768481",
+      "reason": "score_observed",
+      "score": 0.857,
+      "title": "김승원 법무장관 후보자 \"형사사법체계 대전환…정착에 최선\"",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608301197i",
+      "reason": "score_observed",
+      "score": 0.705,
+      "title": "트럼프 \"650억배럴 매장 베네수엘라 원유, 美 통제권 확보\" [이상은의 워싱턴나우]",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260830067000009",
+      "reason": "score_observed",
+      "score": 0.711,
+      "title": "\"트럼프, 국방부에 베네수엘라 매장원유 지분 부여\"",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12139960",
+      "reason": "score_observed",
+      "score": 0.741,
+      "title": "트럼프 \"베네수 석유 과반 통제권 확보\"… 셰브론 등 곧 투자 계약",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608302046005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.752,
+      "title": "미, 에너지 안보 위협받자…650억배럴 베네수 유전 직접 개발",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260831_0003768620",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "트럼프 \"베네수 원유로 전략비축유 채울 것\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260830048352085",
+      "reason": "score_observed",
+      "score": 0.712,
+      "title": "안보보다 '바다' 택했다…아이슬란드, EU 가입 협상 재개 불발(종합2보)",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/europe/1275344.html",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "아이슬란드, 국민투표서 ‘EU 가입 협상 재개’ 반대",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608302046015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "아이슬란드 ‘EU 가입 재추진’ 국민투표서 부결",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608301529001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.632,
+      "title": "‘그린란드 눈독’ 트럼프로 커진 불안감에도···아이슬란드 EU 가입 협상 재개 불발",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260830_0003768544",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "'북극권 부국' 아이슬란드, EU 가입협상재개에 52.8% 반대투표",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026083017077",
+      "reason": "score_observed",
+      "score": 0.597,
+      "title": "발암물질 포름알데히드에 배추 담갔다…중국, 3명 수사",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260830030300009",
+      "reason": "low_score",
+      "score": 0.4,
+      "title": "中, '포름알데히드 배추' 관련자 3명 붙잡아 수사중",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12139802",
+      "reason": "score_observed",
+      "score": 0.704,
+      "title": "“당분간 안 먹는 게 상책”…배추 포름알데히드에 적신 중국 업자 3명 붙잡혀",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008728671",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "[자막뉴스] 발암물질로 신선도 유지?…중국 '포름알데히드 배추' 일당 3명 체포",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260831012600009",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "미 공격에 이란도 반격…\"호르무즈 미 함정에 미사일 발사\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/arabafrica/1275403.html",
+      "reason": "score_observed",
+      "score": 0.74,
+      "title": "[속보] 미군, 한달여 만에 이란 공습…호르무즈 기뢰 발사대 타격",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608310743001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.743,
+      "title": "한달만의 미군 군사공격에 이란도 반격, 요르단 미군·호르무즈 미 군함 공격",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260831003551071",
+      "reason": "score_observed",
+      "score": 0.765,
+      "title": "美, 한달여만에 이란 공격…\"라라크섬 로켓 발사대 타격\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608310700011/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "미군, 한 달여 만에 이란 공습…“라라크섬 로켓 발사대 타격”",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260831_0003768643",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "美, 약 한 달 만 이란 공습…라라크섬 로켓 발사대 공격(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260830043652084",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "대홍수 사망자 800명 넘겨…네팔·中, 3천여 실종자 구조 '사력'(종합2보)",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608301118001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.69,
+      "title": "네팔 대홍수 닷새째 사망자 804명·실종자 3048명",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008728974",
+      "reason": "score_observed",
+      "score": 0.635,
+      "title": "대홍수 사망자 768명으로…네팔·중국, 3천여 실종자 구조 '사력'",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260830071800071",
+      "reason": "score_observed",
+      "score": 0.694,
+      "title": "\"트럼프, 김정은 일단 만나고 중간선거 후 2차 회담 가능성\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1275404.html",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "트럼프 1기 대북 당국자 “중간선거 전 김정은 만나 대화 물꼬 틀 가능성”",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260831_0003768618",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "\"트럼프, 김정은과 대화 재개…중간선거 뒤 2차 회담 가능\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026083022187",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "\"키프로스 북부서 승객 300여명 태운 여객선 전복\"",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608302115001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "북키프로스 앞바다서 270명 태운 여객선 좌초···6명 사망",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260830_0003768606",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "북키프로스 앞바다서 267명 탄 여객선 전복…7명 사망·23명 실종",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/asiapacific/1275307.html",
+      "reason": "score_observed",
+      "score": 0.716,
+      "title": "네팔, 구조 골든타임 지나…사망 750명, 실종 3천명 넘어",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008728849",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "인명 피해 급증…사망 최소 750명, 실종 3천 명 넘어서",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260830_0003768592",
+      "reason": "score_observed",
+      "score": 0.699,
+      "title": "네팔·티베트 대홍수·산사태 804명 사망…실종자 3000명 넘어",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260830_0003768342",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "네팔·중국 대홍수 닷새째, 사망 750명·실종 3044명(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260830004900072",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "\"언제나 온타리오호\" 캐나다에 대형 표식…트럼프 개명에 반격",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008728260",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "\"언제나 온타리오호\" 캐나다에 대형 표식…트럼프 개명에 반격",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260830_0003768474",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "\"여긴 온타리오 호수\"…캐나다, 트럼프 '레이크 아메리카' 명칭 변경 지시에 맞불",
+      "category": "세계"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=696671",
+      "reason": "score_observed",
+      "score": 0.875,
+      "title": "하정우 AI전략위 부위원장 \"AI 3강 넘어 '대체불가 대한민국' 실현\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260830144641",
+      "reason": "score_observed",
+      "score": 0.84,
+      "title": "하정우 \"AI 3강 넘어 '대체불가 대한민국' 만들 것\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260830123054",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "하정우, 국가AI전략위 상근부위원장으로…\"산적한 AI 현안 단계적 해결\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=696672",
+      "reason": "score_observed",
+      "score": 0.855,
+      "title": "이해민 AI수석 \"산업혁신·국민 체감 잇는 컨트롤타워 되겠다\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260830131537",
+      "reason": "score_observed",
+      "score": 0.859,
+      "title": "이해민 신임 AI수석 내정자 \"전 국민 체감하는 정책 성과 낼 것\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=696313",
+      "reason": "score_observed",
+      "score": 0.621,
+      "title": "AI가 공장장·로봇들 끼리 '척척'...전북 피지컬AI 실증랩 가보니",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260829120005",
+      "reason": "score_observed",
+      "score": 0.639,
+      "title": "공장장은 AI, 로봇은 동료…전북 피지컬AI 심장부 가보니",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=675942",
+      "reason": "score_observed",
+      "score": 0.67,
+      "title": "신임 AI수석에 조국혁신당 이해민...AI 정책 라인 재편",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260830114110",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "[속보] 李대통령, AI미래기획수석에 이해민 조국혁신당 의원 발탁",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026083018971",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "KAIST, '몰카' 찾는 스마트폰용 AI 개발",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260829134608",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "'몰카'찾는데 4.5초…스마트폰 LED 기술 개발",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260830000082",
+      "reason": "score_observed",
+      "score": 0.704,
+      "title": "李대통령, AI 대전환 국정 2막…중폭 개각 단행",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260830114551",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "[속보] 李대통령, 국가 AI 전략委 부위원장에 하정우 전 AI수석 지명",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260828000219",
+      "reason": "score_observed",
+      "score": 0.655,
+      "title": "中 로보택시 韓 상륙…토종 자율주행 '긴장'",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260829235217",
+      "reason": "score_observed",
+      "score": 0.639,
+      "title": "중국 로보택시 200대 한국 온다...포니.ai, 7세대 자율주행 택시 공급",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1999711",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "통신품질 미흡지역 91% 개선…지하철 일부는 여전히 미흡",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260829085630",
+      "reason": "score_observed",
+      "score": 0.624,
+      "title": "통신품질 미흡 87곳 중 79곳 개선...지하철 8곳은 여전히 미흡",
+      "category": "IT/테크"
+    }
+  ]
+}
