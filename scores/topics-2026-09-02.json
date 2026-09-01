@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-02",
+  "topics": [
+    {
+      "word": "AI",
+      "score": 34.2,
+      "media_count": 12,
+      "article_count": 111
+    },
+    {
+      "word": "예산",
+      "score": 32.8,
+      "media_count": 12,
+      "article_count": 104
+    },
+    {
+      "word": "최대",
+      "score": 28.0,
+      "media_count": 12,
+      "article_count": 80
+    }
+  ]
+}

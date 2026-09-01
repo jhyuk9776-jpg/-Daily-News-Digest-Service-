@@ -1,0 +1,1187 @@
+{
+  "date": "2026-09-02",
+  "excluded": [
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260901115751002",
+      "reason": "score_observed",
+      "score": 0.806,
+      "title": "세제개편안 29일 만에 유턴…비거주1주택 종부세 공제 12억 유지(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1275687.html",
+      "reason": "score_observed",
+      "score": 0.792,
+      "title": "종부세 비거주 1주택 공제 ‘12억’ 도돌이표…ISA 개편도 ‘없던 일’",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12141649",
+      "reason": "score_observed",
+      "score": 0.775,
+      "title": "비거주 1주택 종부세 '원복'…기본공제 현행 12억원 유지",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090114403357040",
+      "reason": "score_observed",
+      "score": 0.783,
+      "title": "비거주 1주택자 종부세 공제 9억 인하 백지화…현행 12억 유지",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008732361",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "비거주 1주택자 종합부동산세 기본공제액 현행대로 12억 원",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260901_0003771555",
+      "reason": "length:0",
+      "title": "[속보]정부, 비거주 1주택 기본공제 9억→12억 수정",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260901166100002",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "공정위, CJ·대상·풀무원 등 5개사 현장조사…장류 담합 의혹",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1275737.html",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "공정위, ‘고추장·된장 가격 담합 혐의’ 5개 회사 현장조사",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1275707.html",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "공정위, 쿠팡 ‘빈손 철수’ 8일 만에 다시 현장조사…이번엔 반발 없어",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008732636",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "공정위, CJ·대상·풀무원 등 5개사 현장조사…'장류 담합 의혹' 정조준",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260901_0003771902",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "공정위, 쿠팡 8일 만에 다시 현장조사…시장지배적 지위 남용 혐의",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090117033376344",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "공정위, CJ제일대상·대상·샘표·풀무원·사조대림 등 '장류 5개사' 현장조사…가격 담합 의혹",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260901098600003",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "[2027예산] 국토부 내년 예산 69조원 역대 최대…주택공급에 30조원",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090114162624177",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "[2027 정부 예산안] 국토부 내년 예산 69조원 편성…역대 최대 규모로 주택·모빌리티에 집중",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260901_0003771361",
+      "reason": "score_observed",
+      "score": 0.661,
+      "title": "성평등부 예산 2.1조 '역대 최대'…\"결혼하면 100만원\"[2027 예산안]",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260901_0003770405",
+      "reason": "score_observed",
+      "score": 0.669,
+      "title": "내년 보건복지 예산 149조원…건강보험 지원 1조원↑[2027 예산안]",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260831_0003770149",
+      "reason": "score_observed",
+      "score": 0.696,
+      "title": "기후부, 내년 예산 역대 최대 25.7조 편성…'3대 메가' 전력·용수에 1.9조[2027 예산안]",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260901_0003770912",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "국토부, 69조 편성 '역대 최대'…주택 공급 8.8조↑[2027 예산안]",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090110540932720",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "[속보]박홍근 \"내년 예산, 역대 최대 12.8% 증가한 820조9000억\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260901139600002",
+      "reason": "score_observed",
+      "score": 0.84,
+      "title": "이찬진 \"서울·수도권 조기 주택 공급에 금융지원 집중\"",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090117404426539",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "이찬진 금감원장, 수도권 주택 조기 공급 맞춰 PF 전담인력 확대",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008732519",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "이찬진 \"서울·수도권 조기 주택 공급에 금융 지원 집중\"",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090115000021411",
+      "reason": "score_observed",
+      "score": 0.767,
+      "title": "이찬진 금감원장 \"수도권 주택공급 금융지원 총력\"…PF 사업장 325곳 밀착관리",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260901124651002",
+      "reason": "score_observed",
+      "score": 0.624,
+      "title": "공정위, TPG의 롯데렌탈 주식취득 승인…\"경쟁 제한성 없어\"(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008732287",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "공정위, TPG 롯데렌탈 주식취득 승인…\"경쟁 제한성 없어\"",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260901_0003771510",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "공정위, TPG의 롯데렌탈 인수 승인…\"경쟁제한 우려 없어\"",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090114401211983",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "공정위, 美 사모펀드 TPG의 롯데렌탈 인수 승인…11년만에 롯데그룹 품 떠난다",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12141652",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "[뉴스&분석] 내년 821조 슈퍼예산 … 2030년엔 '1천조' 넘긴다",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026082917173819620",
+      "reason": "score_observed",
+      "score": 0.807,
+      "title": "나랏빚 내년 1500조 돌파…821조 슈퍼예산, 뒷감당 되겠나",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008733153",
+      "reason": "score_observed",
+      "score": 0.743,
+      "title": "내년 821조 '슈퍼예산' 편성…104조는 여윳돈으로",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260901157500003",
+      "reason": "score_observed",
+      "score": 0.859,
+      "title": "비거주 1주택 세부담 일부 완화…정부안 수준에선 \"영향 제한적\"",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008733133",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "비거주 1주택 '12억 유지'…반발 여론에 '유턴'",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260901_0003771978",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "비거주 1주택 종부세 부담 원상복귀…\"체감 크지 않을 것\"",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12141533",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "김정관 방미…러트닉과 대미투자 막판 조율",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008732094",
+      "reason": "score_observed",
+      "score": 0.635,
+      "title": "산업장관 미국 출국…\"러트닉과 미팅, 대미투자 논의 최종 정리 필요\"",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090110001235886",
+      "reason": "score_observed",
+      "score": 0.669,
+      "title": "김정관 산업장관, G20 참석차 방미…대미투자 1호 협상도 주목",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12141423",
+      "reason": "score_observed",
+      "score": 0.812,
+      "title": "공무원 보수 3.9% 인상··16년 만에 최대 폭",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260901_0003771360",
+      "reason": "score_observed",
+      "score": 0.768,
+      "title": "공무원 노조, 보수 3.9% 인상에 \"합의안 상한 반영 진전\"",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090114564642497",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "[2027 예산안]공무원 임금 16년 만 최대폭 인상…노조 \"적극 환영\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260901089151002",
+      "reason": "score_observed",
+      "score": 0.687,
+      "title": "한은, 新뉴스심리지수 공표…8월 지수 석 달 만에 반등(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008732113",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "한은, 새로운 뉴스심리지수 공개…최신 언어모형으로 경제심리 포착",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090111480285166",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "한은, 신 뉴스심리지수 개발 \"경제 연관성 높은 기사 선별, 정교화\"",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090177917",
+      "reason": "length:0",
+      "title": "[속보] 전국 시도경찰청장 18명 중 14명 교체…\"향피제 적용\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260901197100004",
+      "reason": "score_observed",
+      "score": 0.886,
+      "title": "경찰 고위직 한밤중 대폭 물갈이…시도청장 18명 중 14명 교체",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1275781.html",
+      "reason": "score_observed",
+      "score": 0.917,
+      "title": "한밤중 시도경찰청장 18명 중 14명 물갈이…경찰청장 인선도 임박",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12141789",
+      "reason": "score_observed",
+      "score": 0.867,
+      "title": "[속보] 경찰 고위직 한밤중 대폭 물갈이…시도청장 18명 중 14명 교체",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090122132456516",
+      "reason": "score_observed",
+      "score": 0.916,
+      "title": "경찰청장 18명 중 14명 교체…경찰 지휘부 대대적 인사",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609012232005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.911,
+      "title": "시도경찰청장 18명 중 14명 ‘한밤 대폭 물갈이’",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260901_0003772282",
+      "reason": "score_observed",
+      "score": 0.867,
+      "title": "시도경찰청장 14곳 물갈이…전국 18곳 '향피제' 전면 적용(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260901199500004",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "'신세계百 폭파' 협박글 20대, 경찰력 낭비 1천만원 배상판결",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1275791.html",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "‘신세계백화점 폭파글’ 20대, 경찰 치안비용 1256만원 전액 배상 인정",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090206473740544",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "\"신세계백화점 폭파\" 장난글의 대가…20대, 1256만원 배상",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609020755001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "‘신세계백화점 폭파’ 협박범…국가에 1256만원 배상 판결",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260901_0003772213",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "'신세계백화점 폭파 협박' 20대…국가에 1256만원 배상한다",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090121141124112",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "'신세계 폭파' 거짓글 대가는 1200만원…치안배상 전액 인정",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202609017823i",
+      "reason": "score_observed",
+      "score": 0.765,
+      "title": "선관위 특검보 5명 임명…박혁·김은정·김상천·권근환·김진우",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260901199200004",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "李대통령, 선관위 특검보 5명 임명…수사 채비 본격화",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260901197300004",
+      "reason": "length:0",
+      "title": "[속보] 선관위 특검보에 박혁·김은정·김상천·권근환·김진우",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609012206001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.846,
+      "title": "[속보]선관위특검 특검보 임명…박혁·김은정·김상천·권근환·김진우",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008732998",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "이 대통령, 선관위 특검보 5명 임명…수사 채비 본격화",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260901_0003772284",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "선관위 특검보 5명 임명…檢이력 4명, 국가보안 연구원 출신도(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260901_0003772268",
+      "reason": "length:0",
+      "title": "[속보]선관위 특검보에 박혁·김은정·김상천·권근환·김진우",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090123110347403",
+      "reason": "score_observed",
+      "score": 0.717,
+      "title": "선관위 특검보 5명 임명… 수사 준비 본격화",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090178251",
+      "reason": "score_observed",
+      "score": 0.893,
+      "title": "경찰청장 대행 김종철…서울청장 고범석 임명",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260901197151004",
+      "reason": "score_observed",
+      "score": 0.956,
+      "title": "김종철 경찰청장 대행·고범석 서울청장…고위직 대폭 물갈이(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260901196500004",
+      "reason": "length:141",
+      "title": "[속보] 경찰청 차장에 김종철…서울청장 고범석·인천청장 유승렬",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12141825",
+      "reason": "score_observed",
+      "score": 0.882,
+      "title": "경찰청 차장에 김종철 임명…서울청장 고범석·인천 유승렬",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609012151001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.85,
+      "title": "경찰청 ‘한밤 대폭 물갈이’···경찰청 차장에 김종철, 서울청장 고범석",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260901_0003772272",
+      "reason": "score_observed",
+      "score": 0.764,
+      "title": "경찰 지휘부 전격 교체…경찰청 차장 김종철, 서울청장 고범석",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090122081396090",
+      "reason": "score_observed",
+      "score": 0.829,
+      "title": "경찰청 차장 김종철·서울청장 고범석…시도청장 18명 중 14명 물갈이",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090175251",
+      "reason": "score_observed",
+      "score": 0.704,
+      "title": "'서울대 만들기' 부산·전남·충남대부터…5000억씩 지원",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260901168200530",
+      "reason": "score_observed",
+      "score": 0.791,
+      "title": "부산대·전남대·충남대, 지역성장 거점으로…年 700억씩 지원",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/schooling/1275720.html",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "‘서울대 10개 만들기’ 부산·전남·충남대…올해 700억씩 지원",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12141650",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "부산·전남·충남대, 서울대처럼 키운다",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609012118025/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.691,
+      "title": "‘서울대 10개 만들기’ 첫 주자는 부산대·전남대·충남대",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090117255847449",
+      "reason": "score_observed",
+      "score": 0.752,
+      "title": "'서울대 10개 만들기' 거점국립대 3곳…부산대·전남대·충남대",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090175547",
+      "reason": "score_observed",
+      "score": 0.874,
+      "title": "[속보] '재판소원 1호' 녹십자 과징금 사건 10월 7일 첫 변론",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260901181851004",
+      "reason": "score_observed",
+      "score": 0.852,
+      "title": "헌재, 내달 7일 재판소원 첫 변론…1호 '녹십자 과징금' 사건(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1275742.html",
+      "reason": "score_observed",
+      "score": 0.84,
+      "title": "헌재, ‘재판소원 1호’ 녹십자 과징금 취소 사건 공개변론 열기로",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12141557",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "[속보] ‘재판소원 1호’ 녹십자 과징금 사건 10월 7일 첫 변론",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609011756001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "[속보]‘재판소원 1호 회부’ 녹십자 사건, 10월에 공개 변론",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260902015100004",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "'대동강맥주 팔아 마스크사업' 33억원 사기 양경숙, 징역5년 확정",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12141931",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "“통일부 승인 받았다”…‘대동강 맥주 팔아 마스크사업’ 33억원 사기 양경숙",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260901_0003772153",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "\"대동강 맥주 팔아 北 마스크 지원\" 사기…양경숙, 징역 5년 확정",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090116544889835",
+      "reason": "score_observed",
+      "score": 0.655,
+      "title": "'북한 대동강맥주 사업' 33억 사기 양경숙 징역 5년 확정",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260831107551371",
+      "reason": "score_observed",
+      "score": 0.92,
+      "title": "중학교 교과서에 '엉터리 태극기'…교육부 \"1주일 내 전량 교체\"(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12141719",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "“이게 맞나요?” 중학교 국어 교과서에 태극기 문양 오류…결국 전량 교체",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260901_0003772236",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "교육부, 중2 교과서 '거꾸로 태극기' 사과…\"일주일 내 전량 교체\"",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090116104867962",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "\"중2 교과서에 가짜 태극기가?\"…'2002년 한일 월드컵'도 틀렸다",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090173407",
+      "reason": "score_observed",
+      "score": 0.717,
+      "title": "중수청 특례임용 신청 615명 철회…신청자 1761명 확정",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260901174152530",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "중수청 간다던 검찰인력 615명이나 철회…공소청 직제 영향 관측(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12141481",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "[속보] 중수청 지원자 615명 철회…최종 1761명",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609011950001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.85,
+      "title": "‘중수청’ 특례임용 검찰 인력 1761명 확정···26%는 신청 철회",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202609016944i",
+      "reason": "score_observed",
+      "score": 0.695,
+      "title": "최저임금 보다 많은 실업급여…월 지급액 22만원 낮춘다 [일자리노트]",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260901108500530",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "'최저임금보다 높은 실업급여' 개선…노사 고용보험료 0.1%p씩↑",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/labor/1275739.html",
+      "reason": "score_observed",
+      "score": 0.704,
+      "title": "최저임금보다 많은 실업급여, 내년 20만원 줄인다…기간은 늘어",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12141705",
+      "reason": "score_observed",
+      "score": 0.743,
+      "title": "“달달한 실업급여도 옛말?”…무급휴일 제외로 월 수급액 최대 23만원 깎인다",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090177297",
+      "reason": "score_observed",
+      "score": 0.622,
+      "title": "이란 대통령, 외교재개 시사…\"미국 합의 이행하면 즉각 상응조치\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260901190800079",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "이란 대통령 \"美, 합의 이행하면 즉각 상응조치\"…외교재개 시사",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090116151336890",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "이란, 美 종전 MOU 복귀하면 \"즉각 상응 조치\"",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609011715001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "이란 대통령 “미국 공격 중단하면 즉시 상응 조치”···SCO는 미국 규탄 없이 폐막",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260901_0003772198",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "이란 대통령, \"미국이 각서 이행으로 태도 바꾸면 우리도 즉시 호응\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260902002652108",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "美, 이틀만에 또 이란 공습…\"호르무즈 섬·민간공항 피격\"(종합2보)",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12141902",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "“호르무즈 섬·민간공항 피격”…美, 이틀만에 또 이란 공습",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609020745001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "미국, 이틀 만에 또 이란 공습···이란 “미국 후회하게 될 것”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008733086",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "미국 이틀만에 또 이란 공습…\"호르무즈섬·반다르아바스 폭발음\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090176267",
+      "reason": "length:0",
+      "title": "[속보] 네팔 당국 \"홍수·산사태 사망자 1010명…실종자 약 4000명\"",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12141301",
+      "reason": "length:247",
+      "title": "[속보] 네팔·중국 대홍수 사망자 1000명 넘겨…실종자 4462명",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090115135168010",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "네팔·중국 대홍수 사망자 1천명 넘겨…실종자 4천462명",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260901_0003772256",
+      "reason": "score_observed",
+      "score": 0.767,
+      "title": "네팔 사망자, 1000명 선 넘어 1010명…1만 1800명 구조돼",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260901_0003771889",
+      "reason": "score_observed",
+      "score": 0.767,
+      "title": "네팔 ‘빙하 홍수’ 1주일…사망 1003명·발전소 터널 수색 총력",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090150437",
+      "reason": "score_observed",
+      "score": 0.776,
+      "title": "시진핑·푸틴, 정상회담…\"세계 다극화·전략적 협력 강화\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260901199000084",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "시진핑·푸틴 등 SCO 정상들, 이란 공격 규탄·외교적 해결 촉구",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/china/1275613.html",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "시진핑-푸틴 올해 두번째 회담…‘시베리아의 힘-2’ 진전 없어",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260901_0003772288",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "시진핑·푸틴 SCO 정상들…\"이란 공격 규탄, 외교적 해결해야\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260902015700009",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "FT \"호르무즈 해협서 韓 장금상선 소유 유조선 피격\"",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12141663",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "긴장감 도는 호르무즈 해협…유조선 미상 발사체 3발 피격",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008733291",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "FT \"호르무즈 해협서 한국 장금상선 소유 유조선 피격\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260902001651071",
+      "reason": "score_observed",
+      "score": 0.683,
+      "title": "트럼프 옛 안보보좌관 볼턴 \"트럼프, 평양서 김정은 만나려 할 것\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609020727001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.711,
+      "title": "트럼프 옛 안보보좌관 볼턴 “트럼프, 평양서 김정은 만나려 할 것···사진 필요해서”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008733081",
+      "reason": "score_observed",
+      "score": 0.615,
+      "title": "트럼프 전 안보보좌관 볼턴 \"트럼프, 평양서 김정은 만나려 할 것\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090176687",
+      "reason": "length:0",
+      "title": "대만 유명식당 '바퀴벌레 테러남' 체포…\"서비스에 앙심\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260901101000009",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "대만 유명식당서 살아있는 바퀴벌레 100여마리 뿌린 29세男 체포",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260902_0003772356",
+      "reason": "clickbait",
+      "title": "대만 유명식당에 바퀴벌레 100마리 뿌린 남성…서비스 불만?",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260902006300072",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "미·이란 교전 재개에 국제유가 5% 안팎 급등…WTI 90달러 돌파",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008733214",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "미·이란 교전 재개에 국제유가 5% 안팎 급등…WTI 90달러 돌파",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260902_0003772327",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "美 이란 공습 재개에 국제유가 5% 안팎 급등…WTI 90달러 돌파",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260902003200075",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "中TCL, 美법원에 삼성전자 제소…'미니LED TV 허위광고' 주장",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12141910",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "“삼성전자 TV 저격한 중국 업체”…中 TCL, ‘미니LED 허위광고’ 소송",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008733091",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "중국 TCL, 미국 법원에 삼성전자 제소…'미니 LED TV 허위광고' 주장",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260902007100079",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "이란 매체 \"美, 결혼식장 폭격…4명 사망·50여명 부상\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008733178",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "이란 매체 \"미국, 결혼식장 폭격…4명 사망·50여 명 부상\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260902_0003772329",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "이란 매체 \"美공습이 결혼식장 덮쳤다…4명 사망·50여명 부상\"",
+      "category": "세계"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/2000522",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "앤트로픽, 美 데이터센터 47조원 계약…700㎿ 확보",
+      "category": "IT/테크"
+    },
+    {
+      "source": "IT조선",
+      "link": "https://it.chosun.com/news/articleView.html?idxno=2023092169250",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "앤트로픽, 람다와 48조원 규모 클라우드 계약",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090177317",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "챗GPT 광고 시작 200일만에…연매출 1조3700억원 돌파",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/2000312",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "챗GPT, 200일 만에 연간 환산 광고매출 10억달러 돌파",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/2000391",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "게임 문화 직접 체험…GXG 2026, 9월 11일서 이틀간 판교 일대서 열려",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260901181714",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "게임문화축제 'GXG 2026', 11일 판교역 광장서 개막",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/2000395",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "웹젠, 신작 '디펜스 게임의 폭군이 되었다: 라스트 스테이지' BI 공개",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260901181306",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "웹젠, 신작 전략 RPG '디펜스 게임의 폭군이 되었다: 라스트 스테이지' BI 공개",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260901000279",
+      "reason": "score_observed",
+      "score": 0.621,
+      "title": "IBM, '에이전틱 엔터프라이즈' 전략 강화…“AI 도입보다 운영이 경쟁력”",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260901164214",
+      "reason": "score_observed",
+      "score": 0.628,
+      "title": "브로드컴, 프라이빗 AI 공략 강화…AWS·델과 경쟁",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/2000314",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "EU, 챗GPT 규제 강화⋯디지털서비스법 대상 지정",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260901170206",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "EU, 챗GPT에 최고 강도 규제…생성형 AI로는 처음",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/2000380",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "슈퍼패스트, '슈퍼패스트 넥스트' 최종 2개사 선정",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260901171139",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "슈퍼패스트, '슈퍼패스트 넥스트' 2개사 선정…트라이펄·키메이커게임즈 투자 유치",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/2000619",
+      "reason": "score_observed",
+      "score": 0.677,
+      "title": "박세웅 ETRI 원장 \"수탁과제 줄이고 국가임무 연구에 집중\" [현장]",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260901000001",
+      "reason": "length:0",
+      "title": "[ETRI 컨퍼런스 2026]50주년 ETRI, 새 반세기 비전 제시...AI·국가임무에 방점",
+      "category": "IT/테크"
+    }
+  ]
+}
