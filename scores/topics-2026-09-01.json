@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-01",
+  "topics": [
+    {
+      "word": "AI",
+      "score": 37.8,
+      "media_count": 14,
+      "article_count": 119
+    },
+    {
+      "word": "네팔",
+      "score": 25.400000000000002,
+      "media_count": 9,
+      "article_count": 82
+    },
+    {
+      "word": "이란",
+      "score": 21.8,
+      "media_count": 9,
+      "article_count": 64
+    }
+  ]
+}

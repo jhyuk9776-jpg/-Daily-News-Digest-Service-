@@ -1,0 +1,1224 @@
+{
+  "date": "2026-09-01",
+  "excluded": [
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026083145361",
+      "reason": "length:188",
+      "title": "국민·신한은행, 거제·통영 수해복구 지원",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12140527",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "신한은행 임직원, 거제·통영 수해지역 봉사",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026083110042607870",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "신한은행, 거제·통영 현장 복구부터 성금 등 지원",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260831_0003769759",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "농협경제지주, 거제 찾아 수해복구…농기계 무상수리 지원",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026083111360880429",
+      "reason": "score_observed",
+      "score": 0.642,
+      "title": "신한은행 임직원, 거제·통영 수해지역 찾아 봉사활동",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026083111015253194",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "KB국민은행, '거제지역 수해복구 임직원 봉사활동' 실시",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12140043",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "[속보] 7월 산업생산 ‘보합’…소비 2.4%↓·투자 7.5%↑",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026083109351927350",
+      "reason": "score_observed",
+      "score": 0.632,
+      "title": "7월 산업생산 보합…소비 2.4%·설비투자 7.5% 엇갈려",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008729931",
+      "reason": "score_observed",
+      "score": 0.622,
+      "title": "7월 생산·소비 주춤…반도체 훈풍에 설비투자 '껑충'",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260831_0003769598",
+      "reason": "score_observed",
+      "score": 0.613,
+      "title": "7월 日 산업생산 0.1%↑…\"반도체장비 ·메모리 호조 넉달째 증가\"",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026083108172509808",
+      "reason": "score_observed",
+      "score": 0.624,
+      "title": "7월 산업생산 제자리…설비투자 7.5%↑·소매판매 2.4%↓(상보)",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026083107543561344",
+      "reason": "low_score",
+      "score": 0.45,
+      "title": "[속보] 7월 소비 2.4%↓·투자 7.5%↑·생산 보합",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260831130200003",
+      "reason": "score_observed",
+      "score": 0.652,
+      "title": "한화, KAI 주식취득 승인에 '한국판 스페이스X' 구상 속도",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1275507.html",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "공정위, 한화의 KAI 주식 취득 승인…“경쟁 제한 우려 없어”",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008730153",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "공정위, 한화의 KAI 주식 취득 승인…\"경쟁 제한성 없어\"",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026083114151529178",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "공정위, 한화의 KAI 주식취득 승인…\"지배력 미확보로 경쟁제한 없어\"",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1275577.html",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "최태원 “일본에 반도체 공장 투자 검토…전력·용수 풍부하다면 어디든”",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026083116505563384",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "최태원 \"日에 반도체 공장 설립 검토\"…1순위 조건 전력·용수 꼽아",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026083115495861514",
+      "reason": "score_observed",
+      "score": 0.665,
+      "title": "\"전력·용수 풍부하면 어디든\"…최태원 日 공장 시사",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008730252",
+      "reason": "score_observed",
+      "score": 0.627,
+      "title": "최태원 SK 회장 \"일본에 반도체 합작공장 설립 검토\"",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12140614",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "KTX·SRT 1일부터 통합 운행",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026083109312232253",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "KTX·SRT 9월 1일 하나로 통합…좌석 1.7만석 늘고 운임 10%↓",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008729844",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "코레일·SR 기관통합 마무리…내일 KTX·SRT 통합 운행 시작",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026083145511",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "한화 K9, 스페인 뚫었다…서유럽 첫 진출",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260831074351003",
+      "reason": "score_observed",
+      "score": 0.638,
+      "title": "한화, 스페인 방산업체와 K9 자주포 계약…서유럽 시장 첫 진출(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/marketing/1275510.html",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "한화, 스페인과 K9 자주포 수출 계약…서유럽 첫 진출",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026083146061",
+      "reason": "score_observed",
+      "score": 0.705,
+      "title": "이소영 \"규제개혁부 장관이란 마음으로 '타다 사태' 재발 방지\"",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1275483.html",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "이소영 중기 후보자 “‘규제개혁부’ 장관 마음으로 ‘제2의 타다’ 막겠다”",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008729847",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "이소영 중기장관 후보 \"'타다' 재발 없도록…불합리 규제 완화\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260831119000003",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "2028년 상반기까지 2년간 서울 공동주택 입주물량 약 5만호",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008730668",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "2028년 상반기까지 2년간 서울 공동주택 입주물량 약 5만 호",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260831_0003769735",
+      "reason": "score_observed",
+      "score": 0.621,
+      "title": "2028년 6월까지 수도권 입주 예정 아파트 24.1만호…서울 5만호",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260831085500002",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "한은 \"반도체 성과급 받아 동탄에 집 사고 테슬라 탄다\"",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12140459",
+      "reason": "score_observed",
+      "score": 0.71,
+      "title": "반도체 성과급 내수 불씨 살렸다는데…테슬라가 잘 팔린 건 ‘옥의 티’",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12140281",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "삼전닉스, 반도체 성과급 어디에 썼나보니…한은 “동탄 집 사고 테슬라 샀다”",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008730479",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "[자막뉴스] \"삼전 하이닉스 성과급으로 집 사고 테슬라 산다\" 한은 분석",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026083144807",
+      "reason": "score_observed",
+      "score": 0.767,
+      "title": "[속보] 검찰, '여고생 살해범' 장윤기에 사형 구형",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260831163851054",
+      "reason": "score_observed",
+      "score": 0.719,
+      "title": "검찰, '여고생 살해범' 장윤기에 사형 구형…\"재범 위험\"(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12140686",
+      "reason": "score_observed",
+      "score": 0.774,
+      "title": "여고생 살해 장윤기에 사형 구형…검찰 “성범죄 목적 계획범행”",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026083117301773675",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "檢, '여고생 살해범' 장윤기에 사형 구형…\"영원히 격리해야\"",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608311856001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.705,
+      "title": "여고생 살해 장윤기에 ‘사형’ 구형···검찰 “각종 궤변·거짓 주장, 재범 위험”",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008731070",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "'여고생 살해범' 장윤기 사형 구형…\"재범 위험 커\"",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260831_0003770300",
+      "reason": "score_observed",
+      "score": 0.787,
+      "title": "피해자측 \"검찰의 장윤기 사형 구형대로 선고돼야\"",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260831_0003770292",
+      "reason": "score_observed",
+      "score": 0.708,
+      "title": "검찰, '여고생 살해' 장윤기 사형 구형…\"왜곡된 성적 욕구·재범 위험\" (종합)",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026083117580003020",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "[속보]검찰, '여고생 살해범' 장윤기에 사형 구형",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026083147287",
+      "reason": "score_observed",
+      "score": 0.829,
+      "title": "[속보] '中유학생 살해' 중국인 강사 신상공개 결정…내달 1일부터",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260901042400053",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "中유학생 살해한 중국인 대학강사는 31세 정창성",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12140712",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "여장 뒤 감춰졌던 얼굴…‘유학생 살해’ 중국인 대학강사 내일 신상공개",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090109084217390",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "'유학생 살해·시신 훼손·유기' 중국인 정창성 신상 공개",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026083118131040634",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "'경산 중국인 유학생 살인' 정씨 신상 공개…경북경찰청, 1일부터 30일간 공개",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008731268",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "[속보] 유학생 살해 피의자 정창성(31세) 신상 공개",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260901_0003770560",
+      "reason": "score_observed",
+      "score": 0.694,
+      "title": "경산 中유학생 살해범은 31세 정창성…신상정보 공개",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026083149117",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "\"오랜 간병에 지쳤다\"…결국 아내 살해한 80대 남편 구속영장 기각",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260831169900060",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "수십 년 병간호하던 아내 살해 80대 남편 구속영장 기각",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026083120155613423",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "\"오랜 기간 간병하다 지쳤다\"…70대 아내 살해한 80대 남편, 구속영장은 기각",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608311923011/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "‘20여년간 간병하던 아내 살해’ 80대 남성 구속영장 기각···법원 “도주 우려 없어”",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008731057",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "수십 년 병간호하던 아내 살해 80대 남편 구속영장 기각",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12140672",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "'정교유착' 한학자 1심 징역 2년",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026083115102885149",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "'尹정부 정교유착 혐의' 한학자 통일교 총재, 1심서 징역 2년 선고",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608312111005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "윤 정부 정교유착 한학자 ‘징역 2년’",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008730964",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "\"교세 확장하려 정치권 결탁\"…한학자 총재 징역 2년",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026083115222758209",
+      "reason": "score_observed",
+      "score": 0.621,
+      "title": "한학자 통일교 총재 1심 징역 2년…\"대선, 교세 확장 기회로 봐\"",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608314825i",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "경찰 수사개혁위 \"스토킹 가해자 출소 전 피해자에 통지\" 권고",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260831165600004",
+      "reason": "score_observed",
+      "score": 0.727,
+      "title": "경찰 수사개혁위 \"스토킹 가해자 출소 전 피해자에 통지하라\" 권고",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1275571.html",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "경찰 수사개혁위 첫 권고안…“피해자 국선변호 확대·수사 참여권 보장해야”",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608312112005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.743,
+      "title": "경찰 수사개혁위 ‘피해자 보호’ 첫 권고",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260831_0003770314",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "경찰 수사개혁위, 첫 권고안…\"범죄 피해자 형사절차 참여권리 보장\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260901019700055",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "고창 폭우 속 비닐하우스 실종자, 작업장 인근서 숨진 채 발견",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12140517",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "통영서 해루질하다 실종된 40대, 사흘 만에 숨진 채 발견",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609010755001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "폭우 속 고창서 실종된 60대, 인근 하천서 숨진 채 발견",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260901_0003770494",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "고창 비닐하우스에서 실종됐던 60대, 숨진 채 발견",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260831151100056",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "제주경찰관, 실종신고 허위종결 이유는…오늘 수사결과 발표",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026083015371908095",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "檢, 제주 실종 허위종결 사건 직접 보완수사 방침…내주 송치 전망",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609010755011/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "‘실종 신고 허위 종결’ 제주 경찰관 오늘 검찰 송치…수사결과 발표",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008731093",
+      "reason": "score_observed",
+      "score": 0.727,
+      "title": "제주경찰관, 실종 신고 허위 종결 이유는…오늘 수사 결과 발표",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008730963",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "\"63건 시스템 미등록·삭제\"…오늘 수사결과 발표",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026083148327",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "네팔 홍수로 고립됐던 근로자 9명 귀국…현장소장은 잔류",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260831173700003",
+      "reason": "score_observed",
+      "score": 0.675,
+      "title": "[네팔 대홍수] 고립됐던 한국인 9명 무사귀국…현장소장은 잔류",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12140725",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "[속보] 네팔 홍수로 고립됐던 근로자 9명 귀국…현장소장은 잔류",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026083120144207709",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "네팔 홍수로 고립된 근로자 9명 귀국…현장소장은 남아(상보)",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202608314597i",
+      "reason": "score_observed",
+      "score": 0.675,
+      "title": "경찰, '제주 실종' 자살 추정이라더니…\"사인 불명, 모든 가능성 열어둬\"",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608311756001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.933,
+      "title": "경찰청, ‘제주 실종자 사인’ 국수본부장 발언에 “기존 입장 번복 아냐”",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260831_0003770225",
+      "reason": "score_observed",
+      "score": 0.583,
+      "title": "경찰 \"'제주 실종 여성' 목맴사 가능성 고려…사인 번복 아냐\"(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026083112551370202",
+      "reason": "score_observed",
+      "score": 0.741,
+      "title": "제주 실종자, 부패로 사인불명…\"모든 가능성 열어둔다\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260831176800052",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "사천서 김민석 민주당 대표 당선 축하 현수막 훼손…경찰 수사",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/politics/12140793",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "사천서 김민석 당대표 당선 축하 현수막 눈 부위 훼손…경찰 수사",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090108404138853",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "김민석 축하 현수막 '두 눈' 훼손…민주당 고발장 제출",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026083146151",
+      "reason": "score_observed",
+      "score": 0.675,
+      "title": "네팔, 수력발전소 실종자 구조작업에 총력",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260831126352084",
+      "reason": "clickbait",
+      "title": "네팔, 발전소 6곳에 '고립 추정' 실종자 900여명 구조 총력전(종합2보)",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12140618",
+      "reason": "clickbait",
+      "title": "발전소에만 900명 고립…네팔, 구조 총력전",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026083115200119512",
+      "reason": "score_observed",
+      "score": 0.677,
+      "title": "네팔, 수력발전 터널 실종자 탐색 본격화…국제사회에 장비 요청",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008730857",
+      "reason": "clickbait",
+      "title": "네팔, 발전소 6곳에 '고립 추정' 실종자 900여 명 구조 총력전",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260831_0003770395",
+      "reason": "score_observed",
+      "score": 0.703,
+      "title": "네팔, 발전소 관련 실종자 639명 구조 총력…네팔 총리 \"韓·中과 같이 작업\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090150437",
+      "reason": "score_observed",
+      "score": 0.776,
+      "title": "시진핑·푸틴, 정상회담…\"세계 다극화·전략적 협력 강화\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260831177752108",
+      "reason": "score_observed",
+      "score": 0.728,
+      "title": "트럼프에 보내는 메시지?…시진핑, 푸틴과 만나 \"세계 다극화\"(종합2보)",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260831177751108",
+      "reason": "score_observed",
+      "score": 0.728,
+      "title": "시진핑·푸틴 3개월만에 또 만났다…푸틴 \"러중 협력 성공적 발전\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/china/1275613.html",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "시진핑-푸틴 올해 두번째 회담…‘시베리아의 힘-2’ 진전 없어",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008730840",
+      "reason": "score_observed",
+      "score": 0.621,
+      "title": "시진핑·푸틴 3개월만에 또 만났다…푸틴 \"러중 협력 성공적 발전\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260901_0003770410",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "시진핑·푸틴 정상회담…\"중·러 협력 강화·세계 다극화 추진\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026083146037",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "유명 식당에 바퀴벌레 100여마리 투척 후 도주…손님들 '경악'",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260831115800009",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "대만서 유명식당에 살아있는 바퀴벌레 100여마리 투척 후 도주",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12140711",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "바퀴벌레 100여마리에 뒤덮인 대만 유명식당…‘엽기 테러’ 무슨일",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026083117101806499",
+      "reason": "clickbait",
+      "title": "식당 바닥 뒤덮은 바퀴벌레 100마리…대만 식당 발칵",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008731017",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "대만서 유명식당에 살아있는 바퀴벌레 100여 마리 투척 후 도주",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090151297",
+      "reason": "score_observed",
+      "score": 0.791,
+      "title": "'9만㎡' 트럼프 백악관 연회장 공사 계속된다…美대법원 재개 허용",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260901013000071",
+      "reason": "score_observed",
+      "score": 0.826,
+      "title": "트럼프의 백악관 연회장 공사 계속된다…보수우위 대법서 판정승",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008731111",
+      "reason": "score_observed",
+      "score": 0.818,
+      "title": "트럼프의 백악관 연회장 공사 계속된다…보수 우위 대법서 판정승",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260901_0003770513",
+      "reason": "score_observed",
+      "score": 0.826,
+      "title": "미 대법원 \"백악관 연회장 공사 지속\" 사실상 최종 판결",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202609015130H",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "'축구의 신' 메시, 대표팀 은퇴 선언…\"더이상 낼 힘 없다\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260901002500087",
+      "reason": "score_observed",
+      "score": 0.663,
+      "title": "메시, 아르헨 대표팀 은퇴…\"더이상 낼 힘 남아있지 않아\"",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609010458001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.621,
+      "title": "‘축구의 신’ 메시, 21년 정들었던 아르헨티나 대표팀 은퇴 선언 “지금이 떠날 때, 더 이상 낼 힘이 없다”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008730911",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "메시, 아르헨 대표팀 은퇴…\"더이상 낼 힘 남아있지 않아\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026083140597",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "네팔 대홍수 사망 919명·실종 4793명…발전소 터널 수색 총력",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/asiapacific/1275608.html",
+      "reason": "score_observed",
+      "score": 0.659,
+      "title": "네팔 사망자 955명…‘900명 고립’ 추정 발전소 터널 수색 총력",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/asiapacific/1275408.html",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "네팔·중국 대홍수 사망 804명…생존 가능 터널 뚫고 공기 넣었지만",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609010724001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.743,
+      "title": "네팔 대홍수 1주일, 사망자 955명으로 증가···수력발전소 인근 수색 집중",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202608311515001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.674,
+      "title": "네팔 대홍수 사망자 919명·실종자 4793명 급증···악천후·2차 홍수 속 구조 난항",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260831_0003769847",
+      "reason": "score_observed",
+      "score": 0.818,
+      "title": "네팔·티베트 빙하 대홍수 6일째…사망 919명·실종 4793명으로 늘어",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090150197",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "치솟는 휘발윳값에 골머리 앓는 트럼프, 美 정유업계 경영진 소집",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260901005851071",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "휘발윳값 고공행진에 속끓는 트럼프, 美정유업계 경영진 호출(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008731033",
+      "reason": "score_observed",
+      "score": 0.66,
+      "title": "휘발윳값 고공행진에 속 끓는 트럼프, 미 정유업계 경영진 호출",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260901_0003770420",
+      "reason": "score_observed",
+      "score": 0.782,
+      "title": "美 휘발유값, 8월 내내 갤런당 4달러 상회…트럼프, 1일 정유업계 호출",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260831166352084",
+      "reason": "score_observed",
+      "score": 0.726,
+      "title": "[네팔 대홍수] '실종 한국인 9명 근무' 수력발전소 터널서 시신1구 발견(종합2보)",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/international_general/1275585.html",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "‘한국인 근무’ 네팔 발전소서 주검 1구 수습…국적은 미상",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12140749",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "실종된 한국인 9명 근무…네팔 수력발전소 터널서 시신 1구 발견",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260831_0003770136",
+      "reason": "score_observed",
+      "score": 0.621,
+      "title": "\"친구가 한국인 8명과 수력발전소 갇혀\"…국내 거주 네팔인들 '눈물'",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260831_0003770355",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "네팔 구조대원, 수력발전소 터널 2곳서 시신 3구 수습",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260901014700009",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "美국채 10년물 금리 19개월 만에 최고…매도세 확산",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008731253",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "미국 국채 10년물 금리 19개월 만에 최고…매도세 확산",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260831_0003769546",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "일본 10년물 국채금리 또 30년만 최고치…2.95%까지↑",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260901006051071",
+      "reason": "score_observed",
+      "score": 0.687,
+      "title": "트럼프, 요르단 美기지 공격한 이란에 \"강력 타격\"…보복 예고(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008730984",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "미국 기지 공격에 \"강력 보복\" 경고…국제유가 급등",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260901_0003770419",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "트럼프, '요르단 美기지 공격' 이란에 보복 예고…\"강하게 때릴 것\"",
+      "category": "세계"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/2000358",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "영림원소프트랩, 신한은행과 공익법인 ERP 최대 60만원 할인",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=697091",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "영림원소프트랩, 신한은행과 공익법인 ERP 도입 비용 할인 지원",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=697063",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "튜링, 70억원 규모 투자 유치…이공계 넘어 전 대학생 겨냥 AI로 확장",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260901083244",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "튜링, 70억원 규모 투자 유치…글로벌 대학생 AI 시장 공략",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/2000344",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "SKT '에어' 가입자 20만 돌파…'유튜브 프리미엄 라이트' 1년 무료",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260901085927",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "SKT, 에어 요금제 가입자에 유튜브프리미엄 1년 쏜다",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260831000262",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "엘리스그룹, IPO 자금 활용 '모듈 데이터센터' 전국 확대한다",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260901082705",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "LS전선, 기존 변전소 활용해 AI 데이터센터 전력 공급한다",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/2000314",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "EU, 챗GPT 규제 강화⋯디지털서비스법 대상 지정",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260901000014",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "EU, 오픈AI '챗GPT' 디지털서비스법 초대형 규제 적용",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/2000312",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "챗GPT, 200일 만에 연간 환산 광고매출 10억달러 돌파",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260901000010",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "오픈AI, '챗GPT' 광고 연간 환산 매출 10억달러 돌파",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/2000252",
+      "reason": "score_observed",
+      "score": 0.654,
+      "title": "[일문일답] 하정우 \"프론티어 AI, 우리 스스로 만들어야⋯독파모 방식도 재검토\"",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=696956",
+      "reason": "score_observed",
+      "score": 0.738,
+      "title": "하정우, 독파모 넘어 '프론티어 AI 자립' 강조…정치 행보엔 말 아껴",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/2000081",
+      "reason": "score_observed",
+      "score": 0.694,
+      "title": "오픈AI, 국내 첫 '게임 빌더스 서울' 개최…AI 게임 개발 논의",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=696851",
+      "reason": "score_observed",
+      "score": 0.757,
+      "title": "오픈AI, 국내 첫 '게임 빌더스 서울' 개최",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260831000033",
+      "reason": "score_observed",
+      "score": 0.652,
+      "title": "애니파이브, 위즈도메인·테크DNA 통합…AI 기반 IP·R&D 플랫폼 기업 도약",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260831200320",
+      "reason": "score_observed",
+      "score": 0.624,
+      "title": "이랜서, AI 기술사업화 R&D로 플랫폼 고도화",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026083145551",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "158만명 개인정보 유출된 GS리테일에 128억 과징금",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/1999984",
+      "reason": "score_observed",
+      "score": 0.663,
+      "title": "개인정보위, '166만 개인정보 유출' GS리테일에 과징금 128억원",
+      "category": "IT/테크"
+    }
+  ]
+}
