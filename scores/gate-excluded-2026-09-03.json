@@ -1,0 +1,1082 @@
+{
+  "date": "2026-09-03",
+  "excluded": [
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090202701",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "임종룡, 우리금융 자사주 5000주 매입",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12142526",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "임종룡 우리금융 회장… 자사주 5000주 매입",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090215405036329",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "임종룡 우리금융 회장, 자사주 5천주 매입…비은행 강화·기업가치 제고 목적",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090209043459756",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "임종룡 우리금융 회장, 자사주 5000주 사들여…\"기업가치 제고\"",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/finance/1275823.html",
+      "reason": "score_observed",
+      "score": 0.642,
+      "title": "은행 부실채권 18.9조…8년 만에 최대",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12141972",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "“은행도 슬슬 떼인 돈 걱정할 판”…부실채권 19조 육박 ‘8년 만에 최대’",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090214243696282",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "기업대출 부실화 빨간불…은행 부실채권 8년 만에 최대",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090210241877102",
+      "reason": "score_observed",
+      "score": 0.646,
+      "title": "2분기 국내은행 부실채권 19조 달해…기업 부분 '적신호'",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090209243728693",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "은행 부실채권 19조 육박 '8년 만 최대'…기업·자영업자 건전성 빨간불",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090202871",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "8월 물가 3.1% '쑥'…두 달 만에 반등",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12141935",
+      "reason": "score_observed",
+      "score": 0.675,
+      "title": "[속보] 8월 소비자물가 상승률 3.1%…두 달 만에 다시 3%대",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090210043921329",
+      "reason": "score_observed",
+      "score": 0.665,
+      "title": "소비자물가 8월 3.1% 상승…두 달 만에 3%대 재진입",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090210003726507",
+      "reason": "score_observed",
+      "score": 0.637,
+      "title": "8월 소비자물가 3.1%↑…근원물가 3년3개월 만에 최고(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090208074457711",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "8월 소비자 물가 상승률 3.1%…\"지난해 SKT 요금 할인 기저효과\"(상보)",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260902051151002",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "5대 은행, 추석 앞두고 중소기업·소상공인 금융지원(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/finance/1275882.html",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "5대 은행, 중소기업·소상공인 추석 특별 금융지원…신규·만기연장 지원",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12142583",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "5대은행, 추석 맞아 중기 75조 지원",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090218125830895",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "5대 은행, 추석 맞아 중기·소상공인 특별 금융지원…총 74조원 규모",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090210165156804",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "신한은행, 추석 맞아 중소기업에 15조2000억 자금 공급",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090203401",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "법원, 홈플러스 회생계획안 인가",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1275933.html",
+      "reason": "score_observed",
+      "score": 0.613,
+      "title": "홈플러스 회생계획안 인가…‘채무 변제·체질 개선’ 본격 돌입",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090217334148695",
+      "reason": "score_observed",
+      "score": 0.62,
+      "title": "'파산 위기' 홈플러스 최대 고비 넘겼다…법원, 회생계획안 인가",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090217061513539",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "법원, 홈플러스 회생계획안 인가…변제 수행시 회생절차 종료",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260902088100002",
+      "reason": "score_observed",
+      "score": 0.875,
+      "title": "이형일 \"거주 중심 주택시장이 정부 방향…합리적 요구면 반영\"",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12142248",
+      "reason": "score_observed",
+      "score": 0.886,
+      "title": "이형일 “실거주자 혜택 유지…거주 중심 주택시장 정착이 정부 방향”",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090213481616100",
+      "reason": "score_observed",
+      "score": 0.848,
+      "title": "이형일 \"실거주 중심 정책 유효…주택 공급 위해 금융·세제 총력\"(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260902038300003",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "LH, 보상인력 344명 투입…신규지구 보상기간 44→24개월 단축",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/property/1275872.html",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "LH, 공공주택 토지 보상 44→24개월로 단축한다…344명 추가 투입",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260902_0003772676",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "LH, 보상인력 344명 추가 투입…\"신규지구 보상 20개월 단축\"",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260902067700002",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "2분기 외국인 국내 카드사용 48.6억달러 '역대 최대'…36% 증가",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1275844.html",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "외국인, 2분기 국내서 48.6억달러 카드 결제…사상 최고",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090211350252095",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "2분기  해외서 쓴 카드값 58.5억달러…해외여행 줄며 사용액 감소",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090293357",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "[속보] '홍명보 선임 의혹'…정몽규 전 회장, 경찰 소환조사",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260902094351004",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "경찰, '홍명보 선임 개입 의혹' 정몽규 12시간 마라톤 조사(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1275850.html",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "‘홍명보 선임 부당개입 의혹’ 정몽규 전 축구협회장 피의자 조사",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12142577",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "'홍명보 감독 선임' 개입 의혹… 정몽규 前 축협회장 警 출석",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090306310854048",
+      "reason": "score_observed",
+      "score": 0.726,
+      "title": "'홍명보 선임 개입 의혹' 정몽규, 12시간 경찰 조사…\"부당 개입 전혀 없다\"",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260902_0003773986",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "'홍명보 선임 논란' 정몽규, 11시간30분 경찰 조사…혐의 부인(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090212485467840",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "경찰, '홍명보 선임' 정몽규 전 축구협회장 첫 소환",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090296047",
+      "reason": "length:0",
+      "title": "[속보] '장애인 성폭행' 색동원 시설장 1심 징역 15년",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260902151000065",
+      "reason": "score_observed",
+      "score": 0.818,
+      "title": "색동원 대책위 \"시설장 징역 15년 사필귀정…일부 무죄 아쉬워\"",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260902148000061",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "'치매 노인 폭행치사' 군포 요양보호사 2심도 징역 4년",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1275898.html",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "성범죄 재판 법정서 “중증 장애인 진술 못 믿어”…색동원 시설장 징역 15년",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090214592061457",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "'장애인 성폭력' 색동원 시설장…1심, 징역 15년 선고",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609022111025/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "‘장애인 성폭행’ 색동원 시설장 징역 15년",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260902_0003773793",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "\"날 안 좋아해?\" 폭행 후 흉기 살해 시도…60대 징역 10년",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090215442530673",
+      "reason": "score_observed",
+      "score": 0.614,
+      "title": "'장애인 입소자 성폭행' 색동원 시설장 1심 징역 15년",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202609020183i",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "법원, 홈플러스 회생계획안 인가…즉시 효력 발생",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260902156351004",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "법원, 홈플러스 회생계획안 인가…회생채권자 75.9% 동의(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1275916.html",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "법원, 홈플러스 회생안 인가…채권자 75.9% 찬성",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12142656",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "법원, 홈플러스 회생계획안 인가",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609022134015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.638,
+      "title": "법원, 홈플러스 회생계획안 인가",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260902_0003773879",
+      "reason": "score_observed",
+      "score": 0.62,
+      "title": "홈플러스 회생계획안 가결, 법원 즉시 인가…회생절차 개시 1년6개월만(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260902_0003773760",
+      "reason": "length:0",
+      "title": "[속보]서울회생법원, 홈플러스 회생계획안 인가",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090217140199117",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "[속보]서울회생법원, 홈플러스 회생계획안 인가",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090203491",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "부산 오륙도 바다서 예인선 침몰…1명 사망·6명 실종",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260902172700051",
+      "reason": "score_observed",
+      "score": 0.648,
+      "title": "부산 앞바다 예인선 왜 뒤집혔나…예인 중 균형 잃었을 가능성",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260902162800704",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "[쇼츠] 부산 앞바다서 8명 탄 예인선 전복",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12142559",
+      "reason": "score_observed",
+      "score": 0.695,
+      "title": "부산시 예인선 전복 사고 비상 회의…1명 구조·1명 사망·6명 실종",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090220363367519",
+      "reason": "score_observed",
+      "score": 0.624,
+      "title": "부산 앞바다 예인선 전복 사고…1명 사망·6명 실종",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609022111035/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.652,
+      "title": "부산 앞바다서 예인선 뒤집혀 침몰…1명 숨지고 6명 실종",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609021459011/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "행안장관 “부산 오륙도 앞바다 예인선 전복사고 선원 신속 구조” 지시",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260902_0003773900",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "'실종 6명' 부산앞바다 예인선 침몰, 야간 수색·수사본부 편성",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260902_0003773825",
+      "reason": "score_observed",
+      "score": 0.723,
+      "title": "부산시, 오륙도 예인선 전복·침몰 대책회의…\"구조 최선\"",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090204027",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "故김남주 시인, '남민전 사건' 재심서 46년 만에 무죄",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1275919.html",
+      "reason": "score_observed",
+      "score": 0.675,
+      "title": "고 김남주 시인, ‘남민전 사건’ 재심서 46년 만에 무죄",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12142506",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "‘남민전 사건’ 김남주 시인, 46년 만에 무죄…법원 “불법구금·가혹행위”",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090216134535735",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "'남민전 사건' 故김남주 시인…재심서 46년 만에 무죄",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090217252952790",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "故 김남주 시인, '남조선민족해방전선 사건' 재심서 무죄",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090205927",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "'교사와 수억원대 문항거래' 현우진 1심 무죄에 검찰 항소",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12142818",
+      "reason": "score_observed",
+      "score": 0.778,
+      "title": "‘수억원대 문항 거래’ 일타강사 현우진 1심 무죄에…검찰, 항소",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090214265729294",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "'강북 모텔 연쇄살인' 김소영, 1심 무기징역…검찰 항소",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260902_0003773964",
+      "reason": "score_observed",
+      "score": 0.743,
+      "title": "검찰, 일타강사 현우진 '문항 거래' 혐의 1심 무죄에 항소",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090214262464613",
+      "reason": "score_observed",
+      "score": 0.743,
+      "title": "'강북 약물 연쇄살인' 김소영 1심 결과에 검찰도 항소",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090203471",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "'장윤기 사건 축소' 박성주 前국수본부장 기소",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090214153051521",
+      "reason": "score_observed",
+      "score": 0.757,
+      "title": "\"최고 지휘부 부당한 개입\" 장윤기 부실수사 박성주 전 국수본부장 불구속 기소",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609022111005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.812,
+      "title": "“강간 사건은 조용히” 장윤기 분리수사 지시 전 국수본부장 기소",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260902_0003773852",
+      "reason": "score_observed",
+      "score": 0.792,
+      "title": "'장윤기 사건' 분리수사 지시…박성주 전 국수본부장 등 4명 기소(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090213494344697",
+      "reason": "score_observed",
+      "score": 0.783,
+      "title": "\"강간은 조용히\"…檢, '장윤기 사건' 분리수사 지시 박성주 前국수본부장 기소",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202609020322i",
+      "reason": "score_observed",
+      "score": 0.641,
+      "title": "'역대급 N수생' 몰린 9월 모평…국어·영어 작년 수능보다 쉬웠다",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260902148100530",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "9월 모평 대체로 작년 수능보다 쉬워…급증한 N수생·사탐런 변수",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/schooling/1275939.html",
+      "reason": "score_observed",
+      "score": 0.619,
+      "title": "9월 모평 영어, 작년보다 쉬웠다…‘역대 최다’ N수생·사탐런 변수",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609021713001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.694,
+      "title": "9월 모평, 국어·수학은 6월보다 어렵고 영어는 쉬웠다",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260902_0003773873",
+      "reason": "score_observed",
+      "score": 0.641,
+      "title": "9월 모평, 작년 수능보다 쉬웠다…영어 1등급 20% 전망도(종합 2보)",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260902156400055",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "\"햄버거 사줄게\" 초등생 유인하려 한 성범죄 전력 50대",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12142672",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "“외로워 말 걸었을 뿐”…12세에 “햄버거 사줄게” 유인한 성범죄 전력 50대",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090219410944195",
+      "reason": "score_observed",
+      "score": 0.694,
+      "title": "\"같이 가자, 햄버거 사줄게\"…초등생 유인하려던 50대, 항소심서도 실형 구형",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260902_0003773774",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "\"피자 사줄께\" 女초등생 유인 미수…2심서 징역3년 구형",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260902173200004",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "김종철 경찰청장 대행, 첫 현장행보 제주行…실종사건 현장 방문",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1275966.html",
+      "reason": "score_observed",
+      "score": 0.88,
+      "title": "김종철 경찰청장 대행 첫 행보는 제주…‘실종사건 부실 대응’ 점검",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260902_0003773946",
+      "reason": "score_observed",
+      "score": 0.815,
+      "title": "김종철 경찰청장 대행 취임 첫날 제주行…실종사건 살핀다",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090221035083903",
+      "reason": "score_observed",
+      "score": 0.747,
+      "title": "김종철 경찰청장 대행, 첫 행선지는 '실종 허위종결' 제주",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090284997",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "호르무즈서 장금상선 관련 유조선 피격…한국인 선원은 없어",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260902179400079",
+      "reason": "score_observed",
+      "score": 0.705,
+      "title": "사우디 \"이란, 호르무즈서 유조선 공격…선원 2명 사망\" 규탄(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/arabafrica/1275804.html",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "“호르무즈서 한국 장금상선 소유 유조선 피격”",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12142037",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "韓 장금상선 소유 유조선, 호르무즈서 피격…재용선  준 선박, 한국인 없어",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260902091951084",
+      "reason": "score_observed",
+      "score": 0.791,
+      "title": "네팔·中 대홍수 사망자 1천130명…韓긴급구호대 현지 도착(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/asiapacific/1275797.html",
+      "reason": "score_observed",
+      "score": 0.764,
+      "title": "네팔 사망자 1066명…한국인 수색 성과는 ‘아직’",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090115135168010",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "네팔·중국 대홍수 사망자 1천명 넘겨…실종자 4천462명",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609021037001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.707,
+      "title": "네팔 대홍수 사망자 1066명 달해···실종자 수 약 5000명으로 늘어",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1275987.html",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "러트닉 ‘반도체 관세’ 예고…“미국서 안 만들면 대가 각오하라”",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090222590789824",
+      "reason": "score_observed",
+      "score": 0.754,
+      "title": "美 상무장관 \"반도체 관세 마련 중…미국서 안 만들면 비용 지불해야\"",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609030752001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.867,
+      "title": "러트닉 “새 반도체 관세 부과 준비···미국에서 안 만들면 대가 치를 것”",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202609030749i",
+      "reason": "score_observed",
+      "score": 0.612,
+      "title": "'교착상태' 이란 전쟁…트럼프 \"너무 오래 가지 않을 것\" [이상은의 워싱턴나우]",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260903004452071",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "트럼프, 對이란 공격 재개에 \"너무 오래가지는 않을 것\"(종합)",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609030729001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "트럼프 “대이란 공습, 오래 가지는 않을 것···언제든 추가 공격”",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1275794.html",
+      "reason": "score_observed",
+      "score": 0.741,
+      "title": "볼턴 “트럼프, 평양서 김정은과 회담 추진 가능성…‘극적인’ 사진 필요”",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090214485395323",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "美, 트럼프·김정은 '평양 회담 추진' 전망 연이어…'중간선거 겨냥'",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609020727001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.711,
+      "title": "트럼프 옛 안보보좌관 볼턴 “트럼프, 평양서 김정은 만나려 할 것···사진 필요해서”",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090281977",
+      "reason": "score_observed",
+      "score": 0.833,
+      "title": "美 재공습에 이란 결혼식장 피격…\"어린이 포함 4명 사망\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/arabafrica/1275799.html",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "“미군, 이란 결혼식장 폭격…4명 사망·50여명 부상”",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260902_0003773864",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "이란, \"미국 공격에 결혼식장서 어린이 4명등 5명 사망…모두 11명 죽어\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260902146200083",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "홍콩 민주화운동가 조슈아 웡, '외국과 공모' 혐의 유죄 인정",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609021719001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.711,
+      "title": "6년째 옥살이 홍콩 민주화 운동가 조슈아 웡, ‘외국과의 공모’ 혐의 인정",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260902_0003773598",
+      "reason": "score_observed",
+      "score": 0.752,
+      "title": "홍콩 민주 운동가 조슈아 웡, 복역 중 추가 혐의 인정·장기 징역형 위기",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260902122900009",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "'제주 고씨' 댄고, 美민주당 연방 하원의원 경선 승리",
+      "category": "세계"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609021502001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world",
+      "reason": "score_observed",
+      "score": 0.642,
+      "title": "레바논 혼혈 제주 고씨 ‘댄 고’, 미국 민주 경선 승리···3수 끝 하원 입성하나",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260902_0003773665",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "바이든·해리스 지지 앞세운 한국계 댄 고, 美하원 민주당 경선 승리",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090283307",
+      "reason": "length:0",
+      "title": "美, 베네수엘라 석유 협정으로 중·러 견제…\"지정학적 기회\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260902139600009",
+      "reason": "score_observed",
+      "score": 0.696,
+      "title": "\"트럼프의 베네수엘라 석유협정 실현 가능성 희박\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260902_0003772787",
+      "reason": "score_observed",
+      "score": 0.729,
+      "title": "美, 베네수엘라 석유로 中·러 견제…셰브런도 현지 사업 확대",
+      "category": "세계"
+    },
+    {
+      "source": "IT조선",
+      "link": "https://it.chosun.com/news/articleView.html?idxno=2023092169250",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "앤트로픽, 람다와 48조원 규모 클라우드 계약",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=697618",
+      "reason": "score_observed",
+      "score": 0.69,
+      "title": "엔비디아가 빌리고 람다가 돌린다…앤트로픽, 47조원 클라우드 계약",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090202241",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "과기정통부, 석·박사 AI 창업가 육성",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=697547",
+      "reason": "score_observed",
+      "score": 0.785,
+      "title": "과기정통부, AI 창업 석·박사 인재양성…4개 대학 거점 구축",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/2001088",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "기업 가치 '1조' 뤼튼, 상장 주관사 선정 착수",
+      "category": "IT/테크"
+    },
+    {
+      "source": "IT조선",
+      "link": "https://it.chosun.com/news/articleView.html?idxno=2023092169295",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "기업가치 1조 뤼튼, IPO 추진 본격화",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260902000445",
+      "reason": "score_observed",
+      "score": 0.631,
+      "title": "홈플러스 회생안, 채권자 75.9% 동의로 가결…법원 즉시 인가",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260902181353",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "홈플러스 회생계획안 법원 인가…경영 정상화 속도",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090202271",
+      "reason": "score_observed",
+      "score": 0.655,
+      "title": "카카오, 멜론·택시 묶어 멤버십 내놓는다",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/2001263",
+      "reason": "score_observed",
+      "score": 0.673,
+      "title": "카카오, 카톡·택시·쇼핑·음악 연계 유료 멤버십 추진",
+      "category": "IT/테크"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090202161",
+      "reason": "score_observed",
+      "score": 0.647,
+      "title": "알테오젠, 노바티스에 최대 4.4조 기술수출",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260902000332",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "알테오젠, 노바티스와 최대 4.4조원 규모 피하주사 기술 계약",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/2001252",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "보이스피싱 대책 1년…발생 40%·피해액 43% 줄었다",
+      "category": "IT/테크"
+    },
+    {
+      "source": "전자신문",
+      "link": "https://www.etnews.com/20260902000362",
+      "reason": "score_observed",
+      "score": 0.717,
+      "title": "보이스피싱 민관 총력 대응 1년, 범죄 발생 40% 줄었다",
+      "category": "IT/테크"
+    }
+  ]
+}
