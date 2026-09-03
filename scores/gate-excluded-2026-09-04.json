@@ -1,0 +1,954 @@
+{
+  "date": "2026-09-04",
+  "excluded": [
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202609032588i",
+      "reason": "score_observed",
+      "score": 0.745,
+      "title": "유령업체 동원 산불 피해 복구 '메뚜기 입찰' 10곳 세무조사",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260903077951002",
+      "reason": "score_observed",
+      "score": 0.648,
+      "title": "'산불카르텔' 유령업체 동원 '메뚜기 입찰' 10곳 세무조사(종합)",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1276047.html",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "산불 피해 복구 ‘부정입찰’로 700억원 탈루…유령업체 동원 10곳 세무조사",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260903_0003774251",
+      "reason": "score_observed",
+      "score": 0.74,
+      "title": "유령업체 동원해 산불 피해복구 참여…'부정입찰' 10곳 세무조사",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090311173461864",
+      "reason": "score_observed",
+      "score": 0.752,
+      "title": "'유령업체 동원' 거짓 거래꾸며 부정입찰…국세청, 산불 복구업체 10곳 세무조사",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/economy_general/1276024.html",
+      "reason": "score_observed",
+      "score": 0.722,
+      "title": "공공기관 109개 줄인다…석유-가스공사 합치고, 발전5사 통폐합",
+      "category": "경제"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/economy/12143752",
+      "reason": "score_observed",
+      "score": 0.624,
+      "title": "100인 미만 자회사 합치고 해외사무소 'K-마루'통합",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260903_0003774565",
+      "reason": "score_observed",
+      "score": 0.688,
+      "title": "공공기관 109개 줄인다…발전5사·석유-가스공사 통합",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090310440593448",
+      "reason": "score_observed",
+      "score": 0.675,
+      "title": "석유·가스 합치고 발전5사도 통합…'메머드 공기업' 탄생",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260903088700530",
+      "reason": "score_observed",
+      "score": 0.684,
+      "title": "'N% 성과급·호남반도체 반대' 파업·의무교섭 불가…노동부 지침",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090315552650764",
+      "reason": "score_observed",
+      "score": 0.788,
+      "title": "'N% 성과급·호남반도체 반대' 파업·의무교섭 불가…노동부 지침",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260903_0003774880",
+      "reason": "score_observed",
+      "score": 0.664,
+      "title": "\"'N% 성과급', 의무교섭 대상 아냐\"…노동부 지침 나왔다",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260903090300030",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "경북 예천 소 농장서 구제역 발생…중수본, 위기경보 격상",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090314093504336",
+      "reason": "score_observed",
+      "score": 0.718,
+      "title": "경북 예천 소 농장서 구제역 32마리 확인…전국 방역경보 '주의' 격상",
+      "category": "경제"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260903_0003774789",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "경북 예천 소 농장 2곳서 구제역…위기경보 '심각' 상향",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090328531",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "라이나손보 신임 대표에 김일평 전 삼성화재 부사장",
+      "category": "경제"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260903174300002",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "라이나손보 신임 대표에 김일평 전 삼성화재 부사장",
+      "category": "경제"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090309093873946",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "라이나손해보험 신임 대표에 김일평 전 삼성화재 부사장 선임",
+      "category": "경제"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/economy/it/1276045.html",
+      "reason": "score_observed",
+      "score": 0.733,
+      "title": "네이버, 정부 ‘사이버보안 특화 AI’ 개발 사업자로 선정",
+      "category": "경제"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090309232327477",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "네이버클라우드, '사이버보안 특화 AI' 최종 사업자 선정",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008735839",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "SKT, 네이버에 보안 AI 사업 내줬지만…\"협력 계속\"",
+      "category": "경제"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008735691",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "네이버, 독자 '사이버보안 AI 모델' 만든다…정부 사업 선정",
+      "category": "경제"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090331407",
+      "reason": "score_observed",
+      "score": 0.686,
+      "title": "\"혀 깨물고 죽겠다\" 자해 막으려다 취객 사망…경찰·소방관 '무죄'",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12143901",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "자해하려는 만취 여성 입에 수건 물렸다 사망…경찰·소방관은 ‘무죄’",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090317552351712",
+      "reason": "score_observed",
+      "score": 0.694,
+      "title": "\"내가 혀 깨물고 죽어야\" 자해 취객 입에 수건넣어 사망…경찰·소방관, 무죄",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609031700011/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "혀 깨물려던 취객 제지하려 입에 수건 넣었다 사망···경찰·소방관 “무죄”",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008737230",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "혀 깨무려는 자해 취객 입에 수건 넣어 사망…경찰·소방관 무죄",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260903_0003775435",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "혀 깨물려는 자해 여성 입에 수건 넣었다 질식사…경찰·소방 무죄",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090317073564905",
+      "reason": "score_observed",
+      "score": 0.676,
+      "title": "혀 깨물려는 취객 입에 수건 넣어 사망…경찰·소방관 무죄",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090331777",
+      "reason": "score_observed",
+      "score": 0.689,
+      "title": "미성년자 간음·스토킹도 모자라…흉기 들고 찾아간 30대 男",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260903134451065",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "前연인 가족 스토킹…접근금지 다음날 흉기 든 30대 구속(종합)",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090322013862253",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "전 여친 스토킹→접근금지→다음 날 흉기…가족 집 찾아간 30대",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609032211001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "‘스토킹 접근 금지’에 흉기 협박···경찰 30대 남성 구속",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008737018",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "전 연인 언니 스토킹…접근금지되자 흉기 들고 찾아간 30대 구속",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090328681",
+      "reason": "length:156",
+      "title": "[포토] “경찰이 부족했습니다”…새 지휘부 '대국민 반성문'",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12143666",
+      "reason": "score_observed",
+      "score": 0.675,
+      "title": "경찰 지휘부 대국민 사죄…\"기본부터 세울것\"",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090314530367798",
+      "reason": "score_observed",
+      "score": 0.825,
+      "title": "\"경찰이 부족했습니다\"…'대국민 반성문'으로 시작한 새 경찰지휘부",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609032109005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "length:87",
+      "title": "[포토뉴스]“경찰이 부족했습니다”…‘사죄’로 시작한 김종철 직무대행",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/202609032450i",
+      "reason": "score_observed",
+      "score": 0.778,
+      "title": "'정운호 1억 뒷돈' 전직 검사 징역 2년 확정…\"감사원 청탁 명목\"",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1276136.html",
+      "reason": "score_observed",
+      "score": 0.785,
+      "title": "‘네이처리퍼블릭 정운호에 1억 수수’ 전직 검사, 징역 2년 확정",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609032105005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "‘정운호 게이트’ 전직 부장검사 징역 2년 확정",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090311292790178",
+      "reason": "score_observed",
+      "score": 0.756,
+      "title": "'정운호 게이트 1억 수수' 전직 부장검사 징역 2년 실형 확정",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/society_general/1276055.html",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "대법 “영화관, 장애인에 영화 자막 제공 않은 건 차별행위” 판결",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12143661",
+      "reason": "score_observed",
+      "score": 0.829,
+      "title": "대법 \"영화관서 자막 미제공…시각·청각장애인 차별행위\"",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090310333415888",
+      "reason": "score_observed",
+      "score": 0.768,
+      "title": "대법 \"영화관, 시청각장애인에 자막·화면해설 제공해야\"",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090310484501844",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "대법 \"영화관, 시각·청각장애인에게 충분한 화면해설·자막 제공해야\"",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090330617",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "\"자는 줄 알았다\" 경찰 철수…모텔 투숙객 2명 가스 중독 중태",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260903157500060",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "모텔 투숙객 2명 가스 중독 중태…경찰 \"자는 줄 알았다\" 철수",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008737150",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "\"자는 줄\" 경찰 철수한 뒤…거품 문 투숙객 중태 무슨 일",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008737028",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "모텔 투숙객 2명 가스 중독…경찰 \"자는 줄 알았다\" 철수",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260903171800004",
+      "reason": "score_observed",
+      "score": 0.657,
+      "title": "경찰, 지하철 2호선서 여성들 추행한 50대 남성 체포",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090322295744152",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "2호선서 여성만 노린 50대 체포…\"나도 당했다\" 피해 제보 잇따라",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090317435024473",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "공항철도서 여성들 신체 몰래 찍던 40대…결국 현행범 체포",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260903_0003775686",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "경찰, 지하철 2호선서 여성들 추행한 50대 체포…구속영장 검토",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260903182300004",
+      "reason": "score_observed",
+      "score": 0.65,
+      "title": "금융노조, 오늘 광화문서 '국책은행 지방이전 저지' 총파업 집회",
+      "category": "사회"
+    },
+    {
+      "source": "경향신문",
+      "link": "https://www.khan.co.kr/article/202609040725001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "금융노조, 오늘 광화문서 총파업 집회…“국책은행 지방 이전 저지”",
+      "category": "사회"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008737232",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "금융노조, 오늘 광화문서 '국책은행 지방이전 저지' 총파업 집회",
+      "category": "사회"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260904009000064",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "충북 대체로 맑음…낮 최고 29도",
+      "category": "사회"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/society/environment/1276203.html",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "전국 맑지만 바람 ‘쌩쌩’…낮 최고 31도",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260903_0003775508",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "충남권 곳곳서 강풍 예보…낮 최고 29도",
+      "category": "사회"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260903_0003775727",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "전국 맑고 낮 최고 32도…강원·제주 비 소식[오늘날씨]",
+      "category": "사회"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12143692",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "초등생에 무차별 폭행 당한 60대 교사… 기간제 부임 첫날부터 욕설 들어",
+      "category": "사회"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090316395305967",
+      "reason": "score_observed",
+      "score": 0.629,
+      "title": "교사 때리고 머리채 잡은 초등학생…60대 교사는 기간제 채용 첫날부터 봉변",
+      "category": "사회"
+    },
+    {
+      "source": "아시아경제",
+      "link": "https://view.asiae.co.kr/article/2026090316341554521",
+      "reason": "score_observed",
+      "score": 0.624,
+      "title": "초등생에 폭행당한 60대 기간제 교사…출근 첫날부터 봉변",
+      "category": "사회"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090327637",
+      "reason": "score_observed",
+      "score": 0.696,
+      "title": "美 최대 학군지 뉴욕, 초·중학생 'AI 사용' 1년간 금지",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1276118.html",
+      "reason": "score_observed",
+      "score": 0.655,
+      "title": "‘미 최대 학군’ 뉴욕 공립학교서 새 학기부터 1년간 ‘AI 사용 금지’",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12144040",
+      "reason": "score_observed",
+      "score": 0.671,
+      "title": "미국 최대 학군지 뉴욕, 초중학교서 AI ‘퇴장’…60만명 1년간 못 쓴다",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090311272586374",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "뉴욕시, 초·중등 교실서 AI 사용 금지…학생·교사 상호작용 우선",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260903_0003775472",
+      "reason": "score_observed",
+      "score": 0.676,
+      "title": "뉴욕시, 초·중학생 AI 사용 1년간 금지…\"AI 유익성 입증된 바 없어\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260904006600071",
+      "reason": "score_observed",
+      "score": 0.741,
+      "title": "김정관 \"美반도체 관세 '불리하지 않은 대우' 정신 하에 논의\"",
+      "category": "세계"
+    },
+    {
+      "source": "한겨레",
+      "link": "https://www.hani.co.kr/arti/international/america/1276200.html",
+      "reason": "score_observed",
+      "score": 0.813,
+      "title": "김정관 “미 반도체 관세, ‘경쟁국보다 불리하지 않은 대우’ 원칙 따라 협의”",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008737262",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "김정관 \"미 반도체 관세 '불리하지 않은 대우' 정신 하에 논의\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260904_0003775793",
+      "reason": "score_observed",
+      "score": 0.791,
+      "title": "김정관 \"美반도체 관세 불리 않을것…대미투자 1호 9월 마무리\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090432947",
+      "reason": "score_observed",
+      "score": 0.692,
+      "title": "美 영끌족들 어쩌나…30년 주담대 금리 13개월 만 '최고'",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260904005200072",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "美 30년 주택대출금리 평균 6.71%…작년 7월 이후 최고",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260904_0003775811",
+      "reason": "score_observed",
+      "score": 0.754,
+      "title": "美 30년 주택대출금리 6.71%…13개월 만에 최고",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260903125100009",
+      "reason": "score_observed",
+      "score": 0.725,
+      "title": "만신창이돼 돌아온 美항모 링컨함…\"지옥 다녀온 듯\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008737226",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "만신창이 돼 돌아온 미 항모 링컨함…\"지옥 다녀온 듯\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260903_0003775323",
+      "reason": "low_score",
+      "score": 0.272,
+      "title": "처참한 모습으로 돌아온 美항모 링컨함…\"녹슬고 벗겨져\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260903167100009",
+      "reason": "score_observed",
+      "score": 0.726,
+      "title": "\"美, 중동 파병 기간 내년까지 연장 시도\"…이란전 해 넘기나",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008737148",
+      "reason": "score_observed",
+      "score": 0.642,
+      "title": "\"미, 파병 기간 연장 움직임\"…이란전 해 넘기나",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260903_0003774772",
+      "reason": "score_observed",
+      "score": 0.8,
+      "title": "\"美, 이란戰 파병 내년까지 연장…지상군 투입 다시 검토\" WSJ",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260904001300071",
+      "reason": "score_observed",
+      "score": 0.76,
+      "title": "트럼프 \"나토·우크라에 공짜로 넘어간 수천억불 요구할 것\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008737104",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "트럼프 \"나토·우크라에 수천억 달러 무상 제공…돌려 받아야\"",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260904_0003775791",
+      "reason": "score_observed",
+      "score": 0.771,
+      "title": "트럼프 \"우크라·나토에 공짜로 준 수천억 달러, 돌려받을 것\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260903091900009",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "일본 국채금리 3% 돌파…엔 캐리 트레이드 촉발하나",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090315284303604",
+      "reason": "score_observed",
+      "score": 0.636,
+      "title": "일본 국채금리 3% 돌파…엔 캐리 트레이드 촉발하나",
+      "category": "세계"
+    },
+    {
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20260903_0003775382",
+      "reason": "score_observed",
+      "score": 0.726,
+      "title": "30년 만에 日10년물 국채 3%…'엔 캐리' 청산 촉각",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090332187",
+      "reason": "length:0",
+      "title": "[속보] 한국구호대 \"네팔군이 헬기 2대 제공\"…수색 시도했으나 실패",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260903186151104",
+      "reason": "score_observed",
+      "score": 0.743,
+      "title": "[네팔 대홍수] 韓구호대 \"네팔군이 헬기 2대 제공\"…날씨 탓에 회항",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008737098",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "한국 구호대, 네팔군 헬기 제공받아 공중 수색 시도…악천후로 회항",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090329191",
+      "reason": "score_observed",
+      "score": 0.756,
+      "title": "\"美서 안만들면 대가\"…러트닉, 반도체 관세 엄포",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/world/12143767",
+      "reason": "score_observed",
+      "score": 0.709,
+      "title": "\"반도체, 美서 생산 안하면 대가 치러야\"",
+      "category": "세계"
+    },
+    {
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/business/12143090",
+      "reason": "score_observed",
+      "score": 0.822,
+      "title": "“美서 안만들면 대가 치를 것” 반도체 표적 관세 예고에…청와대 “아직 확정 안돼”",
+      "category": "세계"
+    },
+    {
+      "source": "매일신문",
+      "link": "https://www.imaeil.com/page/view/2026090311402723342",
+      "reason": "score_observed",
+      "score": 0.743,
+      "title": "美 러트닉 '반도체 고율 관세' 예고…\"반도체, 미국에서 만들어라\"",
+      "category": "세계"
+    },
+    {
+      "source": "한국경제",
+      "link": "https://www.hankyung.com/article/2026090331957",
+      "reason": "score_observed",
+      "score": 0.75,
+      "title": "이란 혁명수비대 \"美 결혼식장 공습, 반드시 책임 물을 것\"",
+      "category": "세계"
+    },
+    {
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20260903182000079",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "이란 혁명수비대 \"美 결혼식장 공습 테러, 반드시 책임 묻겠다\"",
+      "category": "세계"
+    },
+    {
+      "source": "SBS",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008737091",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "이란 혁명수비대 \"미, 결혼식장 공습은 테러 행위…책임 묻겠다\"",
+      "category": "세계"
+    },
+    {
+      "source": "IT조선",
+      "link": "https://it.chosun.com/news/articleView.html?idxno=2023092169306",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "오픈AI, ‘아스트라’ 곧 출시… 논란된 고급 기능은 제한",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=698114",
+      "reason": "score_observed",
+      "score": 0.7,
+      "title": "오픈AI, GPT-6 아스트라 배포 시작…첫 '중대' 보안 등급 모델",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=697988",
+      "reason": "score_observed",
+      "score": 0.708,
+      "title": "오픈AI, 아스트라 출시 앞두고 비상…연구자들 \"AI 안전성 재앙\" 경고",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/2001509",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "삼성SDS, 미국서 'RX ART 2026' 개최⋯로봇 활용 사례 검증",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=698043",
+      "reason": "score_observed",
+      "score": 0.6,
+      "title": "삼성SDS, 미국서 RX ART 개최...삼성 관계사와 제조 현장 로봇 활용 가능성 검증",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/2001659",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "이노그리드, 자체 기술 집약 솔루션 'Openstackit 3.5' 출시",
+      "category": "IT/테크"
+    },
+    {
+      "source": "디지털투데이",
+      "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=698039",
+      "reason": "score_observed",
+      "score": 0.72,
+      "title": "이노그리드, 가상화 플랫폼 고도화...오픈스택잇 3.5 출시",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/2001492",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "제논, 상반기 매출 117억 6000만원⋯전년 동기比 331% ↑",
+      "category": "IT/테크"
+    },
+    {
+      "source": "IT조선",
+      "link": "https://it.chosun.com/news/articleView.html?idxno=2023092169389",
+      "reason": "score_observed",
+      "score": 0.653,
+      "title": "제논, 상반기 매출 117.6억원… 전년比 331%↑",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/2001545",
+      "reason": "score_observed",
+      "score": 0.662,
+      "title": "그라비티, 레이싱 게임 '달려라 헤베레케: EX' 글로벌 정식 출시",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260903183906",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "그라비티, 레이싱 게임 신작 '달려라 헤베레케: EX' 글로벌 출시…PC·콘솔 라인업 강화",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/2001500",
+      "reason": "score_observed",
+      "score": 0.625,
+      "title": "컴투스 'SWC2026', 아시아퍼시픽·미주 본선 라인업 확정",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260903183526",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "컴투스 'SWC2026', 한국 ECK·BEAT.D 본선행…지역 컵 라인업 확정",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/2001445",
+      "reason": "score_observed",
+      "score": 0.633,
+      "title": "라이엇게임즈, 18일 첫 실물 TCG '리프트바운드' 한글판 출시",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260903182400",
+      "reason": "score_observed",
+      "score": 0.644,
+      "title": "라이엇게임즈 최초 실물 TCG '리프트바운드', 오는 18일 한국 정식 출시",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/2001639",
+      "reason": "score_observed",
+      "score": 0.64,
+      "title": "넥써쓰 원체인 밸리데이터에 블록체인 보안기업 '서틱' 합류",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260903181946",
+      "reason": "score_observed",
+      "score": 0.68,
+      "title": "넥써쓰 원체인 밸리데이터에 글로벌 보안 기업 '서틱' 합류",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/2001690",
+      "reason": "score_observed",
+      "score": 0.714,
+      "title": "플리토, 육군 민원상담센터에 AI 상담 서비스 구축",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260903173519",
+      "reason": "score_observed",
+      "score": 0.66,
+      "title": "플리토, 육군에 AI 민원상담 구축…장병·국민 문의 24시간 대응",
+      "category": "IT/테크"
+    },
+    {
+      "source": "아이뉴스24",
+      "link": "https://www.inews24.com/view/2001406",
+      "reason": "score_observed",
+      "score": 0.667,
+      "title": "NC AI, 휴머노이드 AI 기술개발 사업 참여",
+      "category": "IT/테크"
+    },
+    {
+      "source": "ZDNet Korea",
+      "link": "https://zdnet.co.kr/view/?no=20260903172116",
+      "reason": "score_observed",
+      "score": 0.632,
+      "title": "NC AI, LG전자와 자율형 휴머노이드 개발…인간 동작 로봇에 이식",
+      "category": "IT/테크"
+    }
+  ]
+}

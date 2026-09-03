@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-04",
+  "topics": [
+    {
+      "word": "AI",
+      "score": 36.400000000000006,
+      "media_count": 15,
+      "article_count": 107
+    },
+    {
+      "word": "으로",
+      "score": 24.6,
+      "media_count": 13,
+      "article_count": 58
+    },
+    {
+      "word": "경찰",
+      "score": 24.4,
+      "media_count": 10,
+      "article_count": 72
+    }
+  ]
+}
